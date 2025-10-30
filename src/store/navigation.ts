@@ -128,8 +128,8 @@ export const useNavigationStore = defineStore('navigation', {
         updated: false,
       },
       {
-        name: 'setup.py',
-        path: '/cheatsheet/setup-py',
+        name: 'Packaging',
+        path: '/cheatsheet/packaging',
         updated: false,
       },
       {
