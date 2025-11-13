@@ -17,7 +17,7 @@ defineProps<{
     />
     <div class="relative overflow-hidden rounded-xl p-6">
       <component :is="icon" class="h-8 w-8" />
-      <p class="mt-4 font-display text-base text-slate-900 dark:text-white">
+      <h2 class="mt-4 font-display text-base text-slate-900 dark:text-white">
         <a v-if="isExternal" target="_blank" :href="path">
           <span class="absolute -inset-px rounded-xl" />
           {{ title }}
@@ -26,7 +26,7 @@ defineProps<{
           <span class="absolute -inset-px rounded-xl" />
           {{ title }}
         </router-link>
-      </p>
+      </h2>
       <p class="mt-1 text-sm text-slate-700 dark:text-slate-400">
         {{ description }}
       </p>

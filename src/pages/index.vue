@@ -61,7 +61,7 @@ const smAndLarger = breakpoints.greater('sm')
         title="Python Cheatsheet"
         :description="description"
       >
-        <h1>Python Cheatsheet</h1>
+        Python Cheatsheet
       </base-title>
       <h1
         v-else
@@ -69,31 +69,9 @@ const smAndLarger = breakpoints.greater('sm')
       >
         Python Cheatsheet
       </h1>
-
-      <p class="lead mt-0 text-center sm:text-start">
-        Based on the book
-        <a target="_blank" href="https://automatetheboringstuff.com/">
-          Automate the Boring Stuff with Python
-        </a>
-        and many other sources.
-      </p>
     </prose>
 
-    <div className="not-prose my-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
-      <base-link-card
-        v-for="link in cardLinks"
-        v-once
-        :key="link.path"
-        :title="link.name"
-        :description="link.description"
-        :path="link.path"
-        :icon="link.icon"
-        :is-external="link.external"
-      />
-    </div>
-
     <prose class="hidden sm:block">
-      <h2 id="getting-started">Getting started</h2>
       <p>
         Anyone can forget how to
         <router-link
@@ -113,17 +91,29 @@ const smAndLarger = breakpoints.greater('sm')
         </router-link>
         . This Python cheatsheet tries to provide basic reference for beginner
         and advanced developers, lower the entry barrier for newcomers and help
-        veterans refresh the old tricks.
+        veterans refresh the old tricks. View all
+        <a
+          href="https://github.com/wilfredinni/python-cheatsheet/blob/master/contributors/contributors.json"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          contributors
+        </a>
+        on GitHub.
       </p>
     </prose>
 
-    <div class="mt-10">
-      <prose>
-        <h2 id="contributors" class="text-center sm:text-start">
-          Contributors
-        </h2>
-      </prose>
-      <contributors class="pb-3 pt-10" />
+    <div className="not-prose my-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
+      <base-link-card
+        v-for="link in cardLinks"
+        v-once
+        :key="link.path"
+        :title="link.name"
+        :description="link.description"
+        :path="link.path"
+        :icon="link.icon"
+        :is-external="link.external"
+      />
     </div>
   </article>
 </template>

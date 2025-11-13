@@ -25,11 +25,12 @@ const pageToc = computed(() => {
     class="flex h-full w-72 flex-col justify-between"
   >
     <div>
-      <h3
+      <p
+        id="on-this-page-title"
         class="font-display text-sm font-medium text-slate-900 dark:text-white"
       >
         On this page
-      </h3>
+      </p>
 
       <ul class="mt-4 text-sm">
         <li v-for="item in pageToc" :key="item.id">
