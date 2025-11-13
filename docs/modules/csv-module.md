@@ -1,10 +1,10 @@
 ---
-title: Python Csv Module - Python Cheatsheet
+title: Python CSV Module - Python Cheatsheet
 description: Python has a csv module, which allows us to work easily with CSV files.
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-Python Csv Module
+Python CSV Module
 </base-title>
 
 The csv module provides tools to read from and write to CSV files, which are commonly used for data exchange.
@@ -21,6 +21,7 @@ The csv module provides tools to read from and write to CSV files, which are com
 </base-disclaimer>
 
 To get started, import the module:
+
 ```python
 import csv
 ```
@@ -59,6 +60,7 @@ with open(file_path, 'w', newline='') as csvfile:
 ```
 
 The "do something" block could be replaced with the use of the following functions:
+
 ### writer.writerow()
 
 Writes a single row to the CSV file.
@@ -120,7 +122,7 @@ with open('people_dict.csv', 'w', newline='') as csvfile:
 ```
 
 - Use `writer.writeheader()` to write the column headers as the first row.
-- Each dictionary in `writer.writerows()` must have keys matching  the `fieldnames` specified when creating the writer.
+- Each dictionary in `writer.writerows()` must have keys matching the `fieldnames` specified when creating the writer.
 
 ## Additional params to csv.reader() and csv.writer()
 

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const reader = useReaderStore()
+const route = useRoute()
 
 const rootRepositoryRoutes = ['contributing', 'changelog']
 </script>
@@ -42,7 +43,7 @@ const rootRepositoryRoutes = ['contributing', 'changelog']
 
         <the-footer
           :repository="
-            !rootRepositoryRoutes.includes($route.name as string)
+            !rootRepositoryRoutes.includes(route.name as string)
               ? 'https://github.com/wilfredinni/python-cheatsheet/blob/master/docs'
               : 'https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages'
           "

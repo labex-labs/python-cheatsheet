@@ -10,6 +10,8 @@ defineProps<{
   sectionName: string
   navigation: Array<Navigation>
 }>()
+
+const route = useRoute()
 </script>
 
 <template>
@@ -24,7 +26,7 @@ defineProps<{
         :to="item.path"
         class="-ml-px block border-l border-transparent pl-4 transition duration-150"
         :class="
-          $route.path === item.path
+          route.path === item.path
             ? 'border-current font-semibold text-sky-500 dark:text-sky-400'
             : 'text-slate-700 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:border-slate-500 dark:hover:text-slate-300'
         "

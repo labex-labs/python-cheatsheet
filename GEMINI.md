@@ -118,7 +118,7 @@ meta:
 
 ## State Management
 
-- **Pinia stores** for global state (navigation, reader mode, newsletter)
+- **Pinia stores** for global state (navigation, reader mode)
 - **VueUse composables** for reactive utilities
 - **Auto-imports** for composables and Vue APIs
 

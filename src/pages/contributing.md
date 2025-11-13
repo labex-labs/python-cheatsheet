@@ -23,10 +23,10 @@ This project and everyone who participates in it is governed by the [Contributor
 
 There are many ways to contribute, from writing code and documentation to submitting bug reports and feature requests.
 
--   **Reporting Bugs:** If you find a bug, please open an [Issue](https://github.com/wilfredinni/python-cheatsheet/issues) and provide as much information as possible.
--   **Suggesting Enhancements:** Have an idea for a new feature or an improvement to an existing one? Open an [Issue](https://github.com/wilfredinni/python-cheatsheet/issues) to discuss it.
--   **Writing Content:** You can add new cheatsheet pages, blog posts, or improve existing content.
--   **Pull Requests:** If you're ready to contribute code or content, we welcome your [Pull Requests](https://github.com/wilfredinni/python-cheatsheet/pulls).
+- **Reporting Bugs:** If you find a bug, please open an [Issue](https://github.com/wilfredinni/python-cheatsheet/issues) and provide as much information as possible.
+- **Suggesting Enhancements:** Have an idea for a new feature or an improvement to an existing one? Open an [Issue](https://github.com/wilfredinni/python-cheatsheet/issues) to discuss it.
+- **Writing Content:** You can add new cheatsheet pages, blog posts, or improve existing content.
+- **Pull Requests:** If you're ready to contribute code or content, we welcome your [Pull Requests](https://github.com/wilfredinni/python-cheatsheet/pulls).
 
 ## Getting Started: Setting Up the Project Locally
 
@@ -50,11 +50,13 @@ Ready to start contributing? Here’s how to set up the project on your local ma
     This project uses [pnpm](https://pnpm.io/installation) as its package manager. If you don't have it, install it:
 
     On Linux/macOS:
+
     ```bash
     curl -fsSL https://get.pnpm.io/install.sh | sh -
     ```
 
     On Windows (PowerShell):
+
     ```bash
     iwr https://get.pnpm.io/install.ps1 -useb | iex
     ```
@@ -74,6 +76,7 @@ Ready to start contributing? Here’s how to set up the project on your local ma
     ```bash
     git checkout -b your-branch-name
     ```
+
     For example: `git checkout -b feat/add-asyncio-cheatsheet` or `git checkout -b fix/typo-in-basics`.
 
 6.  **Run the Development Server**
@@ -83,6 +86,7 @@ Ready to start contributing? Here’s how to set up the project on your local ma
     ```bash
     pnpm dev
     ```
+
     The site will be available at `http://localhost:3333`.
 
 ## Making and Submitting Changes

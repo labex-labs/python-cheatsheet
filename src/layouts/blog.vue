@@ -18,12 +18,6 @@ const reader = useReaderStore()
           <article>
             <RouterView />
           </article>
-
-          <aside v-show="!reader.isActive" class="mt-12">
-            <div class="flex justify-center">
-              <carbon-ads />
-            </div>
-          </aside>
         </div>
       </div>
     </div>

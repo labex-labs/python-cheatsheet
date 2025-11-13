@@ -5,6 +5,34 @@ useScrollBehavior()
 </script>
 
 <template>
+  <BaseBanner storage-key-name="black-friday-2025-banner">
+    <template #message>
+      <span class="text-white">
+        Black Friday 2025: Learn Python with LabEx Hands-on Labs.
+        <a
+          href="https://labex.io/pricing"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ml-1 font-semibold text-white underline hover:text-slate-200"
+        >
+          Get 50% OFF Now →
+        </a>
+      </span>
+    </template>
+    <template #shortMsg>
+      <span class="text-white">
+        Black Friday 2025: Python Hands-on Labs
+        <a
+          href="https://labex.io/pricing"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ml-1 font-semibold text-white underline hover:text-slate-200"
+        >
+          Get 50% OFF →
+        </a>
+      </span>
+    </template>
+  </BaseBanner>
   <RouterView />
 </template>
 

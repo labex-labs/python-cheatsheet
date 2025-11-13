@@ -1,10 +1,10 @@
 ---
-title: Python Json Module - Python Cheatsheet
+title: Python JSON Module - Python Cheatsheet
 description: Python has the built-in module json, which allow us to work with JSON (JavaScript Object Notation) data.
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-Python Json Module
+Python JSON Module
 </base-title>
 
 JSON stands for JavaScript Object Notation and is a lightweight format for storing and transporting data. JSON is often used when data is sent from a server to a web page.
@@ -84,9 +84,9 @@ The other way around. The `dumps()` method transforms a Python object to a JSON 
 # <class 'str'>
 ```
 
-## Reading and writing Json Files
+## Reading and writing JSON Files
 
-### Reading a Json File
+### Reading a JSON File
 
 ```python
 >>> import json
@@ -97,7 +97,7 @@ The other way around. The `dumps()` method transforms a Python object to a JSON 
 # {'name': 'Charles', 'age': 33, 'has_hair': False}
 ```
 
-### Writing a Json File
+### Writing a JSON File
 
 ```python
 >>> import json

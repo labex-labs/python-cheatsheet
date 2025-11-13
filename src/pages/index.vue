@@ -79,8 +79,6 @@ const smAndLarger = breakpoints.greater('sm')
       </p>
     </prose>
 
-    <subscription-form class="mb-8 mt-6" />
-
     <div className="not-prose my-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
       <base-link-card
         v-for="link in cardLinks"

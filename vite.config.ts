@@ -26,14 +26,7 @@ export default defineConfig(({ mode }) => {
     },
 
     server: {
-      proxy: {
-        '/newsletter': {
-          target: process.env.VITE_GRUDGET_ENDPOINT,
-          changeOrigin: true,
-          secure: false,
-          rewrite: (path) => path.replace(/^\/newsletter/, ''),
-        },
-      },
+      proxy: {},
     },
 
     plugins: [

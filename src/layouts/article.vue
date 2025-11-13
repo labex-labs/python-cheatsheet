@@ -19,8 +19,6 @@ const reader = useReaderStore()
           <prose><RouterView /></prose>
         </article>
 
-        <subscription-form class="my-8" />
-
         <the-footer
           repository="https://github.com/wilfredinni/python-cheatsheet/blob/master/docs"
         />

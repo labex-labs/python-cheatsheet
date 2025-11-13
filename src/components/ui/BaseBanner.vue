@@ -15,15 +15,15 @@ const showBanner = useLocalStorage(keyName.value, true)
 
 <template>
   <div v-if="!reader.isActive && showBanner">
-    <div class="kinsta-background">
+    <div class="banner-background">
       <div class="mx-auto max-w-7xl py-3 px-3 sm:px-6 md:px-0 lg:px-8">
         <div class="sm:px-16 sm:text-center">
-          <div class="text-sm font-medium text-sky-600 dark:text-sky-400">
-            <div class="flex items-center text-white md:hidden">
+          <div class="text-sm font-medium">
+            <div class="flex items-center justify-center text-white md:hidden">
               <slot name="shortMsg">We announced a new product!</slot>
             </div>
             <div
-              class="md hidden items-center md:flex md:justify-between xl:px-20"
+              class="md hidden items-center md:flex md:justify-center text-white xl:px-20"
             >
               <slot name="message">
                 Big news! We're excited to announce a brand new product.
@@ -36,7 +36,7 @@ const showBanner = useLocalStorage(keyName.value, true)
         >
           <button
             type="button"
-            class="hidden rounded-md p-2 text-white transition duration-300 focus:outline-none dark:hover:text-slate-300 sm:block"
+            class="hidden rounded-md p-2 text-white transition duration-300 hover:text-slate-200 focus:outline-none sm:block"
             @click="showBanner = false"
           >
             <span class="sr-only">Dismiss</span>
@@ -62,7 +62,7 @@ const showBanner = useLocalStorage(keyName.value, true)
 </template>
 
 <style scoped>
-.kinsta-background {
-  background-color: #0e0a1b;
+.banner-background {
+  background-color: #2e7eee;
 }
 </style>

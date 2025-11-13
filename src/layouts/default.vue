@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const reader = useReaderStore()
+const route = useRoute()
 
 const rootRepositoryRoutes = ['contributing', 'changelog']
 </script>
@@ -39,17 +40,15 @@ const rootRepositoryRoutes = ['contributing', 'changelog']
         :class="[reader.isActive ? 'max-w-2xl lg:max-w-4xl' : 'lg:max-w-none']"
       >
         <article>
-          <prose v-if="$route.name !== 'index'"><router-view /></prose>
+          <prose v-if="route.name !== 'index'"><router-view /></prose>
           <router-view v-else />
         </article>
 
-        <base-pagination v-if="!$route.path.startsWith('/builtin/')" />
-
-        <subscription-form v-if="$route.name !== 'index'" class="mt-5" />
+        <base-pagination v-if="!route.path.startsWith('/builtin/')" />
 
         <the-footer
           :repository="
-            !rootRepositoryRoutes.includes($route.name as string)
+            !rootRepositoryRoutes.includes(route.name as string)
               ? 'https://github.com/wilfredinni/python-cheatsheet/blob/master/docs'
               : 'https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages'
           "

@@ -16,8 +16,8 @@ const isDark = useDark()
 
         <!-- menu -->
         <div class="ml-14 flex flex-1 items-center space-x-6 lg:ml-0">
-          <div class="mr-3 flex flex-shrink-0 items-center">
-            <router-link to="/">
+          <div class="mr-3 flex flex-shrink-0 items-center gap-3">
+            <router-link to="/" class="flex items-center">
               <img
                 class="h-7 w-auto"
                 :src="
@@ -30,13 +30,37 @@ const isDark = useDark()
                 width="10"
               />
             </router-link>
+            <div class="h-6 w-px bg-slate-300 dark:bg-slate-700"></div>
+            <a
+              href="https://labex.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center"
+            >
+              <img
+                class="h-7 w-auto"
+                :src="
+                  isDark
+                    ? 'https://cdn.jsdelivr.net/gh/labex-labs/files@master/images/labex-logo-light.svg'
+                    : 'https://cdn.jsdelivr.net/gh/labex-labs/files@master/images/labex-logo-dark.svg'
+                "
+                alt="LabEx"
+                height="10"
+                width="10"
+              />
+            </a>
           </div>
 
           <algolia-doc-search />
 
           <base-badge-notice size="xs" class="hidden xl:block">
             <template #title>
-              <span class="capitalize"> ✨ Blog </span>
+              <router-link
+                to="/blog"
+                class="capitalize hover:text-sky-500"
+              >
+                ✨ Blog
+              </router-link>
             </template>
             <template #message>
               <router-link
@@ -84,18 +108,6 @@ const isDark = useDark()
                 {{ item.name }}
               </a>
             </div>
-            <router-link
-              to="/sponsor"
-              class="inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-300"
-              :class="
-                route.path === '/sponsor'
-                  ? 'text-sky-600 dark:text-sky-400'
-                  : 'text-slate-700 hover:text-sky-500 dark:text-gray-200 dark:hover:text-sky-400'
-              "
-            >
-              Sponsor
-              <span class="ml-1 text-red-500"> ❤</span>
-            </router-link>
             <base-reader-mode />
           </div>
 

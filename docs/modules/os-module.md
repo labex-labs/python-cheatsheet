@@ -1,17 +1,17 @@
 ---
-title: Python Os Module - Python Cheatsheet
+title: Python OS Module - Python Cheatsheet
 description: This module provides a portable way of using operating system dependent functionality.
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
-Python Os Module
+Python OS Module
 </base-title>
 
 This module provides a portable way of using operating system dependent functionality.
 
 <base-disclaimer>
   <base-disclaimer-title>
-    Pathlib vs Os Module
+    Pathlib vs OS Module
   </base-disclaimer-title>
   <base-disclaimer-content>
     The <router-link to="/modules/pathlib-module">pathlib</router-link> module provides a lot more functionality than the ones listed here, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. See the <a target="_blank" href="https://docs.python.org/3/library/pathlib.html">official documentation</a> if you intend to know more.

@@ -1,7 +1,6 @@
 @import './markdown.css';
 @import './fonts.css';
 @import './docsearch.css';
-@import './carbon.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

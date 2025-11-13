@@ -14,7 +14,7 @@ One is the <router-link to="/modules/os-module">os.path</router-link> module and
 
 <base-disclaimer>
   <base-disclaimer-title>
-    Pathlib vs Os Module
+    Pathlib vs OS Module
   </base-disclaimer-title>
   <base-disclaimer-content>
     <code>pathlib</code> provides a lot more functionality than the ones listed above, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. See the <a target="_blank" href="https://docs.python.org/3/library/pathlib.html">official documentation</a> if you intend to know more.
