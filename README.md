@@ -1,3 +1,7 @@
+> 🔥 LabEx Black Friday 2025 Best Price of The Year｜[**Get 50% OFF Now →**](https://labex.io/pricing)
+
+---
+
 <p align="center">
 <img height="70" src="public/android-chrome-192x192.png">
 </p>
