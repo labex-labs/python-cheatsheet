@@ -73,6 +73,17 @@ const smAndLarger = breakpoints.greater('sm')
 
     <prose>
       <p>
+        Based on the book
+        <a
+          href="https://automatetheboringstuff.com/"
+          target="_blank"
+          rel="nofollow noreferrer"
+        >
+          Automate the Boring Stuff with Python
+        </a>
+        and many other sources.
+      </p>
+      <p>
         Anyone can forget how to
         <router-link
           to="/cheatsheet/regular-expressions#making-your-own-character-classes"
