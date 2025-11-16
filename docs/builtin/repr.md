@@ -28,11 +28,11 @@ This is different from <router-link to="/builtin/str">str()</router-link>, which
 import datetime
 
 # For a string, repr() adds quotes
-print(repr("hello"))  # Output: "'hello'"
+print(repr("hello"))
 
 # For a datetime object, it's unambiguous
 now = datetime.datetime.now()
-print(repr(now))  # Output: e.g., 'datetime.datetime(2023, 10, 27, 10, 0, 0, 123456)'
+print(repr(now))
 
 # You can define __repr__ for your own classes
 class Person:
@@ -43,7 +43,15 @@ class Person:
         return f"Person(name='{self.name}')"
 
 p = Person("John")
-print(repr(p))  # Output: "Person(name='John')"
+print(repr(p))
+```
+
+Output:
+
+```plaintext
+'hello'
+datetime.datetime(2023, 10, 27, 10, 0, 0, 123456)
+Person(name='John')
 ```
 
 ## Relevant links

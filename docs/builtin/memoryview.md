@@ -32,13 +32,22 @@ data = bytearray(b'hello world')
 view = memoryview(data)
 
 # Access the data through the view
-print(view[0])         # Output: 104 (ASCII for 'h')
-print(view[6:11])      # Output: <memory at ...> (a slice of the memory)
-print(view[6:11].tobytes()) # Output: b'world'
+print(view[0])  # ASCII for 'h'
+print(view[6:11])  # a slice of the memory
+print(view[6:11].tobytes())
 
 # You can also modify the underlying data through the view
-view[0] = 72 # ASCII for 'H'
-print(data)    # Output: bytearray(b'Hello world')
+view[0] = 72  # ASCII for 'H'
+print(data)
+```
+
+Output:
+
+```plaintext
+104
+<memory at 0x...>
+b'world'
+bytearray(b'Hello world')
 ```
 
 ## Relevant links

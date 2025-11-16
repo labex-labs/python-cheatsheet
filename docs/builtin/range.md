@@ -26,95 +26,139 @@ Ranges do support negative indices, but these are interpreted as indexing from t
 
 ***The advantage of the range type over a regular <router-link to="/builtin/list">list</router-link> or <router-link to="/builtin/tuple">tuple</router-link> is that a range object will always take the same (small) amount of memory, no matter the size of the range it represents
 
-## Input Parameters:
+## Input Parameters
 
 Ranges implement all of the common sequence operations except concatenation and repetition (due to the fact that range objects can only represent sequences that follow a strict pattern and repetition and concatenation will usually violate that pattern).
 
 `start`:
+
 - The value of the start parameter
 - If not supplied, parameter will default to 0
 - Parameter value is _inclusive_
 
 `stop`
+
 - The value of the stop parameter
 - The only parameter that is required
 - Parameter value is _exclusive_
 
 `step`
+
 - The value of the step parameter
 - If not supplied, parameter will default to 1
 
 ## Examples
 
 Range with only `stop` parameter specified
+
 ```python
->>> for i in range(5):
-...     print(i)
-# 0
-# 1
-# 2
-# 3
-# 4
+for i in range(5):
+    print(i)
+```
+
+Output:
+
+```plaintext
+0
+1
+2
+3
+4
 ```
 
 Range with both `start` and `stop` parameters
+
 ```python
->>> for i in range(1,8):
-...     print(i)
-# 1
-# 2
-# 3
-# 4
-# 5
-# 6
-# 7
+for i in range(1, 8):
+    print(i)
+```
+
+Output:
+
+```plaintext
+1
+2
+3
+4
+5
+6
+7
 ```
 
 Range with all parameters specified
+
 ```python
->>> for i in range(0,30,5):
-...     print(i)
-# 0
-# 5
-# 10
-# 15
-# 20
-# 25
+for i in range(0, 30, 5):
+    print(i)
+```
+
+Output:
+
+```plaintext
+0
+5
+10
+15
+20
+25
 ```
 
 Range with all parameters, where the `stop` parameter is not divisible by the `step` parameter
+
 ```python
->>> for i in range(0,10,3):
-...     print(i)
-# 0
-# 3
-# 6
-# 9
+for i in range(0, 10, 3):
+    print(i)
+```
+
+Output:
+
+```plaintext
+0
+3
+6
+9
 ```
 
 Range with all parameters, where the `stop` and `step` parameters are negative
+
 ```python
->>> for i in range(0,-6,-1):
-...     print(i)
-# 0
-# -1
-# -2
-# -3
-# -4
-# -5
+for i in range(0, -6, -1):
+    print(i)
+```
+
+Output:
+
+```plaintext
+0
+-1
+-2
+-3
+-4
+-5
 ```
 
 Two examples where the `stop` parameter is set to 0
+
 ```python
->>> for i in range(0):
-...     print(i)
-#
+for i in range(0):
+    print(i)
+```
+
+Output:
+
+```plaintext
+(no output)
 ```
 
 ```python
->>> for i in range(1,0):
-...     print(i)
-#
+for i in range(1, 0):
+    print(i)
+```
+
+Output:
+
+```plaintext
+(no output)
 ```
 
 ## Relevant links

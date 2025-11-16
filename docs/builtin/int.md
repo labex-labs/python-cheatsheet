@@ -23,23 +23,42 @@ The `int()` function in Python is a built-in function that allows you to convert
 ## Examples
 
 ```python
->>> # transform a string to an integer
->>> from_integer = int('29')
->>> from_integer
-# 29
->>> type(from_integer)
-# <class 'int'>
+# transform a string to an integer
+from_integer = int('29')
+print(from_integer)
+print(type(from_integer))
+```
 
->>> # transform a float to integer
->>> from_float = int(-3.14)
->>> from_float
-# -3
->>> type(from_float)
-# <class 'int'>
+Output:
 
->>> # return an empty string
->>> int()
-# 0
+```plaintext
+29
+<class 'int'>
+```
+
+```python
+# transform a float to integer
+from_float = int(-3.14)
+print(from_float)
+print(type(from_float))
+```
+
+Output:
+
+```plaintext
+-3
+<class 'int'>
+```
+
+```python
+# return 0 if no arguments are given
+int()
+```
+
+Output:
+
+```plaintext
+0
 ```
 
 ## Relevant links

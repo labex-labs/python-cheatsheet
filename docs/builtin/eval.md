@@ -23,15 +23,34 @@ The `eval()` function in Python is a built-in function that parses a string as a
 ## Examples
 
 ```python
->>> eval('1 + 4')
-# 5
+eval('1 + 4')
+```
 
->>> eval('print("Hello World!")')
-# Hello World!
+Output:
 
->>> x = 10
->>> eval('x == 10')
-# True
+```plaintext
+5
+```
+
+```python
+eval('print("Hello World!")')
+```
+
+Output:
+
+```plaintext
+Hello World!
+```
+
+```python
+x = 10
+eval('x == 10')
+```
+
+Output:
+
+```plaintext
+True
 ```
 
 The `eval()` function can also be used with the <router-link to="/builtin/print">print()</router-link> function to display output to the console.

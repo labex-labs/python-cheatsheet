@@ -25,10 +25,13 @@ The `getattr()` function in Python is a built-in function that allows you to acc
 ```python
 getattr(object, name)
 ```
+
 or
+
 ```python
 getattr(object, name, default)
 ```
+
 -`object`: The object whose attribute you want to access.
 
 -`name`: The name of the attribute you want to retrieve.
@@ -47,10 +50,16 @@ obj = Example()
 # Using getattr to access the attribute
 value = getattr(obj, 'attribute', 'Nothing found')
 
-print(value)  # Output: Hello, World!
-
-# If the 'attribute' does not exist then 'Nothing found' will be printed.
+print(value)
 ```
+
+Output:
+
+```plaintext
+Hello, World!
+```
+
+Note: If the 'attribute' does not exist then 'Nothing found' will be printed.
 
 ## Relevant links
 
@@ -59,5 +68,3 @@ print(value)  # Output: Hello, World!
 - <router-link :to="'/builtin/setattr'">`setattr()`</router-link>
 - <router-link :to="'/cheatsheet/oop-basics'">OOP Basics</router-link>
 - <router-link :to="'/builtin/dir'">`dir()`</router-link>
-
-

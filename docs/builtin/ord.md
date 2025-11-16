@@ -24,10 +24,19 @@ The `ord()` function is the inverse of <router-link to="/builtin/chr">chr()</rou
 
 ```python
 # Get the Unicode code point of a character
-print(ord('A'))  # Output: 65
-print(ord('€'))  # Output: 8364
-print(ord('1'))  # Output: 49
-print(ord('a'))  # Output: 97
+print(ord('A'))
+print(ord('€'))
+print(ord('1'))
+print(ord('a'))
+```
+
+Output:
+
+```plaintext
+65
+8364
+49
+97
 ```
 
 ## Relevant links

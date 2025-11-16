@@ -23,43 +23,55 @@ The `bool()` function in Python is a built-in function that converts a value to 
 ## Examples
 
 ### Falsy Values
+
 These values are considered `False`:
 
 ```python
->>> bool(False)
-# False
->>> bool(None)
-# False
->>> bool(0)
-# False
->>> bool(0.0)
-# False
->>> bool('')      # empty string
-# False
->>> bool([])      # empty list
-# False
->>> bool({})      # empty dict
-# False
->>> bool(set())   # empty set
-# False
+bool(False)
+bool(None)
+bool(0)
+bool(0.0)
+bool('')      # empty string
+bool([])      # empty list
+bool({})      # empty dict
+bool(set())   # empty set
+```
+
+Output:
+
+```plaintext
+False
+False
+False
+False
+False
+False
+False
+False
 ```
 
 ### Truthy Values
+
 Most other values are considered `True`:
 
 ```python
->>> bool(True)
-# True
->>> bool(1)
-# True
->>> bool(-1)
-# True
->>> bool('hello')
-# True
->>> bool([1, 2])
-# True
->>> bool({'a': 1})
-# True
+bool(True)
+bool(1)
+bool(-1)
+bool('hello')
+bool([1, 2])
+bool({'a': 1})
+```
+
+Output:
+
+```plaintext
+True
+True
+True
+True
+True
+True
 ```
 
 ## Relevant links

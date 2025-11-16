@@ -24,16 +24,21 @@ The `any()` function in Python is a built-in function that checks if at least on
 
 ```python
 # All values are falsy
->>> any([0, '', False])
-# False
+any([0, '', False])
 
 # Contains one truthy value (2)
->>> any([0, 2, False])
-# True
+any([0, 2, False])
 
 # An empty iterable is considered False
->>> any([])
-# False
+any([])
+```
+
+Output:
+
+```plaintext
+False
+True
+False
 ```
 
 ## Relevant links

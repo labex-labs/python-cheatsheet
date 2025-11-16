@@ -30,8 +30,12 @@ def my_function(arg1, arg2):
     print(locals())
 
 my_function("hello", "world")
-# Output will be something like:
-# {'arg1': 'hello', 'arg2': 'world', 'local_var': 'I am local'}
+```
+
+Output:
+
+```plaintext
+{'arg1': 'hello', 'arg2': 'world', 'local_var': 'I am local'}
 ```
 
 ## Relevant links

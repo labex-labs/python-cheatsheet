@@ -23,10 +23,15 @@ In Python, the `bytes` type is an immutable sequence of single bytes. It represe
 You can create a bytes object in several ways. One way is to use the `bytes()` constructor and pass it a string, a bytearray object, or a bytes object. For example:
 
 ```python
->>> data = "Hello, World!"
->>> bytes_obj = bytes(data, "utf-8")
->>> print(bytes_obj)
-# b'Hello, World!'
+data = "Hello, World!"
+bytes_obj = bytes(data, "utf-8")
+print(bytes_obj)
+```
+
+Output:
+
+```plaintext
+b'Hello, World!'
 ```
 
 Another way is to use a literal notation prefixing the string with `b` or `B`:
@@ -34,7 +39,12 @@ Another way is to use a literal notation prefixing the string with `b` or `B`:
 ```python
 data = b"Hello, World!"
 print(data)
-# b'Hello, World!'
+```
+
+Output:
+
+```plaintext
+b'Hello, World!'
 ```
 
 ## Relevant links

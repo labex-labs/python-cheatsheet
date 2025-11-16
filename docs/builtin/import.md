@@ -29,7 +29,13 @@ Here's how you could use `__import__()` to dynamically import the `math` module:
 math_module = __import__('math')
 
 # Now you can use it like a regular import
-print(math_module.sqrt(4))  # Output: 2.0
+print(math_module.sqrt(4))
+```
+
+Output:
+
+```plaintext
+2.0
 ```
 
 However, the recommended way using `importlib` is:
@@ -38,7 +44,13 @@ However, the recommended way using `importlib` is:
 import importlib
 
 math_module = importlib.import_module('math')
-print(math_module.sqrt(4)) # Output: 2.0
+print(math_module.sqrt(4))
+```
+
+Output:
+
+```plaintext
+2.0
 ```
 
 ## Relevant links

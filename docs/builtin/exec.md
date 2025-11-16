@@ -21,6 +21,7 @@ Python exec() built-in function
 The `exec()` function in Python is a built-in function that allows you to dynamically execute Python code stored in a string. This can be very powerful for scenarios where you want to execute code provided by users, generate and run code at runtime, or even build mini interpreters or scripting environments within your application. However, it should be used with caution as it can potentially introduce security risks if not handled properly.
 
 ## Syntax
+
 ```python
 exec(object[, globals[, locals]])
 ```
@@ -30,51 +31,80 @@ exec(object[, globals[, locals]])
 - `locals` (optional): A dictionary representing the local namespace. If not provided, it uses the current local namespace.
 
 ## Basic Usage
+
 ```python
 code_to_execute = "print('Hello, exec()!')"
 exec(code_to_execute)
-# Output: Hello, exec()!
+```
+
+Output:
+
+```plaintext
+Hello, exec()!
 ```
 
 The `exec()` function can also be used with the <router-link to="/builtin/print">print()</router-link> function to display output to the console.
 
 ## Executing Multiple Statements
+
 ```python
 code = """
 for i in range(5):
     print(i)
 """
 exec(code)
-# Output: 0
-#         1
-#         2
-#         3
-#         4
+```
+
+Output:
+
+```plaintext
+0
+1
+2
+3
+4
 ```
 
 In this example, the `exec()` function is used to execute a for loop that iterates over a <router-link to="/builtin/range">range</router-link> of numbers and <router-link to="/builtin/print">prints</router-link> each number to the console.
 
 ## Modifying Variables
+
 ```python
 x = 10
 code = "x += 5"
 exec(code)
-print(x)  # Output: 15
+print(x)
+```
+
+Output:
+
+```plaintext
+15
 ```
 
 ## Using `globals` and `locals`
+
 ```python
 x = 5
 code = "x = x * 2"
 globals_dict = {"x": 10}
 locals_dict = {"x": 20}
 exec(code, globals_dict, locals_dict)
-print(x)             # Output: 5 (unchanged)
-print(globals_dict)  # Output: {'x': 10}
-print(locals_dict)   # Output: {'x': 40}
+print(x)
+print(globals_dict)
+print(locals_dict)
+```
+
+Output:
+
+```plaintext
+5
+{'x': 10}
+{'x': 40}
 ```
 
 ## Dynamic Function Creation
+
 ```python
 def create_dynamic_function(name, args):
     code = f"def {name}({', '.join(args)}): return sum({args})"
@@ -82,12 +112,19 @@ def create_dynamic_function(name, args):
 
 create_dynamic_function("add_numbers", ["a", "b", "c"])
 result = add_numbers(2, 3, 5)
-print(result)  # Output: 10
+print(result)
+```
+
+Output:
+
+```plaintext
+10
 ```
 
 In this example, the `exec()` function is used to create a dynamic function that takes a list of arguments and returns their <router-link to="/builtin/sum">sum</router-link>.
 
 ## Error Handling
+
 ```python
 code = """
 try:
@@ -96,10 +133,16 @@ except NameError as e:
     print(f"Error: {e}")
 """
 exec(code)
-# Output: Error: name 'undefined_variable' is not defined
+```
+
+Output:
+
+```plaintext
+Error: name 'undefined_variable' is not defined
 ```
 
 ## Security Note
+
 ```python
 user_input = input("Enter code to execute: ")
 exec(user_input)  # Caution: This can be a security risk if not properly sanitized.

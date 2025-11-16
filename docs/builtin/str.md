@@ -23,23 +23,42 @@ The `str()` function in Python is a built-in function that returns a string vers
 ## Examples
 
 ```python
->>> # transform an integer to a string
->>> from_integer = str(29)
->>> from_integer
-# '29'
->>> type(from_integer)
-# <class 'str'>
+# transform an integer to a string
+from_integer = str(29)
+print(from_integer)
+print(type(from_integer))
+```
 
->>> # transform a float to string
->>> from_float = str(-3.14)
->>> from_float
-# '-3.14'
->>> type(from_float)
-# <class 'str'>
+Output:
 
->>> # return an empty string
->>> str()
-# ''
+```plaintext
+29
+<class 'str'>
+```
+
+```python
+# transform a float to string
+from_float = str(-3.14)
+print(from_float)
+print(type(from_float))
+```
+
+Output:
+
+```plaintext
+-3.14
+<class 'str'>
+```
+
+```python
+# return an empty string
+str()
+```
+
+Output:
+
+```plaintext
+''
 ```
 
 ## Relevant links

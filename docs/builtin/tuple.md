@@ -28,7 +28,13 @@ The `tuple()` constructor can be used to create an empty tuple or to convert an 
 
 ```python
 empty_tuple = tuple()
-print(empty_tuple)  # Output: ()
+print(empty_tuple)
+```
+
+Output:
+
+```plaintext
+()
 ```
 
 **Create a tuple from a list:**
@@ -36,7 +42,13 @@ print(empty_tuple)  # Output: ()
 ```python
 my_list = [1, 2, 3]
 my_tuple = tuple(my_list)
-print(my_tuple)  # Output: (1, 2, 3)
+print(my_tuple)
+```
+
+Output:
+
+```plaintext
+(1, 2, 3)
 ```
 
 ## Relevant links

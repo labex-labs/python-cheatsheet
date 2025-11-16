@@ -23,26 +23,36 @@ Python pow() built-in function
 
 The `pow()` function is used for exponentiation. It can take two or three arguments.
 
-*   `pow(base, exp)`: This is equivalent to `base ** exp`.
-*   `pow(base, exp, mod)`: This is equivalent to `(base ** exp) % mod`, but is more efficient. This is useful for modular arithmetic.
+* `pow(base, exp)`: This is equivalent to `base ** exp`.
+* `pow(base, exp, mod)`: This is equivalent to `(base ** exp) % mod`, but is more efficient. This is useful for modular arithmetic.
 
 ### Examples
 
 ```python
 # Using two arguments (base ** exp)
-print(pow(2, 3))    # Output: 8
-print(pow(3, 2))    # Output: 9
-print(pow(2, -3))   # Output: 0.125 (equivalent to 1 / (2**3))
+print(pow(2, 3))
+print(pow(3, 2))
+print(pow(2, -3))  # equivalent to 1 / (2**3)
 
 # Using three arguments ((base ** exp) % mod)
-print(pow(3, 2, 4)) # Output: 1 (since 3**2 is 9, and 9 % 4 is 1)
-print(pow(2, 3, 5)) # Output: 3 (since 2**3 is 8, and 8 % 5 is 3)
+print(pow(3, 2, 4))  # since 3**2 is 9, and 9 % 4 is 1
+print(pow(2, 3, 5))  # since 2**3 is 8, and 8 % 5 is 3
+```
+
+Output:
+
+```plaintext
+8
+9
+0.125
+1
+3
 ```
 
 ## Relevant links
 
-- <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
-- <router-link to="/builtin/divmod">divmod()</router-link>
-- <router-link to="/builtin/abs">abs()</router-link>
-- <router-link to="/builtin/int">int()</router-link>
-- <router-link to="/builtin/float">float()</router-link>
+* <router-link to="/blog/python-data-types">Blog: Python Data Types</router-link>
+* <router-link to="/builtin/divmod">divmod()</router-link>
+* <router-link to="/builtin/abs">abs()</router-link>
+* <router-link to="/builtin/int">int()</router-link>
+* <router-link to="/builtin/float">float()</router-link>

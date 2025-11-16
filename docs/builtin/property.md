@@ -40,12 +40,16 @@ class Person:
 
 p = Person("John")
 print(p.name)  # This calls get_name()
-# Output:
-# Getting name
-# John
-
-# p.name = "Jane" # This would raise an AttributeError because there is no setter
 ```
+
+Output:
+
+```plaintext
+Getting name
+John
+```
+
+Note: `p.name = "Jane"` would raise an AttributeError because there is no setter.
 
 And here is the more common way to do it with the `@property` decorator:
 
@@ -61,9 +65,13 @@ class Person:
 
 p = Person("John")
 print(p.name)
-# Output:
-# Getting name
-# John
+```
+
+Output:
+
+```plaintext
+Getting name
+John
 ```
 
 ## Relevant links

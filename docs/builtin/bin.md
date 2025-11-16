@@ -26,12 +26,23 @@ Here are a few examples of how to use `bin()`:
 
 ```python
 # Convert integers to binary
-print(bin(2))    # Output: 0b10
-print(bin(7))    # Output: 0b111
-print(bin(1))    # Output: 0b1
-print(bin(10))   # Output: 0b1010
-print(bin(100))  # Output: 0b1100100
-print(bin(1000)) # Output: 0b1111101000
+print(bin(2))
+print(bin(7))
+print(bin(1))
+print(bin(10))
+print(bin(100))
+print(bin(1000))
+```
+
+Output:
+
+```plaintext
+0b10
+0b111
+0b1
+0b1010
+0b1100100
+0b1111101000
 ```
 
 ## Relevant links

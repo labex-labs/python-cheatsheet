@@ -81,6 +81,11 @@ watch(useRoute(), () => (isOpen.value = false))
                 :navigation="navigation.standardLibraryNavigation"
                 section-name="Standard Library"
               />
+
+              <the-sidebar-navigation
+                :navigation="navigation.builtinNavigation"
+                section-name="Built-in Functions"
+              />
             </nav>
           </nav>
         </DialogPanel>

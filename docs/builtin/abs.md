@@ -24,26 +24,31 @@ The `abs()` function in Python is a built-in function that returns the absolute 
 
 ```python
 # For integers
->>> abs(-1)
-# 1
->>> abs(0)
-# 0
+abs(-1)
+abs(0)
 
 # For floats
->>> abs(-3.14)
-# 3.14
+abs(-3.14)
 
 # For complex numbers (returns magnitude)
->>> abs(3 + 4j)
-# 5.0
+abs(3 + 4j)
 
 # For other number systems
->>> abs(0x10) # Hexadecimal
-# 16
->>> abs(0b10) # Binary
-# 2
->>> abs(0o20) # Octal
-# 16
+abs(0x10)  # Hexadecimal
+abs(0b10)  # Binary
+abs(0o20)  # Octal
+```
+
+Output:
+
+```plaintext
+1
+0
+3.14
+5.0
+16
+2
+16
 ```
 
 ## Relevant links

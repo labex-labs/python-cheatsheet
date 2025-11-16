@@ -25,10 +25,15 @@ The <router-link to="/builtin/float">float()</router-link> function returns a fl
 ## Examples
 
 ```python
->>> float('10')
-# 10.0
->>> float(10)
-# 10.0
+float('10')
+float(10)
+```
+
+Output:
+
+```plaintext
+10.0
+10.0
 ```
 
 ## Relevant links

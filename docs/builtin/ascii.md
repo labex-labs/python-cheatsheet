@@ -24,20 +24,25 @@ The `ascii()` function in Python is a built-in function that returns a string co
 
 ```python
 # For an ASCII character, it's the same as repr()
->>> ascii('A')
-# "'A'"
+ascii('A')
 
 # For a non-ASCII character, it gets escaped
->>> ascii('ë')
-# "'\\xeb'"
+ascii('ë')
 
 # For comparison, repr() would not escape it
->>> repr('ë')
-# "'ë'"
+repr('ë')
 
 # It works on iterables too
->>> ascii(['A', 'ë'])
-# "['A', '\\xeb']"
+ascii(['A', 'ë'])
+```
+
+Output:
+
+```plaintext
+'A'
+'\\xeb'
+'ë'
+['A', '\\xeb']
 ```
 
 ## Relevant links

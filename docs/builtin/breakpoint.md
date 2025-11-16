@@ -14,7 +14,7 @@ Python breakpoint() built-in function
   <base-disclaimer-content>
     This function drops you into the debugger at the call site [...].
     <br/>
-    Python breakpoint() calls Python debugger at a given line 
+    Python breakpoint() calls Python debugger at a given line
   </base-disclaimer-content>
 </base-disclaimer>
 
@@ -38,11 +38,15 @@ def calculate_sum(a, b):
 # To continue execution, type 'c' or 'continue'
 final_sum = calculate_sum(10, 20)
 print(final_sum)
+```
 
-# (Pdb) result
-# 30
-# (Pdb) c
-# 30
+Output:
+
+```plaintext
+(Pdb) result
+30
+(Pdb) c
+30
 ```
 
 ## Relevant links

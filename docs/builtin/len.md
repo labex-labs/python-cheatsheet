@@ -25,11 +25,15 @@ The `len()` function in Python is a built-in function that returns the number of
 Return the the number of items of an object:
 
 ```python
->>> len('hello')
-# 5
+len('hello')
+len(['cat', 3, 'dog'])
+```
 
->>> len(['cat', 3, 'dog'])
-# 3
+Output:
+
+```plaintext
+5
+3
 ```
 
 ## Test of emptiness
@@ -43,19 +47,22 @@ Return the the number of items of an object:
 </base-warning>
 
 ```python
->>> a = [1, 2, 3]
+a = [1, 2, 3]
 
 # bad
->>> if len(a) > 0:  # evaluates to True
-...     print("the list is not empty!")
-...
-# the list is not empty!
+if len(a) > 0:  # evaluates to True
+    print("the list is not empty!")
 
 # good
->>> if a: # evaluates to True
-...     print("the list is not empty!")
-...
-# the list is not empty!
+if a:  # evaluates to True
+    print("the list is not empty!")
+```
+
+Output:
+
+```plaintext
+the list is not empty!
+the list is not empty!
 ```
 
 ## Relevant links

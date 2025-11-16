@@ -30,34 +30,53 @@ You can also provide a default value to be returned if the iterator is exhausted
 my_list = [1, 2]
 my_iter = iter(my_list)
 
-print(next(my_iter))  # Output: 1
-print(next(my_iter))  # Output: 2
+print(next(my_iter))
+print(next(my_iter))
 
 try:
     print(next(my_iter))
 except StopIteration:
     print("Iterator is exhausted")
-# Output: Iterator is exhausted
+```
+
+Output:
+
+```plaintext
+1
+2
+Iterator is exhausted
 ```
 
 **Using `next()` with a default value:**
 
 ```python
 my_iter = iter([1])
-print(next(my_iter, "default")) # Output: 1
-print(next(my_iter, "default")) # Output: default
+print(next(my_iter, "default"))
+print(next(my_iter, "default"))
+```
+
+Output:
+
+```plaintext
+1
+default
 ```
 
 More examples:
 
 ```python
->>> i = iter([1, 2, 3])
->>> next(i)
-# 1
->>> next(i)
-# 2
->>> next(i)
-# 3
+i = iter([1, 2, 3])
+print(next(i))
+print(next(i))
+print(next(i))
+```
+
+Output:
+
+```plaintext
+1
+2
+3
 ```
 
 ## Relevant links

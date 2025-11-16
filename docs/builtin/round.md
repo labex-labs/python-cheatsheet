@@ -26,15 +26,25 @@ Note that `round()` uses "round half to even" for numbers ending in .5, which me
 
 ```python
 # Round to the nearest integer
-print(round(3.14))   # Output: 3
-print(round(3.8))    # Output: 4
+print(round(3.14))
+print(round(3.8))
 
 # Round to a specified number of decimal places
-print(round(3.14159, 2)) # Output: 3.14
+print(round(3.14159, 2))
 
 # "Round half to even"
-print(round(2.5)) # Output: 2
-print(round(3.5)) # Output: 4
+print(round(2.5))
+print(round(3.5))
+```
+
+Output:
+
+```plaintext
+3
+4
+3.14
+2
+4
 ```
 
 ## Relevant links

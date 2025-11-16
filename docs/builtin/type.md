@@ -23,26 +23,25 @@ The `type()` function in Python is a built-in function that returns the type of 
 ## Examples
 
 ```python
->>> type('span')
-# <class 'str'>
+type('span')
+type(99)
+type(1.1)
+type([1, 2])
+type((1, 2))
+type({1, 2})
+type({'a': 1, 'b': 2})
+```
 
->>> type(99)
-# <class 'int'>
+Output:
 
->>> type(1.1)
-# <class 'float'>
-
->>> type([1, 2])
-# <class 'list'>
-
->>> type((1, 2))
-# <class 'tuple'>
-
->>> type({1, 2})
-# <class 'set'>
-
->>> type({'a': 1, 'b': 2})
-# <class 'dict'>
+```plaintext
+<class 'str'>
+<class 'int'>
+<class 'float'>
+<class 'list'>
+<class 'tuple'>
+<class 'set'>
+<class 'dict'>
 ```
 
 ## Relevant links

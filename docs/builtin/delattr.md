@@ -39,9 +39,16 @@ class Person:
     age = 30
 
 person = Person()
-print(person.__dict__)  # Output: {'name': 'John', 'age': 30}
+print(person.__dict__)
 delattr(person, "age")
-print(person.__dict__)  # Output: {'name': 'John'}
+print(person.__dict__)
+```
+
+Output:
+
+```plaintext
+{'name': 'John', 'age': 30}
+{'name': 'John'}
 ```
 
 ### Deleting a non-existent attribute
@@ -55,6 +62,12 @@ try:
     delattr(person, "age")
 except AttributeError as e:
     print(f"Error: {e}")
+```
+
+Output:
+
+```plaintext
+Error: age
 ```
 
 ## Relevant links

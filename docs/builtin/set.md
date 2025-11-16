@@ -26,7 +26,13 @@ The `set()` constructor creates a new set. A set is an unordered collection of u
 
 ```python
 my_set = set()
-print(my_set)  # Output: set()
+print(my_set)
+```
+
+Output:
+
+```plaintext
+set()
 ```
 
 **Create a set from a list (duplicates are removed):**
@@ -34,7 +40,13 @@ print(my_set)  # Output: set()
 ```python
 my_list = [1, 2, 2, 3, 3, 3]
 my_set = set(my_list)
-print(my_set)  # Output: {1, 2, 3}
+print(my_set)
+```
+
+Output:
+
+```plaintext
+{1, 2, 3}
 ```
 
 ## Relevant links

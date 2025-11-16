@@ -31,13 +31,20 @@ global_var = "I am global"
 def my_function():
     # Access global variables using globals()
     global_dict = globals()
-    print(global_dict["global_var"])  # Output: I am global
+    print(global_dict["global_var"])
 
     # Modify a global variable
     global_dict["global_var"] = "Modified global"
 
 my_function()
-print(global_var)  # Output: Modified global
+print(global_var)
+```
+
+Output:
+
+```plaintext
+I am global
+Modified global
 ```
 
 You can also use `globals()` to create new global variables from within a function:
@@ -47,7 +54,13 @@ def create_global():
     globals()["new_global"] = "This was created dynamically"
 
 create_global()
-print(new_global)  # Output: This was created dynamically
+print(new_global)
+```
+
+Output:
+
+```plaintext
+This was created dynamically
 ```
 
 ## Relevant links

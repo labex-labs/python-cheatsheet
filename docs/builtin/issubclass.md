@@ -29,8 +29,15 @@ class First:
 class Second(First):
     pass
 
-print(issubclass(Second, First))  # True
-print(issubclass(First, Second)) # False
+print(issubclass(Second, First))
+print(issubclass(First, Second))
+```
+
+Output:
+
+```plaintext
+True
+False
 ```
 
 ## Relevant links

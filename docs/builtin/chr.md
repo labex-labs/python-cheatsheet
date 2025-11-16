@@ -23,23 +23,33 @@ The `chr()` function in Python is a built-in function that takes an integer as a
 The integer passed to the `chr()` function should be in the range of 0 to 65535, which corresponds to the range of valid Unicode characters.
 
 ```python
->>> print(chr(97))
-# 'a'
->>> print(chr(65))
-# 'A'
->>> print(chr(120))
-# 'x'
+print(chr(97))
+print(chr(65))
+print(chr(120))
+```
+
+Output:
+
+```plaintext
+a
+A
+x
 ```
 
 The `chr()` function is the inverse of the `ord()` function, which takes a single character as an argument and returns the corresponding integer.
 
 ```python
 print(ord('a'))
-# 97
 print(ord('A'))
-# 65
 print(ord('x'))
-# 120
+```
+
+Output:
+
+```plaintext
+97
+65
+120
 ```
 
 The `chr()` function can be useful when working with text and character data, particularly when working with Unicode characters. For example, you can use it to convert an integer representing a Unicode code point to the corresponding character, or to generate a string of characters from a range of integers.

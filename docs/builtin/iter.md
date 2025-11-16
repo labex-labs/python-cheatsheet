@@ -30,23 +30,34 @@ You can use `iter()` to get an iterator from any iterable object, like a list, t
 my_list = [1, 2, 3]
 my_iter = iter(my_list)
 
-print(next(my_iter))  # Output: 1
-print(next(my_iter))  # Output: 2
-print(next(my_iter))  # Output: 3
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
 ```
 
+Output:
 
+```plaintext
+1
+2
+3
+```
 
 ```python
->>> i = iter([1, 2, 3])
->>> i
-# <list_iterator object at 0x7f93158badc0>
->>> i.__next__()
-# 1
->>> i.__next__()
-# 2
->>> i.__next__()
-# 3
+i = iter([1, 2, 3])
+print(i)
+print(i.__next__())
+print(i.__next__())
+print(i.__next__())
+```
+
+Output:
+
+```plaintext
+<list_iterator object at 0x7f93158badc0>
+1
+2
+3
 ```
 
 ## Relevant links

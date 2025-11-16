@@ -24,13 +24,21 @@ The `complex()` function creates a complex number. It can take a real and an ima
 
 ```python
 # Create a complex number with real and imaginary parts
-print(complex(3, 4))  # Output: (3+4j)
+print(complex(3, 4))
 
 # Create a complex number with only a real part
-print(complex(5))     # Output: (5+0j)
+print(complex(5))
 
 # Create a complex number from a string
-print(complex("2+3j")) # Output: (2+3j)
+print(complex("2+3j"))
+```
+
+Output:
+
+```plaintext
+(3+4j)
+(5+0j)
+(2+3j)
 ```
 
 ## Relevant links

@@ -29,7 +29,13 @@ You can also use the `reverse` parameter to sort in descending order.
 ```python
 numbers = [3, 1, 4, 1, 5, 9, 2, 6]
 sorted_numbers = sorted(numbers)
-print(sorted_numbers)  # Output: [1, 1, 2, 3, 4, 5, 6, 9]
+print(sorted_numbers)
+```
+
+Output:
+
+```plaintext
+[1, 1, 2, 3, 4, 5, 6, 9]
 ```
 
 **Sorting a list of strings:**
@@ -37,7 +43,13 @@ print(sorted_numbers)  # Output: [1, 1, 2, 3, 4, 5, 6, 9]
 ```python
 words = ["banana", "apple", "cherry"]
 sorted_words = sorted(words)
-print(sorted_words)  # Output: ['apple', 'banana', 'cherry']
+print(sorted_words)
+```
+
+Output:
+
+```plaintext
+['apple', 'banana', 'cherry']
 ```
 
 **Sorting in reverse order:**
@@ -45,7 +57,13 @@ print(sorted_words)  # Output: ['apple', 'banana', 'cherry']
 ```python
 numbers = [3, 1, 4, 1, 5, 9, 2, 6]
 sorted_numbers_desc = sorted(numbers, reverse=True)
-print(sorted_numbers_desc) # Output: [9, 6, 5, 4, 3, 2, 1, 1]
+print(sorted_numbers_desc)
+```
+
+Output:
+
+```plaintext
+[9, 6, 5, 4, 3, 2, 1, 1]
 ```
 
 ## Relevant links

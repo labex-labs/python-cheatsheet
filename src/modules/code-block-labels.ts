@@ -3,13 +3,29 @@ import { type UserModule } from '~/types'
 export const install: UserModule = ({ router }) => {
   if (typeof window === 'undefined') return
 
-  // Extract language from class name and set data-language attribute
+  // Copy code to clipboard
+  const copyToClipboard = async (text: string, button: HTMLElement) => {
+    try {
+      await navigator.clipboard.writeText(text)
+      const originalText = button.textContent
+      button.textContent = 'Copied'
+      button.classList.add('copied')
+      setTimeout(() => {
+        button.textContent = originalText
+        button.classList.remove('copied')
+      }, 2000)
+    } catch (err) {
+      console.error('Failed to copy:', err)
+    }
+  }
+
+  // Extract language from class name and create header with label and copy button
   const setCodeBlockLabels = () => {
     const codeBlocks = document.querySelectorAll('.prose pre[class*="language-"]')
 
     codeBlocks.forEach((pre) => {
       // Skip if already processed
-      if (pre.hasAttribute('data-language')) return
+      if (pre.querySelector('.code-block-header')) return
 
       const classList = Array.from(pre.classList)
       const languageClass = classList.find(cls => cls.startsWith('language-'))
@@ -18,6 +34,35 @@ export const install: UserModule = ({ router }) => {
         const language = languageClass.replace('language-', '').trim()
         if (language) {
           pre.setAttribute('data-language', language)
+
+          // Get code content
+          const codeElement = pre.querySelector('code')
+          const codeText = codeElement?.textContent || ''
+
+          // Create header element
+          const header = document.createElement('div')
+          header.className = 'code-block-header'
+
+          // Create language label
+          const label = document.createElement('span')
+          label.className = 'code-block-label'
+          label.textContent = language
+
+          // Create copy button
+          const copyButton = document.createElement('button')
+          copyButton.className = 'code-block-copy-button'
+          copyButton.setAttribute('aria-label', 'Copy code')
+          copyButton.textContent = 'Copy'
+          copyButton.addEventListener('click', () => {
+            copyToClipboard(codeText, copyButton)
+          })
+
+          // Append label and button to header
+          header.appendChild(label)
+          header.appendChild(copyButton)
+
+          // Insert header at the beginning of pre element
+          pre.insertBefore(header, pre.firstChild)
         }
       }
     })

@@ -29,11 +29,16 @@ While you can create `object` instances, it's not something you'll do often in d
 o = object()
 
 # See its type
-print(type(o))  # Output: <class 'object'>
-
-# It has no attributes you can set
-# o.name = "test" # This would raise an AttributeError
+print(type(o))
 ```
+
+Output:
+
+```plaintext
+<class 'object'>
+```
+
+Note: It has no attributes you can set. `o.name = "test"` would raise an AttributeError.
 
 ## Relevant links
 

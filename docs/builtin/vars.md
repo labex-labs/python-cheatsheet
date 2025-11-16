@@ -34,7 +34,12 @@ class Person:
 
 my_person = Person("Dwight", 35)
 print(vars(my_person))
-# Output: {'name': 'Dwight', 'age': 35}
+```
+
+Output:
+
+```plaintext
+{'name': 'Dwight', 'age': 35}
 ```
 
 **Using `vars()` with no arguments:**
@@ -44,7 +49,13 @@ def my_function():
     x = 10
     print(vars())
 
-my_function() # Output: {'x': 10}
+my_function()
+```
+
+Output:
+
+```plaintext
+{'x': 10}
 ```
 
 ## Relevant links

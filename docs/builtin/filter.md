@@ -36,13 +36,18 @@ The `filter()` function constructs an iterator from those elements of the iterab
 ## Example
 
 ```python
->>> def is_even(num):
-...     return num % 2 == 0
-...
->>> numbers = [1, 2, 3, 4, 5, 6]
->>> even_numbers = list(filter(is_even, numbers))
->>> print(even_numbers)
->>> [2, 4, 6]
+def is_even(num):
+    return num % 2 == 0
+
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = list(filter(is_even, numbers))
+print(even_numbers)
+```
+
+Output:
+
+```plaintext
+[2, 4, 6]
 ```
 
 In this example, the `is_even` function is defined to determine whether a number is even or not. The filter method takes `two arguments`: the `first argument` is the function to apply to each element of the list, and the `second argument` is the list to be filtered. The filter method returns an <router-link to="/builtin/iter">iterator</router-link>, which is then converted to a list and stored in the even_numbers variable. The final output is the list of even numbers from the original list.

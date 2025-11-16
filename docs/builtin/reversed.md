@@ -27,7 +27,13 @@ To get a reversed list, you can convert the iterator to a list:
 ```python
 my_list = [1, 2, 3, 4, 5]
 reversed_list = list(reversed(my_list))
-print(reversed_list)  # Output: [5, 4, 3, 2, 1]
+print(reversed_list)
+```
+
+Output:
+
+```plaintext
+[5, 4, 3, 2, 1]
 ```
 
 You can also iterate over it directly in a `for` loop:
@@ -35,24 +41,33 @@ You can also iterate over it directly in a `for` loop:
 ```python
 for char in reversed("hello"):
     print(char)
-# Output:
-# o
-# l
-# l
-# e
-# h
+```
+
+Output:
+
+```plaintext
+o
+l
+l
+e
+h
 ```
 
 Here is another example demonstrating the iterator behavior:
 
 ```python
->>> i = reversed([1, 2, 3])
->>> next(i)
-# 3
->>> next(i)
-# 2
->>> next(i)
-# 1
+i = reversed([1, 2, 3])
+print(next(i))
+print(next(i))
+print(next(i))
+```
+
+Output:
+
+```plaintext
+3
+2
+1
 ```
 
 ## Relevant links

@@ -24,20 +24,25 @@ The `all()` function in Python is a built-in function that checks if all element
 
 ```python
 # All values are truthy
->>> all([1, 2, 3])
-# True
+all([1, 2, 3])
 
 # Contains a falsy value (0)
->>> all([1, 0, 3])
-# False
+all([1, 0, 3])
 
 # Contains a falsy value (empty string)
->>> all(['a', '', 'c'])
-# False
+all(['a', '', 'c'])
 
 # An empty iterable is considered True
->>> all([])
-# True
+all([])
+```
+
+Output:
+
+```plaintext
+True
+False
+False
+True
 ```
 
 ## Relevant links

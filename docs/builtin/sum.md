@@ -26,14 +26,26 @@ The `sum()` function calculates the sum of all items in an iterable (like a list
 
 ```python
 numbers = [1, 2, 3, 4, 5]
-print(sum(numbers))  # Output: 15
+print(sum(numbers))
+```
+
+Output:
+
+```plaintext
+15
 ```
 
 **Summing with a starting value:**
 
 ```python
 numbers = [1, 2, 3]
-print(sum(numbers, 10))  # Output: 16 (10 + 1 + 2 + 3)
+print(sum(numbers, 10))  # 10 + 1 + 2 + 3
+```
+
+Output:
+
+```plaintext
+16
 ```
 
 ## Relevant links

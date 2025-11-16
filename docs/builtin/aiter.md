@@ -52,11 +52,14 @@ async def main():
 
 # To run this in a real environment:
 # asyncio.run(main())
-#
-# Output:
-# 0
-# 1
-# 2
+```
+
+Output:
+
+```plaintext
+0
+1
+2
 ```
 
 ## Relevant links

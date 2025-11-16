@@ -26,18 +26,37 @@ The `bytearray()` function returns a new array of bytes. This object is a mutabl
 # Create a bytearray from a string with a specific encoding
 ba1 = bytearray("hello", "utf-8")
 print(ba1)
-# bytearray(b'hello')
+```
 
+Output:
+
+```plaintext
+bytearray(b'hello')
+```
+
+```python
 # Create a bytearray from a list of integers
 ba2 = bytearray([72, 101, 108, 108, 111])
 print(ba2)
-# bytearray(b'Hello')
+```
 
+Output:
+
+```plaintext
+bytearray(b'Hello')
+```
+
+```python
 # Modify a bytearray (it's mutable)
 ba2[0] = 104  # ASCII for 'h'
-ba2.append(33) # ASCII for '!'
+ba2.append(33)  # ASCII for '!'
 print(ba2)
-# bytearray(b'hello!')
+```
+
+Output:
+
+```plaintext
+bytearray(b'hello!')
 ```
 
 ## Relevant links

@@ -26,11 +26,21 @@ Here are a few examples of how to use `oct()`:
 
 ```python
 # Convert integers to octal
-print(oct(8))    # Output: 0o10
-print(oct(10))   # Output: 0o12
-print(oct(100))  # Output: 0o144
-print(oct(1))    # Output: 0o1
-print(oct(1000)) # Output: 0o1750
+print(oct(8))
+print(oct(10))
+print(oct(100))
+print(oct(1))
+print(oct(1000))
+```
+
+Output:
+
+```plaintext
+0o10
+0o12
+0o144
+0o1
+0o1750
 ```
 
 ## Relevant links

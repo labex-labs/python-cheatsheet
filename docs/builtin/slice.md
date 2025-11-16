@@ -23,40 +23,45 @@ The `slice()` function in Python returns a slice object that can be used to slic
 ## Examples
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
+furniture = ['table', 'chair', 'rack', 'shelf']
 
->>> furniture[0:4]
-# ['table', 'chair', 'rack', 'shelf']
+print(furniture[0:4])
+print(furniture[1:3])
+print(furniture[0:-1])
+print(furniture[:2])
+print(furniture[1:])
+print(furniture[:])
+```
 
->>> furniture[1:3]
-# ['chair', 'rack']
+Output:
 
->>> furniture[0:-1]
-# ['table', 'chair', 'rack']
-
->>> furniture[:2]
-# ['table', 'chair']
-
->>> furniture[1:]
-# ['chair', 'rack', 'shelf']
-
->>> furniture[:]
-# ['table', 'chair', 'rack', 'shelf']
+```plaintext
+['table', 'chair', 'rack', 'shelf']
+['chair', 'rack']
+['table', 'chair', 'rack']
+['table', 'chair']
+['chair', 'rack', 'shelf']
+['table', 'chair', 'rack', 'shelf']
 ```
 
 Slicing the complete list will perform a copy:
 
 ```python
->>> spam = ['cat', 'bat', 'rat', 'elephant']
->>> spam2 = spam[:]
-# ['cat', 'bat', 'rat', 'elephant']
+spam = ['cat', 'bat', 'rat', 'elephant']
+spam2 = spam[:]
+print(spam2)
 
->>> spam.append('dog')
->>> spam
-# ['cat', 'bat', 'rat', 'elephant', 'dog']
+spam.append('dog')
+print(spam)
+print(spam2)
+```
 
->>> spam2
-# ['cat', 'bat', 'rat', 'elephant']
+Output:
+
+```plaintext
+['cat', 'bat', 'rat', 'elephant']
+['cat', 'bat', 'rat', 'elephant', 'dog']
+['cat', 'bat', 'rat', 'elephant']
 ```
 
 ## Relevant links

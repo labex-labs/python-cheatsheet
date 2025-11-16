@@ -27,12 +27,23 @@ x = 10
 y = 10
 z = 20
 
-print(id(x))  # Output might be something like 4331368528
-print(id(y))  # Output will be the same as id(x) because Python caches small integers
-print(id(z))  # Output will be different
+print(id(x))
+print(id(y))  # same as id(x) because Python caches small integers
+print(id(z))
 print(id(1))
 print(id('1'))
 print(id([1, 2]))
+```
+
+Output:
+
+```plaintext
+4331368528
+4331368528
+4331368560
+4331368496
+4331368560
+4331368560
 ```
 
 ## Relevant links

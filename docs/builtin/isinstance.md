@@ -28,23 +28,39 @@ You can also check against a tuple of types.
 
 ```python
 my_list = [1, 2, 3]
-print(isinstance(my_list, list))  # Output: True
-print(isinstance(my_list, tuple)) # Output: False
+print(isinstance(my_list, list))
+print(isinstance(my_list, tuple))
+```
+
+Output:
+
+```plaintext
+True
+False
 ```
 
 **Checking against multiple types:**
 
 ```python
-print(isinstance("hello", (int, str, list))) # Output: True
+print(isinstance("hello", (int, str, list)))
 ```
 
+Output:
 
+```plaintext
+True
+```
 
 ```python
->>> isinstance(1, int)
-# True
->>> isinstance(1, str)
-# False
+isinstance(1, int)
+isinstance(1, str)
+```
+
+Output:
+
+```plaintext
+True
+False
 ```
 
 ## Relevant links

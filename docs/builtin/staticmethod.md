@@ -34,12 +34,19 @@ class MathHelper:
 
 # Call on the class
 result1 = MathHelper.add(5, 3)
-print(result1)  # Output: 8
+print(result1)
 
 # Call on an instance
 helper = MathHelper()
 result2 = helper.add(10, 20)
-print(result2) # Output: 30
+print(result2)
+```
+
+Output:
+
+```plaintext
+8
+30
 ```
 
 A static method does not have access to the class (`cls`) or the instance (`self`). It's essentially a regular function namespaced within the class.

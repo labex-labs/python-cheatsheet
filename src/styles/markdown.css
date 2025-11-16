@@ -49,9 +49,11 @@ html .prose {
   border-radius: 0.5rem;
 }
 
-.prose pre[class*='language-']::before {
-  content: attr(data-language);
-  display: block;
+/* Code block header with language label and copy button */
+.prose pre[class*='language-'] .code-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   font-size: 0.6875rem;
   font-weight: 600;
@@ -65,13 +67,50 @@ html .prose {
   font-family:
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
     'Courier New', monospace;
-  pointer-events: none;
   opacity: 0.8;
   line-height: 1.4;
   user-select: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
   flex-shrink: 0;
+}
+
+.prose pre[class*='language-'] .code-block-label {
+  flex: 1;
+}
+
+.prose pre[class*='language-'] .code-block-copy-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgb(148 163 184);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  opacity: 0.8;
+}
+
+.prose pre[class*='language-'] .code-block-copy-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.prose pre[class*='language-'] .code-block-copy-button:active {
+  transform: scale(0.95);
+}
+
+.prose pre[class*='language-'] .code-block-copy-button.copied {
+  background-color: rgba(34, 197, 94, 0.2);
+  border-color: rgba(34, 197, 94, 0.4);
+  color: rgb(74, 222, 128);
 }
 
 .prose pre[class*='language-'] > code {
@@ -81,9 +120,25 @@ html .prose {
   flex: 1;
 }
 
-.dark .prose pre[class*='language-']::before {
+.dark .prose pre[class*='language-'] .code-block-header {
   color: rgb(148 163 184);
   background-color: rgba(255, 255, 255, 0.05);
   border-bottom-color: rgba(255, 255, 255, 0.08);
   opacity: 0.8;
+}
+
+.dark .prose pre[class*='language-'] .code-block-copy-button {
+  border-color: rgba(255, 255, 255, 0.15);
+  color: rgb(148 163 184);
+}
+
+.dark .prose pre[class*='language-'] .code-block-copy-button:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.dark .prose pre[class*='language-'] .code-block-copy-button.copied {
+  background-color: rgba(34, 197, 94, 0.15);
+  border-color: rgba(34, 197, 94, 0.3);
+  color: rgb(74, 222, 128);
 }

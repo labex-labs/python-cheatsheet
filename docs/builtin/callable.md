@@ -25,26 +25,31 @@ It returns `True` if the object passed to it is callable and `False` otherwise. 
 Here is an example of how you can use the `callable()` function:
 
 ```python
->>> def my_function():
-...     pass
-...
->>> class MyClass:
-...     def __call__(self):
-...         pass
-...
->>> x = 5
->>> y = my_function
->>> z = MyClass()
->>> a = lambda: None
->>>
->>> print(callable(x))
-# False
->>> print(callable(y))
-# True
->>> print(callable(z))
-# True
->>> print(callable(a))
-# True
+def my_function():
+    pass
+
+class MyClass:
+    def __call__(self):
+        pass
+
+x = 5
+y = my_function
+z = MyClass()
+a = lambda: None
+
+print(callable(x))
+print(callable(y))
+print(callable(z))
+print(callable(a))
+```
+
+Output:
+
+```plaintext
+False
+True
+True
+True
 ```
 
 In the above example, `my_function` is a function and it is callable, `MyClass` is a class and it is callable as well because it has a `__call__` method, `z` is an instance of the class `MyClass` and it is also callable because it has a `__call__` method and `a` is a lambda function which is callable.

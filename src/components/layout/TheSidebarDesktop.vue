@@ -18,5 +18,10 @@ const navigation = useNavigationStore()
       :navigation="navigation.standardLibraryNavigation"
       section-name="Standard Library"
     />
+
+    <the-sidebar-navigation
+      :navigation="navigation.builtinNavigation"
+      section-name="Built-in Functions"
+    />
   </nav>
 </template>

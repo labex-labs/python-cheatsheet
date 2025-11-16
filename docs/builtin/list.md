@@ -23,13 +23,18 @@ In Python, `list` is not a function but a built-in mutable sequence type. This m
 ## Examples
 
 ```python
->>> l = list()
->>> l
-# []
->>> l.append(1)
->>> l.append(2)
->>> l
-# [1, 2]
+l = list()
+print(l)
+l.append(1)
+l.append(2)
+print(l)
+```
+
+Output:
+
+```plaintext
+[]
+[1, 2]
 ```
 
 ## Relevant links

@@ -23,36 +23,41 @@ The `enumerate()` function in Python is a built-in function that adds a counter 
 ## Examples
 
 ```python
->>> l = enumerate([1, 2, 3, 4, 5])
->>> l
-# <enumerate object at 0x7fcac409cc40>
->>> l.__next__()
-# (0, 1)
->>> l.__next__()
-# (1, 2)
->>> l.__next__()
-# (2, 3)
->>> l.__next__()
-# (3, 4)
->>> l.__next__()
-# (4, 5)
->>> l.__next__()
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-# StopIteration
+l = enumerate([1, 2, 3, 4, 5])
+print(l)
+print(l.__next__())
+print(l.__next__())
+print(l.__next__())
+print(l.__next__())
+print(l.__next__())
+```
+
+Output:
+
+```plaintext
+<enumerate object at 0x7fcac409cc40>
+(0, 1)
+(1, 2)
+(2, 3)
+(3, 4)
+(4, 5)
 ```
 
 `enumerate` is usually used in a `for` loop to get the index of an item:
 
 ```python
->>> for i, item in enumerate([1, 2, 3, 4, 5]):
-...     print(f"Index: {i}, Item: {item}")
-...
-# Index: 0, Item: 1
-# Index: 1, Item: 2
-# Index: 2, Item: 3
-# Index: 3, Item: 4
-# Index: 4, Item: 5
+for i, item in enumerate([1, 2, 3, 4, 5]):
+    print(f"Index: {i}, Item: {item}")
+```
+
+Output:
+
+```plaintext
+Index: 0, Item: 1
+Index: 1, Item: 2
+Index: 2, Item: 3
+Index: 3, Item: 4
+Index: 4, Item: 5
 ```
 
 ## Relevant links

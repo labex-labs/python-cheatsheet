@@ -20,8 +20,8 @@ Python min() built-in function
 
 The `min()` function is the counterpart to <router-link to="/builtin/max">max()</router-link>. It can be used in two ways:
 
-1.  With an iterable (like a <router-link to="/builtin/list">list</router-link> or <router-link to="/builtin/tuple">tuple</router-link>), it returns the smallest item.
-2.  With two or more arguments, it returns the smallest of them.
+1. With an iterable (like a <router-link to="/builtin/list">list</router-link> or <router-link to="/builtin/tuple">tuple</router-link>), it returns the smallest item.
+2. With two or more arguments, it returns the smallest of them.
 
 ### Examples
 
@@ -29,16 +29,29 @@ The `min()` function is the counterpart to <router-link to="/builtin/max">max()<
 
 ```python
 numbers = [10, 2, 1, 40, 5]
-print(min(numbers))  # Output: 1
+print(min(numbers))
 
 letters = ('z', 'b', 'a')
-print(min(letters)) # Output: 'a'
+print(min(letters))
+```
+
+Output:
+
+```plaintext
+1
+a
 ```
 
 **Finding the min of several arguments:**
 
 ```python
-print(min(10, 20, 5)) # Output: 5
+print(min(10, 20, 5))
+```
+
+Output:
+
+```plaintext
+5
 ```
 
 ## Relevant links

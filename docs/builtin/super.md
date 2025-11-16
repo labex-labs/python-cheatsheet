@@ -35,9 +35,13 @@ class Child(Parent):
 
 c = Child()
 c.greet()
-# Output:
-# Hello from Parent
-# Hello from Child
+```
+
+Output:
+
+```plaintext
+Hello from Parent
+Hello from Child
 ```
 
 ## Relevant links

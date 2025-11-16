@@ -29,9 +29,17 @@ class Person:
 
 p = Person()
 
-print(hasattr(p, 'name'))  # Output: True
-print(hasattr(p, 'age'))   # Output: True
-print(hasattr(p, 'email')) # Output: False
+print(hasattr(p, 'name'))
+print(hasattr(p, 'age'))
+print(hasattr(p, 'email'))
+```
+
+Output:
+
+```plaintext
+True
+True
+False
 ```
 
 ## Relevant links

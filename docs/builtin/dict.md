@@ -26,7 +26,13 @@ You can create an empty dictionary, or create a dictionary from keyword argument
 
 ```python
 my_dict = dict()
-print(my_dict)  # Output: {}
+print(my_dict)
+```
+
+Output:
+
+```plaintext
+{}
 ```
 
 **Creating a dictionary with keyword arguments:**
@@ -34,7 +40,13 @@ print(my_dict)  # Output: {}
 ```python
 # Using keyword arguments
 my_dict = dict(name="John", age=30)
-print(my_dict)  # Output: {'name': 'John', 'age': 30}
+print(my_dict)
+```
+
+Output:
+
+```plaintext
+{'name': 'John', 'age': 30}
 ```
 
 **Creating a dictionary from an iterable:**
@@ -42,15 +54,26 @@ print(my_dict)  # Output: {'name': 'John', 'age': 30}
 ```python
 my_list = [('name', 'Jane'), ('age', 25)]
 my_dict = dict(my_list)
-print(my_dict)  # Output: {'name': 'Jane', 'age': 25}
+print(my_dict)
+```
+
+Output:
+
+```plaintext
+{'name': 'Jane', 'age': 25}
 ```
 
 Creating an empty dictionary:
 
 ```python
->>> a = dict()
->>> type(a)
-# <class 'dict'>
+a = dict()
+type(a)
+```
+
+Output:
+
+```plaintext
+<class 'dict'>
 ```
 
 ## Relevant links

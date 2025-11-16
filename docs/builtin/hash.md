@@ -26,8 +26,8 @@ Only "hashable" objects can be passed to `hash()`. An object is hashable if it h
 
 ```python
 # Hash of an integer is the integer itself
-print(hash(1))      # Output: 1
-print(hash(1.0))    # Output: 1 (1 and 1.0 are equal)
+print(hash(1))
+print(hash(1.0))  # 1 and 1.0 are equal
 
 # Hash of a string (output varies)
 print(hash('hello'))
@@ -40,7 +40,16 @@ try:
     hash([1, 2, 3])
 except TypeError as e:
     print(e)
-# Output: unhashable type: 'list'
+```
+
+Output:
+
+```plaintext
+1
+1
+-1182655621190490452
+529344067295497451
+unhashable type: 'list'
 ```
 
 ## Relevant links

@@ -23,14 +23,17 @@ The `frozenset()` function in Python is a built-in function that creates an immu
 ## Examples
 
 ```python
->>> frozenset([1, 2, 3])
-# frozenset({1, 2, 3})
+frozenset([1, 2, 3])
+frozenset({1, 2, 3})
+frozenset((1, 2, 3))
+```
 
->>> frozenset({1, 2, 3})
-# frozenset({1, 2, 3})
+Output:
 
->>> frozenset((1, 2, 3))
-# frozenset({1, 2, 3})
+```plaintext
+frozenset({1, 2, 3})
+frozenset({1, 2, 3})
+frozenset({1, 2, 3})
 ```
 
 ## Relevant links

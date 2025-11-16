@@ -22,63 +22,76 @@ The map function, _map(function, iterable)_ takes in one or more iterables, a 'c
 
 ***An important note: As of the release of Python 3, if the iterables supplied to map are of different lengths, The map will stop and return when it has hit the number of steps corresponding to the length of the shortest iterable.
 
-## Input Parameters:
+## Input Parameters
 
 Function: takes the item (or items) at the index corresponding to the current step of the Map and gives the return result as an item to store in the Map Object. The type of element stored to the map object will be identical to the type returned from the function.
 
 Iterable(s): `<router-link to="/builtin/tuple">tuple</router-link>`, `<router-link to="/builtin/list">list</router-link>`, `<router-link to="/builtin/range">range</router-link>`, `<router-link to="/builtin/dict">dictionary</router-link>`, `<router-link to="/builtin/set">set</router-link>`, `<router-link to="/builtin/str">string</router-link>`.
 
-## A very simple example:
+## A very simple example
 
 ```python
 def double_map(func, iter):
-  my_map = map(func, iter)
-  return list(my_map)
+    my_map = map(func, iter)
+    return list(my_map)
 
 def double(element):
-  return element*2
+    return element * 2
 
-nums = [1,2,3,4]
+nums = [1, 2, 3, 4]
 
 print(double_map(double, nums))
 ```
 
-Will output the following: [2,4,6,8]
+Output:
 
-## A less simple example:
+```plaintext
+[2, 4, 6, 8]
+```
+
+## A less simple example
 
 ### This example employs callback function written as a lambda, as well as
 
 ```python
 def multi_map(func, *iters):
-  my_map = map(func, *iters)
-  return list(my_map)
+    my_map = map(func, *iters)
+    return list(my_map)
 
-list1 = [1,2,3]
-list2 = [4,5,6]
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
 
-print(multi_map((lambda item1, item2: item1*item2), list1, list2))
+print(multi_map((lambda item1, item2: item1 * item2), list1, list2))
 ```
 
-Will output the following: [4,10,18]
+Output:
 
-## An example demonstrating map's handling of different iterable lengths:
+```plaintext
+[4, 10, 18]
+```
+
+## An example demonstrating map's handling of different iterable lengths
 
 ```python
-def max(a,b):
-  if a > b: return a
-  else: return b
+def max(a, b):
+    if a > b:
+        return a
+    else:
+        return b
 
-list1= [1,1,1]
+list1 = [1, 1, 1]
+list2 = [0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
 
-list2= [0,0,0,1,1,1,1,1,1,1]
-
-result = list(map(max,list1,list2))
+result = list(map(max, list1, list2))
 
 print(result)
 ```
 
-Will output the following: [1,1,1]
+Output:
+
+```plaintext
+[1, 1, 1]
+```
 
 Notice how the length of the resultant list is equal to list1's length?
 
@@ -91,4 +104,3 @@ Notice how the length of the resultant list is equal to list1's length?
 - <router-link to="/builtin/filter">filter()</router-link>
 - <router-link to="/builtin/zip">zip()</router-link>
 - <router-link to="/builtin/iter">iter()</router-link>
-

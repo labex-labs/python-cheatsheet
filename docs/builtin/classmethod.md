@@ -47,7 +47,12 @@ person_data = {'name': 'John', 'age': 30}
 p = Person.from_dict(person_data)
 
 p.display()
-# Output: Name: John, Age: 30
+```
+
+Output:
+
+```plaintext
+Name: John, Age: 30
 ```
 
 ## Relevant links

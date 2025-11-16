@@ -35,11 +35,18 @@ p = Person()
 # Set the 'age' attribute to 30
 setattr(p, 'age', 30)
 
-print(p.age)  # Output: 30
+print(p.age)
 
 # Change the 'name' attribute
 setattr(p, 'name', 'Jane')
-print(p.name) # Output: Jane
+print(p.name)
+```
+
+Output:
+
+```plaintext
+30
+Jane
 ```
 
 ## Relevant links

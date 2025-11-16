@@ -23,14 +23,19 @@ The `hex()` function in Python is a built-in function that converts an integer i
 ## Examples
 
 ```python
->>> hex(1)
-# '0x1'
->>> hex(10)
-# '0xa'
->>> hex(100)
-# '0x64'
->>> hex(1000)
-# '0x3e8'
+hex(1)
+hex(10)
+hex(100)
+hex(1000)
+```
+
+Output:
+
+```plaintext
+'0x1'
+'0xa'
+'0x64'
+'0x3e8'
 ```
 
 ## Relevant links

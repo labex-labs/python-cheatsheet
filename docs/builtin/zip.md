@@ -23,15 +23,20 @@ The `zip()` function in Python is a built-in function that takes two or more ite
 ## Examples
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
->>> price = [100, 50, 80, 40]
->>>
->>> for item, amount in zip(furniture, price):
-...     print(f'The {item} costs ${amount}')
-# The table costs $100
-# The chair costs $50
-# The rack costs $80
-# The shelf costs $40
+furniture = ['table', 'chair', 'rack', 'shelf']
+price = [100, 50, 80, 40]
+
+for item, amount in zip(furniture, price):
+    print(f'The {item} costs ${amount}')
+```
+
+Output:
+
+```plaintext
+The table costs $100
+The chair costs $50
+The rack costs $80
+The shelf costs $40
 ```
 
 ## Other Use Cases
@@ -40,26 +45,35 @@ The zip function in Python merges multiple iterables into tuples.
 
 ```python
 # Combining three lists
->>> list1 = [1, 2, 3]
->>> list2 = ['a', 'b', 'c']
->>> list3 = [True, False, True]
+list1 = [1, 2, 3]
+list2 = ['a', 'b', 'c']
+list3 = [True, False, True]
 
->>> zipped = zip(list1, list2, list3)
->>> print(list(zipped))
-# Output: [(1, 'a', True), (2, 'b', False), (3, 'c', True)]
+zipped = zip(list1, list2, list3)
+print(list(zipped))
+```
+
+Output:
+
+```plaintext
+[(1, 'a', True), (2, 'b', False), (3, 'c', True)]
 ```
 
 ### Unzipping
 
 ```python
-
 # Unzipping a zipped object
->>> zipped = [(1, 'a'), (2, 'b'), (3, 'c')]
->>> list1, list2 = zip(*zipped)
->>> print(list1)
-# Output: (1, 2, 3)
->>> print(list2)
-# Output: ('a', 'b', 'c')
+zipped = [(1, 'a'), (2, 'b'), (3, 'c')]
+list1, list2 = zip(*zipped)
+print(list1)
+print(list2)
+```
+
+Output:
+
+```plaintext
+(1, 2, 3)
+('a', 'b', 'c')
 ```
 
 ## More Examples
@@ -69,13 +83,18 @@ The zip function in Python merges multiple iterables into tuples.
 zip stops creating tuples when the shortest iterable is exhausted.
 
 ```python
->>> numbers = [1, 2, 3]
->>> letters = ['a', 'b']
->>>
->>> for num, letter in zip(numbers, letters):
-...     print(f'{num} -> {letter}')
-# 1 -> a
-# 2 -> b
+numbers = [1, 2, 3]
+letters = ['a', 'b']
+
+for num, letter in zip(numbers, letters):
+    print(f'{num} -> {letter}')
+```
+
+Output:
+
+```plaintext
+1 -> a
+2 -> b
 ```
 
 ### Using zip with Dictionaries
@@ -83,12 +102,17 @@ zip stops creating tuples when the shortest iterable is exhausted.
 You can use zip to combine keys and values from two lists into a dictionary.
 
 ```python
->>> keys = ['name', 'age', 'city']
->>> values = ['Alice', 25, 'New York']
->>>
->>> my_dict = dict(zip(keys, values))
->>> print(my_dict)
-# {'name': 'Alice', 'age': 25, 'city': 'New York'}
+keys = ['name', 'age', 'city']
+values = ['Alice', 25, 'New York']
+
+my_dict = dict(zip(keys, values))
+print(my_dict)
+```
+
+Output:
+
+```plaintext
+{'name': 'Alice', 'age': 25, 'city': 'New York'}
 ```
 
 ### Using zip with List Comprehensions
@@ -96,12 +120,17 @@ You can use zip to combine keys and values from two lists into a dictionary.
 You can use zip in list comprehensions for more concise code.
 
 ```python
->>> list1 = [1, 2, 3]
->>> list2 = [4, 5, 6]
->>>
->>> summed = [x + y for x, y in zip(list1, list2)]
->>> print(summed)
-# [5, 7, 9]
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+summed = [x + y for x, y in zip(list1, list2)]
+print(summed)
+```
+
+Output:
+
+```plaintext
+[5, 7, 9]
 ```
 
 ## Relevant links

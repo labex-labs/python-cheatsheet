@@ -25,11 +25,21 @@ The `divmod()` function takes two numbers as arguments and returns a tuple conta
 ```python
 # Get quotient and remainder
 quotient, remainder = divmod(10, 3)
-print(quotient)   # Output: 3
-print(remainder)  # Output: 1
-print(divmod(2, 2))   # Output: (1, 0)
-print(divmod(10, 2))  # Output: (5, 0)
-print(divmod(7, 2))   # Output: (3, 1)
+print(quotient)
+print(remainder)
+print(divmod(2, 2))
+print(divmod(10, 2))
+print(divmod(7, 2))
+```
+
+Output:
+
+```plaintext
+3
+1
+(1, 0)
+(5, 0)
+(3, 1)
 ```
 
 ## Relevant links

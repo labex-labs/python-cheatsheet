@@ -23,21 +23,30 @@ The `open()` function in Python is used to open a file and returns a file object
 ## Examples
 
 ```python
->>> spam = open('spam.txt', mode='x')
->>> spam.write('My first line\n\n')
->>> spam.close()
 # Opens a brand new file (in 'x' mode will throw if already exists)
+spam = open('spam.txt', mode='x')
+spam.write('My first line\n\n')
+spam.close()
+```
 
->>> with open('spam.txt', mode='a') as spam:
-...     spam.write('My second line')
+```python
 # Appends to file and automatically closes afterward
+with open('spam.txt', mode='a') as spam:
+    spam.write('My second line')
+```
 
->>> with open('spam.txt') as spam:
-...     content = spam.read()
-...     print(content)
-# My first line
-#
-# My second line
+```python
+with open('spam.txt') as spam:
+    content = spam.read()
+    print(content)
+```
+
+Output:
+
+```plaintext
+My first line
+
+My second line
 ```
 
 ## Relevant links
