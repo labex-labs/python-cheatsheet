@@ -57,14 +57,14 @@ And finally, in a <router-link to="/blog/python-projects-with-poetry-and-vscode-
 
 The easiest way is to use _pip_:
 
-```
-$ pip install poetry
+```bash
+pip install poetry
 ```
 
 But we will use Poetry own installer to isolate it from the rest of the system by vendorizing its dependencies. This is the recommended way of installing poetry:
 
-```
-$ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+```bash
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
 
 This way, we will later be able to update poetry to the latest stable version with the `poetry self update` command.
@@ -73,8 +73,8 @@ This way, we will later be able to update poetry to the latest stable version wi
 
 We can now start a new Python project by using the `poetry new [project_name]` command. I will call it **_how-long_** and will be a simple library to measure the execution time of a function:
 
-```
-$ poetry new how-long
+```bash
+poetry new how-long
 ```
 
 > Note: For existing projects, you can use the `poetry init` command and interactively create a _pyproject.toml_.
@@ -141,8 +141,8 @@ These packages are only for development and will not be included when we publish
 
 To create a Virtual Environment and install _Pytest_, we will use the `poetry install` command:
 
-```
-$ poetry install
+```bash
+poetry install
 ```
 
 ![poetry-install-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-install.png)
@@ -159,8 +159,8 @@ One way to add or remove dependencies is to directly edit _pyproject.toml_ and t
 
 Let's add two packages to the project, _pendulum_, and _coo_:
 
-```
-$ poetry add pendulum coo
+```bash
+poetry add pendulum coo
 ```
 
 ![poetry-add-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-add.png)
@@ -173,14 +173,14 @@ These dependencies will be available only during development, Poetry will not in
 
 We already installed _Pytest_, but we will also use [flake8](http://flake8.pycqa.org/en/latest/) for linting and [mypy](http://mypy-lang.org/) for static typing:
 
-```
-$ poetry add -D flake8 mypy
+```bash
+poetry add -D flake8 mypy
 ```
 
 Now that I think about it, I forgot to add a formatter. We'll go with [black](https://black.readthedocs.io/en/stable/):
 
-```
-$ poetry add -D black
+```bash
+poetry add -D black
 [ValueError]
 Could not find a matching version of package black
 
@@ -189,8 +189,8 @@ add [-D|--dev] [--git GIT] [--path PATH] [-E|--extras EXTRAS] [--optional] [--py
 
 This error happens because _black_ is in a pre-release state, so Poetry cannot find any stable version for us. But I really want it, so let's install it anyway with the `--allow-prereleases` flag:
 
-```
-$ poetry add -D black --allow-prereleases
+```bash
+poetry add -D black --allow-prereleases
 ```
 
 ![poetry-add-dev-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-add-dev.png)
@@ -199,14 +199,14 @@ $ poetry add -D black --allow-prereleases
 
 You know what, I changed my mind, this project will use nor _coo_ nor _mypy_. Start by removing _coo_, a normal dependency of our project:
 
-```
-$ poetry remove coo
+```bash
+poetry remove coo
 ```
 
 Now _mypy_ which is a dev dependency:
 
-```
-$ poetry remove -D mypy
+```bash
+poetry remove -D mypy
 ```
 
 ## Conclusion

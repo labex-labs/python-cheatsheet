@@ -55,9 +55,9 @@ Until now, there are no new versions available.
 
 When you create a Virtual Environment with the _venv_ command, _VSCode_ will automatically set it as the default Python Environment for that project. When working With _Poetry_, the first time we will need to type the following in the terminal and inside the project folder:
 
-```
-$ poetry shell
-$ code .
+```bash
+poetry shell
+code .
 ```
 
 The first command, `poetry shell`, will spawn us inside our virtual environment, and `code .` will open the current folder inside _VSCode_.
@@ -141,8 +141,8 @@ def test_version():
 
 In this test, we import the `__version__` variable from the `__init__.py` file that is inside the **how_long** folder and asserts that the current version is _0.1.0_. Open the integrated terminal by going to **Terminal > New Terminal** and type:
 
-```
-$ pytest
+```bash
+pytest
 ```
 
 The Output will look like this:
