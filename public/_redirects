@@ -1,3 +1,2 @@
-/api/* https://api.curated.co/api/v3/:splat 200
 /_ /index.html 200
-/\* /index.html 404
+/* /index.html 200
