@@ -19,33 +19,45 @@ Python Shelve Module
 ## Save variables
 
 ```python
->>> import shelve
+import shelve
 
->>> wife = ['Pretty', 'Lovely', 'Nice']
->>> with shelve.open('mydata') as shelf_file:
-...     shelf_file['wife'] = wife
+wife = ['Pretty', 'Lovely', 'Nice']
+# Open shelf file and save data
+with shelve.open('mydata') as shelf_file:
+    shelf_file['wife'] = wife
 ```
 
 ## Open and read variables
 
 ```python
->>> with shelve.open('mydata') as shelf_file:
-...     print(type(shelf_file))
-...     print(shelf_file['wife'])
-...
-# <class 'shelve.DbfilenameShelf'>
-# ['Pretty', 'Lovely', 'Nice']
+# Open shelf file and read data
+with shelve.open('mydata') as shelf_file:
+    print(type(shelf_file))
+    # Access stored value by key
+    print(shelf_file['wife'])
+```
+
+Output:
+
+```
+<class 'shelve.DbfilenameShelf'>
+['Pretty', 'Lovely', 'Nice']
 ```
 
 Just like dictionaries, `shelf` values have `keys()` and `values()` methods that will return list-like values of the keys and values in the shelf. Since these methods return list-like values instead of true lists, you should pass them to the `list()` function to get them in list form.
 
 ```python
->>> with shelve.open('mydata') as shelf_file:
-...     print(list(shelf_file.keys()))
-...     print(list(shelf_file.values()))
-...
-# ['wife']
-# [['Pretty', 'Lovely', 'Nice']]
+# Access all keys and values in shelf
+with shelve.open('mydata') as shelf_file:
+    print(list(shelf_file.keys()))
+    print(list(shelf_file.values()))
+```
+
+Output:
+
+```
+['wife']
+[['Pretty', 'Lovely', 'Nice']]
 ```
 
 ## Relevant links

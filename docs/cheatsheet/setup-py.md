@@ -45,13 +45,14 @@ and module will install itself.
 Our initial setup.py will also include information about the license and will re-use the README.txt file for the long_description field. This will look like:
 
 ```python
+# setup.py: define package metadata for distribution
 from distutils.core import setup
 setup(
-   name='pythonCheatsheet',
-   version='0.1',
-   packages=['pipenv',],
-   license='MIT',
-   long_description=open('README.txt').read(),
+   name='pythonCheatsheet',  # Package name (must be unique on PyPI)
+   version='0.1',  # Version number
+   packages=['pipenv',],  # List of packages to include
+   license='MIT',  # License type
+   long_description=open('README.txt').read(),  # Read description from file
 )
 ```
 

@@ -10,175 +10,381 @@ Python Lists
 Lists are one of the 4 data types in Python used to store collections of data.
 
 ```python
+# List: ordered collection of items enclosed in square brackets
 ['John', 'Peter', 'Debora', 'Charles']
 ```
 
 ## Getting values with indexes
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
+# Access list elements using index (0-based, first element is index 0)
+furniture = ['table', 'chair', 'rack', 'shelf']
 
->>> furniture[0]
-# 'table'
+furniture[0]  # Returns first element: 'table'
+```
 
->>> furniture[1]
-# 'chair'
+Output:
 
->>> furniture[2]
-# 'rack'
+```
+'table'
+```
 
->>> furniture[3]
-# 'shelf'
+```python
+furniture[1]
+```
+
+Output:
+
+```
+'chair'
+```
+
+```python
+furniture[2]
+```
+
+Output:
+
+```
+'rack'
+```
+
+```python
+furniture[3]
+```
+
+Output:
+
+```
+'shelf'
 ```
 
 ## Negative indexes
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
+# Negative index: access elements from the end of the list
+furniture = ['table', 'chair', 'rack', 'shelf']
 
->>> furniture[-1]
-# 'shelf'
+furniture[-1]  # Returns last element: 'shelf'
+```
 
->>> furniture[-3]
-# 'chair'
+Output:
 
->>> f'The {furniture[-1]} is bigger than the {furniture[-3]}'
-# 'The shelf is bigger than the chair'
+```
+'shelf'
+```
+
+```python
+furniture[-3]
+```
+
+Output:
+
+```
+'chair'
+```
+
+```python
+f'The {furniture[-1]} is bigger than the {furniture[-3]}'
+```
+
+Output:
+
+```
+'The shelf is bigger than the chair'
 ```
 
 ## Getting sublists with Slices
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
+# Slicing: get sublist using [start:end] syntax (end is exclusive)
+furniture = ['table', 'chair', 'rack', 'shelf']
 
->>> furniture[0:4]
-# ['table', 'chair', 'rack', 'shelf']
+furniture[0:4]  # Returns elements from index 0 to 3 (4 excluded)
+```
 
->>> furniture[1:3]
-# ['chair', 'rack']
+Output:
 
->>> furniture[0:-1]
-# ['table', 'chair', 'rack']
+```
+['table', 'chair', 'rack', 'shelf']
+```
 
->>> furniture[:2]
-# ['table', 'chair']
+```python
+furniture[1:3]
+```
 
->>> furniture[1:]
-# ['chair', 'rack', 'shelf']
+Output:
 
->>> furniture[:]
-# ['table', 'chair', 'rack', 'shelf']
+```
+['chair', 'rack']
+```
+
+```python
+furniture[0:-1]
+```
+
+Output:
+
+```
+['table', 'chair', 'rack']
+```
+
+```python
+# Slice from beginning: omit start index (defaults to 0)
+furniture[:2]  # Returns first two elements
+```
+
+Output:
+
+```
+['table', 'chair']
+```
+
+```python
+# Slice to end: omit end index (defaults to end of list)
+furniture[1:]  # Returns all elements from index 1 to end
+```
+
+Output:
+
+```
+['chair', 'rack', 'shelf']
+```
+
+```python
+furniture[:]
+```
+
+Output:
+
+```
+['table', 'chair', 'rack', 'shelf']
 ```
 
 Slicing the complete list will perform a copy:
 
 ```python
->>> spam2 = spam[:]
-# ['cat', 'bat', 'rat', 'elephant']
+# Slicing creates a copy: [:] creates a shallow copy of the list
+spam = ['cat', 'bat', 'rat', 'elephant']
+spam2 = spam[:]  # Create a copy, not a reference
+spam2
+```
 
->>> spam.append('dog')
->>> spam
-# ['cat', 'bat', 'rat', 'elephant', 'dog']
+Output:
 
->>> spam2
-# ['cat', 'bat', 'rat', 'elephant']
+```
+['cat', 'bat', 'rat', 'elephant']
+```
+
+```python
+spam.append('dog')
+spam
+```
+
+Output:
+
+```
+['cat', 'bat', 'rat', 'elephant', 'dog']
+```
+
+```python
+spam2
+```
+
+Output:
+
+```
+['cat', 'bat', 'rat', 'elephant']
 ```
 
 ## Getting a list length with len()
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
->>> len(furniture)
-# 4
+# len() returns the number of items in a list
+furniture = ['table', 'chair', 'rack', 'shelf']
+len(furniture)  # Returns 4
+```
+
+Output:
+
+```
+4
 ```
 
 ## Changing values with indexes
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
+# Modify list elements by assigning new values to indexes
+furniture = ['table', 'chair', 'rack', 'shelf']
 
->>> furniture[0] = 'desk'
->>> furniture
-# ['desk', 'chair', 'rack', 'shelf']
+furniture[0] = 'desk'  # Replace first element
+furniture
+```
 
->>> furniture[2] = furniture[1]
->>> furniture
-# ['desk', 'chair', 'chair', 'shelf']
+Output:
 
->>> furniture[-1] = 'bed'
->>> furniture
-# ['desk', 'chair', 'chair', 'bed']
+```
+['desk', 'chair', 'rack', 'shelf']
+```
+
+```python
+furniture[2] = furniture[1]
+furniture
+```
+
+Output:
+
+```
+['desk', 'chair', 'chair', 'shelf']
+```
+
+```python
+furniture[-1] = 'bed'
+furniture
+```
+
+Output:
+
+```
+['desk', 'chair', 'chair', 'bed']
 ```
 
 ## Concatenation and Replication
 
 ```python
->>> [1, 2, 3] + ['A', 'B', 'C']
-# [1, 2, 3, 'A', 'B', 'C']
+# List concatenation: combine two lists using + operator
+[1, 2, 3] + ['A', 'B', 'C']  # Returns [1, 2, 3, 'A', 'B', 'C']
+```
 
->>> ['X', 'Y', 'Z'] * 3
-# ['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
+Output:
 
->>> my_list = [1, 2, 3]
->>> my_list = my_list + ['A', 'B', 'C']
->>> my_list
-# [1, 2, 3, 'A', 'B', 'C']
+```
+[1, 2, 3, 'A', 'B', 'C']
+```
+
+```python
+# List replication: repeat list multiple times using * operator
+['X', 'Y', 'Z'] * 3  # Returns ['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
+```
+
+Output:
+
+```
+['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
+```
+
+```python
+my_list = [1, 2, 3]
+my_list = my_list + ['A', 'B', 'C']
+my_list
+```
+
+Output:
+
+```
+[1, 2, 3, 'A', 'B', 'C']
 ```
 
 ## Using for loops with Lists
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
+# Iterate over list elements using for loop
+furniture = ['table', 'chair', 'rack', 'shelf']
 
->>> for item in furniture:
-...     print(item)
-# table
-# chair
-# rack
-# shelf
+for item in furniture:  # Loop through each item
+    print(item)
+```
+
+Output:
+
+```
+table
+chair
+rack
+shelf
 ```
 
 ## Getting the index in a loop with enumerate()
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
+# enumerate() returns both index and value in a loop
+furniture = ['table', 'chair', 'rack', 'shelf']
 
->>> for index, item in enumerate(furniture):
-...     print(f'index: {index} - item: {item}')
-# index: 0 - item: table
-# index: 1 - item: chair
-# index: 2 - item: rack
-# index: 3 - item: shelf
+for index, item in enumerate(furniture):  # Get index and item together
+    print(f'index: {index} - item: {item}')
+```
+
+Output:
+
+```
+index: 0 - item: table
+index: 1 - item: chair
+index: 2 - item: rack
+index: 3 - item: shelf
 ```
 
 ## Loop in Multiple Lists with zip()
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
->>> price = [100, 50, 80, 40]
+# zip() combines multiple lists element-wise in a loop
+furniture = ['table', 'chair', 'rack', 'shelf']
+price = [100, 50, 80, 40]
 
->>> for item, amount in zip(furniture, price):
-...     print(f'The {item} costs ${amount}')
-# The table costs $100
-# The chair costs $50
-# The rack costs $80
-# The shelf costs $40
+for item, amount in zip(furniture, price):  # Pair elements from both lists
+    print(f'The {item} costs ${amount}')
+```
+
+Output:
+
+```
+The table costs $100
+The chair costs $50
+The rack costs $80
+The shelf costs $40
 ```
 
 ## The in and not in operators
 
 ```python
->>> 'rack' in ['table', 'chair', 'rack', 'shelf']
-# True
+# in operator: check if an item exists in a list
+'rack' in ['table', 'chair', 'rack', 'shelf']  # Returns True
+```
 
->>> 'bed' in ['table', 'chair', 'rack', 'shelf']
-# False
+Output:
 
->>> 'bed' not in furniture
-# True
+```
+True
+```
 
->>> 'rack' not in furniture
-# False
+```python
+'bed' in ['table', 'chair', 'rack', 'shelf']
+```
+
+Output:
+
+```
+False
+```
+
+```python
+furniture = ['table', 'chair', 'rack', 'shelf']
+'bed' not in furniture
+```
+
+Output:
+
+```
+True
+```
+
+```python
+'rack' not in furniture
+```
+
+Output:
+
+```
+False
 ```
 
 ## The Multiple Assignment Trick
@@ -186,42 +392,80 @@ Slicing the complete list will perform a copy:
 The multiple assignment trick is a shortcut that lets you assign multiple variables with the values in a list in one line of code. So instead of doing this:
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
->>> table = furniture[0]
->>> chair = furniture[1]
->>> rack = furniture[2]
->>> shelf = furniture[3]
+furniture = ['table', 'chair', 'rack', 'shelf']
+table = furniture[0]
+chair = furniture[1]
+rack = furniture[2]
+shelf = furniture[3]
 ```
 
 You could type this line of code:
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
->>> table, chair, rack, shelf = furniture
+furniture = ['table', 'chair', 'rack', 'shelf']
+table, chair, rack, shelf = furniture
 
->>> table
-# 'table'
+table
+```
 
->>> chair
-# 'chair'
+Output:
 
->>> rack
-# 'rack'
+```
+'table'
+```
 
->>> shelf
-# 'shelf'
+```python
+chair
+```
+
+Output:
+
+```
+'chair'
+```
+
+```python
+rack
+```
+
+Output:
+
+```
+'rack'
+```
+
+```python
+shelf
+```
+
+Output:
+
+```
+'shelf'
 ```
 
 The multiple assignment trick can also be used to swap the values in two variables:
 
 ```python
->>> a, b = 'table', 'chair'
->>> a, b = b, a
->>> print(a)
-# chair
+a, b = 'table', 'chair'
+a, b = b, a
+print(a)
+```
 
->>> print(b)
-# table
+Output:
+
+```
+chair
+```
+
+```python
+print(b)
+```
+
+Output:
+
+```
+table
 ```
 
 ## The index Method
@@ -229,9 +473,14 @@ The multiple assignment trick can also be used to swap the values in two variabl
 The `index` method allows you to find the index of a value by passing its name:
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
->>> furniture.index('chair')
-# 1
+furniture = ['table', 'chair', 'rack', 'shelf']
+furniture.index('chair')
+```
+
+Output:
+
+```
+1
 ```
 
 ## Adding Values
@@ -241,10 +490,15 @@ The `index` method allows you to find the index of a value by passing its name:
 `append` adds an element to the end of a `list`:
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
->>> furniture.append('bed')
->>> furniture
-# ['table', 'chair', 'rack', 'shelf', 'bed']
+furniture = ['table', 'chair', 'rack', 'shelf']
+furniture.append('bed')
+furniture
+```
+
+Output:
+
+```
+['table', 'chair', 'rack', 'shelf', 'bed']
 ```
 
 ### insert()
@@ -252,10 +506,15 @@ The `index` method allows you to find the index of a value by passing its name:
 `insert` adds an element to a `list` at a given position:
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
->>> furniture.insert(1, 'bed')
->>> furniture
-# ['table', 'bed', 'chair', 'rack', 'shelf']
+furniture = ['table', 'chair', 'rack', 'shelf']
+furniture.insert(1, 'bed')
+furniture
+```
+
+Output:
+
+```
+['table', 'bed', 'chair', 'rack', 'shelf']
 ```
 
 ## Removing Values
@@ -265,14 +524,26 @@ The `index` method allows you to find the index of a value by passing its name:
 `del` removes an item using the index:
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
->>> del furniture[2]
->>> furniture
-# ['table', 'chair', 'shelf']
+furniture = ['table', 'chair', 'rack', 'shelf']
+del furniture[2]
+furniture
+```
 
->>> del furniture[2]
->>> furniture
-# ['table', 'chair']
+Output:
+
+```
+['table', 'chair', 'shelf']
+```
+
+```python
+del furniture[2]
+furniture
+```
+
+Output:
+
+```
+['table', 'chair']
 ```
 
 ### remove()
@@ -280,10 +551,15 @@ The `index` method allows you to find the index of a value by passing its name:
 `remove` removes an item with using actual value of it:
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
->>> furniture.remove('chair')
->>> furniture
-# ['table', 'rack', 'shelf']
+furniture = ['table', 'chair', 'rack', 'shelf']
+furniture.remove('chair')
+furniture
+```
+
+Output:
+
+```
+['table', 'rack', 'shelf']
 ```
 
 <base-warning>
@@ -300,58 +576,111 @@ The `index` method allows you to find the index of a value by passing its name:
 By default, `pop` will remove and return the last item of the list. You can also pass the index of the element as an optional parameter:
 
 ```python
->>> animals = ['cat', 'bat', 'rat', 'elephant']
+animals = ['cat', 'bat', 'rat', 'elephant']
 
->>> animals.pop()
+animals.pop()
+```
+
+Output:
+
+```
 'elephant'
+```
 
->>> animals
+```python
+animals
+```
+
+Output:
+
+```
 ['cat', 'bat', 'rat']
+```
 
->>> animals.pop(0)
+```python
+animals.pop(0)
+```
+
+Output:
+
+```
 'cat'
+```
 
->>> animals
+```python
+animals
+```
+
+Output:
+
+```
 ['bat', 'rat']
 ```
 
 ## Sorting values with sort()
 
 ```python
->>> numbers = [2, 5, 3.14, 1, -7]
->>> numbers.sort()
->>> numbers
-# [-7, 1, 2, 3.14, 5]
+numbers = [2, 5, 3.14, 1, -7]
+numbers.sort()
+numbers
+```
 
+Output:
+
+```
+[-7, 1, 2, 3.14, 5]
+```
+
+```python
 furniture = ['table', 'chair', 'rack', 'shelf']
 furniture.sort()
 furniture
-# ['chair', 'rack', 'shelf', 'table']
+```
+
+Output:
+
+```
+['chair', 'rack', 'shelf', 'table']
 ```
 
 You can also pass `True` for the `reverse` keyword argument to have `sort()` sort the values in reverse order:
 
 ```python
->>> furniture.sort(reverse=True)
->>> furniture
-# ['table', 'shelf', 'rack', 'chair']
+furniture.sort(reverse=True)
+furniture
+```
+
+Output:
+
+```
+['table', 'shelf', 'rack', 'chair']
 ```
 
 If you need to sort the values in regular alphabetical order, pass `str.lower` for the key keyword argument in the sort() method call:
 
 ```python
->>> letters = ['a', 'z', 'A', 'Z']
->>> letters.sort(key=str.lower)
->>> letters
-# ['a', 'A', 'z', 'Z']
+letters = ['a', 'z', 'A', 'Z']
+letters.sort(key=str.lower)
+letters
+```
+
+Output:
+
+```
+['a', 'A', 'z', 'Z']
 ```
 
 You can use the built-in function `sorted` to return a new list:
 
 ```python
->>> furniture = ['table', 'chair', 'rack', 'shelf']
->>> sorted(furniture)
-# ['chair', 'rack', 'shelf', 'table']
+furniture = ['table', 'chair', 'rack', 'shelf']
+sorted(furniture)
+```
+
+Output:
+
+```
+['chair', 'rack', 'shelf', 'table']
 ```
 
 ## The Tuple data type
@@ -366,16 +695,35 @@ You can use the built-in function `sorted` to return a new list:
 </base-disclaimer>
 
 ```python
->>> furniture = ('table', 'chair', 'rack', 'shelf')
+furniture = ('table', 'chair', 'rack', 'shelf')
 
->>> furniture[0]
-# 'table'
+furniture[0]
+```
 
->>> furniture[1:3]
-# ('chair', 'rack')
+Output:
 
->>> len(furniture)
-# 4
+```
+'table'
+```
+
+```python
+furniture[1:3]
+```
+
+Output:
+
+```
+('chair', 'rack')
+```
+
+```python
+len(furniture)
+```
+
+Output:
+
+```
+4
 ```
 
 The main way that tuples are different from lists is that tuples, like strings, are immutable.
@@ -383,14 +731,33 @@ The main way that tuples are different from lists is that tuples, like strings, 
 ## Converting between list() and tuple()
 
 ```python
->>> tuple(['cat', 'dog', 5])
-# ('cat', 'dog', 5)
+tuple(['cat', 'dog', 5])
+```
 
->>> list(('cat', 'dog', 5))
-# ['cat', 'dog', 5]
+Output:
 
->>> list('hello')
-# ['h', 'e', 'l', 'l', 'o']
+```
+('cat', 'dog', 5)
+```
+
+```python
+list(('cat', 'dog', 5))
+```
+
+Output:
+
+```
+['cat', 'dog', 5]
+```
+
+```python
+list('hello')
+```
+
+Output:
+
+```
+['h', 'e', 'l', 'l', 'o']
 ```
 
 ## Relevant links

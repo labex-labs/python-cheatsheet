@@ -35,9 +35,11 @@ import csv
 
 file_path = 'file.csv'
 
+# Read CSV file
 with open(file_path, 'r', newline='') as csvfile:
   reader = csv.reader(csvfile)
 
+  # Iterate through each row
   for line in reader:
     print(line)
 ```
@@ -53,6 +55,7 @@ import csv
 
 file_path = 'file.csv'
 
+# Open file for writing CSV
 with open(file_path, 'w', newline='') as csvfile:
   writer = csv.writer(csvfile)
 
@@ -66,7 +69,9 @@ The "do something" block could be replaced with the use of the following functio
 Writes a single row to the CSV file.
 
 ```python
+# Write header row
 writer.writerow(['name', 'age', 'city'])
+# Write data row
 writer.writerow(['Alice', 30, 'London'])
 ```
 
@@ -75,11 +80,13 @@ writer.writerow(['Alice', 30, 'London'])
 Writes multiple rows at once.
 
 ```python
+# Prepare multiple rows
 rows = [
     ['name', 'age', 'city'],
     ['Bob', 25, 'Paris'],
     ['Carol', 28, 'Berlin']
 ]
+# Write all rows at once
 writer.writerows(rows)
 ```
 
@@ -90,14 +97,17 @@ Allows you to read CSV files and access each row as a dictionary, using the firs
 ```python
 import csv
 
+# Read CSV as dictionary (first row becomes keys)
 with open('people.csv', 'r', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
+    # Access columns by name instead of index
     for row in reader:
         print(row['name'], row['age'])
 ```
 
 - Each `row` is an `OrderedDict` (or a regular `dict` in Python 3.8+).
 - If your CSV does not have headers, you can provide them with the `fieldnames` parameter:
+
   ```python
   reader = csv.DictReader(csvfile, fieldnames=['name', 'age', 'city'])
   ```
@@ -115,6 +125,7 @@ rows = [
     {'name': 'Bob', 'age': 25, 'city': 'Paris'}
 ]
 
+# Write dictionaries to CSV
 with open('people_dict.csv', 'w', newline='') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()  # writes the header row
@@ -133,6 +144,7 @@ Should be the character used to separate the fields. As the file type says, the 
 ```python
 import csv
 
+# Read CSV with semicolon delimiter
 with open('data_semicolon.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=';')
     for row in reader:
@@ -148,6 +160,7 @@ Character or sequence of characters to end a line. Most common is "\r\n" but it 
 Character used to quote fields containing special characters (default is `"`).
 
 ```python
+# Use single quote as quote character
 reader = csv.reader(csvfile, quotechar="'")
 ```
 

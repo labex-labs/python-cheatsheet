@@ -23,10 +23,17 @@ An escape character is created by typing a backslash `\` followed by the charact
 | `\r`             | Carriage Return      |
 
 ```python
->>> print("Hello there!\nHow are you?\nI\'m doing fine.")
-# Hello there!
-# How are you?
-# I'm doing fine.
+# Escape characters: use backslash to insert special characters
+# \n = newline, \' = single quote
+print("Hello there!\nHow are you?\nI\'m doing fine.")
+```
+
+Output:
+
+```
+Hello there!
+How are you?
+I'm doing fine.
 ```
 
 ## Raw strings
@@ -34,8 +41,14 @@ An escape character is created by typing a backslash `\` followed by the charact
 A raw string entirely ignores all escape characters and prints any backslash that appears in the string.
 
 ```python
->>> print(r"Hello there!\nHow are you?\nI\'m doing fine.")
-# Hello there!\nHow are you?\nI\'m doing fine.
+# Raw string (r prefix): treats backslashes as literal characters
+print(r"Hello there!\nHow are you?\nI\'m doing fine.")  # \n printed literally
+```
+
+Output:
+
+```
+Hello there!\nHow are you?\nI\'m doing fine.
 ```
 
 Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions">regular expression</router-link> definition.
@@ -43,23 +56,27 @@ Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions
 ## Multiline Strings
 
 ```python
->>> print(
-... """Dear Alice,
-...
-... Eve's cat has been arrested for catnapping,
-... cat burglary, and extortion.
-...
-... Sincerely,
-... Bob"""
-... )
+print(
+"""Dear Alice,
 
-# Dear Alice,
+Eve's cat has been arrested for catnapping,
+cat burglary, and extortion.
 
-# Eve's cat has been arrested for catnapping,
-# cat burglary, and extortion.
+Sincerely,
+Bob"""
+)
+```
 
-# Sincerely,
-# Bob
+Output:
+
+```
+Dear Alice,
+
+Eve's cat has been arrested for catnapping,
+cat burglary, and extortion.
+
+Sincerely,
+Bob
 ```
 
 ## Indexing and Slicing strings
@@ -70,63 +87,164 @@ Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions
 ### Indexing
 
 ```python
->>> spam = 'Hello world!'
+# String indexing: access characters by position (0-based)
+spam = 'Hello world!'
 
->>> spam[0]
-# 'H'
+spam[0]  # Returns first character: 'H'
+```
 
->>> spam[4]
-# 'o'
+Output:
 
->>> spam[-1]
-# '!'
+```
+'H'
+```
+
+```python
+spam[4]
+```
+
+Output:
+
+```
+'o'
+```
+
+```python
+spam[-1]
+```
+
+Output:
+
+```
+'!'
 ```
 
 ### Slicing
 
 ```python
->>> spam = 'Hello world!'
+# String slicing: extract substring using [start:end] syntax
+spam = 'Hello world!'
 
->>> spam[0:5]
-# 'Hello'
+spam[0:5]  # Returns characters from index 0 to 4: 'Hello'
+```
 
->>> spam[:5]
-# 'Hello'
+Output:
 
->>> spam[6:]
-# 'world!'
+```
+'Hello'
+```
 
->>> spam[6:-1]
-# 'world'
+```python
+spam[:5]
+```
 
->>> spam[:-1]
-# 'Hello world'
+Output:
 
->>> spam[::-1]
-# '!dlrow olleH'
+```
+'Hello'
+```
 
->>> fizz = spam[0:5]
->>> fizz
-# 'Hello'
+```python
+spam[6:]
+```
+
+Output:
+
+```
+'world!'
+```
+
+```python
+spam[6:-1]
+```
+
+Output:
+
+```
+'world'
+```
+
+```python
+spam[:-1]
+```
+
+Output:
+
+```
+'Hello world'
+```
+
+```python
+spam[::-1]
+```
+
+Output:
+
+```
+'!dlrow olleH'
+```
+
+```python
+fizz = spam[0:5]
+fizz
+```
+
+Output:
+
+```
+'Hello'
 ```
 
 ## The in and not in operators
 
 ```python
->>> 'Hello' in 'Hello World'
-# True
+'Hello' in 'Hello World'
+```
 
->>> 'Hello' in 'Hello'
-# True
+Output:
 
->>> 'HELLO' in 'Hello World'
-# False
+```
+True
+```
 
->>> '' in 'spam'
-# True
+```python
+'Hello' in 'Hello'
+```
 
->>> 'cats' not in 'cats and dogs'
-# False
+Output:
+
+```
+True
+```
+
+```python
+'HELLO' in 'Hello World'
+```
+
+Output:
+
+```
+False
+```
+
+```python
+'' in 'spam'
+```
+
+Output:
+
+```
+True
+```
+
+```python
+'cats' not in 'cats and dogs'
+```
+
+Output:
+
+```
+False
 ```
 
 ## upper(), lower() and title()
@@ -134,15 +252,34 @@ Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions
 Transforms a string to upper, lower and title case:
 
 ```python
->>> greet = 'Hello world!'
->>> greet.upper()
-# 'HELLO WORLD!'
+greet = 'Hello world!'
+greet.upper()
+```
 
->>> greet.lower()
-# 'hello world!'
+Output:
 
->>> greet.title()
-# 'Hello World!'
+```
+'HELLO WORLD!'
+```
+
+```python
+greet.lower()
+```
+
+Output:
+
+```
+'hello world!'
+```
+
+```python
+greet.title()
+```
+
+Output:
+
+```
+'Hello World!'
 ```
 
 ## isupper() and islower() methods
@@ -150,24 +287,64 @@ Transforms a string to upper, lower and title case:
 Returns `True` or `False` after evaluating if a string is in upper or lower case:
 
 ```python
->>> spam = 'Hello world!'
->>> spam.islower()
-# False
+spam = 'Hello world!'
+spam.islower()
+```
 
->>> spam.isupper()
-# False
+Output:
 
->>> 'HELLO'.isupper()
-# True
+```
+False
+```
 
->>> 'abc12345'.islower()
-# True
+```python
+spam.isupper()
+```
 
->>> '12345'.islower()
-# False
+Output:
 
->>> '12345'.isupper()
-# False
+```
+False
+```
+
+```python
+'HELLO'.isupper()
+```
+
+Output:
+
+```
+True
+```
+
+```python
+'abc12345'.islower()
+```
+
+Output:
+
+```
+True
+```
+
+```python
+'12345'.islower()
+```
+
+Output:
+
+```
+False
+```
+
+```python
+'12345'.isupper()
+```
+
+Output:
+
+```
+False
 ```
 
 ## The isX string methods
@@ -183,23 +360,63 @@ Returns `True` or `False` after evaluating if a string is in upper or lower case
 ## startswith() and endswith()
 
 ```python
->>> 'Hello world!'.startswith('Hello')
-# True
+'Hello world!'.startswith('Hello')
+```
 
->>> 'Hello world!'.endswith('world!')
-# True
+Output:
 
->>> 'abc123'.startswith('abcdef')
-# False
+```
+True
+```
 
->>> 'abc123'.endswith('12')
-# False
+```python
+'Hello world!'.endswith('world!')
+```
 
->>> 'Hello world!'.startswith('Hello world!')
-# True
+Output:
 
->>> 'Hello world!'.endswith('Hello world!')
-# True
+```
+True
+```
+
+```python
+'abc123'.startswith('abcdef')
+```
+
+Output:
+
+```
+False
+```
+
+```python
+'abc123'.endswith('12')
+```
+
+Output:
+
+```
+False
+```
+
+```python
+'Hello world!'.startswith('Hello world!')
+```
+
+Output:
+
+```
+True
+```
+
+```python
+'Hello world!'.endswith('Hello world!')
+```
+
+Output:
+
+```
+True
 ```
 
 ## join() and split()
@@ -209,17 +426,43 @@ Returns `True` or `False` after evaluating if a string is in upper or lower case
 The `join()` method takes all the items in an iterable, like a <router-link to="/cheatsheet/lists-and-tuples">list</router-link>, <router-link to="/cheatsheet/dictionaries">dictionary</router-link>, <router-link to="/cheatsheet/lists-and-tuples#the-tuple-data-type">tuple</router-link> or <router-link to="/cheatsheet/sets">set</router-link>, and joins them into a string. You can also specify a separator.
 
 ```python
->>> ''.join(['My', 'name', 'is', 'Simon'])
+''.join(['My', 'name', 'is', 'Simon'])
+```
+
+Output:
+
+```
 'MynameisSimon'
+```
 
->>> ', '.join(['cats', 'rats', 'bats'])
-# 'cats, rats, bats'
+```python
+', '.join(['cats', 'rats', 'bats'])
+```
 
->>> ' '.join(['My', 'name', 'is', 'Simon'])
-# 'My name is Simon'
+Output:
 
->>> 'ABC'.join(['My', 'name', 'is', 'Simon'])
-# 'MyABCnameABCisABCSimon'
+```
+'cats, rats, bats'
+```
+
+```python
+' '.join(['My', 'name', 'is', 'Simon'])
+```
+
+Output:
+
+```
+'My name is Simon'
+```
+
+```python
+'ABC'.join(['My', 'name', 'is', 'Simon'])
+```
+
+Output:
+
+```
+'MyABCnameABCisABCSimon'
 ```
 
 ### split()
@@ -227,70 +470,181 @@ The `join()` method takes all the items in an iterable, like a <router-link to="
 The `split()` method splits a `string` into a `list`. By default, it will use whitespace to separate the items, but you can also set another character of choice:
 
 ```python
->>> 'My name is Simon'.split()
-# ['My', 'name', 'is', 'Simon']
+'My name is Simon'.split()
+```
 
->>> 'MyABCnameABCisABCSimon'.split('ABC')
-# ['My', 'name', 'is', 'Simon']
+Output:
 
->>> 'My name is Simon'.split('m')
-# ['My na', 'e is Si', 'on']
+```
+['My', 'name', 'is', 'Simon']
+```
 
->>> ' My  name is  Simon'.split()
-# ['My', 'name', 'is', 'Simon']
+```python
+'MyABCnameABCisABCSimon'.split('ABC')
+```
 
->>> ' My  name is  Simon'.split(' ')
-# ['', 'My', '', 'name', 'is', '', 'Simon']
+Output:
+
+```
+['My', 'name', 'is', 'Simon']
+```
+
+```python
+'My name is Simon'.split('m')
+```
+
+Output:
+
+```
+['My na', 'e is Si', 'on']
+```
+
+```python
+' My  name is  Simon'.split()
+```
+
+Output:
+
+```
+['My', 'name', 'is', 'Simon']
+```
+
+```python
+' My  name is  Simon'.split(' ')
+```
+
+Output:
+
+```
+['', 'My', '', 'name', 'is', '', 'Simon']
 ```
 
 ## Justifying text with rjust(), ljust() and center()
 
 ```python
->>> 'Hello'.rjust(10)
-# '     Hello'
+'Hello'.rjust(10)
+```
 
->>> 'Hello'.rjust(20)
-# '               Hello'
+Output:
 
->>> 'Hello World'.rjust(20)
-# '         Hello World'
+```
+'     Hello'
+```
 
->>> 'Hello'.ljust(10)
-# 'Hello     '
+```python
+'Hello'.rjust(20)
+```
 
->>> 'Hello'.center(20)
-# '       Hello       '
+Output:
+
+```
+'               Hello'
+```
+
+```python
+'Hello World'.rjust(20)
+```
+
+Output:
+
+```
+'         Hello World'
+```
+
+```python
+'Hello'.ljust(10)
+```
+
+Output:
+
+```
+'Hello     '
+```
+
+```python
+'Hello'.center(20)
+```
+
+Output:
+
+```
+'       Hello       '
 ```
 
 An optional second argument to `rjust()` and `ljust()` will specify a fill character apart from a space character:
 
 ```python
->>> 'Hello'.rjust(20, '*')
-# '***************Hello'
+'Hello'.rjust(20, '*')
+```
 
->>> 'Hello'.ljust(20, '-')
-# 'Hello---------------'
+Output:
 
->>> 'Hello'.center(20, '=')
-# '=======Hello========'
+```
+'***************Hello'
+```
+
+```python
+'Hello'.ljust(20, '-')
+```
+
+Output:
+
+```
+'Hello---------------'
+```
+
+```python
+'Hello'.center(20, '=')
+```
+
+Output:
+
+```
+'=======Hello========'
 ```
 
 ## Removing whitespace with strip(), rstrip(), and lstrip()
 
 ```python
->>> spam = '    Hello World     '
->>> spam.strip()
-# 'Hello World'
+spam = '    Hello World     '
+spam.strip()
+```
 
->>> spam.lstrip()
-# 'Hello World     '
+Output:
 
->>> spam.rstrip()
-# '    Hello World'
+```
+'Hello World'
+```
 
->>> spam = 'SpamSpamBaconSpamEggsSpamSpam'
->>> spam.strip('ampS')
-# 'BaconSpamEggs'
+```python
+spam.lstrip()
+```
+
+Output:
+
+```
+'Hello World     '
+```
+
+```python
+spam.rstrip()
+```
+
+Output:
+
+```
+'    Hello World'
+```
+
+```python
+spam = 'SpamSpamBaconSpamEggsSpamSpam'
+spam.strip('ampS')
+```
+
+Output:
+
+```
+'BaconSpamEggs'
 ```
 
 ## The Count Method
@@ -298,19 +652,45 @@ An optional second argument to `rjust()` and `ljust()` will specify a fill chara
 Counts the number of occurrences of a given character or substring in the string it is applied to. Can be optionally provided start and end index.
 
 ```python
->>> sentence = 'one sheep two sheep three sheep four'
->>> sentence.count('sheep')
-# 3
+sentence = 'one sheep two sheep three sheep four'
+sentence.count('sheep')
+```
 
->>> sentence.count('e')
-# 9
+Output:
 
->>> sentence.count('e', 6)
-# 8
+```
+3
+```
+
+```python
+sentence.count('e')
+```
+
+Output:
+
+```
+9
+```
+
+```python
 # returns count of e after 'one sh' i.e 6 chars since beginning of string
+sentence.count('e', 6)
+```
 
->>> sentence.count('e', 7)
-# 7
+Output:
+
+```
+8
+```
+
+```python
+sentence.count('e', 7)
+```
+
+Output:
+
+```
+7
 ```
 
 ## Replace Method
@@ -318,17 +698,36 @@ Counts the number of occurrences of a given character or substring in the string
 Replaces all occurences of a given substring with another substring. Can be optionally provided a third argument to limit the number of replacements. Returns a new string.
 
 ```python
->>> text = "Hello, world!"
->>> text.replace("world", "planet")
-# 'Hello, planet!'
+text = "Hello, world!"
+text.replace("world", "planet")
+```
 
->>> fruits = "apple, banana, cherry, apple"
->>> fruits.replace("apple", "orange", 1)
-# 'orange, banana, cherry, apple'
+Output:
 
->>> sentence = "I like apples, Apples are my favorite fruit"
->>> sentence.replace("apples", "oranges")
-# 'I like oranges, Apples are my favorite fruit'
+```
+'Hello, planet!'
+```
+
+```python
+fruits = "apple, banana, cherry, apple"
+fruits.replace("apple", "orange", 1)
+```
+
+Output:
+
+```
+'orange, banana, cherry, apple'
+```
+
+```python
+sentence = "I like apples, Apples are my favorite fruit"
+sentence.replace("apples", "oranges")
+```
+
+Output:
+
+```
+'I like oranges, Apples are my favorite fruit'
 ```
 
 ## Relevant links

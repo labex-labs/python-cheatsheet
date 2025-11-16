@@ -22,14 +22,37 @@ datetime.date(year: int, month: int, day: int)
 The date method return a date object with the `year`, `month` and `day` attributes:
 
 ```python
->>> from datetime import date
->>> obj = date(2022, 12, 1)
->>> obj.year
-# 2022
->>> obj.month
-# 12
->>> obj.day
-# 1
+from datetime import date
+# Create a date object
+obj = date(2022, 12, 1)
+# Access year attribute
+obj.year
+```
+
+Output:
+
+```
+2022
+```
+
+```python
+obj.month
+```
+
+Output:
+
+```
+12
+```
+
+```python
+obj.day
+```
+
+Output:
+
+```
+1
 ```
 
 ## time()
@@ -41,14 +64,37 @@ datetime.time(hour: int, minute: int, second: int)
 The `time` method return a time object with the `hour`, `minute`, `second`, `microsecond` and `tzinfo` attributes:
 
 ```python
->>> from datetime import time
->>> obj = time(10, 20, 33)
->>> obj.hour
-# 10
->>> obj.second
-# 33
->>> obj.microsecond
-# 0
+from datetime import time
+# Create a time object
+obj = time(10, 20, 33)
+# Access hour attribute
+obj.hour
+```
+
+Output:
+
+```
+10
+```
+
+```python
+obj.second
+```
+
+Output:
+
+```
+33
+```
+
+```python
+obj.microsecond
+```
+
+Output:
+
+```
+0
 ```
 
 ## datetime()
@@ -60,18 +106,57 @@ datetime.datetime(year, month, day, hour, minute, second)
 The `datetime` returns an object with both, the `date` and `time` objects attributes:
 
 ```python
->>> from datetime import datetime
->>> obj = datetime(2024, 12, 1, 15, 35, 59)
->>> obj.year
-# 2024
->>> obj.month
-# 12
->>> obj.day
-# 1
->>> obj.hour
-# 15
->>> obj.second
-# 59
+from datetime import datetime
+# Create a datetime object with date and time
+obj = datetime(2024, 12, 1, 15, 35, 59)
+# Access year attribute
+obj.year
+```
+
+Output:
+
+```
+2024
+```
+
+```python
+obj.month
+```
+
+Output:
+
+```
+12
+```
+
+```python
+obj.day
+```
+
+Output:
+
+```
+1
+```
+
+```python
+obj.hour
+```
+
+Output:
+
+```
+15
+```
+
+```python
+obj.second
+```
+
+Output:
+
+```
+59
 ```
 
 ## now() and today()
@@ -79,41 +164,122 @@ The `datetime` returns an object with both, the `date` and `time` objects attrib
 `now` and `today` methods return a `datetime` object with system's exact day and time:
 
 ```python
->>> from datetime import datetime
->>> now = datetime.now()
->>> now
-# datetime.datetime(2022, 7, 23, 19, 56, 49, 589806)
+from datetime import datetime
+# Get current date and time
+now = datetime.now()
+now
+```
+
+Output:
+
+```
+datetime.datetime(2022, 7, 23, 19, 56, 49, 589806)
 ```
 
 Because the object returned is a `datetime`, we can access both, `date` and `time` attributes:
 
 ```python
->>> now.date()
-# datetime.date(2022, 7, 23)
->>> now.time()
-# datetime.time(19, 56, 49, 589806)
->>> now.year
-# 2022
->>> now.month
-# 7
->>> now.day
-# 23
->>> now.hour
-# 19
->>> now.minute
-# 56
->>> now.second
-# 49
->>> now.microsecond
-# 589806
+now.date()
+```
+
+Output:
+
+```
+datetime.date(2022, 7, 23)
+```
+
+```python
+now.time()
+```
+
+Output:
+
+```
+datetime.time(19, 56, 49, 589806)
+```
+
+```python
+now.year
+```
+
+Output:
+
+```
+2022
+```
+
+```python
+now.month
+```
+
+Output:
+
+```
+7
+```
+
+```python
+now.day
+```
+
+Output:
+
+```
+23
+```
+
+```python
+now.hour
+```
+
+Output:
+
+```
+19
+```
+
+```python
+now.minute
+```
+
+Output:
+
+```
+56
+```
+
+```python
+now.second
+```
+
+Output:
+
+```
+49
+```
+
+```python
+now.microsecond
+```
+
+Output:
+
+```
+589806
 ```
 
 Additionally, `now` can take a [timezone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) object as an optional parameter:
 
 ```python
->>> from datetime import datetime, timezone
->>> datetime.now(timezone.utc)
-# datetime.datetime(2022, 7, 24, 0, 20, 8, 265634, tzinfo=datetime.timezone.utc)
+from datetime import datetime, timezone
+# Get current UTC time
+datetime.now(timezone.utc)
+```
+
+Output:
+
+```
+datetime.datetime(2022, 7, 24, 0, 20, 8, 265634, tzinfo=datetime.timezone.utc)
 ```
 
 If a _timezone_ parameter is not specified, `now` will default to the system timezone.
@@ -127,28 +293,60 @@ You can easily transform between strings and datetime objects with the `strftime
 `strftime` allow us to create human formatted strings out of a Python datetime object:
 
 ```python
->>> from datetime import datetime
->>> now = datetime.now()
->>> now
-# datetime.datetime(2022, 7, 23, 20, 31, 19, 751479)
+from datetime import datetime
+# Get current datetime for formatting examples
+now = datetime.now()
+now
+```
 
->>> now.strftime("%d-%b-%Y")
-# '23-Jul-2022'
+Output:
 
->>> now.strftime("%d-%m-%Y")
-# '23-07-2022'
+```
+datetime.datetime(2022, 7, 23, 20, 31, 19, 751479)
+```
 
->>> now.strftime("%d-%b-%Y")
-# '23-Jul-2022'
+```python
+# Format datetime as day-month-year with abbreviated month
+now.strftime("%d-%b-%Y")
+```
 
->>> now.strftime("%d-%m-%Y")
-# '23-07-2022'
+Output:
 
->>> now.strftime("%m/%d/%Y")
-# '07/23/2022'
+```
+'23-Jul-2022'
+```
 
->>> now.strftime("%b/%d/%Y - %H:%M:%S")
-# 'Jul/23/2022 - 20:31:19'
+```python
+# Format datetime as day-month-year with numeric month
+now.strftime("%d-%m-%Y")
+```
+
+Output:
+
+```
+'23-07-2022'
+```
+
+```python
+# Format datetime as month/day/year
+now.strftime("%m/%d/%Y")
+```
+
+Output:
+
+```
+'07/23/2022'
+```
+
+```python
+# Format datetime with date and time
+now.strftime("%b/%d/%Y - %H:%M:%S")
+```
+
+Output:
+
+```
+'Jul/23/2022 - 20:31:19'
 ```
 
 You may find the strings passed to `strftime` to be a little strange, but it is pretty easy to understand its meaning. For example, `%m/%d/%Y` will return the month, day, and year separated by `/` (07/23/2022).
@@ -167,15 +365,29 @@ obj.strptime(datetime_string, format)
 - The python format code equivalent to that string.
 
 ```python
->>> from datetime import datetime
+from datetime import datetime
 
->>> datetime_str = '12-Jul-2023'
->>> datetime.strptime(datetime_str, '%d-%b-%Y')
-# datetime.datetime(2023, 7, 12, 0, 0)
+# Parse string to datetime object
+datetime_str = '12-Jul-2023'
+datetime.strptime(datetime_str, '%d-%b-%Y')
+```
 
->>> datetime_str = 'Jul/12/2023 - 14:38:37'
->>> datetime.strptime(datetime_str, "%b/%d/%Y - %H:%M:%S")
-# datetime.datetime(2023, 7, 12, 14, 38, 37)
+Output:
+
+```
+datetime.datetime(2023, 7, 12, 0, 0)
+```
+
+```python
+# Parse string with date and time
+datetime_str = 'Jul/12/2023 - 14:38:37'
+datetime.strptime(datetime_str, "%b/%d/%Y - %H:%M:%S")
+```
+
+Output:
+
+```
+datetime.datetime(2023, 7, 12, 14, 38, 37)
 ```
 
 ### Format Codes
@@ -212,42 +424,86 @@ obj.strptime(datetime_string, format)
 The `timedelta` object represents the difference between two dates or times.
 
 ```python
->>> from datetime import datetime
+from datetime import datetime
 
->>> date_1 = datetime.strptime('12-Jul-2023', '%d-%b-%Y')
->>> date_2 = datetime.strptime('01-Jan-2024', '%d-%b-%Y')
+# Create two datetime objects
+date_1 = datetime.strptime('12-Jul-2023', '%d-%b-%Y')
+date_2 = datetime.strptime('01-Jan-2024', '%d-%b-%Y')
 
->>> difference = date_2 - date_1
->>> difference
-# datetime.timedelta(days=173)
->>> difference.days
-# 173
+# Calculate difference (returns timedelta)
+difference = date_2 - date_1
+difference
+```
+
+Output:
+
+```
+datetime.timedelta(days=173)
+```
+
+```python
+# Get number of days from timedelta
+difference.days
+```
+
+Output:
+
+```
+173
 ```
 
 `timedelta` can add `days`, `seconds` and `microseconds` to a datetime object:
 
 ```python
->>> from datetime import datetime, timedelta
+from datetime import datetime, timedelta
 
->>> now = datetime.now()
->>> now
-# datetime.datetime(2022, 7, 23, 21, 25, 2, 341081)
+# Get current datetime for timedelta operations
+now = datetime.now()
+now
+```
 
->>> now + timedelta(days=10, seconds=15)
-# datetime.datetime(2022, 8, 2, 21, 25, 17, 341081)
+Output:
+
+```
+datetime.datetime(2022, 7, 23, 21, 25, 2, 341081)
+```
+
+```python
+# Add 10 days and 15 seconds to current datetime
+now + timedelta(days=10, seconds=15)
+```
+
+Output:
+
+```
+datetime.datetime(2022, 8, 2, 21, 25, 17, 341081)
 ```
 
 And can subtract `days`, `seconds` and `microseconds` to a datetime object:
 
 ```python
->>> from datetime import datetime, timedelta
+from datetime import datetime, timedelta
 
->>> now = datetime.now()
->>> now
-# datetime.datetime(2022, 7, 23, 21, 25, 2, 341081)
+# Get current datetime for subtraction example
+now = datetime.now()
+now
+```
 
->>> now - timedelta(days=10, seconds=15)
-# datetime.datetime(2022, 7, 13, 21, 59, 41, 100883)
+Output:
+
+```
+datetime.datetime(2022, 7, 23, 21, 25, 2, 341081)
+```
+
+```python
+# Subtract 10 days and 15 seconds from current datetime
+now - timedelta(days=10, seconds=15)
+```
+
+Output:
+
+```
+datetime.datetime(2022, 7, 13, 21, 59, 41, 100883)
 ```
 
 ## Relevant links

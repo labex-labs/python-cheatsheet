@@ -15,9 +15,10 @@ A module’s **name** is set equal to `__main__` when read from standard input, 
 A module can discover whether it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module. When it is run as a script or with `python -m` but not when it is imported:
 
 ```python
->>> if __name__ == "__main__":
-...     # execute only if run as a script
-...     main()
+# __name__ == "__main__": check if script is run directly (not imported)
+if __name__ == "__main__":  # True when run as script, False when imported
+    # execute only if run as a script
+    main()
 ```
 
 For a package, the same effect can be achieved by including a **main**.py module, the contents of which will be executed when the module is run with -m.
@@ -25,11 +26,12 @@ For a package, the same effect can be achieved by including a **main**.py module
 For example, we are developing a script designed to be used as a module, we should do:
 
 ```python
->>> def add(a, b):
-...     return a+b
-...
->>> if __name__ == "__main__":
-...     add(3, 5)
+# Example: function can be imported, but test code only runs when executed directly
+def add(a, b):
+    return a+b
+
+if __name__ == "__main__":  # Only runs when file is executed, not when imported
+    add(3, 5)
 ```
 
 ## Advantages

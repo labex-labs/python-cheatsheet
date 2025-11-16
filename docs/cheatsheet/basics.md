@@ -35,23 +35,67 @@ From **highest** to **lowest** precedence:
 Examples of expressions:
 
 ```python
->>> 2 + 3 * 6
-# 20
+# Multiplication has higher precedence than addition
+# So this evaluates as: 2 + (3 * 6) = 2 + 18 = 20
+2 + 3 * 6
+```
 
->>> (2 + 3) * 6
-# 30
+Output:
 
->>> 2 ** 8
-#256
+```
+20
+```
 
->>> 23 // 7
-# 3
+```python
+# Parentheses override operator precedence
+# This evaluates as: 5 * 6 = 30
+(2 + 3) * 6
+```
 
->>> 23 % 7
-# 2
+Output:
 
->>> (5 - 1) * ((7 + 1) / (3 - 1))
-# 16.0
+```
+30
+```
+
+```python
+2 ** 8
+```
+
+Output:
+
+```
+256
+```
+
+```python
+23 // 7
+```
+
+Output:
+
+```
+3
+```
+
+```python
+23 % 7
+```
+
+Output:
+
+```
+2
+```
+
+```python
+(5 - 1) * ((7 + 1) / (3 - 1))
+```
+
+Output:
+
+```
+16.0
 ```
 
 ## Augmented Assignment Operators
@@ -69,20 +113,42 @@ Examples of expressions:
 Examples:
 
 ```python
->>> greeting = 'Hello'
->>> greeting += ' world!'
->>> greeting
-# 'Hello world!'
+# Augmented assignment: equivalent to greeting = greeting + ' world!'
+greeting = 'Hello'
+greeting += ' world!'
+greeting
+```
 
->>> number = 1
->>> number += 1
->>> number
-# 2
+Output:
 
->>> my_list = ['item']
->>> my_list *= 3
->>> my_list
-# ['item', 'item', 'item']
+```
+'Hello world!'
+```
+
+```python
+# Increment a number by 1
+number = 1
+number += 1
+number
+```
+
+Output:
+
+```
+2
+```
+
+```python
+# Replicate list elements: equivalent to my_list = my_list * 3
+my_list = ['item']
+my_list *= 3
+my_list
+```
+
+Output:
+
+```
+['item', 'item', 'item']
 ```
 
 ## Walrus Operator
@@ -92,15 +158,36 @@ The Walrus Operator allows assignment of variables within an expression while re
 Example:
 
 ```python
->>> print(my_var:="Hello World!")
-# 'Hello world!'
+# Walrus operator assigns and returns value in one expression
+# my_var is assigned "Hello World!" and then printed
+print(my_var:="Hello World!")
+```
 
->>> my_var="Yes"
->>> print(my_var)
-# 'Yes'
+Output:
 
->>> print(my_var:="Hello")
-# 'Hello'
+```
+Hello World!
+```
+
+```python
+my_var="Yes"
+print(my_var)
+```
+
+Output:
+
+```
+Yes
+```
+
+```python
+print(my_var:="Hello")
+```
+
+Output:
+
+```
+Hello
 ```
 
 The _Walrus Operator_, or **Assignment Expression Operator** was firstly introduced in 2018 via [PEP 572](https://peps.python.org/pep-0572/), and then officially released with **Python 3.8** in October 2019.
@@ -167,15 +254,27 @@ For a comprehensive guide with visual examples and detailed explanations of when
 String concatenation:
 
 ```python
->>> 'Alice' 'Bob'
-# 'AliceBob'
+# String concatenation: adjacent strings are automatically joined
+'Alice' 'Bob'
+```
+
+Output:
+
+```
+'AliceBob'
 ```
 
 String replication:
 
 ```python
->>> 'Alice' * 5
-# 'AliceAliceAliceAliceAlice'
+# String replication: repeat string multiple times
+'Alice' * 5
+```
+
+Output:
+
+```
+'AliceAliceAliceAliceAlice'
 ```
 
 ## Variables
@@ -185,38 +284,38 @@ You can name a variable anything as long as it obeys the following rules:
 1. It can be only one word.
 
 ```python
->>> # bad
->>> my variable = 'Hello'
+# bad
+my variable = 'Hello'
 
->>> # good
->>> var = 'Hello'
+# good
+var = 'Hello'
 ```
 
 2. It can use only letters, numbers, and the underscore (`_`) character.
 
 ```python
->>> # bad
->>> %$@variable = 'Hello'
+# bad
+%$@variable = 'Hello'
 
->>> # good
->>> my_var = 'Hello'
+# good
+my_var = 'Hello'
 
->>> # good
->>> my_var_2 = 'Hello'
+# good
+my_var_2 = 'Hello'
 ```
 
-3. It can’t begin with a number.
+3. It can't begin with a number.
 
 ```python
->>> # this wont work
->>> 23_var = 'hello'
+# this wont work
+23_var = 'hello'
 ```
 
 4. Variable name starting with an underscore (`_`) are considered as "unuseful".
 
 ```python
->>> # _spam should not be used again in the code
->>> _spam = 'Hello'
+# _spam should not be used again in the code
+_spam = 'Hello'
 ```
 
 ## Comments
@@ -258,12 +357,24 @@ def foo():
 The `print()` function writes the value of the argument(s) it is given. [...] it handles multiple arguments, floating point-quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely:
 
 ```python
->>> print('Hello world!')
-# Hello world!
+print('Hello world!')
+```
 
->>> a = 1
->>> print('Hello world!', a)
-# Hello world! 1
+Output:
+
+```
+Hello world!
+```
+
+```python
+a = 1
+print('Hello world!', a)
+```
+
+Output:
+
+```
+Hello world! 1
 ```
 
 ### The end keyword
@@ -271,11 +382,16 @@ The `print()` function writes the value of the argument(s) it is given. [...] it
 The keyword argument `end` can be used to avoid the newline after the output, or end the output with a different string:
 
 ```python
+# Use end parameter to change what comes after each print statement
 phrase = ['printed', 'with', 'a', 'dash', 'in', 'between']
->>> for word in phrase:
-...     print(word, end='-')
-...
-# printed-with-a-dash-in-between-
+for word in phrase:
+    print(word, end='-')  # Use '-' instead of newline
+```
+
+Output:
+
+```
+printed-with-a-dash-in-between-
 ```
 
 ### The sep keyword
@@ -283,8 +399,14 @@ phrase = ['printed', 'with', 'a', 'dash', 'in', 'between']
 The keyword `sep` specify how to separate the objects, if there is more than one:
 
 ```python
-print('cats', 'dogs', 'mice', sep=',')
-# cats,dogs,mice
+# Use sep parameter to specify separator between multiple arguments
+print('cats', 'dogs', 'mice', sep=',')  # Comma-separated output
+```
+
+Output:
+
+```
+cats,dogs,mice
 ```
 
 ## The input() Function
@@ -292,30 +414,47 @@ print('cats', 'dogs', 'mice', sep=',')
 This function takes the input from the user and converts it into a string:
 
 ```python
->>> print('What is your name?')   # ask for their name
->>> my_name = input()
->>> print('Hi, {}'.format(my_name))
-# What is your name?
-# Martha
-# Hi, Martha
+# input() reads user input and returns it as a string
+print('What is your name?')   # ask for their name
+my_name = input()  # Wait for user to type and press Enter
+print('Hi, {}'.format(my_name))
+```
+
+Output:
+
+```
+What is your name?
+Martha
+Hi, Martha
 ```
 
 `input()` can also set a default message without using `print()`:
 
 ```python
->>> my_name = input('What is your name? ')  # default message
->>> print('Hi, {}'.format(my_name))
-# What is your name? Martha
-# Hi, Martha
+my_name = input('What is your name? ')  # default message
+print('Hi, {}'.format(my_name))
+```
+
+Output:
+
+```
+What is your name? Martha
+Hi, Martha
 ```
 
 It is also possible to use formatted strings to avoid using .format:
 
 ```python
->>> my_name = input('What is your name? ')  # default message
->>> print(f'Hi, {my_name}')
-# What is your name? Martha
-# Hi, Martha
+# input() can display a prompt message directly
+my_name = input('What is your name? ')  # Prompt and read in one call
+print(f'Hi, {my_name}')  # f-string for string formatting
+```
+
+Output:
+
+```
+What is your name? Martha
+Hi, Martha
 ```
 
 ## The len() Function
@@ -323,11 +462,25 @@ It is also possible to use formatted strings to avoid using .format:
 Evaluates to the integer value of the number of characters in a string, list, dictionary, etc.:
 
 ```python
->>> len('hello')
-# 5
+# len() returns the number of characters in a string
+len('hello')  # Returns 5
+```
 
->>> len(['cat', 3, 'dog'])
-# 3
+Output:
+
+```
+5
+```
+
+```python
+# len() returns the number of items in a list
+len(['cat', 3, 'dog'])  # Returns 3 (three items)
+```
+
+Output:
+
+```
+3
 ```
 
 <base-warning>
@@ -341,19 +494,29 @@ Evaluates to the integer value of the number of characters in a string, list, di
 Test of emptiness example:
 
 ```python
->>> a = [1, 2, 3]
+a = [1, 2, 3]
 
-# bad
->>> if len(a) > 0:  # evaluates to True
-...     print("the list is not empty!")
-...
-# the list is not empty!
+# bad: unnecessary len() check
+if len(a) > 0:  # evaluates to True
+    print("the list is not empty!")
+```
 
-# good
->>> if a: # evaluates to True
-...     print("the list is not empty!")
-...
-# the list is not empty!
+Output:
+
+```
+the list is not empty!
+```
+
+```python
+# good: direct boolean evaluation (Pythonic way)
+if a:  # evaluates to True if list is not empty
+    print("the list is not empty!")
+```
+
+Output:
+
+```
+the list is not empty!
 ```
 
 ## The str(), int(), and float() Functions
@@ -361,21 +524,48 @@ Test of emptiness example:
 These functions allow you to change the type of variable. For example, you can transform from an `integer` or `float` to a `string`:
 
 ```python
->>> str(29)
-# '29'
+# Convert integer to string
+str(29)  # Returns '29'
+```
 
->>> str(-3.14)
-# '-3.14'
+Output:
+
+```
+'29'
+```
+
+```python
+str(-3.14)
+```
+
+Output:
+
+```
+'-3.14'
 ```
 
 Or from a `string` to an `integer` or `float`:
 
 ```python
->>> int('11')
-# 11
+# Convert string to integer
+int('11')  # Returns 11
+```
 
->>> float('3.14')
-# 3.14
+Output:
+
+```
+11
+```
+
+```python
+# Convert string to float
+float('3.14')  # Returns 3.14
+```
+
+Output:
+
+```
+3.14
 ```
 
 ## Relevant Links

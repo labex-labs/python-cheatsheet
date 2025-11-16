@@ -23,20 +23,21 @@ Read the article <router-link to="/blog/python-easy-args-kwargs">Python \*args a
 `*args` and `**kwargs` allow you to pass an undefined number of arguments and keywords when calling a function.
 
 ```python
->>> def some_function(*args, **kwargs):
-...     pass
-...
->>> # call some_function with any number of arguments
->>> some_function(arg1, arg2, arg3)
+# Define a function that accepts any number of positional and keyword arguments
+def some_function(*args, **kwargs):
+    pass
 
->>> # call some_function with any number of keywords
->>> some_function(key1=arg1, key2=arg2, key3=arg3)
+# Call with any number of positional arguments
+some_function(arg1, arg2, arg3)
 
->>> # call both, arguments and keywords
->>> some_function(arg, key1=arg1)
+# Call with any number of keyword arguments
+some_function(key1=arg1, key2=arg2, key3=arg3)
 
->>> # or none
->>> some_function()
+# Call with both positional and keyword arguments
+some_function(arg, key1=arg1)
+
+# Or call with no arguments at all
+some_function()
 ```
 
 <base-warning>
@@ -53,11 +54,18 @@ Read the article <router-link to="/blog/python-easy-args-kwargs">Python \*args a
 You can access the _arguments_ through the `args` variable:
 
 ```python
->>> def some_function(*args):
-...     print(f'Arguments passed: {args} as {type(args)}')
-...
->>> some_function('arg1', 'arg2', 'arg3')
-# Arguments passed: ('arg1', 'arg2', 'arg3') as <class 'tuple'>
+# *args collects positional arguments into a tuple
+def some_function(*args):
+    print(f'Arguments passed: {args} as {type(args)}')
+
+# Pass multiple arguments - they'll be collected into args tuple
+some_function('arg1', 'arg2', 'arg3')
+```
+
+Output:
+
+```
+Arguments passed: ('arg1', 'arg2', 'arg3') as <class 'tuple'>
 ```
 
 ## kwargs
@@ -65,11 +73,18 @@ You can access the _arguments_ through the `args` variable:
 Keywords are accessed through the `kwargs` variable:
 
 ```python
->>> def some_function(**kwargs):
-...     print(f'keywords: {kwargs} as {type(kwargs)}')
-...
->>> some_function(key1='arg1', key2='arg2')
-# keywords: {'key1': 'arg1', 'key2': 'arg2'} as <class 'dict'>
+# **kwargs collects keyword arguments into a dictionary
+def some_function(**kwargs):
+    print(f'keywords: {kwargs} as {type(kwargs)}')
+
+# Pass keyword arguments - they'll be collected into kwargs dict
+some_function(key1='arg1', key2='arg2')
+```
+
+Output:
+
+```
+keywords: {'key1': 'arg1', 'key2': 'arg2'} as <class 'dict'>
 ```
 
 ## Relevant links

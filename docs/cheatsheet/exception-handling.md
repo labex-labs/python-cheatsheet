@@ -23,32 +23,57 @@ Python has many [built-in exceptions](https://docs.python.org/3/library/exceptio
 You can't divide by zero, that is a mathematical true, and if you try to do it in Python, the interpreter will raise the built-in exception [ZeroDivisionError](https://docs.python.org/3/library/exceptions.html#ZeroDivisionError):
 
 ```python
->>> def divide(dividend , divisor):
-...     print(dividend / divisor)
-...
->>> divide(dividend=10, divisor=5)
-# 2
+def divide(dividend , divisor):
+    print(dividend / divisor)
 
->>> divide(dividend=10, divisor=0)
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-# ZeroDivisionError: division by zero
+divide(dividend=10, divisor=5)
+```
+
+Output:
+
+```
+2
+```
+
+```python
+divide(dividend=10, divisor=0)
+```
+
+Output:
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
 ```
 
 Let's say we don't want our program to stop its execution or show the user an output he will not understand. Say we want to print a useful and clear message, then we need to **_handle_** the exception with the `try` and `except` keywords:
 
 ```python
->>> def divide(dividend , divisor):
-...     try:
-...         print(dividend / divisor)
-...     except ZeroDivisionError:
-...         print('You can not divide by 0')
-...
->>> divide(dividend=10, divisor=5)
-# 2
+# try-except: handle exceptions gracefully
+def divide(dividend , divisor):
+    try:  # Try to execute this code
+        print(dividend / divisor)
+    except ZeroDivisionError:  # Catch specific exception type
+        print('You can not divide by 0')
 
->>> divide(dividend=10, divisor=0)
-# You can not divide by 0
+divide(dividend=10, divisor=5)
+```
+
+Output:
+
+```
+2
+```
+
+```python
+divide(dividend=10, divisor=0)
+```
+
+Output:
+
+```
+You can not divide by 0
 ```
 
 ## Handling Multiple exceptions using one exception block
@@ -56,24 +81,43 @@ Let's say we don't want our program to stop its execution or show the user an ou
 You can also handle multiple exceptions in one line like the following without the need to create multiple exception blocks.
 
 ```python
->>> def divide(dividend , divisor):
-...     try:
-...         if (dividend == 10):
-...           var = 'str' + 1
-...         else:
-...           print(dividend / divisor)
-...     except (ZeroDivisionError, TypeError) as error:
-...         print(error)
-...
+# Handle multiple exceptions in one except block
+def divide(dividend , divisor):
+    try:
+        if (dividend == 10):
+          var = 'str' + 1  # This will raise TypeError
+        else:
+          print(dividend / divisor)
+    except (ZeroDivisionError, TypeError) as error:  # Catch multiple exception types
+        print(error)  # Print the error message
 
->>> divide(dividend=20, divisor=5)
-# 4
+divide(dividend=20, divisor=5)
+```
 
->>> divide(dividend=10, divisor=5)
-# `can only concatenate str (not "int") to str` Error message
+Output:
 
->>> divide(dividend=10, divisor=0)
-# `division by zero` Error message
+```
+4
+```
+
+```python
+divide(dividend=10, divisor=5)
+```
+
+Output:
+
+```
+can only concatenate str (not "int") to str
+```
+
+```python
+divide(dividend=10, divisor=0)
+```
+
+Output:
+
+```
+division by zero
 ```
 
 ## Finally code in exception handling
@@ -81,21 +125,34 @@ You can also handle multiple exceptions in one line like the following without t
 The code inside the `finally` section is always executed, no matter if an exception has been raised or not:
 
 ```python
->>> def divide(dividend , divisor):
-...     try:
-...         print(dividend / divisor)
-...     except ZeroDivisionError:
-...         print('You can not divide by 0')
-...     finally:
-...         print('Execution finished')
-...
->>> divide(dividend=10, divisor=5)
-# 5
-# Execution finished
+# finally block: always executes regardless of exceptions
+def divide(dividend , divisor):
+    try:
+        print(dividend / divisor)
+    except ZeroDivisionError:
+        print('You can not divide by 0')
+    finally:  # Always executes, even if exception occurs
+        print('Execution finished')
 
->>> divide(dividend=10, divisor=0)
-# You can not divide by 0
-# Execution finished
+divide(dividend=10, divisor=5)
+```
+
+Output:
+
+```
+2.0
+Execution finished
+```
+
+```python
+divide(dividend=10, divisor=0)
+```
+
+Output:
+
+```
+You can not divide by 0
+Execution finished
 ```
 
 ## Custom Exceptions
@@ -103,36 +160,51 @@ The code inside the `finally` section is always executed, no matter if an except
 Custom exceptions initialize by creating a `class` that inherits from the base `Exception` class of Python, and are raised using the `raise` keyword:
 
 ```python
->>> class MyCustomException(Exception):
-...     pass
-...
->>> raise MyCustomException
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-# __main__.MyCustomException
+# Custom exception: create by inheriting from Exception class
+class MyCustomException(Exception):
+    pass
+
+raise MyCustomException  # Raise the custom exception
+```
+
+Output:
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+__main__.MyCustomException
 ```
 
 To declare a custom exception message, you can pass it as a parameter:
 
 ```python
->>> class MyCustomException(Exception):
-...     pass
-...
->>> raise MyCustomException('A custom message for my custom exception')
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-# __main__.MyCustomException: A custom message for my custom exception
+class MyCustomException(Exception):
+    pass
+
+raise MyCustomException('A custom message for my custom exception')
+```
+
+Output:
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+__main__.MyCustomException: A custom message for my custom exception
 ```
 
 Handling a custom exception is the same as any other:
 
 ```python
->>> try:
-...     raise MyCustomException('A custom message for my custom exception')
->>> except MyCustomException:
-...     print('My custom exception was raised')
-...
-# My custom exception was raised
+try:
+    raise MyCustomException('A custom message for my custom exception')
+except MyCustomException:
+    print('My custom exception was raised')
+```
+
+Output:
+
+```
+My custom exception was raised
 ```
 
 ## Relevant links

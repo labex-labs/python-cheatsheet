@@ -16,10 +16,12 @@ A context manager is an object that is notified when a context (a block of code)
 For example, file objects are context managers. When a context ends, the file object is closed automatically:
 
 ```python
->>> with open(filename) as f:
-...     file_contents = f.read()
-...
->>> # the open_file object has automatically been closed.
+# Context manager: automatically handles resource cleanup
+# File is automatically closed when exiting the 'with' block
+with open(filename) as f:  # 'f' is the file object
+    file_contents = f.read()
+
+# File is automatically closed here, even if an error occurred
 ```
 
 Anything that ends execution of the block causes the context manager's exit method to be called. This includes exceptions, and can be useful when an error causes you to prematurely exit an open file or connection. Exiting a script without properly closing files/connections is a bad idea, that may cause data loss or other problems. By using a context manager, you can ensure that precautions are always taken to prevent damage or loss in this way.
@@ -29,42 +31,50 @@ Anything that ends execution of the block causes the context manager's exit meth
 It is also possible to write a context manager using generator syntax thanks to the `contextlib.contextmanager` decorator:
 
 ```python
->>> import contextlib
->>> @contextlib.contextmanager
-... def context_manager(num):
-...     print('Enter')
-...     yield num + 1
-...     print('Exit')
-...
->>> with context_manager(2) as cm:
-...     # the following instructions are run when
-...     # the 'yield' point of the context manager is
-...     # reached. 'cm' will have the value that was yielded
-...     print('Right in the middle with cm = {}'.format(cm))
-...
-# Enter
-# Right in the middle with cm = 3
-# Exit
+# Function-based context manager using contextlib decorator
+import contextlib
+@contextlib.contextmanager
+def context_manager(num):
+    print('Enter')  # Code before yield runs on __enter__
+    yield num + 1   # Value yielded becomes 'cm' variable
+    print('Exit')    # Code after yield runs on __exit__
+
+with context_manager(2) as cm:  # cm receives the yielded value (3)
+    print('Right in the middle with cm = {}'.format(cm))
 ```
 
+Output:
+
+```
+Enter
+Right in the middle with cm = 3
+Exit
+```
 
 ## Class based context manager
 
 You can define class based context manager. The key methods are `__enter__` and `__exit__`
-```python
-class ContextManager:
-    def __enter__(self, *args, **kwargs):
-        print("--enter--")
 
-    def __exit__(self, *args):
+```python
+# Class-based context manager: implement __enter__ and __exit__ methods
+class ContextManager:
+    def __enter__(self, *args, **kwargs):  # Called when entering 'with' block
+        print("--enter--")
+        return self  # Can return object to use as 'as' variable
+
+    def __exit__(self, *args):  # Called when exiting 'with' block
         print("--exit--")
 
-
-with ContextManager():
+with ContextManager():  # Calls __enter__, then __exit__ when done
     print("test")
-#--enter--
-#test
-#--exit--
+```
+
+Output:
+
+```
+--enter--
+test
+--exit--
 ```
 
 ## Relevant links

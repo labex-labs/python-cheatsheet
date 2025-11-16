@@ -19,25 +19,38 @@ This module provides a decorator and functions for automatically adding generate
 Python 3.7 provides a decorator dataclass that is used to convert a class into a dataclass.
 
 ```python
->>> class Number:
-...     def __init__(self, val):
-...         self.val = val
-...
->>> obj = Number(2)
->>> obj.val
-# 2
+class Number:
+    def __init__(self, val):
+        self.val = val
+
+obj = Number(2)
+obj.val
+```
+
+Output:
+
+```
+2
 ```
 
 with dataclass
 
 ```python
->>> @dataclass
-... class Number:
-...     val: int
-...
->>> obj = Number(2)
->>> obj.val
-# 2
+# Dataclass: automatically generates __init__ and __repr__ methods
+from dataclasses import dataclass
+
+@dataclass  # Decorator converts class to dataclass
+class Number:
+    val: int  # Type annotation required
+
+obj = Number(2)  # __init__ automatically created
+obj.val
+```
+
+Output:
+
+```
+2
 ```
 
 ## Default values
@@ -45,21 +58,41 @@ with dataclass
 It is easy to add default values to the fields of your data class.
 
 ```python
->>> @dataclass
-... class Product:
-...     name: str
-...     count: int = 0
-...     price: float = 0.0
-...
->>> obj = Product("Python")
->>> obj.name
-# Python
+# Dataclass with default values: fields with defaults must come after required fields
+@dataclass
+class Product:
+    name: str        # Required field
+    count: int = 0   # Optional field with default value
+    price: float = 0.0  # Optional field with default value
 
->>> obj.count
-# 0
+obj = Product("Python")  # Only name required, others use defaults
+obj.name
+```
 
->>> obj.price
-# 0.0
+Output:
+
+```
+Python
+```
+
+```python
+obj.count
+```
+
+Output:
+
+```
+0
+```
+
+```python
+obj.price
+```
+
+Output:
+
+```
+0.0
 ```
 
 ## Type hints
@@ -67,13 +100,13 @@ It is easy to add default values to the fields of your data class.
 It is mandatory to define the data type in dataclass. However, If you would rather not specify the datatype then, use `typing.Any`.
 
 ```python
->>> from dataclasses import dataclass
->>> from typing import Any
+from dataclasses import dataclass
+from typing import Any
 
->>> @dataclass
-... class WithoutExplicitTypes:
-...    name: Any
-...    value: Any = 42
+@dataclass
+class WithoutExplicitTypes:
+   name: Any
+   value: Any = 42
 ```
 
 ## Relevant links

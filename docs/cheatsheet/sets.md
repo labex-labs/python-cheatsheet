@@ -34,12 +34,19 @@ There are two ways to create sets: using curly braces `{}` and the built-in func
 </base-warning>
 
 ```python
->>> s = {1, 2, 3}
->>> s = set([1, 2, 3])
+# Create set using curly braces or set() function
+s = {1, 2, 3}  # Using curly braces
+s = set([1, 2, 3])  # Using set() constructor
 
->>> s = {}  # this will create a dictionary instead of a set
->>> type(s)
-# <class 'dict'>
+# Warning: empty {} creates a dictionary, not a set
+s = {}  # this will create a dictionary instead of a set
+type(s)  # Returns <class 'dict'>
+```
+
+Output:
+
+```
+<class 'dict'>
 ```
 
 ## Unordered collections of unique elements
@@ -47,19 +54,30 @@ There are two ways to create sets: using curly braces `{}` and the built-in func
 A set automatically removes all the duplicate values.
 
 ```python
->>> s = {1, 2, 3, 2, 3, 4}
->>> s
-# {1, 2, 3, 4}
+# Sets automatically remove duplicates
+s = {1, 2, 3, 2, 3, 4}  # Duplicates are removed
+s  # Returns {1, 2, 3, 4}
+```
+
+Output:
+
+```
+{1, 2, 3, 4}
 ```
 
 And as an unordered data type, they can't be indexed.
 
 ```python
->>> s = {1, 2, 3}
->>> s[0]
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-# TypeError: 'set' object does not support indexing
+s = {1, 2, 3}
+s[0]
+```
+
+Output:
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object does not support indexing
 ```
 
 ## set add and update
@@ -67,19 +85,31 @@ And as an unordered data type, they can't be indexed.
 Using the `add()` method we can add a single element to the set.
 
 ```python
->>> s = {1, 2, 3}
->>> s.add(4)
->>> s
-# {1, 2, 3, 4}
+# add() method: add a single element to the set
+s = {1, 2, 3}
+s.add(4)  # Add element 4
+s
+```
+
+Output:
+
+```
+{1, 2, 3, 4}
 ```
 
 And with `update()`, multiple ones:
 
 ```python
->>> s = {1, 2, 3}
->>> s.update([2, 3, 4, 5, 6])
->>> s
-# {1, 2, 3, 4, 5, 6}
+# update() method: add multiple elements from an iterable
+s = {1, 2, 3}
+s.update([2, 3, 4, 5, 6])  # Add multiple elements (duplicates ignored)
+s
+```
+
+Output:
+
+```
+{1, 2, 3, 4, 5, 6}
 ```
 
 ## set remove and discard
@@ -87,25 +117,47 @@ And with `update()`, multiple ones:
 Both methods will remove an element from the set, but `remove()` will raise a `key error` if the value doesn't exist.
 
 ```python
->>> s = {1, 2, 3}
->>> s.remove(3)
->>> s
-# {1, 2}
+# remove() method: remove element, raises KeyError if not found
+s = {1, 2, 3}
+s.remove(3)  # Remove element 3
+s
+```
 
->>> s.remove(3)
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-# KeyError: 3
+Output:
+
+```
+{1, 2}
+```
+
+```python
+s.remove(3)
+```
+
+Output:
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 3
 ```
 
 `discard()` won't raise any errors.
 
 ```python
->>> s = {1, 2, 3}
->>> s.discard(3)
->>> s
-# {1, 2}
->>> s.discard(3)
+# discard() method: remove element, no error if not found
+s = {1, 2, 3}
+s.discard(3)  # Remove element 3 (safe, no error if missing)
+s
+```
+
+Output:
+
+```
+{1, 2}
+```
+
+```python
+s.discard(3)
 ```
 
 ## set union
@@ -113,10 +165,16 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
 `union()` or `|` will create a new set with all the elements from the sets provided.
 
 ```python
->>> s1 = {1, 2, 3}
->>> s2 = {3, 4, 5}
->>> s1.union(s2)  # or 's1 | s2'
-# {1, 2, 3, 4, 5}
+# union(): combine all elements from multiple sets (no duplicates)
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s1.union(s2)  # or 's1 | s2' - returns {1, 2, 3, 4, 5}
+```
+
+Output:
+
+```
+{1, 2, 3, 4, 5}
 ```
 
 ## set intersection
@@ -124,11 +182,17 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
 `intersection()` or `&` will return a set with only the elements that are common to all of them.
 
 ```python
->>> s1 = {1, 2, 3}
->>> s2 = {2, 3, 4}
->>> s3 = {3, 4, 5}
->>> s1.intersection(s2, s3)  # or 's1 & s2 & s3'
-# {3}
+# intersection(): return elements common to all sets
+s1 = {1, 2, 3}
+s2 = {2, 3, 4}
+s3 = {3, 4, 5}
+s1.intersection(s2, s3)  # or 's1 & s2 & s3' - returns {3}
+```
+
+Output:
+
+```
+{3}
 ```
 
 ## set difference
@@ -136,14 +200,27 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
 `difference()` or `-` will return only the elements that are unique to the first set (invoked set).
 
 ```python
->>> s1 = {1, 2, 3}
->>> s2 = {2, 3, 4}
+# difference(): return elements in first set but not in others
+s1 = {1, 2, 3}
+s2 = {2, 3, 4}
 
->>> s1.difference(s2)  # or 's1 - s2'
-# {1}
+s1.difference(s2)  # or 's1 - s2' - returns {1}
+```
 
->>> s2.difference(s1) # or 's2 - s1'
-# {4}
+Output:
+
+```
+{1}
+```
+
+```python
+s2.difference(s1) # or 's2 - s1'
+```
+
+Output:
+
+```
+{4}
 ```
 
 ## set symmetric_difference
@@ -151,10 +228,16 @@ Both methods will remove an element from the set, but `remove()` will raise a `k
 `symmetric_difference()` or `^` will return all the elements that are not common between them.
 
 ```python
->>> s1 = {1, 2, 3}
->>> s2 = {2, 3, 4}
->>> s1.symmetric_difference(s2)  # or 's1 ^ s2'
-# {1, 4}
+# symmetric_difference(): return elements in either set, but not both
+s1 = {1, 2, 3}
+s2 = {2, 3, 4}
+s1.symmetric_difference(s2)  # or 's1 ^ s2' - returns {1, 4}
+```
+
+Output:
+
+```
+{1, 4}
 ```
 
 ## Relevant links

@@ -23,17 +23,38 @@ A function can take `arguments` and `return values`:
 In the following example, the function **say_hello** receives the argument "name" and prints a greeting:
 
 ```python
->>> def say_hello(name):
-...    print(f'Hello {name}')
-...
->>> say_hello('Carlos')
-# Hello Carlos
+# Define a function that takes one argument
+def say_hello(name):
+   print(f'Hello {name}')
 
->>> say_hello('Wanda')
-# Hello Wanda
+# Call the function with a string argument
+say_hello('Carlos')
+```
 
->>> say_hello('Rose')
-# Hello Rose
+Output:
+
+```
+Hello Carlos
+```
+
+```python
+say_hello('Wanda')
+```
+
+Output:
+
+```
+Hello Wanda
+```
+
+```python
+say_hello('Rose')
+```
+
+Output:
+
+```
+Hello Rose
 ```
 
 ## Keyword Arguments
@@ -41,16 +62,29 @@ In the following example, the function **say_hello** receives the argument "name
 To improve code readability, we should be as explicit as possible. We can achieve this in our functions by using `Keyword Arguments`:
 
 ```python
->>> def say_hi(name, greeting):
-...    print(f"{greeting} {name}")
-...
->>> # without keyword arguments
->>> say_hi('John', 'Hello')
-# Hello John
+# Function with multiple parameters
+def say_hi(name, greeting):
+   print(f"{greeting} {name}")
 
->>> # with keyword arguments
->>> say_hi(name='Anna', greeting='Hi')
-# Hi Anna
+# Positional arguments: order matters
+say_hi('John', 'Hello')
+```
+
+Output:
+
+```
+Hello John
+```
+
+```python
+# Keyword arguments: order doesn't matter, more readable
+say_hi(name='Anna', greeting='Hi')
+```
+
+Output:
+
+```
+Hi Anna
 ```
 
 ## Return Values
@@ -62,12 +96,19 @@ When creating a function using the `def` statement, you can specify what the ret
 - The value or expression that the function should return.
 
 ```python
->>> def sum_two_numbers(number_1, number_2):
-...    return number_1 + number_2
-...
->>> result = sum_two_numbers(7, 8)
->>> print(result)
-# 15
+# Function that returns a value using return statement
+def sum_two_numbers(number_1, number_2):
+   return number_1 + number_2
+
+# Call function and store the returned value
+result = sum_two_numbers(7, 8)
+print(result)
+```
+
+Output:
+
+```
+15
 ```
 
 ## Local and Global Scope
@@ -81,16 +122,22 @@ When creating a function using the `def` statement, you can specify what the ret
 - You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
 ```python
+# Global variable: accessible everywhere
 global_variable = 'I am available everywhere'
 
->>> def some_function():
-...     print(global_variable)  # because is global
-...     local_variable = "only available within this function"
-...     print(local_variable)
-...
->>> # the following code will throw error because
->>> # 'local_variable' only exists inside 'some_function'
->>> print(local_variable)
+def some_function():
+    print(global_variable)  # Can access global variable
+    # Local variable: only exists within this function
+    local_variable = "only available within this function"
+    print(local_variable)
+
+# This will raise NameError: local_variable doesn't exist in global scope
+print(local_variable)
+```
+
+Output:
+
+```
 Traceback (most recent call last):
   File "<stdin>", line 10, in <module>
 NameError: name 'local_variable' is not defined
@@ -101,13 +148,20 @@ NameError: name 'local_variable' is not defined
 If you need to modify a global variable from within a function, use the global statement:
 
 ```python
->>> def spam():
-...     global eggs
-...     eggs = 'spam'
-...
->>> eggs = 'global'
->>> spam()
->>> print(eggs)
+# Use 'global' keyword to modify global variable from inside function
+def spam():
+    global eggs  # Declare that we're modifying the global variable
+    eggs = 'spam'  # This changes the global variable
+
+eggs = 'global'
+spam()  # Function modifies global variable
+print(eggs)  # Prints 'spam', not 'global'
+```
+
+Output:
+
+```
+spam
 ```
 
 There are four rules to tell whether a variable is in a local scope or global scope:
@@ -145,34 +199,62 @@ In Python, a lambda function is a single-line, anonymous function, which can hav
 This function:
 
 ```python
->>> def add(x, y):
-...     return x + y
-...
->>> add(5, 3)
-# 8
+# Regular function definition
+def add(x, y):
+    return x + y
+
+add(5, 3)
+```
+
+Output:
+
+```
+8
 ```
 
 Is equivalent to the _lambda_ function:
 
 ```python
->>> add = lambda x, y: x + y
->>> add(5, 3)
-# 8
+# Lambda function: anonymous function defined in one line
+# Syntax: lambda arguments: expression
+add = lambda x, y: x + y
+add(5, 3)
+```
+
+Output:
+
+```
+8
 ```
 
 Like regular nested functions, lambdas also work as lexical closures:
 
 ```python
->>> def make_adder(n):
-...     return lambda x: x + n
-...
->>> plus_3 = make_adder(3)
->>> plus_5 = make_adder(5)
+# Lambda closure: lambda function that captures variable from outer scope
+def make_adder(n):
+    return lambda x: x + n  # Lambda captures 'n' from outer function
 
->>> plus_3(4)
-# 7
->>> plus_5(4)
-# 9
+# Create functions that add different amounts
+plus_3 = make_adder(3)  # Returns lambda that adds 3
+plus_5 = make_adder(5)  # Returns lambda that adds 5
+
+plus_3(4)  # Returns 4 + 3 = 7
+```
+
+Output:
+
+```
+7
+```
+
+```python
+plus_5(4)
+```
+
+Output:
+
+```
+9
 ```
 
 ## Relevant links

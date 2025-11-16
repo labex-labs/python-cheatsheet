@@ -33,19 +33,31 @@ Fortunately, Python's `pathlib` module provides an easy way to handle this.
 Using `pathlib` on \*nix:
 
 ```python
->>> from pathlib import Path
+# pathlib.Path: cross-platform path handling
+from pathlib import Path
 
->>> print(Path('usr').joinpath('bin').joinpath('spam'))
-# usr/bin/spam
+print(Path('usr').joinpath('bin').joinpath('spam'))  # Join path components
+```
+
+Output:
+
+```
+usr/bin/spam
 ```
 
 `pathlib` also provides a shortcut to joinpath using the `/` operator:
 
 ```python
->>> from pathlib import Path
+# Path operator (/): convenient way to join paths (cross-platform)
+from pathlib import Path
 
->>> print(Path('usr') / 'bin' / 'spam')
-# usr/bin/spam
+print(Path('usr') / 'bin' / 'spam')  # Use / operator instead of joinpath()
+```
+
+Output:
+
+```
+usr/bin/spam
 ```
 
 Notice the path separator is different between Windows and Unix based operating
@@ -58,14 +70,19 @@ the same directory.
 Using `pathlib` on \*nix:
 
 ```python
->>> my_files = ['accounts.txt', 'details.csv', 'invite.docx']
->>> home = Path.home()
->>> for filename in my_files:
-...     print(home / filename)
-...
-# /home/asweigart/accounts.txt
-# /home/asweigart/details.csv
-# /home/asweigart/invite.docx
+# Path.home(): get user's home directory, combine with filenames
+my_files = ['accounts.txt', 'details.csv', 'invite.docx']
+home = Path.home()  # Get home directory path
+for filename in my_files:
+    print(home / filename)  # Combine home path with each filename
+```
+
+Output:
+
+```
+/home/labex/project/accounts.txt
+/home/labex/project/details.csv
+/home/labex/project/invite.docx
 ```
 
 ## The current working directory
@@ -73,10 +90,16 @@ Using `pathlib` on \*nix:
 You can get the current working directory using `pathlib`:
 
 ```python
->>> from pathlib import Path
+# Path.cwd(): get current working directory
+from pathlib import Path
 
->>> print(Path.cwd())
-# /home/asweigart
+print(Path.cwd())  # Returns current working directory as Path object
+```
+
+Output:
+
+```
+/home/labex/project
 ```
 
 ## Creating new folders
@@ -84,16 +107,21 @@ You can get the current working directory using `pathlib`:
 Using `pathlib` on \*nix:
 
 ```python
->>> from pathlib import Path
->>> cwd = Path.cwd()
->>> (cwd / 'delicious' / 'walnut' / 'waffles').mkdir()
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-#   File "/usr/lib/python3.6/pathlib.py", line 1226, in mkdir
-#     self._accessor.mkdir(self, mode)
-#   File "/usr/lib/python3.6/pathlib.py", line 387, in wrapped
-#     return strfunc(str(pathobj), *args)
-# FileNotFoundError: [Errno 2] No such file or directory: '/home/asweigart/delicious/walnut/waffles'
+from pathlib import Path
+cwd = Path.cwd()
+(cwd / 'delicious' / 'walnut' / 'waffles').mkdir()
+```
+
+Output:
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/lib/python3.6/pathlib.py", line 1226, in mkdir
+    self._accessor.mkdir(self, mode)
+  File "/usr/lib/python3.6/pathlib.py", line 387, in wrapped
+    return strfunc(str(pathobj), *args)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/labex/project/delicious/walnut/waffles'
 ```
 
 Oh no, we got a nasty error! The reason is that the 'delicious' directory does
@@ -101,9 +129,10 @@ not exist, so we cannot make the 'walnut' and the 'waffles' directories under
 it. To fix this, do:
 
 ```python
->>> from pathlib import Path
->>> cwd = Path.cwd()
->>> (cwd / 'delicious' / 'walnut' / 'waffles').mkdir(parents=True)
+# mkdir(parents=True): create directory and all parent directories if needed
+from pathlib import Path
+cwd = Path.cwd()
+(cwd / 'delicious' / 'walnut' / 'waffles').mkdir(parents=True)  # Create nested directories
 ```
 
 And all is good :)
@@ -122,12 +151,24 @@ There are also the dot (`.`) and dot-dot (`..`) folders. These are not real fold
 To see if a path is an absolute path using `pathlib`:
 
 ```python
->>> from pathlib import Path
->>> Path('/').is_absolute()
-# True
+from pathlib import Path
+Path('/').is_absolute()
+```
 
->>> Path('..').is_absolute()
-# False
+Output:
+
+```
+True
+```
+
+```python
+Path('..').is_absolute()
+```
+
+Output:
+
+```
+False
 ```
 
 You can extract an absolute path with `pathlib`:
@@ -135,10 +176,22 @@ You can extract an absolute path with `pathlib`:
 ```python
 from pathlib import Path
 print(Path.cwd())
-# /home/asweigart
+```
 
+Output:
+
+```
+/home/labex/project
+```
+
+```python
 print(Path('..').resolve())
-# /home
+```
+
+Output:
+
+```
+/home
 ```
 
 ### Handling Relative paths
@@ -146,9 +199,14 @@ print(Path('..').resolve())
 You can get a relative path from a starting path to another path using `pathlib`:
 
 ```python
->>> from pathlib import Path
->>> print(Path('/etc/passwd').relative_to('/'))
-# etc/passwd
+from pathlib import Path
+print(Path('/etc/passwd').relative_to('/'))
+```
+
+Output:
+
+```
+etc/passwd
 ```
 
 ## Path and File validity
@@ -160,17 +218,43 @@ Using `pathlib` on \*nix:
 ```python
 from pathlib import Path
 
->>> Path('.').exists()
-# True
+Path('.').exists()
+```
 
->>> Path('setup.py').exists()
-# True
+Output:
 
->>> Path('/etc').exists()
-# True
+```
+True
+```
 
->>> Path('nonexistentfile').exists()
-# False
+```python
+Path('setup.py').exists()
+```
+
+Output:
+
+```
+True
+```
+
+```python
+Path('/etc').exists()
+```
+
+Output:
+
+```
+True
+```
+
+```python
+Path('nonexistentfile').exists()
+```
+
+Output:
+
+```
+False
 ```
 
 ### Checking if a path is a file
@@ -178,16 +262,35 @@ from pathlib import Path
 Using `pathlib` on \*nix:
 
 ```python
->>> from pathlib import Path
+from pathlib import Path
 
->>> Path('setup.py').is_file()
-# True
+Path('setup.py').is_file()
+```
 
->>> Path('/home').is_file()
-# False
+Output:
 
->>> Path('nonexistentfile').is_file()
-# False
+```
+True
+```
+
+```python
+Path('/home').is_file()
+```
+
+Output:
+
+```
+False
+```
+
+```python
+Path('nonexistentfile').is_file()
+```
+
+Output:
+
+```
+False
 ```
 
 ### Checking if a path is a directory
@@ -195,16 +298,35 @@ Using `pathlib` on \*nix:
 Using `pathlib` on \*nix:
 
 ```python
->>> from pathlib import Path
+from pathlib import Path
 
->>> Path('/').is_dir()
-# True
+Path('/').is_dir()
+```
 
->>> Path('setup.py').is_dir()
-# False
+Output:
 
->>> Path('/spam').is_dir()
-# False
+```
+True
+```
+
+```python
+Path('setup.py').is_dir()
+```
+
+Output:
+
+```
+False
+```
+
+```python
+Path('/spam').is_dir()
+```
+
+Output:
+
+```
+False
 ```
 
 ## Getting a file's size in bytes
@@ -212,16 +334,28 @@ Using `pathlib` on \*nix:
 Using `pathlib` on \*nix:
 
 ```python
->>> from pathlib import Path
+from pathlib import Path
 
->>> stat = Path('/bin/python3.6').stat()
->>> print(stat) # stat contains some other information about the file as well
-# os.stat_result(st_mode=33261, st_ino=141087, st_dev=2051, st_nlink=2, st_uid=0,
-# --snip--
-# st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517261276)
+stat = Path('/bin/python3.6').stat()
+print(stat) # stat contains some other information about the file as well
+```
 
->>> print(stat.st_size) # size in bytes
-# 10024
+Output:
+
+```
+os.stat_result(st_mode=33261, st_ino=141087, st_dev=2051, st_nlink=2, st_uid=0,
+--snip--
+st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517261276)
+```
+
+```python
+print(stat.st_size) # size in bytes
+```
+
+Output:
+
+```
+10024
 ```
 
 ## Listing directories
@@ -229,22 +363,26 @@ Using `pathlib` on \*nix:
 Listing directory contents using `pathlib` on \*nix:
 
 ```python
->>> from pathlib import Path
+from pathlib import Path
 
->>> for f in Path('/usr/bin').iterdir():
-...     print(f)
+for f in Path('/usr/bin').iterdir():
+    print(f)
+```
+
+Output:
+
+```
 ...
-# ...
-# /usr/bin/tiff2rgba
-# /usr/bin/iconv
-# /usr/bin/ldd
-# /usr/bin/cache_restore
-# /usr/bin/udiskie
-# /usr/bin/unix2dos
-# /usr/bin/t1reencode
-# /usr/bin/epstopdf
-# /usr/bin/idle3
-# ...
+/usr/bin/tiff2rgba
+/usr/bin/iconv
+/usr/bin/ldd
+/usr/bin/cache_restore
+/usr/bin/udiskie
+/usr/bin/unix2dos
+/usr/bin/t1reencode
+/usr/bin/epstopdf
+/usr/bin/idle3
+...
 ```
 
 ## Directory file sizes
@@ -261,14 +399,19 @@ Listing directory contents using `pathlib` on \*nix:
 Using `pathlib` on \*nix:
 
 ```python
->>> from pathlib import Path
+from pathlib import Path
 
->>> total_size = 0
->>> for sub_path in Path('/usr/bin').iterdir():
-...     total_size += sub_path.stat().st_size
-...
->>> print(total_size)
-# 1903178911
+total_size = 0
+for sub_path in Path('/usr/bin').iterdir():
+    total_size += sub_path.stat().st_size
+
+print(total_size)
+```
+
+Output:
+
+```
+1903178911
 ```
 
 ## Copying files and folders
@@ -276,45 +419,77 @@ Using `pathlib` on \*nix:
 The `shutil` module provides functions for copying files, as well as entire folders.
 
 ```python
->>> import shutil
+import shutil
 
->>> shutil.copy('C:\\spam.txt', 'C:\\delicious')
-# C:\\delicious\\spam.txt'
+shutil.copy('/tmp/spam.txt', '/tmp/delicious')
+```
 
->>> shutil.copy('C:\\eggs.txt', 'C:\\delicious\\eggs2.txt')
-# 'C:\\delicious\\eggs2.txt'
+Output:
+
+```
+/tmp/delicious/spam.txt
+```
+
+```python
+shutil.copy('/tmp/eggs.txt', '/tmp/delicious/eggs2.txt')
+```
+
+Output:
+
+```
+/tmp/delicious/eggs2.txt
 ```
 
 While `shutil.copy()` will copy a single file, `shutil.copytree()` will copy an entire folder and every folder and file contained in it:
 
 ```python
->>> import shutil
+import shutil
 
->>> shutil.copytree('C:\\bacon', 'C:\\bacon_backup')
-# 'C:\\bacon_backup'
+shutil.copytree('/tmp/bacon', '/tmp/bacon_backup')
+```
+
+Output:
+
+```
+/tmp/bacon_backup
 ```
 
 ## Moving and Renaming
 
 ```python
->>> import shutil
+import shutil
 
->>> shutil.move('C:\\bacon.txt', 'C:\\eggs')
-# 'C:\\eggs\\bacon.txt'
+shutil.move('/tmp/bacon.txt', '/tmp/eggs')
+```
+
+Output:
+
+```
+/tmp/eggs/bacon.txt
 ```
 
 The destination path can also specify a filename. In the following example, the source file is moved and renamed:
 
 ```python
->>> shutil.move('C:\\bacon.txt', 'C:\\eggs\\new_bacon.txt')
-# 'C:\\eggs\\new_bacon.txt'
+shutil.move('/tmp/bacon.txt', '/tmp/eggs/new_bacon.txt')
+```
+
+Output:
+
+```
+/tmp/eggs/new_bacon.txt
 ```
 
 If there is no eggs folder, then `move()` will rename bacon.txt to a file named eggs:
 
 ```python
->>> shutil.move('C:\\bacon.txt', 'C:\\eggs')
-# 'C:\\eggs'
+shutil.move('/tmp/bacon.txt', '/tmp/eggs')
+```
+
+Output:
+
+```
+/tmp/eggs
 ```
 
 ## Deleting files and folders
@@ -328,19 +503,23 @@ If there is no eggs folder, then `move()` will rename bacon.txt to a file named 
 The `Path` object has an `rglob()` method for recursively iterating over files and directories.
 
 ```python
->>> from pathlib import Path
->>>
->>> p = Path('C:\\delicious')
->>> for i in p.rglob('*'):
-...     print(i)
-...
-# C:\\delicious\\cats
-# C:\\delicious\\walnut
-# C:\\delicious\\spam.txt
-# C:\\delicious\\cats\\catnames.txt
-# C:\\delicious\\cats\\zophie.jpg
-# C:\\delicious\\walnut\\waffles
-# C:\\delicious\\walnut\\waffles\\butter.txt
+from pathlib import Path
+
+p = Path('/tmp/delicious')
+for i in p.rglob('*'):
+    print(i)
+```
+
+Output:
+
+```
+/tmp/delicious/cats
+/tmp/delicious/walnut
+/tmp/delicious/spam.txt
+/tmp/delicious/cats/catnames.txt
+/tmp/delicious/cats/zophie.jpg
+/tmp/delicious/walnut/waffles
+/tmp/delicious/walnut/waffles/butter.txt
 ```
 
 ## Relevant links

@@ -25,32 +25,52 @@ Read <router-link to="/blog/python-comprehensions-step-by-step">Python Comprehen
 This is how we create a new list from an existing collection with a For Loop:
 
 ```python
->>> names = ['Charles', 'Susan', 'Patrick', 'George']
+# Traditional approach: create list using a for loop
+names = ['Charles', 'Susan', 'Patrick', 'George']
 
->>> new_list = []
->>> for n in names:
-...     new_list.append(n)
-...
->>> new_list
-# ['Charles', 'Susan', 'Patrick', 'George']
+new_list = []
+for n in names:
+    new_list.append(n)
+
+new_list
+```
+
+Output:
+
+```
+['Charles', 'Susan', 'Patrick', 'George']
 ```
 
 And this is how we do the same with a List Comprehension:
 
 ```python
->>> names = ['Charles', 'Susan', 'Patrick', 'George']
+# List comprehension: concise way to create a new list
+# Syntax: [expression for item in iterable]
+names = ['Charles', 'Susan', 'Patrick', 'George']
 
->>> new_list = [n for n in names]
->>> new_list
-# ['Charles', 'Susan', 'Patrick', 'George']
+new_list = [n for n in names]  # Create list with all names
+new_list
+```
+
+Output:
+
+```
+['Charles', 'Susan', 'Patrick', 'George']
 ```
 
 We can do the same with numbers:
 
 ```python
->>> n = [(a, b) for a in range(1, 3) for b in range(1, 3)]
->>> n
-# [(1, 1), (1, 2), (2, 1), (2, 2)]
+# Nested list comprehension: create tuples from two ranges
+# Equivalent to nested for loops
+n = [(a, b) for a in range(1, 3) for b in range(1, 3)]
+n
+```
+
+Output:
+
+```
+[(1, 1), (1, 2), (2, 1), (2, 2)]
 ```
 
 ## Adding conditionals
@@ -58,32 +78,52 @@ We can do the same with numbers:
 If we want `new_list` to have only the names that start with C, with a for loop, we would do it like this:
 
 ```python
->>> names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
+# Traditional approach: filter with if condition
+names = ['Charles', 'Susan', 'Patrick', 'George', 'Carol']
 
->>> new_list = []
->>> for n in names:
-...     if n.startswith('C'):
-...         new_list.append(n)
-...
->>> print(new_list)
-# ['Charles', 'Carol']
+new_list = []
+for n in names:
+    if n.startswith('C'):  # Filter names starting with 'C'
+        new_list.append(n)
+
+print(new_list)
+```
+
+Output:
+
+```
+['Charles', 'Carol']
 ```
 
 In a List Comprehension, we add the `if` statement at the end:
 
 ```python
->>> new_list = [n for n in names if n.startswith('C')]
->>> print(new_list)
-# ['Charles', 'Carol']
+# List comprehension with condition: filter items
+# Syntax: [expression for item in iterable if condition]
+new_list = [n for n in names if n.startswith('C')]
+print(new_list)
+```
+
+Output:
+
+```
+['Charles', 'Carol']
 ```
 
 To use an `if-else` statement in a List Comprehension:
 
 ```python
->>> nums = [1, 2, 3, 4, 5, 6]
->>> new_list = [num*2 if num % 2 == 0 else num for num in nums]
->>> print(new_list)
-# [1, 4, 3, 8, 5, 12]
+# List comprehension with if-else: conditional expression
+# Syntax: [expression_if_true if condition else expression_if_false for item in iterable]
+nums = [1, 2, 3, 4, 5, 6]
+new_list = [num*2 if num % 2 == 0 else num for num in nums]  # Double even numbers
+print(new_list)
+```
+
+Output:
+
+```
+[1, 4, 3, 8, 5, 12]
 ```
 
 <base-disclaimer>
@@ -98,24 +138,44 @@ To use an `if-else` statement in a List Comprehension:
 ## Set comprehension
 
 ```python
->>> b = {"abc", "def"}
->>> {s.upper() for s in b}
+# Set comprehension: create a set using comprehension syntax
+# Syntax: {expression for item in iterable}
+b = {"abc", "def"}
+{s.upper() for s in b}  # Convert all strings to uppercase
+```
+
+Output:
+
+```
 {"ABC", "DEF"}
 ```
 
 ## Dict comprehension
 
 ```python
->>> c = {'name': 'Pooka', 'age': 5}
->>> {v: k for k, v in c.items()}
+# Dict comprehension: swap keys and values
+# Syntax: {key_expression: value_expression for item in iterable}
+c = {'name': 'Pooka', 'age': 5}
+{v: k for k, v in c.items()}  # Reverse key-value pairs
+```
+
+Output:
+
+```
 {'Pooka': 'name', 5: 'age'}
 ```
 
 A List comprehension can be generated from a dictionary:
 
 ```python
->>> c = {'name': 'Pooka', 'age': 5}
->>> ["{}:{}".format(k.upper(), v) for k, v in c.items()]
+# List comprehension from dictionary: create formatted strings
+c = {'name': 'Pooka', 'age': 5}
+["{}:{}".format(k.upper(), v) for k, v in c.items()]  # Format as "KEY:value"
+```
+
+Output:
+
+```
 ['NAME:Pooka', 'AGE:5']
 ```
 

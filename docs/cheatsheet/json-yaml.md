@@ -12,19 +12,21 @@ JSON and YAML
 JSON stands for JavaScript Object Notation and is a lightweight format for storing and transporting data. JSON is often used when data is sent from a server to a web page.
 
 ```python
->>> import json
->>> with open("filename.json", "r") as f:
-...     content = json.load(f)
+# Read JSON file: json.load() parses JSON from file object
+import json
+with open("filename.json", "r") as f:  # Open file in read mode
+    content = json.load(f)  # Parse JSON and return Python dict/list
 ```
 
 Write a JSON file with:
 
 ```python
->>> import json
+# Write JSON file: json.dump() writes Python object as JSON
+import json
 
->>> content = {"name": "Joe", "age": 20}
->>> with open("filename.json", "w") as f:
-...     json.dump(content, f, indent=2)
+content = {"name": "Joe", "age": 20}
+with open("filename.json", "w") as f:  # Open file in write mode
+    json.dump(content, f, indent=2)  # Write JSON with 2-space indentation
 ```
 
 ## YAML
@@ -44,11 +46,12 @@ specification, and allow for example to modify a YAML content without altering c
 Open a YAML file with:
 
 ```python
->>> from ruamel.yaml import YAML
+# Read YAML file using ruamel.yaml library
+from ruamel.yaml import YAML
 
->>> with open("filename.yaml") as f:
-...     yaml=YAML()
-...     yaml.load(f)
+with open("filename.yaml") as f:
+    yaml=YAML()  # Create YAML parser instance
+    yaml.load(f)  # Parse YAML and return Python dict/list
 ```
 
 ## Anyconfig
@@ -64,8 +67,9 @@ pip install anyconfig
 Usage:
 
 ```python
->>> import anyconfig
->>> conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")
+# anyconfig: load configuration files in various formats (JSON, YAML, TOML, etc.)
+import anyconfig
+conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")  # Auto-detects format
 ```
 
 ## Relevant links

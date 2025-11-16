@@ -23,9 +23,9 @@ Encapsulation is one of the fundamental concepts of object-oriented programming,
 
 In Python, encapsulation can be achieved by using access modifiers. Access modifiers are keywords that define the accessibility of attributes and methods in a class. The three access modifiers available in Python are public, private, and protected. However, Python does not have an explicit way of defining access modifiers like some other programming languages such as Java and C++. Instead, it uses a convention of using underscore prefixes to indicate the access level.
 
-In the given code example, the class MyClass has two attributes, _protected_var and __private_var. The _protected_var is marked as protected by using a single underscore prefix. This means that the attribute can be accessed within the class and its subclasses but not outside the class. The __private_var is marked as private by using two underscore prefixes. This means that the attribute can only be accessed within the class and not outside the class, not even in its subclasses.
+In the given code example, the class MyClass has two attributes, _protected_var and __private_var. The_protected_var is marked as protected by using a single underscore prefix. This means that the attribute can be accessed within the class and its subclasses but not outside the class. The__private_var is marked as private by using two underscore prefixes. This means that the attribute can only be accessed within the class and not outside the class, not even in its subclasses.
 
-When we create an object of the MyClass class, we can access the _protected_var attribute using the object name with a single underscore prefix. However, we cannot access the __private_var attribute using the object name, as it is hidden from the outside world. If we try to access the __private_var attribute, we will get an AttributeError as shown in the code.
+When we create an object of the MyClass class, we can access the _protected_var attribute using the object name with a single underscore prefix. However, we cannot access the __private_var attribute using the object name, as it is hidden from the outside world. If we try to access the__private_var attribute, we will get an AttributeError as shown in the code.
 
 In summary, encapsulation is an important concept in object-oriented programming that helps to protect the implementation details of an object. In Python, we can achieve encapsulation by using access modifiers and using underscore prefixes to indicate the access level.
 
@@ -164,6 +164,7 @@ for shape in shapes:
 ```
 
 ## Abstraction
+
 Abstraction is an important concept in object-oriented programming (OOP) because it allows you to focus on the essential features of an object or system while ignoring the details that aren't relevant to the current context. By reducing complexity and hiding unnecessary details, abstraction can make code more modular, easier to read, and easier to maintain.
 
 In Python, abstraction can be achieved by using abstract classes or interfaces. An abstract class is a class that cannot be instantiated directly, but is meant to be subclassed by other classes. It often includes abstract methods that have no implementation, but provide a template for how the subclass should be implemented. This allows the programmer to define a common interface for a group of related classes, while still allowing each class to have its own specific behavior.

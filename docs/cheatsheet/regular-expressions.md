@@ -24,7 +24,8 @@ Regular Expressions
 All the regex functions in Python are in the re module:
 
 ```python
->>> import re
+# Import re module for regular expression operations
+import re
 ```
 
 ## Regex symbols
@@ -50,45 +51,98 @@ All the regex functions in Python are in the re module:
 ## Matching regex objects
 
 ```python
->>> phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+# re.compile(): create regex pattern object (use raw string r'' to avoid escaping)
+phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')  # Pattern: 3 digits-3 digits-4 digits
 
->>> mo = phone_num_regex.search('My number is 415-555-4242.')
+mo = phone_num_regex.search('My number is 415-555-4242.')  # Search for pattern
 
->>> print(f'Phone number found: {mo.group()}')
-# Phone number found: 415-555-4242
+print(f'Phone number found: {mo.group()}')  # group() returns matched text
+```
+
+Output:
+
+```
+Phone number found: 415-555-4242
 ```
 
 ## Grouping with parentheses
 
 ```python
->>> phone_num_regex = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')
->>> mo = phone_num_regex.search('My number is 415-555-4242.')
+# Parentheses create groups: group(1) returns first group, group(2) returns second
+phone_num_regex = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')  # Two groups in parentheses
+mo = phone_num_regex.search('My number is 415-555-4242.')
 
->>> mo.group(1)
-# '415'
+mo.group(1)  # Returns first group: '415'
+```
 
->>> mo.group(2)
-# '555-4242'
+Output:
 
->>> mo.group(0)
-# '415-555-4242'
+```
+'415'
+```
 
->>> mo.group()
-# '415-555-4242'
+```python
+mo.group(2)
+```
+
+Output:
+
+```
+'555-4242'
+```
+
+```python
+mo.group(0)
+```
+
+Output:
+
+```
+'415-555-4242'
+```
+
+```python
+mo.group()
+```
+
+Output:
+
+```
+'415-555-4242'
 ```
 
 To retrieve all the groups at once use the `groups()` method:
 
 ```python
->>> mo.groups()
+# groups(): returns tuple of all groups
+mo.groups()  # Returns ('415', '555-4242')
+```
+
+Output:
+
+```
 ('415', '555-4242')
+```
 
->>> area_code, main_number = mo.groups()
+```python
+area_code, main_number = mo.groups()
 
->>> print(area_code)
+print(area_code)
+```
+
+Output:
+
+```
 415
+```
 
->>> print(main_number)
+```python
+print(main_number)
+```
+
+Output:
+
+```
 555-4242
 ```
 
@@ -97,28 +151,52 @@ To retrieve all the groups at once use the `groups()` method:
 You can use the `|` character anywhere you want to match one of many expressions.
 
 ```python
->>> hero_regex = re.compile (r'Batman|Tina Fey')
+hero_regex = re.compile (r'Batman|Tina Fey')
 
->>> mo1 = hero_regex.search('Batman and Tina Fey.')
->>> mo1.group()
-# 'Batman'
+mo1 = hero_regex.search('Batman and Tina Fey.')
+mo1.group()
+```
 
->>> mo2 = hero_regex.search('Tina Fey and Batman.')
->>> mo2.group()
-# 'Tina Fey'
+Output:
+
+```
+'Batman'
+```
+
+```python
+mo2 = hero_regex.search('Tina Fey and Batman.')
+mo2.group()
+```
+
+Output:
+
+```
+'Tina Fey'
 ```
 
 You can also use the pipe to match one of several patterns as part of your regex:
 
 ```python
->>> bat_regex = re.compile(r'Bat(man|mobile|copter|bat)')
->>> mo = bat_regex.search('Batmobile lost a wheel')
+bat_regex = re.compile(r'Bat(man|mobile|copter|bat)')
+mo = bat_regex.search('Batmobile lost a wheel')
 
->>> mo.group()
-# 'Batmobile'
+mo.group()
+```
 
->>> mo.group(1)
-# 'mobile'
+Output:
+
+```
+'Batmobile'
+```
+
+```python
+mo.group(1)
+```
+
+Output:
+
+```
+'mobile'
 ```
 
 ## Optional matching with the Question Mark
@@ -126,33 +204,64 @@ You can also use the pipe to match one of several patterns as part of your regex
 The `?` character flags the group that precedes it as an optional part of the pattern.
 
 ```python
->>> bat_regex = re.compile(r'Bat(wo)?man')
+bat_regex = re.compile(r'Bat(wo)?man')
 
->>> mo1 = bat_regex.search('The Adventures of Batman')
->>> mo1.group()
-# 'Batman'
+mo1 = bat_regex.search('The Adventures of Batman')
+mo1.group()
+```
 
->>> mo2 = bat_regex.search('The Adventures of Batwoman')
->>> mo2.group()
-# 'Batwoman'
+Output:
+
+```
+'Batman'
+```
+
+```python
+mo2 = bat_regex.search('The Adventures of Batwoman')
+mo2.group()
+```
+
+Output:
+
+```
+'Batwoman'
 ```
 
 ## Matching zero or more with the Star
 
-The `*` (star or asterisk) means “match zero or more”. The group that precedes the star can occur any number of times in the text.
+The `*` (star or asterisk) means "match zero or more". The group that precedes the star can occur any number of times in the text.
 
 ```python
->>> bat_regex = re.compile(r'Bat(wo)*man')
->>> mo1 = bat_regex.search('The Adventures of Batman')
->>> mo1.group()
+bat_regex = re.compile(r'Bat(wo)*man')
+mo1 = bat_regex.search('The Adventures of Batman')
+mo1.group()
+```
+
+Output:
+
+```
 'Batman'
+```
 
->>> mo2 = bat_regex.search('The Adventures of Batwoman')
->>> mo2.group()
+```python
+mo2 = bat_regex.search('The Adventures of Batwoman')
+mo2.group()
+```
+
+Output:
+
+```
 'Batwoman'
+```
 
->>> mo3 = bat_regex.search('The Adventures of Batwowowowoman')
->>> mo3.group()
+```python
+mo3 = bat_regex.search('The Adventures of Batwowowowoman')
+mo3.group()
+```
+
+Output:
+
+```
 'Batwowowowoman'
 ```
 
@@ -161,19 +270,38 @@ The `*` (star or asterisk) means “match zero or more”. The group that preced
 The `+` (or plus) _means match one or more_. The group preceding a plus must appear at least once:
 
 ```python
->>> bat_regex = re.compile(r'Bat(wo)+man')
+bat_regex = re.compile(r'Bat(wo)+man')
 
->>> mo1 = bat_regex.search('The Adventures of Batwoman')
->>> mo1.group()
-# 'Batwoman'
+mo1 = bat_regex.search('The Adventures of Batwoman')
+mo1.group()
+```
 
->>> mo2 = bat_regex.search('The Adventures of Batwowowowoman')
->>> mo2.group()
-# 'Batwowowowoman'
+Output:
 
->>> mo3 = bat_regex.search('The Adventures of Batman')
->>> mo3 is None
-# True
+```
+'Batwoman'
+```
+
+```python
+mo2 = bat_regex.search('The Adventures of Batwowowowoman')
+mo2.group()
+```
+
+Output:
+
+```
+'Batwowowowoman'
+```
+
+```python
+mo3 = bat_regex.search('The Adventures of Batman')
+mo3 is None
+```
+
+Output:
+
+```
+True
 ```
 
 ## Matching specific repetitions with Curly Brackets
@@ -181,41 +309,70 @@ The `+` (or plus) _means match one or more_. The group preceding a plus must app
 If you have a group that you want to repeat a specific number of times, follow the group in your regex with a number in curly brackets:
 
 ```python
->>> ha_regex = re.compile(r'(Ha){3}')
+ha_regex = re.compile(r'(Ha){3}')
 
->>> mo1 = ha_regex.search('HaHaHa')
->>> mo1.group()
-# 'HaHaHa'
+mo1 = ha_regex.search('HaHaHa')
+mo1.group()
+```
 
->>> mo2 = ha_regex.search('Ha')
->>> mo2 is None
-# True
+Output:
+
+```
+'HaHaHa'
+```
+
+```python
+mo2 = ha_regex.search('Ha')
+mo2 is None
+```
+
+Output:
+
+```
+True
 ```
 
 Instead of one number, you can specify a range with minimum and a maximum in between the curly brackets. For example, the regex (Ha){3,5} will match 'HaHaHa', 'HaHaHaHa', and 'HaHaHaHaHa'.
 
 ```python
->>> ha_regex = re.compile(r'(Ha){2,3}')
->>> mo1 = ha_regex.search('HaHaHaHa')
->>> mo1.group()
-# 'HaHaHa'
+ha_regex = re.compile(r'(Ha){2,3}')
+mo1 = ha_regex.search('HaHaHaHa')
+mo1.group()
+```
+
+Output:
+
+```
+'HaHaHa'
 ```
 
 ## Greedy and non-greedy matching
 
-Python’s regular expressions are greedy by default: in ambiguous situations they will match the longest string possible. The non-greedy version of the curly brackets, which matches the shortest string possible, has the closing curly bracket followed by a question mark.
+Python's regular expressions are greedy by default: in ambiguous situations they will match the longest string possible. The non-greedy version of the curly brackets, which matches the shortest string possible, has the closing curly bracket followed by a question mark.
 
 ```python
->>> greedy_ha_regex = re.compile(r'(Ha){3,5}')
+greedy_ha_regex = re.compile(r'(Ha){3,5}')
 
->>> mo1 = greedy_ha_regex.search('HaHaHaHaHa')
->>> mo1.group()
-# 'HaHaHaHaHa'
+mo1 = greedy_ha_regex.search('HaHaHaHaHa')
+mo1.group()
+```
 
->>> non_greedy_ha_regex = re.compile(r'(Ha){3,5}?')
->>> mo2 = non_greedy_ha_regex.search('HaHaHaHaHa')
->>> mo2.group()
-# 'HaHaHa'
+Output:
+
+```
+'HaHaHaHaHa'
+```
+
+```python
+non_greedy_ha_regex = re.compile(r'(Ha){3,5}?')
+mo2 = non_greedy_ha_regex.search('HaHaHaHaHa')
+mo2.group()
+```
+
+Output:
+
+```
+'HaHaHa'
 ```
 
 ## The findall() method
@@ -223,10 +380,15 @@ Python’s regular expressions are greedy by default: in ambiguous situations th
 The `findall()` method will return the strings of every match in the searched string.
 
 ```python
->>> phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # has no groups
+phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # has no groups
 
->>> phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
-# ['415-555-9999', '212-555-0000']
+phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
+```
+
+Output:
+
+```
+['415-555-9999', '212-555-0000']
 ```
 
 ## Making your own character classes
@@ -234,20 +396,29 @@ The `findall()` method will return the strings of every match in the searched st
 You can define your own character class using square brackets. For example, the character class _[aeiouAEIOU]_ will match any vowel, both lowercase and uppercase.
 
 ```python
->>> vowel_regex = re.compile(r'[aeiouAEIOU]')
->>> vowel_regex.findall('Robocop eats baby food. BABY FOOD.')
-# ['o', 'o', 'o', 'e', 'a', 'a', 'o', 'o', 'A', 'O', 'O']
+vowel_regex = re.compile(r'[aeiouAEIOU]')
+vowel_regex.findall('Robocop eats baby food. BABY FOOD.')
+```
+
+Output:
+
+```
+['o', 'o', 'o', 'e', 'a', 'a', 'o', 'o', 'A', 'O', 'O']
 ```
 
 You can also include ranges of letters or numbers by using a hyphen. For example, the character class _[a-zA-Z0-9]_ will match all lowercase letters, uppercase letters, and numbers.
 
-By placing a caret character (`^`) just after the character class’s opening bracket, you can make a negative character class that will match all the characters that are not in the character class:
+By placing a caret character (`^`) just after the character class's opening bracket, you can make a negative character class that will match all the characters that are not in the character class:
 
 ```python
->>> consonant_regex = re.compile(r'[^aeiouAEIOU]')
->>> consonant_regex.findall('Robocop eats baby food. BABY FOOD.')
-# ['R', 'b', 'c', 'p', ' ', 't', 's', ' ', 'b', 'b', 'y', ' ', 'f', 'd', '.', '
-# ', 'B', 'B', 'Y', ' ', 'F', 'D', '.']
+consonant_regex = re.compile(r'[^aeiouAEIOU]')
+consonant_regex.findall('Robocop eats baby food. BABY FOOD.')
+```
+
+Output:
+
+```
+['R', 'b', 'c', 'p', ' ', 't', 's', ' ', 'b', 'b', 'y', ' ', 'f', 'd', '.', ' ', 'B', 'B', 'Y', ' ', 'F', 'D', '.']
 ```
 
 ## The Caret and Dollar sign characters
@@ -261,27 +432,58 @@ By placing a caret character (`^`) just after the character class’s opening br
 The `r'^Hello`' regular expression string matches strings that begin with 'Hello':
 
 ```python
->>> begins_with_hello = re.compile(r'^Hello')
->>> begins_with_hello.search('Hello world!')
-# <_sre.SRE_Match object; span=(0, 5), match='Hello'>
+begins_with_hello = re.compile(r'^Hello')
+begins_with_hello.search('Hello world!')
+```
 
->>> begins_with_hello.search('He said hello.') is None
-# True
+Output:
+
+```
+<_sre.SRE_Match object; span=(0, 5), match='Hello'>
+```
+
+```python
+begins_with_hello.search('He said hello.') is None
+```
+
+Output:
+
+```
+True
 ```
 
 The `r'\d\$'` regular expression string matches strings that end with a numeric character from 0 to 9:
 
 ```python
->>> whole_string_is_num = re.compile(r'^\d+$')
+whole_string_is_num = re.compile(r'^\d+$')
 
->>> whole_string_is_num.search('1234567890')
-# <_sre.SRE_Match object; span=(0, 10), match='1234567890'>
+whole_string_is_num.search('1234567890')
+```
 
->>> whole_string_is_num.search('12345xyz67890') is None
-# True
+Output:
 
->>> whole_string_is_num.search('12 34567890') is None
-# True
+```
+<_sre.SRE_Match object; span=(0, 10), match='1234567890'>
+```
+
+```python
+whole_string_is_num.search('12345xyz67890') is None
+```
+
+Output:
+
+```
+True
+```
+
+```python
+whole_string_is_num.search('12 34567890') is None
+```
+
+Output:
+
+```
+True
 ```
 
 ## The Wildcard character
@@ -289,37 +491,66 @@ The `r'\d\$'` regular expression string matches strings that end with a numeric 
 The `.` (or dot) character in a regular expression will match any character except for a newline:
 
 ```python
->>> at_regex = re.compile(r'.at')
+at_regex = re.compile(r'.at')
 
->>> at_regex.findall('The cat in the hat sat on the flat mat.')
+at_regex.findall('The cat in the hat sat on the flat mat.')
+```
+
+Output:
+
+```
 ['cat', 'hat', 'sat', 'lat', 'mat']
 ```
 
 ## Matching everything with Dot-Star
 
 ```python
->>> name_regex = re.compile(r'First Name: (.*) Last Name: (.*)')
+name_regex = re.compile(r'First Name: (.*) Last Name: (.*)')
 
->>> mo = name_regex.search('First Name: Al Last Name: Sweigart')
->>> mo.group(1)
-# 'Al'
+mo = name_regex.search('First Name: Al Last Name: Sweigart')
+mo.group(1)
+```
 
->>> mo.group(2)
+Output:
+
+```
+'Al'
+```
+
+```python
+mo.group(2)
+```
+
+Output:
+
+```
 'Sweigart'
 ```
 
 The `.*` uses greedy mode: It will always try to match as much text as possible. To match any and all text in a non-greedy fashion, use the dot, star, and question mark (`.*?`). The question mark tells Python to match in a non-greedy way:
 
 ```python
->>> non_greedy_regex = re.compile(r'<.*?>')
->>> mo = non_greedy_regex.search('<To serve man> for dinner.>')
->>> mo.group()
-# '<To serve man>'
+non_greedy_regex = re.compile(r'<.*?>')
+mo = non_greedy_regex.search('<To serve man> for dinner.>')
+mo.group()
+```
 
->>> greedy_regex = re.compile(r'<.*>')
->>> mo = greedy_regex.search('<To serve man> for dinner.>')
->>> mo.group()
-# '<To serve man> for dinner.>'
+Output:
+
+```
+'<To serve man>'
+```
+
+```python
+greedy_regex = re.compile(r'<.*>')
+mo = greedy_regex.search('<To serve man> for dinner.>')
+mo.group()
+```
+
+Output:
+
+```
+'<To serve man> for dinner.>'
 ```
 
 ## Matching newlines with the Dot character
@@ -327,13 +558,25 @@ The `.*` uses greedy mode: It will always try to match as much text as possible.
 The dot-star will match everything except a newline. By passing `re.DOTALL` as the second argument to `re.compile()`, you can make the dot character match all characters, including the newline character:
 
 ```python
->>> no_newline_regex = re.compile('.*')
->>> no_newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
-# 'Serve the public trust.'
+no_newline_regex = re.compile('.*')
+no_newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
+```
 
->>> newline_regex = re.compile('.*', re.DOTALL)
->>> newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
-# 'Serve the public trust.\nProtect the innocent.\nUphold the law.'
+Output:
+
+```
+'Serve the public trust.'
+```
+
+```python
+newline_regex = re.compile('.*', re.DOTALL)
+newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
+```
+
+Output:
+
+```
+'Serve the public trust.\nProtect the innocent.\nUphold the law.'
 ```
 
 ## Case-Insensitive matching
@@ -341,16 +584,35 @@ The dot-star will match everything except a newline. By passing `re.DOTALL` as t
 To make your regex case-insensitive, you can pass `re.IGNORECASE` or `re.I` as a second argument to `re.compile()`:
 
 ```python
->>> robocop = re.compile(r'robocop', re.I)
+robocop = re.compile(r'robocop', re.I)
 
->>> robocop.search('Robocop is part man, part machine, all cop.').group()
-# 'Robocop'
+robocop.search('Robocop is part man, part machine, all cop.').group()
+```
 
->>> robocop.search('ROBOCOP protects the innocent.').group()
-# 'ROBOCOP'
+Output:
 
->>> robocop.search('Al, why does your programming book talk about robocop so much?').group()
-# 'robocop'
+```
+'Robocop'
+```
+
+```python
+robocop.search('ROBOCOP protects the innocent.').group()
+```
+
+Output:
+
+```
+'ROBOCOP'
+```
+
+```python
+robocop.search('Al, why does your programming book talk about robocop so much?').group()
+```
+
+Output:
+
+```
+'robocop'
 ```
 
 ## Substituting strings with the sub() method
@@ -363,10 +625,15 @@ The `sub()` method for Regex objects is passed two arguments:
 The `sub()` method returns a string with the substitutions applied:
 
 ```python
->>> names_regex = re.compile(r'Agent \w+')
+names_regex = re.compile(r'Agent \w+')
 
->>> names_regex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
-# 'CENSORED gave the secret documents to CENSORED.'
+names_regex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
+```
+
+Output:
+
+```
+'CENSORED gave the secret documents to CENSORED.'
 ```
 
 ## Managing complex Regexes

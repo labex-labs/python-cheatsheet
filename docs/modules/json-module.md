@@ -53,18 +53,40 @@ Example:
 With the `json.loads` method, you can parse a JSON object and transform it to a Python dictionary:
 
 ```python
->>> import json
+import json
 
->>> json_person = '{"name": "Charles", "age": 33, "has_hair": false, "hobbies": ["photography", "running"]}'
->>> python_person = json.loads(json_person)
->>> python_person
-# {'name': 'Charles', 'age': 33, 'has_hair': False, 'hobbies': ['photography', 'running']}
+# JSON string to parse
+json_person = '{"name": "Charles", "age": 33, "has_hair": false, "hobbies": ["photography", "running"]}'
+# Parse JSON string into Python dictionary
+python_person = json.loads(json_person)
+python_person
+```
 
->>> type(python_person)
-# <class 'dict'>
+Output:
 
->>> python_person.get("name")
-# 'Charles'
+```
+{'name': 'Charles', 'age': 33, 'has_hair': False, 'hobbies': ['photography', 'running']}
+```
+
+```python
+type(python_person)
+```
+
+Output:
+
+```
+<class 'dict'>
+```
+
+```python
+# Access dictionary value using get method
+python_person.get("name")
+```
+
+Output:
+
+```
+'Charles'
 ```
 
 ## JSON dumps() method
@@ -72,16 +94,30 @@ With the `json.loads` method, you can parse a JSON object and transform it to a 
 The other way around. The `dumps()` method transforms a Python object to a JSON string:
 
 ```python
->>> import json
+import json
 
->>> python_person = {'name': 'Charles', 'age': 33, 'has_hair': False, 'hobbies': ['photography', 'running']}
->>> json_person = json.dumps(python_person)
+# Python dictionary to convert
+python_person = {'name': 'Charles', 'age': 33, 'has_hair': False, 'hobbies': ['photography', 'running']}
+# Convert Python object to JSON string
+json_person = json.dumps(python_person)
 
->>> json_person
-# '{"name": "Charles", "age": 33, "has_hair": false, "hobbies": ["photography", "running"]}'
+json_person
+```
 
->>> type(json_person)
-# <class 'str'>
+Output:
+
+```
+'{"name": "Charles", "age": 33, "has_hair": false, "hobbies": ["photography", "running"]}'
+```
+
+```python
+type(json_person)
+```
+
+Output:
+
+```
+<class 'str'>
 ```
 
 ## Reading and writing JSON Files
@@ -89,23 +125,31 @@ The other way around. The `dumps()` method transforms a Python object to a JSON 
 ### Reading a JSON File
 
 ```python
->>> import json
->>> with open("filename.json", "r") as f:
-...     json_content = json.loads(f.read())
-...
->>> json.loads(json_content)
-# {'name': 'Charles', 'age': 33, 'has_hair': False}
+import json
+# Read JSON file
+with open("filename.json", "r") as f:
+    json_content = json.loads(f.read())
+
+# Note: This line seems redundant - json_content is already parsed
+json.loads(json_content)
+```
+
+Output:
+
+```
+{'name': 'Charles', 'age': 33, 'has_hair': False}
 ```
 
 ### Writing a JSON File
 
 ```python
->>> import json
+import json
 
->>> person = {'name': 'Charles', 'age': 33}
+person = {'name': 'Charles', 'age': 33}
 
->>> with open("filename.json", "w") as f:
-...     f.write(json.dumps(person))
+# Write Python dictionary to JSON file
+with open("filename.json", "w") as f:
+    f.write(json.dumps(person))
 ```
 
 ## Relevant links

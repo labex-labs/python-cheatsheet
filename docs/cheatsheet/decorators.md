@@ -17,33 +17,41 @@ function as an argument and returns a wrapper. The following example
 shows the creation of a decorator and its usage.
 
 ```python
+# Decorator: a function that takes another function and returns a wrapper
 def your_decorator(func):
   def wrapper():
     # Do stuff before func...
     print("Before func!")
-    func()
+    func()  # Call the original function
     # Do stuff after func...
     print("After func!")
-  return wrapper
+  return wrapper  # Return the wrapper function
 
+# @your_decorator is syntactic sugar for: foo = your_decorator(foo)
 @your_decorator
 def foo():
   print("Hello World!")
 
-foo()
-# Before func!
-# Hello World!
-# After func!
+foo()  # Calls wrapper, which calls foo with extra behavior
+```
+
+Output:
+
+```
+Before func!
+Hello World!
+After func!
 ```
 
 ## Decorator for a function with parameters
 
 ```python
+# Decorator that works with functions that have parameters
 def your_decorator(func):
-  def wrapper(*args,**kwargs):
+  def wrapper(*args,**kwargs):  # Accept any arguments
     # Do stuff before func...
     print("Before func!") 
-    func(*args,**kwargs)
+    func(*args,**kwargs)  # Pass arguments to original function
     # Do stuff after func...
     print("After func!")
   return wrapper
@@ -52,11 +60,15 @@ def your_decorator(func):
 def foo(bar):
   print("My name is " + bar)
 
-foo("Jack")
+foo("Jack")  # Arguments are passed through wrapper
+```
 
-# Before func!
-# My name is Jack
-# After func!
+Output:
+
+```
+Before func!
+My name is Jack
+After func!
 ```
 
 ## Template for a basic decorator
@@ -67,13 +79,14 @@ with or without parameters, and with or without a return value.
 ```python
 import functools
 
+# Best practice decorator template: preserves function metadata and return value
 def your_decorator(func):
-  @functools.wraps(func) # For preserving the metadata of func.
+  @functools.wraps(func)  # Preserves function name, docstring, etc.
   def wrapper(*args,**kwargs):
     # Do stuff before func...
-    result = func(*args,**kwargs)
+    result = func(*args,**kwargs)  # Call function and capture return value
     # Do stuff after func..
-    return result
+    return result  # Return the original function's return value
   return wrapper
 ```
 
@@ -84,21 +97,24 @@ You can also define parameters for the decorator to use.
 ```python
 import functools
 
+# Decorator factory: returns a decorator based on parameters
 def your_decorator(arg):
   def decorator(func):
-    @functools.wraps(func) # For preserving the metadata of func.
+    @functools.wraps(func)  # Preserve function metadata
     def wrapper(*args,**kwargs):
       # Do stuff before func possibly using arg...
       result = func(*args,**kwargs)
       # Do stuff after func possibly using arg...
       return result
     return wrapper
-  return decorator
+  return decorator  # Return the actual decorator function
 ```
 
 To use this decorator:
 
 ```python
+# Using decorator with parameters: @your_decorator(arg='x') calls your_decorator('x')
+# which returns a decorator that is then applied to foo
 @your_decorator(arg = 'x')
 def foo(bar):
   return bar
@@ -113,12 +129,14 @@ without any additional arguments. An example of this, shown below, is when you
 want to catch and print exceptions in a certain way.
 
 ```python
+# Class method decorator: defined within the class
 class DecorateMyMethod:
 
+  # Static method decorator for methods with only 'self' parameter
   def decorator_for_class_method_with_no_args(method):
-    def wrapper_for_class_method(self)
+    def wrapper_for_class_method(self):  # Only takes self
       try:
-        return method(self)
+        return method(self)  # Call original method
       except Exception as e:
         print("\nWARNING: Please make note of the following:\n")
         print(e)
@@ -134,13 +152,25 @@ class DecorateMyMethod:
     else:
       raise Exception("Epic fail of your own creation.")
 
-test_succeed = DecorateMyMethods(True)
+test_succeed = DecorateMyMethod(True)
 test_succeed.class_action()
-# You succeeded by choice.
+```
 
+Output:
+
+```
+You succeeded by choice.
+```
+
+```python
 test_fail = DecorateMyMethod(False)
 test_fail.class_action()
-# Exception: Epic fail of your own creation.
+```
+
+Output:
+
+```
+Exception: Epic fail of your own creation.
 ```
 
 A decorator can also be defined as a class instead of a method. This is useful
@@ -148,29 +178,43 @@ for maintaining and updating a state, such as in the following example, where we
 count the number of calls made to a method:
 
 ```python
+# Class-based decorator: maintains state between calls
 class CountCallNumber:
 
   def __init__(self, func):
-    self.func = func
-    self.call_number = 0
+    self.func = func  # Store the function to decorate
+    self.call_number = 0  # Initialize call counter
 
-  def __call__(self, *args, **kwargs):
-    self.call_number += 1
+  def __call__(self, *args, **kwargs):  # Makes instance callable
+    self.call_number += 1  # Increment counter
     print("This is execution number " + str(self.call_number))
-    return self.func(*args, **kwargs)
+    return self.func(*args, **kwargs)  # Call original function
 
-@CountCallNumber
+@CountCallNumber  # Creates instance of CountCallNumber
 def say_hi(name):
   print("Hi! My name is " + name)
 
-say_hi("Jack")
-# This is execution number 1
-# Hi! My name is Jack
-
-say_hi("James")
-# This is execution number 2
-# Hi! My name is James
+say_hi("Jack")  # Calls CountCallNumber.__call__()
 ```
+
+Output:
+
+```
+This is execution number 1
+Hi! My name is Jack
+```
+
+```python
+say_hi("James")
+```
+
+Output:
+
+```
+This is execution number 2
+Hi! My name is James
+```
+
 <base-disclaimer>
   <base-disclaimer-title>
     Count Example
@@ -190,10 +234,3 @@ say_hi("James")
 - <router-link to="/builtin/staticmethod">staticmethod()</router-link>
 - <router-link to="/builtin/property">property()</router-link>
 - <router-link to="/builtin/callable">callable()</router-link>
-
-
-
-
-
-
-

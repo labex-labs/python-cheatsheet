@@ -32,25 +32,72 @@ These operators evaluate to True or False depending on the values you give them.
 Examples:
 
 ```python
->>> 42 == 42
-True
+42 == 42
+```
 
->>> 40 == 42
+Output:
+
+```
+True
+```
+
+```python
+40 == 42
+```
+
+Output:
+
+```
 False
+```
 
->>> 'hello' == 'hello'
+```python
+'hello' == 'hello'
+```
+
+Output:
+
+```
 True
+```
 
->>> 'hello' == 'Hello'
+```python
+'hello' == 'Hello'
+```
+
+Output:
+
+```
 False
+```
 
->>> 'dog' != 'cat'
+```python
+'dog' != 'cat'
+```
+
+Output:
+
+```
 True
+```
 
->>> 42 == 42.0
+```python
+42 == 42.0
+```
+
+Output:
+
+```
 True
+```
 
->>> 42 == '42'
+```python
+42 == '42'
+```
+
+Output:
+
+```
 False
 ```
 
@@ -89,27 +136,67 @@ The `not` Operator’s _Truth_ Table:
 You can mix boolean and comparison operators:
 
 ```python
->>> (4 < 5) and (5 < 6)
+(4 < 5) and (5 < 6)
+```
+
+Output:
+
+```
 True
+```
 
->>> (4 < 5) and (9 < 6)
+```python
+(4 < 5) and (9 < 6)
+```
+
+Output:
+
+```
 False
+```
 
->>> (1 == 2) or (2 == 2)
+```python
+(1 == 2) or (2 == 2)
+```
+
+Output:
+
+```
 True
 ```
 
 Also, you can mix use multiple Boolean operators in an expression, along with the comparison operators:
 
 ```python
->>> 2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
+2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
+```
+
+Output:
+
+```
 True
->>> # In the statement below 3 < 4 and 5 > 5 gets executed first evaluating to False
->>> # Then 5 > 4 returns True so the results after True or False is True
->>> 5 > 4 or 3 < 4 and 5 > 5
+```
+
+```python
+# In the statement below 3 < 4 and 5 > 5 gets executed first evaluating to False
+# Then 5 > 4 returns True so the results after True or False is True
+5 > 4 or 3 < 4 and 5 > 5
+```
+
+Output:
+
+```
 True
->>> # Now the statement within parentheses gets executed first so True and False returns False.
->>> (5 > 4 or 3 < 4) and 5 > 5
+```
+
+```python
+# Now the statement within parentheses gets executed first so True and False returns False.
+(5 > 4 or 3 < 4) and 5 > 5
+```
+
+Output:
+
+```
 False
 ```
 
@@ -118,58 +205,83 @@ False
 The `if` statement evaluates an expression, and if that expression is `True`, it then executes the following indented code:
 
 ```python
->>> name = 'Debora'
+# if statement: execute code block when condition is True
+name = 'Debora'
 
->>> if name == 'Debora':
-...    print('Hi, Debora')
-...
-# Hi, Debora
+if name == 'Debora':  # Check if name equals 'Debora'
+   print('Hi, Debora')  # This line executes if condition is True
+```
 
->>> if name != 'George':
-...    print('You are not George')
-...
-# You are not George
+Output:
+
+```
+Hi, Debora
+```
+
+```python
+if name != 'George':
+   print('You are not George')
+```
+
+Output:
+
+```
+You are not George
 ```
 
 The `else` statement executes only if the evaluation of the `if` and all the `elif` expressions are `False`:
 
 ```python
->>> name = 'Debora'
+# if-else: execute different code based on condition
+name = 'Debora'
 
->>> if name == 'George':
-...    print('Hi, George.')
-... else:
-...    print('You are not George')
-...
-# You are not George
+if name == 'George':
+   print('Hi, George.')
+else:  # Execute if if condition is False
+   print('You are not George')
+```
+
+Output:
+
+```
+You are not George
 ```
 
 Only after the `if` statement expression is `False`, the `elif` statement is evaluated and executed:
 
 ```python
->>> name = 'George'
+# if-elif: check multiple conditions in sequence
+name = 'George'
 
->>> if name == 'Debora':
-...    print('Hi Debora!')
-... elif name == 'George':
-...    print('Hi George!')
-...
-# Hi George!
+if name == 'Debora':
+   print('Hi Debora!')
+elif name == 'George':  # Checked only if previous condition is False
+   print('Hi George!')
+```
+
+Output:
+
+```
+Hi George!
 ```
 
 the `elif` and `else` parts are optional.
 
 ```python
->>> name = 'Antony'
+name = 'Antony'
 
->>> if name == 'Debora':
-...    print('Hi Debora!')
-... elif name == 'George':
-...    print('Hi George!')
-... else:
-...    print('Who are you?')
-...
-# Who are you?
+if name == 'Debora':
+   print('Hi Debora!')
+elif name == 'George':
+   print('Hi George!')
+else:
+   print('Who are you?')
+```
+
+Output:
+
+```
+Who are you?
 ```
 
 ## Ternary Conditional Operator
@@ -183,39 +295,63 @@ Many programming languages have a ternary operator, which define a conditional e
 Example:
 
 ```python
->>> age = 15
+age = 15
 
->>> # this if statement:
->>> if age < 18:
-...    print('kid')
-... else:
-...    print('adult')
-...
-# output: kid
+# this if statement:
+if age < 18:
+   print('kid')
+else:
+   print('adult')
+```
 
->>> # is equivalent to this ternary operator:
->>> print('kid' if age < 18 else 'adult')
-# output: kid
+Output:
+
+```
+kid
+```
+
+```python
+# Ternary operator: one-line conditional expression
+# Syntax: value_if_true if condition else value_if_false
+print('kid' if age < 18 else 'adult')
+```
+
+Output:
+
+```
+kid
 ```
 
 Ternary operators can be chained:
 
 ```python
->>> age = 15
+age = 15
 
->>> # this ternary operator:
->>> print('kid' if age < 13 else 'teen' if age < 18 else 'adult')
+# this ternary operator:
+print('kid' if age < 13 else 'teen' if age < 18 else 'adult')
+```
 
->>> # is equivalent to this if statement:
->>> if age < 13:
-...     print('kid')
-... else:
-...     if age < 18:
-...         print('teen')
-...     else:
-...         print('adult')
-...
-# output: teen
+Output:
+
+```
+teen
+```
+
+```python
+# is equivalent to this if statement:
+if age < 13:
+    print('kid')
+else:
+    if age < 18:
+        print('teen')
+    else:
+        print('adult')
+```
+
+Output:
+
+```
+teen
 ```
 
 ## Switch-Case Statement
@@ -243,24 +379,28 @@ The _Switch-Case statements_, or **Structural Pattern Matching**, was firstly in
 ### Matching single values
 
 ```python
->>> response_code = 201
->>> match response_code:
-...     case 200:
-...         print("OK")
-...     case 201:
-...         print("Created")
-...     case 300:
-...         print("Multiple Choices")
-...     case 307:
-...         print("Temporary Redirect")
-...     case 404:
-...         print("404 Not Found")
-...     case 500:
-...         print("Internal Server Error")
-...     case 502:
-...         print("502 Bad Gateway")
-...
-# Created
+response_code = 201
+match response_code:
+    case 200:
+        print("OK")
+    case 201:
+        print("Created")
+    case 300:
+        print("Multiple Choices")
+    case 307:
+        print("Temporary Redirect")
+    case 404:
+        print("404 Not Found")
+    case 500:
+        print("Internal Server Error")
+    case 502:
+        print("502 Bad Gateway")
+```
+
+Output:
+
+```
+Created
 ```
 
 ### Matching with the or Pattern
@@ -268,33 +408,41 @@ The _Switch-Case statements_, or **Structural Pattern Matching**, was firstly in
 In this example, the pipe character (`|` or `or`) allows python to return the same response for two or more cases.
 
 ```python
->>> response_code = 502
->>> match response_code:
-...     case 200 | 201:
-...         print("OK")
-...     case 300 | 307:
-...         print("Redirect")
-...     case 400 | 401:
-...         print("Bad Request")
-...     case 500 | 502:
-...         print("Internal Server Error")
-...
-# Internal Server Error
+response_code = 502
+match response_code:
+    case 200 | 201:
+        print("OK")
+    case 300 | 307:
+        print("Redirect")
+    case 400 | 401:
+        print("Bad Request")
+    case 500 | 502:
+        print("Internal Server Error")
+```
+
+Output:
+
+```
+Internal Server Error
 ```
 
 ### Matching by the length of an Iterable
 
 ```python
->>> today_responses = [200, 300, 404, 500]
->>> match today_responses:
-...     case [a]:
-...             print(f"One response today: {a}")
-...     case [a, b]:
-...             print(f"Two responses today: {a} and {b}")
-...     case [a, b, *rest]:
-...             print(f"All responses: {a}, {b}, {rest}")
-...
-# All responses: 200, 300, [404, 500]
+today_responses = [200, 300, 404, 500]
+match today_responses:
+    case [a]:
+            print(f"One response today: {a}")
+    case [a, b]:
+            print(f"Two responses today: {a} and {b}")
+    case [a, b, *rest]:
+            print(f"All responses: {a}, {b}, {rest}")
+```
+
+Output:
+
+```
+All responses: 200, 300, [404, 500]
 ```
 
 ### Default value
@@ -302,49 +450,61 @@ In this example, the pipe character (`|` or `or`) allows python to return the sa
 The underscore symbol (`_`) is used to define a default case:
 
 ```python
->>> response_code = 800
->>> match response_code:
-...     case 200 | 201:
-...         print("OK")
-...     case 300 | 307:
-...         print("Redirect")
-...     case 400 | 401:
-...         print("Bad Request")
-...     case 500 | 502:
-...         print("Internal Server Error")
-...     case _:
-...         print("Invalid Code")
-...
-# Invalid Code
+response_code = 800
+match response_code:
+    case 200 | 201:
+        print("OK")
+    case 300 | 307:
+        print("Redirect")
+    case 400 | 401:
+        print("Bad Request")
+    case 500 | 502:
+        print("Internal Server Error")
+    case _:
+        print("Invalid Code")
+```
+
+Output:
+
+```
+Invalid Code
 ```
 
 ### Matching Builtin Classes
 
 ```python
->>> response_code = "300"
->>> match response_code:
-...     case int():
-...             print('Code is a number')
-...     case str():
-...             print('Code is a string')
-...     case _:
-...             print('Code is neither a string nor a number')
-...
-# Code is a string
+response_code = "300"
+match response_code:
+    case int():
+            print('Code is a number')
+    case str():
+            print('Code is a string')
+    case _:
+            print('Code is neither a string nor a number')
+```
+
+Output:
+
+```
+Code is a string
 ```
 
 ### Guarding Match-Case Statements
 
 ```python
->>> response_code = 300
->>> match response_code:
-...     case int():
-...             if response_code > 99 and response_code < 500:
-...                 print('Code is a valid number')
-...     case _:
-...             print('Code is an invalid number')
-...
-# Code is a valid number
+response_code = 300
+match response_code:
+    case int():
+            if response_code > 99 and response_code < 500:
+                print('Code is a valid number')
+    case _:
+            print('Code is an invalid number')
+```
+
+Output:
+
+```
+Code is a valid number
 ```
 
 ## while Loop Statements
@@ -352,31 +512,42 @@ The underscore symbol (`_`) is used to define a default case:
 The while statement is used for repeated execution as long as an expression is `True`:
 
 ```python
->>> spam = 0
->>> while spam < 5:
-...     print('Hello, world.')
-...     spam = spam + 1
-...
-# Hello, world.
-# Hello, world.
-# Hello, world.
-# Hello, world.
-# Hello, world.
+# while loop: repeat code as long as condition is True
+spam = 0
+while spam < 5:  # Continue while spam is less than 5
+    print('Hello, world.')
+    spam = spam + 1  # Increment counter to avoid infinite loop
+```
+
+Output:
+
+```
+Hello, world.
+Hello, world.
+Hello, world.
+Hello, world.
+Hello, world.
 ```
 
 ## break Statements
 
-If the execution reaches a `break` statement, it immediately exits the `while` loop’s clause:
+If the execution reaches a `break` statement, it immediately exits the `while` loop's clause:
 
 ```python
->>> while True:
-...     name = input('Please type your name: ')
-...     if name == 'your name':
-...         break
-...
->>> print('Thank you!')
-# Please type your name: your name
-# Thank you!
+# break statement: exit loop immediately when encountered
+while True:  # Infinite loop
+    name = input('Please type your name: ')
+    if name == 'your name':
+        break  # Exit the loop immediately
+
+print('Thank you!')
+```
+
+Output:
+
+```
+Please type your name: your name
+Thank you!
 ```
 
 ## continue Statements
@@ -384,20 +555,26 @@ If the execution reaches a `break` statement, it immediately exits the `while` l
 When the program execution reaches a `continue` statement, the program execution immediately jumps back to the start of the loop.
 
 ```python
->>> while True:
-...     name = input('Who are you? ')
-...     if name != 'Joe':
-...         continue
-...     password = input('Password? (It is a fish.): ')
-...     if password == 'swordfish':
-...         break
-...
->>> print('Access granted.')
-# Who are you? Charles
-# Who are you? Debora
-# Who are you? Joe
-# Password? (It is a fish.): swordfish
-# Access granted.
+# continue statement: skip rest of loop iteration and start next iteration
+while True:
+    name = input('Who are you? ')
+    if name != 'Joe':
+        continue  # Skip to next iteration, don't ask for password
+    password = input('Password? (It is a fish.): ')
+    if password == 'swordfish':
+        break  # Exit loop when password is correct
+
+print('Access granted.')
+```
+
+Output:
+
+```
+Who are you? Charles
+Who are you? Debora
+Who are you? Joe
+Password? (It is a fish.): swordfish
+Access granted.
 ```
 
 ## For loop
@@ -405,13 +582,18 @@ When the program execution reaches a `continue` statement, the program execution
 The `for` loop iterates over a `list`, `tuple`, `dictionary`, `set` or `string`:
 
 ```python
->>> pets = ['Bella', 'Milo', 'Loki']
->>> for pet in pets:
-...     print(pet)
-...
-# Bella
-# Milo
-# Loki
+# for loop: iterate over each item in a sequence
+pets = ['Bella', 'Milo', 'Loki']
+for pet in pets:  # Loop through each pet in the list
+    print(pet)  # Print each pet name
+```
+
+Output:
+
+```
+Bella
+Milo
+Loki
 ```
 
 ## The range() function
@@ -419,42 +601,54 @@ The `for` loop iterates over a `list`, `tuple`, `dictionary`, `set` or `string`:
 The `range()` function returns a sequence of numbers. It starts from 0, increments by 1, and stops before a specified number:
 
 ```python
->>> for i in range(5):
-...     print(f'Will stop at 5! or 4? ({i})')
-...
-# Will stop at 5! or 4? (0)
-# Will stop at 5! or 4? (1)
-# Will stop at 5! or 4? (2)
-# Will stop at 5! or 4? (3)
-# Will stop at 5! or 4? (4)
+for i in range(5):
+    print(f'Will stop at 5! or 4? ({i})')
+```
+
+Output:
+
+```
+Will stop at 5! or 4? (0)
+Will stop at 5! or 4? (1)
+Will stop at 5! or 4? (2)
+Will stop at 5! or 4? (3)
+Will stop at 5! or 4? (4)
 ```
 
 The `range()` function can also modify its 3 defaults arguments. The first two will be the `start` and `stop` values, and the third will be the `step` argument. The step is the amount that the variable is increased by after each iteration.
 
 ```python
 # range(start, stop, step)
->>> for i in range(0, 10, 2):
-...    print(i)
-...
-# 0
-# 2
-# 4
-# 6
-# 8
+for i in range(0, 10, 2):
+   print(i)
+```
+
+Output:
+
+```
+0
+2
+4
+6
+8
 ```
 
 You can even use a negative number for the step argument to make the for loop count down instead of up.
 
 ```python
->>> for i in range(5, -1, -1):
-...     print(i)
-...
-# 5
-# 4
-# 3
-# 2
-# 1
-# 0
+for i in range(5, -1, -1):
+    print(i)
+```
+
+Output:
+
+```
+5
+4
+3
+2
+1
+0
 ```
 
 ## For else statement
@@ -463,11 +657,11 @@ This allows to specify a statement to execute in case of the full loop has been 
 useful when a `break` condition can occur in the loop:
 
 ```python
->>> for i in [1, 2, 3, 4, 5]:
-...    if i == 3:
-...        break
-... else:
-...    print("only executed when no item is equal to 3")
+for i in [1, 2, 3, 4, 5]:
+   if i == 3:
+       break
+else:
+   print("only executed when no item is equal to 3")
 ```
 
 ## Ending a Program with sys.exit()
@@ -475,18 +669,22 @@ useful when a `break` condition can occur in the loop:
 `exit()` function allows exiting Python.
 
 ```python
->>> import sys
+import sys
 
->>> while True:
-...     feedback = input('Type exit to exit: ')
-...     if feedback == 'exit':
-...         print(f'You typed {feedback}.')
-...         sys.exit()
-...
-# Type exit to exit: open
-# Type exit to exit: close
-# Type exit to exit: exit
-# You typed exit
+while True:
+    feedback = input('Type exit to exit: ')
+    if feedback == 'exit':
+        print(f'You typed {feedback}.')
+        sys.exit()
+```
+
+Output:
+
+```
+Type exit to exit: open
+Type exit to exit: close
+Type exit to exit: exit
+You typed exit.
 ```
 
 ## Relevant links

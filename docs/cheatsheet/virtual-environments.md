@@ -11,41 +11,53 @@ The use of a Virtual Environment is to test python code in encapsulated environm
 
 ## virtualenv
 
-1.  Install virtualenv
+1. Install virtualenv
 
-        pip install virtualenv
+```bash
+pip install virtualenv
+```
 
-1.  Install virtualenvwrapper-win (Windows)
+1. Install virtualenvwrapper-win (Windows)
 
-        pip install virtualenvwrapper-win
+```bash
+pip install virtualenvwrapper-win
+```
 
 Usage:
 
-1.  Make a Virtual Environment named `HelloWorld`
+1. Make a Virtual Environment named `HelloWorld`
 
-        mkvirtualenv HelloWorld
+```bash
+mkvirtualenv HelloWorld
+```
 
     Anything we install now will be specific to this project. And available to the projects we connect to this environment.
 
-1.  Set Project Directory
+1. Set Project Directory
 
     To bind our virtualenv with our current working directory we simply enter:
 
-        setprojectdir .
+```bash
+setprojectdir .
+```
 
-1.  Deactivate
+1. Deactivate
 
     To move onto something else in the command line type `deactivate` to deactivate your environment.
 
-        deactivate
+```bash
+deactivate
+```
 
     Notice how the parenthesis disappear.
 
-1.  Workon
+1. Workon
 
     Open up the command prompt and type `workon HelloWorld` to activate the environment and move into your root project folder
 
-        workon HelloWorld
+```bash
+workon HelloWorld
+```
 
 ## Poetry
 
@@ -58,57 +70,73 @@ Usage:
   </base-disclaimer-content>
 </base-disclaimer>
 
-1.  Install Poetry
+1. Install Poetry
 
-        pip install --user poetry
+```bash
+pip install --user poetry
+```
 
-2.  Create a new project
+2. Create a new project
 
-        poetry new my-project
+```bash
+poetry new my-project
+```
 
     This will create a my-project directory:
 
-        my-project
-        ├── pyproject.toml
-        ├── README.rst
-        ├── poetry_demo
-        │   └── __init__.py
-        └── tests
-            ├── __init__.py
-            └── test_poetry_demo.py
+```plaintext
+my-project
+├── pyproject.toml
+├── README.rst
+├── poetry_demo
+│   └── __init__.py
+└── tests
+    ├── __init__.py
+    └── test_poetry_demo.py
+```
 
     The pyproject.toml file will orchestrate your project and its dependencies:
 
-        [tool.poetry]
-        name = "my-project"
-        version = "0.1.0"
-        description = ""
-        authors = ["your name <your@mail.com>"]
+```toml
+[tool.poetry]
+name = "my-project"
+version = "0.1.0"
+description = ""
+authors = ["your name <your@mail.com>"]
 
-        [tool.poetry.dependencies]
-        python = "*"
+[tool.poetry.dependencies]
+python = "*"
 
-        [tool.poetry.dev-dependencies]
-        pytest = "^3.4"
+[tool.poetry.dev-dependencies]
+pytest = "^3.4"
+```
 
-3.  Packages
+3. Packages
 
     To add dependencies to your project, you can specify them in the tool.poetry.dependencies section:
 
-        [tool.poetry.dependencies]
-        pendulum = "^1.4"
+```toml
+[tool.poetry.dependencies]
+pendulum = "^1.4"
+```
 
     Also, instead of modifying the pyproject.toml file by hand, you can use the add command and it will automatically find a suitable version constraint.
 
-        $ poetry add pendulum
+```bash
+poetry add pendulum
+```
 
     To install the dependencies listed in the pyproject.toml:
 
-        poetry install
+```bash
+poetry install
+```
 
     To remove dependencies:
 
-        poetry remove pendulum
+```bash
+poetry remove pendulum
+```
 
 For more information, check the [documentation](https://poetry.eustace.io/docs/) or read here:
 
@@ -127,28 +155,38 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
   </base-disclaimer-content>
 </base-disclaimer>
 
-1.  Install pipenv
+1. Install pipenv
 
-        pip install pipenv
+```bash
+pip install pipenv
+```
 
-2.  Enter your Project directory and install the Packages for your project
+2. Enter your Project directory and install the Packages for your project
 
-        cd my_project
-        pipenv install <package>
+```bash
+cd my_project
+pipenv install <package>
+```
 
-    Pipenv will install your package and create a Pipfile for you in your project’s directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
+    Pipenv will install your package and create a Pipfile for you in your project's directory. The Pipfile is used to track which dependencies your project needs in case you need to re-install them.
 
 3.  Uninstall Packages
 
-        pipenv uninstall <package>
+```bash
+pipenv uninstall <package>
+```
 
-4.  Activate the Virtual Environment associated with your Python project
+4. Activate the Virtual Environment associated with your Python project
 
-        pipenv shell
+```bash
+pipenv shell
+```
 
-5.  Exit the Virtual Environment
+5. Exit the Virtual Environment
 
-        exit
+```bash
+exit
+```
 
 Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/).
 
@@ -165,19 +203,25 @@ Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/)
 
 Usage:
 
-1.  Make a Virtual Environment
+1. Make a Virtual Environment
 
-        conda create -n HelloWorld
+```bash
+conda create -n HelloWorld
+```
 
-2.  To use the Virtual Environment, activate it by:
+2. To use the Virtual Environment, activate it by:
 
-        conda activate HelloWorld
+```bash
+conda activate HelloWorld
+```
 
     Anything installed now will be specific to the project HelloWorld
 
 3.  Exit the Virtual Environment
 
-        conda deactivate
+```bash
+conda deactivate
+```
 
 ## UV
 
@@ -190,31 +234,41 @@ Usage:
   </base-disclaimer-content>
 </base-disclaimer>
 
-1.  Install UV
+1. Install UV
 
-        # Using curl (Linux/macOS)
-        curl -LsSf https://astral.sh/uv/install.sh | sh
+```bash
+# Using curl (Linux/macOS)
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
-        # Using pip or pipx
-        pip install uv
+# Using pip or pipx
+pip install uv
+```
 
-2.  Create a new project with virtual environment
+2. Create a new project with virtual environment
 
-        uv init my-project
-        cd my-project
+```bash
+uv init my-project
+cd my-project
+```
 
-3.  Add dependencies
+3. Add dependencies
 
-        uv add requests
+```bash
+uv add requests
+```
 
-4.  Run commands in project environment
+4. Run commands in project environment
 
-        uv run python script.py
+```bash
+uv run python script.py
+```
 
-5.  Activate the virtual environment manually (optional)
+5. Activate the virtual environment manually (optional)
 
-        source .venv/bin/activate  # Linux/macOS
-        .venv\Scripts\activate     # Windows
+```bash
+source .venv/bin/activate  # Linux/macOS
+.venv\Scripts\activate     # Windows
+```
 
 UV automatically manages virtual environments, Python versions, and dependencies with exceptional speed and convenience.
 

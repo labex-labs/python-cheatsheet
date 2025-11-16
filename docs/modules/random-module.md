@@ -18,44 +18,105 @@ import random
 The `seed` method is used to initialize the random number generator.
 
 ```python
->>> random.seed(1)
->>> random.random()
-# 0.13436424411240122
+# Set seed for reproducible random numbers
+random.seed(1)
+random.random()
+```
+
+Output:
+
+```
+0.13436424411240122
 ```
 
 Setting the seed to a number will always return the same random number:
 
 ```python
->>> random.seed(1)
->>> random.random()
-# 0.13436424411240122
+random.seed(1)
+random.random()
+```
 
->>> random.seed(1)
->>> random.random()
-# 0.13436424411240122
+Output:
 
->>> random.seed(1)
->>> random.random()
-# 0.13436424411240122
+```
+0.13436424411240122
+```
 
->>> random.seed(1)
->>> random.random()
-# 0.13436424411240122
+```python
+random.seed(1)
+random.random()
+```
 
->>> random.seed(1)
->>> random.random()
-# 0.13436424411240122
+Output:
+
+```
+0.13436424411240122
+```
+
+```python
+random.seed(1)
+random.random()
+```
+
+Output:
+
+```
+0.13436424411240122
+```
+
+```python
+random.seed(1)
+random.random()
+```
+
+Output:
+
+```
+0.13436424411240122
+```
+
+```python
+random.seed(1)
+random.random()
+```
+
+Output:
+
+```
+0.13436424411240122
 ```
 
 The default value of the `seed` method is the _current system time_, that is why we always get a different number:
 
 ```python
->>> random.random()
-# 0.8474337369372327
->>> random.random()
-# 0.763774618976614
->>> random.random()
-# 0.2550690257394217
+# Generate random number without setting seed (uses system time)
+random.random()
+```
+
+Output:
+
+```
+0.8474337369372327
+```
+
+```python
+random.random()
+```
+
+Output:
+
+```
+0.763774618976614
+```
+
+```python
+random.random()
+```
+
+Output:
+
+```
+0.2550690257394217
 ```
 
 ## randint()
@@ -67,18 +128,63 @@ random.randint(start: int, stop: int)
 This method returns a random number between a given start and stop parameters:
 
 ```python
->>> random.randint(1, 5)
-# 3
->>> random.randint(1, 5)
-# 2
->>> random.randint(1, 5)
-# 5
->>> random.randint(1, 5)
-# 1
->>> random.randint(1, 5)
-# 3
->>> random.randint(1, 5)
-# 1
+random.randint(1, 5)
+```
+
+Output:
+
+```
+3
+```
+
+```python
+random.randint(1, 5)
+```
+
+Output:
+
+```
+2
+```
+
+```python
+random.randint(1, 5)
+```
+
+Output:
+
+```
+5
+```
+
+```python
+random.randint(1, 5)
+```
+
+Output:
+
+```
+1
+```
+
+```python
+random.randint(1, 5)
+```
+
+Output:
+
+```
+3
+```
+
+```python
+random.randint(1, 5)
+```
+
+Output:
+
+```
+1
 ```
 
 ## choice()
@@ -86,14 +192,43 @@ This method returns a random number between a given start and stop parameters:
 The `choice` method return a randomly selected element from an iterable, like a `list`, `set` or `str`:
 
 ```python
->>> random.choice([1, 2, 3, 4])
-# 1
->>> random.choice([1, 2, 3, 4])
-# 2
->>> random.choice([1, 2, 3, 4])
-# 4
->>> random.choice([1, 2, 3, 4])
-# 4
+random.choice([1, 2, 3, 4])
+```
+
+Output:
+
+```
+1
+```
+
+```python
+random.choice([1, 2, 3, 4])
+```
+
+Output:
+
+```
+2
+```
+
+```python
+random.choice([1, 2, 3, 4])
+```
+
+Output:
+
+```
+4
+```
+
+```python
+random.choice([1, 2, 3, 4])
+```
+
+Output:
+
+```
+4
 ```
 
 ## shuffle()
@@ -101,19 +236,39 @@ The `choice` method return a randomly selected element from an iterable, like a 
 The `shuffle` method takes in an iterable and shuffle it:
 
 ```python
->>> my_list = [1, 2, 3, 4]
+my_list = [1, 2, 3, 4]
 
->>> random.shuffle(my_list)
->>> my_list
-# [1, 4, 3, 2]
+# Shuffle list in place
+random.shuffle(my_list)
+my_list
+```
 
->>> random.shuffle(my_list)
->>> my_list
-# [2, 4, 3, 1]
+Output:
 
->>> random.shuffle(my_list)
->>> my_list
-# [4, 2, 3, 1]
+```
+[1, 4, 3, 2]
+```
+
+```python
+random.shuffle(my_list)
+my_list
+```
+
+Output:
+
+```
+[2, 4, 3, 1]
+```
+
+```python
+random.shuffle(my_list)
+my_list
+```
+
+Output:
+
+```
+[4, 2, 3, 1]
 ```
 
 ## sample()
@@ -125,14 +280,44 @@ random.sample(iterable, k: int)
 `sample` returns a list with a random selection from an iterable. The number of elements returned is equal to the `k` parameter:
 
 ```python
->>> random.sample([1, 2, 3, 4], 1)
-# [3]
->>> random.sample([1, 2, 3, 4], 2)
-# [3, 4]
->>> random.sample([1, 2, 3, 4], 3)
-# [4, 3, 2]
->>> random.sample([1, 2, 3, 4], 4)
-# [1, 2, 4, 3]
+# Randomly sample k elements from the list
+random.sample([1, 2, 3, 4], 1)
+```
+
+Output:
+
+```
+[3]
+```
+
+```python
+random.sample([1, 2, 3, 4], 2)
+```
+
+Output:
+
+```
+[3, 4]
+```
+
+```python
+random.sample([1, 2, 3, 4], 3)
+```
+
+Output:
+
+```
+[4, 3, 2]
+```
+
+```python
+random.sample([1, 2, 3, 4], 4)
+```
+
+Output:
+
+```
+[1, 2, 4, 3]
 ```
 
 ## random()
@@ -140,14 +325,43 @@ random.sample(iterable, k: int)
 The `random` method returns a random floating point number between 0.0 and 1.0:
 
 ```python
->>> random.random()
-# 0.4143139993007743
->>> random.random()
-# 0.17300740157905092
->>> random.random()
-# 0.548798761388153
->>> random.random()
-# 0.7030407620656315
+random.random()
+```
+
+Output:
+
+```
+0.4143139993007743
+```
+
+```python
+random.random()
+```
+
+Output:
+
+```
+0.17300740157905092
+```
+
+```python
+random.random()
+```
+
+Output:
+
+```
+0.548798761388153
+```
+
+```python
+random.random()
+```
+
+Output:
+
+```
+0.7030407620656315
 ```
 
 ## uniform()
@@ -155,14 +369,43 @@ The `random` method returns a random floating point number between 0.0 and 1.0:
 the `uniform` method is similar to `randint`, but return a floating point number:
 
 ```python
->>> random.uniform(1, 5)
-# 3.697943322009309
->>> random.uniform(1, 5)
-# 2.498812082006561
->>> random.uniform(1, 5)
-# 2.7558465201782525
->>> random.uniform(1, 5)
-# 3.0337059529999273
+random.uniform(1, 5)
+```
+
+Output:
+
+```
+3.697943322009309
+```
+
+```python
+random.uniform(1, 5)
+```
+
+Output:
+
+```
+2.498812082006561
+```
+
+```python
+random.uniform(1, 5)
+```
+
+Output:
+
+```
+2.7558465201782525
+```
+
+```python
+random.uniform(1, 5)
+```
+
+Output:
+
+```
+3.0337059529999273
 ```
 
 ## Relevant links

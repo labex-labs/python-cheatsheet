@@ -18,7 +18,7 @@ Copy Module is a set of functions that are related to copying different elements
   </base-disclaimer-content>
 </base-disclaimer>
 
-##  Shallow copy operations
+## Shallow copy operations
 
 Shallow copy constructs a new compound object and then (to the extent possible) inserts references into it to the objects found in the original.
 
@@ -26,23 +26,41 @@ copy.copy(x)
     Return a shallow copy of x.
 
 ```python
->>> import copy
->>> a = [[1],[2],[3]]
->>> b = copy.copy(a) ## this will copy the list a to list b
+import copy
+a = [[1],[2],[3]]
+# Create shallow copy (nested lists are still referenced)
+b = copy.copy(a)
 
->>> a
-#[[1], [2], [3]]
->>> b
-#[[1], [2], [3]]
+a
 ```
-### Without importing copy module you can't use it
+
+Output:
+
+```
+[[1], [2], [3]]
+```
 
 ```python
-# Traceback (most recent call last):
-# File "<stdin>", line 1, in <module>
-# NameError: name 'copy' is not defined
+b
 ```
-##  Deep copy operations
+
+Output:
+
+```
+[[1], [2], [3]]
+```
+
+### Without importing copy module you can't use it
+
+Output:
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'copy' is not defined
+```
+
+## Deep copy operations
 
 A deep copy constructs a new compound object and then, recursively, inserts copies into it of the objects found in the original.
 
@@ -50,17 +68,32 @@ copy.deepcopy(x[, memo])
   Return a deep copy of x.
 
 ```python
->>> import copy
->>> a = [[1],[2],[3]]
->>> b = copy.deepcopy(a) ## this will copy the list a to list b
+import copy
+a = [[1],[2],[3]]
+# Create deep copy (completely independent copy)
+b = copy.deepcopy(a)
 
->>> a[0][0] = 0
->>> a[1] = None
+# Modify original
+a[0][0] = 0
+a[1] = None
 
->>> a
-#[[0], None, [3]]
->>> b
-#[[1], [2], [3]]
+a
+```
+
+Output:
+
+```
+[[0], None, [3]]
+```
+
+```python
+b
+```
+
+Output:
+
+```
+[[1], [2], [3]]
 ```
 
 ## Relevant links
