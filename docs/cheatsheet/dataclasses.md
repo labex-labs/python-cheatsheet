@@ -29,7 +29,7 @@ obj.val
 
 Output:
 
-```
+```plaintext
 2
 ```
 
@@ -49,7 +49,7 @@ obj.val
 
 Output:
 
-```
+```plaintext
 2
 ```
 
@@ -71,7 +71,7 @@ obj.name
 
 Output:
 
-```
+```plaintext
 Python
 ```
 
@@ -81,7 +81,7 @@ obj.count
 
 Output:
 
-```
+```plaintext
 0
 ```
 
@@ -91,7 +91,7 @@ obj.price
 
 Output:
 
-```
+```plaintext
 0.0
 ```
 

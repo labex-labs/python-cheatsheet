@@ -64,7 +64,7 @@ some_function('arg1', 'arg2', 'arg3')
 
 Output:
 
-```
+```plaintext
 Arguments passed: ('arg1', 'arg2', 'arg3') as <class 'tuple'>
 ```
 
@@ -83,7 +83,7 @@ some_function(key1='arg1', key2='arg2')
 
 Output:
 
-```
+```plaintext
 keywords: {'key1': 'arg1', 'key2': 'arg2'} as <class 'dict'>
 ```
 

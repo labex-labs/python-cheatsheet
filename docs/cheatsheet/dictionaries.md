@@ -44,7 +44,7 @@ print(my_cat)
 
 Output:
 
-```
+```plaintext
 {'size': 'fat', 'color': 'gray', 'disposition': 'loud', 'age_years': 2}
 ```
 
@@ -63,7 +63,7 @@ print(my_cat['size'])
 
 Output:
 
-```
+```plaintext
 fat
 ```
 
@@ -73,7 +73,7 @@ print(my_cat['eye_color'])
 
 Output:
 
-```
+```plaintext
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'eye_color'
@@ -92,7 +92,7 @@ for value in pet.values():  # Loop through all values
 
 Output:
 
-```
+```plaintext
 red
 42
 ```
@@ -110,7 +110,7 @@ for key in pet.keys():  # Loop through all keys
 
 Output:
 
-```
+```plaintext
 color
 age
 ```
@@ -126,7 +126,7 @@ for key in pet:  # Equivalent to for key in pet.keys()
 
 Output:
 
-```
+```plaintext
 color
 age
 ```
@@ -143,7 +143,7 @@ for item in pet.items():
 
 Output:
 
-```
+```plaintext
 ('color', 'red')
 ('age', 42)
 ```
@@ -159,7 +159,7 @@ for key, value in pet.items():  # Unpack tuple into key and value
 
 Output:
 
-```
+```plaintext
 Key: color Value: red
 Key: age Value: 42
 ```
@@ -177,7 +177,7 @@ f'My wife name is {wife.get("name")}'  # Returns 'Rose'
 
 Output:
 
-```
+```plaintext
 'My wife name is Rose'
 ```
 
@@ -187,7 +187,7 @@ f'She is {wife.get("age")} years old.'
 
 Output:
 
-```
+```plaintext
 'She is 33 years old.'
 ```
 
@@ -197,7 +197,7 @@ f'She is deeply in love with {wife.get("husband")}'
 
 Output:
 
-```
+```plaintext
 'She is deeply in love with None'
 ```
 
@@ -211,7 +211,7 @@ f'She is deeply in love with {wife.get("husband", "lover")}'
 
 Output:
 
-```
+```plaintext
 'She is deeply in love with lover'
 ```
 
@@ -235,7 +235,7 @@ wife
 
 Output:
 
-```
+```plaintext
 {'name': 'Rose', 'age': 33, 'has_hair': True}
 ```
 
@@ -252,7 +252,7 @@ wife.pop('age')
 
 Output:
 
-```
+```plaintext
 33
 ```
 
@@ -262,7 +262,7 @@ wife
 
 Output:
 
-```
+```plaintext
 {'name': 'Rose', 'hair': 'brown'}
 ```
 
@@ -277,7 +277,7 @@ wife.popitem()
 
 Output:
 
-```
+```plaintext
 ('hair', 'brown')
 ```
 
@@ -287,7 +287,7 @@ wife
 
 Output:
 
-```
+```plaintext
 {'name': 'Rose', 'age': 33}
 ```
 
@@ -303,7 +303,7 @@ wife
 
 Output:
 
-```
+```plaintext
 {'name': 'Rose', 'hair': 'brown'}
 ```
 
@@ -319,7 +319,7 @@ wife
 
 Output:
 
-```
+```plaintext
 {}
 ```
 
@@ -333,7 +333,7 @@ person = {'name': 'Rose', 'age': 33}
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -343,7 +343,7 @@ True
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -353,7 +353,7 @@ False
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -367,7 +367,7 @@ person = {'name': 'Rose', 'age': 33}
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -377,7 +377,7 @@ True
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -392,7 +392,7 @@ pprint.pprint(wife)
 
 Output:
 
-```
+```plaintext
 {'age': 33,
  'eye_color': 'brown',
  'hair_color': 'brown',
@@ -414,7 +414,7 @@ dict_c
 
 Output:
 
-```
+```plaintext
 {'a': 1, 'b': 3, 'c': 4}
 ```
 

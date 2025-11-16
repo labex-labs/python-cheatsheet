@@ -31,7 +31,7 @@ divide(dividend=10, divisor=5)
 
 Output:
 
-```
+```plaintext
 2
 ```
 
@@ -41,7 +41,7 @@ divide(dividend=10, divisor=0)
 
 Output:
 
-```
+```plaintext
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
@@ -62,7 +62,7 @@ divide(dividend=10, divisor=5)
 
 Output:
 
-```
+```plaintext
 2
 ```
 
@@ -72,7 +72,7 @@ divide(dividend=10, divisor=0)
 
 Output:
 
-```
+```plaintext
 You can not divide by 0
 ```
 
@@ -96,7 +96,7 @@ divide(dividend=20, divisor=5)
 
 Output:
 
-```
+```plaintext
 4
 ```
 
@@ -106,7 +106,7 @@ divide(dividend=10, divisor=5)
 
 Output:
 
-```
+```plaintext
 can only concatenate str (not "int") to str
 ```
 
@@ -116,7 +116,7 @@ divide(dividend=10, divisor=0)
 
 Output:
 
-```
+```plaintext
 division by zero
 ```
 
@@ -139,7 +139,7 @@ divide(dividend=10, divisor=5)
 
 Output:
 
-```
+```plaintext
 2.0
 Execution finished
 ```
@@ -150,7 +150,7 @@ divide(dividend=10, divisor=0)
 
 Output:
 
-```
+```plaintext
 You can not divide by 0
 Execution finished
 ```
@@ -169,7 +169,7 @@ raise MyCustomException  # Raise the custom exception
 
 Output:
 
-```
+```plaintext
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException
@@ -186,7 +186,7 @@ raise MyCustomException('A custom message for my custom exception')
 
 Output:
 
-```
+```plaintext
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException: A custom message for my custom exception
@@ -203,7 +203,7 @@ except MyCustomException:
 
 Output:
 
-```
+```plaintext
 My custom exception was raised
 ```
 

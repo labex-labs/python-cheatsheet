@@ -31,7 +31,7 @@ obj.year
 
 Output:
 
-```
+```plaintext
 2022
 ```
 
@@ -41,7 +41,7 @@ obj.month
 
 Output:
 
-```
+```plaintext
 12
 ```
 
@@ -51,7 +51,7 @@ obj.day
 
 Output:
 
-```
+```plaintext
 1
 ```
 
@@ -73,7 +73,7 @@ obj.hour
 
 Output:
 
-```
+```plaintext
 10
 ```
 
@@ -83,7 +83,7 @@ obj.second
 
 Output:
 
-```
+```plaintext
 33
 ```
 
@@ -93,7 +93,7 @@ obj.microsecond
 
 Output:
 
-```
+```plaintext
 0
 ```
 
@@ -115,7 +115,7 @@ obj.year
 
 Output:
 
-```
+```plaintext
 2024
 ```
 
@@ -125,7 +125,7 @@ obj.month
 
 Output:
 
-```
+```plaintext
 12
 ```
 
@@ -135,7 +135,7 @@ obj.day
 
 Output:
 
-```
+```plaintext
 1
 ```
 
@@ -145,7 +145,7 @@ obj.hour
 
 Output:
 
-```
+```plaintext
 15
 ```
 
@@ -155,7 +155,7 @@ obj.second
 
 Output:
 
-```
+```plaintext
 59
 ```
 
@@ -172,7 +172,7 @@ now
 
 Output:
 
-```
+```plaintext
 datetime.datetime(2022, 7, 23, 19, 56, 49, 589806)
 ```
 
@@ -184,7 +184,7 @@ now.date()
 
 Output:
 
-```
+```plaintext
 datetime.date(2022, 7, 23)
 ```
 
@@ -194,7 +194,7 @@ now.time()
 
 Output:
 
-```
+```plaintext
 datetime.time(19, 56, 49, 589806)
 ```
 
@@ -204,7 +204,7 @@ now.year
 
 Output:
 
-```
+```plaintext
 2022
 ```
 
@@ -214,7 +214,7 @@ now.month
 
 Output:
 
-```
+```plaintext
 7
 ```
 
@@ -224,7 +224,7 @@ now.day
 
 Output:
 
-```
+```plaintext
 23
 ```
 
@@ -234,7 +234,7 @@ now.hour
 
 Output:
 
-```
+```plaintext
 19
 ```
 
@@ -244,7 +244,7 @@ now.minute
 
 Output:
 
-```
+```plaintext
 56
 ```
 
@@ -254,7 +254,7 @@ now.second
 
 Output:
 
-```
+```plaintext
 49
 ```
 
@@ -264,7 +264,7 @@ now.microsecond
 
 Output:
 
-```
+```plaintext
 589806
 ```
 
@@ -278,7 +278,7 @@ datetime.now(timezone.utc)
 
 Output:
 
-```
+```plaintext
 datetime.datetime(2022, 7, 24, 0, 20, 8, 265634, tzinfo=datetime.timezone.utc)
 ```
 
@@ -301,7 +301,7 @@ now
 
 Output:
 
-```
+```plaintext
 datetime.datetime(2022, 7, 23, 20, 31, 19, 751479)
 ```
 
@@ -312,7 +312,7 @@ now.strftime("%d-%b-%Y")
 
 Output:
 
-```
+```plaintext
 '23-Jul-2022'
 ```
 
@@ -323,7 +323,7 @@ now.strftime("%d-%m-%Y")
 
 Output:
 
-```
+```plaintext
 '23-07-2022'
 ```
 
@@ -334,7 +334,7 @@ now.strftime("%m/%d/%Y")
 
 Output:
 
-```
+```plaintext
 '07/23/2022'
 ```
 
@@ -345,7 +345,7 @@ now.strftime("%b/%d/%Y - %H:%M:%S")
 
 Output:
 
-```
+```plaintext
 'Jul/23/2022 - 20:31:19'
 ```
 
@@ -374,7 +374,7 @@ datetime.strptime(datetime_str, '%d-%b-%Y')
 
 Output:
 
-```
+```plaintext
 datetime.datetime(2023, 7, 12, 0, 0)
 ```
 
@@ -386,7 +386,7 @@ datetime.strptime(datetime_str, "%b/%d/%Y - %H:%M:%S")
 
 Output:
 
-```
+```plaintext
 datetime.datetime(2023, 7, 12, 14, 38, 37)
 ```
 
@@ -437,7 +437,7 @@ difference
 
 Output:
 
-```
+```plaintext
 datetime.timedelta(days=173)
 ```
 
@@ -448,7 +448,7 @@ difference.days
 
 Output:
 
-```
+```plaintext
 173
 ```
 
@@ -464,7 +464,7 @@ now
 
 Output:
 
-```
+```plaintext
 datetime.datetime(2022, 7, 23, 21, 25, 2, 341081)
 ```
 
@@ -475,7 +475,7 @@ now + timedelta(days=10, seconds=15)
 
 Output:
 
-```
+```plaintext
 datetime.datetime(2022, 8, 2, 21, 25, 17, 341081)
 ```
 
@@ -491,7 +491,7 @@ now
 
 Output:
 
-```
+```plaintext
 datetime.datetime(2022, 7, 23, 21, 25, 2, 341081)
 ```
 
@@ -502,7 +502,7 @@ now - timedelta(days=10, seconds=15)
 
 Output:
 
-```
+```plaintext
 datetime.datetime(2022, 7, 13, 21, 59, 41, 100883)
 ```
 

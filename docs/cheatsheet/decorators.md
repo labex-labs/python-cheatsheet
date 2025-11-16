@@ -37,7 +37,7 @@ foo()  # Calls wrapper, which calls foo with extra behavior
 
 Output:
 
-```
+```plaintext
 Before func!
 Hello World!
 After func!
@@ -65,7 +65,7 @@ foo("Jack")  # Arguments are passed through wrapper
 
 Output:
 
-```
+```plaintext
 Before func!
 My name is Jack
 After func!
@@ -158,7 +158,7 @@ test_succeed.class_action()
 
 Output:
 
-```
+```plaintext
 You succeeded by choice.
 ```
 
@@ -169,7 +169,7 @@ test_fail.class_action()
 
 Output:
 
-```
+```plaintext
 Exception: Epic fail of your own creation.
 ```
 
@@ -199,7 +199,7 @@ say_hi("Jack")  # Calls CountCallNumber.__call__()
 
 Output:
 
-```
+```plaintext
 This is execution number 1
 Hi! My name is Jack
 ```
@@ -210,7 +210,7 @@ say_hi("James")
 
 Output:
 
-```
+```plaintext
 This is execution number 2
 Hi! My name is James
 ```

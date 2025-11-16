@@ -37,7 +37,7 @@ with zipfile.ZipFile('example.zip') as example_zip:
 
 Output:
 
-```
+```plaintext
 ['spam.txt', 'cats/', 'cats/catnames.txt', 'cats/zophie.jpg']
 13908
 3828
@@ -67,7 +67,7 @@ with zipfile.ZipFile('example.zip') as example_zip:
 
 Output:
 
-```
+```plaintext
 /tmp/spam.txt
 /tmp/some/new/folders/spam.txt
 ```
@@ -99,7 +99,7 @@ with zipfile.ZipFile('example.zip', 'r') as zf:
 
 Output:
 
-```
+```plaintext
 ['README.txt']
 ```
 
@@ -127,7 +127,7 @@ with zipfile.ZipFile('example.zip') as zf:
 
 Output:
 
-```
+```plaintext
 README.txt
 Comment     : b''
 Modified    : 2022-11-15 06:48:02

@@ -46,7 +46,7 @@ for each in result:
 
 Output:
 
-```
+```plaintext
 1
 2
 6
@@ -82,7 +82,7 @@ for each in result:
 
 Output:
 
-```
+```plaintext
 5
 7
 13
@@ -124,7 +124,7 @@ for each in result:
 
 Output:
 
-```
+```plaintext
 ('circle', 'triangle')
 ('circle', 'square')
 ('triangle', 'square')
@@ -150,7 +150,7 @@ for each in result:
 
 Output:
 
-```
+```plaintext
 ('circle', 'circle')
 ('circle', 'triangle')
 ('circle', 'square')
@@ -179,7 +179,7 @@ for i in itertools.count(10,3):
 
 Output:
 
-```
+```plaintext
 10
 13
 16
@@ -206,7 +206,7 @@ for color in itertools.cycle(colors):
 
 Output:
 
-```
+```plaintext
 red
 orange
 yellow
@@ -240,7 +240,7 @@ for each in result:
 
 Output:
 
-```
+```plaintext
 red
 orange
 yellow
@@ -273,7 +273,7 @@ for each in result:
 
 Output:
 
-```
+```plaintext
 circle
 square
 ```
@@ -298,7 +298,7 @@ for each in result:
 
 Output:
 
-```
+```plaintext
 5
 6
 7
@@ -328,7 +328,7 @@ for each in result:
 
 Output:
 
-```
+```plaintext
 5
 6
 7
@@ -364,7 +364,7 @@ for key, group in itertools.groupby(robots, key=lambda x: x['faction']):
 
 Output:
 
-```
+```plaintext
 autobot
 [{'name': 'blaster', 'faction': 'autobot'}]
 decepticon
@@ -395,7 +395,7 @@ for each in few_colors:
 
 Output:
 
-```
+```plaintext
 red
 orange
 ```
@@ -418,7 +418,7 @@ for each in result:
 
 Output:
 
-```
+```plaintext
 ('a', 'b', 'c')
 ('a', 'c', 'b')
 ('b', 'a', 'c')
@@ -442,7 +442,7 @@ for each in result:
 
 Output:
 
-```
+```plaintext
 (1, 'a')
 (1, 'b')
 (1, 'c')
@@ -472,7 +472,7 @@ for i in itertools.repeat("spam", 3):
 
 Output:
 
-```
+```plaintext
 spam
 spam
 spam
@@ -498,7 +498,7 @@ for each in result:
 
 Output:
 
-```
+```plaintext
 12
 32
 21
@@ -524,7 +524,7 @@ for each in result:
 
 Output:
 
-```
+```plaintext
 1
 2
 3
@@ -551,7 +551,7 @@ for each in alpha_colors:
 
 Output:
 
-```
+```plaintext
 red
 orange
 yellow
@@ -568,7 +568,7 @@ for each in beta_colors:
 
 Output:
 
-```
+```plaintext
 red
 orange
 yellow
@@ -596,7 +596,7 @@ for each in itertools.zip_longest(colors, data, fillvalue=None):
 
 Output:
 
-```
+```plaintext
 ('red', 1)
 ('orange', 2)
 ('yellow', 3)

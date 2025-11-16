@@ -33,7 +33,7 @@ say_hello('Carlos')
 
 Output:
 
-```
+```plaintext
 Hello Carlos
 ```
 
@@ -43,7 +43,7 @@ say_hello('Wanda')
 
 Output:
 
-```
+```plaintext
 Hello Wanda
 ```
 
@@ -53,7 +53,7 @@ say_hello('Rose')
 
 Output:
 
-```
+```plaintext
 Hello Rose
 ```
 
@@ -72,7 +72,7 @@ say_hi('John', 'Hello')
 
 Output:
 
-```
+```plaintext
 Hello John
 ```
 
@@ -83,7 +83,7 @@ say_hi(name='Anna', greeting='Hi')
 
 Output:
 
-```
+```plaintext
 Hi Anna
 ```
 
@@ -107,7 +107,7 @@ print(result)
 
 Output:
 
-```
+```plaintext
 15
 ```
 
@@ -137,7 +137,7 @@ print(local_variable)
 
 Output:
 
-```
+```plaintext
 Traceback (most recent call last):
   File "<stdin>", line 10, in <module>
 NameError: name 'local_variable' is not defined
@@ -160,7 +160,7 @@ print(eggs)  # Prints 'spam', not 'global'
 
 Output:
 
-```
+```plaintext
 spam
 ```
 
@@ -208,7 +208,7 @@ add(5, 3)
 
 Output:
 
-```
+```plaintext
 8
 ```
 
@@ -223,7 +223,7 @@ add(5, 3)
 
 Output:
 
-```
+```plaintext
 8
 ```
 
@@ -243,7 +243,7 @@ plus_3(4)  # Returns 4 + 3 = 7
 
 Output:
 
-```
+```plaintext
 7
 ```
 
@@ -253,7 +253,7 @@ plus_5(4)
 
 Output:
 
-```
+```plaintext
 9
 ```
 

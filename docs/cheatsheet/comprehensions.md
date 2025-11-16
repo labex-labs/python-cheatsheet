@@ -37,7 +37,7 @@ new_list
 
 Output:
 
-```
+```plaintext
 ['Charles', 'Susan', 'Patrick', 'George']
 ```
 
@@ -54,7 +54,7 @@ new_list
 
 Output:
 
-```
+```plaintext
 ['Charles', 'Susan', 'Patrick', 'George']
 ```
 
@@ -69,7 +69,7 @@ n
 
 Output:
 
-```
+```plaintext
 [(1, 1), (1, 2), (2, 1), (2, 2)]
 ```
 
@@ -91,7 +91,7 @@ print(new_list)
 
 Output:
 
-```
+```plaintext
 ['Charles', 'Carol']
 ```
 
@@ -106,7 +106,7 @@ print(new_list)
 
 Output:
 
-```
+```plaintext
 ['Charles', 'Carol']
 ```
 
@@ -122,7 +122,7 @@ print(new_list)
 
 Output:
 
-```
+```plaintext
 [1, 4, 3, 8, 5, 12]
 ```
 
@@ -146,7 +146,7 @@ b = {"abc", "def"}
 
 Output:
 
-```
+```plaintext
 {"ABC", "DEF"}
 ```
 
@@ -161,7 +161,7 @@ c = {'name': 'Pooka', 'age': 5}
 
 Output:
 
-```
+```plaintext
 {'Pooka': 'name', 5: 'age'}
 ```
 
@@ -175,7 +175,7 @@ c = {'name': 'Pooka', 'age': 5}
 
 Output:
 
-```
+```plaintext
 ['NAME:Pooka', 'AGE:5']
 ```
 

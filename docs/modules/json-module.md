@@ -64,7 +64,7 @@ python_person
 
 Output:
 
-```
+```plaintext
 {'name': 'Charles', 'age': 33, 'has_hair': False, 'hobbies': ['photography', 'running']}
 ```
 
@@ -74,7 +74,7 @@ type(python_person)
 
 Output:
 
-```
+```plaintext
 <class 'dict'>
 ```
 
@@ -85,7 +85,7 @@ python_person.get("name")
 
 Output:
 
-```
+```plaintext
 'Charles'
 ```
 
@@ -106,7 +106,7 @@ json_person
 
 Output:
 
-```
+```plaintext
 '{"name": "Charles", "age": 33, "has_hair": false, "hobbies": ["photography", "running"]}'
 ```
 
@@ -116,7 +116,7 @@ type(json_person)
 
 Output:
 
-```
+```plaintext
 <class 'str'>
 ```
 
@@ -136,7 +136,7 @@ json.loads(json_content)
 
 Output:
 
-```
+```plaintext
 {'name': 'Charles', 'age': 33, 'has_hair': False}
 ```
 

@@ -37,7 +37,7 @@ Examples:
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -47,7 +47,7 @@ True
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -57,7 +57,7 @@ False
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -67,7 +67,7 @@ True
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -77,7 +77,7 @@ False
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -87,7 +87,7 @@ True
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -97,7 +97,7 @@ True
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -141,7 +141,7 @@ You can mix boolean and comparison operators:
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -151,7 +151,7 @@ True
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -161,7 +161,7 @@ False
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -173,7 +173,7 @@ Also, you can mix use multiple Boolean operators in an expression, along with th
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -185,7 +185,7 @@ True
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -196,7 +196,7 @@ True
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -214,7 +214,7 @@ if name == 'Debora':  # Check if name equals 'Debora'
 
 Output:
 
-```
+```plaintext
 Hi, Debora
 ```
 
@@ -225,7 +225,7 @@ if name != 'George':
 
 Output:
 
-```
+```plaintext
 You are not George
 ```
 
@@ -243,7 +243,7 @@ else:  # Execute if if condition is False
 
 Output:
 
-```
+```plaintext
 You are not George
 ```
 
@@ -261,7 +261,7 @@ elif name == 'George':  # Checked only if previous condition is False
 
 Output:
 
-```
+```plaintext
 Hi George!
 ```
 
@@ -280,7 +280,7 @@ else:
 
 Output:
 
-```
+```plaintext
 Who are you?
 ```
 
@@ -288,7 +288,7 @@ Who are you?
 
 Many programming languages have a ternary operator, which define a conditional expression. The most common usage is to make a terse, simple conditional assignment statement. In other words, it offers one-line code to evaluate the first expression if the condition is true, and otherwise it evaluates the second expression.
 
-```
+```plaintext
 <expression1> if <condition> else <expression2>
 ```
 
@@ -306,7 +306,7 @@ else:
 
 Output:
 
-```
+```plaintext
 kid
 ```
 
@@ -318,7 +318,7 @@ print('kid' if age < 18 else 'adult')
 
 Output:
 
-```
+```plaintext
 kid
 ```
 
@@ -333,7 +333,7 @@ print('kid' if age < 13 else 'teen' if age < 18 else 'adult')
 
 Output:
 
-```
+```plaintext
 teen
 ```
 
@@ -350,7 +350,7 @@ else:
 
 Output:
 
-```
+```plaintext
 teen
 ```
 
@@ -399,7 +399,7 @@ match response_code:
 
 Output:
 
-```
+```plaintext
 Created
 ```
 
@@ -422,7 +422,7 @@ match response_code:
 
 Output:
 
-```
+```plaintext
 Internal Server Error
 ```
 
@@ -441,7 +441,7 @@ match today_responses:
 
 Output:
 
-```
+```plaintext
 All responses: 200, 300, [404, 500]
 ```
 
@@ -466,7 +466,7 @@ match response_code:
 
 Output:
 
-```
+```plaintext
 Invalid Code
 ```
 
@@ -485,7 +485,7 @@ match response_code:
 
 Output:
 
-```
+```plaintext
 Code is a string
 ```
 
@@ -503,7 +503,7 @@ match response_code:
 
 Output:
 
-```
+```plaintext
 Code is a valid number
 ```
 
@@ -521,7 +521,7 @@ while spam < 5:  # Continue while spam is less than 5
 
 Output:
 
-```
+```plaintext
 Hello, world.
 Hello, world.
 Hello, world.
@@ -545,7 +545,7 @@ print('Thank you!')
 
 Output:
 
-```
+```plaintext
 Please type your name: your name
 Thank you!
 ```
@@ -569,7 +569,7 @@ print('Access granted.')
 
 Output:
 
-```
+```plaintext
 Who are you? Charles
 Who are you? Debora
 Who are you? Joe
@@ -590,7 +590,7 @@ for pet in pets:  # Loop through each pet in the list
 
 Output:
 
-```
+```plaintext
 Bella
 Milo
 Loki
@@ -607,7 +607,7 @@ for i in range(5):
 
 Output:
 
-```
+```plaintext
 Will stop at 5! or 4? (0)
 Will stop at 5! or 4? (1)
 Will stop at 5! or 4? (2)
@@ -625,7 +625,7 @@ for i in range(0, 10, 2):
 
 Output:
 
-```
+```plaintext
 0
 2
 4
@@ -642,7 +642,7 @@ for i in range(5, -1, -1):
 
 Output:
 
-```
+```plaintext
 5
 4
 3
@@ -680,7 +680,7 @@ while True:
 
 Output:
 
-```
+```plaintext
 Type exit to exit: open
 Type exit to exit: close
 Type exit to exit: exit

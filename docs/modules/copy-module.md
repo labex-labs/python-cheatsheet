@@ -36,7 +36,7 @@ a
 
 Output:
 
-```
+```plaintext
 [[1], [2], [3]]
 ```
 
@@ -46,7 +46,7 @@ b
 
 Output:
 
-```
+```plaintext
 [[1], [2], [3]]
 ```
 
@@ -54,7 +54,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'copy' is not defined
@@ -82,7 +82,7 @@ a
 
 Output:
 
-```
+```plaintext
 [[0], None, [3]]
 ```
 
@@ -92,7 +92,7 @@ b
 
 Output:
 
-```
+```plaintext
 [[1], [2], [3]]
 ```
 

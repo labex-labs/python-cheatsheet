@@ -25,7 +25,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.13436424411240122
 ```
 
@@ -38,7 +38,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.13436424411240122
 ```
 
@@ -49,7 +49,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.13436424411240122
 ```
 
@@ -60,7 +60,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.13436424411240122
 ```
 
@@ -71,7 +71,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.13436424411240122
 ```
 
@@ -82,7 +82,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.13436424411240122
 ```
 
@@ -95,7 +95,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.8474337369372327
 ```
 
@@ -105,7 +105,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.763774618976614
 ```
 
@@ -115,7 +115,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.2550690257394217
 ```
 
@@ -133,7 +133,7 @@ random.randint(1, 5)
 
 Output:
 
-```
+```plaintext
 3
 ```
 
@@ -143,7 +143,7 @@ random.randint(1, 5)
 
 Output:
 
-```
+```plaintext
 2
 ```
 
@@ -153,7 +153,7 @@ random.randint(1, 5)
 
 Output:
 
-```
+```plaintext
 5
 ```
 
@@ -163,7 +163,7 @@ random.randint(1, 5)
 
 Output:
 
-```
+```plaintext
 1
 ```
 
@@ -173,7 +173,7 @@ random.randint(1, 5)
 
 Output:
 
-```
+```plaintext
 3
 ```
 
@@ -183,7 +183,7 @@ random.randint(1, 5)
 
 Output:
 
-```
+```plaintext
 1
 ```
 
@@ -197,7 +197,7 @@ random.choice([1, 2, 3, 4])
 
 Output:
 
-```
+```plaintext
 1
 ```
 
@@ -207,7 +207,7 @@ random.choice([1, 2, 3, 4])
 
 Output:
 
-```
+```plaintext
 2
 ```
 
@@ -217,7 +217,7 @@ random.choice([1, 2, 3, 4])
 
 Output:
 
-```
+```plaintext
 4
 ```
 
@@ -227,7 +227,7 @@ random.choice([1, 2, 3, 4])
 
 Output:
 
-```
+```plaintext
 4
 ```
 
@@ -245,7 +245,7 @@ my_list
 
 Output:
 
-```
+```plaintext
 [1, 4, 3, 2]
 ```
 
@@ -256,7 +256,7 @@ my_list
 
 Output:
 
-```
+```plaintext
 [2, 4, 3, 1]
 ```
 
@@ -267,7 +267,7 @@ my_list
 
 Output:
 
-```
+```plaintext
 [4, 2, 3, 1]
 ```
 
@@ -286,7 +286,7 @@ random.sample([1, 2, 3, 4], 1)
 
 Output:
 
-```
+```plaintext
 [3]
 ```
 
@@ -296,7 +296,7 @@ random.sample([1, 2, 3, 4], 2)
 
 Output:
 
-```
+```plaintext
 [3, 4]
 ```
 
@@ -306,7 +306,7 @@ random.sample([1, 2, 3, 4], 3)
 
 Output:
 
-```
+```plaintext
 [4, 3, 2]
 ```
 
@@ -316,7 +316,7 @@ random.sample([1, 2, 3, 4], 4)
 
 Output:
 
-```
+```plaintext
 [1, 2, 4, 3]
 ```
 
@@ -330,7 +330,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.4143139993007743
 ```
 
@@ -340,7 +340,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.17300740157905092
 ```
 
@@ -350,7 +350,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.548798761388153
 ```
 
@@ -360,7 +360,7 @@ random.random()
 
 Output:
 
-```
+```plaintext
 0.7030407620656315
 ```
 
@@ -374,7 +374,7 @@ random.uniform(1, 5)
 
 Output:
 
-```
+```plaintext
 3.697943322009309
 ```
 
@@ -384,7 +384,7 @@ random.uniform(1, 5)
 
 Output:
 
-```
+```plaintext
 2.498812082006561
 ```
 
@@ -394,7 +394,7 @@ random.uniform(1, 5)
 
 Output:
 
-```
+```plaintext
 2.7558465201782525
 ```
 
@@ -404,7 +404,7 @@ random.uniform(1, 5)
 
 Output:
 
-```
+```plaintext
 3.0337059529999273
 ```
 

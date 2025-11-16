@@ -41,7 +41,7 @@ print(Path('usr').joinpath('bin').joinpath('spam'))  # Join path components
 
 Output:
 
-```
+```plaintext
 usr/bin/spam
 ```
 
@@ -56,7 +56,7 @@ print(Path('usr') / 'bin' / 'spam')  # Use / operator instead of joinpath()
 
 Output:
 
-```
+```plaintext
 usr/bin/spam
 ```
 
@@ -79,7 +79,7 @@ for filename in my_files:
 
 Output:
 
-```
+```plaintext
 /home/labex/project/accounts.txt
 /home/labex/project/details.csv
 /home/labex/project/invite.docx
@@ -98,7 +98,7 @@ print(Path.cwd())  # Returns current working directory as Path object
 
 Output:
 
-```
+```plaintext
 /home/labex/project
 ```
 
@@ -114,7 +114,7 @@ cwd = Path.cwd()
 
 Output:
 
-```
+```plaintext
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "/usr/lib/python3.6/pathlib.py", line 1226, in mkdir
@@ -157,7 +157,7 @@ Path('/').is_absolute()
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -167,7 +167,7 @@ Path('..').is_absolute()
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -180,7 +180,7 @@ print(Path.cwd())
 
 Output:
 
-```
+```plaintext
 /home/labex/project
 ```
 
@@ -190,7 +190,7 @@ print(Path('..').resolve())
 
 Output:
 
-```
+```plaintext
 /home
 ```
 
@@ -205,7 +205,7 @@ print(Path('/etc/passwd').relative_to('/'))
 
 Output:
 
-```
+```plaintext
 etc/passwd
 ```
 
@@ -223,7 +223,7 @@ Path('.').exists()
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -233,7 +233,7 @@ Path('setup.py').exists()
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -243,7 +243,7 @@ Path('/etc').exists()
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -253,7 +253,7 @@ Path('nonexistentfile').exists()
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -269,7 +269,7 @@ Path('setup.py').is_file()
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -279,7 +279,7 @@ Path('/home').is_file()
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -289,7 +289,7 @@ Path('nonexistentfile').is_file()
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -305,7 +305,7 @@ Path('/').is_dir()
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -315,7 +315,7 @@ Path('setup.py').is_dir()
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -325,7 +325,7 @@ Path('/spam').is_dir()
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -342,7 +342,7 @@ print(stat) # stat contains some other information about the file as well
 
 Output:
 
-```
+```plaintext
 os.stat_result(st_mode=33261, st_ino=141087, st_dev=2051, st_nlink=2, st_uid=0,
 --snip--
 st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517261276)
@@ -354,7 +354,7 @@ print(stat.st_size) # size in bytes
 
 Output:
 
-```
+```plaintext
 10024
 ```
 
@@ -371,7 +371,7 @@ for f in Path('/usr/bin').iterdir():
 
 Output:
 
-```
+```plaintext
 ...
 /usr/bin/tiff2rgba
 /usr/bin/iconv
@@ -410,7 +410,7 @@ print(total_size)
 
 Output:
 
-```
+```plaintext
 1903178911
 ```
 
@@ -426,7 +426,7 @@ shutil.copy('/tmp/spam.txt', '/tmp/delicious')
 
 Output:
 
-```
+```plaintext
 /tmp/delicious/spam.txt
 ```
 
@@ -436,7 +436,7 @@ shutil.copy('/tmp/eggs.txt', '/tmp/delicious/eggs2.txt')
 
 Output:
 
-```
+```plaintext
 /tmp/delicious/eggs2.txt
 ```
 
@@ -450,7 +450,7 @@ shutil.copytree('/tmp/bacon', '/tmp/bacon_backup')
 
 Output:
 
-```
+```plaintext
 /tmp/bacon_backup
 ```
 
@@ -464,7 +464,7 @@ shutil.move('/tmp/bacon.txt', '/tmp/eggs')
 
 Output:
 
-```
+```plaintext
 /tmp/eggs/bacon.txt
 ```
 
@@ -476,7 +476,7 @@ shutil.move('/tmp/bacon.txt', '/tmp/eggs/new_bacon.txt')
 
 Output:
 
-```
+```plaintext
 /tmp/eggs/new_bacon.txt
 ```
 
@@ -488,7 +488,7 @@ shutil.move('/tmp/bacon.txt', '/tmp/eggs')
 
 Output:
 
-```
+```plaintext
 /tmp/eggs
 ```
 
@@ -512,7 +512,7 @@ for i in p.rglob('*'):
 
 Output:
 
-```
+```plaintext
 /tmp/delicious/cats
 /tmp/delicious/walnut
 /tmp/delicious/spam.txt

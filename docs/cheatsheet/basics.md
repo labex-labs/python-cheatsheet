@@ -42,7 +42,7 @@ Examples of expressions:
 
 Output:
 
-```
+```plaintext
 20
 ```
 
@@ -54,7 +54,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 30
 ```
 
@@ -64,7 +64,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 256
 ```
 
@@ -74,7 +74,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 3
 ```
 
@@ -84,7 +84,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 2
 ```
 
@@ -94,7 +94,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 16.0
 ```
 
@@ -121,7 +121,7 @@ greeting
 
 Output:
 
-```
+```plaintext
 'Hello world!'
 ```
 
@@ -134,7 +134,7 @@ number
 
 Output:
 
-```
+```plaintext
 2
 ```
 
@@ -147,7 +147,7 @@ my_list
 
 Output:
 
-```
+```plaintext
 ['item', 'item', 'item']
 ```
 
@@ -165,7 +165,7 @@ print(my_var:="Hello World!")
 
 Output:
 
-```
+```plaintext
 Hello World!
 ```
 
@@ -176,7 +176,7 @@ print(my_var)
 
 Output:
 
-```
+```plaintext
 Yes
 ```
 
@@ -186,7 +186,7 @@ print(my_var:="Hello")
 
 Output:
 
-```
+```plaintext
 Hello
 ```
 
@@ -260,7 +260,7 @@ String concatenation:
 
 Output:
 
-```
+```plaintext
 'AliceBob'
 ```
 
@@ -273,7 +273,7 @@ String replication:
 
 Output:
 
-```
+```plaintext
 'AliceAliceAliceAliceAlice'
 ```
 
@@ -362,7 +362,7 @@ print('Hello world!')
 
 Output:
 
-```
+```plaintext
 Hello world!
 ```
 
@@ -373,7 +373,7 @@ print('Hello world!', a)
 
 Output:
 
-```
+```plaintext
 Hello world! 1
 ```
 
@@ -390,7 +390,7 @@ for word in phrase:
 
 Output:
 
-```
+```plaintext
 printed-with-a-dash-in-between-
 ```
 
@@ -405,7 +405,7 @@ print('cats', 'dogs', 'mice', sep=',')  # Comma-separated output
 
 Output:
 
-```
+```plaintext
 cats,dogs,mice
 ```
 
@@ -422,7 +422,7 @@ print('Hi, {}'.format(my_name))
 
 Output:
 
-```
+```plaintext
 What is your name?
 Martha
 Hi, Martha
@@ -437,7 +437,7 @@ print('Hi, {}'.format(my_name))
 
 Output:
 
-```
+```plaintext
 What is your name? Martha
 Hi, Martha
 ```
@@ -452,7 +452,7 @@ print(f'Hi, {my_name}')  # f-string for string formatting
 
 Output:
 
-```
+```plaintext
 What is your name? Martha
 Hi, Martha
 ```
@@ -468,7 +468,7 @@ len('hello')  # Returns 5
 
 Output:
 
-```
+```plaintext
 5
 ```
 
@@ -479,7 +479,7 @@ len(['cat', 3, 'dog'])  # Returns 3 (three items)
 
 Output:
 
-```
+```plaintext
 3
 ```
 
@@ -503,7 +503,7 @@ if len(a) > 0:  # evaluates to True
 
 Output:
 
-```
+```plaintext
 the list is not empty!
 ```
 
@@ -515,7 +515,7 @@ if a:  # evaluates to True if list is not empty
 
 Output:
 
-```
+```plaintext
 the list is not empty!
 ```
 
@@ -530,7 +530,7 @@ str(29)  # Returns '29'
 
 Output:
 
-```
+```plaintext
 '29'
 ```
 
@@ -540,7 +540,7 @@ str(-3.14)
 
 Output:
 
-```
+```plaintext
 '-3.14'
 ```
 
@@ -553,7 +553,7 @@ int('11')  # Returns 11
 
 Output:
 
-```
+```plaintext
 11
 ```
 
@@ -564,7 +564,7 @@ float('3.14')  # Returns 3.14
 
 Output:
 
-```
+```plaintext
 3.14
 ```
 

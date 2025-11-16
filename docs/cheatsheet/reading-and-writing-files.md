@@ -28,7 +28,7 @@ hello_content
 
 Output:
 
-```
+```plaintext
 'Hello World!'
 ```
 
@@ -42,7 +42,7 @@ with open('sonnet29.txt') as sonnet_file:
 
 Output:
 
-```
+```plaintext
 ['When, in disgrace with fortune and men's eyes,\n',
  ' I all alone beweep my  outcast state,\n',
  "And trouble deaf heaven with my bootless cries,\n",
@@ -60,7 +60,7 @@ with open('sonnet29.txt') as sonnet_file:
 
 Output:
 
-```
+```plaintext
 When, in disgrace with fortune and men's eyes,
 I all alone beweep my outcast state,
 And trouble deaf heaven with my bootless cries,
@@ -77,7 +77,7 @@ with open('bacon.txt', 'w') as bacon_file:  # 'w' = write mode
 
 Output:
 
-```
+```plaintext
 13
 ```
 
@@ -89,7 +89,7 @@ with open('bacon.txt', 'a') as bacon_file:  # 'a' = append mode
 
 Output:
 
-```
+```plaintext
 25
 ```
 
@@ -102,7 +102,7 @@ print(content)
 
 Output:
 
-```
+```plaintext
 Hello world!
 Bacon is not a vegetable.
 ```

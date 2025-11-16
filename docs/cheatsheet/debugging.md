@@ -31,7 +31,7 @@ raise Exception('This is the error message.')
 
 Output:
 
-```
+```plaintext
 Traceback (most recent call last):
   File "<pyshell#191>", line 1, in <module>
     raise Exception('This is the error message.')
@@ -64,7 +64,7 @@ for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
 
 Output:
 
-```
+```plaintext
 ****
 *  *
 *  *
@@ -98,7 +98,7 @@ except:
 
 Output:
 
-```
+```plaintext
 116
 The traceback info was written to errorInfo.txt.
 ```
@@ -129,7 +129,7 @@ assert pod_bay_door_status == 'open', 'The pod bay doors need to be "open".'  # 
 
 Output:
 
-```
+```plaintext
 Traceback (most recent call last):
   File "<pyshell#10>", line 1, in <module>
     assert pod_bay_door_status == 'open', 'The pod bay doors need to be "open".'
@@ -173,7 +173,7 @@ logging.debug('End of program')
 
 Output:
 
-```
+```plaintext
 2015-05-23 16:20:12,664 - DEBUG - Start of program
 2015-05-23 16:20:12,664 - DEBUG - Start of factorial(5)
 2015-05-23 16:20:12,665 - DEBUG - i is 0, total is 0
@@ -212,7 +212,7 @@ logging.critical('Critical error! Critical error!')
 
 Output:
 
-```
+```plaintext
 2015-05-22 11:10:48,054 - CRITICAL - Critical error! Critical error!
 ```
 

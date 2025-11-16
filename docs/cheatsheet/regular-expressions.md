@@ -61,7 +61,7 @@ print(f'Phone number found: {mo.group()}')  # group() returns matched text
 
 Output:
 
-```
+```plaintext
 Phone number found: 415-555-4242
 ```
 
@@ -77,7 +77,7 @@ mo.group(1)  # Returns first group: '415'
 
 Output:
 
-```
+```plaintext
 '415'
 ```
 
@@ -87,7 +87,7 @@ mo.group(2)
 
 Output:
 
-```
+```plaintext
 '555-4242'
 ```
 
@@ -97,7 +97,7 @@ mo.group(0)
 
 Output:
 
-```
+```plaintext
 '415-555-4242'
 ```
 
@@ -107,7 +107,7 @@ mo.group()
 
 Output:
 
-```
+```plaintext
 '415-555-4242'
 ```
 
@@ -120,7 +120,7 @@ mo.groups()  # Returns ('415', '555-4242')
 
 Output:
 
-```
+```plaintext
 ('415', '555-4242')
 ```
 
@@ -132,7 +132,7 @@ print(area_code)
 
 Output:
 
-```
+```plaintext
 415
 ```
 
@@ -142,7 +142,7 @@ print(main_number)
 
 Output:
 
-```
+```plaintext
 555-4242
 ```
 
@@ -159,7 +159,7 @@ mo1.group()
 
 Output:
 
-```
+```plaintext
 'Batman'
 ```
 
@@ -170,7 +170,7 @@ mo2.group()
 
 Output:
 
-```
+```plaintext
 'Tina Fey'
 ```
 
@@ -185,7 +185,7 @@ mo.group()
 
 Output:
 
-```
+```plaintext
 'Batmobile'
 ```
 
@@ -195,7 +195,7 @@ mo.group(1)
 
 Output:
 
-```
+```plaintext
 'mobile'
 ```
 
@@ -212,7 +212,7 @@ mo1.group()
 
 Output:
 
-```
+```plaintext
 'Batman'
 ```
 
@@ -223,7 +223,7 @@ mo2.group()
 
 Output:
 
-```
+```plaintext
 'Batwoman'
 ```
 
@@ -239,7 +239,7 @@ mo1.group()
 
 Output:
 
-```
+```plaintext
 'Batman'
 ```
 
@@ -250,7 +250,7 @@ mo2.group()
 
 Output:
 
-```
+```plaintext
 'Batwoman'
 ```
 
@@ -261,7 +261,7 @@ mo3.group()
 
 Output:
 
-```
+```plaintext
 'Batwowowowoman'
 ```
 
@@ -278,7 +278,7 @@ mo1.group()
 
 Output:
 
-```
+```plaintext
 'Batwoman'
 ```
 
@@ -289,7 +289,7 @@ mo2.group()
 
 Output:
 
-```
+```plaintext
 'Batwowowowoman'
 ```
 
@@ -300,7 +300,7 @@ mo3 is None
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -317,7 +317,7 @@ mo1.group()
 
 Output:
 
-```
+```plaintext
 'HaHaHa'
 ```
 
@@ -328,7 +328,7 @@ mo2 is None
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -342,7 +342,7 @@ mo1.group()
 
 Output:
 
-```
+```plaintext
 'HaHaHa'
 ```
 
@@ -359,7 +359,7 @@ mo1.group()
 
 Output:
 
-```
+```plaintext
 'HaHaHaHaHa'
 ```
 
@@ -371,7 +371,7 @@ mo2.group()
 
 Output:
 
-```
+```plaintext
 'HaHaHa'
 ```
 
@@ -387,7 +387,7 @@ phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
 
 Output:
 
-```
+```plaintext
 ['415-555-9999', '212-555-0000']
 ```
 
@@ -402,7 +402,7 @@ vowel_regex.findall('Robocop eats baby food. BABY FOOD.')
 
 Output:
 
-```
+```plaintext
 ['o', 'o', 'o', 'e', 'a', 'a', 'o', 'o', 'A', 'O', 'O']
 ```
 
@@ -417,7 +417,7 @@ consonant_regex.findall('Robocop eats baby food. BABY FOOD.')
 
 Output:
 
-```
+```plaintext
 ['R', 'b', 'c', 'p', ' ', 't', 's', ' ', 'b', 'b', 'y', ' ', 'f', 'd', '.', ' ', 'B', 'B', 'Y', ' ', 'F', 'D', '.']
 ```
 
@@ -438,7 +438,7 @@ begins_with_hello.search('Hello world!')
 
 Output:
 
-```
+```plaintext
 <_sre.SRE_Match object; span=(0, 5), match='Hello'>
 ```
 
@@ -448,7 +448,7 @@ begins_with_hello.search('He said hello.') is None
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -462,7 +462,7 @@ whole_string_is_num.search('1234567890')
 
 Output:
 
-```
+```plaintext
 <_sre.SRE_Match object; span=(0, 10), match='1234567890'>
 ```
 
@@ -472,7 +472,7 @@ whole_string_is_num.search('12345xyz67890') is None
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -482,7 +482,7 @@ whole_string_is_num.search('12 34567890') is None
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -498,7 +498,7 @@ at_regex.findall('The cat in the hat sat on the flat mat.')
 
 Output:
 
-```
+```plaintext
 ['cat', 'hat', 'sat', 'lat', 'mat']
 ```
 
@@ -513,7 +513,7 @@ mo.group(1)
 
 Output:
 
-```
+```plaintext
 'Al'
 ```
 
@@ -523,7 +523,7 @@ mo.group(2)
 
 Output:
 
-```
+```plaintext
 'Sweigart'
 ```
 
@@ -537,7 +537,7 @@ mo.group()
 
 Output:
 
-```
+```plaintext
 '<To serve man>'
 ```
 
@@ -549,7 +549,7 @@ mo.group()
 
 Output:
 
-```
+```plaintext
 '<To serve man> for dinner.>'
 ```
 
@@ -564,7 +564,7 @@ no_newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold 
 
 Output:
 
-```
+```plaintext
 'Serve the public trust.'
 ```
 
@@ -575,7 +575,7 @@ newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the
 
 Output:
 
-```
+```plaintext
 'Serve the public trust.\nProtect the innocent.\nUphold the law.'
 ```
 
@@ -591,7 +591,7 @@ robocop.search('Robocop is part man, part machine, all cop.').group()
 
 Output:
 
-```
+```plaintext
 'Robocop'
 ```
 
@@ -601,7 +601,7 @@ robocop.search('ROBOCOP protects the innocent.').group()
 
 Output:
 
-```
+```plaintext
 'ROBOCOP'
 ```
 
@@ -611,7 +611,7 @@ robocop.search('Al, why does your programming book talk about robocop so much?')
 
 Output:
 
-```
+```plaintext
 'robocop'
 ```
 
@@ -632,7 +632,7 @@ names_regex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.
 
 Output:
 
-```
+```plaintext
 'CENSORED gave the secret documents to CENSORED.'
 ```
 

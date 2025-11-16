@@ -38,7 +38,7 @@ os.path.join('usr', 'bin', 'spam')
 
 Output:
 
-```
+```plaintext
 usr\bin\spam
 ```
 
@@ -55,7 +55,7 @@ for filename in my_files:
 
 Output:
 
-```
+```plaintext
 /home/labex/project/accounts.txt
 /home/labex/project/details.csv
 /home/labex/project/invite.docx
@@ -72,7 +72,7 @@ os.getcwd()
 
 Output:
 
-```
+```plaintext
 /home/labex/project
 ```
 
@@ -86,7 +86,7 @@ os.getcwd()
 
 Output:
 
-```
+```plaintext
 /usr/bin
 ```
 
@@ -119,7 +119,7 @@ os.path.isabs('/')
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -130,7 +130,7 @@ os.path.isabs('..')
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -144,7 +144,7 @@ os.getcwd()
 
 Output:
 
-```
+```plaintext
 /home/labex/project
 ```
 
@@ -155,7 +155,7 @@ os.path.abspath('..')
 
 Output:
 
-```
+```plaintext
 /home
 ```
 
@@ -171,7 +171,7 @@ os.path.relpath('/etc/passwd', '/')
 
 Output:
 
-```
+```plaintext
 etc/passwd
 ```
 
@@ -188,7 +188,7 @@ os.path.exists('.')
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -198,7 +198,7 @@ os.path.exists('setup.py')
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -208,7 +208,7 @@ os.path.exists('/etc')
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -218,7 +218,7 @@ os.path.exists('nonexistentfile')
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -233,7 +233,7 @@ os.path.isfile('setup.py')
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -243,7 +243,7 @@ os.path.isfile('/home')
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -253,7 +253,7 @@ os.path.isfile('nonexistentfile')
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -268,7 +268,7 @@ os.path.isdir('/')
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -278,7 +278,7 @@ os.path.isdir('setup.py')
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -288,7 +288,7 @@ os.path.isdir('/spam')
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -303,7 +303,7 @@ os.path.getsize('/usr/bin/python3')
 
 Output:
 
-```
+```plaintext
 776192
 ```
 
@@ -318,7 +318,7 @@ os.listdir('/usr/bin')
 
 Output:
 
-```
+```plaintext
 ['0409', '12520437.cpx', '12520850.cpx', '5U877.ax', 'aaclient.dll',
 --snip--
 'xwtpdui.dll', 'xwtpw32.dll', 'zh-CN', 'zh-HK', 'zh-TW', 'zipfldr.dll']
@@ -348,7 +348,7 @@ print(total_size)
 
 Output:
 
-```
+```plaintext
 1117846456
 ```
 
@@ -377,7 +377,7 @@ for folder_name, subfolders, filenames in os.walk('/tmp/delicious'):
 
 Output:
 
-```
+```plaintext
 The current folder is /tmp/delicious
 SUBFOLDER OF /tmp/delicious: cats
 SUBFOLDER OF /tmp/delicious: walnut

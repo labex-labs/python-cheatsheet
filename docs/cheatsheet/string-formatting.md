@@ -35,7 +35,7 @@ name = 'Pete'
 
 Output:
 
-```
+```plaintext
 "Hello Pete"
 ```
 
@@ -48,7 +48,7 @@ num = 5
 
 Output:
 
-```
+```plaintext
 "I have 5 apples"
 ```
 
@@ -66,7 +66,7 @@ age = 20
 
 Output:
 
-```
+```plaintext
 "Hello I'm John, my age is 20"
 ```
 
@@ -76,7 +76,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 "Hello I'm John, my age is 20"
 ```
 
@@ -101,7 +101,7 @@ f'Hello {name}!'  # f prefix allows expressions in {}
 
 Output:
 
-```
+```plaintext
 'Hello Elizabeth!'
 ```
 
@@ -116,7 +116,7 @@ f'Five plus ten is {a + b} and not {2 * (a + b)}.'  # Evaluates expressions
 
 Output:
 
-```
+```plaintext
 'Five plus ten is 15 and not 30.'
 ```
 
@@ -133,7 +133,7 @@ f'You have {messages} unread messages'
 
 Output:
 
-```
+```plaintext
 'Hi, Robert. You have 12 unread messages'
 ```
 
@@ -150,7 +150,7 @@ f'date and time: {now=}'  # Prints "now='Nov/14/2022 - 20:50:01'"
 
 Output:
 
-```
+```plaintext
 "date and time: now='Nov/14/2022 - 20:50:01'"
 ```
 
@@ -163,7 +163,7 @@ f"{name.upper() = :-^20}"
 
 Output:
 
-```
+```plaintext
 'name.upper() = -------ROBERT-------'
 ```
 
@@ -173,7 +173,7 @@ f"{name.upper() = :^20}"
 
 Output:
 
-```
+```plaintext
 'name.upper() =        ROBERT       '
 ```
 
@@ -183,7 +183,7 @@ f"{name.upper() = :20}"
 
 Output:
 
-```
+```plaintext
 'name.upper() = ROBERT              '
 ```
 
@@ -198,7 +198,7 @@ f"{a:,}"
 
 Output:
 
-```
+```plaintext
 '10,000,000'
 ```
 
@@ -211,7 +211,7 @@ f"{a:.2f}"
 
 Output:
 
-```
+```plaintext
 '3.14'
 ```
 
@@ -224,7 +224,7 @@ f"{a:.2%}"
 
 Output:
 
-```
+```plaintext
 '81.66%'
 ```
 
@@ -259,7 +259,7 @@ t.substitute(name=name)
 
 Output:
 
-```
+```plaintext
 'Hey Elizabeth!'
 ```
 

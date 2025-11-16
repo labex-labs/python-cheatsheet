@@ -30,7 +30,7 @@ print("Hello there!\nHow are you?\nI\'m doing fine.")
 
 Output:
 
-```
+```plaintext
 Hello there!
 How are you?
 I'm doing fine.
@@ -47,7 +47,7 @@ print(r"Hello there!\nHow are you?\nI\'m doing fine.")  # \n printed literally
 
 Output:
 
-```
+```plaintext
 Hello there!\nHow are you?\nI\'m doing fine.
 ```
 
@@ -69,7 +69,7 @@ Bob"""
 
 Output:
 
-```
+```plaintext
 Dear Alice,
 
 Eve's cat has been arrested for catnapping,
@@ -95,7 +95,7 @@ spam[0]  # Returns first character: 'H'
 
 Output:
 
-```
+```plaintext
 'H'
 ```
 
@@ -105,7 +105,7 @@ spam[4]
 
 Output:
 
-```
+```plaintext
 'o'
 ```
 
@@ -115,7 +115,7 @@ spam[-1]
 
 Output:
 
-```
+```plaintext
 '!'
 ```
 
@@ -130,7 +130,7 @@ spam[0:5]  # Returns characters from index 0 to 4: 'Hello'
 
 Output:
 
-```
+```plaintext
 'Hello'
 ```
 
@@ -140,7 +140,7 @@ spam[:5]
 
 Output:
 
-```
+```plaintext
 'Hello'
 ```
 
@@ -150,7 +150,7 @@ spam[6:]
 
 Output:
 
-```
+```plaintext
 'world!'
 ```
 
@@ -160,7 +160,7 @@ spam[6:-1]
 
 Output:
 
-```
+```plaintext
 'world'
 ```
 
@@ -170,7 +170,7 @@ spam[:-1]
 
 Output:
 
-```
+```plaintext
 'Hello world'
 ```
 
@@ -180,7 +180,7 @@ spam[::-1]
 
 Output:
 
-```
+```plaintext
 '!dlrow olleH'
 ```
 
@@ -191,7 +191,7 @@ fizz
 
 Output:
 
-```
+```plaintext
 'Hello'
 ```
 
@@ -203,7 +203,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -213,7 +213,7 @@ True
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -223,7 +223,7 @@ True
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -233,7 +233,7 @@ False
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -243,7 +243,7 @@ True
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -258,7 +258,7 @@ greet.upper()
 
 Output:
 
-```
+```plaintext
 'HELLO WORLD!'
 ```
 
@@ -268,7 +268,7 @@ greet.lower()
 
 Output:
 
-```
+```plaintext
 'hello world!'
 ```
 
@@ -278,7 +278,7 @@ greet.title()
 
 Output:
 
-```
+```plaintext
 'Hello World!'
 ```
 
@@ -293,7 +293,7 @@ spam.islower()
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -303,7 +303,7 @@ spam.isupper()
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -313,7 +313,7 @@ False
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -323,7 +323,7 @@ True
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -333,7 +333,7 @@ True
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -343,7 +343,7 @@ False
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -365,7 +365,7 @@ False
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -375,7 +375,7 @@ True
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -385,7 +385,7 @@ True
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -395,7 +395,7 @@ False
 
 Output:
 
-```
+```plaintext
 False
 ```
 
@@ -405,7 +405,7 @@ False
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -415,7 +415,7 @@ True
 
 Output:
 
-```
+```plaintext
 True
 ```
 
@@ -431,7 +431,7 @@ The `join()` method takes all the items in an iterable, like a <router-link to="
 
 Output:
 
-```
+```plaintext
 'MynameisSimon'
 ```
 
@@ -441,7 +441,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 'cats, rats, bats'
 ```
 
@@ -451,7 +451,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 'My name is Simon'
 ```
 
@@ -461,7 +461,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 'MyABCnameABCisABCSimon'
 ```
 
@@ -475,7 +475,7 @@ The `split()` method splits a `string` into a `list`. By default, it will use wh
 
 Output:
 
-```
+```plaintext
 ['My', 'name', 'is', 'Simon']
 ```
 
@@ -485,7 +485,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 ['My', 'name', 'is', 'Simon']
 ```
 
@@ -495,7 +495,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 ['My na', 'e is Si', 'on']
 ```
 
@@ -505,7 +505,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 ['My', 'name', 'is', 'Simon']
 ```
 
@@ -515,7 +515,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 ['', 'My', '', 'name', 'is', '', 'Simon']
 ```
 
@@ -527,7 +527,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 '     Hello'
 ```
 
@@ -537,7 +537,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 '               Hello'
 ```
 
@@ -547,7 +547,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 '         Hello World'
 ```
 
@@ -557,7 +557,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 'Hello     '
 ```
 
@@ -567,7 +567,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 '       Hello       '
 ```
 
@@ -579,7 +579,7 @@ An optional second argument to `rjust()` and `ljust()` will specify a fill chara
 
 Output:
 
-```
+```plaintext
 '***************Hello'
 ```
 
@@ -589,7 +589,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 'Hello---------------'
 ```
 
@@ -599,7 +599,7 @@ Output:
 
 Output:
 
-```
+```plaintext
 '=======Hello========'
 ```
 
@@ -612,7 +612,7 @@ spam.strip()
 
 Output:
 
-```
+```plaintext
 'Hello World'
 ```
 
@@ -622,7 +622,7 @@ spam.lstrip()
 
 Output:
 
-```
+```plaintext
 'Hello World     '
 ```
 
@@ -632,7 +632,7 @@ spam.rstrip()
 
 Output:
 
-```
+```plaintext
 '    Hello World'
 ```
 
@@ -643,7 +643,7 @@ spam.strip('ampS')
 
 Output:
 
-```
+```plaintext
 'BaconSpamEggs'
 ```
 
@@ -658,7 +658,7 @@ sentence.count('sheep')
 
 Output:
 
-```
+```plaintext
 3
 ```
 
@@ -668,7 +668,7 @@ sentence.count('e')
 
 Output:
 
-```
+```plaintext
 9
 ```
 
@@ -679,7 +679,7 @@ sentence.count('e', 6)
 
 Output:
 
-```
+```plaintext
 8
 ```
 
@@ -689,7 +689,7 @@ sentence.count('e', 7)
 
 Output:
 
-```
+```plaintext
 7
 ```
 
@@ -704,7 +704,7 @@ text.replace("world", "planet")
 
 Output:
 
-```
+```plaintext
 'Hello, planet!'
 ```
 
@@ -715,7 +715,7 @@ fruits.replace("apple", "orange", 1)
 
 Output:
 
-```
+```plaintext
 'orange, banana, cherry, apple'
 ```
 
@@ -726,7 +726,7 @@ sentence.replace("apples", "oranges")
 
 Output:
 
-```
+```plaintext
 'I like oranges, Apples are my favorite fruit'
 ```
 

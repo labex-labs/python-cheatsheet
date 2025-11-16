@@ -39,7 +39,7 @@ with shelve.open('mydata') as shelf_file:
 
 Output:
 
-```
+```plaintext
 <class 'shelve.DbfilenameShelf'>
 ['Pretty', 'Lovely', 'Nice']
 ```
@@ -55,7 +55,7 @@ with shelve.open('mydata') as shelf_file:
 
 Output:
 
-```
+```plaintext
 ['wife']
 [['Pretty', 'Lovely', 'Nice']]
 ```

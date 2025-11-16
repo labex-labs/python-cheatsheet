@@ -45,7 +45,7 @@ type(s)  # Returns <class 'dict'>
 
 Output:
 
-```
+```plaintext
 <class 'dict'>
 ```
 
@@ -61,7 +61,7 @@ s  # Returns {1, 2, 3, 4}
 
 Output:
 
-```
+```plaintext
 {1, 2, 3, 4}
 ```
 
@@ -74,7 +74,7 @@ s[0]
 
 Output:
 
-```
+```plaintext
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'set' object does not support indexing
@@ -93,7 +93,7 @@ s
 
 Output:
 
-```
+```plaintext
 {1, 2, 3, 4}
 ```
 
@@ -108,7 +108,7 @@ s
 
 Output:
 
-```
+```plaintext
 {1, 2, 3, 4, 5, 6}
 ```
 
@@ -125,7 +125,7 @@ s
 
 Output:
 
-```
+```plaintext
 {1, 2}
 ```
 
@@ -135,7 +135,7 @@ s.remove(3)
 
 Output:
 
-```
+```plaintext
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 3
@@ -152,7 +152,7 @@ s
 
 Output:
 
-```
+```plaintext
 {1, 2}
 ```
 
@@ -173,7 +173,7 @@ s1.union(s2)  # or 's1 | s2' - returns {1, 2, 3, 4, 5}
 
 Output:
 
-```
+```plaintext
 {1, 2, 3, 4, 5}
 ```
 
@@ -191,7 +191,7 @@ s1.intersection(s2, s3)  # or 's1 & s2 & s3' - returns {3}
 
 Output:
 
-```
+```plaintext
 {3}
 ```
 
@@ -209,7 +209,7 @@ s1.difference(s2)  # or 's1 - s2' - returns {1}
 
 Output:
 
-```
+```plaintext
 {1}
 ```
 
@@ -219,7 +219,7 @@ s2.difference(s1) # or 's2 - s1'
 
 Output:
 
-```
+```plaintext
 {4}
 ```
 
@@ -236,7 +236,7 @@ s1.symmetric_difference(s2)  # or 's1 ^ s2' - returns {1, 4}
 
 Output:
 
-```
+```plaintext
 {1, 4}
 ```
 

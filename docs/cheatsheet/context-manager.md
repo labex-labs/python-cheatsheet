@@ -45,7 +45,7 @@ with context_manager(2) as cm:  # cm receives the yielded value (3)
 
 Output:
 
-```
+```plaintext
 Enter
 Right in the middle with cm = 3
 Exit
@@ -71,7 +71,7 @@ with ContextManager():  # Calls __enter__, then __exit__ when done
 
 Output:
 
-```
+```plaintext
 --enter--
 test
 --exit--
