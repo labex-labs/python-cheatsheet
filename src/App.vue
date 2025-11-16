@@ -8,7 +8,14 @@ useScrollBehavior()
   <BaseBanner storage-key-name="black-friday-2025-banner">
     <template #message>
       <span class="text-white">
-        Black Friday 2025: Learn Python with LabEx Hands-on Labs.
+        Black Friday 2025:
+        <a
+          href="https://labex.io/learn/python"
+          target="_blank"
+          class="font-semibold text-white underline hover:text-slate-200"
+          >Learn Python</a
+        >
+        with LabEx Hands-on Labs.
         <a
           href="https://labex.io/pricing"
           target="_blank"
