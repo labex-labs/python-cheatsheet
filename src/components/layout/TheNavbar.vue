@@ -50,7 +50,7 @@ const isDark = useDark()
             </a>
           </div>
 
-          <algolia-doc-search />
+          <!-- <algolia-doc-search /> -->
 
           <base-badge-notice size="xs" class="hidden lg:block">
             <template #title>
