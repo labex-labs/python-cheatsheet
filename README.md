@@ -14,26 +14,28 @@
   <a href="https://github.com/wilfredinni/python-cheatsheet/blob/master/src/pages/changelog.md">Changelog</a>
 </div>
 
-<!-- <p align='center' style="margin-top: 20px;">
-<a href="https://www.pythoncheatsheet.org/">Python Cheatsheet</a> is based on the book <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a> and many other sources.
-</p> -->
-
 <img src="public/screenshots/light.png">
 
-<p align='center'>
-<a href="https://www.pythoncheatsheet.org/">Python Cheatsheet</a> is based on the book <a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a> and many other sources.
-</p>
+Python Cheatsheet is a comprehensive reference guide for Python developers of all skill levels. Based on the book [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) and many other sources, this cheatsheet provides a quick reference for common Python tasks and concepts.
 
-<!-- ## Getting Started -->
+Anyone can forget how to make character classes for a regex, slice a list, or do a for loop. This Python cheatsheet tries to provide basic reference for beginner and advanced developers, lower the entry barrier for newcomers and help veterans refresh the old tricks.
 
-<!-- Anyone can forget how to
-[make character classes](https://www.pythoncheatsheet.org/cheatsheet/regular-expressions#making-your-own-character-classes)
-for a regex, [slice a list](https://www.pythoncheatsheet.org/cheatsheet/lists-and-tuples#getting-sublists-with-slices) or do a [for loop](https://www.pythoncheatsheet.org/cheatsheet/control-flow#for-loop). This Python cheatsheet tries to provide basic reference for beginner and advanced developers, lower the entry barrier for newcomers and help veterans refresh the old tricks. -->
+## Features
 
-## Contributors
+- **Comprehensive Coverage**: From basics to advanced topics including built-in functions, control flow, data structures, and more
+- **Built-in Functions Reference**: Detailed documentation for all Python built-in functions
+- **Module Documentation**: Guides for popular Python modules like `datetime`, `json`, `pathlib`, `itertools`, and more
+- **Blog Articles**: In-depth articles about Python and its ecosystem
+- **Easy Navigation**: Well-organized sections with clear examples and explanations
+- **Dark Mode Support**: Beautiful UI with light and dark themes
 
-<a href="https://github.com/wilfredinni/python-cheatsheet/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=wilfredinni/python-cheatsheet" />
-</a>
+## Quick Links
 
-Made with [contrib.rocks](https://contrib.rocks).
+- **[View on GitHub](https://github.com/wilfredinni/python-cheatsheet)**: Drop a star on GitHub if you find this project useful
+- **[Contribute](https://www.pythoncheatsheet.org/contributing)**: Get to know how easy it is to contribute to the Python Cheatsheet
+- **[Blog](https://www.pythoncheatsheet.org/blog)**: Read detailed articles about Python and its ecosystem
+- **[Changelog](https://www.pythoncheatsheet.org/changelog)**: See what is new, what got fixed, and what is coming
+
+## Contributing
+
+Contributions are welcome! Please see the [Contributing Guide](https://www.pythoncheatsheet.org/contributing) for details on how to get started.
