@@ -113,7 +113,10 @@ const { localePath, t } = useI18n()
                 {{ item.name }}
               </a>
             </div>
-            <a href="/python-cheatsheet.pdf" download="python-cheatsheet.pdf">
+            <a
+              href="/labex-python-cheatsheet.pdf"
+              download="labex-python-cheatsheet.pdf"
+            >
               <div
                 class="text-xs relative flex items-center gap-2 rounded-full border border-primary-600 px-4 py-0.5 leading-6 text-primary-600 transition duration-300 hover:bg-primary-50 dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-950/20"
               >
