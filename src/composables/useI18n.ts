@@ -46,7 +46,7 @@ export function useI18n() {
     const targetLocale = locale || currentLocale.value
     let cleanPath = path.startsWith('/') ? path : `/${path}`
 
-    // 移除已存在的语言前缀
+    // Remove existing locale prefix
     const segments = cleanPath.split('/').filter(Boolean)
     if (segments.length > 0 && SUPPORTED_LOCALES.includes(segments[0] as Locale)) {
       segments.shift()

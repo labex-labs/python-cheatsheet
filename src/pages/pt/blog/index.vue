@@ -33,11 +33,11 @@ const articles = computed(() => {
   
   const posts = routes.filter((route) => {
     const path = route.path
-    // 排除博客首页本身
+    // Exclude blog index page itself
     if (path === '/blog' || path === `/${locale}/blog`) {
       return false
     }
-    // 根据当前语言过滤博客文章
+    // Filter blog posts by current locale
     return path.startsWith(blogPrefix + '/')
   })
   return posts.sort(function (a, b) {

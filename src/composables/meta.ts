@@ -1,3 +1,5 @@
+import { SUPPORTED_LOCALES } from './useI18n'
+
 export function useMeta() {
   const route = useRoute()
   const base_url = import.meta.env.VITE_BASE_URL || 'localhost:3000'
@@ -8,6 +10,45 @@ export function useMeta() {
     'https://raw.githubusercontent.com/wilfredinni/python-cheatsheet/master/public/screenshots/dark.png'
   const themeColor = computed(() => (isDark.value ? '#1f2937' : '#ffffff'))
   const url = computed(() => `https://${base_url}${route.path}`)
+
+  // Get base path (remove locale prefix)
+  const getBasePath = (path: string): string => {
+    const segments = path.split('/').filter(Boolean)
+    if (segments.length > 0 && SUPPORTED_LOCALES.includes(segments[0] as typeof SUPPORTED_LOCALES[number])) {
+      segments.shift()
+      return segments.length > 0 ? '/' + segments.join('/') : '/'
+    }
+    return path
+  }
+
+  // Generate hreflang links
+  const generateHreflangLinks = computed(() => {
+    const basePath = getBasePath(route.path)
+    const links = []
+
+    // Generate hreflang link for each supported locale
+    for (const locale of SUPPORTED_LOCALES) {
+      const localePath = locale === 'en' ? basePath : `/${locale}${basePath}`
+      const localeUrl = `https://${base_url}${localePath}`
+      links.push({
+        rel: 'alternate',
+        hreflang: locale,
+        href: localeUrl,
+      })
+    }
+
+    // Add x-default (points to default language version)
+    const defaultPath = basePath
+    const defaultUrl = `https://${base_url}${defaultPath}`
+    links.push({
+      rel: 'alternate',
+      hreflang: 'x-default',
+      href: defaultUrl,
+    })
+
+    return links
+  })
+
   const keywords = [
     'python',
     'cheatsheet',
@@ -62,7 +103,10 @@ export function useMeta() {
       { name: 'twitter:image', content: cardImage },
       { name: 'twitter:card', content: 'summary' },
     ],
-    link: [{ rel: 'canonical', href: url }],
+    link: [
+      { rel: 'canonical', href: url },
+      ...generateHreflangLinks.value,
+    ],
   }
 
   return { meta, description }

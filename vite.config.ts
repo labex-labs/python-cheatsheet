@@ -29,7 +29,7 @@ export default defineConfig(({ mode }) => {
     { dir: 'docs/blog/en', baseRoute: 'blog' },
   ]
 
-  // 为每个语言和文档部分添加多语言目录
+  // Add multilingual directories for each locale and documentation section
   for (const locale of locales) {
     for (const section of docSections) {
       pageDirs.push({
