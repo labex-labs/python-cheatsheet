@@ -104,6 +104,11 @@ const isDark = useDark()
                 {{ item.name }}
               </a>
             </div>
+            <a href="/python-cheatsheet.pdf" download="python-cheatsheet.pdf">
+              <base-badge-secondary class="">
+                Download PDF
+              </base-badge-secondary>
+            </a>
             <base-reader-mode />
           </div>
 
