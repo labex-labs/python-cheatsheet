@@ -120,5 +120,13 @@
       "shelve-module": "Shelve",
       "zipfile-module": "Zipfile"
     }
+  },
+  "banner": {
+    "title": "블랙 프라이데이 2025:",
+    "learnPython": "Python 배우기",
+    "withLabex": "LabEx Hands-on Labs와 함께.",
+    "getDiscount": "지금 50% 할인 받기 →",
+    "shortMessage": "블랙 프라이데이 2025: Python Hands-on Labs",
+    "shortDiscount": "50% 할인 받기 →"
   }
 }

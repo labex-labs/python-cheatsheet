@@ -120,5 +120,13 @@
       "shelve-module": "Shelve",
       "zipfile-module": "Zipfile"
     }
+  },
+  "banner": {
+    "title": "Черная пятница 2025:",
+    "learnPython": "Изучайте Python",
+    "withLabex": "с LabEx Hands-on Labs.",
+    "getDiscount": "Получите скидку 50% прямо сейчас →",
+    "shortMessage": "Черная пятница 2025: Python Hands-on Labs",
+    "shortDiscount": "Получите скидку 50% →"
   }
 }

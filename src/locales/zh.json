@@ -120,5 +120,13 @@
       "shelve-module": "Shelve",
       "zipfile-module": "Zipfile"
     }
+  },
+  "banner": {
+    "title": "黑色星期五 2025：",
+    "learnPython": "学习 Python",
+    "withLabex": "通过 LabEx 实践实验室。",
+    "getDiscount": "立即享受 5 折优惠 →",
+    "shortMessage": "黑色星期五 2025：Python 实践实验室",
+    "shortDiscount": "享受 5 折优惠 →"
   }
 }

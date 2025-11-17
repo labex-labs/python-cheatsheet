@@ -120,5 +120,13 @@
       "shelve-module": "Shelve",
       "zipfile-module": "Zipfile"
     }
+  },
+  "banner": {
+    "title": "Black Friday 2025:",
+    "learnPython": "Learn Python",
+    "withLabex": "with LabEx Hands-on Labs.",
+    "getDiscount": "Get 50% OFF Now →",
+    "shortMessage": "Black Friday 2025: Python Hands-on Labs",
+    "shortDiscount": "Get 50% OFF →"
   }
 }

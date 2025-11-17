@@ -2,38 +2,39 @@
 const { meta } = useMeta()
 useHead(meta)
 useScrollBehavior()
+const { t } = useI18n()
 </script>
 
 <template>
   <BaseBanner storage-key-name="black-friday-2025-banner">
     <template #message>
       <span class="text-white">
-        Black Friday 2025:
+        {{ t('banner.title') }}
         <a
           href="https://labex.io/learn/python"
           target="_blank"
           class="font-semibold text-white underline hover:text-slate-200"
-          >Learn Python</a
+          >{{ t('banner.learnPython') }}</a
         >
-        with LabEx Hands-on Labs.
+        {{ t('banner.withLabex') }}
         <a
           href="https://labex.io/pricing"
           target="_blank"
           class="ml-1 font-semibold text-white underline hover:text-slate-200"
         >
-          Get 50% OFF Now →
+          {{ t('banner.getDiscount') }}
         </a>
       </span>
     </template>
     <template #shortMsg>
       <span class="text-white">
-        Black Friday 2025: Python Hands-on Labs
+        {{ t('banner.shortMessage') }}
         <a
           href="https://labex.io/pricing"
           target="_blank"
           class="ml-1 font-semibold text-white underline hover:text-slate-200"
         >
-          Get 50% OFF →
+          {{ t('banner.shortDiscount') }}
         </a>
       </span>
     </template>

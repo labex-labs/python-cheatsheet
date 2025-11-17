@@ -120,5 +120,13 @@
       "shelve-module": "Shelve",
       "zipfile-module": "Zipfile"
     }
+  },
+  "banner": {
+    "title": "ブラックフライデー 2025：",
+    "learnPython": "Python を学ぶ",
+    "withLabex": "LabEx Hands-on Labs で。",
+    "getDiscount": "今すぐ 50% オフ →",
+    "shortMessage": "ブラックフライデー 2025：Python Hands-on Labs",
+    "shortDiscount": "50% オフ →"
   }
 }
