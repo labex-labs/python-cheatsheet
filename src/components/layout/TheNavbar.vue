@@ -105,9 +105,13 @@ const isDark = useDark()
               </a>
             </div>
             <a href="/python-cheatsheet.pdf" download="python-cheatsheet.pdf">
-              <base-badge-secondary class="">
-                Download PDF
-              </base-badge-secondary>
+              <div
+                class="text-xs relative flex items-center rounded-full px-4 py-0.5 leading-6 bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 transition duration-300"
+              >
+                <strong class="line-clamp-1 font-semibold">
+                  Python Cheatsheet PDF
+                </strong>
+              </div>
             </a>
           </div>
 
