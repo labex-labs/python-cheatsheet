@@ -1,0 +1,124 @@
+{
+  "sidebar": {
+    "introduction": "Introducción",
+    "cheatsheet": "Hoja de referencia",
+    "standardLibrary": "Biblioteca estándar",
+    "builtinFunctions": "Funciones integradas",
+    "gettingStarted": "Primeros pasos"
+  },
+  "navbar": {
+    "blog": "Blog",
+    "pythonCheatsheetPdf": "Hoja de referencia Python PDF",
+    "repositoryLink": "repositorio de hoja de referencia Python"
+  },
+  "footer": {
+    "editThisPageOn": "Editar esta página en",
+    "github": "GitHub",
+    "doYouHaveAQuestion": "¿Tienes una pregunta?",
+    "askTheCommunity": "pregunta a la comunidad",
+    "doYouSeeABug": "¿Ves un error?",
+    "openAnIssueOnGithub": "abre un problema en GitHub"
+  },
+  "mobile": {
+    "openNavigation": "Abrir navegación",
+    "closeNavigation": "Cerrar navegación",
+    "navigation": "Navegación"
+  },
+  "common": {
+    "language": "Idioma",
+    "practiceInLabexVm": "Practicar en LabEx VM",
+    "previousPage": "Página anterior",
+    "nextPage": "Página siguiente",
+    "localeNames": {
+      "en": "English",
+      "zh": "中文",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "pt": "Português"
+    }
+  },
+  "error404": {
+    "title": "404 No encontrado",
+    "error": "Error 404",
+    "pageNotFound": "Página no encontrada.",
+    "description": "Lo sentimos, no pudimos encontrar la página que buscas.",
+    "goBackHome": "Volver al inicio"
+  },
+  "home": {
+    "title": "Hoja de referencia Python",
+    "basedOnBook": "Basado en el libro",
+    "andManyOtherSources": "y muchas otras fuentes.",
+    "anyoneCanForget": "Cualquiera puede olvidar cómo",
+    "makeCharacterClasses": "crear clases de caracteres",
+    "forRegex": "para una expresión regular,",
+    "sliceAList": "cortar una lista",
+    "orDoA": "o hacer un",
+    "forLoop": "bucle for",
+    "description": "Esta hoja de referencia de Python intenta proporcionar una referencia básica para desarrolladores principiantes y avanzados, reducir la barrera de entrada para los recién llegados y ayudar a los veteranos a refrescar los trucos antiguos. Ver todos los",
+    "contributors": "contribuyentes",
+    "onGithub": "en GitHub.",
+    "cardLinks": {
+      "viewOnGithub": "Ver en GitHub",
+      "viewOnGithubDesc": "Deja una estrella en GitHub si encuentras útil este proyecto.",
+      "contribute": "Contribuir",
+      "contributeDesc": "Descubre lo fácil que es contribuir a la Hoja de referencia Python.",
+      "blog": "Blog",
+      "blogDesc": "Lee artículos detallados sobre Python y su ecosistema.",
+      "changelog": "Registro de cambios",
+      "changelogDesc": "Ve qué hay de nuevo, qué se corrigió y qué viene."
+    }
+  },
+  "blog": {
+    "previous": "Anterior",
+    "newerPosts": "Publicaciones más recientes",
+    "next": "Siguiente",
+    "olderPosts": "Publicaciones más antiguas",
+    "readArticle": "Leer artículo",
+    "title": "Blog - Hoja de referencia Python",
+    "description": "Estos artículos proporcionan una mirada más profunda al contenido de la Hoja de referencia Python."
+  },
+  "navigation": {
+    "cheatsheet": {
+      "basics": "Básicos",
+      "built-in-functions": "Funciones integradas",
+      "control-flow": "Flujo de control",
+      "functions": "Funciones",
+      "lists-and-tuples": "Listas y tuplas",
+      "dictionaries": "Diccionarios",
+      "sets": "Conjuntos",
+      "comprehensions": "Comprensiones",
+      "manipulating-strings": "Manipulación de cadenas",
+      "string-formatting": "Formato de cadenas",
+      "regular-expressions": "Expresiones regulares",
+      "file-directory-path": "Archivos y rutas de directorio",
+      "reading-and-writing-files": "Lectura y escritura de archivos",
+      "json-yaml": "JSON y YAML",
+      "exception-handling": "Manejo de excepciones",
+      "debugging": "Depuración",
+      "args-and-kwargs": "Args y kwargs",
+      "decorators": "Decoradores",
+      "context-manager": "Administrador de contexto",
+      "oop-basics": "POO",
+      "dataclasses": "Clases de datos",
+      "setup-py": "setup.py",
+      "main": "Principal: Script de nivel superior",
+      "virtual-environments": "Entornos virtuales"
+    },
+    "modules": {
+      "copy-module": "Copy",
+      "csv-module": "CSV",
+      "datetime-module": "Datetime",
+      "itertools-module": "Itertools",
+      "json-module": "JSON",
+      "os-module": "OS",
+      "pathlib-module": "Pathlib",
+      "random-module": "Random",
+      "shelve-module": "Shelve",
+      "zipfile-module": "Zipfile"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "sidebar": {
+    "introduction": "简介",
+    "cheatsheet": "速查表",
+    "standardLibrary": "标准库",
+    "builtinFunctions": "内置函数",
+    "gettingStarted": "入门指南"
+  },
+  "navbar": {
+    "blog": "博客",
+    "pythonCheatsheetPdf": "Python 速查表 PDF",
+    "repositoryLink": "Python 速查表仓库"
+  },
+  "footer": {
+    "editThisPageOn": "在",
+    "github": "GitHub",
+    "doYouHaveAQuestion": "有问题吗？",
+    "askTheCommunity": "询问社区",
+    "doYouSeeABug": "发现错误？",
+    "openAnIssueOnGithub": "在 GitHub 上提交问题"
+  },
+  "mobile": {
+    "openNavigation": "打开导航",
+    "closeNavigation": "关闭导航",
+    "navigation": "导航"
+  },
+  "common": {
+    "language": "语言",
+    "practiceInLabexVm": "在 LabEx VM 中练习",
+    "previousPage": "上一页",
+    "nextPage": "下一页",
+    "localeNames": {
+      "en": "English",
+      "zh": "中文",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "pt": "Português"
+    }
+  },
+  "error404": {
+    "title": "404 未找到",
+    "error": "404 错误",
+    "pageNotFound": "页面未找到。",
+    "description": "抱歉，我们找不到您要查找的页面。",
+    "goBackHome": "返回首页"
+  },
+  "home": {
+    "title": "Python 速查表",
+    "basedOnBook": "基于书籍",
+    "andManyOtherSources": "以及其他许多来源。",
+    "anyoneCanForget": "任何人都可能忘记如何",
+    "makeCharacterClasses": "为正则表达式创建字符类",
+    "forRegex": "，",
+    "sliceAList": "切片列表",
+    "orDoA": "或执行",
+    "forLoop": "for 循环",
+    "description": "这个 Python 速查表试图为初学者和高级开发者提供基本参考，降低新手的入门门槛，并帮助老手重温旧技巧。查看所有",
+    "contributors": "贡献者",
+    "onGithub": "在 GitHub 上。",
+    "cardLinks": {
+      "viewOnGithub": "在 GitHub 上查看",
+      "viewOnGithubDesc": "如果您觉得这个项目有用，请在 GitHub 上点个星标。",
+      "contribute": "贡献",
+      "contributeDesc": "了解为 Python 速查表做贡献是多么容易。",
+      "blog": "博客",
+      "blogDesc": "阅读关于 Python 及其生态系统的详细文章。",
+      "changelog": "更新日志",
+      "changelogDesc": "查看新功能、修复内容和即将推出的内容。"
+    }
+  },
+  "blog": {
+    "previous": "上一页",
+    "newerPosts": "更新的文章",
+    "next": "下一页",
+    "olderPosts": "更早的文章",
+    "readArticle": "阅读文章",
+    "title": "博客 - Python 速查表",
+    "description": "这些文章深入探讨了 Python 速查表的内容。"
+  },
+  "navigation": {
+    "cheatsheet": {
+      "basics": "基础",
+      "built-in-functions": "内置函数",
+      "control-flow": "控制流",
+      "functions": "函数",
+      "lists-and-tuples": "列表和元组",
+      "dictionaries": "字典",
+      "sets": "集合",
+      "comprehensions": "推导式",
+      "manipulating-strings": "字符串操作",
+      "string-formatting": "字符串格式化",
+      "regular-expressions": "正则表达式",
+      "file-directory-path": "文件和目录路径",
+      "reading-and-writing-files": "读写文件",
+      "json-yaml": "JSON 和 YAML",
+      "exception-handling": "异常处理",
+      "debugging": "调试",
+      "args-and-kwargs": "Args 和 kwargs",
+      "decorators": "装饰器",
+      "context-manager": "上下文管理器",
+      "oop-basics": "面向对象编程",
+      "dataclasses": "数据类",
+      "setup-py": "setup.py",
+      "main": "主程序：顶层脚本",
+      "virtual-environments": "虚拟环境"
+    },
+    "modules": {
+      "copy-module": "Copy",
+      "csv-module": "CSV",
+      "datetime-module": "Datetime",
+      "itertools-module": "Itertools",
+      "json-module": "JSON",
+      "os-module": "OS",
+      "pathlib-module": "Pathlib",
+      "random-module": "Random",
+      "shelve-module": "Shelve",
+      "zipfile-module": "Zipfile"
+    }
+  }
+}

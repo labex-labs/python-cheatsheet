@@ -1,0 +1,124 @@
+{
+  "sidebar": {
+    "introduction": "Введение",
+    "cheatsheet": "Шпаргалка",
+    "standardLibrary": "Стандартная библиотека",
+    "builtinFunctions": "Встроенные функции",
+    "gettingStarted": "Начало работы"
+  },
+  "navbar": {
+    "blog": "Блог",
+    "pythonCheatsheetPdf": "Шпаргалка Python PDF",
+    "repositoryLink": "репозиторий шпаргалки Python"
+  },
+  "footer": {
+    "editThisPageOn": "Редактировать эту страницу на",
+    "github": "GitHub",
+    "doYouHaveAQuestion": "Есть вопрос?",
+    "askTheCommunity": "спросить сообщество",
+    "doYouSeeABug": "Видите ошибку?",
+    "openAnIssueOnGithub": "открыть проблему на GitHub"
+  },
+  "mobile": {
+    "openNavigation": "Открыть навигацию",
+    "closeNavigation": "Закрыть навигацию",
+    "navigation": "Навигация"
+  },
+  "common": {
+    "language": "Язык",
+    "practiceInLabexVm": "Практиковаться в LabEx VM",
+    "previousPage": "Предыдущая страница",
+    "nextPage": "Следующая страница",
+    "localeNames": {
+      "en": "English",
+      "zh": "中文",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "pt": "Português"
+    }
+  },
+  "error404": {
+    "title": "404 Не найдено",
+    "error": "Ошибка 404",
+    "pageNotFound": "Страница не найдена.",
+    "description": "Извините, мы не смогли найти страницу, которую вы ищете.",
+    "goBackHome": "Вернуться на главную"
+  },
+  "home": {
+    "title": "Шпаргалка Python",
+    "basedOnBook": "Основано на книге",
+    "andManyOtherSources": "и многих других источниках.",
+    "anyoneCanForget": "Любой может забыть, как",
+    "makeCharacterClasses": "создать классы символов",
+    "forRegex": "для регулярного выражения,",
+    "sliceAList": "нарезать список",
+    "orDoA": "или выполнить",
+    "forLoop": "цикл for",
+    "description": "Эта шпаргалка Python пытается предоставить базовую справку для начинающих и продвинутых разработчиков, снизить барьер входа для новичков и помочь ветеранам освежить старые трюки. Просмотреть всех",
+    "contributors": "участников",
+    "onGithub": "на GitHub.",
+    "cardLinks": {
+      "viewOnGithub": "Посмотреть на GitHub",
+      "viewOnGithubDesc": "Поставьте звезду на GitHub, если вы считаете этот проект полезным.",
+      "contribute": "Внести вклад",
+      "contributeDesc": "Узнайте, насколько легко внести вклад в шпаргалку Python.",
+      "blog": "Блог",
+      "blogDesc": "Читайте подробные статьи о Python и его экосистеме.",
+      "changelog": "Журнал изменений",
+      "changelogDesc": "Посмотрите, что нового, что исправлено и что грядет."
+    }
+  },
+  "blog": {
+    "previous": "Предыдущая",
+    "newerPosts": "Новые записи",
+    "next": "Следующая",
+    "olderPosts": "Старые записи",
+    "readArticle": "Читать статью",
+    "title": "Блог - Шпаргалка Python",
+    "description": "Эти статьи предоставляют более глубокий взгляд на содержание шпаргалки Python."
+  },
+  "navigation": {
+    "cheatsheet": {
+      "basics": "Основы",
+      "built-in-functions": "Встроенные функции",
+      "control-flow": "Управление потоком",
+      "functions": "Функции",
+      "lists-and-tuples": "Списки и кортежи",
+      "dictionaries": "Словари",
+      "sets": "Множества",
+      "comprehensions": "Генераторы",
+      "manipulating-strings": "Работа со строками",
+      "string-formatting": "Форматирование строк",
+      "regular-expressions": "Регулярные выражения",
+      "file-directory-path": "Файлы и пути к директориям",
+      "reading-and-writing-files": "Чтение и запись файлов",
+      "json-yaml": "JSON и YAML",
+      "exception-handling": "Обработка исключений",
+      "debugging": "Отладка",
+      "args-and-kwargs": "Args и kwargs",
+      "decorators": "Декораторы",
+      "context-manager": "Менеджер контекста",
+      "oop-basics": "ООП",
+      "dataclasses": "Классы данных",
+      "setup-py": "setup.py",
+      "main": "Главный: Скрипт верхнего уровня",
+      "virtual-environments": "Виртуальные окружения"
+    },
+    "modules": {
+      "copy-module": "Copy",
+      "csv-module": "CSV",
+      "datetime-module": "Datetime",
+      "itertools-module": "Itertools",
+      "json-module": "JSON",
+      "os-module": "OS",
+      "pathlib-module": "Pathlib",
+      "random-module": "Random",
+      "shelve-module": "Shelve",
+      "zipfile-module": "Zipfile"
+    }
+  }
+}

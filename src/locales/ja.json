@@ -1,0 +1,124 @@
+{
+  "sidebar": {
+    "introduction": "はじめに",
+    "cheatsheet": "チートシート",
+    "standardLibrary": "標準ライブラリ",
+    "builtinFunctions": "組み込み関数",
+    "gettingStarted": "はじめに"
+  },
+  "navbar": {
+    "blog": "ブログ",
+    "pythonCheatsheetPdf": "Python チートシート PDF",
+    "repositoryLink": "Python チートシートリポジトリ"
+  },
+  "footer": {
+    "editThisPageOn": "このページを編集する",
+    "github": "GitHub",
+    "doYouHaveAQuestion": "質問がありますか？",
+    "askTheCommunity": "コミュニティに質問する",
+    "doYouSeeABug": "バグを見つけましたか？",
+    "openAnIssueOnGithub": "GitHub で問題を報告する"
+  },
+  "mobile": {
+    "openNavigation": "ナビゲーションを開く",
+    "closeNavigation": "ナビゲーションを閉じる",
+    "navigation": "ナビゲーション"
+  },
+  "common": {
+    "language": "言語",
+    "practiceInLabexVm": "LabEx VM で練習する",
+    "previousPage": "前のページ",
+    "nextPage": "次のページ",
+    "localeNames": {
+      "en": "English",
+      "zh": "中文",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "pt": "Português"
+    }
+  },
+  "error404": {
+    "title": "404 見つかりません",
+    "error": "404 エラー",
+    "pageNotFound": "ページが見つかりません。",
+    "description": "申し訳ございませんが、お探しのページが見つかりませんでした。",
+    "goBackHome": "ホームに戻る"
+  },
+  "home": {
+    "title": "Python チートシート",
+    "basedOnBook": "書籍",
+    "andManyOtherSources": "およびその他の多くの情報源に基づいています。",
+    "anyoneCanForget": "誰でも忘れることがあります：",
+    "makeCharacterClasses": "正規表現の文字クラスを作成する方法",
+    "forRegex": "、",
+    "sliceAList": "リストをスライスする方法",
+    "orDoA": "または",
+    "forLoop": "for ループを実行する方法",
+    "description": "この Python チートシートは、初心者から上級者までの開発者向けの基本的なリファレンスを提供し、新規参入者の障壁を下げ、ベテランが古いトリックを思い出すのを助けることを目指しています。すべての",
+    "contributors": "貢献者",
+    "onGithub": "を GitHub で確認してください。",
+    "cardLinks": {
+      "viewOnGithub": "GitHub で見る",
+      "viewOnGithubDesc": "このプロジェクトが役立つと思ったら、GitHub でスターを付けてください。",
+      "contribute": "貢献する",
+      "contributeDesc": "Python チートシートへの貢献がいかに簡単かを知ってください。",
+      "blog": "ブログ",
+      "blogDesc": "Python とそのエコシステムに関する詳細な記事を読む。",
+      "changelog": "変更ログ",
+      "changelogDesc": "新機能、修正内容、今後の予定を確認する。"
+    }
+  },
+  "blog": {
+    "previous": "前へ",
+    "newerPosts": "新しい投稿",
+    "next": "次へ",
+    "olderPosts": "古い投稿",
+    "readArticle": "記事を読む",
+    "title": "ブログ - Python チートシート",
+    "description": "これらの記事は、Python チートシートの内容をより深く理解するためのものです。"
+  },
+  "navigation": {
+    "cheatsheet": {
+      "basics": "基礎",
+      "built-in-functions": "組み込み関数",
+      "control-flow": "制御フロー",
+      "functions": "関数",
+      "lists-and-tuples": "リストとタプル",
+      "dictionaries": "辞書",
+      "sets": "セット",
+      "comprehensions": "内包表記",
+      "manipulating-strings": "文字列操作",
+      "string-formatting": "文字列フォーマット",
+      "regular-expressions": "正規表現",
+      "file-directory-path": "ファイルとディレクトリパス",
+      "reading-and-writing-files": "ファイルの読み書き",
+      "json-yaml": "JSON と YAML",
+      "exception-handling": "例外処理",
+      "debugging": "デバッグ",
+      "args-and-kwargs": "Args と kwargs",
+      "decorators": "デコレータ",
+      "context-manager": "コンテキストマネージャ",
+      "oop-basics": "OOP",
+      "dataclasses": "データクラス",
+      "setup-py": "setup.py",
+      "main": "メイン：トップレベルスクリプト",
+      "virtual-environments": "仮想環境"
+    },
+    "modules": {
+      "copy-module": "Copy",
+      "csv-module": "CSV",
+      "datetime-module": "Datetime",
+      "itertools-module": "Itertools",
+      "json-module": "JSON",
+      "os-module": "OS",
+      "pathlib-module": "Pathlib",
+      "random-module": "Random",
+      "shelve-module": "Shelve",
+      "zipfile-module": "Zipfile"
+    }
+  }
+}

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { t } = useI18n()
+
 defineProps({
   currentPage: {
     type: Number,
@@ -28,9 +30,9 @@ const next = () => {
       class="rounded-lg border border-slate-300/70 p-4 text-left transition duration-300 hover:border-primary-500 hover:bg-primary-400/5 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:hover:border-primary-400"
       @click="prev"
     >
-      <span class="text-sm text-slate-500 dark:text-slate-400">Previous</span>
+      <span class="text-sm text-slate-500 dark:text-slate-400">{{ t('blog.previous') }}</span>
       <span class="mt-1 block font-medium text-primary-500 dark:text-primary-400">
-        Newer posts
+        {{ t('blog.newerPosts') }}
       </span>
     </button>
 
@@ -43,9 +45,9 @@ const next = () => {
       class="rounded-lg border border-slate-300/70 p-4 text-right transition duration-300 hover:border-primary-500 hover:bg-primary-400/5 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:hover:border-primary-400"
       @click="next"
     >
-      <span class="text-sm text-slate-500 dark:text-slate-400">Next</span>
+      <span class="text-sm text-slate-500 dark:text-slate-400">{{ t('blog.next') }}</span>
       <span class="mt-1 block font-medium text-primary-500 dark:text-primary-400">
-        Older posts
+        {{ t('blog.olderPosts') }}
       </span>
     </button>
   </div>

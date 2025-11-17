@@ -1,7 +1,6 @@
 import path from 'path'
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import generateSitemap from 'vite-ssg-sitemap'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
@@ -12,11 +11,34 @@ import Markdown from 'unplugin-vue-markdown/vite'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
 import string from 'string'
+import { generateI18nSitemap } from './scripts/generate-i18n-sitemap'
 
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd(), '') }
+
+  const locales = ['zh', 'es', 'fr', 'de', 'ja', 'ru', 'ko', 'pt']
+  const docSections = ['cheatsheet', 'builtin', 'modules', 'blog']
+
+  const pageDirs: Array<{ dir: string; baseRoute: string }> = [
+    { dir: 'src/pages', baseRoute: '' },
+    { dir: 'docs/cheatsheet/en', baseRoute: 'cheatsheet' },
+    { dir: 'docs/builtin/en', baseRoute: 'builtin' },
+    { dir: 'docs/modules/en', baseRoute: 'modules' },
+    { dir: 'docs/blog/en', baseRoute: 'blog' },
+  ]
+
+  // 为每个语言和文档部分添加多语言目录
+  for (const locale of locales) {
+    for (const section of docSections) {
+      pageDirs.push({
+        dir: `docs/${section}/${locale}`,
+        baseRoute: `${locale}/${section}`,
+      })
+    }
+  }
+
   return {
     resolve: {
       alias: {
@@ -38,13 +60,7 @@ export default defineConfig(({ mode }) => {
       // https://github.com/hannoeru/vite-plugin-pages
       Pages({
         extensions: ['vue', 'md'],
-        dirs: [
-          { dir: 'src/pages', baseRoute: '' },
-          { dir: 'docs/cheatsheet', baseRoute: 'cheatsheet' },
-          { dir: 'docs/builtin', baseRoute: 'builtin' },
-          { dir: 'docs/modules', baseRoute: 'modules' },
-          { dir: 'docs/blog', baseRoute: 'blog' },
-        ],
+        dirs: pageDirs,
       }),
 
       // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -127,11 +143,10 @@ export default defineConfig(({ mode }) => {
       script: 'async',
       formatting: 'minify',
       format: 'esm', // changed from 'cjs' to 'esm' to fix ESM/CJS compatibility
-      onFinished() {
-        const hostname = `https://${process.env.VITE_BASE_URL}`
-        generateSitemap({
-          hostname,
-        })
+      async onFinished() {
+        const baseUrl = process.env.VITE_BASE_URL || 'pythoncheatsheet.org'
+        const hostname = baseUrl.startsWith('http') ? baseUrl : `https://${baseUrl}`
+        await generateI18nSitemap(hostname, 'dist')
       },
     },
 

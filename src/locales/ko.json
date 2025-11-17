@@ -1,0 +1,124 @@
+{
+  "sidebar": {
+    "introduction": "소개",
+    "cheatsheet": "치트 시트",
+    "standardLibrary": "표준 라이브러리",
+    "builtinFunctions": "내장 함수",
+    "gettingStarted": "시작하기"
+  },
+  "navbar": {
+    "blog": "블로그",
+    "pythonCheatsheetPdf": "Python 치트 시트 PDF",
+    "repositoryLink": "Python 치트 시트 저장소"
+  },
+  "footer": {
+    "editThisPageOn": "이 페이지 편집하기",
+    "github": "GitHub",
+    "doYouHaveAQuestion": "질문이 있으신가요?",
+    "askTheCommunity": "커뮤니티에 질문하기",
+    "doYouSeeABug": "버그를 발견하셨나요?",
+    "openAnIssueOnGithub": "GitHub 에서 이슈 열기"
+  },
+  "mobile": {
+    "openNavigation": "네비게이션 열기",
+    "closeNavigation": "네비게이션 닫기",
+    "navigation": "네비게이션"
+  },
+  "common": {
+    "language": "언어",
+    "practiceInLabexVm": "LabEx VM 에서 연습하기",
+    "previousPage": "이전 페이지",
+    "nextPage": "다음 페이지",
+    "localeNames": {
+      "en": "English",
+      "zh": "中文",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "pt": "Português"
+    }
+  },
+  "error404": {
+    "title": "404 찾을 수 없음",
+    "error": "404 오류",
+    "pageNotFound": "페이지를 찾을 수 없습니다.",
+    "description": "죄송합니다. 찾고 계신 페이지를 찾을 수 없습니다.",
+    "goBackHome": "홈으로 돌아가기"
+  },
+  "home": {
+    "title": "Python 치트 시트",
+    "basedOnBook": "책",
+    "andManyOtherSources": "및 기타 많은 소스를 기반으로 합니다.",
+    "anyoneCanForget": "누구나 잊을 수 있습니다:",
+    "makeCharacterClasses": "정규식의 문자 클래스를 만드는 방법",
+    "forRegex": "을 (를),",
+    "sliceAList": "리스트를 슬라이스하는 방법",
+    "orDoA": "또는",
+    "forLoop": "for 루프를 실행하는 방법",
+    "description": "이 Python 치트 시트는 초보자와 고급 개발자를 위한 기본 참조를 제공하고, 신규 사용자의 진입 장벽을 낮추며, 베테랑이 오래된 트릭을 새로 고치는 데 도움을 주려고 합니다. 모든",
+    "contributors": "기여자",
+    "onGithub": "를 GitHub 에서 확인하세요.",
+    "cardLinks": {
+      "viewOnGithub": "GitHub 에서 보기",
+      "viewOnGithubDesc": "이 프로젝트가 유용하다고 생각되면 GitHub 에서 별표를 남겨주세요.",
+      "contribute": "기여하기",
+      "contributeDesc": "Python 치트 시트에 기여하는 것이 얼마나 쉬운지 알아보세요.",
+      "blog": "블로그",
+      "blogDesc": "Python 과 그 생태계에 대한 자세한 기사를 읽으세요.",
+      "changelog": "변경 로그",
+      "changelogDesc": "새로운 기능, 수정된 내용 및 향후 계획을 확인하세요."
+    }
+  },
+  "blog": {
+    "previous": "이전",
+    "newerPosts": "최신 게시물",
+    "next": "다음",
+    "olderPosts": "이전 게시물",
+    "readArticle": "글 읽기",
+    "title": "블로그 - Python 치트 시트",
+    "description": "이 기사들은 Python 치트 시트의 내용을 더 깊이 살펴봅니다."
+  },
+  "navigation": {
+    "cheatsheet": {
+      "basics": "기초",
+      "built-in-functions": "내장 함수",
+      "control-flow": "제어 흐름",
+      "functions": "함수",
+      "lists-and-tuples": "리스트와 튜플",
+      "dictionaries": "딕셔너리",
+      "sets": "세트",
+      "comprehensions": "컴프리헨션",
+      "manipulating-strings": "문자열 조작",
+      "string-formatting": "문자열 포맷팅",
+      "regular-expressions": "정규 표현식",
+      "file-directory-path": "파일 및 디렉토리 경로",
+      "reading-and-writing-files": "파일 읽기 및 쓰기",
+      "json-yaml": "JSON 및 YAML",
+      "exception-handling": "예외 처리",
+      "debugging": "디버깅",
+      "args-and-kwargs": "Args 및 kwargs",
+      "decorators": "데코레이터",
+      "context-manager": "컨텍스트 매니저",
+      "oop-basics": "OOP",
+      "dataclasses": "데이터 클래스",
+      "setup-py": "setup.py",
+      "main": "메인: 최상위 스크립트",
+      "virtual-environments": "가상 환경"
+    },
+    "modules": {
+      "copy-module": "Copy",
+      "csv-module": "CSV",
+      "datetime-module": "Datetime",
+      "itertools-module": "Itertools",
+      "json-module": "JSON",
+      "os-module": "OS",
+      "pathlib-module": "Pathlib",
+      "random-module": "Random",
+      "shelve-module": "Shelve",
+      "zipfile-module": "Zipfile"
+    }
+  }
+}

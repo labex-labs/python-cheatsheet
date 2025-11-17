@@ -12,6 +12,7 @@ defineProps<{
 }>()
 
 const route = useRoute()
+const { localePath } = useI18n()
 </script>
 
 <template>
@@ -23,10 +24,10 @@ const route = useRoute()
   >
     <li v-for="item in navigation" :key="item.name" class="relative">
       <router-link
-        :to="item.path"
+        :to="localePath(item.path)"
         class="-ml-px block border-l border-transparent pl-4 transition duration-150"
         :class="
-          route.path === item.path
+          route.path === localePath(item.path) || route.path === item.path
             ? 'border-current font-semibold text-primary-500 dark:text-primary-400'
             : 'text-slate-700 hover:border-slate-400 hover:text-slate-900 dark:text-slate-400 dark:hover:border-slate-500 dark:hover:text-slate-300'
         "

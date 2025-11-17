@@ -1,7 +1,7 @@
 <template>
   <svg
     viewBox="0 0 16 16"
-    class="h-6 w-6 text-slate-500 transition duration-300 hover:text-slate-600"
+    class="h-5 w-5 text-slate-500 transition duration-300 hover:text-slate-600 sm:h-6 sm:w-6"
     fill="currentColor"
     aria-hidden="true"
   >

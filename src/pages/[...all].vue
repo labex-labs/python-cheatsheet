@@ -1,12 +1,13 @@
 <script setup lang="ts">
 const isDark = useDark()
+const { t, localePath } = useI18n()
+
 useHead({
-  title: '404 Not Found',
+  title: t('error404.title'),
   meta: [
     {
       name: 'description',
-      content:
-        'These articles provide a deeper look to the the contents of the Python Cheatsheet.',
+      content: t('error404.description'),
     },
   ],
 })
@@ -18,8 +19,8 @@ useHead({
       class="mx-auto flex w-full max-w-7xl flex-grow flex-col justify-center px-4 sm:px-6 lg:px-8"
     >
       <div class="flex flex-shrink-0 justify-center">
-        <router-link to="/" class="inline-flex">
-          <span class="sr-only">Python Cheatsheet</span>
+        <router-link :to="localePath('/')" class="inline-flex">
+          <span class="sr-only">{{ t('home.title') }}</span>
           <img
             class="h-12 w-auto"
             :src="
@@ -33,23 +34,26 @@ useHead({
       </div>
       <div class="py-12">
         <div class="text-center">
-          <p class="text-sm font-semibold uppercase tracking-wide text-primary-400">
-            404 error
+          <p
+            class="text-sm font-semibold uppercase tracking-wide text-primary-400"
+          >
+            {{ t('error404.error') }}
           </p>
           <h1
             class="mt-2 text-4xl font-extrabold tracking-tight text-slate-200 sm:text-5xl"
           >
-            Page not found.
+            {{ t('error404.pageNotFound') }}
           </h1>
           <p class="mt-2 text-base text-slate-500">
-            Sorry, we couldn’t find the page you’re looking for.
+            {{ t('error404.description') }}
           </p>
           <div class="mt-6">
             <router-link
-              to="/"
+              :to="localePath('/')"
               class="text-base font-medium text-primary-400 hover:text-primary-500"
             >
-              Go back home<span aria-hidden="true"> &rarr;</span>
+              {{ t('error404.goBackHome')
+              }}<span aria-hidden="true"> &rarr;</span>
             </router-link>
           </div>
         </div>

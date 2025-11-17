@@ -1,17 +1,52 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+
 const isOpen = ref(false)
 const navigation = useNavigationStore()
+const { t, localePath, getNavigationName } = useI18n()
 
 watch(useRoute(), () => (isOpen.value = false))
+
+const mainNavigation = computed(() => {
+  return navigation.mainNavigation.map((item) => ({
+    ...item,
+    name: item.path === '/' ? t('sidebar.gettingStarted') : item.name,
+    path: localePath(item.path),
+  }))
+})
+
+const cheatsheetNavigation = computed(() => {
+  return navigation.cheatsheetNavigation.map((item) => ({
+    ...item,
+    name: getNavigationName(item.path, item.name),
+    path: localePath(item.path),
+  }))
+})
+
+const standardLibraryNavigation = computed(() => {
+  return navigation.standardLibraryNavigation.map((item) => ({
+    ...item,
+    name: getNavigationName(item.path, item.name),
+    path: localePath(item.path),
+  }))
+})
+
+const builtinNavigation = computed(() => {
+  return navigation.builtinNavigation.map((item) => ({
+    ...item,
+    name: getNavigationName(item.path, item.name),
+    path: localePath(item.path),
+  }))
+})
 </script>
 
 <template>
   <div class="absolute inset-y-0 left-1.5 flex items-center lg:hidden">
     <button type="button" class="relative" @click="isOpen = true">
-      <span class="sr-only">Open navigation</span>
+      <span class="sr-only">{{ t('mobile.openNavigation') }}</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-7 w-7 stroke-slate-400"
+        class="h-6 w-6 stroke-slate-400 sm:h-7 sm:w-7"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -44,10 +79,12 @@ watch(useRoute(), () => (isOpen.value = false))
         <DialogPanel
           class="min-h-full w-full max-w-xs bg-white px-4 pb-12 pt-5 dark:bg-slate-900 sm:px-6"
         >
-          <DialogTitle class="sr-only">Navigation</DialogTitle>
+          <DialogTitle class="sr-only">{{
+            t('mobile.navigation')
+          }}</DialogTitle>
           <div class="flex items-center">
             <button type="button" @click="isOpen = false">
-              <span class="sr-only">Close navigation</span>
+              <span class="sr-only">{{ t('mobile.closeNavigation') }}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6 stroke-slate-400"
@@ -68,23 +105,23 @@ watch(useRoute(), () => (isOpen.value = false))
           <nav class="mt-10">
             <nav>
               <the-sidebar-navigation
-                :navigation="navigation.mainNavigation"
-                section-name="Introduction"
+                :navigation="mainNavigation"
+                :section-name="t('sidebar.introduction')"
               />
 
               <the-sidebar-navigation
-                :navigation="navigation.cheatsheetNavigation"
-                section-name="Cheatsheet"
+                :navigation="cheatsheetNavigation"
+                :section-name="t('sidebar.cheatsheet')"
               />
 
               <the-sidebar-navigation
-                :navigation="navigation.standardLibraryNavigation"
-                section-name="Standard Library"
+                :navigation="standardLibraryNavigation"
+                :section-name="t('sidebar.standardLibrary')"
               />
 
               <the-sidebar-navigation
-                :navigation="navigation.builtinNavigation"
-                section-name="Built-in Functions"
+                :navigation="builtinNavigation"
+                :section-name="t('sidebar.builtinFunctions')"
               />
             </nav>
           </nav>

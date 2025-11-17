@@ -1,0 +1,124 @@
+{
+  "sidebar": {
+    "introduction": "Einführung",
+    "cheatsheet": "Spickzettel",
+    "standardLibrary": "Standardbibliothek",
+    "builtinFunctions": "Integrierte Funktionen",
+    "gettingStarted": "Erste Schritte"
+  },
+  "navbar": {
+    "blog": "Blog",
+    "pythonCheatsheetPdf": "Python Spickzettel PDF",
+    "repositoryLink": "Python Spickzettel Repository"
+  },
+  "footer": {
+    "editThisPageOn": "Diese Seite bearbeiten auf",
+    "github": "GitHub",
+    "doYouHaveAQuestion": "Haben Sie eine Frage?",
+    "askTheCommunity": "die Community fragen",
+    "doYouSeeABug": "Sehen Sie einen Fehler?",
+    "openAnIssueOnGithub": "ein Problem auf GitHub öffnen"
+  },
+  "mobile": {
+    "openNavigation": "Navigation öffnen",
+    "closeNavigation": "Navigation schließen",
+    "navigation": "Navigation"
+  },
+  "common": {
+    "language": "Sprache",
+    "practiceInLabexVm": "In LabEx VM üben",
+    "previousPage": "Vorherige Seite",
+    "nextPage": "Nächste Seite",
+    "localeNames": {
+      "en": "English",
+      "zh": "中文",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "pt": "Português"
+    }
+  },
+  "error404": {
+    "title": "404 Nicht gefunden",
+    "error": "404 Fehler",
+    "pageNotFound": "Seite nicht gefunden.",
+    "description": "Entschuldigung, wir konnten die von Ihnen gesuchte Seite nicht finden.",
+    "goBackHome": "Zurück zur Startseite"
+  },
+  "home": {
+    "title": "Python Spickzettel",
+    "basedOnBook": "Basierend auf dem Buch",
+    "andManyOtherSources": "und vielen anderen Quellen.",
+    "anyoneCanForget": "Jeder kann vergessen, wie man",
+    "makeCharacterClasses": "Zeichenklassen erstellt",
+    "forRegex": "für einen regulären Ausdruck,",
+    "sliceAList": "eine Liste schneidet",
+    "orDoA": "oder eine",
+    "forLoop": "for-Schleife macht",
+    "description": "Dieser Python-Spickzettel versucht, eine grundlegende Referenz für Anfänger und fortgeschrittene Entwickler bereitzustellen, die Einstiegshürde für Neuankömmlinge zu senken und Veteranen zu helfen, alte Tricks aufzufrischen. Alle",
+    "contributors": "Mitwirkenden",
+    "onGithub": "auf GitHub anzeigen.",
+    "cardLinks": {
+      "viewOnGithub": "Auf GitHub anzeigen",
+      "viewOnGithubDesc": "Hinterlassen Sie einen Stern auf GitHub, wenn Sie dieses Projekt nützlich finden.",
+      "contribute": "Mitwirken",
+      "contributeDesc": "Erfahren Sie, wie einfach es ist, zum Python-Spickzettel beizutragen.",
+      "blog": "Blog",
+      "blogDesc": "Lesen Sie detaillierte Artikel über Python und sein Ökosystem.",
+      "changelog": "Änderungsprotokoll",
+      "changelogDesc": "Sehen Sie, was neu ist, was behoben wurde und was kommt."
+    }
+  },
+  "blog": {
+    "previous": "Vorherige",
+    "newerPosts": "Neuere Beiträge",
+    "next": "Nächste",
+    "olderPosts": "Ältere Beiträge",
+    "readArticle": "Artikel lesen",
+    "title": "Blog - Python Spickzettel",
+    "description": "Diese Artikel bieten einen tieferen Einblick in die Inhalte des Python-Spickzettels."
+  },
+  "navigation": {
+    "cheatsheet": {
+      "basics": "Grundlagen",
+      "built-in-functions": "Integrierte Funktionen",
+      "control-flow": "Kontrollfluss",
+      "functions": "Funktionen",
+      "lists-and-tuples": "Listen und Tupel",
+      "dictionaries": "Wörterbücher",
+      "sets": "Mengen",
+      "comprehensions": "List-Comprehensions",
+      "manipulating-strings": "Zeichenketten-Manipulation",
+      "string-formatting": "Zeichenketten-Formatierung",
+      "regular-expressions": "Reguläre Ausdrücke",
+      "file-directory-path": "Dateien und Verzeichnispfade",
+      "reading-and-writing-files": "Lesen und Schreiben von Dateien",
+      "json-yaml": "JSON und YAML",
+      "exception-handling": "Ausnahmebehandlung",
+      "debugging": "Debugging",
+      "args-and-kwargs": "Args und kwargs",
+      "decorators": "Dekoratoren",
+      "context-manager": "Kontext-Manager",
+      "oop-basics": "OOP",
+      "dataclasses": "Datenklassen",
+      "setup-py": "setup.py",
+      "main": "Hauptprogramm: Top-Level-Skript",
+      "virtual-environments": "Virtuelle Umgebungen"
+    },
+    "modules": {
+      "copy-module": "Copy",
+      "csv-module": "CSV",
+      "datetime-module": "Datetime",
+      "itertools-module": "Itertools",
+      "json-module": "JSON",
+      "os-module": "OS",
+      "pathlib-module": "Pathlib",
+      "random-module": "Random",
+      "shelve-module": "Shelve",
+      "zipfile-module": "Zipfile"
+    }
+  }
+}

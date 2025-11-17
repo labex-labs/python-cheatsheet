@@ -8,14 +8,14 @@ const enabled = ref(isDark)
   <Switch
     v-model="enabled"
     :class="[enabled ? 'bg-gray-600' : 'bg-gray-200']"
-    class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none"
+    class="relative inline-flex h-5 w-9 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none sm:h-6 sm:w-11"
   >
     <span class="sr-only">Use setting</span>
     <span
       :class="[
-        enabled ? 'translate-x-5 bg-gray-800' : 'translate-x-0 bg-white',
+        enabled ? 'translate-x-4 bg-gray-800 sm:translate-x-5' : 'translate-x-0 bg-white',
       ]"
-      class="pointer-events-none relative inline-block h-5 w-5 transform rounded-full shadow ring-0 transition duration-200 ease-in-out"
+      class="pointer-events-none relative inline-block h-4 w-4 transform rounded-full shadow ring-0 transition duration-200 ease-in-out sm:h-5 sm:w-5"
     >
       <span
         :class="[
@@ -28,7 +28,7 @@ const enabled = ref(isDark)
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-4 text-accent-600"
+          class="h-3 text-accent-600 sm:h-4"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -52,7 +52,7 @@ const enabled = ref(isDark)
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4 text-white"
+          class="h-3 w-3 text-white sm:h-4 sm:w-4"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

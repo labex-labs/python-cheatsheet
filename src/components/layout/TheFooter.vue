@@ -8,28 +8,29 @@ const props = defineProps<{
 }>()
 
 const route = useRoute()
+const { t } = useI18n()
 
-const EditLink = {
-  linkHeader: 'Edit this page on',
-  linkText: 'GitHub',
+const EditLink = computed(() => ({
+  linkHeader: t('footer.editThisPageOn'),
+  linkText: t('footer.github'),
   url: `${props.repository}${route.path}.md`,
   icon: EditIcon,
-}
+}))
 
-const footerLinks = [
+const footerLinks = computed(() => [
   {
-    linkHeader: 'Do you have a question?',
-    linkText: 'ask the community',
+    linkHeader: t('footer.doYouHaveAQuestion'),
+    linkText: t('footer.askTheCommunity'),
     url: 'https://github.com/wilfredinni/python-cheatsheet/discussions',
     icon: QuestionIcon,
   },
   {
-    linkHeader: 'Do you see a bug?',
-    linkText: 'open an issue on GitHub',
+    linkHeader: t('footer.doYouSeeABug'),
+    linkText: t('footer.openAnIssueOnGithub'),
     url: 'https://github.com/wilfredinni/python-cheatsheet/issues',
     icon: BugIcon,
   },
-]
+])
 
 const routesWithoutGithub = ['index', 'blog']
 </script>
@@ -58,7 +59,6 @@ const routesWithoutGithub = ['index', 'blog']
 
         <div
           v-for="link in footerLinks"
-          v-once
           :key="link.url"
           class="flex items-center text-slate-600 dark:text-slate-400"
         >

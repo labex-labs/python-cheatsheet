@@ -1,0 +1,124 @@
+{
+  "sidebar": {
+    "introduction": "Introduction",
+    "cheatsheet": "Cheatsheet",
+    "standardLibrary": "Standard Library",
+    "builtinFunctions": "Built-in Functions",
+    "gettingStarted": "Getting Started"
+  },
+  "navbar": {
+    "blog": "Blog",
+    "pythonCheatsheetPdf": "Python Cheatsheet PDF",
+    "repositoryLink": "python cheatsheet repository"
+  },
+  "footer": {
+    "editThisPageOn": "Edit this page on",
+    "github": "GitHub",
+    "doYouHaveAQuestion": "Do you have a question?",
+    "askTheCommunity": "ask the community",
+    "doYouSeeABug": "Do you see a bug?",
+    "openAnIssueOnGithub": "open an issue on GitHub"
+  },
+  "mobile": {
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
+    "navigation": "Navigation"
+  },
+  "common": {
+    "language": "Language",
+    "practiceInLabexVm": "Practice in LabEx VM",
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "localeNames": {
+      "en": "English",
+      "zh": "中文",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "pt": "Português"
+    }
+  },
+  "error404": {
+    "title": "404 Not Found",
+    "error": "404 error",
+    "pageNotFound": "Page not found.",
+    "description": "Sorry, we couldn't find the page you're looking for.",
+    "goBackHome": "Go back home"
+  },
+  "home": {
+    "title": "Python Cheatsheet",
+    "basedOnBook": "Based on the book",
+    "andManyOtherSources": "and many other sources.",
+    "anyoneCanForget": "Anyone can forget how to",
+    "makeCharacterClasses": "make character classes",
+    "forRegex": "for a regex,",
+    "sliceAList": "slice a list",
+    "orDoA": "or do a",
+    "forLoop": "for loop",
+    "description": "This Python cheatsheet tries to provide basic reference for beginner and advanced developers, lower the entry barrier for newcomers and help veterans refresh the old tricks. View all",
+    "contributors": "contributors",
+    "onGithub": "on GitHub.",
+    "cardLinks": {
+      "viewOnGithub": "View on GitHub",
+      "viewOnGithubDesc": "Drop a star on GitHub if you find this project useful.",
+      "contribute": "Contribute",
+      "contributeDesc": "Get to know how easy it is to contribute to the Python Cheatsheet.",
+      "blog": "Blog",
+      "blogDesc": "Read detailed articles about Python and it's ecosystem.",
+      "changelog": "Changelog",
+      "changelogDesc": "See what is new, what got fixed, and what is coming."
+    }
+  },
+  "blog": {
+    "previous": "Previous",
+    "newerPosts": "Newer posts",
+    "next": "Next",
+    "olderPosts": "Older posts",
+    "readArticle": "Read article",
+    "title": "Blog - Python Cheatsheet",
+    "description": "These articles provide a deeper look to the the contents of the Python Cheatsheet."
+  },
+  "navigation": {
+    "cheatsheet": {
+      "basics": "Basics",
+      "built-in-functions": "Built-in Functions",
+      "control-flow": "Control Flow",
+      "functions": "Functions",
+      "lists-and-tuples": "Lists and Tuples",
+      "dictionaries": "Dictionaries",
+      "sets": "Sets",
+      "comprehensions": "Comprehensions",
+      "manipulating-strings": "Manipulating Strings",
+      "string-formatting": "String Formatting",
+      "regular-expressions": "Regular Expressions",
+      "file-directory-path": "Files and Directory Paths",
+      "reading-and-writing-files": "Reading and Writing Files",
+      "json-yaml": "JSON and YAML",
+      "exception-handling": "Exception Handling",
+      "debugging": "Debugging",
+      "args-and-kwargs": "Args and kwargs",
+      "decorators": "Decorators",
+      "context-manager": "Context Manager",
+      "oop-basics": "OOP",
+      "dataclasses": "Dataclasses",
+      "setup-py": "setup.py",
+      "main": "Main: Top-Level Script",
+      "virtual-environments": "Virtual Environments"
+    },
+    "modules": {
+      "copy-module": "Copy",
+      "csv-module": "CSV",
+      "datetime-module": "Datetime",
+      "itertools-module": "Itertools",
+      "json-module": "JSON",
+      "os-module": "OS",
+      "pathlib-module": "Pathlib",
+      "random-module": "Random",
+      "shelve-module": "Shelve",
+      "zipfile-module": "Zipfile"
+    }
+  }
+}
