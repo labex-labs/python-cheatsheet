@@ -109,10 +109,9 @@ const isDark = useDark()
                 Download PDF
               </base-badge-secondary>
             </a>
-            <base-reader-mode />
           </div>
 
-          <base-theme-toggle />
+          <base-reader-mode />
           <a
             target="_blank"
             href="https://github.com/wilfredinni/python-cheatsheet"
@@ -121,6 +120,7 @@ const isDark = useDark()
             <github-icon />
             <span class="sr-only">python cheatsheet repository</span>
           </a>
+          <base-theme-toggle />
         </div>
       </div>
     </div>
