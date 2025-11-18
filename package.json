@@ -34,7 +34,7 @@
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-vue": "^5.2.4",
-    "@vue/compiler-dom": "3.4.35",
+    "@vue/compiler-dom": "3.5.24",
     "@vue/test-utils": "^2.4.6",
     "autoprefixer": "^10.4.21",
     "eslint": "^8.57.1",
