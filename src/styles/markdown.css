@@ -35,7 +35,7 @@ html .prose {
   --prism-line-number-gutter: #eeeeee;
   --prism-line-highlight-background: #444444;
   --prism-selection-background: #444444;
-  --prism-font-size: 1.03em;
+  --prism-font-size: 0.9em;
   --prism-tab-size: 4;
 }
 
