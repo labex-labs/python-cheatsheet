@@ -42,9 +42,7 @@ from pathlib import Path
 print(Path('usr').joinpath('bin').joinpath('spam'))  # Объединить компоненты пути
 ```
 
-Вывод:
-
-```plaintext
+```output
 usr/bin/spam
 ```
 
@@ -57,9 +55,7 @@ from pathlib import Path
 print(Path('usr') / 'bin' / 'spam')  # Использовать оператор / вместо joinpath()
 ```
 
-Вывод:
-
-```plaintext
+```output
 usr/bin/spam
 ```
 
@@ -78,9 +74,7 @@ for filename in my_files:
     print(home / filename)  # Объединить домашний путь с каждым именем файла
 ```
 
-Вывод:
-
-```plaintext
+```output
 /home/labex/project/accounts.txt
 /home/labex/project/details.csv
 /home/labex/project/invite.docx
@@ -97,9 +91,7 @@ from pathlib import Path
 print(Path.cwd())  # Возвращает текущий рабочий каталог в виде объекта Path
 ```
 
-Вывод:
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -113,9 +105,7 @@ cwd = Path.cwd()
 (cwd / 'delicious' / 'walnut' / 'waffles').mkdir()
 ```
 
-Вывод:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "/usr/lib/python3.6/pathlib.py", line 1226, in mkdir
@@ -154,9 +144,7 @@ from pathlib import Path
 Path('/').is_absolute()
 ```
 
-Вывод:
-
-```plaintext
+```output
 True
 ```
 
@@ -164,9 +152,7 @@ True
 Path('..').is_absolute()
 ```
 
-Вывод:
-
-```plaintext
+```output
 False
 ```
 
@@ -177,9 +163,7 @@ from pathlib import Path
 print(Path.cwd())
 ```
 
-Вывод:
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -187,9 +171,7 @@ print(Path.cwd())
 print(Path('..').resolve())
 ```
 
-Вывод:
-
-```plaintext
+```output
 /home
 ```
 
@@ -202,9 +184,7 @@ from pathlib import Path
 print(Path('/etc/passwd').relative_to('/'))
 ```
 
-Вывод:
-
-```plaintext
+```output
 etc/passwd
 ```
 
@@ -220,9 +200,7 @@ from pathlib import Path
 Path('.').exists()
 ```
 
-Вывод:
-
-```plaintext
+```output
 True
 ```
 
@@ -230,9 +208,7 @@ True
 Path('setup.py').exists()
 ```
 
-Вывод:
-
-```plaintext
+```output
 True
 ```
 
@@ -240,9 +216,7 @@ True
 Path('/etc').exists()
 ```
 
-Вывод:
-
-```plaintext
+```output
 True
 ```
 
@@ -250,9 +224,7 @@ True
 Path('nonexistentfile').exists()
 ```
 
-Вывод:
-
-```plaintext
+```output
 False
 ```
 
@@ -266,9 +238,7 @@ from pathlib import Path
 Path('setup.py').is_file()
 ```
 
-Вывод:
-
-```plaintext
+```output
 True
 ```
 
@@ -276,9 +246,7 @@ True
 Path('/home').is_file()
 ```
 
-Вывод:
-
-```plaintext
+```output
 False
 ```
 
@@ -286,9 +254,7 @@ False
 Path('nonexistentfile').is_file()
 ```
 
-Вывод:
-
-```plaintext
+```output
 False
 ```
 
@@ -302,9 +268,7 @@ from pathlib import Path
 Path('/').is_dir()
 ```
 
-Вывод:
-
-```plaintext
+```output
 True
 ```
 
@@ -312,9 +276,7 @@ True
 Path('setup.py').is_dir()
 ```
 
-Вывод:
-
-```plaintext
+```output
 False
 ```
 
@@ -322,9 +284,7 @@ False
 Path('/spam').is_dir()
 ```
 
-Вывод:
-
-```plaintext
+```output
 False
 ```
 
@@ -339,9 +299,7 @@ stat = Path('/bin/python3.6').stat()
 print(stat) # stat содержит некоторую другую информацию о файле
 ```
 
-Вывод:
-
-```plaintext
+```output
 os.stat_result(st_mode=33261, st_ino=141087, st_dev=2051, st_nlink=2, st_uid=0,
 --snip--
 st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517261276)
@@ -351,9 +309,7 @@ st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517
 print(stat.st_size) # размер в байтах
 ```
 
-Вывод:
-
-```plaintext
+```output
 10024
 ```
 
@@ -368,9 +324,7 @@ for f in Path('/usr/bin').iterdir():
     print(f)
 ```
 
-Вывод:
-
-```plaintext
+```output
 ...
 /usr/bin/tiff2rgba
 /usr/bin/iconv
@@ -407,9 +361,7 @@ for sub_path in Path('/usr/bin').iterdir():
 print(total_size)
 ```
 
-Вывод:
-
-```plaintext
+```output
 1903178911
 ```
 
@@ -423,9 +375,7 @@ import shutil
 shutil.copy('/tmp/spam.txt', '/tmp/delicious')
 ```
 
-Вывод:
-
-```plaintext
+```output
 /tmp/delicious/spam.txt
 ```
 
@@ -433,9 +383,7 @@ shutil.copy('/tmp/spam.txt', '/tmp/delicious')
 shutil.copy('/tmp/eggs.txt', '/tmp/delicious/eggs2.txt')
 ```
 
-Вывод:
-
-```plaintext
+```output
 /tmp/delicious/eggs2.txt
 ```
 
@@ -447,9 +395,7 @@ import shutil
 shutil.copytree('/tmp/bacon', '/tmp/bacon_backup')
 ```
 
-Вывод:
-
-```plaintext
+```output
 /tmp/bacon_backup
 ```
 
@@ -461,9 +407,7 @@ import shutil
 shutil.move('/tmp/bacon.txt', '/tmp/eggs')
 ```
 
-Вывод:
-
-```plaintext
+```output
 /tmp/eggs/bacon.txt
 ```
 
@@ -473,9 +417,7 @@ shutil.move('/tmp/bacon.txt', '/tmp/eggs')
 shutil.move('/tmp/bacon.txt', '/tmp/eggs/new_bacon.txt')
 ```
 
-Вывод:
-
-```plaintext
+```output
 /tmp/eggs/new_bacon.txt
 ```
 
@@ -485,9 +427,7 @@ shutil.move('/tmp/bacon.txt', '/tmp/eggs/new_bacon.txt')
 shutil.move('/tmp/bacon.txt', '/tmp/eggs')
 ```
 
-Вывод:
-
-```plaintext
+```output
 /tmp/eggs
 ```
 
@@ -509,9 +449,7 @@ for i in p.rglob('*'):
     print(i)
 ```
 
-Вывод:
-
-```plaintext
+```output
 /tmp/delicious/cats
 /tmp/delicious/walnut
 /tmp/delicious/spam.txt

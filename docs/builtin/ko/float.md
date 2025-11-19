@@ -29,9 +29,7 @@ float('10')
 float(10)
 ```
 
-출력:
-
-```plaintext
+```output
 10.0
 10.0
 ```

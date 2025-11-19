@@ -29,9 +29,7 @@ len('hello')
 len(['cat', 3, 'dog'])
 ```
 
-출력:
-
-```plaintext
+```output
 5
 3
 ```
@@ -58,9 +56,7 @@ if a:  # True 로 평가됨
     print("the list is not empty!")
 ```
 
-출력:
-
-```plaintext
+```output
 the list is not empty!
 the list is not empty!
 ```

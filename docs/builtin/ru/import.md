@@ -32,9 +32,7 @@ math_module = __import__('math')
 print(math_module.sqrt(4))
 ```
 
-Вывод:
-
-```plaintext
+```output
 2.0
 ```
 
@@ -47,9 +45,7 @@ math_module = importlib.import_module('math')
 print(math_module.sqrt(4))
 ```
 
-Вывод:
-
-```plaintext
+```output
 2.0
 ```
 

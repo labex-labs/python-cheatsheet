@@ -41,9 +41,7 @@ view[0] = 72  # ASCII für 'H'
 print(data)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 104
 <memory at 0x...>
 b'world'

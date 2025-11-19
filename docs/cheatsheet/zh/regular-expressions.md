@@ -62,9 +62,7 @@ mo = phone_num_regex.search('我的号码是 415-555-4242。')  # 搜索模式
 print(f'找到的电话号码：{mo.group()}')  # group() 返回匹配的文本
 ```
 
-输出：
-
-```plaintext
+```output
 找到的电话号码: 415-555-4242
 ```
 
@@ -78,9 +76,7 @@ mo = phone_num_regex.search('我的号码是 415-555-4242。')
 mo.group(1)  # 返回第一组：'415'
 ```
 
-输出：
-
-```plaintext
+```output
 '415'
 ```
 
@@ -88,9 +84,7 @@ mo.group(1)  # 返回第一组：'415'
 mo.group(2)
 ```
 
-输出：
-
-```plaintext
+```output
 '555-4242'
 ```
 
@@ -98,9 +92,7 @@ mo.group(2)
 mo.group(0)
 ```
 
-输出：
-
-```plaintext
+```output
 '415-555-4242'
 ```
 
@@ -108,9 +100,7 @@ mo.group(0)
 mo.group()
 ```
 
-输出：
-
-```plaintext
+```output
 '415-555-4242'
 ```
 
@@ -121,9 +111,7 @@ mo.group()
 mo.groups()  # 返回 ('415', '555-4242')
 ```
 
-输出：
-
-```plaintext
+```output
 ('415', '555-4242')
 ```
 
@@ -133,9 +121,7 @@ area_code, main_number = mo.groups()
 print(area_code)
 ```
 
-输出：
-
-```plaintext
+```output
 415
 ```
 
@@ -143,9 +129,7 @@ print(area_code)
 print(main_number)
 ```
 
-输出：
-
-```plaintext
+```output
 555-4242
 ```
 
@@ -160,9 +144,7 @@ mo1 = hero_regex.search('Batman 和 Tina Fey。')
 mo1.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'Batman'
 ```
 
@@ -171,9 +153,7 @@ mo2 = hero_regex.search('Tina Fey 和 Batman。')
 mo2.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'Tina Fey'
 ```
 
@@ -186,9 +166,7 @@ mo = bat_regex.search('Batmobile 掉了一个轮子')
 mo.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'Batmobile'
 ```
 
@@ -196,9 +174,7 @@ mo.group()
 mo.group(1)
 ```
 
-输出：
-
-```plaintext
+```output
 'mobile'
 ```
 
@@ -213,9 +189,7 @@ mo1 = bat_regex.search('蝙蝠侠的冒险')
 mo1.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'Batman'
 ```
 
@@ -224,9 +198,7 @@ mo2 = bat_regex.search('蝙蝠女侠的冒险')
 mo2.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'Batwoman'
 ```
 
@@ -240,9 +212,7 @@ mo1 = bat_regex.search('蝙蝠侠的冒险')
 mo1.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'Batman'
 ```
 
@@ -251,9 +221,7 @@ mo2 = bat_regex.search('蝙蝠女侠的冒险')
 mo2.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'Batwoman'
 ```
 
@@ -262,9 +230,7 @@ mo3 = bat_regex.search('蝙蝠哇哇哇侠的冒险')
 mo3.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'Batwowowowoman'
 ```
 
@@ -279,9 +245,7 @@ mo1 = bat_regex.search('蝙蝠女侠的冒险')
 mo1.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'Batwoman'
 ```
 
@@ -290,9 +254,7 @@ mo2 = bat_regex.search('蝙蝠哇哇哇侠的冒险')
 mo2.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'Batwowowowoman'
 ```
 
@@ -301,9 +263,7 @@ mo3 = bat_regex.search('蝙蝠侠的冒险')
 mo3 is None
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -318,9 +278,7 @@ mo1 = ha_regex.search('HaHaHa')
 mo1.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'HaHaHa'
 ```
 
@@ -329,9 +287,7 @@ mo2 = ha_regex.search('Ha')
 mo2 is None
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -343,9 +299,7 @@ mo1 = ha_regex.search('HaHaHaHa')
 mo1.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'HaHaHa'
 ```
 
@@ -360,9 +314,7 @@ mo1 = greedy_ha_regex.search('HaHaHaHaHa')
 mo1.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'HaHaHaHaHa'
 ```
 
@@ -372,9 +324,7 @@ mo2 = non_greedy_ha_regex.search('HaHaHaHaHa')
 mo2.group()
 ```
 
-输出：
-
-```plaintext
+```output
 'HaHaHa'
 ```
 
@@ -388,9 +338,7 @@ phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # 没有组
 phone_num_regex.findall('手机：415-555-9999 工作：212-555-0000')
 ```
 
-输出：
-
-```plaintext
+```output
 ['415-555-9999', '212-555-0000']
 ```
 
@@ -403,9 +351,7 @@ vowel_regex = re.compile(r'[aeiouAEIOU]')
 vowel_regex.findall('Robocop 吃婴儿食品。婴儿食品。')
 ```
 
-输出：
-
-```plaintext
+```output
 ['o', 'o', 'o', 'e', 'a', 'a', 'o', 'o', 'A', 'O', 'O']
 ```
 
@@ -418,9 +364,7 @@ consonant_regex = re.compile(r'[^aeiouAEIOU]')
 consonant_regex.findall('Robocop 吃婴儿食品。婴儿食品。')
 ```
 
-输出：
-
-```plaintext
+```output
 ['R', 'b', 'c', 'p', ' ', 't', 's', ' ', 'b', 'b', 'y', ' ', 'f', 'd', '.', ' ', 'B', 'B', 'Y', ' ', 'F', 'D', '.']
 ```
 
@@ -439,9 +383,7 @@ begins_with_hello = re.compile(r'^Hello')
 begins_with_hello.search('Hello world!')
 ```
 
-输出：
-
-```plaintext
+```output
 <_sre.SRE_Match object; span=(0, 5), match='Hello'>
 ```
 
@@ -449,9 +391,7 @@ begins_with_hello.search('Hello world!')
 begins_with_hello.search('他说 hello.') is None
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -463,9 +403,7 @@ whole_string_is_num = re.compile(r'^\d+$')
 whole_string_is_num.search('1234567890')
 ```
 
-输出：
-
-```plaintext
+```output
 <_sre.SRE_Match object; span=(0, 10), match='1234567890'>
 ```
 
@@ -473,9 +411,7 @@ whole_string_is_num.search('1234567890')
 whole_string_is_num.search('12345xyz67890') is None
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -483,9 +419,7 @@ True
 whole_string_is_num.search('12 34567890') is None
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -499,9 +433,7 @@ at_regex = re.compile(r'.at')
 at_regex.findall('猫在平坦的垫子上坐着。')
 ```
 
-输出：
-
-```plaintext
+```output
 ['cat', 'hat', 'sat', 'lat', 'mat']
 ```
 
@@ -514,9 +446,7 @@ mo = name_regex.search('First Name: Al Last Name: Sweigart')
 mo.group(1)
 ```
 
-输出：
-
-```plaintext
+```output
 'Al'
 ```
 
@@ -524,9 +454,7 @@ mo.group(1)
 mo.group(2)
 ```
 
-输出：
-
-```plaintext
+```output
 'Sweigart'
 ```
 
@@ -538,9 +466,7 @@ mo = non_greedy_regex.search('<为晚餐上菜>。>')
 mo.group()
 ```
 
-输出：
-
-```plaintext
+```output
 '<为晚餐上菜>'
 ```
 
@@ -550,9 +476,7 @@ mo = greedy_regex.search('<为晚餐上菜>。>')
 mo.group()
 ```
 
-输出：
-
-```plaintext
+```output
 '<为晚餐上菜>。>'
 ```
 
@@ -565,9 +489,7 @@ no_newline_regex = re.compile('.*')
 no_newline_regex.search('相信公众的信任。\n保护无辜者。\n维护法律。').group()
 ```
 
-输出：
-
-```plaintext
+```output
 '相信公众的信任。'
 ```
 
@@ -576,9 +498,7 @@ newline_regex = re.compile('.*', re.DOTALL)
 newline_regex.search('相信公众的信任。\n保护无辜者。\n维护法律。').group()
 ```
 
-输出：
-
-```plaintext
+```output
 '相信公众的信任。\n保护无辜者。\n维护法律。'
 ```
 
@@ -592,9 +512,7 @@ robocop = re.compile(r'robocop', re.I)
 robocop.search('Robocop 是半人半机器，完全是警察。').group()
 ```
 
-输出：
-
-```plaintext
+```output
 'Robocop'
 ```
 
@@ -602,9 +520,7 @@ robocop.search('Robocop 是半人半机器，完全是警察。').group()
 robocop.search('ROBOCOP 保护无辜者。').group()
 ```
 
-输出：
-
-```plaintext
+```output
 'ROBOCOP'
 ```
 
@@ -612,9 +528,7 @@ robocop.search('ROBOCOP 保护无辜者。').group()
 robocop.search('Al，你的编程书为什么老是提到 robocop？').group()
 ```
 
-输出：
-
-```plaintext
+```output
 'robocop'
 ```
 
@@ -633,9 +547,7 @@ names_regex = re.compile(r'Agent \w+')
 names_regex.sub('已审查', '特工 Alice 将机密文件交给了特工 Bob。')
 ```
 
-输出：
-
-```plaintext
+```output
 '已审查 将机密文件交给了 已审查。'
 ```
 

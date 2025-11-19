@@ -32,9 +32,7 @@ def my_function(arg1, arg2):
 my_function("hello", "world")
 ```
 
-Output:
-
-```plaintext
+```output
 {'arg1': 'hello', 'arg2': 'world', 'local_var': 'I am local'}
 ```
 

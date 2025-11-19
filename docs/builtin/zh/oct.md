@@ -33,9 +33,7 @@ print(oct(1))
 print(oct(1000))
 ```
 
-输出：
-
-```plaintext
+```output
 0o10
 0o12
 0o144

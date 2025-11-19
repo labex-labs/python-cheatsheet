@@ -35,9 +35,7 @@ letters = ('z', 'b', 'a')
 print(min(letters))
 ```
 
-Output:
-
-```plaintext
+```output
 1
 a
 ```
@@ -48,9 +46,7 @@ a
 print(min(10, 20, 5))
 ```
 
-Output:
-
-```plaintext
+```output
 5
 ```
 

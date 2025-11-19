@@ -26,9 +26,7 @@ A função `eval()` em Python é uma função built-in que analisa uma string co
 eval('1 + 4')
 ```
 
-Saída:
-
-```plaintext
+```output
 5
 ```
 
@@ -36,9 +34,7 @@ Saída:
 eval('print("Hello World!")')
 ```
 
-Saída:
-
-```plaintext
+```output
 Hello World!
 ```
 
@@ -47,9 +43,7 @@ x = 10
 eval('x == 10')
 ```
 
-Saída:
-
-```plaintext
+```output
 True
 ```
 

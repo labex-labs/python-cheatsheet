@@ -32,9 +32,7 @@ type({1, 2})
 type({'a': 1, 'b': 2})
 ```
 
-Вывод:
-
-```plaintext
+```output
 <class 'str'>
 <class 'int'>
 <class 'float'>

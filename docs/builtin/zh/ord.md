@@ -30,9 +30,7 @@ print(ord('1'))
 print(ord('a'))
 ```
 
-输出：
-
-```plaintext
+```output
 65
 8364
 49

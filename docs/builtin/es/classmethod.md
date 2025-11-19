@@ -49,9 +49,7 @@ p = Person.from_dict(person_data)
 p.display()
 ```
 
-Salida:
-
-```plaintext
+```output
 Name: John, Age: 30
 ```
 

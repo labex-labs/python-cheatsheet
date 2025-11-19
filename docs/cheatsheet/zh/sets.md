@@ -46,9 +46,7 @@ s = {}  # 这将创建一个字典而不是集合
 type(s)  # 返回 <class 'dict'>
 ```
 
-输出：
-
-```plaintext
+```output
 <class 'dict'>
 ```
 
@@ -62,9 +60,7 @@ s = {1, 2, 3, 2, 3, 4}  # 重复项被删除
 s  # 返回 {1, 2, 3, 4}
 ```
 
-输出：
-
-```plaintext
+```output
 {1, 2, 3, 4}
 ```
 
@@ -75,9 +71,7 @@ s = {1, 2, 3}
 s[0]
 ```
 
-输出：
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'set' object does not support indexing
@@ -94,9 +88,7 @@ s.add(4)  # 添加元素 4
 s
 ```
 
-输出：
-
-```plaintext
+```output
 {1, 2, 3, 4}
 ```
 
@@ -109,9 +101,7 @@ s.update([2, 3, 4, 5, 6])  # 添加多个元素（忽略重复项）
 s
 ```
 
-输出：
-
-```plaintext
+```output
 {1, 2, 3, 4, 5, 6}
 ```
 
@@ -126,9 +116,7 @@ s.remove(3)  # 移除元素 3
 s
 ```
 
-输出：
-
-```plaintext
+```output
 {1, 2}
 ```
 
@@ -136,9 +124,7 @@ s
 s.remove(3)
 ```
 
-输出：
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 3
@@ -153,9 +139,7 @@ s.discard(3)  # 移除元素 3（安全，缺失时不报错）
 s
 ```
 
-输出：
-
-```plaintext
+```output
 {1, 2}
 ```
 
@@ -174,9 +158,7 @@ s2 = {3, 4, 5}
 s1.union(s2)  # 或 's1 | s2' - 返回 {1, 2, 3, 4, 5}
 ```
 
-输出：
-
-```plaintext
+```output
 {1, 2, 3, 4, 5}
 ```
 
@@ -192,9 +174,7 @@ s3 = {3, 4, 5}
 s1.intersection(s2, s3)  # 或 's1 & s2 & s3' - 返回 {3}
 ```
 
-输出：
-
-```plaintext
+```output
 {3}
 ```
 
@@ -210,9 +190,7 @@ s2 = {2, 3, 4}
 s1.difference(s2)  # 或 's1 - s2' - 返回 {1}
 ```
 
-输出：
-
-```plaintext
+```output
 {1}
 ```
 
@@ -220,9 +198,7 @@ s1.difference(s2)  # 或 's1 - s2' - 返回 {1}
 s2.difference(s1) # 或 's2 - s1'
 ```
 
-输出：
-
-```plaintext
+```output
 {4}
 ```
 
@@ -237,9 +213,7 @@ s2 = {2, 3, 4}
 s1.symmetric_difference(s2)  # 或 's1 ^ s2' - 返回 {1, 4}
 ```
 
-输出：
-
-```plaintext
+```output
 {1, 4}
 ```
 

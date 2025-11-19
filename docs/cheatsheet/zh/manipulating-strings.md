@@ -31,9 +31,7 @@ labUrl: 'https://labex.io/zh/labs/python-python-string-manipulation-633668?cours
 print("Hello there!\nHow are you?\nI\'m doing fine.")
 ```
 
-输出：
-
-```plaintext
+```output
 Hello there!
 How are you?
 I'm doing fine.
@@ -48,9 +46,7 @@ I'm doing fine.
 print(r"Hello there!\nHow are you?\nI\'m doing fine.")  # \n 按字面意思打印
 ```
 
-输出：
-
-```plaintext
+```output
 Hello there!\nHow are you?\nI\'m doing fine.
 ```
 
@@ -70,9 +66,7 @@ Bob"""
 )
 ```
 
-输出：
-
-```plaintext
+```output
 Dear Alice,
 
 Eve's cat has been arrested for catnapping,
@@ -96,9 +90,7 @@ spam = 'Hello world!'
 spam[0]  # 返回第一个字符：'H'
 ```
 
-输出：
-
-```plaintext
+```output
 'H'
 ```
 
@@ -106,9 +98,7 @@ spam[0]  # 返回第一个字符：'H'
 spam[4]
 ```
 
-输出：
-
-```plaintext
+```output
 'o'
 ```
 
@@ -116,9 +106,7 @@ spam[4]
 spam[-1]
 ```
 
-输出：
-
-```plaintext
+```output
 '!'
 ```
 
@@ -131,9 +119,7 @@ spam = 'Hello world!'
 spam[0:5]  # 返回索引 0 到 4 的字符：'Hello'
 ```
 
-输出：
-
-```plaintext
+```output
 'Hello'
 ```
 
@@ -141,9 +127,7 @@ spam[0:5]  # 返回索引 0 到 4 的字符：'Hello'
 spam[:5]
 ```
 
-输出：
-
-```plaintext
+```output
 'Hello'
 ```
 
@@ -151,9 +135,7 @@ spam[:5]
 spam[6:]
 ```
 
-输出：
-
-```plaintext
+```output
 'world!'
 ```
 
@@ -161,9 +143,7 @@ spam[6:]
 spam[6:-1]
 ```
 
-输出：
-
-```plaintext
+```output
 'world'
 ```
 
@@ -171,9 +151,7 @@ spam[6:-1]
 spam[:-1]
 ```
 
-输出：
-
-```plaintext
+```output
 'Hello world'
 ```
 
@@ -181,9 +159,7 @@ spam[:-1]
 spam[::-1]
 ```
 
-输出：
-
-```plaintext
+```output
 '!dlrow olleH'
 ```
 
@@ -192,9 +168,7 @@ fizz = spam[0:5]
 fizz
 ```
 
-输出：
-
-```plaintext
+```output
 'Hello'
 ```
 
@@ -204,9 +178,7 @@ fizz
 'Hello' in 'Hello World'
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -214,9 +186,7 @@ True
 'Hello' in 'Hello'
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -224,9 +194,7 @@ True
 'HELLO' in 'Hello World'
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -234,9 +202,7 @@ False
 '' in 'spam'
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -244,9 +210,7 @@ True
 'cats' not in 'cats and dogs'
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -259,9 +223,7 @@ greet = 'Hello world!'
 greet.upper()
 ```
 
-输出：
-
-```plaintext
+```output
 'HELLO WORLD!'
 ```
 
@@ -269,9 +231,7 @@ greet.upper()
 greet.lower()
 ```
 
-输出：
-
-```plaintext
+```output
 'hello world!'
 ```
 
@@ -279,9 +239,7 @@ greet.lower()
 greet.title()
 ```
 
-输出：
-
-```plaintext
+```output
 'Hello World!'
 ```
 
@@ -294,9 +252,7 @@ spam = 'Hello world!'
 spam.islower()
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -304,9 +260,7 @@ False
 spam.isupper()
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -314,9 +268,7 @@ False
 'HELLO'.isupper()
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -324,9 +276,7 @@ True
 'abc12345'.islower()
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -334,9 +284,7 @@ True
 '12345'.islower()
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -344,9 +292,7 @@ False
 '12345'.isupper()
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -366,9 +312,7 @@ False
 'Hello world!'.startswith('Hello')
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -376,9 +320,7 @@ True
 'Hello world!'.endswith('world!')
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -386,9 +328,7 @@ True
 'abc123'.startswith('abcdef')
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -396,9 +336,7 @@ False
 'abc123'.endswith('12')
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -406,9 +344,7 @@ False
 'Hello world!'.startswith('Hello world!')
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -416,9 +352,7 @@ True
 'Hello world!'.endswith('Hello world!')
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -432,9 +366,7 @@ True
 ''.join(['My', 'name', 'is', 'Simon'])
 ```
 
-输出：
-
-```plaintext
+```output
 'MynameisSimon'
 ```
 
@@ -442,9 +374,7 @@ True
 ', '.join(['cats', 'rats', 'bats'])
 ```
 
-输出：
-
-```plaintext
+```output
 'cats, rats, bats'
 ```
 
@@ -452,9 +382,7 @@ True
 ' '.join(['My', 'name', 'is', 'Simon'])
 ```
 
-输出：
-
-```plaintext
+```output
 'My name is Simon'
 ```
 
@@ -462,9 +390,7 @@ True
 'ABC'.join(['My', 'name', 'is', 'Simon'])
 ```
 
-输出：
-
-```plaintext
+```output
 'MyABCnameABCisABCSimon'
 ```
 
@@ -476,9 +402,7 @@ True
 'My name is Simon'.split()
 ```
 
-输出：
-
-```plaintext
+```output
 ['My', 'name', 'is', 'Simon']
 ```
 
@@ -486,9 +410,7 @@ True
 'MyABCnameABCisABCSimon'.split('ABC')
 ```
 
-输出：
-
-```plaintext
+```output
 ['My', 'name', 'is', 'Simon']
 ```
 
@@ -496,9 +418,7 @@ True
 'My name is Simon'.split('m')
 ```
 
-输出：
-
-```plaintext
+```output
 ['My na', 'e is Si', 'on']
 ```
 
@@ -506,9 +426,7 @@ True
 ' My  name is  Simon'.split()
 ```
 
-输出：
-
-```plaintext
+```output
 ['My', 'name', 'is', 'Simon']
 ```
 
@@ -516,9 +434,7 @@ True
 ' My  name is  Simon'.split(' ')
 ```
 
-输出：
-
-```plaintext
+```output
 ['', 'My', '', 'name', 'is', '', 'Simon']
 ```
 
@@ -528,9 +444,7 @@ True
 'Hello'.rjust(10)
 ```
 
-输出：
-
-```plaintext
+```output
 '     Hello'
 ```
 
@@ -538,9 +452,7 @@ True
 'Hello'.rjust(20)
 ```
 
-输出：
-
-```plaintext
+```output
 '               Hello'
 ```
 
@@ -548,9 +460,7 @@ True
 'Hello World'.rjust(20)
 ```
 
-输出：
-
-```plaintext
+```output
 '         Hello World'
 ```
 
@@ -558,9 +468,7 @@ True
 'Hello'.ljust(10)
 ```
 
-输出：
-
-```plaintext
+```output
 'Hello     '
 ```
 
@@ -568,9 +476,7 @@ True
 'Hello'.center(20)
 ```
 
-输出：
-
-```plaintext
+```output
 '       Hello       '
 ```
 
@@ -580,9 +486,7 @@ True
 'Hello'.rjust(20, '*')
 ```
 
-输出：
-
-```plaintext
+```output
 '***************Hello'
 ```
 
@@ -590,9 +494,7 @@ True
 'Hello'.ljust(20, '-')
 ```
 
-输出：
-
-```plaintext
+```output
 'Hello---------------'
 ```
 
@@ -600,9 +502,7 @@ True
 'Hello'.center(20, '=')
 ```
 
-输出：
-
-```plaintext
+```output
 '=======Hello========'
 ```
 
@@ -613,9 +513,7 @@ spam = '    Hello World     '
 spam.strip()
 ```
 
-输出：
-
-```plaintext
+```output
 'Hello World'
 ```
 
@@ -623,9 +521,7 @@ spam.strip()
 spam.lstrip()
 ```
 
-输出：
-
-```plaintext
+```output
 'Hello World     '
 ```
 
@@ -633,9 +529,7 @@ spam.lstrip()
 spam.rstrip()
 ```
 
-输出：
-
-```plaintext
+```output
 '    Hello World'
 ```
 
@@ -644,9 +538,7 @@ spam = 'SpamSpamBaconSpamEggsSpamSpam'
 spam.strip('ampS')
 ```
 
-输出：
-
-```plaintext
+```output
 'BaconSpamEggs'
 ```
 
@@ -659,9 +551,7 @@ sentence = 'one sheep two sheep three sheep four'
 sentence.count('sheep')
 ```
 
-输出：
-
-```plaintext
+```output
 3
 ```
 
@@ -669,9 +559,7 @@ sentence.count('sheep')
 sentence.count('e')
 ```
 
-输出：
-
-```plaintext
+```output
 9
 ```
 
@@ -680,9 +568,7 @@ sentence.count('e')
 sentence.count('e', 6)
 ```
 
-输出：
-
-```plaintext
+```output
 8
 ```
 
@@ -690,9 +576,7 @@ sentence.count('e', 6)
 sentence.count('e', 7)
 ```
 
-输出：
-
-```plaintext
+```output
 7
 ```
 
@@ -705,9 +589,7 @@ text = "Hello, world!"
 text.replace("world", "planet")
 ```
 
-输出：
-
-```plaintext
+```output
 'Hello, planet!'
 ```
 
@@ -716,9 +598,7 @@ fruits = "apple, banana, cherry, apple"
 fruits.replace("apple", "orange", 1)
 ```
 
-输出：
-
-```plaintext
+```output
 'orange, banana, cherry, apple'
 ```
 
@@ -727,9 +607,7 @@ sentence = "I like apples, Apples are my favorite fruit"
 sentence.replace("apples", "oranges")
 ```
 
-输出：
-
-```plaintext
+```output
 'I like oranges, Apples are my favorite fruit'
 ```
 

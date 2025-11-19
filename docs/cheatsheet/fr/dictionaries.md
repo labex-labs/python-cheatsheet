@@ -45,9 +45,7 @@ my_cat['age_years'] = 2  # Ajouter une nouvelle paire clé-valeur
 print(my_cat)
 ```
 
-Sortie :
-
-```plaintext
+```output
 {'size': 'fat', 'color': 'gray', 'disposition': 'loud', 'age_years': 2}
 ```
 
@@ -64,9 +62,7 @@ my_cat = {
 print(my_cat['size'])
 ```
 
-Sortie :
-
-```plaintext
+```output
 fat
 ```
 
@@ -74,9 +70,7 @@ fat
 print(my_cat['eye_color'])
 ```
 
-Sortie :
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'eye_color'
@@ -93,9 +87,7 @@ for value in pet.values():  # Boucler sur toutes les valeurs
     print(value)
 ```
 
-Sortie :
-
-```plaintext
+```output
 red
 42
 ```
@@ -111,9 +103,7 @@ for key in pet.keys():  # Boucler sur toutes les clés
     print(key)
 ```
 
-Sortie :
-
-```plaintext
+```output
 color
 age
 ```
@@ -127,9 +117,7 @@ for key in pet:  # Équivalent à for key in pet.keys()
     print(key)
 ```
 
-Sortie :
-
-```plaintext
+```output
 color
 age
 ```
@@ -144,9 +132,7 @@ for item in pet.items():
     print(item)
 ```
 
-Sortie :
-
-```plaintext
+```output
 ('color', 'red')
 ('age', 42)
 ```
@@ -160,9 +146,7 @@ for key, value in pet.items():  # Dépaqueter le tuple en clé et valeur
     print(f'Key: {key} Value: {value}')
 ```
 
-Sortie :
-
-```plaintext
+```output
 Key: color Value: red
 Key: age Value: 42
 ```
@@ -178,9 +162,7 @@ wife = {'name': 'Rose', 'age': 33}
 f'My wife name is {wife.get("name")}'  # Retourne 'Rose'
 ```
 
-Sortie :
-
-```plaintext
+```output
 'My wife name is Rose'
 ```
 
@@ -188,9 +170,7 @@ Sortie :
 f'She is {wife.get("age")} years old.'
 ```
 
-Sortie :
-
-```plaintext
+```output
 'She is 33 years old.'
 ```
 
@@ -198,9 +178,7 @@ Sortie :
 f'She is deeply in love with {wife.get("husband")}'
 ```
 
-Sortie :
-
-```plaintext
+```output
 'She is deeply in love with None'
 ```
 
@@ -212,9 +190,7 @@ wife = {'name': 'Rose', 'age': 33}
 f'She is deeply in love with {wife.get("husband", "lover")}'
 ```
 
-Sortie :
-
-```plaintext
+```output
 'She is deeply in love with lover'
 ```
 
@@ -236,9 +212,7 @@ wife.setdefault('has_hair', True)
 wife
 ```
 
-Sortie :
-
-```plaintext
+```output
 {'name': 'Rose', 'age': 33, 'has_hair': True}
 ```
 
@@ -253,9 +227,7 @@ wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
 wife.pop('age')
 ```
 
-Sortie :
-
-```plaintext
+```output
 33
 ```
 
@@ -263,9 +235,7 @@ Sortie :
 wife
 ```
 
-Sortie :
-
-```plaintext
+```output
 {'name': 'Rose', 'hair': 'brown'}
 ```
 
@@ -278,9 +248,7 @@ wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
 wife.popitem()
 ```
 
-Sortie :
-
-```plaintext
+```output
 ('hair', 'brown')
 ```
 
@@ -288,9 +256,7 @@ Sortie :
 wife
 ```
 
-Sortie :
-
-```plaintext
+```output
 {'name': 'Rose', 'age': 33}
 ```
 
@@ -304,9 +270,7 @@ del wife['age']
 wife
 ```
 
-Sortie :
-
-```plaintext
+```output
 {'name': 'Rose', 'hair': 'brown'}
 ```
 
@@ -320,9 +284,7 @@ wife.clear()
 wife
 ```
 
-Sortie :
-
-```plaintext
+```output
 {}
 ```
 
@@ -334,9 +296,7 @@ person = {'name': 'Rose', 'age': 33}
 'name' in person.keys()
 ```
 
-Sortie :
-
-```plaintext
+```output
 True
 ```
 
@@ -344,9 +304,7 @@ True
 'height' in person.keys()
 ```
 
-Sortie :
-
-```plaintext
+```output
 False
 ```
 
@@ -354,9 +312,7 @@ False
 'skin' in person # Vous pouvez omettre keys()
 ```
 
-Sortie :
-
-```plaintext
+```output
 False
 ```
 
@@ -368,9 +324,7 @@ person = {'name': 'Rose', 'age': 33}
 'Rose' in person.values()
 ```
 
-Sortie :
-
-```plaintext
+```output
 True
 ```
 
@@ -378,9 +332,7 @@ True
 33 in person.values()
 ```
 
-Sortie :
-
-```plaintext
+```output
 True
 ```
 
@@ -393,9 +345,7 @@ wife = {'name': 'Rose', 'age': 33, 'has_hair': True, 'hair_color': 'brown', 'hei
 pprint.pprint(wife)
 ```
 
-Sortie :
-
-```plaintext
+```output
 {'age': 33,
  'eye_color': 'brown',
  'hair_color': 'brown',
@@ -415,9 +365,7 @@ dict_c = {**dict_a, **dict_b}
 dict_c
 ```
 
-Sortie :
-
-```plaintext
+```output
 {'a': 1, 'b': 3, 'c': 4}
 ```
 

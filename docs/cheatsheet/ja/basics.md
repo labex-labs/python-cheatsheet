@@ -43,9 +43,7 @@ Python の基本
 2 + 3 * 6
 ```
 
-出力：
-
-```plaintext
+```output
 20
 ```
 
@@ -55,9 +53,7 @@ Python の基本
 (2 + 3) * 6
 ```
 
-出力：
-
-```plaintext
+```output
 30
 ```
 
@@ -65,9 +61,7 @@ Python の基本
 2 ** 8
 ```
 
-出力：
-
-```plaintext
+```output
 256
 ```
 
@@ -75,9 +69,7 @@ Python の基本
 23 // 7
 ```
 
-出力：
-
-```plaintext
+```output
 3
 ```
 
@@ -85,9 +77,7 @@ Python の基本
 23 % 7
 ```
 
-出力：
-
-```plaintext
+```output
 2
 ```
 
@@ -95,9 +85,7 @@ Python の基本
 (5 - 1) * ((7 + 1) / (3 - 1))
 ```
 
-出力：
-
-```plaintext
+```output
 16.0
 ```
 
@@ -122,9 +110,7 @@ greeting += ' world!'
 greeting
 ```
 
-出力：
-
-```plaintext
+```output
 'Hello world!'
 ```
 
@@ -135,9 +121,7 @@ number += 1
 number
 ```
 
-出力：
-
-```plaintext
+```output
 2
 ```
 
@@ -148,9 +132,7 @@ my_list *= 3
 my_list
 ```
 
-出力：
-
-```plaintext
+```output
 ['item', 'item', 'item']
 ```
 
@@ -166,9 +148,7 @@ my_list
 print(my_var:="Hello World!")
 ```
 
-出力：
-
-```plaintext
+```output
 Hello World!
 ```
 
@@ -177,9 +157,7 @@ my_var="Yes"
 print(my_var)
 ```
 
-出力：
-
-```plaintext
+```output
 Yes
 ```
 
@@ -187,9 +165,7 @@ Yes
 print(my_var:="Hello")
 ```
 
-出力：
-
-```plaintext
+```output
 Hello
 ```
 
@@ -261,9 +237,7 @@ unique_ids = {1, 2, 3}     # set
 'Alice' 'Bob'
 ```
 
-出力：
-
-```plaintext
+```output
 'AliceBob'
 ```
 
@@ -274,9 +248,7 @@ unique_ids = {1, 2, 3}     # set
 'Alice' * 5
 ```
 
-出力：
-
-```plaintext
+```output
 'AliceAliceAliceAliceAlice'
 ```
 
@@ -363,9 +335,7 @@ def foo():
 print('Hello world!')
 ```
 
-出力：
-
-```plaintext
+```output
 Hello world!
 ```
 
@@ -374,9 +344,7 @@ a = 1
 print('Hello world!', a)
 ```
 
-出力：
-
-```plaintext
+```output
 Hello world! 1
 ```
 
@@ -391,9 +359,7 @@ for word in phrase:
     print(word, end='-')  # 改行の代わりに '-' を使用
 ```
 
-出力：
-
-```plaintext
+```output
 printed-with-a-dash-in-between-
 ```
 
@@ -406,9 +372,7 @@ printed-with-a-dash-in-between-
 print('cats', 'dogs', 'mice', sep=',')  # カンマ区切りの出力
 ```
 
-出力：
-
-```plaintext
+```output
 cats,dogs,mice
 ```
 
@@ -423,9 +387,7 @@ my_name = input()  # ユーザーが入力して Enter を押すのを待つ
 print('Hi, {}'.format(my_name))
 ```
 
-出力：
-
-```plaintext
+```output
 What is your name?
 Martha
 Hi, Martha
@@ -438,9 +400,7 @@ my_name = input('What is your name? ')  # プロンプトメッセージ
 print('Hi, {}'.format(my_name))
 ```
 
-出力：
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```
@@ -453,9 +413,7 @@ my_name = input('What is your name? ')  # プロンプトと読み取りを 1 �
 print(f'Hi, {my_name}')  # 文字列フォーマットのための f-string
 ```
 
-出力：
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```
@@ -469,9 +427,7 @@ Hi, Martha
 len('hello')  # 5 を返します
 ```
 
-出力：
-
-```plaintext
+```output
 5
 ```
 
@@ -480,9 +436,7 @@ len('hello')  # 5 を返します
 len(['cat', 3, 'dog'])  # 3 を返します (3 つの要素)
 ```
 
-出力：
-
-```plaintext
+```output
 3
 ```
 
@@ -503,9 +457,7 @@ if len(a) > 0:  # True と評価される
     print("the list is not empty!")
 ```
 
-出力：
-
-```plaintext
+```output
 the list is not empty!
 ```
 
@@ -515,9 +467,7 @@ if a:  # リストが空でない場合に True と評価される
     print("the list is not empty!")
 ```
 
-出力：
-
-```plaintext
+```output
 the list is not empty!
 ```
 
@@ -530,9 +480,7 @@ the list is not empty!
 str(29)  # '29'を返します
 ```
 
-出力：
-
-```plaintext
+```output
 '29'
 ```
 
@@ -540,9 +488,7 @@ str(29)  # '29'を返します
 str(-3.14)
 ```
 
-出力：
-
-```plaintext
+```output
 '-3.14'
 ```
 
@@ -553,9 +499,7 @@ str(-3.14)
 int('11')  # 11 を返します
 ```
 
-出力：
-
-```plaintext
+```output
 11
 ```
 
@@ -564,9 +508,7 @@ int('11')  # 11 を返します
 float('3.14')  # 3.14 を返します
 ```
 
-出力：
-
-```plaintext
+```output
 3.14
 ```
 

@@ -24,9 +24,7 @@ Die Funktion `print()` schreibt den Wert des/der ihr übergebenen Argument(e). [
 print('Hello world!')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Hello world!
 ```
 
@@ -35,9 +33,7 @@ a = 1
 print('Hello world!', a)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Hello world! 1
 ```
 
@@ -51,9 +47,7 @@ for word in phrase:
     print(word, end='-')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 printed-with-a-dash-in-between-
 ```
 
@@ -65,9 +59,7 @@ Das Schlüsselwort `sep` gibt an, wie die Objekte getrennt werden sollen, wenn e
 print('cats', 'dogs', 'mice', sep=',')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 cats,dogs,mice
 ```
 

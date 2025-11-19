@@ -42,9 +42,7 @@ from pathlib import Path
 print(Path('usr').joinpath('bin').joinpath('spam'))  # Unir componentes de ruta
 ```
 
-Salida:
-
-```plaintext
+```output
 usr/bin/spam
 ```
 
@@ -57,9 +55,7 @@ from pathlib import Path
 print(Path('usr') / 'bin' / 'spam')  # Usar el operador / en lugar de joinpath()
 ```
 
-Salida:
-
-```plaintext
+```output
 usr/bin/spam
 ```
 
@@ -78,9 +74,7 @@ for filename in my_files:
     print(home / filename)  # Combinar la ruta de inicio con cada nombre de archivo
 ```
 
-Salida:
-
-```plaintext
+```output
 /home/labex/project/accounts.txt
 /home/labex/project/details.csv
 /home/labex/project/invite.docx
@@ -97,9 +91,7 @@ from pathlib import Path
 print(Path.cwd())  # Devuelve el directorio de trabajo actual como objeto Path
 ```
 
-Salida:
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -113,9 +105,7 @@ cwd = Path.cwd()
 (cwd / 'delicious' / 'walnut' / 'waffles').mkdir()
 ```
 
-Salida:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "/usr/lib/python3.6/pathlib.py", line 1226, in mkdir

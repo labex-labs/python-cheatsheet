@@ -29,9 +29,7 @@ hex(100)
 hex(1000)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '0x1'
 '0xa'
 '0x64'

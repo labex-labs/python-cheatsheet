@@ -38,9 +38,7 @@ Beispiele:
 42 == 42
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -48,9 +46,7 @@ True
 40 == 42
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -58,9 +54,7 @@ False
 'hello' == 'hello'
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -68,9 +62,7 @@ True
 'hello' == 'Hello'
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -78,9 +70,7 @@ False
 'dog' != 'cat'
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -88,9 +78,7 @@ True
 42 == 42.0
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -98,9 +86,7 @@ True
 42 == '42'
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -142,9 +128,7 @@ Sie können boolesche und Vergleichsoperatoren mischen:
 (4 < 5) and (5 < 6)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -152,9 +136,7 @@ True
 (4 < 5) and (9 < 6)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -162,9 +144,7 @@ False
 (1 == 2) or (2 == 2)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -174,9 +154,7 @@ Sie können auch mehrere boolesche Operatoren zusammen mit den Vergleichsoperato
 2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -186,9 +164,7 @@ True
 5 > 4 or 3 < 4 and 5 > 5
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -197,9 +173,7 @@ True
 (5 > 4 or 3 < 4) and 5 > 5
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -215,9 +189,7 @@ if name == 'Debora':  # Prüfen, ob name gleich 'Debora' ist
    print('Hi, Debora')  # Diese Zeile wird ausgeführt, wenn die Bedingung True ist
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Hi, Debora
 ```
 
@@ -226,9 +198,7 @@ if name != 'George':
    print('You are not George')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 You are not George
 ```
 
@@ -244,9 +214,7 @@ else:  # Ausführen, wenn if-Bedingung False ist
    print('You are not George')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 You are not George
 ```
 
@@ -262,9 +230,7 @@ elif name == 'George':  # Nur geprüft, wenn vorherige Bedingung False ist
    print('Hi George!')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Hi George!
 ```
 
@@ -281,9 +247,7 @@ else:
    print('Who are you?')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Who are you?
 ```
 
@@ -307,9 +271,7 @@ else:
    print('adult')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 kid
 ```
 
@@ -319,9 +281,7 @@ kid
 print('kid' if age < 18 else 'adult')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 kid
 ```
 
@@ -334,9 +294,7 @@ age = 15
 print('kid' if age < 13 else 'teen' if age < 18 else 'adult')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 teen
 ```
 
@@ -351,9 +309,7 @@ else:
         print('adult')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 teen
 ```
 
@@ -400,9 +356,7 @@ match response_code:
         print("502 Bad Gateway")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Created
 ```
 
@@ -423,9 +377,7 @@ match response_code:
         print("Internal Server Error")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Internal Server Error
 ```
 
@@ -442,9 +394,7 @@ match today_responses:
             print(f"All responses: {a}, {b}, {rest}")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 All responses: 200, 300, [404, 500]
 ```
 
@@ -467,9 +417,7 @@ match response_code:
         print("Invalid Code")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Invalid Code
 ```
 
@@ -486,9 +434,7 @@ match response_code:
             print('Code is neither a string nor a number')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Code is a string
 ```
 
@@ -504,9 +450,7 @@ match response_code:
             print('Code is an invalid number')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Code is a valid number
 ```
 
@@ -522,9 +466,7 @@ while spam < 5:  # Fortfahren, solange spam kleiner als 5 ist
     spam = spam + 1  # Zähler erhöhen, um eine Endlosschleife zu vermeiden
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Hello, world.
 Hello, world.
 Hello, world.
@@ -546,9 +488,7 @@ while True:  # Endlosschleife
 print('Thank you!')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Please type your name: your name
 Thank you!
 ```
@@ -570,9 +510,7 @@ while True:
 print('Access granted.')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Who are you? Charles
 Who are you? Debora
 Who are you? Joe
@@ -591,9 +529,7 @@ for pet in pets:  # Durch jedes Haustier in der Liste iterieren
     print(pet)  # Jeden Haustiernamen ausgeben
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Bella
 Milo
 Loki
@@ -608,9 +544,7 @@ for i in range(5):
     print(f'Will stop at 5! or 4? ({i})')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Will stop at 5! or 4? (0)
 Will stop at 5! or 4? (1)
 Will stop at 5! or 4? (2)
@@ -626,9 +560,7 @@ for i in range(0, 10, 2):
    print(i)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 0
 2
 4
@@ -643,9 +575,7 @@ for i in range(5, -1, -1):
     print(i)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 5
 4
 3
@@ -680,9 +610,7 @@ while True:
         sys.exit()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Type exit to exit: open
 Type exit to exit: close
 Type exit to exit: exit

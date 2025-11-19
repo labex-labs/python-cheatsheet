@@ -43,9 +43,7 @@ Python 基础
 2 + 3 * 6
 ```
 
-输出：
-
-```plaintext
+```output
 20
 ```
 
@@ -55,9 +53,7 @@ Python 基础
 (2 + 3) * 6
 ```
 
-输出：
-
-```plaintext
+```output
 30
 ```
 
@@ -65,9 +61,7 @@ Python 基础
 2 ** 8
 ```
 
-输出：
-
-```plaintext
+```output
 256
 ```
 
@@ -75,9 +69,7 @@ Python 基础
 23 // 7
 ```
 
-输出：
-
-```plaintext
+```output
 3
 ```
 
@@ -85,9 +77,7 @@ Python 基础
 23 % 7
 ```
 
-输出：
-
-```plaintext
+```output
 2
 ```
 
@@ -95,9 +85,7 @@ Python 基础
 (5 - 1) * ((7 + 1) / (3 - 1))
 ```
 
-输出：
-
-```plaintext
+```output
 16.0
 ```
 
@@ -122,9 +110,7 @@ greeting += ' world!'
 greeting
 ```
 
-输出：
-
-```plaintext
+```output
 'Hello world!'
 ```
 
@@ -135,9 +121,7 @@ number += 1
 number
 ```
 
-输出：
-
-```plaintext
+```output
 2
 ```
 
@@ -148,9 +132,7 @@ my_list *= 3
 my_list
 ```
 
-输出：
-
-```plaintext
+```output
 ['item', 'item', 'item']
 ```
 
@@ -166,9 +148,7 @@ my_list
 print(my_var:="Hello World!")
 ```
 
-输出：
-
-```plaintext
+```output
 Hello World!
 ```
 
@@ -177,9 +157,7 @@ my_var="Yes"
 print(my_var)
 ```
 
-输出：
-
-```plaintext
+```output
 Yes
 ```
 
@@ -187,9 +165,7 @@ Yes
 print(my_var:="Hello")
 ```
 
-输出：
-
-```plaintext
+```output
 Hello
 ```
 
@@ -261,9 +237,7 @@ unique_ids = {1, 2, 3}     # set (集合)
 'Alice' 'Bob'
 ```
 
-输出：
-
-```plaintext
+```output
 'AliceBob'
 ```
 
@@ -274,9 +248,7 @@ unique_ids = {1, 2, 3}     # set (集合)
 'Alice' * 5
 ```
 
-输出：
-
-```plaintext
+```output
 'AliceAliceAliceAliceAlice'
 ```
 
@@ -363,9 +335,7 @@ def foo():
 print('Hello world!')
 ```
 
-输出：
-
-```plaintext
+```output
 Hello world!
 ```
 
@@ -374,9 +344,7 @@ a = 1
 print('Hello world!', a)
 ```
 
-输出：
-
-```plaintext
+```output
 Hello world! 1
 ```
 
@@ -391,9 +359,7 @@ for word in phrase:
     print(word, end='-')  # 使用 '-' 代替换行符
 ```
 
-输出：
-
-```plaintext
+```output
 printed-with-a-dash-in-between-
 ```
 
@@ -406,9 +372,7 @@ printed-with-a-dash-in-between-
 print('cats', 'dogs', 'mice', sep=',')  # 逗号分隔的输出
 ```
 
-输出：
-
-```plaintext
+```output
 cats,dogs,mice
 ```
 
@@ -423,9 +387,7 @@ my_name = input()  # 等待用户输入并按 Enter 键
 print('Hi, {}'.format(my_name))
 ```
 
-输出：
-
-```plaintext
+```output
 What is your name?
 Martha
 Hi, Martha
@@ -438,9 +400,7 @@ my_name = input('What is your name? ')  # 提示信息和读取在一次调用�
 print('Hi, {}'.format(my_name))
 ```
 
-输出：
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```
@@ -453,9 +413,7 @@ my_name = input('What is your name? ')  # 提示和读取合二为一
 print(f'Hi, {my_name}')  # f-string 用于字符串格式化
 ```
 
-输出：
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```
@@ -469,9 +427,7 @@ Hi, Martha
 len('hello')  # 返回 5
 ```
 
-输出：
-
-```plaintext
+```output
 5
 ```
 
@@ -480,9 +436,7 @@ len('hello')  # 返回 5
 len(['cat', 3, 'dog'])  # 返回 3 (三个项目)
 ```
 
-输出：
-
-```plaintext
+```output
 3
 ```
 
@@ -504,9 +458,7 @@ if len(a) > 0:  # 评估为 True
     print("the list is not empty!")
 ```
 
-输出：
-
-```plaintext
+```output
 the list is not empty!
 ```
 
@@ -516,9 +468,7 @@ if a:  # 如果列表不为空，则评估为 True
     print("the list is not empty!")
 ```
 
-输出：
-
-```plaintext
+```output
 the list is not empty!
 ```
 
@@ -531,9 +481,7 @@ the list is not empty!
 str(29)  # 返回 '29'
 ```
 
-输出：
-
-```plaintext
+```output
 '29'
 ```
 
@@ -541,9 +489,7 @@ str(29)  # 返回 '29'
 str(-3.14)
 ```
 
-输出：
-
-```plaintext
+```output
 '-3.14'
 ```
 
@@ -554,9 +500,7 @@ str(-3.14)
 int('11')  # 返回 11
 ```
 
-输出：
-
-```plaintext
+```output
 11
 ```
 
@@ -565,9 +509,7 @@ int('11')  # 返回 11
 float('3.14')  # 返回 3.14
 ```
 
-输出：
-
-```plaintext
+```output
 3.14
 ```
 

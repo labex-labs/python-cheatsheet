@@ -128,5 +128,11 @@
     "getDiscount": "今すぐ 50% オフ →",
     "shortMessage": "ブラックフライデー 2025：Python Hands-on Labs",
     "shortDiscount": "50% オフ →"
+  },
+  "codeBlock": {
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "expand": "展開",
+    "collapse": "折りたたむ"
   }
 }

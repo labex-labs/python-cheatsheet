@@ -37,9 +37,7 @@ bool({})      # diccionario vacío
 bool(set())   # conjunto vacío
 ```
 
-Salida:
-
-```plaintext
+```output
 False
 False
 False
@@ -63,9 +61,7 @@ bool([1, 2])
 bool({'a': 1})
 ```
 
-Salida:
-
-```plaintext
+```output
 True
 True
 True

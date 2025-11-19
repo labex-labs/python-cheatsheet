@@ -32,9 +32,7 @@ o = object()
 print(type(o))
 ```
 
-Вывод:
-
-```plaintext
+```output
 <class 'object'>
 ```
 

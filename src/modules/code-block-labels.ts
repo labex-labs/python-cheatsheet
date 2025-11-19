@@ -1,4 +1,71 @@
 import { type UserModule } from '~/types'
+import enTranslations from '~/locales/en.json'
+import zhTranslations from '~/locales/zh.json'
+import esTranslations from '~/locales/es.json'
+import frTranslations from '~/locales/fr.json'
+import deTranslations from '~/locales/de.json'
+import jaTranslations from '~/locales/ja.json'
+import ruTranslations from '~/locales/ru.json'
+import koTranslations from '~/locales/ko.json'
+import ptTranslations from '~/locales/pt.json'
+
+type Locale = 'en' | 'zh' | 'es' | 'fr' | 'de' | 'ja' | 'ru' | 'ko' | 'pt'
+
+const translations: Record<Locale, typeof enTranslations> = {
+  en: enTranslations,
+  zh: zhTranslations,
+  es: esTranslations,
+  fr: frTranslations,
+  de: deTranslations,
+  ja: jaTranslations,
+  ru: ruTranslations,
+  ko: koTranslations,
+  pt: ptTranslations,
+}
+
+// Get current locale from URL path
+const getCurrentLocale = (): Locale => {
+  if (typeof window === 'undefined') return 'en'
+  const path = window.location.pathname
+  const segments = path.split('/').filter(Boolean)
+  const supportedLocales: Locale[] = ['en', 'zh', 'es', 'fr', 'de', 'ja', 'ru', 'ko', 'pt']
+
+  if (segments.length > 0 && supportedLocales.includes(segments[0] as Locale)) {
+    return segments[0] as Locale
+  }
+  return 'en'
+}
+
+// Get translation text
+const t = (key: string): string => {
+  const locale = getCurrentLocale()
+  const keys = key.split('.')
+
+  const getValue = (obj: any): any => {
+    let value: any = obj
+    for (const k of keys) {
+      if (value && typeof value === 'object' && k in value) {
+        value = value[k as keyof typeof value]
+      } else {
+        return undefined
+      }
+    }
+    return value
+  }
+
+  const value = getValue(translations[locale])
+  if (typeof value === 'string') {
+    return value
+  }
+
+  // Fallback to English
+  const fallbackValue = getValue(translations.en)
+  if (typeof fallbackValue === 'string') {
+    return fallbackValue
+  }
+
+  return key
+}
 
 export const install: UserModule = ({ router }) => {
   if (typeof window === 'undefined') return
@@ -8,7 +75,7 @@ export const install: UserModule = ({ router }) => {
     try {
       await navigator.clipboard.writeText(text)
       const originalText = button.textContent
-      button.textContent = 'Copied'
+      button.textContent = t('codeBlock.copied')
       button.classList.add('copied')
       setTimeout(() => {
         button.textContent = originalText
@@ -19,47 +86,6 @@ export const install: UserModule = ({ router }) => {
     }
   }
 
-  // Check if a code block follows an "Output:" text (supports multiple languages)
-  const isOutputBlock = (pre: Element): boolean => {
-    // List of "Output:" translations in different languages
-    const outputLabels = [
-      'Output:',           // English
-      'Saída:',            // Portuguese
-      '输出：',            // Chinese (Simplified)
-      'Salida:',           // Spanish
-      'Ausgabe:',          // German
-      'Sortie :',          // French (with space)
-      'Sortie:',           // French (without space)
-      '出力：',            // Japanese
-      '출력:',             // Korean
-      'Вывод:',            // Russian
-    ]
-
-    let previousSibling = pre.previousElementSibling
-    // Check previous siblings (skip empty text nodes)
-    while (previousSibling) {
-      const text = previousSibling.textContent?.trim()
-      // Check if the text matches any of the output labels
-      if (text) {
-        for (const label of outputLabels) {
-          // Remove trailing spaces from both for comparison
-          const textNormalized = text.replace(/\s+$/, '')
-          const labelNormalized = label.replace(/\s+$/, '')
-          // Match if text exactly equals label (after normalization)
-          if (textNormalized === labelNormalized) {
-            return true
-          }
-        }
-      }
-      // If we hit another code block or a heading, stop searching
-      if (previousSibling.tagName === 'PRE' || previousSibling.tagName.startsWith('H')) {
-        break
-      }
-      previousSibling = previousSibling.previousElementSibling
-    }
-    return false
-  }
-
   // Toggle output block visibility
   const toggleOutputBlock = (pre: Element, toggleButton: HTMLElement) => {
     const isCollapsed = pre.classList.contains('output-collapsed')
@@ -67,14 +93,14 @@ export const install: UserModule = ({ router }) => {
 
     if (isCollapsed) {
       pre.classList.remove('output-collapsed')
-      toggleButton.textContent = 'Collapse'
+      toggleButton.textContent = t('codeBlock.collapse')
       toggleButton.setAttribute('aria-expanded', 'true')
       if (codeElement) {
         codeElement.style.display = 'block'
       }
     } else {
       pre.classList.add('output-collapsed')
-      toggleButton.textContent = 'Expand'
+      toggleButton.textContent = t('codeBlock.expand')
       toggleButton.setAttribute('aria-expanded', 'false')
       if (codeElement) {
         codeElement.style.display = 'none'
@@ -102,8 +128,8 @@ export const install: UserModule = ({ router }) => {
           const codeElement = pre.querySelector('code')
           const codeText = codeElement?.textContent || ''
 
-          // Check if this is an output block
-          const isOutput = isOutputBlock(pre)
+          // Check if this is an output block (language is "output")
+          const isOutput = language === 'output'
           if (isOutput) {
             pre.classList.add('output-block', 'output-collapsed')
             if (codeElement) {
@@ -130,8 +156,8 @@ export const install: UserModule = ({ router }) => {
           if (isOutput) {
             const toggleButton = document.createElement('button')
             toggleButton.className = 'code-block-toggle-button'
-            toggleButton.setAttribute('aria-label', 'Toggle output')
-            toggleButton.textContent = 'Expand'
+            toggleButton.setAttribute('aria-label', t('codeBlock.expand'))
+            toggleButton.textContent = t('codeBlock.expand')
             toggleButton.setAttribute('aria-expanded', 'false')
             toggleButton.addEventListener('click', (e) => {
               e.stopPropagation()
@@ -142,8 +168,8 @@ export const install: UserModule = ({ router }) => {
             // For non-output blocks, only show copy button
             const copyButton = document.createElement('button')
             copyButton.className = 'code-block-copy-button'
-            copyButton.setAttribute('aria-label', 'Copy code')
-            copyButton.textContent = 'Copy'
+            copyButton.setAttribute('aria-label', t('codeBlock.copy'))
+            copyButton.textContent = t('codeBlock.copy')
             copyButton.addEventListener('click', () => {
               copyToClipboard(codeText, copyButton)
             })

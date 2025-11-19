@@ -29,9 +29,7 @@ len('hello')
 len(['cat', 3, 'dog'])
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 5
 3
 ```
@@ -58,9 +56,7 @@ if a:  # ergibt True
     print("the list is not empty!")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 the list is not empty!
 the list is not empty!
 ```

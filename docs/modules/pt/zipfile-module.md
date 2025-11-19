@@ -35,9 +35,7 @@ with zipfile.ZipFile('example.zip') as example_zip:
     print('Compressed file is %sx smaller!' % (round(spam_info.file_size / spam_info.compress_size, 2)))
 ```
 
-Output:
-
-```plaintext
+```output
 ['spam.txt', 'cats/', 'cats/catnames.txt', 'cats/zophie.jpg']
 13908
 3828
@@ -65,9 +63,7 @@ with zipfile.ZipFile('example.zip') as example_zip:
     print(example_zip.extract('spam.txt', '/tmp/some/new/folders'))
 ```
 
-Output:
-
-```plaintext
+```output
 /tmp/spam.txt
 /tmp/some/new/folders/spam.txt
 ```
@@ -97,9 +93,7 @@ with zipfile.ZipFile('example.zip', 'r') as zf:
     print(zf.namelist())
 ```
 
-Output:
-
-```plaintext
+```output
 ['README.txt']
 ```
 
@@ -125,9 +119,7 @@ with zipfile.ZipFile('example.zip') as zf:
         print(f'Uncompressed: {info.file_size} bytes')
 ```
 
-Output:
-
-```plaintext
+```output
 README.txt
 Comment     : b''
 Modified    : 2022-11-15 06:48:02

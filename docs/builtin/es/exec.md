@@ -37,9 +37,7 @@ code_to_execute = "print('¡Hola, exec()!')"
 exec(code_to_execute)
 ```
 
-Salida:
-
-```plaintext
+```output
 ¡Hola, exec()!
 ```
 
@@ -55,9 +53,7 @@ for i in range(5):
 exec(code)
 ```
 
-Salida:
-
-```plaintext
+```output
 0
 1
 2
@@ -76,9 +72,7 @@ exec(code)
 print(x)
 ```
 
-Salida:
-
-```plaintext
+```output
 15
 ```
 
@@ -95,9 +89,7 @@ print(globals_dict)
 print(locals_dict)
 ```
 
-Salida:
-
-```plaintext
+```output
 5
 {'x': 10}
 {'x': 40}
@@ -115,9 +107,7 @@ result = add_numbers(2, 3, 5)
 print(result)
 ```
 
-Salida:
-
-```plaintext
+```output
 10
 ```
 
@@ -135,9 +125,7 @@ except NameError as e:
 exec(code)
 ```
 
-Salida:
-
-```plaintext
+```output
 Error: name 'undefined_variable' is not defined
 ```
 

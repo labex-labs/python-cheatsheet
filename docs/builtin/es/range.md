@@ -56,9 +56,7 @@ for i in range(5):
     print(i)
 ```
 
-Salida:
-
-```plaintext
+```output
 0
 1
 2
@@ -73,9 +71,7 @@ for i in range(1, 8):
     print(i)
 ```
 
-Salida:
-
-```plaintext
+```output
 1
 2
 3
@@ -92,9 +88,7 @@ for i in range(0, 30, 5):
     print(i)
 ```
 
-Salida:
-
-```plaintext
+```output
 0
 5
 10
@@ -110,9 +104,7 @@ for i in range(0, 10, 3):
     print(i)
 ```
 
-Salida:
-
-```plaintext
+```output
 0
 3
 6
@@ -126,9 +118,7 @@ for i in range(0, -6, -1):
     print(i)
 ```
 
-Salida:
-
-```plaintext
+```output
 0
 -1
 -2
@@ -144,9 +134,7 @@ for i in range(0):
     print(i)
 ```
 
-Salida:
-
-```plaintext
+```output
 (no output)
 ```
 
@@ -155,9 +143,7 @@ for i in range(1, 0):
     print(i)
 ```
 
-Salida:
-
-```plaintext
+```output
 (no output)
 ```
 

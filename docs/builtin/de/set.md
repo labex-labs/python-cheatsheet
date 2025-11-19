@@ -29,9 +29,7 @@ my_set = set()
 print(my_set)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 set()
 ```
 
@@ -43,9 +41,7 @@ my_set = set(my_list)
 print(my_set)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 {1, 2, 3}
 ```
 

@@ -26,9 +26,7 @@ Python 의 `help()` 함수는 Python 의 광범위한 도움말 시스템에 접
 help(type)
 ```
 
-Output:
-
-```plaintext
+```output
 Help on class type in module builtins:
 
 class type(object)
@@ -55,9 +53,7 @@ class type(object)
 help(str)
 ```
 
-Output:
-
-```plaintext
+```output
 Help on class str in module builtins:
 
 class str(object)
@@ -80,9 +76,7 @@ class str(object)
 help(help)
 ```
 
-Output:
-
-```plaintext
+```output
 Help on _Helper in module _sitebuiltins object:
 
 class _Helper(builtins.object)

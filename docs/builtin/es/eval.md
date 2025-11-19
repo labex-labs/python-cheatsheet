@@ -26,9 +26,7 @@ La función `eval()` en Python es una función incorporada que analiza una caden
 eval('1 + 4')
 ```
 
-Salida:
-
-```plaintext
+```output
 5
 ```
 
@@ -36,9 +34,7 @@ Salida:
 eval('print("Hello World!")')
 ```
 
-Salida:
-
-```plaintext
+```output
 Hello World!
 ```
 
@@ -47,9 +43,7 @@ x = 10
 eval('x == 10')
 ```
 
-Salida:
-
-```plaintext
+```output
 True
 ```
 

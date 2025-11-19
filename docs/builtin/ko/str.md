@@ -29,9 +29,7 @@ print(from_integer)
 print(type(from_integer))
 ```
 
-출력:
-
-```plaintext
+```output
 29
 <class 'str'>
 ```
@@ -43,9 +41,7 @@ print(from_float)
 print(type(from_float))
 ```
 
-출력:
-
-```plaintext
+```output
 -3.14
 <class 'str'>
 ```
@@ -55,9 +51,7 @@ print(type(from_float))
 str()
 ```
 
-출력:
-
-```plaintext
+```output
 ''
 ```
 

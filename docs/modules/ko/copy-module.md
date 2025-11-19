@@ -34,9 +34,7 @@ b = copy.copy(a)
 a
 ```
 
-출력:
-
-```plaintext
+```output
 [[1], [2], [3]]
 ```
 
@@ -44,17 +42,13 @@ a
 b
 ```
 
-출력:
-
-```plaintext
+```output
 [[1], [2], [3]]
 ```
 
 ### copy 모듈을 가져오지 않으면 사용할 수 없습니다
 
-출력:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'copy' is not defined
@@ -80,9 +74,7 @@ a[1] = None
 a
 ```
 
-출력:
-
-```plaintext
+```output
 [[0], None, [3]]
 ```
 
@@ -90,9 +82,7 @@ a
 b
 ```
 
-출력:
-
-```plaintext
+```output
 [[1], [2], [3]]
 ```
 

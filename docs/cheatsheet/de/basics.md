@@ -43,9 +43,7 @@ Beispiele für Ausdrücke:
 2 + 3 * 6
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 20
 ```
 
@@ -55,9 +53,7 @@ Ausgabe:
 (2 + 3) * 6
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 30
 ```
 
@@ -65,9 +61,7 @@ Ausgabe:
 2 ** 8
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 256
 ```
 
@@ -75,9 +69,7 @@ Ausgabe:
 23 // 7
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 3
 ```
 
@@ -85,9 +77,7 @@ Ausgabe:
 23 % 7
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 2
 ```
 
@@ -95,9 +85,7 @@ Ausgabe:
 (5 - 1) * ((7 + 1) / (3 - 1))
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 16.0
 ```
 
@@ -122,9 +110,7 @@ greeting += ' world!'
 greeting
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'Hello world!'
 ```
 
@@ -135,9 +121,7 @@ number += 1
 number
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 2
 ```
 
@@ -148,9 +132,7 @@ my_list *= 3
 my_list
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 ['item', 'item', 'item']
 ```
 
@@ -166,9 +148,7 @@ Beispiel:
 print(my_var:="Hello World!")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Hello World!
 ```
 
@@ -177,9 +157,7 @@ my_var="Yes"
 print(my_var)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Yes
 ```
 
@@ -187,9 +165,7 @@ Yes
 print(my_var:="Hello")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Hello
 ```
 
@@ -261,9 +237,7 @@ String-Konkatenation:
 'Alice' 'Bob'
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'AliceBob'
 ```
 
@@ -274,9 +248,7 @@ String-Replikation:
 'Alice' * 5
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'AliceAliceAliceAliceAlice'
 ```
 
@@ -363,9 +335,7 @@ Die Funktion `print()` schreibt den Wert des ihr übergebenen Arguments/der ihr 
 print('Hello world!')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Hello world!
 ```
 
@@ -374,9 +344,7 @@ a = 1
 print('Hello world!', a)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Hello world! 1
 ```
 
@@ -391,9 +359,7 @@ for word in phrase:
     print(word, end='-')  # Verwenden Sie '-' anstelle eines Zeilenumbruchs
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 printed-with-a-dash-in-between-
 ```
 
@@ -406,9 +372,7 @@ Das Schlüsselwort `sep` gibt an, wie die Objekte getrennt werden sollen, wenn e
 print('cats', 'dogs', 'mice', sep=',')  # Komma-getrennte Ausgabe
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 cats,dogs,mice
 ```
 
@@ -423,9 +387,7 @@ my_name = input()  # Warten, bis der Benutzer tippt und Enter drückt
 print('Hi, {}'.format(my_name))
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 What is your name?
 Martha
 Hi, Martha
@@ -438,9 +400,7 @@ my_name = input('What is your name? ')  # Standardnachricht
 print('Hi, {}'.format(my_name))
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```
@@ -453,9 +413,7 @@ my_name = input('What is your name? ')  # Eingabeaufforderung und Lesen in einem
 print(f'Hi, {my_name}')  # f-string für String-Formatierung
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```
@@ -469,9 +427,7 @@ Evaluierung ergibt den ganzzahligen Wert der Anzahl der Zeichen in einer Zeichen
 len('hello')  # Gibt 5 zurück
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 5
 ```
 
@@ -480,9 +436,7 @@ Ausgabe:
 len(['cat', 3, 'dog'])  # Gibt 3 zurück (drei Elemente)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 3
 ```
 
@@ -504,9 +458,7 @@ if len(a) > 0:  # ergibt True
     print("the list is not empty!")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 the list is not empty!
 ```
 
@@ -516,9 +468,7 @@ if a:  # ergibt True, wenn die Liste nicht leer ist
     print("the list is not empty!")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 the list is not empty!
 ```
 
@@ -531,9 +481,7 @@ Diese Funktionen ermöglichen es Ihnen, den Typ der Variablen zu ändern. Sie k�
 str(29)  # Gibt '29' zurück
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '29'
 ```
 
@@ -541,9 +489,7 @@ Ausgabe:
 str(-3.14)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '-3.14'
 ```
 
@@ -554,9 +500,7 @@ Oder von einem `String` in einen `Integer` oder `Float`:
 int('11')  # Gibt 11 zurück
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 11
 ```
 
@@ -565,9 +509,7 @@ Ausgabe:
 float('3.14')  # Gibt 3.14 zurück
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 3.14
 ```
 

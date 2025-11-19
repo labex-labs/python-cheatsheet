@@ -26,9 +26,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 furniture[0]  # 返回第一个元素：'table'
 ```
 
-输出：
-
-```plaintext
+```output
 'table'
 ```
 
@@ -36,9 +34,7 @@ furniture[0]  # 返回第一个元素：'table'
 furniture[1]
 ```
 
-输出：
-
-```plaintext
+```output
 'chair'
 ```
 
@@ -46,9 +42,7 @@ furniture[1]
 furniture[2]
 ```
 
-输出：
-
-```plaintext
+```output
 'rack'
 ```
 
@@ -56,9 +50,7 @@ furniture[2]
 furniture[3]
 ```
 
-输出：
-
-```plaintext
+```output
 'shelf'
 ```
 
@@ -71,9 +63,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 furniture[-1]  # 返回最后一个元素：'shelf'
 ```
 
-输出：
-
-```plaintext
+```output
 'shelf'
 ```
 
@@ -81,9 +71,7 @@ furniture[-1]  # 返回最后一个元素：'shelf'
 furniture[-3]
 ```
 
-输出：
-
-```plaintext
+```output
 'chair'
 ```
 
@@ -91,9 +79,7 @@ furniture[-3]
 f'The {furniture[-1]} is bigger than the {furniture[-3]}'
 ```
 
-输出：
-
-```plaintext
+```output
 'The shelf is bigger than the chair'
 ```
 
@@ -106,9 +92,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 furniture[0:4]  # 返回索引 0 到 3 的元素（不包含 4）
 ```
 
-输出：
-
-```plaintext
+```output
 ['table', 'chair', 'rack', 'shelf']
 ```
 
@@ -116,9 +100,7 @@ furniture[0:4]  # 返回索引 0 到 3 的元素（不包含 4）
 furniture[1:3]
 ```
 
-输出：
-
-```plaintext
+```output
 ['chair', 'rack']
 ```
 
@@ -126,9 +108,7 @@ furniture[1:3]
 furniture[0:-1]
 ```
 
-输出：
-
-```plaintext
+```output
 ['table', 'chair', 'rack']
 ```
 
@@ -137,9 +117,7 @@ furniture[0:-1]
 furniture[:2]  # 返回前两个元素
 ```
 
-输出：
-
-```plaintext
+```output
 ['table', 'chair']
 ```
 
@@ -148,9 +126,7 @@ furniture[:2]  # 返回前两个元素
 furniture[1:]  # 返回从索引 1 到末尾的所有元素
 ```
 
-输出：
-
-```plaintext
+```output
 ['chair', 'rack', 'shelf']
 ```
 
@@ -158,9 +134,7 @@ furniture[1:]  # 返回从索引 1 到末尾的所有元素
 furniture[:]
 ```
 
-输出：
-
-```plaintext
+```output
 ['table', 'chair', 'rack', 'shelf']
 ```
 
@@ -173,9 +147,7 @@ spam2 = spam[:]  # 创建一个副本，而不是引用
 spam2
 ```
 
-输出：
-
-```plaintext
+```output
 ['cat', 'bat', 'rat', 'elephant']
 ```
 
@@ -184,9 +156,7 @@ spam.append('dog')
 spam
 ```
 
-输出：
-
-```plaintext
+```output
 ['cat', 'bat', 'rat', 'elephant', 'dog']
 ```
 
@@ -194,9 +164,7 @@ spam
 spam2
 ```
 
-输出：
-
-```plaintext
+```output
 ['cat', 'bat', 'rat', 'elephant']
 ```
 
@@ -208,9 +176,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 len(furniture)  # 返回 4
 ```
 
-输出：
-
-```plaintext
+```output
 4
 ```
 
@@ -224,9 +190,7 @@ furniture[0] = 'desk'  # 替换第一个元素
 furniture
 ```
 
-输出：
-
-```plaintext
+```output
 ['desk', 'chair', 'rack', 'shelf']
 ```
 
@@ -235,9 +199,7 @@ furniture[2] = furniture[1]
 furniture
 ```
 
-输出：
-
-```plaintext
+```output
 ['desk', 'chair', 'chair', 'shelf']
 ```
 
@@ -246,9 +208,7 @@ furniture[-1] = 'bed'
 furniture
 ```
 
-输出：
-
-```plaintext
+```output
 ['desk', 'chair', 'chair', 'bed']
 ```
 
@@ -259,9 +219,7 @@ furniture
 [1, 2, 3] + ['A', 'B', 'C']  # 返回 [1, 2, 3, 'A', 'B', 'C']
 ```
 
-输出：
-
-```plaintext
+```output
 [1, 2, 3, 'A', 'B', 'C']
 ```
 
@@ -270,9 +228,7 @@ furniture
 ['X', 'Y', 'Z'] * 3  # 返回 ['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
 ```
 
-输出：
-
-```plaintext
+```output
 ['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
 ```
 
@@ -282,9 +238,7 @@ my_list = my_list + ['A', 'B', 'C']
 my_list
 ```
 
-输出：
-
-```plaintext
+```output
 [1, 2, 3, 'A', 'B', 'C']
 ```
 
@@ -298,9 +252,7 @@ for item in furniture:  # 遍历每个项目
     print(item)
 ```
 
-输出：
-
-```plaintext
+```output
 table
 chair
 rack
@@ -317,9 +269,7 @@ for index, item in enumerate(furniture):  # 同时获取索引和项目
     print(f'index: {index} - item: {item}')
 ```
 
-输出：
-
-```plaintext
+```output
 index: 0 - item: table
 index: 1 - item: chair
 index: 2 - item: rack
@@ -337,9 +287,7 @@ for item, amount in zip(furniture, price):  # 配对两个列表的元素
     print(f'The {item} costs ${amount}')
 ```
 
-输出：
-
-```plaintext
+```output
 The table costs $100
 The chair costs $50
 The rack costs $80
@@ -353,9 +301,7 @@ The shelf costs $40
 'rack' in ['table', 'chair', 'rack', 'shelf']  # 返回 True
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -363,9 +309,7 @@ True
 'bed' in ['table', 'chair', 'rack', 'shelf']
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -374,9 +318,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 'bed' not in furniture
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -384,9 +326,7 @@ True
 'rack' not in furniture
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -411,9 +351,7 @@ table, chair, rack, shelf = furniture
 table
 ```
 
-输出：
-
-```plaintext
+```output
 'table'
 ```
 
@@ -421,9 +359,7 @@ table
 chair
 ```
 
-输出：
-
-```plaintext
+```output
 'chair'
 ```
 
@@ -431,9 +367,7 @@ chair
 rack
 ```
 
-输出：
-
-```plaintext
+```output
 'rack'
 ```
 
@@ -441,9 +375,7 @@ rack
 shelf
 ```
 
-输出：
-
-```plaintext
+```output
 'shelf'
 ```
 
@@ -455,9 +387,7 @@ a, b = b, a
 print(a)
 ```
 
-输出：
-
-```plaintext
+```output
 chair
 ```
 
@@ -465,9 +395,7 @@ chair
 print(b)
 ```
 
-输出：
-
-```plaintext
+```output
 table
 ```
 
@@ -480,9 +408,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 furniture.index('chair')
 ```
 
-输出：
-
-```plaintext
+```output
 1
 ```
 
@@ -498,9 +424,7 @@ furniture.append('bed')
 furniture
 ```
 
-输出：
-
-```plaintext
+```output
 ['table', 'chair', 'rack', 'shelf', 'bed']
 ```
 
@@ -514,9 +438,7 @@ furniture.insert(1, 'bed')
 furniture
 ```
 
-输出：
-
-```plaintext
+```output
 ['table', 'bed', 'chair', 'rack', 'shelf']
 ```
 
@@ -532,9 +454,7 @@ del furniture[2]
 furniture
 ```
 
-输出：
-
-```plaintext
+```output
 ['table', 'chair', 'shelf']
 ```
 
@@ -543,9 +463,7 @@ del furniture[2]
 furniture
 ```
 
-输出：
-
-```plaintext
+```output
 ['table', 'chair']
 ```
 
@@ -559,9 +477,7 @@ furniture.remove('chair')
 furniture
 ```
 
-输出：
-
-```plaintext
+```output
 ['table', 'rack', 'shelf']
 ```
 
@@ -584,9 +500,7 @@ animals = ['cat', 'bat', 'rat', 'elephant']
 animals.pop()
 ```
 
-输出：
-
-```plaintext
+```output
 'elephant'
 ```
 
@@ -594,9 +508,7 @@ animals.pop()
 animals
 ```
 
-输出：
-
-```plaintext
+```output
 ['cat', 'bat', 'rat']
 ```
 
@@ -604,9 +516,7 @@ animals
 animals.pop(0)
 ```
 
-输出：
-
-```plaintext
+```output
 'cat'
 ```
 
@@ -614,9 +524,7 @@ animals.pop(0)
 animals
 ```
 
-输出：
-
-```plaintext
+```output
 ['bat', 'rat']
 ```
 
@@ -628,9 +536,7 @@ numbers.sort()
 numbers
 ```
 
-输出：
-
-```plaintext
+```output
 [-7, 1, 2, 3.14, 5]
 ```
 
@@ -640,9 +546,7 @@ furniture.sort()
 furniture
 ```
 
-输出：
-
-```plaintext
+```output
 ['chair', 'rack', 'shelf', 'table']
 ```
 
@@ -653,9 +557,7 @@ furniture.sort(reverse=True)
 furniture
 ```
 
-输出：
-
-```plaintext
+```output
 ['table', 'shelf', 'rack', 'chair']
 ```
 
@@ -667,9 +569,7 @@ letters.sort(key=str.lower)
 letters
 ```
 
-输出：
-
-```plaintext
+```output
 ['a', 'A', 'z', 'Z']
 ```
 
@@ -680,9 +580,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 sorted(furniture)
 ```
 
-输出：
-
-```plaintext
+```output
 ['chair', 'rack', 'shelf', 'table']
 ```
 
@@ -703,9 +601,7 @@ furniture = ('table', 'chair', 'rack', 'shelf')
 furniture[0]
 ```
 
-输出：
-
-```plaintext
+```output
 'table'
 ```
 
@@ -713,9 +609,7 @@ furniture[0]
 furniture[1:3]
 ```
 
-输出：
-
-```plaintext
+```output
 ('chair', 'rack')
 ```
 
@@ -723,9 +617,7 @@ furniture[1:3]
 len(furniture)
 ```
 
-输出：
-
-```plaintext
+```output
 4
 ```
 
@@ -737,9 +629,7 @@ len(furniture)
 tuple(['cat', 'dog', 5])
 ```
 
-输出：
-
-```plaintext
+```output
 ('cat', 'dog', 5)
 ```
 
@@ -747,9 +637,7 @@ tuple(['cat', 'dog', 5])
 list(('cat', 'dog', 5))
 ```
 
-输出：
-
-```plaintext
+```output
 ['cat', 'dog', 5]
 ```
 
@@ -757,9 +645,7 @@ list(('cat', 'dog', 5))
 list('hello')
 ```
 
-输出：
-
-```plaintext
+```output
 ['h', 'e', 'l', 'l', 'o']
 ```
 

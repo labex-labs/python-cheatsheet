@@ -30,9 +30,7 @@ reversed_list = list(reversed(my_list))
 print(reversed_list)
 ```
 
-输出：
-
-```plaintext
+```output
 [5, 4, 3, 2, 1]
 ```
 
@@ -43,9 +41,7 @@ for char in reversed("hello"):
     print(char)
 ```
 
-输出：
-
-```plaintext
+```output
 o
 l
 l
@@ -62,9 +58,7 @@ print(next(i))
 print(next(i))
 ```
 
-输出：
-
-```plaintext
+```output
 3
 2
 1

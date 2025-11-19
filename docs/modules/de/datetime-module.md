@@ -29,9 +29,7 @@ obj = date(2022, 12, 1)
 obj.year
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 2022
 ```
 
@@ -39,9 +37,7 @@ Ausgabe:
 obj.month
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 12
 ```
 
@@ -49,9 +45,7 @@ Ausgabe:
 obj.day
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 1
 ```
 
@@ -71,9 +65,7 @@ obj = time(10, 20, 33)
 obj.hour
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 10
 ```
 
@@ -81,9 +73,7 @@ Ausgabe:
 obj.second
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 33
 ```
 
@@ -91,9 +81,7 @@ Ausgabe:
 obj.microsecond
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 0
 ```
 
@@ -113,9 +101,7 @@ obj = datetime(2024, 12, 1, 15, 35, 59)
 obj.year
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 2024
 ```
 
@@ -123,9 +109,7 @@ Ausgabe:
 obj.month
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 12
 ```
 
@@ -133,9 +117,7 @@ Ausgabe:
 obj.day
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 1
 ```
 
@@ -143,9 +125,7 @@ Ausgabe:
 obj.hour
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 15
 ```
 
@@ -153,9 +133,7 @@ Ausgabe:
 obj.second
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 59
 ```
 
@@ -170,9 +148,7 @@ now = datetime.now()
 now
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 datetime.datetime(2022, 7, 23, 19, 56, 49, 589806)
 ```
 
@@ -182,9 +158,7 @@ Da das zurückgegebene Objekt ein `datetime` ist, können wir sowohl auf die `da
 now.date()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 datetime.date(2022, 7, 23)
 ```
 
@@ -192,9 +166,7 @@ datetime.date(2022, 7, 23)
 now.time()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 datetime.time(19, 56, 49, 589806)
 ```
 
@@ -202,9 +174,7 @@ datetime.time(19, 56, 49, 589806)
 now.year
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 2022
 ```
 
@@ -212,9 +182,7 @@ Ausgabe:
 now.month
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 7
 ```
 
@@ -222,9 +190,7 @@ Ausgabe:
 now.day
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 23
 ```
 
@@ -232,9 +198,7 @@ Ausgabe:
 now.hour
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 19
 ```
 
@@ -242,9 +206,7 @@ Ausgabe:
 now.minute
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 56
 ```
 
@@ -252,9 +214,7 @@ Ausgabe:
 now.second
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 49
 ```
 
@@ -262,9 +222,7 @@ Ausgabe:
 now.microsecond
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 589806
 ```
 
@@ -276,9 +234,7 @@ from datetime import datetime, timezone
 datetime.now(timezone.utc)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 datetime.datetime(2022, 7, 24, 0, 20, 8, 265634, tzinfo=datetime.timezone.utc)
 ```
 
@@ -299,9 +255,7 @@ now = datetime.now()
 now
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 datetime.datetime(2022, 7, 23, 20, 31, 19, 751479)
 ```
 
@@ -310,9 +264,7 @@ datetime.datetime(2022, 7, 23, 20, 31, 19, 751479)
 now.strftime("%d-%b-%Y")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '23-Jul-2022'
 ```
 
@@ -321,9 +273,7 @@ Ausgabe:
 now.strftime("%d-%m-%Y")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '23-07-2022'
 ```
 
@@ -332,9 +282,7 @@ Ausgabe:
 now.strftime("%m/%d/%Y")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '07/23/2022'
 ```
 
@@ -343,9 +291,7 @@ Ausgabe:
 now.strftime("%b/%d/%Y - %H:%M:%S")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'Jul/23/2022 - 20:31:19'
 ```
 
@@ -372,9 +318,7 @@ datetime_str = '12-Jul-2023'
 datetime.strptime(datetime_str, '%d-%b-%Y')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 datetime.datetime(2023, 7, 12, 0, 0)
 ```
 
@@ -384,9 +328,7 @@ datetime_str = 'Jul/12/2023 - 14:38:37'
 datetime.strptime(datetime_str, "%b/%d/%Y - %H:%M:%S")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 datetime.datetime(2023, 7, 12, 14, 38, 37)
 ```
 
@@ -435,9 +377,7 @@ difference = date_2 - date_1
 difference
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 datetime.timedelta(days=173)
 ```
 
@@ -446,9 +386,7 @@ datetime.timedelta(days=173)
 difference.days
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 173
 ```
 
@@ -462,9 +400,7 @@ now = datetime.now()
 now
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 datetime.datetime(2022, 7, 23, 21, 25, 2, 341081)
 ```
 
@@ -473,9 +409,7 @@ datetime.datetime(2022, 7, 23, 21, 25, 2, 341081)
 now + timedelta(days=10, seconds=15)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 datetime.datetime(2022, 8, 2, 21, 25, 17, 341081)
 ```
 
@@ -489,9 +423,7 @@ now = datetime.now()
 now
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 datetime.datetime(2022, 7, 23, 21, 25, 2, 341081)
 ```
 
@@ -500,9 +432,7 @@ datetime.datetime(2022, 7, 23, 21, 25, 2, 341081)
 now - timedelta(days=10, seconds=15)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 datetime.datetime(2022, 7, 13, 21, 59, 41, 100883)
 ```
 

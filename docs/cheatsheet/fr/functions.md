@@ -34,9 +34,7 @@ def say_hello(name):
 say_hello('Carlos')
 ```
 
-Sortie :
-
-```plaintext
+```output
 Hello Carlos
 ```
 
@@ -44,9 +42,7 @@ Hello Carlos
 say_hello('Wanda')
 ```
 
-Sortie :
-
-```plaintext
+```output
 Hello Wanda
 ```
 
@@ -54,9 +50,7 @@ Hello Wanda
 say_hello('Rose')
 ```
 
-Sortie :
-
-```plaintext
+```output
 Hello Rose
 ```
 
@@ -73,9 +67,7 @@ def say_hi(name, greeting):
 say_hi('John', 'Hello')
 ```
 
-Sortie :
-
-```plaintext
+```output
 Hello John
 ```
 
@@ -84,9 +76,7 @@ Hello John
 say_hi(name='Anna', greeting='Hi')
 ```
 
-Sortie :
-
-```plaintext
+```output
 Hi Anna
 ```
 
@@ -108,9 +98,7 @@ result = sum_two_numbers(7, 8)
 print(result)
 ```
 
-Sortie :
-
-```plaintext
+```output
 15
 ```
 
@@ -138,9 +126,7 @@ def some_function():
 print(local_variable)
 ```
 
-Sortie :
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 10, in <module>
 NameError: name 'local_variable' is not defined
@@ -161,9 +147,7 @@ spam()  # La fonction modifie la variable globale
 print(eggs)  # Affiche 'spam', pas 'global'
 ```
 
-Sortie :
-
-```plaintext
+```output
 spam
 ```
 
@@ -209,9 +193,7 @@ def add(x, y):
 add(5, 3)
 ```
 
-Sortie :
-
-```plaintext
+```output
 8
 ```
 
@@ -224,9 +206,7 @@ add = lambda x, y: x + y
 add(5, 3)
 ```
 
-Sortie :
-
-```plaintext
+```output
 8
 ```
 
@@ -244,9 +224,7 @@ plus_5 = make_adder(5)  # Retourne lambda qui ajoute 5
 plus_3(4)  # Retourne 4 + 3 = 7
 ```
 
-Sortie :
-
-```plaintext
+```output
 7
 ```
 
@@ -254,9 +232,7 @@ Sortie :
 plus_5(4)
 ```
 
-Sortie :
-
-```plaintext
+```output
 9
 ```
 

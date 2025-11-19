@@ -43,9 +43,7 @@ Python 기초
 2 + 3 * 6
 ```
 
-출력:
-
-```plaintext
+```output
 20
 ```
 
@@ -55,9 +53,7 @@ Python 기초
 (2 + 3) * 6
 ```
 
-출력:
-
-```plaintext
+```output
 30
 ```
 
@@ -65,9 +61,7 @@ Python 기초
 2 ** 8
 ```
 
-출력:
-
-```plaintext
+```output
 256
 ```
 
@@ -75,9 +69,7 @@ Python 기초
 23 // 7
 ```
 
-출력:
-
-```plaintext
+```output
 3
 ```
 
@@ -85,9 +77,7 @@ Python 기초
 23 % 7
 ```
 
-출력:
-
-```plaintext
+```output
 2
 ```
 
@@ -95,9 +85,7 @@ Python 기초
 (5 - 1) * ((7 + 1) / (3 - 1))
 ```
 
-출력:
-
-```plaintext
+```output
 16.0
 ```
 
@@ -122,9 +110,7 @@ greeting += ' world!'
 greeting
 ```
 
-출력:
-
-```plaintext
+```output
 'Hello world!'
 ```
 
@@ -135,9 +121,7 @@ number += 1
 number
 ```
 
-출력:
-
-```plaintext
+```output
 2
 ```
 
@@ -148,9 +132,7 @@ my_list *= 3
 my_list
 ```
 
-출력:
-
-```plaintext
+```output
 ['item', 'item', 'item']
 ```
 
@@ -166,9 +148,7 @@ my_list
 print(my_var:="Hello World!")
 ```
 
-출력:
-
-```plaintext
+```output
 Hello World!
 ```
 
@@ -177,9 +157,7 @@ my_var="Yes"
 print(my_var)
 ```
 
-출력:
-
-```plaintext
+```output
 Yes
 ```
 
@@ -187,9 +165,7 @@ Yes
 print(my_var:="Hello")
 ```
 
-출력:
-
-```plaintext
+```output
 Hello
 ```
 
@@ -261,9 +237,7 @@ unique_ids = {1, 2, 3}     # set
 'Alice' 'Bob'
 ```
 
-출력:
-
-```plaintext
+```output
 'AliceBob'
 ```
 
@@ -274,9 +248,7 @@ unique_ids = {1, 2, 3}     # set
 'Alice' * 5
 ```
 
-출력:
-
-```plaintext
+```output
 'AliceAliceAliceAliceAlice'
 ```
 
@@ -363,9 +335,7 @@ def foo():
 print('Hello world!')
 ```
 
-출력:
-
-```plaintext
+```output
 Hello world!
 ```
 
@@ -374,9 +344,7 @@ a = 1
 print('Hello world!', a)
 ```
 
-출력:
-
-```plaintext
+```output
 Hello world! 1
 ```
 
@@ -391,9 +359,7 @@ for word in phrase:
     print(word, end='-')  # 줄 바꿈 대신 '-' 사용
 ```
 
-출력:
-
-```plaintext
+```output
 printed-with-a-dash-in-between-
 ```
 
@@ -406,9 +372,7 @@ printed-with-a-dash-in-between-
 print('cats', 'dogs', 'mice', sep=',')  # 쉼표로 구분된 출력
 ```
 
-출력:
-
-```plaintext
+```output
 cats,dogs,mice
 ```
 
@@ -423,9 +387,7 @@ my_name = input()  # 사용자가 입력하고 Enter 를 누를 때까지 기다
 print('Hi, {}'.format(my_name))
 ```
 
-출력:
-
-```plaintext
+```output
 What is your name?
 Martha
 Hi, Martha
@@ -438,9 +400,7 @@ my_name = input('What is your name? ')  # 기본 메시지
 print('Hi, {}'.format(my_name))
 ```
 
-출력:
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```
@@ -453,9 +413,7 @@ my_name = input('What is your name? ')  # 한 번의 호출로 프롬프트 및 
 print(f'Hi, {my_name}')  # 문자열 서식 지정을 위한 f-string
 ```
 
-출력:
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```
@@ -469,9 +427,7 @@ Hi, Martha
 len('hello')  # 5 를 반환합니다
 ```
 
-출력:
-
-```plaintext
+```output
 5
 ```
 
@@ -480,9 +436,7 @@ len('hello')  # 5 를 반환합니다
 len(['cat', 3, 'dog'])  # 3 을 반환합니다 (세 개의 항목)
 ```
 
-출력:
-
-```plaintext
+```output
 3
 ```
 
@@ -503,9 +457,7 @@ if len(a) > 0:  # True 로 평가됨
     print("the list is not empty!")
 ```
 
-출력:
-
-```plaintext
+```output
 the list is not empty!
 ```
 
@@ -515,9 +467,7 @@ if a:  # 리스트가 비어 있지 않으면 True 로 평가됨
     print("the list is not empty!")
 ```
 
-출력:
-
-```plaintext
+```output
 the list is not empty!
 ```
 
@@ -530,9 +480,7 @@ the list is not empty!
 str(29)  # '29'를 반환합니다
 ```
 
-출력:
-
-```plaintext
+```output
 '29'
 ```
 
@@ -540,9 +488,7 @@ str(29)  # '29'를 반환합니다
 str(-3.14)
 ```
 
-출력:
-
-```plaintext
+```output
 '-3.14'
 ```
 
@@ -553,9 +499,7 @@ str(-3.14)
 int('11')  # 11 을 반환합니다
 ```
 
-출력:
-
-```plaintext
+```output
 11
 ```
 
@@ -564,9 +508,7 @@ int('11')  # 11 을 반환합니다
 float('3.14')  # 3.14 를 반환합니다
 ```
 
-출력:
-
-```plaintext
+```output
 3.14
 ```
 

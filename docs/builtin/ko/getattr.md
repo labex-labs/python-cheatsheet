@@ -53,9 +53,7 @@ value = getattr(obj, 'attribute', 'Nothing found')
 print(value)
 ```
 
-출력:
-
-```plaintext
+```output
 Hello, World!
 ```
 

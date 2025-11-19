@@ -33,9 +33,7 @@ print(issubclass(Second, First))
 print(issubclass(First, Second))
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 False
 ```

@@ -32,9 +32,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 2
 ```
 
@@ -42,9 +40,7 @@ Ausgabe:
 divide(dividend=10, divisor=0)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
@@ -63,9 +59,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 2
 ```
 
@@ -73,9 +67,7 @@ Ausgabe:
 divide(dividend=10, divisor=0)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Sie können nicht durch 0 teilen
 ```
 
@@ -97,9 +89,7 @@ def divide(dividend , divisor):
 divide(dividend=20, divisor=5)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 4
 ```
 
@@ -107,9 +97,7 @@ Ausgabe:
 divide(dividend=10, divisor=5)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 can only concatenate str (not "int") to str
 ```
 
@@ -117,9 +105,7 @@ can only concatenate str (not "int") to str
 divide(dividend=10, divisor=0)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 division by zero
 ```
 
@@ -140,9 +126,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 2.0
 Ausführung beendet
 ```
@@ -151,9 +135,7 @@ Ausführung beendet
 divide(dividend=10, divisor=0)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Sie können nicht durch 0 teilen
 Ausführung beendet
 ```
@@ -170,9 +152,7 @@ class MyCustomException(Exception):
 raise MyCustomException  # Löst die benutzerdefinierte Ausnahme aus
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException
@@ -187,9 +167,7 @@ class MyCustomException(Exception):
 raise MyCustomException('Eine benutzerdefinierte Nachricht für meine benutzerdefinierte Ausnahme')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException: Eine benutzerdefinierte Nachricht für meine benutzerdefinierte Ausnahme
@@ -204,9 +182,7 @@ except MyCustomException:
     print('Meine benutzerdefinierte Ausnahme wurde ausgelöst')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Meine benutzerdefinierte Ausnahme wurde ausgelöst
 ```
 

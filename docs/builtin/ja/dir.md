@@ -39,9 +39,7 @@ def my_function():
 print(dir())
 ```
 
-出力：
-
-```plaintext
+```output
 ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'a', 'b', 'my_function']
 ```
 
@@ -52,9 +50,7 @@ import math
 print(dir(math))
 ```
 
-出力：
-
-```plaintext
+```output
 ['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', ... ]
 ```
 
@@ -70,9 +66,7 @@ obj = MyClass()
 print(dir(obj))
 ```
 
-出力：
-
-```plaintext
+```output
 ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', ... 'x', 'y']
 ```
 
@@ -83,9 +77,7 @@ my_list = [1, 2, 3]
 print(dir(my_list))
 ```
 
-出力：
-
-```plaintext
+```output
 [..., 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
 ```
 
@@ -96,9 +88,7 @@ import math
 print([name for name in dir(math) if not name.startswith("__")])
 ```
 
-出力：
-
-```plaintext
+```output
 ['acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', ... ]
 ```
 

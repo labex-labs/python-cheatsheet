@@ -32,9 +32,7 @@ print(divmod(10, 2))
 print(divmod(7, 2))
 ```
 
-Saída:
-
-```plaintext
+```output
 3
 1
 (1, 0)

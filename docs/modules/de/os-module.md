@@ -33,9 +33,7 @@ import os
 os.path.join('usr', 'bin', 'spam')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 usr\bin\spam
 ```
 
@@ -49,9 +47,7 @@ for filename in my_files:
     print(os.path.join('/home/labex/project', filename))
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 /home/labex/project/accounts.txt
 /home/labex/project/details.csv
 /home/labex/project/invite.docx
@@ -66,9 +62,7 @@ import os
 os.getcwd()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -80,9 +74,7 @@ os.chdir('/usr/bin')
 os.getcwd()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 /usr/bin
 ```
 
@@ -113,9 +105,7 @@ import os
 os.path.isabs('/')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -124,9 +114,7 @@ True
 os.path.isabs('..')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -138,9 +126,7 @@ import os
 os.getcwd()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -149,9 +135,7 @@ Ausgabe:
 os.path.abspath('..')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 /home
 ```
 
@@ -165,9 +149,7 @@ import os
 os.path.relpath('/etc/passwd', '/')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 etc/passwd
 ```
 
@@ -182,9 +164,7 @@ import os
 os.path.exists('.')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -192,9 +172,7 @@ True
 os.path.exists('setup.py')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -202,9 +180,7 @@ True
 os.path.exists('/etc')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -212,9 +188,7 @@ True
 os.path.exists('nonexistentfile')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -227,9 +201,7 @@ import os
 os.path.isfile('setup.py')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -237,9 +209,7 @@ True
 os.path.isfile('/home')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -247,9 +217,7 @@ False
 os.path.isfile('nonexistentfile')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -262,9 +230,7 @@ import os
 os.path.isdir('/')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -272,9 +238,7 @@ True
 os.path.isdir('setup.py')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -282,9 +246,7 @@ False
 os.path.isdir('/spam')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -297,9 +259,7 @@ import os
 os.path.getsize('/usr/bin/python3')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 776192
 ```
 
@@ -312,9 +272,7 @@ import os
 os.listdir('/usr/bin')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 ['0409', '12520437.cpx', '12520850.cpx', '5U877.ax', 'aaclient.dll',
 --snip--
 'xwtpdui.dll', 'xwtpw32.dll', 'zh-CN', 'zh-HK', 'zh-TW', 'zipfldr.dll']
@@ -342,9 +300,7 @@ for filename in os.listdir('/usr/bin'):
 print(total_size)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 1117846456
 ```
 
@@ -371,9 +327,7 @@ for folder_name, subfolders, filenames in os.walk('/tmp/delicious'):
     print('')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Der aktuelle Ordner ist /tmp/delicious
 UNTERORDNER VON /tmp/delicious: cats
 UNTERORDNER VON /tmp/delicious: walnut

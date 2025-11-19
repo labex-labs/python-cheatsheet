@@ -29,9 +29,7 @@ len('hello')
 len(['cat', 3, 'dog'])
 ```
 
-Saída:
-
-```plaintext
+```output
 5
 3
 ```
@@ -58,9 +56,7 @@ if a:  # avalia para True
     print("a lista não está vazia!")
 ```
 
-Saída:
-
-```plaintext
+```output
 a lista não está vazia!
 a lista não está vazia!
 ```

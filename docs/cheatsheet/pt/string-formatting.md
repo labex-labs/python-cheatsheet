@@ -36,9 +36,7 @@ name = 'Pete'
 'Hello %s' % name  # %s = placeholder de string
 ```
 
-Output:
-
-```plaintext
+```output
 "Hello Pete"
 ```
 
@@ -49,9 +47,7 @@ num = 5
 'I have %d apples' % num
 ```
 
-Output:
-
-```plaintext
+```output
 "I have 5 apples"
 ```
 
@@ -67,9 +63,7 @@ age = 20
 "Hello I'm {}, my age is {}".format(name, age)  # {} = placeholder
 ```
 
-Output:
-
-```plaintext
+```output
 "Hello I'm John, my age is 20"
 ```
 
@@ -77,9 +71,7 @@ Output:
 "Hello I'm {0}, my age is {1}".format(name, age)
 ```
 
-Output:
-
-```plaintext
+```output
 "Hello I'm John, my age is 20"
 ```
 
@@ -102,9 +94,7 @@ name = 'Elizabeth'
 f'Hello {name}!'  # prefixo f permite expressões em {}
 ```
 
-Output:
-
-```plaintext
+```output
 'Hello Elizabeth!'
 ```
 
@@ -117,9 +107,7 @@ b = 10
 f'Five plus ten is {a + b} and not {2 * (a + b)}.'  # Avalia expressões
 ```
 
-Output:
-
-```plaintext
+```output
 'Five plus ten is 15 and not 30.'
 ```
 
@@ -134,9 +122,7 @@ f'You have {messages} unread messages'
 )
 ```
 
-Output:
-
-```plaintext
+```output
 'Hi, Robert. You have 12 unread messages'
 ```
 
@@ -151,9 +137,7 @@ now = datetime.now().strftime("%b/%d/%Y - %H:%M:%S")
 f'date and time: {now=}'  # Imprime "now='Nov/14/2022 - 20:50:01'"
 ```
 
-Output:
-
-```plaintext
+```output
 "date and time: now='Nov/14/2022 - 20:50:01'"
 ```
 
@@ -164,9 +148,7 @@ name = 'Robert'
 f"{name.upper() = :-^20}"
 ```
 
-Output:
-
-```plaintext
+```output
 'name.upper() = -------ROBERT-------'
 ```
 
@@ -174,9 +156,7 @@ Output:
 f"{name.upper() = :^20}"
 ```
 
-Output:
-
-```plaintext
+```output
 'name.upper() =        ROBERT       '
 ```
 
@@ -184,9 +164,7 @@ Output:
 f"{name.upper() = :20}"
 ```
 
-Output:
-
-```plaintext
+```output
 'name.upper() = ROBERT              '
 ```
 
@@ -199,9 +177,7 @@ a = 10000000
 f"{a:,}"
 ```
 
-Output:
-
-```plaintext
+```output
 '10,000,000'
 ```
 
@@ -212,9 +188,7 @@ a = 3.1415926
 f"{a:.2f}"
 ```
 
-Output:
-
-```plaintext
+```output
 '3.14'
 ```
 
@@ -225,9 +199,7 @@ a = 0.816562
 f"{a:.2%}"
 ```
 
-Output:
-
-```plaintext
+```output
 '81.66%'
 ```
 
@@ -260,9 +232,7 @@ t = Template('Hey $name!')
 t.substitute(name=name)
 ```
 
-Output:
-
-```plaintext
+```output
 'Hey Elizabeth!'
 ```
 

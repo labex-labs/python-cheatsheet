@@ -62,9 +62,7 @@ mo = phone_num_regex.search('Meu número é 415-555-4242.')  # Procura pelo padr
 print(f'Número de telefone encontrado: {mo.group()}')  # group() retorna o texto correspondido
 ```
 
-Saída:
-
-```plaintext
+```output
 Número de telefone encontrado: 415-555-4242
 ```
 
@@ -78,9 +76,7 @@ mo = phone_num_regex.search('Meu número é 415-555-4242.')
 mo.group(1)  # Retorna o primeiro grupo: '415'
 ```
 
-Saída:
-
-```plaintext
+```output
 '415'
 ```
 
@@ -88,9 +84,7 @@ Saída:
 mo.group(2)
 ```
 
-Saída:
-
-```plaintext
+```output
 '555-4242'
 ```
 
@@ -98,9 +92,7 @@ Saída:
 mo.group(0)
 ```
 
-Saída:
-
-```plaintext
+```output
 '415-555-4242'
 ```
 
@@ -108,9 +100,7 @@ Saída:
 mo.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 '415-555-4242'
 ```
 
@@ -121,9 +111,7 @@ Para recuperar todos os grupos de uma vez, use o método `groups()`:
 mo.groups()  # Retorna ('415', '555-4242')
 ```
 
-Saída:
-
-```plaintext
+```output
 ('415', '555-4242')
 ```
 
@@ -133,9 +121,7 @@ area_code, main_number = mo.groups()
 print(area_code)
 ```
 
-Saída:
-
-```plaintext
+```output
 415
 ```
 
@@ -143,9 +129,7 @@ Saída:
 print(main_number)
 ```
 
-Saída:
-
-```plaintext
+```output
 555-4242
 ```
 
@@ -160,9 +144,7 @@ mo1 = hero_regex.search('Batman and Tina Fey.')
 mo1.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Batman'
 ```
 
@@ -171,9 +153,7 @@ mo2 = hero_regex.search('Tina Fey and Batman.')
 mo2.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Tina Fey'
 ```
 
@@ -186,9 +166,7 @@ mo = bat_regex.search('Batmobile lost a wheel')
 mo.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Batmobile'
 ```
 
@@ -196,9 +174,7 @@ Saída:
 mo.group(1)
 ```
 
-Saída:
-
-```plaintext
+```output
 'mobile'
 ```
 
@@ -213,9 +189,7 @@ mo1 = bat_regex.search('The Adventures of Batman')
 mo1.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Batman'
 ```
 
@@ -224,9 +198,7 @@ mo2 = bat_regex.search('The Adventures of Batwoman')
 mo2.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Batwoman'
 ```
 
@@ -240,9 +212,7 @@ mo1 = bat_regex.search('The Adventures of Batman')
 mo1.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Batman'
 ```
 
@@ -251,9 +221,7 @@ mo2 = bat_regex.search('The Adventures of Batwoman')
 mo2.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Batwoman'
 ```
 
@@ -262,9 +230,7 @@ mo3 = bat_regex.search('The Adventures of Batwowowowoman')
 mo3.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Batwowowowoman'
 ```
 
@@ -279,9 +245,7 @@ mo1 = bat_regex.search('The Adventures of Batwoman')
 mo1.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Batwoman'
 ```
 
@@ -290,9 +254,7 @@ mo2 = bat_regex.search('The Adventures of Batwowowowoman')
 mo2.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Batwowowowoman'
 ```
 
@@ -301,9 +263,7 @@ mo3 = bat_regex.search('The Adventures of Batman')
 mo3 is None
 ```
 
-Saída:
-
-```plaintext
+```output
 True
 ```
 
@@ -318,9 +278,7 @@ mo1 = ha_regex.search('HaHaHa')
 mo1.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'HaHaHa'
 ```
 
@@ -329,9 +287,7 @@ mo2 = ha_regex.search('Ha')
 mo2 is None
 ```
 
-Saída:
-
-```plaintext
+```output
 True
 ```
 
@@ -343,9 +299,7 @@ mo1 = ha_regex.search('HaHaHaHa')
 mo1.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'HaHaHa'
 ```
 
@@ -360,9 +314,7 @@ mo1 = greedy_ha_regex.search('HaHaHaHaHa')
 mo1.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'HaHaHaHaHa'
 ```
 
@@ -372,9 +324,7 @@ mo2 = non_greedy_ha_regex.search('HaHaHaHaHa')
 mo2.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'HaHaHa'
 ```
 
@@ -388,9 +338,7 @@ phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # não tem grupos
 phone_num_regex.findall('Celular: 415-555-9999 Trabalho: 212-555-0000')
 ```
 
-Saída:
-
-```plaintext
+```output
 ['415-555-9999', '212-555-0000']
 ```
 
@@ -403,9 +351,7 @@ vowel_regex = re.compile(r'[aeiouAEIOU]')
 vowel_regex.findall('Robocop come comida de bebê. COMIDA DE BEBÊ.')
 ```
 
-Saída:
-
-```plaintext
+```output
 ['o', 'o', 'o', 'e', 'a', 'a', 'o', 'o', 'A', 'O', 'O']
 ```
 
@@ -418,9 +364,7 @@ consonant_regex = re.compile(r'[^aeiouAEIOU]')
 consonant_regex.findall('Robocop come comida de bebê. COMIDA DE BEBÊ.')
 ```
 
-Saída:
-
-```plaintext
+```output
 ['R', 'b', 'c', 'p', ' ', 'c', 'm', ' ', 'd', ' ', 'd', ' ', 'b', 'b', '.', ' ', 'C', 'M', 'D', ' ', 'D', 'B', '.', ' ']
 ```
 
@@ -439,9 +383,7 @@ begins_with_hello = re.compile(r'^Hello')
 begins_with_hello.search('Hello world!')
 ```
 
-Saída:
-
-```plaintext
+```output
 <_sre.SRE_Match object; span=(0, 5), match='Hello'>
 ```
 
@@ -449,9 +391,7 @@ Saída:
 begins_with_hello.search('He said hello.') is None
 ```
 
-Saída:
-
-```plaintext
+```output
 True
 ```
 
@@ -463,9 +403,7 @@ whole_string_is_num = re.compile(r'^\d+$')
 whole_string_is_num.search('1234567890')
 ```
 
-Saída:
-
-```plaintext
+```output
 <_sre.SRE_Match object; span=(0, 10), match='1234567890'>
 ```
 
@@ -473,9 +411,7 @@ Saída:
 whole_string_is_num.search('12345xyz67890') is None
 ```
 
-Saída:
-
-```plaintext
+```output
 True
 ```
 
@@ -483,9 +419,7 @@ True
 whole_string_is_num.search('12 34567890') is None
 ```
 
-Saída:
-
-```plaintext
+```output
 True
 ```
 
@@ -499,9 +433,7 @@ at_regex = re.compile(r'.at')
 at_regex.findall('O gato no chapéu sentou no tapete plano.')
 ```
 
-Saída:
-
-```plaintext
+```output
 ['cat', 'hat', 'sat', 'lat', 'mat']
 ```
 
@@ -514,9 +446,7 @@ mo = name_regex.search('First Name: Al Last Name: Sweigart')
 mo.group(1)
 ```
 
-Saída:
-
-```plaintext
+```output
 'Al'
 ```
 
@@ -524,9 +454,7 @@ Saída:
 mo.group(2)
 ```
 
-Saída:
-
-```plaintext
+```output
 'Sweigart'
 ```
 
@@ -538,9 +466,7 @@ mo = non_greedy_regex.search('<To serve man> for dinner.>')
 mo.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 '<To serve man>'
 ```
 
@@ -550,9 +476,7 @@ mo = greedy_regex.search('<To serve man> for dinner.>')
 mo.group()
 ```
 
-Saída:
-
-```plaintext
+```output
 '<To serve man> for dinner.>'
 ```
 
@@ -565,9 +489,7 @@ no_newline_regex = re.compile('.*')
 no_newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Serve the public trust.'
 ```
 
@@ -576,9 +498,7 @@ newline_regex = re.compile('.*', re.DOTALL)
 newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Serve the public trust.\nProtect the innocent.\nUphold the law.'
 ```
 
@@ -592,9 +512,7 @@ robocop = re.compile(r'robocop', re.I)
 robocop.search('Robocop is part man, part machine, all cop.').group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'Robocop'
 ```
 
@@ -602,9 +520,7 @@ Saída:
 robocop.search('ROBOCOP protects the innocent.').group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'ROBOCOP'
 ```
 
@@ -612,9 +528,7 @@ Saída:
 robocop.search('Al, why does your programming book talk about robocop so much?').group()
 ```
 
-Saída:
-
-```plaintext
+```output
 'robocop'
 ```
 
@@ -633,9 +547,7 @@ names_regex = re.compile(r'Agent \w+')
 names_regex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
 ```
 
-Saída:
-
-```plaintext
+```output
 'CENSORED gave the secret documents to CENSORED.'
 ```
 

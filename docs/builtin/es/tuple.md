@@ -31,9 +31,7 @@ empty_tuple = tuple()
 print(empty_tuple)
 ```
 
-Salida:
-
-```plaintext
+```output
 ()
 ```
 
@@ -45,9 +43,7 @@ my_tuple = tuple(my_list)
 print(my_tuple)
 ```
 
-Salida:
-
-```plaintext
+```output
 (1, 2, 3)
 ```
 

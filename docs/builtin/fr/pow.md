@@ -39,9 +39,7 @@ print(pow(3, 2, 4))  # puisque 3**2 est 9, et 9 % 4 est 1
 print(pow(2, 3, 5))  # puisque 2**3 est 8, et 8 % 5 est 3
 ```
 
-Sortie :
-
-```plaintext
+```output
 8
 9
 0.125

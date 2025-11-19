@@ -28,9 +28,7 @@ print(chr(65))
 print(chr(120))
 ```
 
-输出：
-
-```plaintext
+```output
 a
 A
 x
@@ -44,9 +42,7 @@ print(ord('A'))
 print(ord('x'))
 ```
 
-输出：
-
-```plaintext
+```output
 97
 65
 120

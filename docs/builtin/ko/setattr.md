@@ -42,9 +42,7 @@ setattr(p, 'name', 'Jane')
 print(p.name)
 ```
 
-출력:
-
-```plaintext
+```output
 30
 Jane
 ```

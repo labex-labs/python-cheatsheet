@@ -26,9 +26,7 @@ Python 中的 `help()` 函数是一个内置工具，可用于访问 Python 丰�
 help(type)
 ```
 
-输出：
-
-```plaintext
+```output
 Help on class type in module builtins:
 
 class type(object)
@@ -55,9 +53,7 @@ class type(object)
 help(str)
 ```
 
-输出：
-
-```plaintext
+```output
 Help on class str in module builtins:
 
 class str(object)
@@ -80,9 +76,7 @@ class str(object)
 help(help)
 ```
 
-输出：
-
-```plaintext
+```output
 Help on _Helper in module _sitebuiltins object:
 
 class _Helper(builtins.object)

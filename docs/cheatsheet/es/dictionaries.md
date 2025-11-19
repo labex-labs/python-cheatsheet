@@ -45,9 +45,7 @@ mi_gato['age_years'] = 2  # Añadir nuevo par clave-valor
 print(mi_gato)
 ```
 
-Salida:
-
-```plaintext
+```output
 {'size': 'fat', 'color': 'gray', 'disposition': 'loud', 'age_years': 2}
 ```
 
@@ -64,9 +62,7 @@ mi_gato = {
 print(mi_gato['size'])
 ```
 
-Salida:
-
-```plaintext
+```output
 fat
 ```
 
@@ -74,9 +70,7 @@ fat
 print(mi_gato['eye_color'])
 ```
 
-Salida:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'eye_color'
@@ -93,9 +87,7 @@ for value in mascota.values():  # Bucle a través de todos los valores
     print(value)
 ```
 
-Salida:
-
-```plaintext
+```output
 red
 42
 ```
@@ -111,9 +103,7 @@ for key in mascota.keys():  # Bucle a través de todas las claves
     print(key)
 ```
 
-Salida:
-
-```plaintext
+```output
 color
 age
 ```
@@ -127,9 +117,7 @@ for key in mascota:  # Equivalente a for key in mascota.keys()
     print(key)
 ```
 
-Salida:
-
-```plaintext
+```output
 color
 age
 ```
@@ -144,9 +132,7 @@ for item in mascota.items():
     print(item)
 ```
 
-Salida:
-
-```plaintext
+```output
 ('color', 'red')
 ('age', 42)
 ```
@@ -160,9 +146,7 @@ for key, value in mascota.items():  # Desempaquetar tupla en clave y valor
     print(f'Key: {key} Value: {value}')
 ```
 
-Salida:
-
-```plaintext
+```output
 Key: color Value: red
 Key: age Value: 42
 ```
@@ -178,9 +162,7 @@ esposa = {'name': 'Rose', 'age': 33}
 f'My wife name is {esposa.get("name")}'  # Devuelve 'Rose'
 ```
 
-Salida:
-
-```plaintext
+```output
 'My wife name is Rose'
 ```
 
@@ -188,9 +170,7 @@ Salida:
 f'She is {esposa.get("age")} years old.'
 ```
 
-Salida:
-
-```plaintext
+```output
 'She is 33 years old.'
 ```
 
@@ -198,9 +178,7 @@ Salida:
 f'She is deeply in love with {esposa.get("husband")}'
 ```
 
-Salida:
-
-```plaintext
+```output
 'She is deeply in love with None'
 ```
 
@@ -212,9 +190,7 @@ esposa = {'name': 'Rose', 'age': 33}
 f'She is deeply in love with {esposa.get("husband", "lover")}'
 ```
 
-Salida:
-
-```plaintext
+```output
 'She is deeply in love with lover'
 ```
 
@@ -236,9 +212,7 @@ esposa.setdefault('has_hair', True)
 esposa
 ```
 
-Salida:
-
-```plaintext
+```output
 {'name': 'Rose', 'age': 33, 'has_hair': True}
 ```
 
@@ -253,9 +227,7 @@ esposa = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
 esposa.pop('age')
 ```
 
-Salida:
-
-```plaintext
+```output
 33
 ```
 
@@ -263,9 +235,7 @@ Salida:
 esposa
 ```
 
-Salida:
-
-```plaintext
+```output
 {'name': 'Rose', 'hair': 'brown'}
 ```
 
@@ -278,9 +248,7 @@ esposa = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
 esposa.popitem()
 ```
 
-Salida:
-
-```plaintext
+```output
 ('hair', 'brown')
 ```
 
@@ -288,9 +256,7 @@ Salida:
 esposa
 ```
 
-Salida:
-
-```plaintext
+```output
 {'name': 'Rose', 'age': 33}
 ```
 
@@ -304,9 +270,7 @@ del esposa['age']
 esposa
 ```
 
-Salida:
-
-```plaintext
+```output
 {'name': 'Rose', 'hair': 'brown'}
 ```
 
@@ -320,9 +284,7 @@ esposa.clear()
 esposa
 ```
 
-Salida:
-
-```plaintext
+```output
 {}
 ```
 
@@ -334,9 +296,7 @@ persona = {'name': 'Rose', 'age': 33}
 'name' in persona.keys()
 ```
 
-Salida:
-
-```plaintext
+```output
 True
 ```
 
@@ -344,9 +304,7 @@ True
 'height' in persona.keys()
 ```
 
-Salida:
-
-```plaintext
+```output
 False
 ```
 
@@ -354,9 +312,7 @@ False
 'skin' in persona # Puedes omitir keys()
 ```
 
-Salida:
-
-```plaintext
+```output
 False
 ```
 
@@ -368,9 +324,7 @@ persona = {'name': 'Rose', 'age': 33}
 'Rose' in persona.values()
 ```
 
-Salida:
-
-```plaintext
+```output
 True
 ```
 
@@ -378,9 +332,7 @@ True
 33 in persona.values()
 ```
 
-Salida:
-
-```plaintext
+```output
 True
 ```
 
@@ -393,9 +345,7 @@ esposa = {'name': 'Rose', 'age': 33, 'has_hair': True, 'hair_color': 'brown', 'h
 pprint.pprint(esposa)
 ```
 
-Salida:
-
-```plaintext
+```output
 {'age': 33,
  'eye_color': 'brown',
  'hair_color': 'brown',
@@ -415,9 +365,7 @@ dict_c = {**dict_a, **dict_b}
 dict_c
 ```
 
-Salida:
-
-```plaintext
+```output
 {'a': 1, 'b': 3, 'c': 4}
 ```
 

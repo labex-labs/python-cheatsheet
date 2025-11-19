@@ -34,9 +34,7 @@ b = copy.copy(a)
 a
 ```
 
-出力：
-
-```plaintext
+```output
 [[1], [2], [3]]
 ```
 
@@ -44,17 +42,13 @@ a
 b
 ```
 
-出力：
-
-```plaintext
+```output
 [[1], [2], [3]]
 ```
 
 ### copy モジュールをインポートしない場合、使用できません
 
-出力：
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'copy' is not defined
@@ -80,9 +74,7 @@ a[1] = None
 a
 ```
 
-出力：
-
-```plaintext
+```output
 [[0], None, [3]]
 ```
 
@@ -90,9 +82,7 @@ a
 b
 ```
 
-出力：
-
-```plaintext
+```output
 [[1], [2], [3]]
 ```
 

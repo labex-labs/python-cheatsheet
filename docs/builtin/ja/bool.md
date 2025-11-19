@@ -37,9 +37,7 @@ bool({})      # 空の辞書
 bool(set())   # 空のセット
 ```
 
-出力：
-
-```plaintext
+```output
 False
 False
 False
@@ -63,9 +61,7 @@ bool([1, 2])
 bool({'a': 1})
 ```
 
-出力：
-
-```plaintext
+```output
 True
 True
 True

@@ -45,9 +45,7 @@ my_cat['age_years'] = 2  # 새 키 - 값 쌍 추가
 print(my_cat)
 ```
 
-출력:
-
-```plaintext
+```output
 {'size': 'fat', 'color': 'gray', 'disposition': 'loud', 'age_years': 2}
 ```
 
@@ -64,9 +62,7 @@ my_cat = {
 print(my_cat['size'])
 ```
 
-출력:
-
-```plaintext
+```output
 fat
 ```
 
@@ -74,9 +70,7 @@ fat
 print(my_cat['eye_color'])
 ```
 
-출력:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'eye_color'
@@ -93,9 +87,7 @@ for value in pet.values():  # 모든 값 반복
     print(value)
 ```
 
-출력:
-
-```plaintext
+```output
 red
 42
 ```
@@ -111,9 +103,7 @@ for key in pet.keys():  # 모든 키 반복
     print(key)
 ```
 
-출력:
-
-```plaintext
+```output
 color
 age
 ```
@@ -127,9 +117,7 @@ for key in pet:  # for key in pet.keys() 와 동일
     print(key)
 ```
 
-출력:
-
-```plaintext
+```output
 color
 age
 ```
@@ -144,9 +132,7 @@ for item in pet.items():
     print(item)
 ```
 
-출력:
-
-```plaintext
+```output
 ('color', 'red')
 ('age', 42)
 ```
@@ -160,9 +146,7 @@ for key, value in pet.items():  # 튜플을 키와 값으로 언패킹
     print(f'Key: {key} Value: {value}')
 ```
 
-출력:
-
-```plaintext
+```output
 Key: color Value: red
 Key: age Value: 42
 ```
@@ -178,9 +162,7 @@ wife = {'name': 'Rose', 'age': 33}
 f'My wife name is {wife.get("name")}'  # 'Rose' 반환
 ```
 
-출력:
-
-```plaintext
+```output
 'My wife name is Rose'
 ```
 
@@ -188,9 +170,7 @@ f'My wife name is {wife.get("name")}'  # 'Rose' 반환
 f'She is {wife.get("age")} years old.'
 ```
 
-출력:
-
-```plaintext
+```output
 'She is 33 years old.'
 ```
 
@@ -198,9 +178,7 @@ f'She is {wife.get("age")} years old.'
 f'She is deeply in love with {wife.get("husband")}'
 ```
 
-출력:
-
-```plaintext
+```output
 'She is deeply in love with None'
 ```
 
@@ -212,9 +190,7 @@ wife = {'name': 'Rose', 'age': 33}
 f'She is deeply in love with {wife.get("husband", "lover")}'
 ```
 
-출력:
-
-```plaintext
+```output
 'She is deeply in love with lover'
 ```
 
@@ -236,9 +212,7 @@ wife.setdefault('has_hair', True)
 wife
 ```
 
-출력:
-
-```plaintext
+```output
 {'name': 'Rose', 'age': 33, 'has_hair': True}
 ```
 
@@ -253,9 +227,7 @@ wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
 wife.pop('age')
 ```
 
-출력:
-
-```plaintext
+```output
 33
 ```
 
@@ -263,9 +235,7 @@ wife.pop('age')
 wife
 ```
 
-출력:
-
-```plaintext
+```output
 {'name': 'Rose', 'hair': 'brown'}
 ```
 
@@ -278,9 +248,7 @@ wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
 wife.popitem()
 ```
 
-출력:
-
-```plaintext
+```output
 ('hair', 'brown')
 ```
 
@@ -288,9 +256,7 @@ wife.popitem()
 wife
 ```
 
-출력:
-
-```plaintext
+```output
 {'name': 'Rose', 'age': 33}
 ```
 
@@ -304,9 +270,7 @@ del wife['age']
 wife
 ```
 
-출력:
-
-```plaintext
+```output
 {'name': 'Rose', 'hair': 'brown'}
 ```
 
@@ -320,9 +284,7 @@ wife.clear()
 wife
 ```
 
-출력:
-
-```plaintext
+```output
 {}
 ```
 
@@ -334,9 +296,7 @@ person = {'name': 'Rose', 'age': 33}
 'name' in person.keys()
 ```
 
-출력:
-
-```plaintext
+```output
 True
 ```
 
@@ -344,9 +304,7 @@ True
 'height' in person.keys()
 ```
 
-출력:
-
-```plaintext
+```output
 False
 ```
 
@@ -354,9 +312,7 @@ False
 'skin' in person # keys() 생략 가능
 ```
 
-출력:
-
-```plaintext
+```output
 False
 ```
 
@@ -368,9 +324,7 @@ person = {'name': 'Rose', 'age': 33}
 'Rose' in person.values()
 ```
 
-출력:
-
-```plaintext
+```output
 True
 ```
 
@@ -378,9 +332,7 @@ True
 33 in person.values()
 ```
 
-출력:
-
-```plaintext
+```output
 True
 ```
 
@@ -393,9 +345,7 @@ wife = {'name': 'Rose', 'age': 33, 'has_hair': True, 'hair_color': 'brown', 'hei
 pprint.pprint(wife)
 ```
 
-출력:
-
-```plaintext
+```output
 {'age': 33,
  'eye_color': 'brown',
  'hair_color': 'brown',
@@ -415,9 +365,7 @@ dict_c = {**dict_a, **dict_b}
 dict_c
 ```
 
-출력:
-
-```plaintext
+```output
 {'a': 1, 'b': 3, 'c': 4}
 ```
 

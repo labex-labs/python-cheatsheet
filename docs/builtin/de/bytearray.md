@@ -28,9 +28,7 @@ ba1 = bytearray("hello", "utf-8")
 print(ba1)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 bytearray(b'hello')
 ```
 
@@ -40,9 +38,7 @@ ba2 = bytearray([72, 101, 108, 108, 111])
 print(ba2)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 bytearray(b'Hello')
 ```
 
@@ -53,9 +49,7 @@ ba2.append(33)  # ASCII für '!'
 print(ba2)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 bytearray(b'hello!')
 ```
 

@@ -45,9 +45,7 @@ meu_gato['idade_anos'] = 2  # Adicionar novo par chave-valor
 print(meu_gato)
 ```
 
-Saída:
-
-```plaintext
+```output
 {'tamanho': 'gordo', 'cor': 'cinza', 'disposicao': 'barulhento', 'idade_anos': 2}
 ```
 
@@ -64,9 +62,7 @@ meu_gato = {
 print(meu_gato['tamanho'])
 ```
 
-Saída:
-
-```plaintext
+```output
 gordo
 ```
 
@@ -74,9 +70,7 @@ gordo
 print(meu_gato['cor_olho'])
 ```
 
-Saída:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'cor_olho'
@@ -93,9 +87,7 @@ for valor in animal_estimacao.values():  # Percorrer todos os valores
     print(valor)
 ```
 
-Saída:
-
-```plaintext
+```output
 vermelho
 42
 ```
@@ -111,9 +103,7 @@ for chave in animal_estimacao.keys():  # Percorrer todas as chaves
     print(chave)
 ```
 
-Saída:
-
-```plaintext
+```output
 cor
 idade
 ```
@@ -127,9 +117,7 @@ for chave in animal_estimacao:  # Equivalente a for chave in animal_estimacao.ke
     print(chave)
 ```
 
-Saída:
-
-```plaintext
+```output
 cor
 idade
 ```
@@ -144,9 +132,7 @@ for item in animal_estimacao.items():
     print(item)
 ```
 
-Saída:
-
-```plaintext
+```output
 ('cor', 'vermelho')
 ('idade', 42)
 ```
@@ -160,9 +146,7 @@ for chave, valor in animal_estimacao.items():  # Desempacotar tupla em chave e v
     print(f'Chave: {chave} Valor: {valor}')
 ```
 
-Saída:
-
-```plaintext
+```output
 Chave: cor Valor: vermelho
 Chave: idade Valor: 42
 ```
@@ -178,9 +162,7 @@ esposa = {'nome': 'Rose', 'idade': 33}
 f'O nome da minha esposa é {esposa.get("nome")}'  # Retorna 'Rose'
 ```
 
-Saída:
-
-```plaintext
+```output
 'O nome da minha esposa é Rose'
 ```
 
@@ -188,9 +170,7 @@ Saída:
 f'Ela tem {esposa.get("idade")} anos.'
 ```
 
-Saída:
-
-```plaintext
+```output
 'Ela tem 33 anos.'
 ```
 
@@ -198,9 +178,7 @@ Saída:
 f'Ela é profundamente apaixonada por {esposa.get("marido")}'
 ```
 
-Saída:
-
-```plaintext
+```output
 'Ela é profundamente apaixonada por None'
 ```
 
@@ -212,9 +190,7 @@ esposa = {'nome': 'Rose', 'idade': 33}
 f'Ela é profundamente apaixonada por {esposa.get("marido", "amante")}'
 ```
 
-Saída:
-
-```plaintext
+```output
 'Ela é profundamente apaixonada por amante'
 ```
 
@@ -236,9 +212,7 @@ esposa.setdefault('tem_cabelo', True)
 esposa
 ```
 
-Saída:
-
-```plaintext
+```output
 {'nome': 'Rose', 'idade': 33, 'tem_cabelo': True}
 ```
 
@@ -253,9 +227,7 @@ esposa = {'nome': 'Rose', 'idade': 33, 'cabelo': 'castanho'}
 esposa.pop('idade')
 ```
 
-Saída:
-
-```plaintext
+```output
 33
 ```
 
@@ -263,9 +235,7 @@ Saída:
 esposa
 ```
 
-Saída:
-
-```plaintext
+```output
 {'nome': 'Rose', 'cabelo': 'castanho'}
 ```
 
@@ -278,9 +248,7 @@ esposa = {'nome': 'Rose', 'idade': 33, 'cabelo': 'castanho'}
 esposa.popitem()
 ```
 
-Saída:
-
-```plaintext
+```output
 ('cabelo', 'castanho')
 ```
 
@@ -288,9 +256,7 @@ Saída:
 esposa
 ```
 
-Saída:
-
-```plaintext
+```output
 {'nome': 'Rose', 'idade': 33}
 ```
 
@@ -304,9 +270,7 @@ del esposa['idade']
 esposa
 ```
 
-Saída:
-
-```plaintext
+```output
 {'nome': 'Rose', 'cabelo': 'castanho'}
 ```
 
@@ -320,9 +284,7 @@ esposa.clear()
 esposa
 ```
 
-Saída:
-
-```plaintext
+```output
 {}
 ```
 
@@ -334,9 +296,7 @@ pessoa = {'nome': 'Rose', 'idade': 33}
 'nome' in pessoa.keys()
 ```
 
-Saída:
-
-```plaintext
+```output
 True
 ```
 
@@ -344,9 +304,7 @@ True
 'altura' in pessoa.keys()
 ```
 
-Saída:
-
-```plaintext
+```output
 False
 ```
 
@@ -354,9 +312,7 @@ False
 'pele' in pessoa # Você pode omitir keys()
 ```
 
-Saída:
-
-```plaintext
+```output
 False
 ```
 
@@ -368,9 +324,7 @@ pessoa = {'nome': 'Rose', 'idade': 33}
 'Rose' in pessoa.values()
 ```
 
-Saída:
-
-```plaintext
+```output
 True
 ```
 
@@ -378,9 +332,7 @@ True
 33 in pessoa.values()
 ```
 
-Saída:
-
-```plaintext
+```output
 True
 ```
 
@@ -393,9 +345,7 @@ esposa = {'nome': 'Rose', 'idade': 33, 'tem_cabelo': True, 'cor_cabelo': 'castan
 pprint.pprint(esposa)
 ```
 
-Saída:
-
-```plaintext
+```output
 {'altura': 1.6,
  'cor_cabelo': 'castanho',
  'cor_olho': 'castanho',
@@ -415,9 +365,7 @@ dict_c = {**dict_a, **dict_b}
 dict_c
 ```
 
-Saída:
-
-```plaintext
+```output
 {'a': 1, 'b': 3, 'c': 4}
 ```
 

@@ -40,9 +40,7 @@ my_function()
 print(global_var)
 ```
 
-Salida:
-
-```plaintext
+```output
 I am global
 Modified global
 ```
@@ -57,9 +55,7 @@ create_global()
 print(new_global)
 ```
 
-Salida:
-
-```plaintext
+```output
 This was created dynamically
 ```
 

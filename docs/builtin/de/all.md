@@ -36,9 +36,7 @@ all(['a', '', 'c'])
 all([])
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 False
 False

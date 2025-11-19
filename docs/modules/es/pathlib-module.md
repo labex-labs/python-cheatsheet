@@ -35,9 +35,7 @@ from pathlib import Path
 print(Path('usr').joinpath('bin').joinpath('spam'))
 ```
 
-Salida:
-
-```plaintext
+```output
 usr/bin/spam
 ```
 
@@ -50,9 +48,7 @@ from pathlib import Path
 print(Path('usr') / 'bin' / 'spam')
 ```
 
-Salida:
-
-```plaintext
+```output
 usr/bin/spam
 ```
 
@@ -67,9 +63,7 @@ for filename in my_files:
     print(home / filename)
 ```
 
-Salida:
-
-```plaintext
+```output
 /home/labex/project/accounts.txt
 /home/labex/project/details.csv
 /home/labex/project/invite.docx
@@ -85,9 +79,7 @@ from os import chdir
 print(Path.cwd())
 ```
 
-Salida:
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -98,9 +90,7 @@ chdir('/usr/lib/python3.10')
 print(Path.cwd())
 ```
 
-Salida:
-
-```plaintext
+```output
 /usr/lib/python3.10
 ```
 
@@ -113,9 +103,7 @@ cwd = Path.cwd()
 (cwd / 'delicious' / 'walnut' / 'waffles').mkdir()
 ```
 
-Salida:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "/usr/lib/python3.10/pathlib.py", line 1226, in mkdir

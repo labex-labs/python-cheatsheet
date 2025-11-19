@@ -37,9 +37,7 @@ bool({})      # empty dict
 bool(set())   # empty set
 ```
 
-Output:
-
-```plaintext
+```output
 False
 False
 False
@@ -63,9 +61,7 @@ bool([1, 2])
 bool({'a': 1})
 ```
 
-Output:
-
-```plaintext
+```output
 True
 True
 True

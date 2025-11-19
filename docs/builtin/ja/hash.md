@@ -42,9 +42,7 @@ except TypeError as e:
     print(e)
 ```
 
-出力：
-
-```plaintext
+```output
 1
 1
 -1182655621190490452

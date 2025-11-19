@@ -36,9 +36,7 @@ repr('ë')
 ascii(['A', 'ë'])
 ```
 
-출력:
-
-```plaintext
+```output
 'A'
 '\\xeb'
 'ë'

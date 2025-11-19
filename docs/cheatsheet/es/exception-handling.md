@@ -32,9 +32,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-Salida:
-
-```plaintext
+```output
 2
 ```
 
@@ -42,9 +40,7 @@ Salida:
 divide(dividend=10, divisor=0)
 ```
 
-Salida:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
@@ -63,9 +59,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-Salida:
-
-```plaintext
+```output
 2
 ```
 
@@ -73,9 +67,7 @@ Salida:
 divide(dividend=10, divisor=0)
 ```
 
-Salida:
-
-```plaintext
+```output
 No se puede dividir por 0
 ```
 
@@ -97,9 +89,7 @@ def divide(dividend , divisor):
 divide(dividend=20, divisor=5)
 ```
 
-Salida:
-
-```plaintext
+```output
 4
 ```
 
@@ -107,9 +97,7 @@ Salida:
 divide(dividend=10, divisor=5)
 ```
 
-Salida:
-
-```plaintext
+```output
 can only concatenate str (not "int") to str
 ```
 
@@ -117,9 +105,7 @@ can only concatenate str (not "int") to str
 divide(dividend=10, divisor=0)
 ```
 
-Salida:
-
-```plaintext
+```output
 division by zero
 ```
 
@@ -140,9 +126,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-Salida:
-
-```plaintext
+```output
 2.0
 Ejecución finalizada
 ```
@@ -151,9 +135,7 @@ Ejecución finalizada
 divide(dividend=10, divisor=0)
 ```
 
-Salida:
-
-```plaintext
+```output
 No se puede dividir por 0
 Ejecución finalizada
 ```
@@ -170,9 +152,7 @@ class MyCustomException(Exception):
 raise MyCustomException  # Genera la excepción personalizada
 ```
 
-Salida:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException
@@ -187,9 +167,7 @@ class MyCustomException(Exception):
 raise MyCustomException('Un mensaje personalizado para mi excepción personalizada')
 ```
 
-Salida:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException: Un mensaje personalizado para mi excepción personalizada
@@ -204,9 +182,7 @@ except MyCustomException:
     print('Mi excepción personalizada fue generada')
 ```
 
-Salida:
-
-```plaintext
+```output
 Mi excepción personalizada fue generada
 ```
 

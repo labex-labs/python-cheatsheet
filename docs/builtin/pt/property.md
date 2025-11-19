@@ -42,9 +42,7 @@ p = Person("John")
 print(p.name)  # Isso chama get_name()
 ```
 
-Saída:
-
-```plaintext
+```output
 Obtendo nome
 John
 ```
@@ -67,9 +65,7 @@ p = Person("John")
 print(p.name)
 ```
 
-Saída:
-
-```plaintext
+```output
 Obtendo nome
 John
 ```

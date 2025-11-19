@@ -32,9 +32,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-Output:
-
-```plaintext
+```output
 2
 ```
 
@@ -42,9 +40,7 @@ Output:
 divide(dividend=10, divisor=0)
 ```
 
-Output:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
@@ -63,9 +59,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-Output:
-
-```plaintext
+```output
 2
 ```
 
@@ -73,9 +67,7 @@ Output:
 divide(dividend=10, divisor=0)
 ```
 
-Output:
-
-```plaintext
+```output
 Você não pode dividir por 0
 ```
 
@@ -97,9 +89,7 @@ def divide(dividend , divisor):
 divide(dividend=20, divisor=5)
 ```
 
-Output:
-
-```plaintext
+```output
 4
 ```
 
@@ -107,9 +97,7 @@ Output:
 divide(dividend=10, divisor=5)
 ```
 
-Output:
-
-```plaintext
+```output
 can only concatenate str (not "int") to str
 ```
 
@@ -117,9 +105,7 @@ can only concatenate str (not "int") to str
 divide(dividend=10, divisor=0)
 ```
 
-Output:
-
-```plaintext
+```output
 division by zero
 ```
 
@@ -140,9 +126,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-Output:
-
-```plaintext
+```output
 2.0
 Execução finalizada
 ```
@@ -151,9 +135,7 @@ Execução finalizada
 divide(dividend=10, divisor=0)
 ```
 
-Output:
-
-```plaintext
+```output
 Você não pode dividir por 0
 Execução finalizada
 ```
@@ -170,9 +152,7 @@ class MyCustomException(Exception):
 raise MyCustomException  # Levanta a exceção personalizada
 ```
 
-Output:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException
@@ -187,9 +167,7 @@ class MyCustomException(Exception):
 raise MyCustomException('Uma mensagem personalizada para minha exceção personalizada')
 ```
 
-Output:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException: Uma mensagem personalizada para minha exceção personalizada
@@ -204,9 +182,7 @@ except MyCustomException:
     print('Minha exceção personalizada foi levantada')
 ```
 
-Output:
-
-```plaintext
+```output
 Minha exceção personalizada foi levantada
 ```
 

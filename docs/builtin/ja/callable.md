@@ -43,9 +43,7 @@ print(callable(z))
 print(callable(a))
 ```
 
-出力：
-
-```plaintext
+```output
 False
 True
 True

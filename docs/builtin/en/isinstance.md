@@ -32,9 +32,7 @@ print(isinstance(my_list, list))
 print(isinstance(my_list, tuple))
 ```
 
-Output:
-
-```plaintext
+```output
 True
 False
 ```
@@ -45,9 +43,7 @@ False
 print(isinstance("hello", (int, str, list)))
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 
@@ -56,9 +52,7 @@ isinstance(1, int)
 isinstance(1, str)
 ```
 
-Output:
-
-```plaintext
+```output
 True
 False
 ```

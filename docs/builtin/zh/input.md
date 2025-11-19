@@ -31,9 +31,7 @@ my_name = input()
 print('Hi, {}'.format(my_name))
 ```
 
-输出：
-
-```plaintext
+```output
 What is your name?
 Martha
 Hi, Martha
@@ -47,9 +45,7 @@ my_name = input('What is your name? ')
 print('Hi, {}'.format(my_name))
 ```
 
-输出：
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```

@@ -29,9 +29,7 @@ print(from_integer)
 print(type(from_integer))
 ```
 
-Sortie :
-
-```plaintext
+```output
 29
 <class 'int'>
 ```
@@ -43,9 +41,7 @@ print(from_float)
 print(type(from_float))
 ```
 
-Sortie :
-
-```plaintext
+```output
 -3
 <class 'int'>
 ```
@@ -55,9 +51,7 @@ Sortie :
 int()
 ```
 
-Sortie :
-
-```plaintext
+```output
 0
 ```
 

@@ -28,9 +28,7 @@ frozenset({1, 2, 3})
 frozenset((1, 2, 3))
 ```
 
-Output:
-
-```plaintext
+```output
 frozenset({1, 2, 3})
 frozenset({1, 2, 3})
 frozenset({1, 2, 3})

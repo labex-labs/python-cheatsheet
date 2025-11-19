@@ -38,9 +38,7 @@ for n in names:
 new_list
 ```
 
-出力：
-
-```plaintext
+```output
 ['Charles', 'Susan', 'Patrick', 'George']
 ```
 
@@ -55,9 +53,7 @@ new_list = [n for n in names]  # すべての名前でリストを作成
 new_list
 ```
 
-出力：
-
-```plaintext
+```output
 ['Charles', 'Susan', 'Patrick', 'George']
 ```
 
@@ -70,9 +66,7 @@ n = [(a, b) for a in range(1, 3) for b in range(1, 3)]
 n
 ```
 
-出力：
-
-```plaintext
+```output
 [(1, 1), (1, 2), (2, 1), (2, 2)]
 ```
 
@@ -92,9 +86,7 @@ for n in names:
 print(new_list)
 ```
 
-出力：
-
-```plaintext
+```output
 ['Charles', 'Carol']
 ```
 
@@ -107,9 +99,7 @@ new_list = [n for n in names if n.startswith('C')]
 print(new_list)
 ```
 
-出力：
-
-```plaintext
+```output
 ['Charles', 'Carol']
 ```
 
@@ -123,9 +113,7 @@ new_list = [num*2 if num % 2 == 0 else num for num in nums]  # 偶数を 2 倍�
 print(new_list)
 ```
 
-出力：
-
-```plaintext
+```output
 [1, 4, 3, 8, 5, 12]
 ```
 
@@ -147,9 +135,7 @@ b = {"abc", "def"}
 {s.upper() for s in b}  # すべての文字列を大文字に変換
 ```
 
-出力：
-
-```plaintext
+```output
 {"ABC", "DEF"}
 ```
 
@@ -162,9 +148,7 @@ c = {'name': 'Pooka', 'age': 5}
 {v: k for k, v in c.items()}  # キーと値のペアを反転
 ```
 
-出力：
-
-```plaintext
+```output
 {'Pooka': 'name', 5: 'age'}
 ```
 
@@ -176,9 +160,7 @@ c = {'name': 'Pooka', 'age': 5}
 ["{}:{}".format(k.upper(), v) for k, v in c.items()]  # "KEY:value"形式でフォーマット
 ```
 
-出力：
-
-```plaintext
+```output
 ['NAME:Pooka', 'AGE:5']
 ```
 

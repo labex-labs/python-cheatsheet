@@ -26,9 +26,7 @@ La función `help()` en Python es una utilidad incorporada que proporciona acces
 help(type)
 ```
 
-Salida:
-
-```plaintext
+```output
 Help on class type in module builtins:
 
 class type(object)
@@ -55,9 +53,7 @@ class type(object)
 help(str)
 ```
 
-Salida:
-
-```plaintext
+```output
 Help on class str in module builtins:
 
 class str(object)
@@ -80,9 +76,7 @@ class str(object)
 help(help)
 ```
 
-Salida:
-
-```plaintext
+```output
 Help on _Helper in module _sitebuiltins object:
 
 class _Helper(builtins.object)

@@ -24,9 +24,7 @@ description: 'Вывод объектов в текстовый поток фа�
 print('Hello world!')
 ```
 
-Output:
-
-```plaintext
+```output
 Hello world!
 ```
 
@@ -35,9 +33,7 @@ a = 1
 print('Hello world!', a)
 ```
 
-Output:
-
-```plaintext
+```output
 Hello world! 1
 ```
 
@@ -51,9 +47,7 @@ for word in phrase:
     print(word, end='-')
 ```
 
-Output:
-
-```plaintext
+```output
 printed-with-a-dash-in-between-
 ```
 
@@ -65,9 +59,7 @@ printed-with-a-dash-in-between-
 print('cats', 'dogs', 'mice', sep=',')
 ```
 
-Output:
-
-```plaintext
+```output
 cats,dogs,mice
 ```
 

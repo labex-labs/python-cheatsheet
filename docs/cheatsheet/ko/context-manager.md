@@ -46,9 +46,7 @@ with context_manager(2) as cm:  # cm 은 yield 된 값 (3) 을 받음
     print('Right in the middle with cm = {}'.format(cm))
 ```
 
-출력:
-
-```plaintext
+```output
 Enter
 Right in the middle with cm = 3
 Exit
@@ -72,9 +70,7 @@ with ContextManager():  # __enter__ 호출 후, 완료되면 __exit__ 호출
     print("test")
 ```
 
-출력:
-
-```plaintext
+```output
 --enter--
 test
 --exit--

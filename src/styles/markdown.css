@@ -118,6 +118,7 @@ html .prose {
   padding: 1rem !important;
   margin: 0 !important;
   flex: 1;
+  overflow-x: auto;
 }
 
 .dark .prose pre[class*='language-'] .code-block-header {
@@ -144,8 +145,14 @@ html .prose {
 }
 
 /* Output block styles */
-.prose pre[class*='language-'].output-block {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.prose pre[class*='language-'].output-block .code-block-header {
+  background-color: rgba(46, 126, 238, 0.15);
+  border-bottom-color: rgba(46, 126, 238, 0.3);
+}
+
+.dark .prose pre[class*='language-'].output-block .code-block-header {
+  background-color: rgba(129, 153, 249, 0.15);
+  border-bottom-color: rgba(129, 153, 249, 0.3);
 }
 
 .prose pre[class*='language-'].output-block.output-collapsed > code {

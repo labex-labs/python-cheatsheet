@@ -30,9 +30,7 @@ l.append(2)
 print(l)
 ```
 
-출력:
-
-```plaintext
+```output
 []
 [1, 2]
 ```

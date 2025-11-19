@@ -33,9 +33,7 @@ print(furniture[1:])
 print(furniture[:])
 ```
 
-输出：
-
-```plaintext
+```output
 ['table', 'chair', 'rack', 'shelf']
 ['chair', 'rack']
 ['table', 'chair', 'rack']
@@ -56,9 +54,7 @@ print(spam)
 print(spam2)
 ```
 
-输出：
-
-```plaintext
+```output
 ['cat', 'bat', 'rat', 'elephant']
 ['cat', 'bat', 'rat', 'elephant', 'dog']
 ['cat', 'bat', 'rat', 'elephant']

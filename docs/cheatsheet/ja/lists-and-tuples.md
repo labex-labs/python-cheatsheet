@@ -26,9 +26,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 furniture[0]  # 最初の要素を返します：'table'
 ```
 
-Output:
-
-```plaintext
+```output
 'table'
 ```
 
@@ -36,9 +34,7 @@ Output:
 furniture[1]
 ```
 
-Output:
-
-```plaintext
+```output
 'chair'
 ```
 
@@ -46,9 +42,7 @@ Output:
 furniture[2]
 ```
 
-Output:
-
-```plaintext
+```output
 'rack'
 ```
 
@@ -56,9 +50,7 @@ Output:
 furniture[3]
 ```
 
-Output:
-
-```plaintext
+```output
 'shelf'
 ```
 
@@ -71,9 +63,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 furniture[-1]  # 最後の要素を返します：'shelf'
 ```
 
-Output:
-
-```plaintext
+```output
 'shelf'
 ```
 
@@ -81,9 +71,7 @@ Output:
 furniture[-3]
 ```
 
-Output:
-
-```plaintext
+```output
 'chair'
 ```
 
@@ -91,9 +79,7 @@ Output:
 f'The {furniture[-1]} is bigger than the {furniture[-3]}'
 ```
 
-Output:
-
-```plaintext
+```output
 'The shelf is bigger than the chair'
 ```
 
@@ -106,9 +92,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 furniture[0:4]  # インデックス 0 から 3 までの要素を返します (4 は含まれない)
 ```
 
-Output:
-
-```plaintext
+```output
 ['table', 'chair', 'rack', 'shelf']
 ```
 
@@ -116,9 +100,7 @@ Output:
 furniture[1:3]
 ```
 
-Output:
-
-```plaintext
+```output
 ['chair', 'rack']
 ```
 
@@ -126,9 +108,7 @@ Output:
 furniture[0:-1]
 ```
 
-Output:
-
-```plaintext
+```output
 ['table', 'chair', 'rack']
 ```
 
@@ -137,9 +117,7 @@ Output:
 furniture[:2]  # 最初の 2 つの要素を返します
 ```
 
-Output:
-
-```plaintext
+```output
 ['table', 'chair']
 ```
 
@@ -148,9 +126,7 @@ Output:
 furniture[1:]  # インデックス 1 から最後まで全ての要素を返します
 ```
 
-Output:
-
-```plaintext
+```output
 ['chair', 'rack', 'shelf']
 ```
 
@@ -158,9 +134,7 @@ Output:
 furniture[:]
 ```
 
-Output:
-
-```plaintext
+```output
 ['table', 'chair', 'rack', 'shelf']
 ```
 
@@ -173,9 +147,7 @@ spam2 = spam[:]  # 参照ではなくコピーを作成
 spam2
 ```
 
-Output:
-
-```plaintext
+```output
 ['cat', 'bat', 'rat', 'elephant']
 ```
 
@@ -184,9 +156,7 @@ spam.append('dog')
 spam
 ```
 
-Output:
-
-```plaintext
+```output
 ['cat', 'bat', 'rat', 'elephant', 'dog']
 ```
 
@@ -194,9 +164,7 @@ Output:
 spam2
 ```
 
-Output:
-
-```plaintext
+```output
 ['cat', 'bat', 'rat', 'elephant']
 ```
 
@@ -208,9 +176,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 len(furniture)  # 4 を返します
 ```
 
-Output:
-
-```plaintext
+```output
 4
 ```
 
@@ -224,9 +190,7 @@ furniture[0] = 'desk'  # 最初の要素を置き換えます
 furniture
 ```
 
-Output:
-
-```plaintext
+```output
 ['desk', 'chair', 'rack', 'shelf']
 ```
 
@@ -235,9 +199,7 @@ furniture[2] = furniture[1]
 furniture
 ```
 
-Output:
-
-```plaintext
+```output
 ['desk', 'chair', 'chair', 'shelf']
 ```
 
@@ -246,9 +208,7 @@ furniture[-1] = 'bed'
 furniture
 ```
 
-Output:
-
-```plaintext
+```output
 ['desk', 'chair', 'chair', 'bed']
 ```
 
@@ -259,9 +219,7 @@ Output:
 [1, 2, 3] + ['A', 'B', 'C']  # [1, 2, 3, 'A', 'B', 'C'] を返します
 ```
 
-Output:
-
-```plaintext
+```output
 [1, 2, 3, 'A', 'B', 'C']
 ```
 
@@ -270,9 +228,7 @@ Output:
 ['X', 'Y', 'Z'] * 3  # ['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z'] を返します
 ```
 
-Output:
-
-```plaintext
+```output
 ['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
 ```
 
@@ -282,9 +238,7 @@ my_list = my_list + ['A', 'B', 'C']
 my_list
 ```
 
-Output:
-
-```plaintext
+```output
 [1, 2, 3, 'A', 'B', 'C']
 ```
 
@@ -298,9 +252,7 @@ for item in furniture:  # 各アイテムをループします
     print(item)
 ```
 
-Output:
-
-```plaintext
+```output
 table
 chair
 rack
@@ -317,9 +269,7 @@ for index, item in enumerate(furniture):  # インデックスとアイテムを
     print(f'index: {index} - item: {item}')
 ```
 
-Output:
-
-```plaintext
+```output
 index: 0 - item: table
 index: 1 - item: chair
 index: 2 - item: rack
@@ -337,9 +287,7 @@ for item, amount in zip(furniture, price):  # 両方のリストの要素をペ�
     print(f'The {item} costs ${amount}')
 ```
 
-Output:
-
-```plaintext
+```output
 The table costs $100
 The chair costs $50
 The rack costs $80
@@ -353,9 +301,7 @@ The shelf costs $40
 'rack' in ['table', 'chair', 'rack', 'shelf']  # True を返します
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 
@@ -363,9 +309,7 @@ True
 'bed' in ['table', 'chair', 'rack', 'shelf']
 ```
 
-Output:
-
-```plaintext
+```output
 False
 ```
 
@@ -374,9 +318,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 'bed' not in furniture
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 
@@ -384,9 +326,7 @@ True
 'rack' not in furniture
 ```
 
-Output:
-
-```plaintext
+```output
 False
 ```
 
@@ -411,9 +351,7 @@ table, chair, rack, shelf = furniture
 table
 ```
 
-Output:
-
-```plaintext
+```output
 'table'
 ```
 
@@ -421,9 +359,7 @@ Output:
 chair
 ```
 
-Output:
-
-```plaintext
+```output
 'chair'
 ```
 
@@ -431,9 +367,7 @@ Output:
 rack
 ```
 
-Output:
-
-```plaintext
+```output
 'rack'
 ```
 
@@ -441,9 +375,7 @@ Output:
 shelf
 ```
 
-Output:
-
-```plaintext
+```output
 'shelf'
 ```
 
@@ -455,9 +387,7 @@ a, b = b, a
 print(a)
 ```
 
-Output:
-
-```plaintext
+```output
 chair
 ```
 
@@ -465,9 +395,7 @@ chair
 print(b)
 ```
 
-Output:
-
-```plaintext
+```output
 table
 ```
 
@@ -480,9 +408,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 furniture.index('chair')
 ```
 
-Output:
-
-```plaintext
+```output
 1
 ```
 
@@ -498,9 +424,7 @@ furniture.append('bed')
 furniture
 ```
 
-Output:
-
-```plaintext
+```output
 ['table', 'chair', 'rack', 'shelf', 'bed']
 ```
 
@@ -514,9 +438,7 @@ furniture.insert(1, 'bed')
 furniture
 ```
 
-Output:
-
-```plaintext
+```output
 ['table', 'bed', 'chair', 'rack', 'shelf']
 ```
 
@@ -532,9 +454,7 @@ del furniture[2]
 furniture
 ```
 
-Output:
-
-```plaintext
+```output
 ['table', 'chair', 'shelf']
 ```
 
@@ -543,9 +463,7 @@ del furniture[2]
 furniture
 ```
 
-Output:
-
-```plaintext
+```output
 ['table', 'chair']
 ```
 
@@ -559,9 +477,7 @@ furniture.remove('chair')
 furniture
 ```
 
-Output:
-
-```plaintext
+```output
 ['table', 'rack', 'shelf']
 ```
 
@@ -584,9 +500,7 @@ animals = ['cat', 'bat', 'rat', 'elephant']
 animals.pop()
 ```
 
-Output:
-
-```plaintext
+```output
 'elephant'
 ```
 
@@ -594,9 +508,7 @@ Output:
 animals
 ```
 
-Output:
-
-```plaintext
+```output
 ['cat', 'bat', 'rat']
 ```
 
@@ -604,9 +516,7 @@ Output:
 animals.pop(0)
 ```
 
-Output:
-
-```plaintext
+```output
 'cat'
 ```
 
@@ -614,9 +524,7 @@ Output:
 animals
 ```
 
-Output:
-
-```plaintext
+```output
 ['bat', 'rat']
 ```
 
@@ -628,9 +536,7 @@ numbers.sort()
 numbers
 ```
 
-Output:
-
-```plaintext
+```output
 [-7, 1, 2, 3.14, 5]
 ```
 
@@ -640,9 +546,7 @@ furniture.sort()
 furniture
 ```
 
-Output:
-
-```plaintext
+```output
 ['chair', 'rack', 'shelf', 'table']
 ```
 
@@ -653,9 +557,7 @@ furniture.sort(reverse=True)
 furniture
 ```
 
-Output:
-
-```plaintext
+```output
 ['table', 'shelf', 'rack', 'chair']
 ```
 
@@ -667,9 +569,7 @@ letters.sort(key=str.lower)
 letters
 ```
 
-Output:
-
-```plaintext
+```output
 ['a', 'A', 'z', 'Z']
 ```
 
@@ -680,9 +580,7 @@ furniture = ['table', 'chair', 'rack', 'shelf']
 sorted(furniture)
 ```
 
-Output:
-
-```plaintext
+```output
 ['chair', 'rack', 'shelf', 'table']
 ```
 
@@ -703,9 +601,7 @@ furniture = ('table', 'chair', 'rack', 'shelf')
 furniture[0]
 ```
 
-Output:
-
-```plaintext
+```output
 'table'
 ```
 
@@ -713,9 +609,7 @@ Output:
 furniture[1:3]
 ```
 
-Output:
-
-```plaintext
+```output
 ('chair', 'rack')
 ```
 
@@ -723,9 +617,7 @@ Output:
 len(furniture)
 ```
 
-Output:
-
-```plaintext
+```output
 4
 ```
 
@@ -737,9 +629,7 @@ Output:
 tuple(['cat', 'dog', 5])
 ```
 
-Output:
-
-```plaintext
+```output
 ('cat', 'dog', 5)
 ```
 
@@ -747,9 +637,7 @@ Output:
 list(('cat', 'dog', 5))
 ```
 
-Output:
-
-```plaintext
+```output
 ['cat', 'dog', 5]
 ```
 
@@ -757,9 +645,7 @@ Output:
 list('hello')
 ```
 
-Output:
-
-```plaintext
+```output
 ['h', 'e', 'l', 'l', 'o']
 ```
 

@@ -38,9 +38,7 @@ Python 制御フロー
 42 == 42
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -48,9 +46,7 @@ True
 40 == 42
 ```
 
-出力：
-
-```plaintext
+```output
 False
 ```
 
@@ -58,9 +54,7 @@ False
 'hello' == 'hello'
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -68,9 +62,7 @@ True
 'hello' == 'Hello'
 ```
 
-出力：
-
-```plaintext
+```output
 False
 ```
 
@@ -78,9 +70,7 @@ False
 'dog' != 'cat'
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -88,9 +78,7 @@ True
 42 == 42.0
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -98,9 +86,7 @@ True
 42 == '42'
 ```
 
-出力：
-
-```plaintext
+```output
 False
 ```
 
@@ -142,9 +128,7 @@ False
 (4 < 5) and (5 < 6)
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -152,9 +136,7 @@ True
 (4 < 5) and (9 < 6)
 ```
 
-出力：
-
-```plaintext
+```output
 False
 ```
 
@@ -162,9 +144,7 @@ False
 (1 == 2) or (2 == 2)
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -174,9 +154,7 @@ True
 2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -186,9 +164,7 @@ True
 5 > 4 or 3 < 4 and 5 > 5
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -197,9 +173,7 @@ True
 (5 > 4 or 3 < 4) and 5 > 5
 ```
 
-出力：
-
-```plaintext
+```output
 False
 ```
 
@@ -215,9 +189,7 @@ if name == 'Debora':  # name が'Debora'と等しいかチェック
    print('Hi, Debora')  # 条件が True の場合にこの行が実行される
 ```
 
-出力：
-
-```plaintext
+```output
 Hi, Debora
 ```
 
@@ -226,9 +198,7 @@ if name != 'George':
    print('You are not George')
 ```
 
-出力：
-
-```plaintext
+```output
 You are not George
 ```
 
@@ -244,9 +214,7 @@ else:  # if 条件が False の場合に実行
    print('You are not George')
 ```
 
-出力：
-
-```plaintext
+```output
 You are not George
 ```
 
@@ -262,9 +230,7 @@ elif name == 'George':  # 前の条件が False の場合にのみチェック�
    print('Hi George!')
 ```
 
-出力：
-
-```plaintext
+```output
 Hi George!
 ```
 
@@ -281,9 +247,7 @@ else:
    print('Who are you?')
 ```
 
-出力：
-
-```plaintext
+```output
 Who are you?
 ```
 
@@ -307,9 +271,7 @@ else:
    print('adult')
 ```
 
-出力：
-
-```plaintext
+```output
 kid
 ```
 
@@ -319,9 +281,7 @@ kid
 print('kid' if age < 18 else 'adult')
 ```
 
-出力：
-
-```plaintext
+```output
 kid
 ```
 
@@ -334,9 +294,7 @@ age = 15
 print('kid' if age < 13 else 'teen' if age < 18 else 'adult')
 ```
 
-出力：
-
-```plaintext
+```output
 teen
 ```
 
@@ -351,9 +309,7 @@ else:
         print('adult')
 ```
 
-出力：
-
-```plaintext
+```output
 teen
 ```
 
@@ -400,9 +356,7 @@ match response_code:
         print("502 Bad Gateway")
 ```
 
-出力：
-
-```plaintext
+```output
 Created
 ```
 
@@ -423,9 +377,7 @@ match response_code:
         print("Internal Server Error")
 ```
 
-出力：
-
-```plaintext
+```output
 Internal Server Error
 ```
 
@@ -442,9 +394,7 @@ match today_responses:
             print(f"All responses: {a}, {b}, {rest}")
 ```
 
-出力：
-
-```plaintext
+```output
 All responses: 200, 300, [404, 500]
 ```
 
@@ -467,9 +417,7 @@ match response_code:
         print("Invalid Code")
 ```
 
-出力：
-
-```plaintext
+```output
 Invalid Code
 ```
 
@@ -486,9 +434,7 @@ match response_code:
             print('Code is neither a string nor a number')
 ```
 
-出力：
-
-```plaintext
+```output
 Code is a string
 ```
 
@@ -504,9 +450,7 @@ match response_code:
             print('Code is an invalid number')
 ```
 
-出力：
-
-```plaintext
+```output
 Code is a valid number
 ```
 
@@ -522,9 +466,7 @@ while spam < 5:  # spam が 5 未満の間、継続
     spam = spam + 1  # 無限ループを避けるためにカウンターをインクリメント
 ```
 
-出力：
-
-```plaintext
+```output
 Hello, world.
 Hello, world.
 Hello, world.
@@ -546,9 +488,7 @@ while True:  # 無限ループ
 print('Thank you!')
 ```
 
-出力：
-
-```plaintext
+```output
 Please type your name: your name
 Thank you!
 ```
@@ -570,9 +510,7 @@ while True:
 print('Access granted.')
 ```
 
-出力：
-
-```plaintext
+```output
 Who are you? Charles
 Who are you? Debora
 Who are you? Joe
@@ -591,9 +529,7 @@ for pet in pets:  # リスト内の各ペットをループ
     print(pet)  # 各ペットの名前を出力
 ```
 
-出力：
-
-```plaintext
+```output
 Bella
 Milo
 Loki
@@ -608,9 +544,7 @@ for i in range(5):
     print(f'Will stop at 5! or 4? ({i})')
 ```
 
-出力：
-
-```plaintext
+```output
 Will stop at 5! or 4? (0)
 Will stop at 5! or 4? (1)
 Will stop at 5! or 4? (2)
@@ -626,9 +560,7 @@ for i in range(0, 10, 2):
    print(i)
 ```
 
-出力：
-
-```plaintext
+```output
 0
 2
 4
@@ -643,9 +575,7 @@ for i in range(5, -1, -1):
     print(i)
 ```
 
-出力：
-
-```plaintext
+```output
 5
 4
 3
@@ -680,9 +610,7 @@ while True:
         sys.exit()
 ```
 
-出力：
-
-```plaintext
+```output
 Type exit to exit: open
 Type exit to exit: close
 Type exit to exit: exit

@@ -46,9 +46,7 @@ s = {}  # これはセットではなく辞書を作成します
 type(s)  # <class 'dict'> を返します
 ```
 
-出力：
-
-```plaintext
+```output
 <class 'dict'>
 ```
 
@@ -62,9 +60,7 @@ s = {1, 2, 3, 2, 3, 4}  # 重複は削除されます
 s  # {1, 2, 3, 4} を返します
 ```
 
-出力：
-
-```plaintext
+```output
 {1, 2, 3, 4}
 ```
 
@@ -75,9 +71,7 @@ s = {1, 2, 3}
 s[0]
 ```
 
-出力：
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'set' object does not support indexing
@@ -94,9 +88,7 @@ s.add(4)  # 要素 4 を追加
 s
 ```
 
-出力：
-
-```plaintext
+```output
 {1, 2, 3, 4}
 ```
 
@@ -109,9 +101,7 @@ s.update([2, 3, 4, 5, 6])  # 複数の要素を追加 (重複は無視されま�
 s
 ```
 
-出力：
-
-```plaintext
+```output
 {1, 2, 3, 4, 5, 6}
 ```
 
@@ -126,9 +116,7 @@ s.remove(3)  # 要素 3 を削除
 s
 ```
 
-出力：
-
-```plaintext
+```output
 {1, 2}
 ```
 
@@ -136,9 +124,7 @@ s
 s.remove(3)
 ```
 
-出力：
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 3
@@ -153,9 +139,7 @@ s.discard(3)  # 要素 3 を削除 (安全、欠落していてもエラーな�
 s
 ```
 
-出力：
-
-```plaintext
+```output
 {1, 2}
 ```
 
@@ -174,9 +158,7 @@ s2 = {3, 4, 5}
 s1.union(s2)  # または 's1 | s2' - {1, 2, 3, 4, 5} を返します
 ```
 
-出力：
-
-```plaintext
+```output
 {1, 2, 3, 4, 5}
 ```
 
@@ -192,9 +174,7 @@ s3 = {3, 4, 5}
 s1.intersection(s2, s3)  # または 's1 & s2 & s3' - {3} を返します
 ```
 
-出力：
-
-```plaintext
+```output
 {3}
 ```
 
@@ -210,9 +190,7 @@ s2 = {2, 3, 4}
 s1.difference(s2)  # または 's1 - s2' - {1} を返します
 ```
 
-出力：
-
-```plaintext
+```output
 {1}
 ```
 
@@ -220,9 +198,7 @@ s1.difference(s2)  # または 's1 - s2' - {1} を返します
 s2.difference(s1) # または 's2 - s1'
 ```
 
-出力：
-
-```plaintext
+```output
 {4}
 ```
 
@@ -237,9 +213,7 @@ s2 = {2, 3, 4}
 s1.symmetric_difference(s2)  # または 's1 ^ s2' - {1, 4} を返します
 ```
 
-出力：
-
-```plaintext
+```output
 {1, 4}
 ```
 

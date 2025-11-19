@@ -34,9 +34,7 @@ print(hasattr(p, 'age'))
 print(hasattr(p, 'email'))
 ```
 
-출력:
-
-```plaintext
+```output
 True
 True
 False

@@ -128,5 +128,11 @@
     "getDiscount": "Jetzt 50% Rabatt erhalten →",
     "shortMessage": "Black Friday 2025: Python Hands-on Labs",
     "shortDiscount": "50% Rabatt erhalten →"
+  },
+  "codeBlock": {
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "expand": "Erweitern",
+    "collapse": "Einklappen"
   }
 }

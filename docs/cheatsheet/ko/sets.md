@@ -46,9 +46,7 @@ s = {}  # 이것은 집합 대신 딕셔너리를 생성합니다
 type(s)  # <class 'dict'> 반환
 ```
 
-출력:
-
-```plaintext
+```output
 <class 'dict'>
 ```
 
@@ -62,9 +60,7 @@ s = {1, 2, 3, 2, 3, 4}  # 중복 항목 제거됨
 s  # {1, 2, 3, 4} 반환
 ```
 
-출력:
-
-```plaintext
+```output
 {1, 2, 3, 4}
 ```
 
@@ -75,9 +71,7 @@ s = {1, 2, 3}
 s[0]
 ```
 
-출력:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'set' object does not support indexing
@@ -94,9 +88,7 @@ s.add(4)  # 요소 4 추가
 s
 ```
 
-출력:
-
-```plaintext
+```output
 {1, 2, 3, 4}
 ```
 
@@ -109,9 +101,7 @@ s.update([2, 3, 4, 5, 6])  # 여러 요소 추가 (중복은 무시됨)
 s
 ```
 
-출력:
-
-```plaintext
+```output
 {1, 2, 3, 4, 5, 6}
 ```
 
@@ -126,9 +116,7 @@ s.remove(3)  # 요소 3 제거
 s
 ```
 
-출력:
-
-```plaintext
+```output
 {1, 2}
 ```
 
@@ -136,9 +124,7 @@ s
 s.remove(3)
 ```
 
-출력:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 3
@@ -153,9 +139,7 @@ s.discard(3)  # 요소 3 제거 (안전함, 없어도 오류 없음)
 s
 ```
 
-출력:
-
-```plaintext
+```output
 {1, 2}
 ```
 
@@ -174,9 +158,7 @@ s2 = {3, 4, 5}
 s1.union(s2)  # 또는 's1 | s2' - {1, 2, 3, 4, 5} 반환
 ```
 
-출력:
-
-```plaintext
+```output
 {1, 2, 3, 4, 5}
 ```
 
@@ -192,9 +174,7 @@ s3 = {3, 4, 5}
 s1.intersection(s2, s3)  # 또는 's1 & s2 & s3' - {3} 반환
 ```
 
-출력:
-
-```plaintext
+```output
 {3}
 ```
 
@@ -210,9 +190,7 @@ s2 = {2, 3, 4}
 s1.difference(s2)  # 또는 's1 - s2' - {1} 반환
 ```
 
-출력:
-
-```plaintext
+```output
 {1}
 ```
 
@@ -220,9 +198,7 @@ s1.difference(s2)  # 또는 's1 - s2' - {1} 반환
 s2.difference(s1) # 또는 's2 - s1'
 ```
 
-출력:
-
-```plaintext
+```output
 {4}
 ```
 
@@ -237,9 +213,7 @@ s2 = {2, 3, 4}
 s1.symmetric_difference(s2)  # 또는 's1 ^ s2' - {1, 4} 반환
 ```
 
-출력:
-
-```plaintext
+```output
 {1, 4}
 ```
 

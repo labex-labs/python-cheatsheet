@@ -24,9 +24,7 @@ Python print() 内置函数
 print('Hello world!')
 ```
 
-输出：
-
-```plaintext
+```output
 Hello world!
 ```
 
@@ -35,9 +33,7 @@ a = 1
 print('Hello world!', a)
 ```
 
-输出：
-
-```plaintext
+```output
 Hello world! 1
 ```
 
@@ -51,9 +47,7 @@ for word in phrase:
     print(word, end='-')
 ```
 
-输出：
-
-```plaintext
+```output
 printed-with-a-dash-in-between-
 ```
 
@@ -65,9 +59,7 @@ printed-with-a-dash-in-between-
 print('cats', 'dogs', 'mice', sep=',')
 ```
 
-输出：
-
-```plaintext
+```output
 cats,dogs,mice
 ```
 

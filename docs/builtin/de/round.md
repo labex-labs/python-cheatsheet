@@ -37,9 +37,7 @@ print(round(2.5))
 print(round(3.5))
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 3
 4
 3.14

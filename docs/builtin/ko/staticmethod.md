@@ -42,9 +42,7 @@ result2 = helper.add(10, 20)
 print(result2)
 ```
 
-출력:
-
-```plaintext
+```output
 8
 30
 ```

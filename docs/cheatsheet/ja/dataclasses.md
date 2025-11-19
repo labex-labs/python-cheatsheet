@@ -30,9 +30,7 @@ obj = Number(2)
 obj.val
 ```
 
-出力：
-
-```plaintext
+```output
 2
 ```
 
@@ -50,9 +48,7 @@ obj = Number(2)  # __init__ が自動的に作成される
 obj.val
 ```
 
-出力：
-
-```plaintext
+```output
 2
 ```
 
@@ -72,9 +68,7 @@ obj = Product("Python")  # name のみ必須、他はデフォルト値を使用
 obj.name
 ```
 
-出力：
-
-```plaintext
+```output
 Python
 ```
 
@@ -82,9 +76,7 @@ Python
 obj.count
 ```
 
-出力：
-
-```plaintext
+```output
 0
 ```
 
@@ -92,9 +84,7 @@ obj.count
 obj.price
 ```
 
-出力：
-
-```plaintext
+```output
 0.0
 ```
 

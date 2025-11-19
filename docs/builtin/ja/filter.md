@@ -44,9 +44,7 @@ even_numbers = list(filter(is_even, numbers))
 print(even_numbers)
 ```
 
-Output:
-
-```plaintext
+```output
 [2, 4, 6]
 ```
 

@@ -31,9 +31,7 @@ Ein Escape-Zeichen wird erzeugt, indem man einen Backslash `\` gefolgt von dem Z
 print("Hello there!\nHow are you?\nI\'m doing fine.")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Hello there!
 How are you?
 I'm doing fine.
@@ -48,9 +46,7 @@ Ein Raw String ignoriert alle Escape-Zeichen vollständig und gibt jeden Backsla
 print(r"Hello there!\nHow are you?\nI\'m doing fine.")  # \n wird wörtlich ausgegeben
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Hello there!\nHow are you?\nI\'m doing fine.
 ```
 
@@ -70,9 +66,7 @@ Bob"""
 )
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Dear Alice,
 
 Eve's cat has been arrested for catnapping,
@@ -96,9 +90,7 @@ spam = 'Hello world!'
 spam[0]  # Gibt das erste Zeichen zurück: 'H'
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'H'
 ```
 
@@ -106,9 +98,7 @@ Ausgabe:
 spam[4]
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'o'
 ```
 
@@ -116,9 +106,7 @@ Ausgabe:
 spam[-1]
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '!'
 ```
 
@@ -131,9 +119,7 @@ spam = 'Hello world!'
 spam[0:5]  # Gibt die Zeichen von Index 0 bis 4 zurück: 'Hello'
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'Hello'
 ```
 
@@ -141,9 +127,7 @@ Ausgabe:
 spam[:5]
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'Hello'
 ```
 
@@ -151,9 +135,7 @@ Ausgabe:
 spam[6:]
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'world!'
 ```
 
@@ -161,9 +143,7 @@ Ausgabe:
 spam[6:-1]
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'world'
 ```
 
@@ -171,9 +151,7 @@ Ausgabe:
 spam[:-1]
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'Hello world'
 ```
 
@@ -181,9 +159,7 @@ Ausgabe:
 spam[::-1]
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '!dlrow olleH'
 ```
 
@@ -192,9 +168,7 @@ fizz = spam[0:5]
 fizz
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'Hello'
 ```
 
@@ -204,9 +178,7 @@ Ausgabe:
 'Hello' in 'Hello World'
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -214,9 +186,7 @@ True
 'Hello' in 'Hello'
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -224,9 +194,7 @@ True
 'HELLO' in 'Hello World'
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -234,9 +202,7 @@ False
 '' in 'spam'
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -244,9 +210,7 @@ True
 'cats' not in 'cats and dogs'
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -259,9 +223,7 @@ greet = 'Hello world!'
 greet.upper()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'HELLO WORLD!'
 ```
 
@@ -269,9 +231,7 @@ Ausgabe:
 greet.lower()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'hello world!'
 ```
 
@@ -279,9 +239,7 @@ Ausgabe:
 greet.title()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'Hello World!'
 ```
 
@@ -294,9 +252,7 @@ spam = 'Hello world!'
 spam.islower()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -304,9 +260,7 @@ False
 spam.isupper()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -314,9 +268,7 @@ False
 'HELLO'.isupper()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -324,9 +276,7 @@ True
 'abc12345'.islower()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -334,9 +284,7 @@ True
 '12345'.islower()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -344,9 +292,7 @@ False
 '12345'.isupper()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -366,9 +312,7 @@ False
 'Hello world!'.startswith('Hello')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -376,9 +320,7 @@ True
 'Hello world!'.endswith('world!')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -386,9 +328,7 @@ True
 'abc123'.startswith('abcdef')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -396,9 +336,7 @@ False
 'abc123'.endswith('12')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 ```
 
@@ -406,9 +344,7 @@ False
 'Hello world!'.startswith('Hello world!')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -416,9 +352,7 @@ True
 'Hello world!'.endswith('Hello world!')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 ```
 
@@ -432,9 +366,7 @@ Die Methode `join()` nimmt alle Elemente eines Iterierbaren, wie einer <router-l
 ''.join(['My', 'name', 'is', 'Simon'])
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'MynameisSimon'
 ```
 
@@ -442,9 +374,7 @@ Ausgabe:
 ', '.join(['cats', 'rats', 'bats'])
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'cats, rats, bats'
 ```
 
@@ -452,9 +382,7 @@ Ausgabe:
 ' '.join(['My', 'name', 'is', 'Simon'])
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'My name is Simon'
 ```
 
@@ -462,9 +390,7 @@ Ausgabe:
 'ABC'.join(['My', 'name', 'is', 'Simon'])
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'MyABCnameABCisABCSimon'
 ```
 
@@ -476,9 +402,7 @@ Die Methode `split()` teilt einen `String` in eine `Liste`. Standardmäßig verw
 'My name is Simon'.split()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 ['My', 'name', 'is', 'Simon']
 ```
 
@@ -486,9 +410,7 @@ Ausgabe:
 'MyABCnameABCisABCSimon'.split('ABC')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 ['My', 'name', 'is', 'Simon']
 ```
 
@@ -496,9 +418,7 @@ Ausgabe:
 'My name is Simon'.split('m')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 ['My na', 'e is Si', 'on']
 ```
 
@@ -506,9 +426,7 @@ Ausgabe:
 ' My  name is  Simon'.split()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 ['My', 'name', 'is', 'Simon']
 ```
 
@@ -516,9 +434,7 @@ Ausgabe:
 ' My  name is  Simon'.split(' ')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 ['', 'My', '', 'name', 'is', '', 'Simon']
 ```
 
@@ -528,9 +444,7 @@ Ausgabe:
 'Hello'.rjust(10)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '     Hello'
 ```
 
@@ -538,9 +452,7 @@ Ausgabe:
 'Hello'.rjust(20)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '               Hello'
 ```
 
@@ -548,9 +460,7 @@ Ausgabe:
 'Hello World'.rjust(20)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '         Hello World'
 ```
 
@@ -558,9 +468,7 @@ Ausgabe:
 'Hello'.ljust(10)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'Hello     '
 ```
 
@@ -568,9 +476,7 @@ Ausgabe:
 'Hello'.center(20)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '       Hello       '
 ```
 
@@ -580,9 +486,7 @@ Ein optionales zweites Argument für `rjust()` und `ljust()` legt ein Füllzeich
 'Hello'.rjust(20, '*')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '***************Hello'
 ```
 
@@ -590,9 +494,7 @@ Ausgabe:
 'Hello'.ljust(20, '-')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'Hello---------------'
 ```
 
@@ -600,9 +502,7 @@ Ausgabe:
 'Hello'.center(20, '=')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '=======Hello========'
 ```
 
@@ -613,9 +513,7 @@ spam = '    Hello World     '
 spam.strip()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'Hello World'
 ```
 
@@ -623,9 +521,7 @@ Ausgabe:
 spam.lstrip()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'Hello World     '
 ```
 
@@ -633,9 +529,7 @@ Ausgabe:
 spam.rstrip()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 '    Hello World'
 ```
 
@@ -644,9 +538,7 @@ spam = 'SpamSpamBaconSpamEggsSpamSpam'
 spam.strip('ampS')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'BaconSpamEggs'
 ```
 
@@ -659,9 +551,7 @@ sentence = 'one sheep two sheep three sheep four'
 sentence.count('sheep')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 3
 ```
 
@@ -669,9 +559,7 @@ Ausgabe:
 sentence.count('e')
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 9
 ```
 
@@ -680,9 +568,7 @@ Ausgabe:
 sentence.count('e', 6)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 8
 ```
 
@@ -690,9 +576,7 @@ Ausgabe:
 sentence.count('e', 7)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 7
 ```
 
@@ -705,9 +589,7 @@ text = "Hello, world!"
 text.replace("world", "planet")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'Hello, planet!'
 ```
 
@@ -716,9 +598,7 @@ fruits = "apple, banana, cherry, apple"
 fruits.replace("apple", "orange", 1)
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'orange, banana, cherry, apple'
 ```
 
@@ -727,9 +607,7 @@ sentence = "I like apples, Apples are my favorite fruit"
 sentence.replace("apples", "oranges")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 'I like oranges, Apples are my favorite fruit'
 ```
 

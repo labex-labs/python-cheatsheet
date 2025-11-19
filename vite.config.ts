@@ -12,6 +12,7 @@ import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
 import string from 'string'
 import { generateI18nSitemap } from './scripts/generate-i18n-sitemap'
+import PrismLib from 'prismjs'
 
 
 // https://vitejs.dev/config/
@@ -94,6 +95,9 @@ export default defineConfig(({ mode }) => {
       Markdown({
         headEnabled: true,
         markdownItSetup(md) {
+          // Register 'output' as an alias for 'plaintext' to avoid Prism warnings
+          PrismLib.languages.output = PrismLib.languages.plaintext
+          
           md.use(require('markdown-it-anchor'), {
             slugify: (s: string) => string(s).slugify().toString(),
           })

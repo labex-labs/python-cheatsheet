@@ -35,9 +35,7 @@ from pathlib import Path
 print(Path('usr').joinpath('bin').joinpath('spam'))
 ```
 
-出力：
-
-```plaintext
+```output
 usr/bin/spam
 ```
 
@@ -50,9 +48,7 @@ from pathlib import Path
 print(Path('usr') / 'bin' / 'spam')
 ```
 
-出力：
-
-```plaintext
+```output
 usr/bin/spam
 ```
 
@@ -67,9 +63,7 @@ for filename in my_files:
     print(home / filename)
 ```
 
-出力：
-
-```plaintext
+```output
 /home/labex/project/accounts.txt
 /home/labex/project/details.csv
 /home/labex/project/invite.docx
@@ -85,9 +79,7 @@ from os import chdir
 print(Path.cwd())
 ```
 
-出力：
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -98,9 +90,7 @@ chdir('/usr/lib/python3.10')
 print(Path.cwd())
 ```
 
-出力：
-
-```plaintext
+```output
 /usr/lib/python3.10
 ```
 
@@ -113,9 +103,7 @@ cwd = Path.cwd()
 (cwd / 'delicious' / 'walnut' / 'waffles').mkdir()
 ```
 
-出力：
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "/usr/lib/python3.10/pathlib.py", line 1226, in mkdir
@@ -153,9 +141,7 @@ from pathlib import Path
 Path('/').is_absolute()
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -164,9 +150,7 @@ True
 Path('..').is_absolute()
 ```
 
-出力：
-
-```plaintext
+```output
 False
 ```
 
@@ -178,9 +162,7 @@ from pathlib import Path
 print(Path.cwd())
 ```
 
-出力：
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -189,9 +171,7 @@ print(Path.cwd())
 print(Path('..').resolve())
 ```
 
-出力：
-
-```plaintext
+```output
 /home
 ```
 
@@ -205,9 +185,7 @@ from pathlib import Path
 print(Path('/etc/passwd').relative_to('/'))
 ```
 
-出力：
-
-```plaintext
+```output
 etc/passwd
 ```
 
@@ -222,9 +200,7 @@ from pathlib import Path
 Path('.').exists()
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -232,9 +208,7 @@ True
 Path('setup.py').exists()
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -242,9 +216,7 @@ True
 Path('/etc').exists()
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -252,9 +224,7 @@ True
 Path('nonexistentfile').exists()
 ```
 
-出力：
-
-```plaintext
+```output
 False
 ```
 
@@ -267,9 +237,7 @@ from pathlib import Path
 Path('setup.py').is_file()
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -277,9 +245,7 @@ True
 Path('/home').is_file()
 ```
 
-出力：
-
-```plaintext
+```output
 False
 ```
 
@@ -287,9 +253,7 @@ False
 Path('nonexistentfile').is_file()
 ```
 
-出力：
-
-```plaintext
+```output
 False
 ```
 
@@ -302,9 +266,7 @@ from pathlib import Path
 Path('/').is_dir()
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -312,9 +274,7 @@ True
 Path('setup.py').is_dir()
 ```
 
-出力：
-
-```plaintext
+```output
 False
 ```
 
@@ -322,9 +282,7 @@ False
 Path('/spam').is_dir()
 ```
 
-出力：
-
-```plaintext
+```output
 False
 ```
 
@@ -338,9 +296,7 @@ stat = Path('/bin/python3.10').stat()
 print(stat) # stat にはファイルに関する他の情報も含まれます
 ```
 
-出力：
-
-```plaintext
+```output
 os.stat_result(st_mode=33261, st_ino=141087, st_dev=2051, st_nlink=2, st_uid=0,
 --snip--
 st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517261276)
@@ -351,9 +307,7 @@ st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517
 print(stat.st_size) # サイズはバイト単位
 ```
 
-出力：
-
-```plaintext
+```output
 10024
 ```
 
@@ -367,9 +321,7 @@ for f in Path('/usr/bin').iterdir():
     print(f)
 ```
 
-出力：
-
-```plaintext
+```output
 ...
 /usr/bin/tiff2rgba
 /usr/bin/iconv
@@ -404,9 +356,7 @@ for sub_path in Path('/usr/bin').iterdir():
 print(total_size)
 ```
 
-出力：
-
-```plaintext
+```output
 1903178911
 ```
 

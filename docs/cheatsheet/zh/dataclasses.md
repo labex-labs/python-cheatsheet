@@ -30,9 +30,7 @@ obj = Number(2)
 obj.val
 ```
 
-输出：
-
-```plaintext
+```output
 2
 ```
 
@@ -50,9 +48,7 @@ obj = Number(2)  # 自动创建 __init__
 obj.val
 ```
 
-输出：
-
-```plaintext
+```output
 2
 ```
 
@@ -72,9 +68,7 @@ obj = Product("Python")  # 只需要 name，其他使用默认值
 obj.name
 ```
 
-输出：
-
-```plaintext
+```output
 Python
 ```
 
@@ -82,9 +76,7 @@ Python
 obj.count
 ```
 
-输出：
-
-```plaintext
+```output
 0
 ```
 
@@ -92,9 +84,7 @@ obj.count
 obj.price
 ```
 
-输出：
-
-```plaintext
+```output
 0.0
 ```
 

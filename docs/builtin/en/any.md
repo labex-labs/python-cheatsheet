@@ -33,9 +33,7 @@ any([0, 2, False])
 any([])
 ```
 
-Output:
-
-```plaintext
+```output
 False
 True
 False

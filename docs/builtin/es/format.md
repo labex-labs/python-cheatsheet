@@ -34,9 +34,7 @@ print("My name is {0} and I work for {1}.".format(name, company))
 print(f"My name is {name} and I work for {company}.")
 ```
 
-Salida:
-
-```plaintext
+```output
 My name is Micheal and I work for Dunder Mifflin.
 My name is Micheal and I work for Dunder Mifflin.
 ```

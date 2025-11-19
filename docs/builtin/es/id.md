@@ -35,9 +35,7 @@ print(id('1'))
 print(id([1, 2]))
 ```
 
-Salida:
-
-```plaintext
+```output
 4331368528
 4331368528
 4331368560

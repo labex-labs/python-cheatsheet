@@ -54,9 +54,7 @@ async def main():
 # asyncio.run(main())
 ```
 
-出力：
-
-```plaintext
+```output
 0
 1
 2

@@ -46,9 +46,7 @@ with context_manager(2) as cm:  # cm recibe el valor cedido (3)
     print('Right in the middle with cm = {}'.format(cm))
 ```
 
-Salida:
-
-```plaintext
+```output
 Enter
 Right in the middle with cm = 3
 Exit
@@ -72,9 +70,7 @@ with ContextManager():  # Llama a __enter__, luego a __exit__ cuando termina
     print("test")
 ```
 
-Salida:
-
-```plaintext
+```output
 --enter--
 test
 --exit--

@@ -35,9 +35,7 @@ print(next(my_iter))
 print(next(my_iter))
 ```
 
-Вывод:
-
-```plaintext
+```output
 1
 2
 3
@@ -51,9 +49,7 @@ print(i.__next__())
 print(i.__next__())
 ```
 
-Вывод:
-
-```plaintext
+```output
 <list_iterator object at 0x7f93158badc0>
 1
 2

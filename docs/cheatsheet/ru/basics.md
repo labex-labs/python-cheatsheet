@@ -43,9 +43,7 @@ labUrl: 'https://labex.io/ru/labs/python-python-basics-633647?course=python-chea
 2 + 3 * 6
 ```
 
-Вывод:
-
-```plaintext
+```output
 20
 ```
 
@@ -55,9 +53,7 @@ labUrl: 'https://labex.io/ru/labs/python-python-basics-633647?course=python-chea
 (2 + 3) * 6
 ```
 
-Вывод:
-
-```plaintext
+```output
 30
 ```
 
@@ -65,9 +61,7 @@ labUrl: 'https://labex.io/ru/labs/python-python-basics-633647?course=python-chea
 2 ** 8
 ```
 
-Вывод:
-
-```plaintext
+```output
 256
 ```
 
@@ -75,9 +69,7 @@ labUrl: 'https://labex.io/ru/labs/python-python-basics-633647?course=python-chea
 23 // 7
 ```
 
-Вывод:
-
-```plaintext
+```output
 3
 ```
 
@@ -85,9 +77,7 @@ labUrl: 'https://labex.io/ru/labs/python-python-basics-633647?course=python-chea
 23 % 7
 ```
 
-Вывод:
-
-```plaintext
+```output
 2
 ```
 
@@ -95,9 +85,7 @@ labUrl: 'https://labex.io/ru/labs/python-python-basics-633647?course=python-chea
 (5 - 1) * ((7 + 1) / (3 - 1))
 ```
 
-Вывод:
-
-```plaintext
+```output
 16.0
 ```
 
@@ -122,9 +110,7 @@ greeting += ' world!'
 greeting
 ```
 
-Вывод:
-
-```plaintext
+```output
 'Hello world!'
 ```
 
@@ -135,9 +121,7 @@ number += 1
 number
 ```
 
-Вывод:
-
-```plaintext
+```output
 2
 ```
 
@@ -148,9 +132,7 @@ my_list *= 3
 my_list
 ```
 
-Вывод:
-
-```plaintext
+```output
 ['item', 'item', 'item']
 ```
 
@@ -166,9 +148,7 @@ my_list
 print(my_var:="Hello World!")
 ```
 
-Вывод:
-
-```plaintext
+```output
 Hello World!
 ```
 
@@ -177,9 +157,7 @@ my_var="Yes"
 print(my_var)
 ```
 
-Вывод:
-
-```plaintext
+```output
 Yes
 ```
 
@@ -187,9 +165,7 @@ Yes
 print(my_var:="Hello")
 ```
 
-Вывод:
-
-```plaintext
+```output
 Hello
 ```
 
@@ -261,9 +237,7 @@ unique_ids = {1, 2, 3}     # set
 'Alice' 'Bob'
 ```
 
-Вывод:
-
-```plaintext
+```output
 'AliceBob'
 ```
 
@@ -274,9 +248,7 @@ unique_ids = {1, 2, 3}     # set
 'Alice' * 5
 ```
 
-Вывод:
-
-```plaintext
+```output
 'AliceAliceAliceAliceAlice'
 ```
 
@@ -363,9 +335,7 @@ def foo():
 print('Hello world!')
 ```
 
-Вывод:
-
-```plaintext
+```output
 Hello world!
 ```
 
@@ -374,9 +344,7 @@ a = 1
 print('Hello world!', a)
 ```
 
-Вывод:
-
-```plaintext
+```output
 Hello world! 1
 ```
 
@@ -391,9 +359,7 @@ for word in phrase:
     print(word, end='-')  # Используем '-' вместо перевода строки
 ```
 
-Вывод:
-
-```plaintext
+```output
 printed-with-a-dash-in-between-
 ```
 
@@ -406,9 +372,7 @@ printed-with-a-dash-in-between-
 print('cats', 'dogs', 'mice', sep=',')  # Вывод с разделителем-запятой
 ```
 
-Вывод:
-
-```plaintext
+```output
 cats,dogs,mice
 ```
 
@@ -423,9 +387,7 @@ my_name = input()  # Ожидаем, пока пользователь введ�
 print('Hi, {}'.format(my_name))
 ```
 
-Вывод:
-
-```plaintext
+```output
 What is your name?
 Martha
 Hi, Martha
@@ -438,9 +400,7 @@ my_name = input('What is your name? ')  # подсказка и считыван
 print('Hi, {}'.format(my_name))
 ```
 
-Вывод:
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```
@@ -453,9 +413,7 @@ my_name = input('What is your name? ')  # Подсказка и считыван
 print(f'Hi, {my_name}')  # f-строка для форматирования строк
 ```
 
-Вывод:
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```
@@ -469,9 +427,7 @@ Hi, Martha
 len('hello')  # Возвращает 5
 ```
 
-Вывод:
-
-```plaintext
+```output
 5
 ```
 
@@ -480,9 +436,7 @@ len('hello')  # Возвращает 5
 len(['cat', 3, 'dog'])  # Возвращает 3 (три элемента)
 ```
 
-Вывод:
-
-```plaintext
+```output
 3
 ```
 
@@ -504,9 +458,7 @@ if len(a) > 0:  # оценивается как True
     print("the list is not empty!")
 ```
 
-Вывод:
-
-```plaintext
+```output
 the list is not empty!
 ```
 
@@ -516,9 +468,7 @@ if a:  # оценивается как True, если список не пуст
     print("the list is not empty!")
 ```
 
-Вывод:
-
-```plaintext
+```output
 the list is not empty!
 ```
 
@@ -531,9 +481,7 @@ the list is not empty!
 str(29)  # Возвращает '29'
 ```
 
-Вывод:
-
-```plaintext
+```output
 '29'
 ```
 
@@ -541,9 +489,7 @@ str(29)  # Возвращает '29'
 str(-3.14)
 ```
 
-Вывод:
-
-```plaintext
+```output
 '-3.14'
 ```
 
@@ -554,9 +500,7 @@ str(-3.14)
 int('11')  # Возвращает 11
 ```
 
-Вывод:
-
-```plaintext
+```output
 11
 ```
 
@@ -565,9 +509,7 @@ int('11')  # Возвращает 11
 float('3.14')  # Возвращает 3.14
 ```
 
-Вывод:
-
-```plaintext
+```output
 3.14
 ```
 

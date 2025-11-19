@@ -32,9 +32,7 @@ print(divmod(10, 2))
 print(divmod(7, 2))
 ```
 
-出力：
-
-```plaintext
+```output
 3
 1
 (1, 0)

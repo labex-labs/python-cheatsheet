@@ -43,9 +43,7 @@ Examples of expressions:
 2 + 3 * 6
 ```
 
-Output:
-
-```plaintext
+```output
 20
 ```
 
@@ -55,9 +53,7 @@ Output:
 (2 + 3) * 6
 ```
 
-Output:
-
-```plaintext
+```output
 30
 ```
 
@@ -65,9 +61,7 @@ Output:
 2 ** 8
 ```
 
-Output:
-
-```plaintext
+```output
 256
 ```
 
@@ -75,9 +69,7 @@ Output:
 23 // 7
 ```
 
-Output:
-
-```plaintext
+```output
 3
 ```
 
@@ -85,9 +77,7 @@ Output:
 23 % 7
 ```
 
-Output:
-
-```plaintext
+```output
 2
 ```
 
@@ -95,9 +85,7 @@ Output:
 (5 - 1) * ((7 + 1) / (3 - 1))
 ```
 
-Output:
-
-```plaintext
+```output
 16.0
 ```
 
@@ -122,9 +110,7 @@ greeting += ' world!'
 greeting
 ```
 
-Output:
-
-```plaintext
+```output
 'Hello world!'
 ```
 
@@ -135,9 +121,7 @@ number += 1
 number
 ```
 
-Output:
-
-```plaintext
+```output
 2
 ```
 
@@ -148,9 +132,7 @@ my_list *= 3
 my_list
 ```
 
-Output:
-
-```plaintext
+```output
 ['item', 'item', 'item']
 ```
 
@@ -166,9 +148,7 @@ Example:
 print(my_var:="Hello World!")
 ```
 
-Output:
-
-```plaintext
+```output
 Hello World!
 ```
 
@@ -177,9 +157,7 @@ my_var="Yes"
 print(my_var)
 ```
 
-Output:
-
-```plaintext
+```output
 Yes
 ```
 
@@ -187,9 +165,7 @@ Yes
 print(my_var:="Hello")
 ```
 
-Output:
-
-```plaintext
+```output
 Hello
 ```
 
@@ -261,9 +237,7 @@ String concatenation:
 'Alice' 'Bob'
 ```
 
-Output:
-
-```plaintext
+```output
 'AliceBob'
 ```
 
@@ -274,9 +248,7 @@ String replication:
 'Alice' * 5
 ```
 
-Output:
-
-```plaintext
+```output
 'AliceAliceAliceAliceAlice'
 ```
 
@@ -363,9 +335,7 @@ The `print()` function writes the value of the argument(s) it is given. [...] it
 print('Hello world!')
 ```
 
-Output:
-
-```plaintext
+```output
 Hello world!
 ```
 
@@ -374,9 +344,7 @@ a = 1
 print('Hello world!', a)
 ```
 
-Output:
-
-```plaintext
+```output
 Hello world! 1
 ```
 
@@ -391,9 +359,7 @@ for word in phrase:
     print(word, end='-')  # Use '-' instead of newline
 ```
 
-Output:
-
-```plaintext
+```output
 printed-with-a-dash-in-between-
 ```
 
@@ -406,9 +372,7 @@ The keyword `sep` specify how to separate the objects, if there is more than one
 print('cats', 'dogs', 'mice', sep=',')  # Comma-separated output
 ```
 
-Output:
-
-```plaintext
+```output
 cats,dogs,mice
 ```
 
@@ -423,9 +387,7 @@ my_name = input()  # Wait for user to type and press Enter
 print('Hi, {}'.format(my_name))
 ```
 
-Output:
-
-```plaintext
+```output
 What is your name?
 Martha
 Hi, Martha
@@ -438,9 +400,7 @@ my_name = input('What is your name? ')  # default message
 print('Hi, {}'.format(my_name))
 ```
 
-Output:
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```
@@ -453,9 +413,7 @@ my_name = input('What is your name? ')  # Prompt and read in one call
 print(f'Hi, {my_name}')  # f-string for string formatting
 ```
 
-Output:
-
-```plaintext
+```output
 What is your name? Martha
 Hi, Martha
 ```
@@ -469,9 +427,7 @@ Evaluates to the integer value of the number of characters in a string, list, di
 len('hello')  # Returns 5
 ```
 
-Output:
-
-```plaintext
+```output
 5
 ```
 
@@ -480,9 +436,7 @@ Output:
 len(['cat', 3, 'dog'])  # Returns 3 (three items)
 ```
 
-Output:
-
-```plaintext
+```output
 3
 ```
 
@@ -504,9 +458,7 @@ if len(a) > 0:  # evaluates to True
     print("the list is not empty!")
 ```
 
-Output:
-
-```plaintext
+```output
 the list is not empty!
 ```
 
@@ -516,9 +468,7 @@ if a:  # evaluates to True if list is not empty
     print("the list is not empty!")
 ```
 
-Output:
-
-```plaintext
+```output
 the list is not empty!
 ```
 
@@ -531,9 +481,7 @@ These functions allow you to change the type of variable. For example, you can t
 str(29)  # Returns '29'
 ```
 
-Output:
-
-```plaintext
+```output
 '29'
 ```
 
@@ -541,9 +489,7 @@ Output:
 str(-3.14)
 ```
 
-Output:
-
-```plaintext
+```output
 '-3.14'
 ```
 
@@ -554,9 +500,7 @@ Or from a `string` to an `integer` or `float`:
 int('11')  # Returns 11
 ```
 
-Output:
-
-```plaintext
+```output
 11
 ```
 
@@ -565,9 +509,7 @@ Output:
 float('3.14')  # Returns 3.14
 ```
 
-Output:
-
-```plaintext
+```output
 3.14
 ```
 

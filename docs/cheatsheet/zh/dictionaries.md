@@ -45,9 +45,7 @@ my_cat['age_years'] = 2  # 添加新的键值对
 print(my_cat)
 ```
 
-输出：
-
-```plaintext
+```output
 {'size': 'fat', 'color': 'gray', 'disposition': 'loud', 'age_years': 2}
 ```
 
@@ -64,9 +62,7 @@ my_cat = {
 print(my_cat['size'])
 ```
 
-输出：
-
-```plaintext
+```output
 fat
 ```
 
@@ -74,9 +70,7 @@ fat
 print(my_cat['eye_color'])
 ```
 
-输出：
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'eye_color'
@@ -93,9 +87,7 @@ for value in pet.values():  # 遍历所有值
     print(value)
 ```
 
-输出：
-
-```plaintext
+```output
 red
 42
 ```
@@ -111,9 +103,7 @@ for key in pet.keys():  # 遍历所有键
     print(key)
 ```
 
-输出：
-
-```plaintext
+```output
 color
 age
 ```
@@ -127,9 +117,7 @@ for key in pet:  # 等同于 for key in pet.keys()
     print(key)
 ```
 
-输出：
-
-```plaintext
+```output
 color
 age
 ```
@@ -144,9 +132,7 @@ for item in pet.items():
     print(item)
 ```
 
-输出：
-
-```plaintext
+```output
 ('color', 'red')
 ('age', 42)
 ```
@@ -160,9 +146,7 @@ for key, value in pet.items():  # 将元组解包为键和值
     print(f'键：{key} 值：{value}')
 ```
 
-输出：
-
-```plaintext
+```output
 键: color 值: red
 键: age 值: 42
 ```
@@ -178,9 +162,7 @@ wife = {'name': 'Rose', 'age': 33}
 f'我妻子叫 {wife.get("name")}'  # 返回 'Rose'
 ```
 
-输出：
-
-```plaintext
+```output
 '我妻子叫 Rose'
 ```
 
@@ -188,9 +170,7 @@ f'我妻子叫 {wife.get("name")}'  # 返回 'Rose'
 f'她 {wife.get("age")} 岁了。'
 ```
 
-输出：
-
-```plaintext
+```output
 '她 33 岁了。'
 ```
 
@@ -198,9 +178,7 @@ f'她 {wife.get("age")} 岁了。'
 f'她深爱着 {wife.get("husband")}'
 ```
 
-输出：
-
-```plaintext
+```output
 '她深爱着 None'
 ```
 
@@ -212,9 +190,7 @@ wife = {'name': 'Rose', 'age': 33}
 f'她深爱着 {wife.get("husband", "情人")}'
 ```
 
-输出：
-
-```plaintext
+```output
 '她深爱着 情人'
 ```
 
@@ -236,9 +212,7 @@ wife.setdefault('has_hair', True)
 wife
 ```
 
-输出：
-
-```plaintext
+```output
 {'name': 'Rose', 'age': 33, 'has_hair': True}
 ```
 
@@ -253,9 +227,7 @@ wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
 wife.pop('age')
 ```
 
-输出：
-
-```plaintext
+```output
 33
 ```
 
@@ -263,9 +235,7 @@ wife.pop('age')
 wife
 ```
 
-输出：
-
-```plaintext
+```output
 {'name': 'Rose', 'hair': 'brown'}
 ```
 
@@ -278,9 +248,7 @@ wife = {'name': 'Rose', 'age': 33, 'hair': 'brown'}
 wife.popitem()
 ```
 
-输出：
-
-```plaintext
+```output
 ('hair', 'brown')
 ```
 
@@ -288,9 +256,7 @@ wife.popitem()
 wife
 ```
 
-输出：
-
-```plaintext
+```output
 {'name': 'Rose', 'age': 33}
 ```
 
@@ -304,9 +270,7 @@ del wife['age']
 wife
 ```
 
-输出：
-
-```plaintext
+```output
 {'name': 'Rose', 'hair': 'brown'}
 ```
 
@@ -320,9 +284,7 @@ wife.clear()
 wife
 ```
 
-输出：
-
-```plaintext
+```output
 {}
 ```
 
@@ -334,9 +296,7 @@ person = {'name': 'Rose', 'age': 33}
 'name' in person.keys()
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -344,9 +304,7 @@ True
 'height' in person.keys()
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -354,9 +312,7 @@ False
 'skin' in person # 可以省略 keys()
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -368,9 +324,7 @@ person = {'name': 'Rose', 'age': 33}
 'Rose' in person.values()
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -378,9 +332,7 @@ True
 33 in person.values()
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -393,9 +345,7 @@ wife = {'name': 'Rose', 'age': 33, 'has_hair': True, 'hair_color': 'brown', 'hei
 pprint.pprint(wife)
 ```
 
-输出：
-
-```plaintext
+```output
 {'age': 33,
  'eye_color': 'brown',
  'hair_color': 'brown',
@@ -415,9 +365,7 @@ dict_c = {**dict_a, **dict_b}
 dict_c
 ```
 
-输出：
-
-```plaintext
+```output
 {'a': 1, 'b': 3, 'c': 4}
 ```
 

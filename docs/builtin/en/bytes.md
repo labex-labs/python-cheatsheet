@@ -28,9 +28,7 @@ bytes_obj = bytes(data, "utf-8")
 print(bytes_obj)
 ```
 
-Output:
-
-```plaintext
+```output
 b'Hello, World!'
 ```
 
@@ -41,9 +39,7 @@ data = b"Hello, World!"
 print(data)
 ```
 
-Output:
-
-```plaintext
+```output
 b'Hello, World!'
 ```
 

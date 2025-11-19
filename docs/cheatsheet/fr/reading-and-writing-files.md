@@ -28,9 +28,7 @@ with open('/home/labex/project/hi.txt') as hello_file:
 hello_content
 ```
 
-Sortie :
-
-```plaintext
+```output
 'Hello World!'
 ```
 
@@ -42,9 +40,7 @@ with open('sonnet29.txt') as sonnet_file:
     sonnet_file.readlines()  # Retourne une liste avec chaque ligne comme une chaîne
 ```
 
-Sortie :
-
-```plaintext
+```output
 ['When, in disgrace with fortune and men's eyes,\n',
  ' I all alone beweep my  outcast state,\n',
  "And trouble deaf heaven with my bootless cries,\n",
@@ -60,9 +56,7 @@ with open('sonnet29.txt') as sonnet_file:
         print(line, end='')  # Imprimer sans saut de ligne supplémentaire
 ```
 
-Sortie :
-
-```plaintext
+```output
 When, in disgrace with fortune and men's eyes,
 I all alone beweep my outcast state,
 And trouble deaf heaven with my bootless cries,
@@ -77,9 +71,7 @@ with open('bacon.txt', 'w') as bacon_file:  # 'w' = mode écriture
     bacon_file.write('Hello world!\n')  # Retourne le nombre de caractères écrits
 ```
 
-Sortie :
-
-```plaintext
+```output
 13
 ```
 
@@ -89,9 +81,7 @@ with open('bacon.txt', 'a') as bacon_file:  # 'a' = mode ajout
     bacon_file.write('Bacon is not a vegetable.')
 ```
 
-Sortie :
-
-```plaintext
+```output
 25
 ```
 
@@ -102,9 +92,7 @@ with open('bacon.txt') as bacon_file:
 print(content)
 ```
 
-Sortie :
-
-```plaintext
+```output
 Hello world!
 Bacon is not a vegetable.
 ```

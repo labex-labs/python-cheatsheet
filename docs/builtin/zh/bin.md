@@ -34,9 +34,7 @@ print(bin(100))
 print(bin(1000))
 ```
 
-输出：
-
-```plaintext
+```output
 0b10
 0b111
 0b1

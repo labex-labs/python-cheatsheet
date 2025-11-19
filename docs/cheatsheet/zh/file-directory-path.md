@@ -39,9 +39,7 @@ from pathlib import Path
 print(Path('usr').joinpath('bin').joinpath('spam'))  # 连接路径组件
 ```
 
-输出：
-
-```plaintext
+```output
 usr/bin/spam
 ```
 
@@ -54,9 +52,7 @@ from pathlib import Path
 print(Path('usr') / 'bin' / 'spam')  # 使用 / 运算符代替 joinpath()
 ```
 
-输出：
-
-```plaintext
+```output
 usr/bin/spam
 ```
 
@@ -74,9 +70,7 @@ for filename in my_files:
     print(home / filename)  # 将主路径与每个文件名组合
 ```
 
-输出：
-
-```plaintext
+```output
 /home/labex/project/accounts.txt
 /home/labex/project/details.csv
 /home/labex/project/invite.docx
@@ -93,9 +87,7 @@ from pathlib import Path
 print(Path.cwd())  # 将当前工作目录作为 Path 对象返回
 ```
 
-输出：
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -109,9 +101,7 @@ cwd = Path.cwd()
 (cwd / 'delicious' / 'walnut' / 'waffles').mkdir()
 ```
 
-输出：
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "/usr/lib/python3.6/pathlib.py", line 1226, in mkdir
@@ -150,9 +140,7 @@ from pathlib import Path
 Path('/').is_absolute()
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -160,9 +148,7 @@ True
 Path('..').is_absolute()
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -173,9 +159,7 @@ from pathlib import Path
 print(Path.cwd())
 ```
 
-输出：
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -183,9 +167,7 @@ print(Path.cwd())
 print(Path('..').resolve())
 ```
 
-输出：
-
-```plaintext
+```output
 /home
 ```
 
@@ -198,9 +180,7 @@ from pathlib import Path
 print(Path('/etc/passwd').relative_to('/'))
 ```
 
-输出：
-
-```plaintext
+```output
 etc/passwd
 ```
 
@@ -216,9 +196,7 @@ from pathlib import Path
 Path('.').exists()
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -226,9 +204,7 @@ True
 Path('setup.py').exists()
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -236,9 +212,7 @@ True
 Path('/etc').exists()
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -246,9 +220,7 @@ True
 Path('nonexistentfile').exists()
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -262,9 +234,7 @@ from pathlib import Path
 Path('setup.py').is_file()
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -272,9 +242,7 @@ True
 Path('/home').is_file()
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -282,9 +250,7 @@ False
 Path('nonexistentfile').is_file()
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -298,9 +264,7 @@ from pathlib import Path
 Path('/').is_dir()
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -308,9 +272,7 @@ True
 Path('setup.py').is_dir()
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -318,9 +280,7 @@ False
 Path('/spam').is_dir()
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -335,9 +295,7 @@ stat = Path('/bin/python3.6').stat()
 print(stat) # stat 还包含有关文件的其他信息
 ```
 
-输出：
-
-```plaintext
+```output
 os.stat_result(st_mode=33261, st_ino=141087, st_dev=2051, st_nlink=2, st_uid=0,
 --snip--
 st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517261276)
@@ -347,9 +305,7 @@ st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517
 print(stat.st_size) # 大小（以字节为单位）
 ```
 
-输出：
-
-```plaintext
+```output
 10024
 ```
 
@@ -364,9 +320,7 @@ for f in Path('/usr/bin').iterdir():
     print(f)
 ```
 
-输出：
-
-```plaintext
+```output
 ...
 /usr/bin/tiff2rgba
 /usr/bin/iconv
@@ -403,9 +357,7 @@ for sub_path in Path('/usr/bin').iterdir():
 print(total_size)
 ```
 
-输出：
-
-```plaintext
+```output
 1903178911
 ```
 
@@ -419,9 +371,7 @@ import shutil
 shutil.copy('/tmp/spam.txt', '/tmp/delicious')
 ```
 
-输出：
-
-```plaintext
+```output
 /tmp/delicious/spam.txt
 ```
 
@@ -429,9 +379,7 @@ shutil.copy('/tmp/spam.txt', '/tmp/delicious')
 shutil.copy('/tmp/eggs.txt', '/tmp/delicious/eggs2.txt')
 ```
 
-输出：
-
-```plaintext
+```output
 /tmp/delicious/eggs2.txt
 ```
 
@@ -443,9 +391,7 @@ import shutil
 shutil.copytree('/tmp/bacon', '/tmp/bacon_backup')
 ```
 
-输出：
-
-```plaintext
+```output
 /tmp/bacon_backup
 ```
 
@@ -457,9 +403,7 @@ import shutil
 shutil.move('/tmp/bacon.txt', '/tmp/eggs')
 ```
 
-输出：
-
-```plaintext
+```output
 /tmp/eggs/bacon.txt
 ```
 
@@ -469,9 +413,7 @@ shutil.move('/tmp/bacon.txt', '/tmp/eggs')
 shutil.move('/tmp/bacon.txt', '/tmp/eggs/new_bacon.txt')
 ```
 
-输出：
-
-```plaintext
+```output
 /tmp/eggs/new_bacon.txt
 ```
 
@@ -481,9 +423,7 @@ shutil.move('/tmp/bacon.txt', '/tmp/eggs/new_bacon.txt')
 shutil.move('/tmp/bacon.txt', '/tmp/eggs')
 ```
 
-输出：
-
-```plaintext
+```output
 /tmp/eggs
 ```
 
@@ -505,9 +445,7 @@ for i in p.rglob('*'):
     print(i)
 ```
 
-输出：
-
-```plaintext
+```output
 /tmp/delicious/cats
 /tmp/delicious/walnut
 /tmp/delicious/spam.txt

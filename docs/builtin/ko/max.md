@@ -35,9 +35,7 @@ letters = ('a', 'b', 'z')
 print(max(letters))
 ```
 
-출력:
-
-```plaintext
+```output
 40
 z
 ```
@@ -48,9 +46,7 @@ z
 print(max(10, 20, 5))
 ```
 
-출력:
-
-```plaintext
+```output
 20
 ```
 

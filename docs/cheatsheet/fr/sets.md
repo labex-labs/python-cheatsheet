@@ -46,9 +46,7 @@ s = {}  # this will create a dictionary instead of a set
 type(s)  # Returns <class 'dict'>
 ```
 
-Output:
-
-```plaintext
+```output
 <class 'dict'>
 ```
 
@@ -62,9 +60,7 @@ s = {1, 2, 3, 2, 3, 4}  # Duplicates are removed
 s  # Returns {1, 2, 3, 4}
 ```
 
-Output:
-
-```plaintext
+```output
 {1, 2, 3, 4}
 ```
 
@@ -75,9 +71,7 @@ s = {1, 2, 3}
 s[0]
 ```
 
-Output:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'set' object does not support indexing
@@ -94,9 +88,7 @@ s.add(4)  # Add element 4
 s
 ```
 
-Output:
-
-```plaintext
+```output
 {1, 2, 3, 4}
 ```
 
@@ -109,9 +101,7 @@ s.update([2, 3, 4, 5, 6])  # Add multiple elements (duplicates ignored)
 s
 ```
 
-Output:
-
-```plaintext
+```output
 {1, 2, 3, 4, 5, 6}
 ```
 
@@ -126,9 +116,7 @@ s.remove(3)  # Remove element 3
 s
 ```
 
-Output:
-
-```plaintext
+```output
 {1, 2}
 ```
 
@@ -136,9 +124,7 @@ Output:
 s.remove(3)
 ```
 
-Output:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 3
@@ -153,9 +139,7 @@ s.discard(3)  # Remove element 3 (safe, no error if missing)
 s
 ```
 
-Output:
-
-```plaintext
+```output
 {1, 2}
 ```
 
@@ -174,9 +158,7 @@ s2 = {3, 4, 5}
 s1.union(s2)  # or 's1 | s2' - returns {1, 2, 3, 4, 5}
 ```
 
-Output:
-
-```plaintext
+```output
 {1, 2, 3, 4, 5}
 ```
 
@@ -192,9 +174,7 @@ s3 = {3, 4, 5}
 s1.intersection(s2, s3)  # or 's1 & s2 & s3' - returns {3}
 ```
 
-Output:
-
-```plaintext
+```output
 {3}
 ```
 
@@ -210,9 +190,7 @@ s2 = {2, 3, 4}
 s1.difference(s2)  # or 's1 - s2' - returns {1}
 ```
 
-Output:
-
-```plaintext
+```output
 {1}
 ```
 
@@ -220,9 +198,7 @@ Output:
 s2.difference(s1) # or 's2 - s1'
 ```
 
-Output:
-
-```plaintext
+```output
 {4}
 ```
 
@@ -237,9 +213,7 @@ s2 = {2, 3, 4}
 s1.symmetric_difference(s2)  # or 's1 ^ s2' - returns {1, 4}
 ```
 
-Output:
-
-```plaintext
+```output
 {1, 4}
 ```
 

@@ -41,9 +41,7 @@ with open('spam.txt') as spam:
     print(content)
 ```
 
-Saída:
-
-```plaintext
+```output
 Minha primeira linha
 
 Minha segunda linha

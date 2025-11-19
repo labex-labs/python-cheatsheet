@@ -39,9 +39,7 @@ abs(0b10)  # Binär
 abs(0o20)  # Oktal
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 1
 0
 3.14

@@ -43,9 +43,7 @@ nums = [1, 2, 3, 4]
 print(double_map(double, nums))
 ```
 
-Output:
-
-```plaintext
+```output
 [2, 4, 6, 8]
 ```
 
@@ -64,9 +62,7 @@ list2 = [4, 5, 6]
 print(multi_map((lambda item1, item2: item1 * item2), list1, list2))
 ```
 
-Output:
-
-```plaintext
+```output
 [4, 10, 18]
 ```
 
@@ -87,9 +83,7 @@ result = list(map(max, list1, list2))
 print(result)
 ```
 
-Output:
-
-```plaintext
+```output
 [1, 1, 1]
 ```
 

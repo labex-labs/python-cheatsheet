@@ -37,9 +37,7 @@ with shelve.open('mydata') as shelf_file:
     print(shelf_file['wife'])
 ```
 
-Вывод:
-
-```plaintext
+```output
 <class 'shelve.DbfilenameShelf'>
 ['Pretty', 'Lovely', 'Nice']
 ```
@@ -53,9 +51,7 @@ with shelve.open('mydata') as shelf_file:
     print(list(shelf_file.values()))
 ```
 
-Вывод:
-
-```plaintext
+```output
 ['wife']
 [['Pretty', 'Lovely', 'Nice']]
 ```

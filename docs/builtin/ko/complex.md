@@ -33,9 +33,7 @@ print(complex(5))
 print(complex("2+3j"))
 ```
 
-출력:
-
-```plaintext
+```output
 (3+4j)
 (5+0j)
 (2+3j)

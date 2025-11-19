@@ -62,9 +62,7 @@ mo = phone_num_regex.search('My number is 415-555-4242.')  # パターンを検�
 print(f'Phone number found: {mo.group()}')  # group() は一致したテキストを返す
 ```
 
-出力：
-
-```plaintext
+```output
 Phone number found: 415-555-4242
 ```
 
@@ -78,9 +76,7 @@ mo = phone_num_regex.search('My number is 415-555-4242.')
 mo.group(1)  # 最初のグループを返す：'415'
 ```
 
-出力：
-
-```plaintext
+```output
 '415'
 ```
 
@@ -88,9 +84,7 @@ mo.group(1)  # 最初のグループを返す：'415'
 mo.group(2)
 ```
 
-出力：
-
-```plaintext
+```output
 '555-4242'
 ```
 
@@ -98,9 +92,7 @@ mo.group(2)
 mo.group(0)
 ```
 
-出力：
-
-```plaintext
+```output
 '415-555-4242'
 ```
 
@@ -108,9 +100,7 @@ mo.group(0)
 mo.group()
 ```
 
-出力：
-
-```plaintext
+```output
 '415-555-4242'
 ```
 
@@ -121,9 +111,7 @@ mo.group()
 mo.groups()  # ('415', '555-4242') を返す
 ```
 
-出力：
-
-```plaintext
+```output
 ('415', '555-4242')
 ```
 
@@ -133,9 +121,7 @@ area_code, main_number = mo.groups()
 print(area_code)
 ```
 
-出力：
-
-```plaintext
+```output
 415
 ```
 
@@ -143,9 +129,7 @@ print(area_code)
 print(main_number)
 ```
 
-出力：
-
-```plaintext
+```output
 555-4242
 ```
 
@@ -160,9 +144,7 @@ mo1 = hero_regex.search('Batman and Tina Fey.')
 mo1.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Batman'
 ```
 
@@ -171,9 +153,7 @@ mo2 = hero_regex.search('Tina Fey and Batman.')
 mo2.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Tina Fey'
 ```
 
@@ -186,9 +166,7 @@ mo = bat_regex.search('Batmobile lost a wheel')
 mo.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Batmobile'
 ```
 
@@ -196,9 +174,7 @@ mo.group()
 mo.group(1)
 ```
 
-出力：
-
-```plaintext
+```output
 'mobile'
 ```
 
@@ -213,9 +189,7 @@ mo1 = bat_regex.search('The Adventures of Batman')
 mo1.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Batman'
 ```
 
@@ -224,9 +198,7 @@ mo2 = bat_regex.search('The Adventures of Batwoman')
 mo2.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Batwoman'
 ```
 
@@ -240,9 +212,7 @@ mo1 = bat_regex.search('The Adventures of Batman')
 mo1.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Batman'
 ```
 
@@ -251,9 +221,7 @@ mo2 = bat_regex.search('The Adventures of Batwoman')
 mo2.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Batwoman'
 ```
 
@@ -262,9 +230,7 @@ mo3 = bat_regex.search('The Adventures of Batwowowowoman')
 mo3.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Batwowowowoman'
 ```
 
@@ -279,9 +245,7 @@ mo1 = bat_regex.search('The Adventures of Batwoman')
 mo1.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Batwoman'
 ```
 
@@ -290,9 +254,7 @@ mo2 = bat_regex.search('The Adventures of Batwowowowoman')
 mo2.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Batwowowowoman'
 ```
 
@@ -301,9 +263,7 @@ mo3 = bat_regex.search('The Adventures of Batman')
 mo3 is None
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -318,9 +278,7 @@ mo1 = ha_regex.search('HaHaHa')
 mo1.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'HaHaHa'
 ```
 
@@ -329,9 +287,7 @@ mo2 = ha_regex.search('Ha')
 mo2 is None
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -343,9 +299,7 @@ mo1 = ha_regex.search('HaHaHaHa')
 mo1.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'HaHaHa'
 ```
 
@@ -360,9 +314,7 @@ mo1 = greedy_ha_regex.search('HaHaHaHaHa')
 mo1.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'HaHaHaHaHa'
 ```
 
@@ -372,9 +324,7 @@ mo2 = non_greedy_ha_regex.search('HaHaHaHaHa')
 mo2.group()
 ```
 
-出力：
-
-```plaintext
+```output
 'HaHaHa'
 ```
 
@@ -387,9 +337,7 @@ phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # グループなし
 phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
 ```
 
-出力：
-
-```plaintext
+```output
 ['415-555-9999', '212-555-0000']
 ```
 
@@ -402,9 +350,7 @@ vowel_regex = re.compile(r'[aeiouAEIOU]')
 vowel_regex.findall('Robocop eats baby food. BABY FOOD.')
 ```
 
-出力：
-
-```plaintext
+```output
 ['o', 'o', 'o', 'e', 'a', 'a', 'o', 'o', 'A', 'O', 'O']
 ```
 
@@ -417,9 +363,7 @@ consonant_regex = re.compile(r'[^aeiouAEIOU]')
 consonant_regex.findall('Robocop eats baby food. BABY FOOD.')
 ```
 
-出力：
-
-```plaintext
+```output
 ['R', 'b', 'c', 'p', ' ', 't', 's', ' ', 'b', 'b', 'y', ' ', 'f', 'd', '.', ' ', 'B', 'B', 'Y', ' ', 'F', 'D', '.']
 ```
 
@@ -438,9 +382,7 @@ begins_with_hello = re.compile(r'^Hello')
 begins_with_hello.search('Hello world!')
 ```
 
-出力：
-
-```plaintext
+```output
 <_sre.SRE_Match object; span=(0, 5), match='Hello'>
 ```
 
@@ -448,9 +390,7 @@ begins_with_hello.search('Hello world!')
 begins_with_hello.search('He said hello.') is None
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -462,9 +402,7 @@ whole_string_is_num = re.compile(r'^\d+$')
 whole_string_is_num.search('1234567890')
 ```
 
-出力：
-
-```plaintext
+```output
 <_sre.SRE_Match object; span=(0, 10), match='1234567890'>
 ```
 
@@ -472,9 +410,7 @@ whole_string_is_num.search('1234567890')
 whole_string_is_num.search('12345xyz67890') is None
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -482,9 +418,7 @@ True
 whole_string_is_num.search('12 34567890') is None
 ```
 
-出力：
-
-```plaintext
+```output
 True
 ```
 
@@ -498,9 +432,7 @@ at_regex = re.compile(r'.at')
 at_regex.findall('The cat in the hat sat on the flat mat.')
 ```
 
-出力：
-
-```plaintext
+```output
 ['cat', 'hat', 'sat', 'lat', 'mat']
 ```
 
@@ -513,9 +445,7 @@ mo = name_regex.search('First Name: Al Last Name: Sweigart')
 mo.group(1)
 ```
 
-出力：
-
-```plaintext
+```output
 'Al'
 ```
 
@@ -523,9 +453,7 @@ mo.group(1)
 mo.group(2)
 ```
 
-出力：
-
-```plaintext
+```output
 'Sweigart'
 ```
 
@@ -537,9 +465,7 @@ mo = non_greedy_regex.search('<To serve man> for dinner.>')
 mo.group()
 ```
 
-出力：
-
-```plaintext
+```output
 '<To serve man>'
 ```
 
@@ -549,9 +475,7 @@ mo = greedy_regex.search('<To serve man> for dinner.>')
 mo.group()
 ```
 
-出力：
-
-```plaintext
+```output
 '<To serve man> for dinner.>'
 ```
 
@@ -564,9 +488,7 @@ no_newline_regex = re.compile('.*')
 no_newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Serve the public trust.'
 ```
 
@@ -575,9 +497,7 @@ newline_regex = re.compile('.*', re.DOTALL)
 newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Serve the public trust.\nProtect the innocent.\nUphold the law.'
 ```
 
@@ -591,9 +511,7 @@ robocop = re.compile(r'robocop', re.I)
 robocop.search('Robocop is part man, part machine, all cop.').group()
 ```
 
-出力：
-
-```plaintext
+```output
 'Robocop'
 ```
 
@@ -601,9 +519,7 @@ robocop.search('Robocop is part man, part machine, all cop.').group()
 robocop.search('ROBOCOP protects the innocent.').group()
 ```
 
-出力：
-
-```plaintext
+```output
 'ROBOCOP'
 ```
 
@@ -611,9 +527,7 @@ robocop.search('ROBOCOP protects the innocent.').group()
 robocop.search('Al, why does your programming book talk about robocop so much?').group()
 ```
 
-出力：
-
-```plaintext
+```output
 'robocop'
 ```
 
@@ -632,9 +546,7 @@ names_regex = re.compile(r'Agent \w+')
 names_regex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
 ```
 
-出力：
-
-```plaintext
+```output
 'CENSORED gave the secret documents to CENSORED.'
 ```
 

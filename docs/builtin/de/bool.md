@@ -37,9 +37,7 @@ bool({})      # leeres Dict
 bool(set())   # leeres Set
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 False
 False
 False
@@ -63,9 +61,7 @@ bool([1, 2])
 bool({'a': 1})
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 True
 True
 True

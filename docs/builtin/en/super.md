@@ -37,9 +37,7 @@ c = Child()
 c.greet()
 ```
 
-Output:
-
-```plaintext
+```output
 Hello from Parent
 Hello from Child
 ```

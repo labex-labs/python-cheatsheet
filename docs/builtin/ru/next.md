@@ -39,9 +39,7 @@ except StopIteration:
     print("Iterator is exhausted")
 ```
 
-Вывод:
-
-```plaintext
+```output
 1
 2
 Iterator is exhausted
@@ -55,9 +53,7 @@ print(next(my_iter, "default"))
 print(next(my_iter, "default"))
 ```
 
-Вывод:
-
-```plaintext
+```output
 1
 default
 ```
@@ -71,9 +67,7 @@ print(next(i))
 print(next(i))
 ```
 
-Вывод:
-
-```plaintext
+```output
 1
 2
 3

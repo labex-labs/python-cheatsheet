@@ -29,9 +29,7 @@ numbers = [1, 2, 3, 4, 5]
 print(sum(numbers))
 ```
 
-出力：
-
-```plaintext
+```output
 15
 ```
 
@@ -42,9 +40,7 @@ numbers = [1, 2, 3]
 print(sum(numbers, 10))  # 10 + 1 + 2 + 3
 ```
 
-出力：
-
-```plaintext
+```output
 16
 ```
 

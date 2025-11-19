@@ -28,9 +28,7 @@ with open('/home/labex/project/hi.txt') as hello_file:
 hello_content
 ```
 
-출력:
-
-```plaintext
+```output
 'Hello World!'
 ```
 
@@ -42,9 +40,7 @@ with open('sonnet29.txt') as sonnet_file:
     sonnet_file.readlines()  # 각 줄을 문자열로 포함하는 목록 반환
 ```
 
-출력:
-
-```plaintext
+```output
 ['When, in disgrace with fortune and men's eyes,\n',
  ' I all alone beweep my  outcast state,\n',
  "And trouble deaf heaven with my bootless cries,\n",
@@ -60,9 +56,7 @@ with open('sonnet29.txt') as sonnet_file:
         print(line, end='')  # 추가 줄 바꿈 없이 출력
 ```
 
-출력:
-
-```plaintext
+```output
 When, in disgrace with fortune and men's eyes,
 I all alone beweep my outcast state,
 And trouble deaf heaven with my bootless cries,
@@ -77,9 +71,7 @@ with open('bacon.txt', 'w') as bacon_file:  # 'w' = 쓰기 모드
     bacon_file.write('Hello world!\n')  # 작성된 문자 수를 반환
 ```
 
-출력:
-
-```plaintext
+```output
 13
 ```
 
@@ -89,9 +81,7 @@ with open('bacon.txt', 'a') as bacon_file:  # 'a' = 추가 모드
     bacon_file.write('Bacon is not a vegetable.')
 ```
 
-출력:
-
-```plaintext
+```output
 25
 ```
 
@@ -102,9 +92,7 @@ with open('bacon.txt') as bacon_file:
 print(content)
 ```
 
-출력:
-
-```plaintext
+```output
 Hello world!
 Bacon is not a vegetable.
 ```

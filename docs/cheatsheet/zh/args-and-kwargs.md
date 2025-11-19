@@ -65,9 +65,7 @@ def some_function(*args):
 some_function('arg1', 'arg2', 'arg3')
 ```
 
-输出：
-
-```plaintext
+```output
 传入的参数: ('arg1', 'arg2', 'arg3') 类型为 <class 'tuple'>
 ```
 
@@ -84,9 +82,7 @@ def some_function(**kwargs):
 some_function(key1='arg1', key2='arg2')
 ```
 
-输出：
-
-```plaintext
+```output
 关键字参数: {'key1': 'arg1', 'key2': 'arg2'} 类型为 <class 'dict'>
 ```
 

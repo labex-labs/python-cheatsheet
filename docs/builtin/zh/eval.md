@@ -26,9 +26,7 @@ Python 中的 `eval()` 函数是一个内置函数，它将一个字符串解析
 eval('1 + 4')
 ```
 
-输出：
-
-```plaintext
+```output
 5
 ```
 
@@ -36,9 +34,7 @@ eval('1 + 4')
 eval('print("Hello World!")')
 ```
 
-输出：
-
-```plaintext
+```output
 Hello World!
 ```
 
@@ -47,9 +43,7 @@ x = 10
 eval('x == 10')
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 

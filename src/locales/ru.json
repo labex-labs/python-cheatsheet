@@ -128,5 +128,11 @@
     "getDiscount": "Получите скидку 50% прямо сейчас →",
     "shortMessage": "Черная пятница 2025: Python Hands-on Labs",
     "shortDiscount": "Получите скидку 50% →"
+  },
+  "codeBlock": {
+    "copy": "Копировать",
+    "copied": "Скопировано",
+    "expand": "Развернуть",
+    "collapse": "Свернуть"
   }
 }

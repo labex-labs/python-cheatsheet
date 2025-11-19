@@ -46,9 +46,7 @@ with context_manager(2) as cm:  # cm は yield された値 (3) を受け取る
     print('Right in the middle with cm = {}'.format(cm))
 ```
 
-出力：
-
-```plaintext
+```output
 Enter
 Right in the middle with cm = 3
 Exit
@@ -72,9 +70,7 @@ with ContextManager():  # 完了すると__enter__が呼び出され、次に__e
     print("test")
 ```
 
-出力：
-
-```plaintext
+```output
 --enter--
 test
 --exit--

@@ -34,9 +34,7 @@ b = copy.copy(a)
 a
 ```
 
-Output:
-
-```plaintext
+```output
 [[1], [2], [3]]
 ```
 
@@ -44,17 +42,13 @@ Output:
 b
 ```
 
-Output:
-
-```plaintext
+```output
 [[1], [2], [3]]
 ```
 
 ### Sans importer le module copy, vous ne pouvez pas l'utiliser
 
-Output:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'copy' is not defined
@@ -80,9 +74,7 @@ a[1] = None
 a
 ```
 
-Output:
-
-```plaintext
+```output
 [[0], None, [3]]
 ```
 
@@ -90,9 +82,7 @@ Output:
 b
 ```
 
-Output:
-
-```plaintext
+```output
 [[1], [2], [3]]
 ```
 

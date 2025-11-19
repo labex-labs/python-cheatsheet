@@ -44,9 +44,7 @@ for each in result:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 1
 2
 6
@@ -80,9 +78,7 @@ for each in result:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 5
 7
 13
@@ -122,9 +118,7 @@ for each in result:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 ('circle', 'triangle')
 ('circle', 'square')
 ('triangle', 'square')
@@ -148,9 +142,7 @@ for each in result:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 ('circle', 'circle')
 ('circle', 'triangle')
 ('circle', 'square')
@@ -177,9 +169,7 @@ for i in itertools.count(10,3):
         break
 ```
 
-Saída:
-
-```plaintext
+```output
 10
 13
 16
@@ -204,9 +194,7 @@ for color in itertools.cycle(colors):
     print(color)
 ```
 
-Saída:
-
-```plaintext
+```output
 red
 orange
 yellow
@@ -238,9 +226,7 @@ for each in result:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 red
 orange
 yellow
@@ -271,9 +257,7 @@ for each in result:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 circle
 square
 ```
@@ -296,9 +280,7 @@ for each in result:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 5
 6
 7
@@ -326,9 +308,7 @@ for each in result:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 5
 6
 7
@@ -362,9 +342,7 @@ for key, group in itertools.groupby(robots, key=lambda x: x['faction']):
     print(list(group))
 ```
 
-Saída:
-
-```plaintext
+```output
 autobot
 [{'name': 'blaster', 'faction': 'autobot'}]
 decepticon
@@ -393,9 +371,7 @@ for each in few_colors:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 red
 orange
 ```
@@ -416,9 +392,7 @@ for each in result:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 ('a', 'b', 'c')
 ('a', 'c', 'b')
 ('b', 'a', 'c')
@@ -440,9 +414,7 @@ for each in result:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 (1, 'a')
 (1, 'b')
 (1, 'c')
@@ -470,9 +442,7 @@ for i in itertools.repeat("spam", 3):
     print(i)
 ```
 
-Saída:
-
-```plaintext
+```output
 spam
 spam
 spam
@@ -496,9 +466,7 @@ for each in result:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 12
 32
 21
@@ -522,9 +490,7 @@ for each in result:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 1
 2
 3
@@ -549,9 +515,7 @@ for each in alpha_colors:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 red
 orange
 yellow
@@ -566,9 +530,7 @@ for each in beta_colors:
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 red
 orange
 yellow
@@ -594,9 +556,7 @@ for each in itertools.zip_longest(colors, data, fillvalue=None):
     print(each)
 ```
 
-Saída:
-
-```plaintext
+```output
 ('red', 1)
 ('orange', 2)
 ('yellow', 3)

@@ -128,5 +128,11 @@
     "getDiscount": "지금 50% 할인 받기 →",
     "shortMessage": "블랙 프라이데이 2025: Python Hands-on Labs",
     "shortDiscount": "50% 할인 받기 →"
+  },
+  "codeBlock": {
+    "copy": "복사",
+    "copied": "복사됨",
+    "expand": "펼치기",
+    "collapse": "접기"
   }
 }

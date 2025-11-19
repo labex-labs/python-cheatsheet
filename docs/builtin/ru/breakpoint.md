@@ -40,9 +40,7 @@ final_sum = calculate_sum(10, 20)
 print(final_sum)
 ```
 
-Вывод:
-
-```plaintext
+```output
 (Pdb) result
 30
 (Pdb) c

@@ -32,9 +32,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-Sortie :
-
-```plaintext
+```output
 2
 ```
 
@@ -42,9 +40,7 @@ Sortie :
 divide(dividend=10, divisor=0)
 ```
 
-Sortie :
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
@@ -63,9 +59,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-Sortie :
-
-```plaintext
+```output
 2
 ```
 
@@ -73,9 +67,7 @@ Sortie :
 divide(dividend=10, divisor=0)
 ```
 
-Sortie :
-
-```plaintext
+```output
 Vous ne pouvez pas diviser par 0
 ```
 
@@ -97,9 +89,7 @@ def divide(dividend , divisor):
 divide(dividend=20, divisor=5)
 ```
 
-Sortie :
-
-```plaintext
+```output
 4
 ```
 
@@ -107,9 +97,7 @@ Sortie :
 divide(dividend=10, divisor=5)
 ```
 
-Sortie :
-
-```plaintext
+```output
 can only concatenate str (not "int") to str
 ```
 
@@ -117,9 +105,7 @@ can only concatenate str (not "int") to str
 divide(dividend=10, divisor=0)
 ```
 
-Sortie :
-
-```plaintext
+```output
 division by zero
 ```
 
@@ -140,9 +126,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-Sortie :
-
-```plaintext
+```output
 2.0
 Exécution terminée
 ```
@@ -151,9 +135,7 @@ Exécution terminée
 divide(dividend=10, divisor=0)
 ```
 
-Sortie :
-
-```plaintext
+```output
 Vous ne pouvez pas diviser par 0
 Exécution terminée
 ```
@@ -170,9 +152,7 @@ class MyCustomException(Exception):
 raise MyCustomException  # Lever l'exception personnalisée
 ```
 
-Sortie :
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException
@@ -187,9 +167,7 @@ class MyCustomException(Exception):
 raise MyCustomException('Un message personnalisé pour mon exception personnalisée')
 ```
 
-Sortie :
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException: Un message personnalisé pour mon exception personnalisée
@@ -204,9 +182,7 @@ except MyCustomException:
     print('Mon exception personnalisée a été levée')
 ```
 
-Sortie :
-
-```plaintext
+```output
 Mon exception personnalisée a été levée
 ```
 

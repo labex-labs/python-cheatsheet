@@ -43,9 +43,7 @@ print(callable(z))
 print(callable(a))
 ```
 
-Salida:
-
-```plaintext
+```output
 False
 True
 True

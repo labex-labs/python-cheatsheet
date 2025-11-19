@@ -26,9 +26,7 @@ Python 의 `eval()` 함수는 문자열을 Python 표현식으로 구문 분석�
 eval('1 + 4')
 ```
 
-출력:
-
-```plaintext
+```output
 5
 ```
 
@@ -36,9 +34,7 @@ eval('1 + 4')
 eval('print("Hello World!")')
 ```
 
-출력:
-
-```plaintext
+```output
 Hello World!
 ```
 
@@ -47,9 +43,7 @@ x = 10
 eval('x == 10')
 ```
 
-출력:
-
-```plaintext
+```output
 True
 ```
 

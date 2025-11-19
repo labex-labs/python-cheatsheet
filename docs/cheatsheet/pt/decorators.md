@@ -38,9 +38,7 @@ def foo():
 foo()  # Chama wrapper, que chama foo com comportamento extra
 ```
 
-Output:
-
-```plaintext
+```output
 Before func!
 Hello World!
 After func!
@@ -66,9 +64,7 @@ def foo(bar):
 foo("Jack")  # Argumentos são passados através do wrapper
 ```
 
-Output:
-
-```plaintext
+```output
 Before func!
 My name is Jack
 After func!
@@ -159,9 +155,7 @@ test_succeed = DecorateMyMethod(True)
 test_succeed.class_action()
 ```
 
-Output:
-
-```plaintext
+```output
 You succeeded by choice.
 ```
 
@@ -170,9 +164,7 @@ test_fail = DecorateMyMethod(False)
 test_fail.class_action()
 ```
 
-Output:
-
-```plaintext
+```output
 Exception: Epic fail of your own creation.
 ```
 
@@ -199,9 +191,7 @@ def say_hi(name):
 say_hi("Jack")  # Chama CountCallNumber.__call__()
 ```
 
-Output:
-
-```plaintext
+```output
 This is execution number 1
 Hi! My name is Jack
 ```
@@ -210,9 +200,7 @@ Hi! My name is Jack
 say_hi("James")
 ```
 
-Output:
-
-```plaintext
+```output
 This is execution number 2
 Hi! My name is James
 ```

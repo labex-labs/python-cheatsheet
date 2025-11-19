@@ -42,9 +42,7 @@ code_object = compile(code_string, '<string>', 'exec')
 exec(code_object)
 ```
 
-Output:
-
-```plaintext
+```output
 Hello, world!
 ```
 

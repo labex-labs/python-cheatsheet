@@ -30,9 +30,7 @@ obj = Number(2)
 obj.val
 ```
 
-Salida:
-
-```plaintext
+```output
 2
 ```
 
@@ -50,9 +48,7 @@ obj = Number(2)  # __init__ creado automáticamente
 obj.val
 ```
 
-Salida:
-
-```plaintext
+```output
 2
 ```
 
@@ -72,9 +68,7 @@ obj = Product("Python")  # Solo se requiere el nombre, los demás usan valores p
 obj.name
 ```
 
-Salida:
-
-```plaintext
+```output
 Python
 ```
 
@@ -82,9 +76,7 @@ Python
 obj.count
 ```
 
-Salida:
-
-```plaintext
+```output
 0
 ```
 
@@ -92,9 +84,7 @@ Salida:
 obj.price
 ```
 
-Salida:
-
-```plaintext
+```output
 0.0
 ```
 

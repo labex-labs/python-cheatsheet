@@ -65,9 +65,7 @@ def some_function(*args):
 some_function('arg1', 'arg2', 'arg3')
 ```
 
-Salida:
-
-```plaintext
+```output
 Argumentos pasados: ('arg1', 'arg2', 'arg3') como <class 'tuple'>
 ```
 
@@ -84,9 +82,7 @@ def some_function(**kwargs):
 some_function(key1='arg1', key2='arg2')
 ```
 
-Salida:
-
-```plaintext
+```output
 palabras clave: {'key1': 'arg1', 'key2': 'arg2'} como <class 'dict'>
 ```
 

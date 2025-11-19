@@ -39,9 +39,7 @@ abs(0b10)  # Binary
 abs(0o20)  # Octal
 ```
 
-Output:
-
-```plaintext
+```output
 1
 0
 3.14

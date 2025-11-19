@@ -36,9 +36,7 @@ my_person = Person("Dwight", 35)
 print(vars(my_person))
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 {'name': 'Dwight', 'age': 35}
 ```
 
@@ -52,9 +50,7 @@ def my_function():
 my_function()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 {'x': 10}
 ```
 

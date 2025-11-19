@@ -33,9 +33,7 @@ import os
 os.path.join('usr', 'bin', 'spam')
 ```
 
-输出：
-
-```plaintext
+```output
 usr\bin\spam
 ```
 
@@ -49,9 +47,7 @@ for filename in my_files:
     print(os.path.join('/home/labex/project', filename))
 ```
 
-输出：
-
-```plaintext
+```output
 /home/labex/project/accounts.txt
 /home/labex/project/details.csv
 /home/labex/project/invite.docx
@@ -66,9 +62,7 @@ import os
 os.getcwd()
 ```
 
-输出：
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -80,9 +74,7 @@ os.chdir('/usr/bin')
 os.getcwd()
 ```
 
-输出：
-
-```plaintext
+```output
 /usr/bin
 ```
 
@@ -113,9 +105,7 @@ import os
 os.path.isabs('/')
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -124,9 +114,7 @@ True
 os.path.isabs('..')
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -138,9 +126,7 @@ import os
 os.getcwd()
 ```
 
-输出：
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -149,9 +135,7 @@ os.getcwd()
 os.path.abspath('..')
 ```
 
-输出：
-
-```plaintext
+```output
 /home
 ```
 
@@ -165,9 +149,7 @@ import os
 os.path.relpath('/etc/passwd', '/')
 ```
 
-输出：
-
-```plaintext
+```output
 etc/passwd
 ```
 
@@ -182,9 +164,7 @@ import os
 os.path.exists('.')
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -192,9 +172,7 @@ True
 os.path.exists('setup.py')
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -202,9 +180,7 @@ True
 os.path.exists('/etc')
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -212,9 +188,7 @@ True
 os.path.exists('nonexistentfile')
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -227,9 +201,7 @@ import os
 os.path.isfile('setup.py')
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -237,9 +209,7 @@ True
 os.path.isfile('/home')
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -247,9 +217,7 @@ False
 os.path.isfile('nonexistentfile')
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -262,9 +230,7 @@ import os
 os.path.isdir('/')
 ```
 
-输出：
-
-```plaintext
+```output
 True
 ```
 
@@ -272,9 +238,7 @@ True
 os.path.isdir('setup.py')
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -282,9 +246,7 @@ False
 os.path.isdir('/spam')
 ```
 
-输出：
-
-```plaintext
+```output
 False
 ```
 
@@ -297,9 +259,7 @@ import os
 os.path.getsize('/usr/bin/python3')
 ```
 
-输出：
-
-```plaintext
+```output
 776192
 ```
 
@@ -312,9 +272,7 @@ import os
 os.listdir('/usr/bin')
 ```
 
-输出：
-
-```plaintext
+```output
 ['0409', '12520437.cpx', '12520850.cpx', '5U877.ax', 'aaclient.dll',
 --snip--
 'xwtpdui.dll', 'xwtpw32.dll', 'zh-CN', 'zh-HK', 'zh-TW', 'zipfldr.dll']
@@ -342,9 +300,7 @@ for filename in os.listdir('/usr/bin'):
 print(total_size)
 ```
 
-输出：
-
-```plaintext
+```output
 1117846456
 ```
 
@@ -371,9 +327,7 @@ for folder_name, subfolders, filenames in os.walk('/tmp/delicious'):
     print('')
 ```
 
-输出：
-
-```plaintext
+```output
 当前文件夹是 /tmp/delicious
 来自 /tmp/delicious 的子文件夹: cats
 来自 /tmp/delicious 的子文件夹: walnut

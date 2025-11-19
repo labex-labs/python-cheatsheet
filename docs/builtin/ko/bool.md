@@ -37,9 +37,7 @@ bool({})      # 빈 딕셔너리
 bool(set())   # 빈 세트
 ```
 
-출력:
-
-```plaintext
+```output
 False
 False
 False
@@ -63,9 +61,7 @@ bool([1, 2])
 bool({'a': 1})
 ```
 
-출력:
-
-```plaintext
+```output
 True
 True
 True

@@ -30,9 +30,7 @@ for item, amount in zip(furniture, price):
     print(f'The {item} costs ${amount}')
 ```
 
-输出：
-
-```plaintext
+```output
 The table costs $100
 The chair costs $50
 The rack costs $80
@@ -53,9 +51,7 @@ zipped = zip(list1, list2, list3)
 print(list(zipped))
 ```
 
-输出：
-
-```plaintext
+```output
 [(1, 'a', True), (2, 'b', False), (3, 'c', True)]
 ```
 
@@ -69,9 +65,7 @@ print(list1)
 print(list2)
 ```
 
-输出：
-
-```plaintext
+```output
 (1, 2, 3)
 ('a', 'b', 'c')
 ```
@@ -90,9 +84,7 @@ for num, letter in zip(numbers, letters):
     print(f'{num} -> {letter}')
 ```
 
-输出：
-
-```plaintext
+```output
 1 -> a
 2 -> b
 ```
@@ -109,9 +101,7 @@ my_dict = dict(zip(keys, values))
 print(my_dict)
 ```
 
-输出：
-
-```plaintext
+```output
 {'name': 'Alice', 'age': 25, 'city': 'New York'}
 ```
 
@@ -127,9 +117,7 @@ summed = [x + y for x, y in zip(list1, list2)]
 print(summed)
 ```
 
-输出：
-
-```plaintext
+```output
 [5, 7, 9]
 ```
 

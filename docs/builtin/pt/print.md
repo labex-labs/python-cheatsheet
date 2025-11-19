@@ -24,9 +24,7 @@ A função `print()` escreve o valor do(s) argumento(s) que recebe. [...] ela li
 print('Hello world!')
 ```
 
-Saída:
-
-```plaintext
+```output
 Hello world!
 ```
 
@@ -35,9 +33,7 @@ a = 1
 print('Hello world!', a)
 ```
 
-Saída:
-
-```plaintext
+```output
 Hello world! 1
 ```
 
@@ -51,9 +47,7 @@ for word in phrase:
     print(word, end='-')
 ```
 
-Saída:
-
-```plaintext
+```output
 printed-with-a-dash-in-between-
 ```
 
@@ -65,9 +59,7 @@ A palavra-chave `sep` especifica como separar os objetos, se houver mais de um:
 print('cats', 'dogs', 'mice', sep=',')
 ```
 
-Saída:
-
-```plaintext
+```output
 cats,dogs,mice
 ```
 

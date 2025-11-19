@@ -32,9 +32,7 @@ sorted_numbers = sorted(numbers)
 print(sorted_numbers)
 ```
 
-输出：
-
-```plaintext
+```output
 [1, 1, 2, 3, 4, 5, 6, 9]
 ```
 
@@ -46,9 +44,7 @@ sorted_words = sorted(words)
 print(sorted_words)
 ```
 
-输出：
-
-```plaintext
+```output
 ['apple', 'banana', 'cherry']
 ```
 
@@ -60,9 +56,7 @@ sorted_numbers_desc = sorted(numbers, reverse=True)
 print(sorted_numbers_desc)
 ```
 
-输出：
-
-```plaintext
+```output
 [9, 6, 5, 4, 3, 2, 1, 1]
 ```
 

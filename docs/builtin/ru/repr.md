@@ -46,9 +46,7 @@ p = Person("John")
 print(repr(p))
 ```
 
-Вывод:
-
-```plaintext
+```output
 'hello'
 datetime.datetime(2023, 10, 27, 10, 0, 0, 123456)
 Person(name='John')

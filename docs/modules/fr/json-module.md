@@ -62,9 +62,7 @@ python_person = json.loads(json_person)
 python_person
 ```
 
-Sortie :
-
-```plaintext
+```output
 {'name': 'Charles', 'age': 33, 'has_hair': False, 'hobbies': ['photography', 'running']}
 ```
 
@@ -72,9 +70,7 @@ Sortie :
 type(python_person)
 ```
 
-Sortie :
-
-```plaintext
+```output
 <class 'dict'>
 ```
 
@@ -83,9 +79,7 @@ Sortie :
 python_person.get("name")
 ```
 
-Sortie :
-
-```plaintext
+```output
 'Charles'
 ```
 
@@ -104,9 +98,7 @@ json_person = json.dumps(python_person)
 json_person
 ```
 
-Sortie :
-
-```plaintext
+```output
 '{"name": "Charles", "age": 33, "has_hair": false, "hobbies": ["photography", "running"]}'
 ```
 
@@ -114,9 +106,7 @@ Sortie :
 type(json_person)
 ```
 
-Sortie :
-
-```plaintext
+```output
 <class 'str'>
 ```
 
@@ -134,9 +124,7 @@ with open("filename.json", "r") as f:
 json.loads(json_content)
 ```
 
-Sortie :
-
-```plaintext
+```output
 {'name': 'Charles', 'age': 33, 'has_hair': False}
 ```
 

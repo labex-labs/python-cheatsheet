@@ -32,9 +32,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-输出：
-
-```plaintext
+```output
 2
 ```
 
@@ -42,9 +40,7 @@ divide(dividend=10, divisor=5)
 divide(dividend=10, divisor=0)
 ```
 
-输出：
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
@@ -63,9 +59,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-输出：
-
-```plaintext
+```output
 2
 ```
 
@@ -73,9 +67,7 @@ divide(dividend=10, divisor=5)
 divide(dividend=10, divisor=0)
 ```
 
-输出：
-
-```plaintext
+```output
 你不能除以 0
 ```
 
@@ -97,9 +89,7 @@ def divide(dividend , divisor):
 divide(dividend=20, divisor=5)
 ```
 
-输出：
-
-```plaintext
+```output
 4
 ```
 
@@ -107,9 +97,7 @@ divide(dividend=20, divisor=5)
 divide(dividend=10, divisor=5)
 ```
 
-输出：
-
-```plaintext
+```output
 can only concatenate str (not "int") to str
 ```
 
@@ -117,9 +105,7 @@ can only concatenate str (not "int") to str
 divide(dividend=10, divisor=0)
 ```
 
-输出：
-
-```plaintext
+```output
 division by zero
 ```
 
@@ -140,9 +126,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-输出：
-
-```plaintext
+```output
 2.0
 执行完毕
 ```
@@ -151,9 +135,7 @@ divide(dividend=10, divisor=5)
 divide(dividend=10, divisor=0)
 ```
 
-输出：
-
-```plaintext
+```output
 你不能除以 0
 执行完毕
 ```
@@ -170,9 +152,7 @@ class MyCustomException(Exception):
 raise MyCustomException  # 引发自定义异常
 ```
 
-输出：
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException
@@ -187,9 +167,7 @@ class MyCustomException(Exception):
 raise MyCustomException('我的自定义异常的自定义消息')
 ```
 
-输出：
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException: 我的自定义异常的自定义消息
@@ -204,9 +182,7 @@ except MyCustomException:
     print('引发了我的自定义异常')
 ```
 
-输出：
-
-```plaintext
+```output
 引发了我的自定义异常
 ```
 

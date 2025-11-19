@@ -34,9 +34,7 @@ def say_hello(name):
 say_hello('Carlos')
 ```
 
-출력:
-
-```plaintext
+```output
 Hello Carlos
 ```
 
@@ -44,9 +42,7 @@ Hello Carlos
 say_hello('Wanda')
 ```
 
-출력:
-
-```plaintext
+```output
 Hello Wanda
 ```
 
@@ -54,9 +50,7 @@ Hello Wanda
 say_hello('Rose')
 ```
 
-출력:
-
-```plaintext
+```output
 Hello Rose
 ```
 
@@ -73,9 +67,7 @@ def say_hi(name, greeting):
 say_hi('John', 'Hello')
 ```
 
-출력:
-
-```plaintext
+```output
 Hello John
 ```
 
@@ -84,9 +76,7 @@ Hello John
 say_hi(name='Anna', greeting='Hi')
 ```
 
-출력:
-
-```plaintext
+```output
 Hi Anna
 ```
 
@@ -108,9 +98,7 @@ result = sum_two_numbers(7, 8)
 print(result)
 ```
 
-출력:
-
-```plaintext
+```output
 15
 ```
 
@@ -138,9 +126,7 @@ def some_function():
 print(local_variable)
 ```
 
-출력:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 10, in <module>
 NameError: name 'local_variable' is not defined
@@ -161,9 +147,7 @@ spam()  # 함수가 전역 변수를 수정함
 print(eggs)  # 'spam'을 출력함, 'global'이 아님
 ```
 
-출력:
-
-```plaintext
+```output
 spam
 ```
 
@@ -209,9 +193,7 @@ def add(x, y):
 add(5, 3)
 ```
 
-출력:
-
-```plaintext
+```output
 8
 ```
 
@@ -224,9 +206,7 @@ add = lambda x, y: x + y
 add(5, 3)
 ```
 
-출력:
-
-```plaintext
+```output
 8
 ```
 
@@ -244,9 +224,7 @@ plus_5 = make_adder(5)  # 5 를 더하는 람다를 반환
 plus_3(4)  # 4 + 3 = 7 반환
 ```
 
-출력:
-
-```plaintext
+```output
 7
 ```
 
@@ -254,9 +232,7 @@ plus_3(4)  # 4 + 3 = 7 반환
 plus_5(4)
 ```
 
-출력:
-
-```plaintext
+```output
 9
 ```
 

@@ -33,9 +33,7 @@ import os
 os.path.join('usr', 'bin', 'spam')
 ```
 
-Вывод:
-
-```plaintext
+```output
 usr\bin\spam
 ```
 
@@ -49,9 +47,7 @@ for filename in my_files:
     print(os.path.join('/home/labex/project', filename))
 ```
 
-Вывод:
-
-```plaintext
+```output
 /home/labex/project/accounts.txt
 /home/labex/project/details.csv
 /home/labex/project/invite.docx
@@ -66,9 +62,7 @@ import os
 os.getcwd()
 ```
 
-Вывод:
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -80,9 +74,7 @@ os.chdir('/usr/bin')
 os.getcwd()
 ```
 
-Вывод:
-
-```plaintext
+```output
 /usr/bin
 ```
 
@@ -113,9 +105,7 @@ import os
 os.path.isabs('/')
 ```
 
-Вывод:
-
-```plaintext
+```output
 True
 ```
 
@@ -124,9 +114,7 @@ True
 os.path.isabs('..')
 ```
 
-Вывод:
-
-```plaintext
+```output
 False
 ```
 
@@ -138,9 +126,7 @@ import os
 os.getcwd()
 ```
 
-Вывод:
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -149,9 +135,7 @@ os.getcwd()
 os.path.abspath('..')
 ```
 
-Вывод:
-
-```plaintext
+```output
 /home
 ```
 
@@ -165,9 +149,7 @@ import os
 os.path.relpath('/etc/passwd', '/')
 ```
 
-Вывод:
-
-```plaintext
+```output
 etc/passwd
 ```
 
@@ -182,9 +164,7 @@ import os
 os.path.exists('.')
 ```
 
-Вывод:
-
-```plaintext
+```output
 True
 ```
 
@@ -192,9 +172,7 @@ True
 os.path.exists('setup.py')
 ```
 
-Вывод:
-
-```plaintext
+```output
 True
 ```
 
@@ -202,9 +180,7 @@ True
 os.path.exists('/etc')
 ```
 
-Вывод:
-
-```plaintext
+```output
 True
 ```
 
@@ -212,9 +188,7 @@ True
 os.path.exists('nonexistentfile')
 ```
 
-Вывод:
-
-```plaintext
+```output
 False
 ```
 
@@ -227,9 +201,7 @@ import os
 os.path.isfile('setup.py')
 ```
 
-Вывод:
-
-```plaintext
+```output
 True
 ```
 
@@ -237,9 +209,7 @@ True
 os.path.isfile('/home')
 ```
 
-Вывод:
-
-```plaintext
+```output
 False
 ```
 
@@ -247,9 +217,7 @@ False
 os.path.isfile('nonexistentfile')
 ```
 
-Вывод:
-
-```plaintext
+```output
 False
 ```
 
@@ -262,9 +230,7 @@ import os
 os.path.isdir('/')
 ```
 
-Вывод:
-
-```plaintext
+```output
 True
 ```
 
@@ -272,9 +238,7 @@ True
 os.path.isdir('setup.py')
 ```
 
-Вывод:
-
-```plaintext
+```output
 False
 ```
 
@@ -282,9 +246,7 @@ False
 os.path.isdir('/spam')
 ```
 
-Вывод:
-
-```plaintext
+```output
 False
 ```
 
@@ -297,9 +259,7 @@ import os
 os.path.getsize('/usr/bin/python3')
 ```
 
-Вывод:
-
-```plaintext
+```output
 776192
 ```
 
@@ -312,9 +272,7 @@ import os
 os.listdir('/usr/bin')
 ```
 
-Вывод:
-
-```plaintext
+```output
 ['0409', '12520437.cpx', '12520850.cpx', '5U877.ax', 'aaclient.dll',
 --snip--
 'xwtpdui.dll', 'xwtpw32.dll', 'zh-CN', 'zh-HK', 'zh-TW', 'zipfldr.dll']
@@ -342,9 +300,7 @@ for filename in os.listdir('/usr/bin'):
 print(total_size)
 ```
 
-Вывод:
-
-```plaintext
+```output
 1117846456
 ```
 
@@ -371,9 +327,7 @@ for folder_name, subfolders, filenames in os.walk('/tmp/delicious'):
     print('')
 ```
 
-Вывод:
-
-```plaintext
+```output
 Текущая папка /tmp/delicious
 ПОДПАПКА /tmp/delicious: cats
 ПОДПАПКА /tmp/delicious: walnut

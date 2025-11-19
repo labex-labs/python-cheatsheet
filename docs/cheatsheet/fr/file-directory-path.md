@@ -39,9 +39,7 @@ from pathlib import Path
 print(Path('usr').joinpath('bin').joinpath('spam'))  # Joindre les composants du chemin
 ```
 
-Sortie :
-
-```plaintext
+```output
 usr/bin/spam
 ```
 
@@ -54,9 +52,7 @@ from pathlib import Path
 print(Path('usr') / 'bin' / 'spam')  # Utiliser l'opérateur / au lieu de joinpath()
 ```
 
-Sortie :
-
-```plaintext
+```output
 usr/bin/spam
 ```
 
@@ -74,9 +70,7 @@ for filename in my_files:
     print(home / filename)  # Combiner le chemin personnel avec chaque nom de fichier
 ```
 
-Sortie :
-
-```plaintext
+```output
 /home/labex/project/accounts.txt
 /home/labex/project/details.csv
 /home/labex/project/invite.docx
@@ -93,9 +87,7 @@ from pathlib import Path
 print(Path.cwd())  # Retourne le répertoire de travail actuel sous forme d'objet Path
 ```
 
-Sortie :
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -109,9 +101,7 @@ cwd = Path.cwd()
 (cwd / 'delicious' / 'walnut' / 'waffles').mkdir()
 ```
 
-Sortie :
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "/usr/lib/python3.6/pathlib.py", line 1226, in mkdir
@@ -150,9 +140,7 @@ from pathlib import Path
 Path('/').is_absolute()
 ```
 
-Sortie :
-
-```plaintext
+```output
 True
 ```
 
@@ -160,9 +148,7 @@ True
 Path('..').is_absolute()
 ```
 
-Sortie :
-
-```plaintext
+```output
 False
 ```
 
@@ -173,9 +159,7 @@ from pathlib import Path
 print(Path.cwd())
 ```
 
-Sortie :
-
-```plaintext
+```output
 /home/labex/project
 ```
 
@@ -183,9 +167,7 @@ Sortie :
 print(Path('..').resolve())
 ```
 
-Sortie :
-
-```plaintext
+```output
 /home
 ```
 
@@ -198,9 +180,7 @@ from pathlib import Path
 print(Path('/etc/passwd').relative_to('/'))
 ```
 
-Sortie :
-
-```plaintext
+```output
 etc/passwd
 ```
 
@@ -216,9 +196,7 @@ from pathlib import Path
 Path('.').exists()
 ```
 
-Sortie :
-
-```plaintext
+```output
 True
 ```
 
@@ -226,9 +204,7 @@ True
 Path('setup.py').exists()
 ```
 
-Sortie :
-
-```plaintext
+```output
 True
 ```
 
@@ -236,9 +212,7 @@ True
 Path('/etc').exists()
 ```
 
-Sortie :
-
-```plaintext
+```output
 True
 ```
 
@@ -246,9 +220,7 @@ True
 Path('nonexistentfile').exists()
 ```
 
-Sortie :
-
-```plaintext
+```output
 False
 ```
 
@@ -262,9 +234,7 @@ from pathlib import Path
 Path('setup.py').is_file()
 ```
 
-Sortie :
-
-```plaintext
+```output
 True
 ```
 
@@ -272,9 +242,7 @@ True
 Path('/home').is_file()
 ```
 
-Sortie :
-
-```plaintext
+```output
 False
 ```
 
@@ -282,9 +250,7 @@ False
 Path('nonexistentfile').is_file()
 ```
 
-Sortie :
-
-```plaintext
+```output
 False
 ```
 
@@ -298,9 +264,7 @@ from pathlib import Path
 Path('/').is_dir()
 ```
 
-Sortie :
-
-```plaintext
+```output
 True
 ```
 
@@ -308,9 +272,7 @@ True
 Path('setup.py').is_dir()
 ```
 
-Sortie :
-
-```plaintext
+```output
 False
 ```
 
@@ -318,9 +280,7 @@ False
 Path('/spam').is_dir()
 ```
 
-Sortie :
-
-```plaintext
+```output
 False
 ```
 
@@ -335,9 +295,7 @@ stat = Path('/bin/python3.6').stat()
 print(stat) # stat contient également d'autres informations sur le fichier
 ```
 
-Sortie :
-
-```plaintext
+```output
 os.stat_result(st_mode=33261, st_ino=141087, st_dev=2051, st_nlink=2, st_uid=0,
 --snip--
 st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517261276)
@@ -347,9 +305,7 @@ st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517
 print(stat.st_size) # taille en octets
 ```
 
-Sortie :
-
-```plaintext
+```output
 10024
 ```
 
@@ -364,9 +320,7 @@ for f in Path('/usr/bin').iterdir():
     print(f)
 ```
 
-Sortie :
-
-```plaintext
+```output
 ...
 /usr/bin/tiff2rgba
 /usr/bin/iconv
@@ -403,9 +357,7 @@ for sub_path in Path('/usr/bin').iterdir():
 print(total_size)
 ```
 
-Sortie :
-
-```plaintext
+```output
 1903178911
 ```
 
@@ -419,9 +371,7 @@ import shutil
 shutil.copy('/tmp/spam.txt', '/tmp/delicious')
 ```
 
-Sortie :
-
-```plaintext
+```output
 /tmp/delicious/spam.txt
 ```
 
@@ -429,9 +379,7 @@ Sortie :
 shutil.copy('/tmp/eggs.txt', '/tmp/delicious/eggs2.txt')
 ```
 
-Sortie :
-
-```plaintext
+```output
 /tmp/delicious/eggs2.txt
 ```
 
@@ -443,9 +391,7 @@ import shutil
 shutil.copytree('/tmp/bacon', '/tmp/bacon_backup')
 ```
 
-Sortie :
-
-```plaintext
+```output
 /tmp/bacon_backup
 ```
 
@@ -457,9 +403,7 @@ import shutil
 shutil.move('/tmp/bacon.txt', '/tmp/eggs')
 ```
 
-Sortie :
-
-```plaintext
+```output
 /tmp/eggs/bacon.txt
 ```
 
@@ -469,9 +413,7 @@ Le chemin de destination peut également spécifier un nom de fichier. Dans l'ex
 shutil.move('/tmp/bacon.txt', '/tmp/eggs/new_bacon.txt')
 ```
 
-Sortie :
-
-```plaintext
+```output
 /tmp/eggs/new_bacon.txt
 ```
 
@@ -481,9 +423,7 @@ S'il n'y a pas de dossier eggs, alors `move()` renommera bacon.txt en un fichier
 shutil.move('/tmp/bacon.txt', '/tmp/eggs')
 ```
 
-Sortie :
-
-```plaintext
+```output
 /tmp/eggs
 ```
 
@@ -505,9 +445,7 @@ for i in p.rglob('*'):
     print(i)
 ```
 
-Sortie :
-
-```plaintext
+```output
 /tmp/delicious/cats
 /tmp/delicious/walnut
 /tmp/delicious/spam.txt

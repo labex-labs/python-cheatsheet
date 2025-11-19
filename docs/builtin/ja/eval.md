@@ -26,9 +26,7 @@ Python の `eval()` 関数は、文字列を Python の式として解析し、�
 eval('1 + 4')
 ```
 
-Output:
-
-```plaintext
+```output
 5
 ```
 
@@ -36,9 +34,7 @@ Output:
 eval('print("Hello World!")')
 ```
 
-Output:
-
-```plaintext
+```output
 Hello World!
 ```
 
@@ -47,9 +43,7 @@ x = 10
 eval('x == 10')
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 

@@ -44,9 +44,7 @@ delattr(person, "age")
 print(person.__dict__)
 ```
 
-Output:
-
-```plaintext
+```output
 {'name': 'John', 'age': 30}
 {'name': 'John'}
 ```
@@ -64,9 +62,7 @@ except AttributeError as e:
     print(f"Error: {e}")
 ```
 
-Output:
-
-```plaintext
+```output
 Error: age
 ```
 

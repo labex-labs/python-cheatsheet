@@ -29,9 +29,7 @@ my_dict = dict()
 print(my_dict)
 ```
 
-Вывод:
-
-```plaintext
+```output
 {}
 ```
 
@@ -43,9 +41,7 @@ my_dict = dict(name="John", age=30)
 print(my_dict)
 ```
 
-Вывод:
-
-```plaintext
+```output
 {'name': 'John', 'age': 30}
 ```
 
@@ -57,9 +53,7 @@ my_dict = dict(my_list)
 print(my_dict)
 ```
 
-Вывод:
-
-```plaintext
+```output
 {'name': 'Jane', 'age': 25}
 ```
 
@@ -70,9 +64,7 @@ a = dict()
 type(a)
 ```
 
-Вывод:
-
-```plaintext
+```output
 <class 'dict'>
 ```
 

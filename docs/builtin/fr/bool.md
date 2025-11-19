@@ -37,9 +37,7 @@ bool({})      # dictionnaire vide
 bool(set())   # ensemble vide
 ```
 
-Sortie :
-
-```plaintext
+```output
 False
 False
 False
@@ -63,9 +61,7 @@ bool([1, 2])
 bool({'a': 1})
 ```
 
-Sortie :
-
-```plaintext
+```output
 True
 True
 True

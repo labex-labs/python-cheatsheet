@@ -35,9 +35,7 @@ def foo():
 foo()  # 래퍼를 호출하며, 래퍼는 추가 동작과 함께 foo 를 호출합니다
 ```
 
-출력:
-
-```plaintext
+```output
 Before func!
 Hello World!
 After func!
@@ -63,9 +61,7 @@ def foo(bar):
 foo("Jack")  # 인수가 래퍼를 통해 전달됩니다
 ```
 
-출력:
-
-```plaintext
+```output
 Before func!
 My name is Jack
 After func!
@@ -151,9 +147,7 @@ test_succeed = DecorateMyMethod(True)
 test_succeed.class_action()
 ```
 
-출력:
-
-```plaintext
+```output
 You succeeded by choice.
 ```
 
@@ -162,9 +156,7 @@ test_fail = DecorateMyMethod(False)
 test_fail.class_action()
 ```
 
-출력:
-
-```plaintext
+```output
 WARNING: Please make note of the following:
 
 Epic fail of your own creation.
@@ -192,9 +184,7 @@ def say_hi(name):
 say_hi("Jack")  # CountCallNumber.__call__() 호출
 ```
 
-출력:
-
-```plaintext
+```output
 This is execution number 1
 Hi! My name is Jack
 ```
@@ -203,9 +193,7 @@ Hi! My name is Jack
 say_hi("James")
 ```
 
-출력:
-
-```plaintext
+```output
 This is execution number 2
 Hi! My name is James
 ```

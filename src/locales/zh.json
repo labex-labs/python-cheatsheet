@@ -128,5 +128,11 @@
     "getDiscount": "立即享受 5 折优惠 →",
     "shortMessage": "黑色星期五 2025：Python 实践实验室",
     "shortDiscount": "享受 5 折优惠 →"
+  },
+  "codeBlock": {
+    "copy": "复制",
+    "copied": "已复制",
+    "expand": "展开",
+    "collapse": "折叠"
   }
 }

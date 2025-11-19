@@ -37,9 +37,7 @@ bool({})      # 空字典
 bool(set())   # 空集合
 ```
 
-输出：
-
-```plaintext
+```output
 False
 False
 False
@@ -63,9 +61,7 @@ bool([1, 2])
 bool({'a': 1})
 ```
 
-输出：
-
-```plaintext
+```output
 True
 True
 True

@@ -43,9 +43,7 @@ Ejemplos de expresiones:
 2 + 3 * 6
 ```
 
-Salida:
-
-```plaintext
+```output
 20
 ```
 
@@ -55,9 +53,7 @@ Salida:
 (2 + 3) * 6
 ```
 
-Salida:
-
-```plaintext
+```output
 30
 ```
 
@@ -65,9 +61,7 @@ Salida:
 2 ** 8
 ```
 
-Salida:
-
-```plaintext
+```output
 256
 ```
 
@@ -75,9 +69,7 @@ Salida:
 23 // 7
 ```
 
-Salida:
-
-```plaintext
+```output
 3
 ```
 
@@ -85,9 +77,7 @@ Salida:
 23 % 7
 ```
 
-Salida:
-
-```plaintext
+```output
 2
 ```
 
@@ -95,9 +85,7 @@ Salida:
 (5 - 1) * ((7 + 1) / (3 - 1))
 ```
 
-Salida:
-
-```plaintext
+```output
 16.0
 ```
 
@@ -122,9 +110,7 @@ saludo += ' mundo!'
 saludo
 ```
 
-Salida:
-
-```plaintext
+```output
 'Hola mundo!'
 ```
 
@@ -135,9 +121,7 @@ numero += 1
 numero
 ```
 
-Salida:
-
-```plaintext
+```output
 2
 ```
 
@@ -148,9 +132,7 @@ mi_lista *= 3
 mi_lista
 ```
 
-Salida:
-
-```plaintext
+```output
 ['item', 'item', 'item']
 ```
 
@@ -166,9 +148,7 @@ Ejemplo:
 print(my_var:="Hello World!")
 ```
 
-Salida:
-
-```plaintext
+```output
 Hello World!
 ```
 
@@ -177,9 +157,7 @@ my_var="Sí"
 print(my_var)
 ```
 
-Salida:
-
-```plaintext
+```output
 Sí
 ```
 
@@ -187,9 +165,7 @@ Sí
 print(my_var:="Hola")
 ```
 
-Salida:
-
-```plaintext
+```output
 Hola
 ```
 
@@ -261,9 +237,7 @@ Concatenación de cadenas:
 'Alice' 'Bob'
 ```
 
-Salida:
-
-```plaintext
+```output
 'AliceBob'
 ```
 
@@ -274,9 +248,7 @@ Replicación de cadenas:
 'Alice' * 5
 ```
 
-Salida:
-
-```plaintext
+```output
 'AliceAliceAliceAliceAlice'
 ```
 
@@ -363,9 +335,7 @@ La función `print()` escribe el valor del argumento(s) que recibe. [...] maneja
 print('Hola mundo!')
 ```
 
-Salida:
-
-```plaintext
+```output
 Hola mundo!
 ```
 
@@ -374,9 +344,7 @@ a = 1
 print('Hola mundo!', a)
 ```
 
-Salida:
-
-```plaintext
+```output
 Hola mundo! 1
 ```
 
@@ -391,9 +359,7 @@ for palabra in frase:
     print(palabra, end='-')  # Usa '-' en lugar de salto de línea
 ```
 
-Salida:
-
-```plaintext
+```output
 impreso-con-un-guion-en-medio-
 ```
 
@@ -406,9 +372,7 @@ La palabra clave `sep` especifica cómo separar los objetos, si hay más de uno:
 print('gatos', 'perros', 'ratones', sep=',')  # Salida separada por comas
 ```
 
-Salida:
-
-```plaintext
+```output
 gatos,perros,ratones
 ```
 
@@ -423,9 +387,7 @@ my_name = input()  # Espera a que el usuario escriba y presione Enter
 print('Hola, {}'.format(my_name))
 ```
 
-Salida:
-
-```plaintext
+```output
 ¿Cuál es tu nombre?
 Martha
 Hola, Martha
@@ -438,9 +400,7 @@ my_name = input('¿Cuál es tu nombre? ')  # mensaje predeterminado
 print('Hola, {}'.format(my_name))
 ```
 
-Salida:
-
-```plaintext
+```output
 ¿Cuál es tu nombre? Martha
 Hola, Martha
 ```
@@ -453,9 +413,7 @@ my_name = input('¿Cuál es tu nombre? ')  # Indicación y lectura en una sola l
 print(f'Hola, {my_name}')  # f-string para formateo de cadenas
 ```
 
-Salida:
-
-```plaintext
+```output
 ¿Cuál es tu nombre? Martha
 Hola, Martha
 ```
@@ -469,9 +427,7 @@ Se evalúa al valor entero del número de caracteres en una cadena, lista, dicci
 len('hola')  # Devuelve 5
 ```
 
-Salida:
-
-```plaintext
+```output
 5
 ```
 
@@ -480,9 +436,7 @@ Salida:
 len(['gato', 3, 'perro'])  # Devuelve 3 (tres elementos)
 ```
 
-Salida:
-
-```plaintext
+```output
 3
 ```
 
@@ -504,9 +458,7 @@ if len(a) > 0:  # se evalúa como True
     print("¡la lista no está vacía!")
 ```
 
-Salida:
-
-```plaintext
+```output
 ¡la lista no está vacía!
 ```
 
@@ -516,9 +468,7 @@ if a:  # se evalúa como True si la lista no está vacía
     print("¡la lista no está vacía!")
 ```
 
-Salida:
-
-```plaintext
+```output
 ¡la lista no está vacía!
 ```
 
@@ -531,9 +481,7 @@ Estas funciones te permiten cambiar el tipo de variable. Por ejemplo, puedes tra
 str(29)  # Devuelve '29'
 ```
 
-Salida:
-
-```plaintext
+```output
 '29'
 ```
 
@@ -541,9 +489,7 @@ Salida:
 str(-3.14)
 ```
 
-Salida:
-
-```plaintext
+```output
 '-3.14'
 ```
 
@@ -554,9 +500,7 @@ O de una `string` a un `integer` o `float`:
 int('11')  # Devuelve 11
 ```
 
-Salida:
-
-```plaintext
+```output
 11
 ```
 
@@ -565,9 +509,7 @@ Salida:
 float('3.14')  # Devuelve 3.14
 ```
 
-Salida:
-
-```plaintext
+```output
 3.14
 ```
 

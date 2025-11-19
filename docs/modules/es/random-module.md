@@ -23,9 +23,7 @@ random.seed(1)
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.13436424411240122
 ```
 
@@ -36,9 +34,7 @@ random.seed(1)
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.13436424411240122
 ```
 
@@ -47,9 +43,7 @@ random.seed(1)
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.13436424411240122
 ```
 
@@ -58,9 +52,7 @@ random.seed(1)
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.13436424411240122
 ```
 
@@ -69,9 +61,7 @@ random.seed(1)
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.13436424411240122
 ```
 
@@ -80,9 +70,7 @@ random.seed(1)
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.13436424411240122
 ```
 
@@ -93,9 +81,7 @@ El valor predeterminado del método `seed` es la _hora actual del sistema_, por 
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.8474337369372327
 ```
 
@@ -103,9 +89,7 @@ Salida:
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.763774618976614
 ```
 
@@ -113,9 +97,7 @@ Salida:
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.2550690257394217
 ```
 
@@ -131,9 +113,7 @@ Este método devuelve un número aleatorio entre los parámetros de inicio y par
 random.randint(1, 5)
 ```
 
-Salida:
-
-```plaintext
+```output
 3
 ```
 
@@ -141,9 +121,7 @@ Salida:
 random.randint(1, 5)
 ```
 
-Salida:
-
-```plaintext
+```output
 2
 ```
 
@@ -151,9 +129,7 @@ Salida:
 random.randint(1, 5)
 ```
 
-Salida:
-
-```plaintext
+```output
 5
 ```
 
@@ -161,9 +137,7 @@ Salida:
 random.randint(1, 5)
 ```
 
-Salida:
-
-```plaintext
+```output
 1
 ```
 
@@ -171,9 +145,7 @@ Salida:
 random.randint(1, 5)
 ```
 
-Salida:
-
-```plaintext
+```output
 3
 ```
 
@@ -181,9 +153,7 @@ Salida:
 random.randint(1, 5)
 ```
 
-Salida:
-
-```plaintext
+```output
 1
 ```
 
@@ -195,9 +165,7 @@ El método `choice` devuelve un elemento seleccionado aleatoriamente de un itera
 random.choice([1, 2, 3, 4])
 ```
 
-Salida:
-
-```plaintext
+```output
 1
 ```
 
@@ -205,9 +173,7 @@ Salida:
 random.choice([1, 2, 3, 4])
 ```
 
-Salida:
-
-```plaintext
+```output
 2
 ```
 
@@ -215,9 +181,7 @@ Salida:
 random.choice([1, 2, 3, 4])
 ```
 
-Salida:
-
-```plaintext
+```output
 4
 ```
 
@@ -225,9 +189,7 @@ Salida:
 random.choice([1, 2, 3, 4])
 ```
 
-Salida:
-
-```plaintext
+```output
 4
 ```
 
@@ -243,9 +205,7 @@ random.shuffle(my_list)
 my_list
 ```
 
-Salida:
-
-```plaintext
+```output
 [1, 4, 3, 2]
 ```
 
@@ -254,9 +214,7 @@ random.shuffle(my_list)
 my_list
 ```
 
-Salida:
-
-```plaintext
+```output
 [2, 4, 3, 1]
 ```
 
@@ -265,9 +223,7 @@ random.shuffle(my_list)
 my_list
 ```
 
-Salida:
-
-```plaintext
+```output
 [4, 2, 3, 1]
 ```
 
@@ -284,9 +240,7 @@ random.sample(iterable, k: int)
 random.sample([1, 2, 3, 4], 1)
 ```
 
-Salida:
-
-```plaintext
+```output
 [3]
 ```
 
@@ -294,9 +248,7 @@ Salida:
 random.sample([1, 2, 3, 4], 2)
 ```
 
-Salida:
-
-```plaintext
+```output
 [3, 4]
 ```
 
@@ -304,9 +256,7 @@ Salida:
 random.sample([1, 2, 3, 4], 3)
 ```
 
-Salida:
-
-```plaintext
+```output
 [4, 3, 2]
 ```
 
@@ -314,9 +264,7 @@ Salida:
 random.sample([1, 2, 3, 4], 4)
 ```
 
-Salida:
-
-```plaintext
+```output
 [1, 2, 4, 3]
 ```
 
@@ -328,9 +276,7 @@ El método `random` devuelve un número flotante aleatorio entre 0.0 y 1.0:
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.4143139993007743
 ```
 
@@ -338,9 +284,7 @@ Salida:
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.17300740157905092
 ```
 
@@ -348,9 +292,7 @@ Salida:
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.548798761388153
 ```
 
@@ -358,9 +300,7 @@ Salida:
 random.random()
 ```
 
-Salida:
-
-```plaintext
+```output
 0.7030407620656315
 ```
 
@@ -372,9 +312,7 @@ El método `uniform` es similar a `randint`, pero devuelve un número de punto f
 random.uniform(1, 5)
 ```
 
-Salida:
-
-```plaintext
+```output
 3.697943322009309
 ```
 
@@ -382,9 +320,7 @@ Salida:
 random.uniform(1, 5)
 ```
 
-Salida:
-
-```plaintext
+```output
 2.498812082006561
 ```
 
@@ -392,9 +328,7 @@ Salida:
 random.uniform(1, 5)
 ```
 
-Salida:
-
-```plaintext
+```output
 2.7558465201782525
 ```
 
@@ -402,9 +336,7 @@ Salida:
 random.uniform(1, 5)
 ```
 
-Salida:
-
-```plaintext
+```output
 3.0337059529999273
 ```
 

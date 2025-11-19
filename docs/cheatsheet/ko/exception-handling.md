@@ -32,9 +32,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-출력:
-
-```plaintext
+```output
 2
 ```
 
@@ -42,9 +40,7 @@ divide(dividend=10, divisor=5)
 divide(dividend=10, divisor=0)
 ```
 
-출력:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
@@ -63,9 +59,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-출력:
-
-```plaintext
+```output
 2
 ```
 
@@ -73,9 +67,7 @@ divide(dividend=10, divisor=5)
 divide(dividend=10, divisor=0)
 ```
 
-출력:
-
-```plaintext
+```output
 0으로 나눌 수 없습니다
 ```
 
@@ -97,9 +89,7 @@ def divide(dividend , divisor):
 divide(dividend=20, divisor=5)
 ```
 
-출력:
-
-```plaintext
+```output
 4
 ```
 
@@ -107,9 +97,7 @@ divide(dividend=20, divisor=5)
 divide(dividend=10, divisor=5)
 ```
 
-출력:
-
-```plaintext
+```output
 can only concatenate str (not "int") to str
 ```
 
@@ -117,9 +105,7 @@ can only concatenate str (not "int") to str
 divide(dividend=10, divisor=0)
 ```
 
-출력:
-
-```plaintext
+```output
 division by zero
 ```
 
@@ -140,9 +126,7 @@ def divide(dividend , divisor):
 divide(dividend=10, divisor=5)
 ```
 
-출력:
-
-```plaintext
+```output
 2.0
 실행 완료
 ```
@@ -151,9 +135,7 @@ divide(dividend=10, divisor=5)
 divide(dividend=10, divisor=0)
 ```
 
-출력:
-
-```plaintext
+```output
 0으로 나눌 수 없습니다
 실행 완료
 ```
@@ -170,9 +152,7 @@ class MyCustomException(Exception):
 raise MyCustomException  # 사용자 정의 예외 발생
 ```
 
-출력:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException
@@ -187,9 +167,7 @@ class MyCustomException(Exception):
 raise MyCustomException('내 사용자 정의 예외에 대한 사용자 정의 메시지')
 ```
 
-출력:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 __main__.MyCustomException: 내 사용자 정의 예외에 대한 사용자 정의 메시지
@@ -204,9 +182,7 @@ except MyCustomException:
     print('내 사용자 정의 예외가 발생했습니다')
 ```
 
-출력:
-
-```plaintext
+```output
 내 사용자 정의 예외가 발생했습니다
 ```
 

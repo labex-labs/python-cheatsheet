@@ -38,9 +38,7 @@ def foo():
 foo()  # Ruft wrapper auf, das foo mit zusätzlichem Verhalten aufruft
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Before func!
 Hello World!
 After func!
@@ -66,9 +64,7 @@ def foo(bar):
 foo("Jack")  # Argumente werden durch den Wrapper übergeben
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Before func!
 My name is Jack
 After func!
@@ -157,9 +153,7 @@ test_succeed = DecorateMyMethod(True)
 test_succeed.class_action()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 You succeeded by choice.
 ```
 
@@ -168,9 +162,7 @@ test_fail = DecorateMyMethod(False)
 test_fail.class_action()
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 Exception: Epic fail of your own creation.
 ```
 
@@ -196,9 +188,7 @@ def say_hi(name):
 say_hi("Jack")  # Ruft CountCallNumber.__call__() auf
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 This is execution number 1
 Hi! My name is Jack
 ```
@@ -207,9 +197,7 @@ Hi! My name is Jack
 say_hi("James")
 ```
 
-Ausgabe:
-
-```plaintext
+```output
 This is execution number 2
 Hi! My name is James
 ```

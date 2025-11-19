@@ -43,9 +43,7 @@ print(callable(z))
 print(callable(a))
 ```
 
-Sortie :
-
-```plaintext
+```output
 False
 True
 True

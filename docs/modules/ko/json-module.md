@@ -62,9 +62,7 @@ python_person = json.loads(json_person)
 python_person
 ```
 
-출력:
-
-```plaintext
+```output
 {'name': 'Charles', 'age': 33, 'has_hair': False, 'hobbies': ['photography', 'running']}
 ```
 
@@ -72,9 +70,7 @@ python_person
 type(python_person)
 ```
 
-출력:
-
-```plaintext
+```output
 <class 'dict'>
 ```
 
@@ -83,9 +79,7 @@ type(python_person)
 python_person.get("name")
 ```
 
-출력:
-
-```plaintext
+```output
 'Charles'
 ```
 
@@ -104,9 +98,7 @@ json_person = json.dumps(python_person)
 json_person
 ```
 
-출력:
-
-```plaintext
+```output
 '{"name": "Charles", "age": 33, "has_hair": false, "hobbies": ["photography", "running"]}'
 ```
 
@@ -114,9 +106,7 @@ json_person
 type(json_person)
 ```
 
-출력:
-
-```plaintext
+```output
 <class 'str'>
 ```
 
@@ -134,9 +124,7 @@ with open("filename.json", "r") as f:
 json.loads(json_content)
 ```
 
-출력:
-
-```plaintext
+```output
 {'name': 'Charles', 'age': 33, 'has_hair': False}
 ```
 

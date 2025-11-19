@@ -31,9 +31,7 @@ Um caractere de escape é criado digitando uma barra invertida `\` seguida pelo 
 print("Hello there!\nHow are you?\nI\'m doing fine.")
 ```
 
-Output:
-
-```plaintext
+```output
 Hello there!
 How are you?
 I'm doing fine.
@@ -48,9 +46,7 @@ Uma string bruta ignora completamente todos os caracteres de escape e imprime qu
 print(r"Hello there!\nHow are you?\nI\'m doing fine.")  # \n impresso literalmente
 ```
 
-Output:
-
-```plaintext
+```output
 Hello there!\nHow are you?\nI\'m doing fine.
 ```
 
@@ -70,9 +66,7 @@ Bob"""
 )
 ```
 
-Output:
-
-```plaintext
+```output
 Dear Alice,
 
 Eve's cat has been arrested for catnapping,
@@ -96,9 +90,7 @@ spam = 'Hello world!'
 spam[0]  # Retorna o primeiro caractere: 'H'
 ```
 
-Output:
-
-```plaintext
+```output
 'H'
 ```
 
@@ -106,9 +98,7 @@ Output:
 spam[4]
 ```
 
-Output:
-
-```plaintext
+```output
 'o'
 ```
 
@@ -116,9 +106,7 @@ Output:
 spam[-1]
 ```
 
-Output:
-
-```plaintext
+```output
 '!'
 ```
 
@@ -131,9 +119,7 @@ spam = 'Hello world!'
 spam[0:5]  # Retorna caracteres do índice 0 até 4: 'Hello'
 ```
 
-Output:
-
-```plaintext
+```output
 'Hello'
 ```
 
@@ -141,9 +127,7 @@ Output:
 spam[:5]
 ```
 
-Output:
-
-```plaintext
+```output
 'Hello'
 ```
 
@@ -151,9 +135,7 @@ Output:
 spam[6:]
 ```
 
-Output:
-
-```plaintext
+```output
 'world!'
 ```
 
@@ -161,9 +143,7 @@ Output:
 spam[6:-1]
 ```
 
-Output:
-
-```plaintext
+```output
 'world'
 ```
 
@@ -171,9 +151,7 @@ Output:
 spam[:-1]
 ```
 
-Output:
-
-```plaintext
+```output
 'Hello world'
 ```
 
@@ -181,9 +159,7 @@ Output:
 spam[::-1]
 ```
 
-Output:
-
-```plaintext
+```output
 '!dlrow olleH'
 ```
 
@@ -192,9 +168,7 @@ fizz = spam[0:5]
 fizz
 ```
 
-Output:
-
-```plaintext
+```output
 'Hello'
 ```
 
@@ -204,9 +178,7 @@ Output:
 'Hello' in 'Hello World'
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 
@@ -214,9 +186,7 @@ True
 'Hello' in 'Hello'
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 
@@ -224,9 +194,7 @@ True
 'HELLO' in 'Hello World'
 ```
 
-Output:
-
-```plaintext
+```output
 False
 ```
 
@@ -234,9 +202,7 @@ False
 '' in 'spam'
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 
@@ -244,9 +210,7 @@ True
 'cats' not in 'cats and dogs'
 ```
 
-Output:
-
-```plaintext
+```output
 False
 ```
 
@@ -259,9 +223,7 @@ greet = 'Hello world!'
 greet.upper()
 ```
 
-Output:
-
-```plaintext
+```output
 'HELLO WORLD!'
 ```
 
@@ -269,9 +231,7 @@ Output:
 greet.lower()
 ```
 
-Output:
-
-```plaintext
+```output
 'hello world!'
 ```
 
@@ -279,9 +239,7 @@ Output:
 greet.title()
 ```
 
-Output:
-
-```plaintext
+```output
 'Hello World!'
 ```
 
@@ -294,9 +252,7 @@ spam = 'Hello world!'
 spam.islower()
 ```
 
-Output:
-
-```plaintext
+```output
 False
 ```
 
@@ -304,9 +260,7 @@ False
 spam.isupper()
 ```
 
-Output:
-
-```plaintext
+```output
 False
 ```
 
@@ -314,9 +268,7 @@ False
 'HELLO'.isupper()
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 
@@ -324,9 +276,7 @@ True
 'abc12345'.islower()
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 
@@ -334,9 +284,7 @@ True
 '12345'.islower()
 ```
 
-Output:
-
-```plaintext
+```output
 False
 ```
 
@@ -344,9 +292,7 @@ False
 '12345'.isupper()
 ```
 
-Output:
-
-```plaintext
+```output
 False
 ```
 
@@ -366,9 +312,7 @@ False
 'Hello world!'.startswith('Hello')
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 
@@ -376,9 +320,7 @@ True
 'Hello world!'.endswith('world!')
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 
@@ -386,9 +328,7 @@ True
 'abc123'.startswith('abcdef')
 ```
 
-Output:
-
-```plaintext
+```output
 False
 ```
 
@@ -396,9 +336,7 @@ False
 'abc123'.endswith('12')
 ```
 
-Output:
-
-```plaintext
+```output
 False
 ```
 
@@ -406,9 +344,7 @@ False
 'Hello world!'.startswith('Hello world!')
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 
@@ -416,9 +352,7 @@ True
 'Hello world!'.endswith('Hello world!')
 ```
 
-Output:
-
-```plaintext
+```output
 True
 ```
 
@@ -432,9 +366,7 @@ O método `join()` pega todos os itens em um iterável, como uma <router-link to
 ''.join(['My', 'name', 'is', 'Simon'])
 ```
 
-Output:
-
-```plaintext
+```output
 'MynameisSimon'
 ```
 
@@ -442,9 +374,7 @@ Output:
 ', '.join(['cats', 'rats', 'bats'])
 ```
 
-Output:
-
-```plaintext
+```output
 'cats, rats, bats'
 ```
 
@@ -452,9 +382,7 @@ Output:
 ' '.join(['My', 'name', 'is', 'Simon'])
 ```
 
-Output:
-
-```plaintext
+```output
 'My name is Simon'
 ```
 
@@ -462,9 +390,7 @@ Output:
 'ABC'.join(['My', 'name', 'is', 'Simon'])
 ```
 
-Output:
-
-```plaintext
+```output
 'MyABCnameABCisABCSimon'
 ```
 
@@ -476,9 +402,7 @@ O método `split()` divide uma `string` em uma `list`. Por padrão, ele usará e
 'My name is Simon'.split()
 ```
 
-Output:
-
-```plaintext
+```output
 ['My', 'name', 'is', 'Simon']
 ```
 
@@ -486,9 +410,7 @@ Output:
 'MyABCnameABCisABCSimon'.split('ABC')
 ```
 
-Output:
-
-```plaintext
+```output
 ['My', 'name', 'is', 'Simon']
 ```
 
@@ -496,9 +418,7 @@ Output:
 'My name is Simon'.split('m')
 ```
 
-Output:
-
-```plaintext
+```output
 ['My na', 'e is Si', 'on']
 ```
 
@@ -506,9 +426,7 @@ Output:
 ' My  name is  Simon'.split()
 ```
 
-Output:
-
-```plaintext
+```output
 ['My', 'name', 'is', 'Simon']
 ```
 
@@ -516,9 +434,7 @@ Output:
 ' My  name is  Simon'.split(' ')
 ```
 
-Output:
-
-```plaintext
+```output
 ['', 'My', '', 'name', 'is', '', 'Simon']
 ```
 
@@ -528,9 +444,7 @@ Output:
 'Hello'.rjust(10)
 ```
 
-Output:
-
-```plaintext
+```output
 '     Hello'
 ```
 
@@ -538,9 +452,7 @@ Output:
 'Hello'.rjust(20)
 ```
 
-Output:
-
-```plaintext
+```output
 '               Hello'
 ```
 
@@ -548,9 +460,7 @@ Output:
 'Hello World'.rjust(20)
 ```
 
-Output:
-
-```plaintext
+```output
 '         Hello World'
 ```
 
@@ -558,9 +468,7 @@ Output:
 'Hello'.ljust(10)
 ```
 
-Output:
-
-```plaintext
+```output
 'Hello     '
 ```
 
@@ -568,9 +476,7 @@ Output:
 'Hello'.center(20)
 ```
 
-Output:
-
-```plaintext
+```output
 '       Hello       '
 ```
 
@@ -580,9 +486,7 @@ Um segundo argumento opcional para `rjust()` e `ljust()` especificará um caract
 'Hello'.rjust(20, '*')
 ```
 
-Output:
-
-```plaintext
+```output
 '***************Hello'
 ```
 
@@ -590,9 +494,7 @@ Output:
 'Hello'.ljust(20, '-')
 ```
 
-Output:
-
-```plaintext
+```output
 'Hello---------------'
 ```
 
@@ -600,9 +502,7 @@ Output:
 'Hello'.center(20, '=')
 ```
 
-Output:
-
-```plaintext
+```output
 '=======Hello========'
 ```
 
@@ -613,9 +513,7 @@ spam = '    Hello World     '
 spam.strip()
 ```
 
-Output:
-
-```plaintext
+```output
 'Hello World'
 ```
 
@@ -623,9 +521,7 @@ Output:
 spam.lstrip()
 ```
 
-Output:
-
-```plaintext
+```output
 'Hello World     '
 ```
 
@@ -633,9 +529,7 @@ Output:
 spam.rstrip()
 ```
 
-Output:
-
-```plaintext
+```output
 '    Hello World'
 ```
 
@@ -644,9 +538,7 @@ spam = 'SpamSpamBaconSpamEggsSpamSpam'
 spam.strip('ampS')
 ```
 
-Output:
-
-```plaintext
+```output
 'BaconSpamEggs'
 ```
 
@@ -659,9 +551,7 @@ sentence = 'one sheep two sheep three sheep four'
 sentence.count('sheep')
 ```
 
-Output:
-
-```plaintext
+```output
 3
 ```
 
@@ -669,9 +559,7 @@ Output:
 sentence.count('e')
 ```
 
-Output:
-
-```plaintext
+```output
 9
 ```
 
@@ -680,9 +568,7 @@ Output:
 sentence.count('e', 6)
 ```
 
-Output:
-
-```plaintext
+```output
 8
 ```
 
@@ -690,9 +576,7 @@ Output:
 sentence.count('e', 7)
 ```
 
-Output:
-
-```plaintext
+```output
 7
 ```
 
@@ -705,9 +589,7 @@ text = "Hello, world!"
 text.replace("world", "planet")
 ```
 
-Output:
-
-```plaintext
+```output
 'Hello, planet!'
 ```
 
@@ -716,9 +598,7 @@ fruits = "apple, banana, cherry, apple"
 fruits.replace("apple", "orange", 1)
 ```
 
-Output:
-
-```plaintext
+```output
 'orange, banana, cherry, apple'
 ```
 
@@ -727,9 +607,7 @@ sentence = "I like apples, Apples are my favorite fruit"
 sentence.replace("apples", "oranges")
 ```
 
-Output:
-
-```plaintext
+```output
 'I like oranges, Apples are my favorite fruit'
 ```
 

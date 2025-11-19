@@ -32,9 +32,7 @@ Las excepciones se lanzan con una sentencia `raise`. En el código, una sentenci
 raise Exception('Este es el mensaje de error.')
 ```
 
-Salida:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<pyshell#191>", line 1, in <module>
     raise Exception('This is the error message.')
@@ -65,9 +63,7 @@ for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
         print('Ha ocurrido una excepción: ' + str(err))
 ```
 
-Salida:
-
-```plaintext
+```output
 ****
 *  *
 *  *
@@ -99,9 +95,7 @@ except:
     print('La información del traceback se escribió en errorInfo.txt.')
 ```
 
-Salida:
-
-```plaintext
+```output
 116
 La información del traceback se escribió en errorInfo.txt.
 ```
@@ -130,9 +124,7 @@ pod_bay_door_status = 'Lo siento, Dave. Me temo que no puedo hacer eso.'
 assert pod_bay_door_status == 'open', 'Las puertas de la bahía de pods deben estar "open".'  # Lanza AssertionError
 ```
 
-Salida:
-
-```plaintext
+```output
 Traceback (most recent call last):
   File "<pyshell#10>", line 1, in <module>
     assert pod_bay_door_status == 'open', 'The pod bay doors need to be "open".'
@@ -174,9 +166,7 @@ print(factorial(5))
 logging.debug('Fin del programa')
 ```
 
-Salida:
-
-```plaintext
+```output
 2015-05-23 16:20:12,664 - DEBUG - Inicio del programa
 2015-05-23 16:20:12,664 - DEBUG - Inicio de factorial(5)
 2015-05-23 16:20:12,665 - DEBUG - i es 0, total es 0
@@ -213,9 +203,7 @@ logging.basicConfig(level=logging.INFO, format=' %(asctime)s -%(levelname)s - %(
 logging.critical('¡Error crítico! ¡Error crítico!')
 ```
 
-Salida:
-
-```plaintext
+```output
 2015-05-22 11:10:48,054 - CRITICAL - ¡Error crítico! ¡Error crítico!
 ```
 
