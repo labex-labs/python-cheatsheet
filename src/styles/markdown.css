@@ -142,3 +142,56 @@ html .prose {
   border-color: rgba(34, 197, 94, 0.3);
   color: rgb(74, 222, 128);
 }
+
+/* Output block styles */
+.prose pre[class*='language-'].output-block {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.prose pre[class*='language-'].output-block.output-collapsed > code {
+  display: none;
+}
+
+.prose pre[class*='language-'] .code-block-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.prose pre[class*='language-'] .code-block-toggle-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgb(148 163 184);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  opacity: 0.8;
+}
+
+.prose pre[class*='language-'] .code-block-toggle-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.prose pre[class*='language-'] .code-block-toggle-button:active {
+  transform: scale(0.95);
+}
+
+.dark .prose pre[class*='language-'] .code-block-toggle-button {
+  border-color: rgba(255, 255, 255, 0.15);
+  color: rgb(148 163 184);
+}
+
+.dark .prose pre[class*='language-'] .code-block-toggle-button:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+}
