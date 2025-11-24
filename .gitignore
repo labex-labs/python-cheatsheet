@@ -23,5 +23,8 @@ dist-ssr
 .vite-ssg-temp
 coverage
 .env
+.env.local
 .github/prompts/custom.prompt.md
 .vite
+wrangler.local.toml
+wrangler.toml

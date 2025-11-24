@@ -1,12 +1,42 @@
 <script setup lang="ts">
-import { ref, provide, useSlots } from 'vue'
+import { ref, provide, useSlots, watch, computed } from 'vue'
 import { useI18n } from '~/composables/useI18n'
+import { useQuizTracking } from '~/composables/useQuizTracking'
+import { useRoute } from 'vue-router'
 
 const { t } = useI18n()
+const route = useRoute()
 const slots = useSlots()
+const { recordQuizCompletion } = useQuizTracking()
 const selectedOption = ref<string | null>(null)
 const correctAnswer = ref<string | null>(null)
 const isAnswered = ref(false)
+
+const props = defineProps<{
+  correct?: string
+}>()
+
+if (props.correct) {
+  correctAnswer.value = props.correct
+}
+
+// Generate stable quiz ID based on page path and correct answer
+// Uses page path and component position to generate unique ID
+const quizId = computed(() => {
+  const pagePath = route.path
+  // Use props.correct as primary identifier, fallback to correctAnswer if not available
+  const correct = props.correct || correctAnswer.value || 'default'
+  // Generate stable hash from page path and correct answer
+  const hash = `${pagePath}:${correct}`
+  // Simple hash function
+  let hashValue = 0
+  for (let i = 0; i < hash.length; i++) {
+    const char = hash.charCodeAt(i)
+    hashValue = ((hashValue << 5) - hashValue) + char
+    hashValue = hashValue & hashValue
+  }
+  return `quiz-${Math.abs(hashValue).toString(36)}`
+})
 
 provide('quizState', {
   selectedOption,
@@ -23,13 +53,12 @@ provide('quizState', {
   },
 })
 
-const props = defineProps<{
-  correct?: string
-}>()
-
-if (props.correct) {
-  correctAnswer.value = props.correct
-}
+// Watch quiz completion status and record completion count
+watch(isAnswered, (newValue) => {
+  if (newValue && quizId.value) {
+    recordQuizCompletion(quizId.value)
+  }
+})
 
 const hasQuestionSlot = !!slots.question
 </script>

@@ -20,7 +20,7 @@ const customGlobals = Object.keys(autoImportGlobals.globals).reduce((acc, key) =
 
 export default [
   {
-    ignores: ['dist', 'src/components.d.ts', 'src/auto-imports.d.ts'],
+    ignores: ['dist', 'src/components.d.ts', 'src/auto-imports.d.ts', 'functions/**/*.ts'],
   },
   js.configs.recommended,
   ...vue.configs['flat/recommended'],
