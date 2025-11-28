@@ -178,6 +178,10 @@ export const useNavigationStore = defineStore('navigation', {
         path: '/modules/shelve-module',
       },
       {
+        name: 'Subprocess',
+        path: '/modules/subprocess-module',
+      },
+      {
         name: 'Zipfile',
         path: '/modules/zipfile-module',
       },
