@@ -119,12 +119,10 @@
     }
   },
   "banner": {
-    "title": "Черная пятница 2025:",
-    "learnPython": "Изучайте Python",
-    "withLabex": "с LabEx Hands-on Labs.",
-    "getDiscount": "Получите скидку 50% прямо сейчас →",
-    "shortMessage": "Черная пятница 2025: Python Hands-on Labs",
-    "shortDiscount": "Получите скидку 50% →"
+    "title": "Киберпонедельник 2025: Скоро заканчивается! До 40% скидки на LabEx Pro.",
+    "getDiscount": "Получите скидку 40% прямо сейчас →",
+    "shortMessage": "Киберпонедельник 2025: Скоро заканчивается! До 40% скидки на LabEx Pro.",
+    "shortDiscount": "Получите скидку 40% прямо сейчас →"
   },
   "codeBlock": {
     "copy": "Копировать",

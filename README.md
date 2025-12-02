@@ -1,4 +1,6 @@
-> 🔥 LabEx Black Friday 2025 Best Price of The Year｜[**Get 50% OFF Now →**](https://labex.io/pricing)
+[![](https://cdn.jsdelivr.net/gh/labex-labs/files@master/images/cyber-monday-25.png)](https://labex.io/pricing)
+
+🔥 Cyber Monday 2025 - Ends Soon!｜[**Get 40% OFF Now →**](https://labex.io/pricing)
 
 ---
 

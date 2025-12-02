@@ -8,7 +8,7 @@ const { currentLocale } = useI18n()
 const articleMeta = computed(() => {
   const routeMeta = route.meta || {}
   const childMeta = route.matched[0]?.children?.[0]?.meta || {}
-  
+
   if (routeMeta.title || routeMeta.date) {
     return {
       title: routeMeta.title,
@@ -19,7 +19,7 @@ const articleMeta = computed(() => {
       socialImage: routeMeta.socialImage,
     }
   }
-  
+
   if (childMeta.title || childMeta.date) {
     return {
       title: childMeta.title,
@@ -30,7 +30,7 @@ const articleMeta = computed(() => {
       socialImage: childMeta.socialImage,
     }
   }
-  
+
   return undefined
 })
 
@@ -41,11 +41,7 @@ const { t } = useI18n()
 
 // Generate structured data
 const structuredData = computed(() => {
-  return generateStructuredData(
-    route,
-    currentLocale.value,
-    articleMeta.value
-  )
+  return generateStructuredData(route, currentLocale.value, articleMeta.value)
 })
 
 // Inject structured data as JSON-LD
@@ -55,7 +51,7 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(schema),
       key: `structured-data-${index}-${route.path}`,
-    }))
+    })),
   ),
 })
 
@@ -82,17 +78,10 @@ if (gTag && gTag !== 'tag' && gTag.trim() !== '') {
 </script>
 
 <template>
-  <BaseBanner storage-key-name="black-friday-2025-banner">
+  <BaseBanner storage-key-name="cyber-monday-2025-banner">
     <template #message>
       <span class="text-white">
         {{ t('banner.title') }}
-        <a
-          href="https://labex.io/learn/python"
-          target="_blank"
-          class="font-semibold text-white underline hover:text-slate-200"
-          >{{ t('banner.learnPython') }}</a
-        >
-        {{ t('banner.withLabex') }}
         <a
           href="https://labex.io/pricing"
           target="_blank"
