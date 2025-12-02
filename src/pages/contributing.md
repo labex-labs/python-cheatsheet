@@ -95,8 +95,9 @@ Ready to start contributing? Here’s how to set up the project on your local ma
 
 #### Adding a New Cheatsheet Page
 
-1.  Create a new Markdown file in `docs/cheatsheet/`.
-2.  Add the following frontmatter and structure:
+1.  Create a new Markdown file in `docs/cheatsheet/en/` directory.
+2.  **Important:** English documentation must be placed in the `en/` subdirectory. Do not create translations for other languages - i18n translations will be handled automatically by scripts during deployment.
+3.  Add the following frontmatter and structure:
 
     ```markdown
     ---
@@ -113,12 +114,43 @@ Ready to start contributing? Here’s how to set up the project on your local ma
     Your content here...
     ```
 
-3.  Add the new page to the navigation in `src/store/navigation.ts`.
+4.  Add the new page to the navigation in `src/store/navigation.ts`.
+
+#### Adding a New Module Documentation
+
+1.  Create a new Markdown file in `docs/modules/en/` directory.
+2.  **Important:** English documentation must be placed in the `en/` subdirectory. Do not create translations for other languages - i18n translations will be handled automatically by scripts during deployment.
+3.  Add the following frontmatter and structure:
+
+    ```markdown
+    ---
+    title: Python Module Name - Python Cheatsheet
+    description: Brief description of the module
+    ---
+
+    <base-title :title="frontmatter.title" :description="frontmatter.description">
+    Python Module Name
+    </base-title>
+
+    [Module](https://docs.python.org/3/library/module.html) description...
+
+    ## Section 1
+
+    Your content here...
+
+    ## Relevant links
+
+    - <router-link to="/cheatsheet/...">Cheatsheet: ...</router-link>
+    - <router-link to="/modules/...">Module: ...</router-link>
+    ```
+
+4.  Use ` ```output ` code blocks to display code execution outputs separately for better visual presentation.
 
 #### Adding a New Blog Post
 
-1.  Create a new Markdown file in `docs/blog/`.
-2.  Use this template for your blog post:
+1.  Create a new Markdown file in `docs/blog/en/` directory.
+2.  **Important:** English documentation must be placed in the `en/` subdirectory. Do not create translations for other languages - i18n translations will be handled automatically by scripts during deployment.
+3.  Use this template for your blog post:
 
     ```markdown
     ---

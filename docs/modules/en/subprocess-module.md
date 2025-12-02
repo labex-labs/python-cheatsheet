@@ -21,10 +21,18 @@ The `run` function is used to execute a system command.
 subprocess.run(['echo', 'Hello World!'])
 ```
 
-If you want to run a command as a single string instead of a list, use
+```output
+Hello World!
+```
+
+If you want to run a command as a single string instead of a list, use:
 
 ```python
 subprocess.run('echo Hello World!', shell=True)
+```
+
+```output
+Hello World!
 ```
 
 Both will automatically print the output to the terminal.
@@ -49,9 +57,15 @@ result = subprocess.run(
   text=True
 )
 
-output = result.stdout # "Hello World!"
-error = result.stderr # ""
-returncode = result.returncode # 0
+output = result.stdout
+error = result.stderr
+returncode = result.returncode
+```
+
+```output
+output = "Hello World!\n"
+error = ""
+returncode = 0
 ```
 
 Here, `text=True` tells the function to read the output as text instead of bytes.
@@ -73,6 +87,10 @@ except subprocess.CalledProcessError:
   print('Error: Directory does not exist.')
 ```
 
+```output
+Error: Directory does not exist.
+```
+
 If `check` is set to `True` and the returncode is not 0 (unsuccessful operation), subprocess will raise a `subprocess.CalledProcessError`, which can be handled in the usual way using an except block.
 
 ## Running Commands with Timeout
@@ -86,6 +104,10 @@ except subprocess.TimeoutExpired:
     print('Process took too long!')
 ```
 
+```output
+Process took too long!
+```
+
 ## Writing Output to a File
 
 You can redirect the output to a file by setting `stdout` (and `stderr`, if needed) to a file object:
@@ -97,4 +119,12 @@ with open('output.txt', 'w') as f:
 
 Here, both normal output and errors will appear in the file, in the order they are generated.
 
-**Note:** `text=True` is only required for capturing output into Python variables.
+**Note:** `text=True` is helpful when you want to manipulate the output as a string in Python. It is not strictly required when redirecting output directly to a file.
+
+## Relevant links
+
+- <router-link to="/cheatsheet/reading-and-writing-files">Cheatsheet: Reading and Writing Files</router-link>
+- <router-link to="/cheatsheet/file-directory-path">Cheatsheet: File & Directory Path</router-link>
+- <router-link to="/cheatsheet/exception-handling">Cheatsheet: Exception Handling</router-link>
+- <router-link to="/modules/os-module">Module: os</router-link>
+- <router-link to="/builtin/open">open()</router-link>
