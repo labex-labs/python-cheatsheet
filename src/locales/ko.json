@@ -119,12 +119,10 @@
     }
   },
   "banner": {
-    "title": "블랙 프라이데이 2025:",
-    "learnPython": "Python 배우기",
-    "withLabex": "LabEx Hands-on Labs 와 함께.",
-    "getDiscount": "지금 50% 할인 받기 →",
-    "shortMessage": "블랙 프라이데이 2025: Python Hands-on Labs",
-    "shortDiscount": "50% 할인 받기 →"
+    "title": "사이버 먼데이 2025: 곧 종료! LabEx Pro 최대 40% 할인.",
+    "getDiscount": "지금 40% 할인 받기 →",
+    "shortMessage": "사이버 먼데이 2025: 곧 종료! LabEx Pro 최대 40% 할인.",
+    "shortDiscount": "지금 40% 할인 받기 →"
   },
   "codeBlock": {
     "copy": "복사",

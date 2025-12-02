@@ -119,12 +119,10 @@
     }
   },
   "banner": {
-    "title": "Black Friday 2025:",
-    "learnPython": "Python lernen",
-    "withLabex": "mit LabEx Hands-on Labs.",
-    "getDiscount": "Jetzt 50% Rabatt erhalten →",
-    "shortMessage": "Black Friday 2025: Python Hands-on Labs",
-    "shortDiscount": "50% Rabatt erhalten →"
+    "title": "Cyber Monday 2025: Endet bald! Bis zu 40% Rabatt auf LabEx Pro.",
+    "getDiscount": "Jetzt 40% Rabatt erhalten →",
+    "shortMessage": "Cyber Monday 2025: Endet bald! Bis zu 40% Rabatt auf LabEx Pro.",
+    "shortDiscount": "Jetzt 40% Rabatt erhalten →"
   },
   "codeBlock": {
     "copy": "Kopieren",
