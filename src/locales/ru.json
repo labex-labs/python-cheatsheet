@@ -9,7 +9,8 @@
   "navbar": {
     "blog": "Блог",
     "pythonCheatsheetPdf": "Шпаргалка Python PDF",
-    "repositoryLink": "репозиторий шпаргалки Python"
+    "repositoryLink": "репозиторий шпаргалки Python",
+    "login": "Войти"
   },
   "footer": {
     "moreCheatsheets": "Больше шпаргалок"
@@ -137,7 +138,12 @@
     "correctAnswer": "Правильный ответ",
     "completions": "завершений",
     "completion": "завершение",
-    "totalCompletions": "Всего завершений"
+    "totalCompletions": "Всего завершений",
+    "completed": "Завершено",
+    "notCompleted": "Не Завершено",
+    "loginToUnlockDesc": "Войдите в систему, чтобы ответить на эту викторину и отслеживать свой прогресс обучения",
+    "loginRefreshDesc": "Пожалуйста, обновите эту страницу после входа в систему, чтобы продолжить",
+    "refresh": "Обновить"
   },
   "meta": {
     "title": "Шпаргалка Python – Основы Python для начинающих",

@@ -1,6 +1,21 @@
 import { useRoute } from 'vue-router'
 import { SUPPORTED_LOCALES } from './useI18n'
 
+interface QuizAPIResponse {
+  success: boolean
+  quizId: string
+  pagePath: string
+  count: number
+}
+
+interface UserStatusResponse {
+  success: boolean
+  quizId: string
+  pagePath: string
+  userId: number
+  completed: boolean
+}
+
 /**
  * Normalize path to English version by removing language prefix
  * This ensures all language versions of the same page share the same quiz data
@@ -23,6 +38,7 @@ export function useQuizTracking() {
 
       const response = await fetch('/api/quiz/record', {
         method: 'POST',
+        credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -37,7 +53,7 @@ export function useQuizTracking() {
         return null
       }
 
-      const data = await response.json()
+      const data = await response.json() as QuizAPIResponse
       return data.count || null
     } catch (error) {
       console.error('Error recording quiz completion:', error)
@@ -64,7 +80,7 @@ export function useQuizTracking() {
         return null
       }
 
-      const data = await response.json()
+      const data = await response.json() as QuizAPIResponse
       return data.count || 0
     } catch (error) {
       console.error('Error fetching quiz stats:', error)
@@ -72,9 +88,41 @@ export function useQuizTracking() {
     }
   }
 
+  const getUserQuizStatus = async (quizId: string): Promise<boolean | null> => {
+    try {
+      const pagePath = normalizePathToEnglish(route.path)
+      const url = new URL('/api/quiz/user-status', window.location.origin)
+      url.searchParams.set('quizId', quizId)
+      url.searchParams.set('pagePath', pagePath)
+
+      const response = await fetch(url.toString(), {
+        method: 'GET',
+        credentials: 'include',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+
+      if (!response.ok) {
+        if (response.status === 401) {
+          return null
+        }
+        console.error('Failed to fetch user quiz status:', response.statusText)
+        return null
+      }
+
+      const data = await response.json() as UserStatusResponse
+      return data.completed || false
+    } catch (error) {
+      console.error('Error fetching user quiz status:', error)
+      return null
+    }
+  }
+
   return {
     recordQuizCompletion,
     getQuizStats,
+    getUserQuizStatus,
   }
 }
 

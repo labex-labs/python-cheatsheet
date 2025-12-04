@@ -9,7 +9,8 @@
   "navbar": {
     "blog": "ブログ",
     "pythonCheatsheetPdf": "Python チートシート PDF",
-    "repositoryLink": "Python チートシートリポジトリ"
+    "repositoryLink": "Python チートシートリポジトリ",
+    "login": "ログイン"
   },
   "footer": {
     "moreCheatsheets": "その他のチートシート"
@@ -137,7 +138,12 @@
     "correctAnswer": "正解",
     "completions": "回完了",
     "completion": "回完了",
-    "totalCompletions": "総完了回数"
+    "totalCompletions": "総完了回数",
+    "completed": "完了済み",
+    "notCompleted": "未完了",
+    "loginToUnlockDesc": "ログインしてこのクイズに回答し、学習の進捗を追跡できます",
+    "loginRefreshDesc": "ログイン後、このページを更新して続行してください",
+    "refresh": "更新"
   },
   "meta": {
     "title": "Python チートシート – 初心者のための Python 基礎",

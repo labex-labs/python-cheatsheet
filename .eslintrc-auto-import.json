@@ -313,6 +313,7 @@
     "generateBreadcrumbSchema": true,
     "generateOrganizationSchema": true,
     "generateStructuredData": true,
-    "generateWebSiteSchema": true
+    "generateWebSiteSchema": true,
+    "useAuth": true
   }
 }

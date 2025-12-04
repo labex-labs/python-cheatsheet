@@ -1,8 +1,15 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
+
 const navigation = useNavigationStore()
 const route = useRoute()
 const isDark = useDark()
 const { localePath, t } = useI18n()
+const { user, isLoading, isAuthenticated, login, checkAuth } = useAuth()
+
+onMounted(() => {
+  checkAuth()
+})
 
 // const timeAgo = useTimeAgo(new Date(2023, 12, 29, 15, 15))
 </script>
@@ -25,11 +32,7 @@ const { localePath, t } = useI18n()
             <router-link :to="localePath('/')" class="flex items-center">
               <img
                 class="h-6 w-auto sm:h-7"
-                :src="
-                  isDark
-                    ? '/labex-logo-light.svg'
-                    : '/labex-logo-dark.svg'
-                "
+                :src="isDark ? '/labex-logo-light.svg' : '/labex-logo-dark.svg'"
                 alt="LabEx"
                 height="10"
                 width="10"
@@ -105,20 +108,38 @@ const { localePath, t } = useI18n()
           </div>
 
           <base-locale-switcher />
-          <base-reader-mode />
-          <a
-            target="_blank"
-            href="https://github.com/labex-labs/python-cheatsheet"
-            rel="noreferrer"
-          >
-            <github-icon />
-            <span class="sr-only">{{ t('navbar.repositoryLink') }}</span>
-          </a>
-          <router-link :to="localePath('/blog')">
-            <blog-icon />
-            <span class="sr-only">{{ t('navbar.blog') }}</span>
-          </router-link>
-          <base-theme-toggle />
+          <!-- Auth status -->
+          <div v-if="!isLoading" class="flex items-center">
+            <a
+              v-if="isAuthenticated && user"
+              :href="`https://labex.io/users/${user.name || user.nick_name || ''}`"
+              target="_blank"
+              class="flex items-center"
+              :title="user.nick_name || user.name || ''"
+            >
+              <img
+                v-if="user.img_url"
+                :src="user.img_url"
+                :alt="user.name || user.nick_name || 'User'"
+                class="h-8 w-8 rounded-full border border-slate-300 dark:border-slate-600"
+              />
+              <div
+                v-else
+                class="flex h-8 w-8 items-center justify-center rounded-full border border-slate-300 bg-slate-100 text-sm font-medium text-slate-700 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-300"
+              >
+                {{
+                  (user.name || user.nick_name || 'U').charAt(0).toUpperCase()
+                }}
+              </div>
+            </a>
+            <button
+              v-else
+              class="inline-flex items-center rounded-md border border-transparent bg-primary-600 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600"
+              @click="login"
+            >
+              {{ t('navbar.login') }}
+            </button>
+          </div>
         </div>
       </div>
     </div>

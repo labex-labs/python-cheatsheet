@@ -15,7 +15,7 @@ function normalizePathToEnglish(path: string): string {
   return path
 }
 
-export async function onRequestPost(context: {
+export async function onRequestGet(context: {
   request: Request
   env: {
     PYTHONCHEATSHEET_QUIZ_KV: KVNamespace
@@ -25,7 +25,7 @@ export async function onRequestPost(context: {
     const { request, env } = context
 
     // Validate request method
-    if (request.method !== 'POST') {
+    if (request.method !== 'GET') {
       return new Response(
         JSON.stringify({ error: 'Method not allowed' }),
         {
@@ -35,14 +35,15 @@ export async function onRequestPost(context: {
       )
     }
 
-    // Parse request body
-    const body = await request.json()
-    const { quizId, pagePath } = body
+    // Get query parameters
+    const url = new URL(request.url)
+    const quizId = url.searchParams.get('quizId')
+    const pagePath = url.searchParams.get('pagePath')
 
     // Validate required fields
     if (!quizId || !pagePath) {
       return new Response(
-        JSON.stringify({ error: 'Missing required fields: quizId and pagePath' }),
+        JSON.stringify({ error: 'Missing required query parameters: quizId and pagePath' }),
         {
           status: 400,
           headers: { 'Content-Type': 'application/json' },
@@ -50,54 +51,54 @@ export async function onRequestPost(context: {
       )
     }
 
-    // Normalize path to English version to ensure all languages share the same quiz data
-    const normalizedPath = normalizePathToEnglish(pagePath)
-    // Generate unique key: combine pythoncheatsheet prefix, normalized pagePath and quizId
-    // Format: pythoncheatsheet:quiz:${normalizedPath}:${quizId}
-    const key = `pythoncheatsheet:quiz:${normalizedPath}:${quizId}`
-
-    // Get current count from KV
-    const currentCount = await env.PYTHONCHEATSHEET_QUIZ_KV.get(key)
-    const count = currentCount ? parseInt(currentCount, 10) : 0
-
-    // Increment count
-    const newCount = count + 1
-
-    // Save to KV
-    await env.PYTHONCHEATSHEET_QUIZ_KV.put(key, newCount.toString())
-
-    // Record user completion status if user is authenticated
+    // Get userId from cookie (LabEx SSO cookie)
     const cookies = request.headers.get('Cookie') || ''
     const userIdMatch = cookies.match(/user_id=(\d+)/)
-    if (userIdMatch) {
-      const userId = userIdMatch[1]
-      // Format: pythoncheatsheet:user-quiz:${userId}:${normalizedPath}:${quizId}
-      const userKey = `pythoncheatsheet:user-quiz:${userId}:${normalizedPath}:${quizId}`
-      await env.PYTHONCHEATSHEET_QUIZ_KV.put(userKey, 'true')
+
+    if (!userIdMatch) {
+      return new Response(
+        JSON.stringify({ error: 'Unauthorized' }),
+        {
+          status: 401,
+          headers: { 'Content-Type': 'application/json' },
+        }
+      )
     }
 
-    // Return success response
+    const userId = userIdMatch[1]
+
+    // Normalize path to English version to ensure all languages share the same quiz data
+    const normalizedPath = normalizePathToEnglish(pagePath)
+    // Generate unique key for user completion status with pythoncheatsheet prefix
+    // Format: pythoncheatsheet:user-quiz:${userId}:${normalizedPath}:${quizId}
+    const key = `pythoncheatsheet:user-quiz:${userId}:${normalizedPath}:${quizId}`
+
+    // Get user completion status from KV
+    const completedStr = await env.PYTHONCHEATSHEET_QUIZ_KV.get(key)
+    const completed = completedStr === 'true'
+
+    // Return user status
     return new Response(
       JSON.stringify({
         success: true,
         quizId,
         pagePath: normalizedPath,
-        count: newCount,
+        userId: parseInt(userId, 10),
+        completed,
       }),
       {
         status: 200,
         headers: {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'POST, OPTIONS',
+          'Access-Control-Allow-Methods': 'GET, OPTIONS',
           'Access-Control-Allow-Headers': 'Content-Type',
-          // POST 请求不缓存
-          'Cache-Control': 'no-store, no-cache, must-revalidate',
+          'Cache-Control': 'private, no-cache, must-revalidate',
         },
       }
     )
   } catch (error) {
-    console.error('Error recording quiz completion:', error)
+    console.error('Error fetching user quiz status:', error)
     return new Response(
       JSON.stringify({ error: 'Internal server error' }),
       {
@@ -116,7 +117,7 @@ export async function onRequestOptions(): Promise<Response> {
     status: 204,
     headers: {
       'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Methods': 'GET, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type',
     },
   })

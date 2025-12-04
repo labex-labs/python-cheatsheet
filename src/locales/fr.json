@@ -9,7 +9,8 @@
   "navbar": {
     "blog": "Blog",
     "pythonCheatsheetPdf": "Aide-mémoire Python PDF",
-    "repositoryLink": "dépôt de l'aide-mémoire Python"
+    "repositoryLink": "dépôt de l'aide-mémoire Python",
+    "login": "Connexion"
   },
   "footer": {
     "moreCheatsheets": "Plus d'aides-mémoire"
@@ -137,7 +138,12 @@
     "correctAnswer": "Bonne réponse",
     "completions": "complétions",
     "completion": "complétion",
-    "totalCompletions": "Total de complétions"
+    "totalCompletions": "Total de complétions",
+    "completed": "Terminé",
+    "notCompleted": "Non Terminé",
+    "loginToUnlockDesc": "Connectez-vous pour répondre à ce quiz et suivre votre progression d'apprentissage",
+    "loginRefreshDesc": "Veuillez actualiser cette page après vous être connecté pour continuer",
+    "refresh": "Actualiser"
   },
   "meta": {
     "title": "Aide-mémoire Python – Bases de Python pour débutants",

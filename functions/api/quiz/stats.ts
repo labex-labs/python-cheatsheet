@@ -53,8 +53,9 @@ export async function onRequestGet(context: {
 
     // Normalize path to English version to ensure all languages share the same quiz data
     const normalizedPath = normalizePathToEnglish(pagePath)
-    // Generate unique key
-    const key = `quiz:${normalizedPath}:${quizId}`
+    // Generate unique key with pythoncheatsheet prefix
+    // Format: pythoncheatsheet:quiz:${normalizedPath}:${quizId}
+    const key = `pythoncheatsheet:quiz:${normalizedPath}:${quizId}`
 
     // Get count from KV
     const countStr = await env.PYTHONCHEATSHEET_QUIZ_KV.get(key)

@@ -9,7 +9,8 @@
   "navbar": {
     "blog": "博客",
     "pythonCheatsheetPdf": "Python 速查表 PDF",
-    "repositoryLink": "Python 速查表仓库"
+    "repositoryLink": "Python 速查表仓库",
+    "login": "登录"
   },
   "footer": {
     "moreCheatsheets": "更多速查表"
@@ -137,7 +138,12 @@
     "correctAnswer": "正确答案",
     "completions": "次完成",
     "completion": "次完成",
-    "totalCompletions": "总完成次数"
+    "totalCompletions": "总完成次数",
+    "completed": "已完成",
+    "notCompleted": "未完成",
+    "loginToUnlockDesc": "登录后即可答题并追踪学习进度",
+    "loginRefreshDesc": "登录后请刷新当前页面以继续",
+    "refresh": "刷新"
   },
   "meta": {
     "title": "Python 速查表 – Python 初学者基础",

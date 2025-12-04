@@ -9,7 +9,8 @@
   "navbar": {
     "blog": "Blog",
     "pythonCheatsheetPdf": "Folha de referência Python PDF",
-    "repositoryLink": "repositório da folha de referência Python"
+    "repositoryLink": "repositório da folha de referência Python",
+    "login": "Entrar"
   },
   "footer": {
     "moreCheatsheets": "Mais folhas de referência"
@@ -137,7 +138,12 @@
     "correctAnswer": "Resposta correta",
     "completions": "conclusões",
     "completion": "conclusão",
-    "totalCompletions": "Total de conclusões"
+    "totalCompletions": "Total de conclusões",
+    "completed": "Concluído",
+    "notCompleted": "Não Concluído",
+    "loginToUnlockDesc": "Faça login para responder este quiz e acompanhar seu progresso de aprendizagem",
+    "loginRefreshDesc": "Por favor, atualize esta página após fazer login para continuar",
+    "refresh": "Atualizar"
   },
   "meta": {
     "title": "Folha de referência Python – Fundamentos de Python para iniciantes",

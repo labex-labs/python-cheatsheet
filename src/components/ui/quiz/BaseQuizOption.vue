@@ -13,6 +13,7 @@ const quizState = inject<{
   selectedOption: { value: string | null }
   correctAnswer: { value: string | null }
   isAnswered: { value: boolean }
+  isAuthenticated?: { value: boolean }
   // eslint-disable-next-line no-unused-vars
   selectOption: (value: string) => void
   // eslint-disable-next-line no-unused-vars
@@ -40,17 +41,31 @@ const showCorrectIndicator = computed(() => {
 })
 
 const handleClick = () => {
+  if (isDisabled.value) {
+    return
+  }
   if (quizState && !quizState.isAnswered.value) {
     quizState.selectOption(props.value)
   }
 }
 
+const isDisabled = computed(() => {
+  return !quizState?.isAuthenticated?.value
+})
+
 const getOptionClass = computed(() => {
   const baseClass =
-    'flex w-full cursor-pointer items-start gap-3 rounded-lg border-2 p-4 transition-all duration-200'
+    'flex w-full items-start gap-3 rounded-lg border-2 p-4 transition-all duration-200'
+
+  const cursorClass = isDisabled.value
+    ? 'cursor-not-allowed opacity-50'
+    : 'cursor-pointer'
 
   if (!quizState?.isAnswered.value) {
-    return `${baseClass} border-slate-200 bg-white hover:border-primary-400 hover:bg-primary-50 dark:border-slate-700 dark:bg-slate-800 dark:hover:border-primary-600 dark:hover:bg-slate-800`
+    if (isDisabled.value) {
+      return `${baseClass} ${cursorClass} border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-800/50`
+    }
+    return `${baseClass} ${cursorClass} border-slate-200 bg-white hover:border-primary-400 hover:bg-primary-50 dark:border-slate-700 dark:bg-slate-800 dark:hover:border-primary-600 dark:hover:bg-slate-800`
   }
 
   if (isSelected.value) {

@@ -9,7 +9,8 @@
   "navbar": {
     "blog": "Blog",
     "pythonCheatsheetPdf": "Python Spickzettel PDF",
-    "repositoryLink": "Python Spickzettel Repository"
+    "repositoryLink": "Python Spickzettel Repository",
+    "login": "Anmelden"
   },
   "footer": {
     "moreCheatsheets": "Weitere Spickzettel"
@@ -137,7 +138,12 @@
     "correctAnswer": "Richtige Antwort",
     "completions": "Abschlüsse",
     "completion": "Abschluss",
-    "totalCompletions": "Gesamte Abschlüsse"
+    "totalCompletions": "Gesamte Abschlüsse",
+    "completed": "Abgeschlossen",
+    "notCompleted": "Nicht Abgeschlossen",
+    "loginToUnlockDesc": "Melden Sie sich an, um dieses Quiz zu beantworten und Ihren Lernfortschritt zu verfolgen",
+    "loginRefreshDesc": "Bitte aktualisieren Sie diese Seite nach der Anmeldung, um fortzufahren",
+    "refresh": "Aktualisieren"
   },
   "meta": {
     "title": "Python Spickzettel – Python-Grundlagen für Anfänger",

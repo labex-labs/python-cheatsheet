@@ -9,7 +9,8 @@
   "navbar": {
     "blog": "Blog",
     "pythonCheatsheetPdf": "Python Cheatsheet PDF",
-    "repositoryLink": "python cheatsheet repository"
+    "repositoryLink": "python cheatsheet repository",
+    "login": "Login"
   },
   "footer": {
     "moreCheatsheets": "More Cheatsheets"
@@ -137,7 +138,12 @@
     "correctAnswer": "Correct Answer",
     "completions": "completions",
     "completion": "completion",
-    "totalCompletions": "Total completions"
+    "totalCompletions": "Total completions",
+    "completed": "Completed",
+    "notCompleted": "Not Completed",
+    "loginToUnlockDesc": "Sign in to answer this quiz and track your learning progress",
+    "loginRefreshDesc": "Please refresh this page after signing in to continue",
+    "refresh": "Refresh"
   },
   "meta": {
     "title": "Python Cheat Sheet – Python Basics for Beginners",
