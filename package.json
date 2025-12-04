@@ -3,12 +3,14 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite-ssg build",
+    "build": "NODE_OPTIONS='--max-old-space-size=4096' vite-ssg build",
     "preview": "vite preview",
     "test": "vitest --run",
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
-    "fetch-contributors": "esno scripts/fetch-contributors.ts"
+    "fetch-contributors": "esno scripts/fetch-contributors.ts",
+    "wrangler:dev": "wrangler dev",
+    "wrangler:deploy": "wrangler deploy"
   },
   "dependencies": {
     "@docsearch/js": "^3.9.0",
@@ -25,6 +27,7 @@
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251202.0",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.19",
     "@types/fs-extra": "^11.0.4",
@@ -65,7 +68,8 @@
     "vite-ssg": "^0.23.8",
     "vite-ssg-sitemap": "^0.6.1",
     "vitest": "^1.6.1",
-    "vue-tsc": "^2.2.12"
+    "vue-tsc": "^2.2.12",
+    "wrangler": "^3.0.0"
   },
   "engines": {
     "node": ">=20"

@@ -1,6 +1,6 @@
 # Quiz Tracking Feature Deployment Guide
 
-This project integrates Cloudflare Functions to track quiz completion counts.
+This project uses Cloudflare Workers to track quiz completion counts.
 
 ## Feature Overview
 
@@ -16,24 +16,46 @@ When a user completes a quiz, the system automatically calls the backend API to 
 4. Enter name: `PYTHONCHEATSHEET_QUIZ_KV`
 5. Record the generated **Namespace ID**
 
-### 2. Bind KV in Cloudflare Pages
+### 2. Configure wrangler.toml
 
-**Important:** All production configuration is done in the Cloudflare Dashboard. No `wrangler.toml` file is required for production deployment.
+1. Open `wrangler.toml` file
+2. Replace `your-production-kv-namespace-id` with the actual KV Namespace ID from step 1
+3. Replace `your-preview-kv-namespace-id` with a preview KV Namespace ID (optional, for local development)
 
-1. Go to your Pages project
-2. Go to **Settings** > **Functions**
-3. In the **KV Namespace Bindings** section, click **Add binding**
-4. Select the `PYTHONCHEATSHEET_QUIZ_KV` namespace created earlier
-5. Set the variable name to `PYTHONCHEATSHEET_QUIZ_KV` (must match the binding name in code)
+### 3. Build and Deploy
 
-### 3. Deploy
+1. Build the project:
 
-After deploying to Cloudflare Pages, Functions will be automatically deployed. Ensure:
+   ```bash
+   npm run build
+   ```
 
-- `functions/` directory is included in the project
-- KV Namespace is bound in Pages project settings (configured in step 2)
+2. Deploy to Cloudflare Workers:
+   ```bash
+   npm run wrangler:deploy
+   ```
 
-That's it! No `wrangler.toml` file is needed for production deployment. All configuration is done in the Cloudflare Dashboard.
+Alternatively, you can use Wrangler CLI directly:
+
+```bash
+wrangler deploy
+```
+
+### 4. Local Development
+
+To test locally with Wrangler:
+
+1. Ensure `wrangler.toml` is configured with your KV Namespace IDs
+2. Build the project:
+   ```bash
+   npm run build
+   ```
+3. Start local development server:
+   ```bash
+   npm run wrangler:dev
+   ```
+
+The local server will serve your static assets and handle API routes.
 
 ## API Endpoints
 
