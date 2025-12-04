@@ -630,7 +630,7 @@ sentence.count('e', 7)
 
 ## Replace Method
 
-Replaces all occurences of a given substring with another substring. Can be optionally provided a third argument to limit the number of replacements. Returns a new string.
+Replaces all occurrences of a given substring with another substring. Can be optionally provided a third argument to limit the number of replacements. Returns a new string.
 
 ```python
 text = "Hello, world!"
