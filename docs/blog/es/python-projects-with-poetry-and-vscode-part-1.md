@@ -146,7 +146,7 @@ Para crear un Entorno Virtual e instalar _Pytest_, usaremos el comando `poetry i
 poetry install
 ```
 
-![poetry-install-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-install.png)
+![poetry-install-command](/blog/python-projects-with-poetry-and-vscode-part-1-poetry-install-248979f4.png)
 
 Después de que termine, se creará un nuevo archivo, `poetry.lock`.
 
@@ -164,7 +164,7 @@ Añadamos dos paquetes al proyecto, _pendulum_ y _coo_:
 poetry add pendulum coo
 ```
 
-![poetry-add-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-add.png)
+![poetry-add-command](/blog/python-projects-with-poetry-and-vscode-part-1-poetry-add-f0cdc305.png)
 
 Abre _pyproject.toml_ y _poetry.lock_ y observa cómo se han actualizado.
 
@@ -194,7 +194,7 @@ Este error ocurre porque _black_ está en estado de prelanzamiento, por lo que P
 poetry add -D black --allow-prereleases
 ```
 
-![poetry-add-dev-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-add-dev.png)
+![poetry-add-dev-command](/blog/python-projects-with-poetry-and-vscode-part-1-poetry-add-dev-bfa6daad.png)
 
 ### Eliminar dependencias
 

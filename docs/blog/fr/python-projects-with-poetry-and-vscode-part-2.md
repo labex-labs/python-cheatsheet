@@ -50,7 +50,7 @@ Avant de commencer, assurez-vous d'avoir installé [VSCode](https://code.visuals
 
 Quelques jours se sont écoulés depuis la première partie, il pourrait donc être judicieux de vérifier les nouvelles versions de nos dépendances. Ouvrez votre terminal, naviguez à l'intérieur du répertoire de votre projet et tapez la commande `poetry update` :
 
-![poetry update](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/update.png)
+![poetry update](/blog/python-projects-with-poetry-and-vscode-part-2-update-d9f9d44f.png)
 
 Jusqu'à présent, aucune nouvelle version n'est disponible.
 
@@ -63,15 +63,15 @@ code .
 
 La première commande, `poetry shell`, nous fera entrer dans notre environnement virtuel, et `code .` ouvrira le dossier actuel à l'intérieur de _VSCode_.
 
-![vscode](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/vscode.png)
+![vscode](/blog/python-projects-with-poetry-and-vscode-part-2-vscode-3662efa6.png)
 
 Ouvrez le dossier **how-long** (ou celui portant le nom de votre projet) via le panneau de gauche et, à côté de `__init__.py`, créez un fichier `how-long.py`. Dans le coin inférieur gauche, vous verrez l'environnement Python actuel :
 
-![python version](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/python-code.png)
+![python version](/blog/python-projects-with-poetry-and-vscode-part-2-python-code-da02d29d.png)
 
 Cliquez dessus et une liste des environnements disponibles s'affichera. Choisissez celui qui porte le nom de votre projet :
 
-![choose python](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/choose-environment.png)
+![choose python](/blog/python-projects-with-poetry-and-vscode-part-2-choose-environment-3524135a.png)
 
 Maintenant, intégrons nos dépendances de développement, _Flake8_, _Black_ et _Pytest_ dans Visual Studio Code.
 
@@ -81,11 +81,11 @@ Maintenant, intégrons nos dépendances de développement, _Flake8_, _Black_ et 
 
 Par défaut, l'extension Python est livrée avec _Pylint_ activé, ce qui est puissant mais complexe à configurer. Pour passer à _Flake8_, modifiez n'importe quel fichier Python et enregistrez-le. Dans le coin inférieur droit, un message contextuel s'affichera :
 
-![flake8](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/select-linter.png)
+![flake8](/blog/python-projects-with-poetry-and-vscode-part-2-select-linter-36950663.png)
 
 Cliquez sur **Select Linter** et choisissez **Flake8** dans la liste. Maintenant, _VSCode_ nous indiquera nos problèmes de _syntaxe_ et de _style_, en vert ou en rouge selon leur gravité, toujours avec une description claire de ce qui ne va pas :
 
-![linting](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/linting.png)
+![linting](/blog/python-projects-with-poetry-and-vscode-part-2-linting-f97be4c6.png)
 
 Il semble que nous ayons deux problèmes : il nous manque une ligne vide à la fin de notre fichier (style) et nous avons oublié d'ajouter des guillemets à notre chaîne de caractères _Hello, World!_ (syntaxe). Corrigez-les et voyez tous les avertissements disparaître.
 
@@ -95,7 +95,7 @@ Il semble que nous ayons deux problèmes : il nous manque une ligne vide à la f
 
 Maintenez `shift + cmd/ctrl + p` pour ouvrir la palette de commandes, tapez **Format Document**, et appuyez sur Entrée. Un nouveau message contextuel apparaîtra :
 
-![black formatter popup](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/format-popup.png)
+![black formatter popup](/blog/python-projects-with-poetry-and-vscode-part-2-format-popup-d4719180.png)
 
 Sélectionnez **Use Black**. Copiez maintenant ce code mal formaté dans votre fichier python :
 
@@ -108,7 +108,7 @@ Quel laid morceau de m\*\*\*... de code. Essayez de le formater à nouveau et vo
 
 Une autre chose que nous pouvons faire est de configurer VSCode afin que chaque fois que nous sauvegardons, _Black_ formate automatiquement notre code. Maintenez `cmd/ctrl + ,` pour ouvrir les paramètres. Assurez-vous d'être dans les **Workspace Settings**, recherchez **Format On Save** et activez la case à cocher :
 
-![format on save](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/format-on-save.png)
+![format on save](/blog/python-projects-with-poetry-and-vscode-part-2-format-on-save-2a8b785d.png)
 
 Enfin, _Black_ utilise par défaut 88 caractères par ligne, contrairement aux 80 autorisés par _Flake8_. Pour éviter les conflits, ouvrez le dossier **.vscode** et ajoutez ce qui suit à la fin du fichier **settings.json** :
 
@@ -121,7 +121,7 @@ Enfin, _Black_ utilise par défaut 88 caractères par ligne, contrairement aux 8
 }
 ```
 
-![black-settings](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/black-settings.png)
+![black-settings](/blog/python-projects-with-poetry-and-vscode-part-2-black-settings-f5d99f02.png)
 
 ## Pytest
 
@@ -135,7 +135,6 @@ Ouvrez le dossier **tests** et sélectionnez le fichier `test_how_long.py`. _Poe
 # test_how_long.py
 from how_long import __version__
 
-
 def test_version():
     assert __version__ == '0.1.0'
 ```
@@ -148,7 +147,7 @@ pytest
 
 Le résultat ressemblera à ceci :
 
-![pytest](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/pytest-terminal.png)
+![pytest](/blog/python-projects-with-poetry-and-vscode-part-2-pytest-terminal-a11ee125.png)
 
 Ok, tout va bien. Ouvrez votre palette de commandes avec `shift + cmd/ctrl + p` :
 
@@ -164,11 +163,11 @@ Trois choses se sont produites :
 
 - Une nouvelle icône dans la barre de gauche. Si vous cliquez dessus, un panneau affichant tous les tests apparaîtra. Ici, vous pouvez exécuter chacun individuellement :
 
-  ![test side panel](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/test-side-panel.png)
+  ![test side panel](/blog/python-projects-with-poetry-and-vscode-part-2-test-side-panel-f96007f1.png)
 
 - À l'intérieur du fichier de test, de nouvelles options s'afficheront avant chaque fonction de test : une icône de coche apparaîtra si tout va bien, et un _x_ sinon. Cela vous permet également d'exécuter des tests spécifiques :
 
-  ![test inline](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/test-inline.png)
+  ![test inline](/blog/python-projects-with-poetry-and-vscode-part-2-test-inline-b6ddb648.png)
 
 ## Conclusion
 

@@ -90,7 +90,7 @@ how-long
 
 始める前に、ターミナルで `poetry update` コマンドを実行してパッケージの更新を確認してください。
 
-![poetry update](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_update.png)
+![poetry update](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_update-13df223a.png)
 
 `README.rst`にプロジェクトの簡単な説明を追加します。
 
@@ -107,7 +107,6 @@ _______
 
     from how_long import timer
 
-
     @timer
     def some_function():
         return [x for x in range(10_000_000)]
@@ -120,7 +119,6 @@ _______
 from functools import wraps
 
 import pendulum
-
 
 def timer(function):
     """
@@ -151,10 +149,8 @@ __version__ = "0.1.1"
 from how_long import __version__
 from how_long import timer
 
-
 def test_version():
     assert __version__ == "0.1.1"
-
 
 def test_wrap():
     @timer
@@ -187,7 +183,7 @@ Execution Time: 705 ms.
 
 `poetry build` コマンドは、プロジェクトのソースとしてアップロードされるソースおよび[wheels](https://pythonwheels.com/)アーカイブをビルドします。
 
-![poetry build](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_build.png)
+![poetry build](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_build-efe020a2.png)
 
 _how_long.egg-info_ ディレクトリが作成されます。
 
@@ -195,13 +191,13 @@ _how_long.egg-info_ ディレクトリが作成されます。
 
 このコマンドは、パッケージを*PyPI*に公開し、初めて送信される場合は自動的に登録してからアップロードします。
 
-![poetry publish](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_publish.png)
+![poetry publish](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_publish-9e17d984.png)
 
 > `$ poetry publish --build` を使用して、プロジェクトをビルドして公開することもできます。
 
 認証情報を入力し、すべてが正常であれば、プロジェクトを[閲覧](https://pypi.org/project/how-long/)すると、次のようなものが表示されます。
 
-![pipy how-long](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/pypi.png)
+![pipy how-long](/blog/python-projects-with-poetry-and-vscode-part-3-pypi-32b0cea7.png)
 
 これで、他の人に、どのマシンからでも、どこからでも `pip install how-long` できることを知らせることができます！
 

@@ -145,7 +145,7 @@ To create a Virtual Environment and install _Pytest_, we will use the `poetry in
 poetry install
 ```
 
-![poetry-install-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-install.png)
+![poetry-install-command](/blog/python-projects-with-poetry-and-vscode-part-1-poetry-install-248979f4.png)
 
 After is done, a new file, `poetry.lock` will be created.
 
@@ -163,7 +163,7 @@ Let's add two packages to the project, _pendulum_, and _coo_:
 poetry add pendulum coo
 ```
 
-![poetry-add-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-add.png)
+![poetry-add-command](/blog/python-projects-with-poetry-and-vscode-part-1-poetry-add-f0cdc305.png)
 
 Open _pyproject.toml_ and _poetry.lock_ and see how they have updated.
 
@@ -193,7 +193,7 @@ This error happens because _black_ is in a pre-release state, so Poetry cannot f
 poetry add -D black --allow-prereleases
 ```
 
-![poetry-add-dev-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-add-dev.png)
+![poetry-add-dev-command](/blog/python-projects-with-poetry-and-vscode-part-1-poetry-add-dev-bfa6daad.png)
 
 ### Removing dependencies
 

@@ -50,7 +50,7 @@ meta:
 
 距离第一部分已经过去几天了，检查依赖项的新版本是个好主意。打开终端，导航到项目目录中并输入 `poetry update` 命令：
 
-![poetry update](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/update.png)
+![poetry update](/blog/python-projects-with-poetry-and-vscode-part-2-update-d9f9d44f.png)
 
 到目前为止，没有新的可用版本。
 
@@ -63,15 +63,15 @@ code .
 
 第一个命令 `poetry shell` 会将我们置于虚拟环境中，而 `code .` 会在 _VSCode_ 中打开当前文件夹。
 
-![vscode](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/vscode.png)
+![vscode](/blog/python-projects-with-poetry-and-vscode-part-2-vscode-3662efa6.png)
 
 使用左侧面板打开 **how-long** 文件夹（或带有项目名称的文件夹），并在 `__init__.py` 旁边创建一个 `how-long.py` 文件。在左下角，您将看到当前的 Python 环境：
 
-![python version](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/python-code.png)
+![python version](/blog/python-projects-with-poetry-and-vscode-part-2-python-code-da02d29d.png)
 
 点击它，将显示可用环境的列表。选择名称中包含您的项目名称的环境：
 
-![choose python](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/choose-environment.png)
+![choose python](/blog/python-projects-with-poetry-and-vscode-part-2-choose-environment-3524135a.png)
 
 现在，让我们将开发依赖项 _Flake8_、_Black_ 和 _Pytest_ 集成到 Visual Studio Code 中。
 
@@ -81,11 +81,11 @@ code .
 
 默认情况下，Python 扩展自带 _Pylint_，它功能强大但配置复杂。要切换到 _Flake8_，请对任何 Python 文件进行更改并保存，右下角将显示一个弹出消息：
 
-![flake8](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/select-linter.png)
+![flake8](/blog/python-projects-with-poetry-and-vscode-part-2-select-linter-36950663.png)
 
 点击 **Select Linter** 并从列表中选择 **Flake8**。现在，_VSCode_ 会告诉我们 _语法_ 和 _样式_ 问题，根据严重程度以绿色或红色显示，并始终附带有关错误内容的详细说明：
 
-![linting](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/linting.png)
+![linting](/blog/python-projects-with-poetry-and-vscode-part-2-linting-f97be4c6.png)
 
 看起来我们有两个问题：我们缺少文件末尾的一个空行（样式）并且忘记给我们的 _Hello, World!_ 字符串添加引号（语法）。修复它们，然后查看所有警告消失。
 
@@ -95,7 +95,7 @@ code .
 
 按住 `shift + cmd/ctrl + p` 打开命令面板，输入 **Format Document**，然后按回车键。将出现一个新的弹出消息：
 
-![black formatter popup](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/format-popup.png)
+![black formatter popup](/blog/python-projects-with-poetry-and-vscode-part-2-format-popup-d4719180.png)
 
 选择 **Use Black**。现在将这段格式不佳的代码复制到您的 python 文件中：
 
@@ -108,7 +108,7 @@ for i in range(5):         # this comment has too many spaces
 
 我们还可以做的另一件事是配置 VSCode，以便每次保存时，_Black_ 都会自动格式化我们的代码。按住 `cmd/ctrl + ,` 打开设置。确保您位于 **Workspace Settings** 中，搜索 **Format On Save** 并激活复选框：
 
-![format on save](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/format-on-save.png)
+![format on save](/blog/python-projects-with-poetry-and-vscode-part-2-format-on-save-2a8b785d.png)
 
 最后，_Black_ 默认每行 88 个字符，与 _Flake8_ 允许的 80 个字符不同，因此为避免冲突，请打开 **.vscode** 文件夹并在 **settings.json** 文件的末尾添加以下内容：
 
@@ -121,7 +121,7 @@ for i in range(5):         # this comment has too many spaces
 }
 ```
 
-![black-settings](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/black-settings.png)
+![black-settings](/blog/python-projects-with-poetry-and-vscode-part-2-black-settings-f5d99f02.png)
 
 ## Pytest
 
@@ -135,7 +135,6 @@ for i in range(5):         # this comment has too many spaces
 # test_how_long.py
 from how_long import __version__
 
-
 def test_version():
     assert __version__ == '0.1.0'
 ```
@@ -148,7 +147,7 @@ pytest
 
 输出将如下所示：
 
-![pytest](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/pytest-terminal.png)
+![pytest](/blog/python-projects-with-poetry-and-vscode-part-2-pytest-terminal-a11ee125.png)
 
 好的，一切正常。使用 `shift + cmd/ctrl + p` 打开命令面板：
 
@@ -164,11 +163,11 @@ pytest
 
 - 左侧栏出现一个新图标。如果单击它，将出现一个显示所有测试的面板。在这里，您可以单独运行每个测试：
 
-  ![test side panel](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/test-side-panel.png)
+  ![test side panel](/blog/python-projects-with-poetry-and-vscode-part-2-test-side-panel-f96007f1.png)
 
 - 在测试文件内部，将在每个测试函数前显示新选项：如果测试通过，将出现一个对勾图标，否则出现一个 _x_。它还允许您运行特定的测试：
 
-  ![test inline](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/test-inline.png)
+  ![test inline](/blog/python-projects-with-poetry-and-vscode-part-2-test-inline-b6ddb648.png)
 
 ## 结论
 

@@ -90,7 +90,7 @@ how-long
 
 在开始之前，请使用 `poetry update` 命令检查包更新：
 
-![poetry update](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_update.png)
+![poetry update](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_update-13df223a.png)
 
 在 `README.rst` 中为项目添加简短描述：
 
@@ -107,7 +107,6 @@ _______
 
     from how_long import timer
 
-
     @timer
     def some_function():
         return [x for x in range(10_000_000)]
@@ -120,7 +119,6 @@ _______
 from functools import wraps
 
 import pendulum
-
 
 def timer(function):
     """
@@ -151,10 +149,8 @@ __version__ = "0.1.1"
 from how_long import __version__
 from how_long import timer
 
-
 def test_version():
     assert __version__ == "0.1.1"
-
 
 def test_wrap():
     @timer
@@ -187,7 +183,7 @@ Execution Time: 705 ms.
 
 `poetry build` 命令构建源代码和 [wheels](https://pythonwheels.com/) 归档文件，这些文件稍后将作为项目的来源上传：
 
-![poetry build](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_build.png)
+![poetry build](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_build-efe020a2.png)
 
 将创建 _how_long.egg-info_ 目录。
 
@@ -195,13 +191,13 @@ Execution Time: 705 ms.
 
 此命令将包发布到 _PyPI_，如果这是首次提交，它会自动注册后再上传：
 
-![poetry publish](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_publish.png)
+![poetry publish](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_publish-9e17d984.png)
 
 > 您也可以使用 `$ poetry publish --build` 来构建和发布您的项目。
 
 输入您的凭据，如果一切正常，[浏览](https://pypi.org/project/how-long/) 您的项目，您将看到类似以下的内容：
 
-![pipy how-long](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/pypi.png)
+![pipy how-long](/blog/python-projects-with-poetry-and-vscode-part-3-pypi-32b0cea7.png)
 
 我们现在可以告诉其他人他们可以从任何机器、任何地方使用 `pip install how-long`！
 

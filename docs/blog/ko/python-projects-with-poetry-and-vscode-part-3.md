@@ -90,7 +90,7 @@ how-long
 
 시작하기 전에 `poetry update` 명령어로 패키지 업데이트를 확인하십시오.
 
-![poetry update](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_update.png)
+![poetry update](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_update-13df223a.png)
 
 `README.rst`에 프로젝트에 대한 간략한 설명을 추가합니다.
 
@@ -107,7 +107,6 @@ _______
 
     from how_long import timer
 
-
     @timer
     def some_function():
         return [x for x in range(10_000_000)]
@@ -120,7 +119,6 @@ _______
 from functools import wraps
 
 import pendulum
-
 
 def timer(function):
     """
@@ -151,10 +149,8 @@ __version__ = "0.1.1"
 from how_long import __version__
 from how_long import timer
 
-
 def test_version():
     assert __version__ == "0.1.1"
-
 
 def test_wrap():
     @timer
@@ -187,7 +183,7 @@ Execution Time: 705 ms.
 
 `poetry build` 명령어는 나중에 프로젝트의 소스로 업로드될 소스 및 [휠](https://pythonwheels.com/) 아카이브를 빌드합니다.
 
-![poetry build](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_build.png)
+![poetry build](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_build-efe020a2.png)
 
 _how_long.egg-info_ 디렉토리가 생성됩니다.
 
@@ -195,13 +191,13 @@ _how_long.egg-info_ 디렉토리가 생성됩니다.
 
 이 명령어는 패키지를 *PyPI*에 게시하고, 처음 제출하는 경우 업로드하기 전에 자동으로 등록합니다.
 
-![poetry publish](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_publish.png)
+![poetry publish](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_publish-9e17d984.png)
 
 > `$ poetry publish --build`를 사용하여 프로젝트를 빌드하고 게시할 수도 있습니다.
 
 자격 증명을 입력하고 모든 것이 괜찮다면 프로젝트를 [탐색](https://pypi.org/project/how-long/)하면 다음과 같은 화면이 나타납니다.
 
-![pipy how-long](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/pypi.png)
+![pipy how-long](/blog/python-projects-with-poetry-and-vscode-part-3-pypi-32b0cea7.png)
 
 이제 다른 사람들에게 어디서든 어떤 컴퓨터에서든 `pip install how-long`을 할 수 있다는 것을 알릴 수 있습니다!
 

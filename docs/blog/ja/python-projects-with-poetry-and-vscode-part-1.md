@@ -146,7 +146,7 @@ readme = "README.rst"
 poetry install
 ```
 
-![poetry-install-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-install.png)
+![poetry-install-command](/blog/python-projects-with-poetry-and-vscode-part-1-poetry-install-248979f4.png)
 
 完了すると、新しいファイル `poetry.lock` が作成されます。
 
@@ -164,7 +164,7 @@ poetry install
 poetry add pendulum coo
 ```
 
-![poetry-add-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-add.png)
+![poetry-add-command](/blog/python-projects-with-poetry-and-vscode-part-1-poetry-add-f0cdc305.png)
 
 _pyproject.toml_ と _poetry.lock_ を開いて、それらがどのように更新されたかを確認してください。
 
@@ -194,7 +194,7 @@ add [-D|--dev] [--git GIT] [--path PATH] [-E|--extras EXTRAS] [--optional] [--py
 poetry add -D black --allow-prereleases
 ```
 
-![poetry-add-dev-command](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p1/poetry-add-dev.png)
+![poetry-add-dev-command](/blog/python-projects-with-poetry-and-vscode-part-1-poetry-add-dev-bfa6daad.png)
 
 ### 依存関係の削除
 

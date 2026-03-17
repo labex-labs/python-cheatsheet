@@ -90,7 +90,7 @@ how-long
 
 Прежде чем начать, проверьте наличие обновлений пакетов с помощью команды `poetry update`:
 
-![poetry update](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_update.png)
+![poetry update](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_update-13df223a.png)
 
 Добавьте краткое описание проекта в `README.rst`:
 
@@ -107,7 +107,6 @@ _______
 
     from how_long import timer
 
-
     @timer
     def some_function():
         return [x for x in range(10_000_000)]
@@ -120,7 +119,6 @@ _______
 from functools import wraps
 
 import pendulum
-
 
 def timer(function):
     """
@@ -151,10 +149,8 @@ __version__ = "0.1.1"
 from how_long import __version__
 from how_long import timer
 
-
 def test_version():
     assert __version__ == "0.1.1"
-
 
 def test_wrap():
     @timer
@@ -187,7 +183,7 @@ Execution Time: 705 ms.
 
 Команда `poetry build` собирает исходный код и архивы [wheels](https://pythonwheels.com/), которые позже будут загружены как источник проекта:
 
-![poetry build](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_build.png)
+![poetry build](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_build-efe020a2.png)
 
 Будет создана директория _how_long.egg-info_.
 
@@ -195,13 +191,13 @@ Execution Time: 705 ms.
 
 Эта команда публикует пакет на _PyPI_ и автоматически регистрирует его перед загрузкой, если он отправляется впервые:
 
-![poetry publish](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_publish.png)
+![poetry publish](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_publish-9e17d984.png)
 
 > Вы также можете скомпилировать и опубликовать свой проект с помощью `$ poetry publish --build`.
 
 Введите свои учетные данные, и если все в порядке, [посмотрите](https://pypi.org/project/how-long/) свой проект, и вы увидите нечто подобное:
 
-![pipy how-long](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/pypi.png)
+![pipy how-long](/blog/python-projects-with-poetry-and-vscode-part-3-pypi-32b0cea7.png)
 
 Теперь мы можем сообщить другим, что они могут выполнить `pip install how-long` с любой машины, где угодно!
 

@@ -90,7 +90,7 @@ how-long
 
 Bevor wir beginnen, überprüfen Sie die Paketaktualisierungen mit dem Befehl `poetry update`:
 
-![poetry update](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_update.png)
+![poetry update](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_update-13df223a.png)
 
 Fügen Sie eine kurze Beschreibung für das Projekt in die `README.rst` ein:
 
@@ -107,7 +107,6 @@ _______
 
     from how_long import timer
 
-
     @timer
     def some_function():
         return [x for x in range(10_000_000)]
@@ -120,7 +119,6 @@ Navigieren Sie zu `how_long/how_long.py`:
 from functools import wraps
 
 import pendulum
-
 
 def timer(function):
     """
@@ -151,10 +149,8 @@ Und schließlich die Datei `tests/test_how_long.py`:
 from how_long import __version__
 from how_long import timer
 
-
 def test_version():
     assert __version__ == "0.1.1"
-
 
 def test_wrap():
     @timer
@@ -187,7 +183,7 @@ Endlich ist es soweit, dieses Projekt der Welt zugänglich zu machen! Stellen Si
 
 Der Befehl `poetry build` erstellt die Quell- und [Wheels](https://pythonwheels.com/)-Archive, die später als Quelle des Projekts hochgeladen werden:
 
-![poetry build](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_build.png)
+![poetry build](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_build-efe020a2.png)
 
 Das Verzeichnis _how_long.egg-info_ wird erstellt.
 
@@ -195,13 +191,13 @@ Das Verzeichnis _how_long.egg-info_ wird erstellt.
 
 Dieser Befehl veröffentlicht das Paket auf _PyPI_ und registriert es automatisch, bevor es hochgeladen wird, falls es zum ersten Mal eingereicht wird:
 
-![poetry publish](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/poetry_publish.png)
+![poetry publish](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_publish-9e17d984.png)
 
 > Sie können Ihr Projekt auch mit `$ poetry publish --build` bauen und veröffentlichen.
 
 Geben Sie Ihre Anmeldeinformationen ein, und wenn alles in Ordnung ist, [durchsuchen Sie](https://pypi.org/project/how-long/) Ihr Projekt, und Sie werden so etwas sehen:
 
-![pipy how-long](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/May/poetry_vscode_p3/img/pypi.png)
+![pipy how-long](/blog/python-projects-with-poetry-and-vscode-part-3-pypi-32b0cea7.png)
 
 Wir können nun andere wissen lassen, dass sie `pip install how-long` von jedem beliebigen Rechner überall installieren können!
 

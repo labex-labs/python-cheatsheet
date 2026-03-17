@@ -50,7 +50,7 @@ meta:
 
 첫 번째 파트 이후 며칠이 지났으므로 종속성의 새 버전을 확인하는 것이 좋을 수 있습니다. 터미널을 열고 프로젝트 디렉토리로 이동한 다음 `poetry update` 명령을 입력하십시오.
 
-![poetry update](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/update.png)
+![poetry update](/blog/python-projects-with-poetry-and-vscode-part-2-update-d9f9d44f.png)
 
 지금까지 사용 가능한 새 버전은 없습니다.
 
@@ -63,15 +63,15 @@ code .
 
 첫 번째 명령인 `poetry shell`은 가상 환경 내부로 진입하게 하고, `code .`은 현재 폴더를 _VSCode_ 내에서 열 것입니다.
 
-![vscode](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/vscode.png)
+![vscode](/blog/python-projects-with-poetry-and-vscode-part-2-vscode-3662efa6.png)
 
 왼쪽 패널을 사용하여 **how-long** 폴더 (또는 프로젝트 이름이 있는 폴더) 를 열고 `__init__.py` 옆에 `how-long.py` 파일을 생성하십시오. 왼쪽 하단 모서리에서 현재 Python 환경을 볼 수 있습니다.
 
-![python version](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/python-code.png)
+![python version](/blog/python-projects-with-poetry-and-vscode-part-2-python-code-da02d29d.png)
 
 그것을 클릭하면 사용 가능한 환경 목록이 표시됩니다. 프로젝트 이름이 포함된 환경을 선택하십시오.
 
-![choose python](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/choose-environment.png)
+![choose python](/blog/python-projects-with-poetry-and-vscode-part-2-choose-environment-3524135a.png)
 
 이제 개발 종속성인 _Flake8_, _Black_, *Pytest*를 Visual Studio Code 에 통합해 보겠습니다.
 
@@ -81,11 +81,11 @@ code .
 
 기본적으로 Python 확장은 *Pylint*가 활성화되어 있는데, 이는 강력하지만 구성하기 복잡합니다. *Flake8*으로 전환하려면 아무 Python 파일이나 변경하고 저장하면 오른쪽 하단 모서리에 팝업 메시지가 표시됩니다.
 
-![flake8](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/select-linter.png)
+![flake8](/blog/python-projects-with-poetry-and-vscode-part-2-select-linter-36950663.png)
 
 **Select Linter**를 클릭하고 목록에서 **Flake8**을 선택하십시오. 이제 *VSCode*는 심각도에 따라 녹색 또는 빨간색으로 _구문_ 및 _스타일_ 문제를 알려주며 항상 무엇이 잘못되었는지에 대한 좋은 설명을 제공합니다.
 
-![linting](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/linting.png)
+![linting](/blog/python-projects-with-poetry-and-vscode-part-2-linting-f97be4c6.png)
 
 두 가지 문제가 있는 것 같습니다. 파일 끝에 빈 줄이 누락되었고 (스타일), _Hello, World!_ 문자열에 따옴표를 추가하는 것을 잊었습니다 (구문). 이를 수정하고 모든 경고가 사라지는지 확인하십시오.
 
@@ -95,7 +95,7 @@ code .
 
 `shift + cmd/ctrl + p`를 눌러 명령 팔레트를 열고 **Format Document**를 입력한 다음 Enter 키를 누르십시오. 새 팝업 메시지가 나타납니다.
 
-![black formatter popup](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/format-popup.png)
+![black formatter popup](/blog/python-projects-with-poetry-and-vscode-part-2-format-popup-d4719180.png)
 
 **Use Black**을 선택하십시오. 이제 이 잘못 포맷된 코드를 파이썬 파일에 복사하십시오.
 
@@ -108,7 +108,7 @@ for i in range(5):         # this comment has too many spaces
 
 또 다른 방법은 VSCode 를 구성하여 저장할 때마다 *Black*이 코드를 자동으로 포맷하도록 하는 것입니다. `cmd/ctrl + ,`를 눌러 설정을 여십시오. **Workspace Settings**에 있는지 확인하고 **Format On Save**를 검색한 다음 확인란을 활성화하십시오.
 
-![format on save](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/format-on-save.png)
+![format on save](/blog/python-projects-with-poetry-and-vscode-part-2-format-on-save-2a8b785d.png)
 
 마지막으로, *Black*은 기본적으로 한 줄에 88 자이지만 *Flake8*이 허용하는 80 자와 다르므로 충돌을 피하기 위해 **.vscode** 폴더를 열고 **settings.json** 파일 끝에 다음을 추가하십시오.
 
@@ -121,7 +121,7 @@ for i in range(5):         # this comment has too many spaces
 }
 ```
 
-![black-settings](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/black-settings.png)
+![black-settings](/blog/python-projects-with-poetry-and-vscode-part-2-black-settings-f5d99f02.png)
 
 ## Pytest
 
@@ -135,7 +135,6 @@ for i in range(5):         # this comment has too many spaces
 # test_how_long.py
 from how_long import __version__
 
-
 def test_version():
     assert __version__ == '0.1.0'
 ```
@@ -148,7 +147,7 @@ pytest
 
 출력은 다음과 같습니다.
 
-![pytest](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/pytest-terminal.png)
+![pytest](/blog/python-projects-with-poetry-and-vscode-part-2-pytest-terminal-a11ee125.png)
 
 좋습니다. 모든 것이 괜찮습니다. `shift + cmd/ctrl + p`로 명령 팔레트를 여십시오.
 
@@ -164,11 +163,11 @@ pytest
 
 - 왼쪽 막대에 새 아이콘이 생겼습니다. 클릭하면 모든 테스트를 표시하는 패널이 나타납니다. 여기서 각 테스트를 개별적으로 실행할 수 있습니다.
 
-  ![test side panel](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/test-side-panel.png)
+  ![test side panel](/blog/python-projects-with-poetry-and-vscode-part-2-test-side-panel-f96007f1.png)
 
 - 테스트 파일 내부에는 모든 테스트 함수 앞에 새 옵션이 표시됩니다. 괜찮으면 체크 아이콘이 나타나고 그렇지 않으면 *x*가 나타납니다. 또한 특정 테스트를 실행할 수 있습니다.
 
-  ![test inline](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/test-inline.png)
+  ![test inline](/blog/python-projects-with-poetry-and-vscode-part-2-test-inline-b6ddb648.png)
 
 ## 결론
 

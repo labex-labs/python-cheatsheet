@@ -50,7 +50,7 @@ meta:
 
 Прошло несколько дней с первой части, поэтому не помешает проверить наличие новых версий наших зависимостей. Откройте терминал, перейдите в каталог вашего проекта и введите команду `poetry update`:
 
-![poetry update](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/update.png)
+![poetry update](/blog/python-projects-with-poetry-and-vscode-part-2-update-d9f9d44f.png)
 
 На данный момент новых версий не найдено.
 
@@ -63,15 +63,15 @@ code .
 
 Первая команда, `poetry shell`, запустит нас внутри нашего виртуального окружения, а `code .` откроет текущую папку в _VSCode_.
 
-![vscode](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/vscode.png)
+![vscode](/blog/python-projects-with-poetry-and-vscode-part-2-vscode-3662efa6.png)
 
 Откройте папку **how-long** (или ту, что соответствует имени вашего проекта) с помощью левой панели и рядом с `__init__.py` создайте файл `how-long.py`. В левом нижнем углу вы увидите текущую среду Python:
 
-![python version](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/python-code.png)
+![python version](/blog/python-projects-with-poetry-and-vscode-part-2-python-code-da02d29d.png)
 
 Нажмите на нее, и отобразится список доступных сред. Выберите ту, в названии которой есть имя вашего проекта:
 
-![choose python](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/choose-environment.png)
+![choose python](/blog/python-projects-with-poetry-and-vscode-part-2-choose-environment-3524135a.png)
 
 Теперь давайте интегрируем наши зависимости для разработки, _Flake8_, _Black_ и _Pytest_, в Visual Studio Code.
 
@@ -81,11 +81,11 @@ code .
 
 По умолчанию расширение Python поставляется с включенным _Pylint_, который мощный, но сложный в настройке. Чтобы переключиться на _Flake8_, внесите изменение в любой файл Python и сохраните его. В правом нижнем углу появится всплывающее сообщение:
 
-![flake8](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/select-linter.png)
+![flake8](/blog/python-projects-with-poetry-and-vscode-part-2-select-linter-36950663.png)
 
 Нажмите **Select Linter** и выберите **Flake8** из списка. Теперь _VSCode_ будет сообщать нам о проблемах с _синтаксисом_ и _стилем_, зеленым или красным цветом в зависимости от серьезности, всегда с хорошим описанием того, что не так:
 
-![linting](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/linting.png)
+![linting](/blog/python-projects-with-poetry-and-vscode-part-2-linting-f97be4c6.png)
 
 Похоже, у нас две проблемы: нам не хватает пустой строки в конце файла (стиль) и мы забыли добавить кавычки к нашей строке _Hello, World!_ (синтаксис). Исправьте их и посмотрите, как исчезнут все предупреждения.
 
@@ -95,7 +95,7 @@ code .
 
 Нажмите `shift + cmd/ctrl + p`, чтобы открыть Command Palette, введите **Format Document** и нажмите Enter. Появится новое всплывающее сообщение:
 
-![black formatter popup](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/format-popup.png)
+![black formatter popup](/blog/python-projects-with-poetry-and-vscode-part-2-format-popup-d4719180.png)
 
 Выберите **Use Black**. Теперь скопируйте этот плохо отформатированный код в ваш файл Python:
 
@@ -108,7 +108,7 @@ for i in range(5):         # this comment has too many spaces
 
 Еще одна вещь, которую мы можем сделать, это настроить VSCode так, чтобы _Black_ автоматически форматировал наш код каждый раз при сохранении. Нажмите `cmd/ctrl + ,`, чтобы открыть Настройки (Settings). Убедитесь, что вы находитесь в **Workspace Settings**, найдите **Format On Save** и активируйте флажок:
 
-![format on save](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/format-on-save.png)
+![format on save](/blog/python-projects-with-poetry-and-vscode-part-2-format-on-save-2a8b785d.png)
 
 Наконец, _Black_ по умолчанию использует 88 символов на строку, в отличие от 80, разрешенных _Flake8_, поэтому, чтобы избежать конфликтов, откройте папку **.vscode** и добавьте следующее в конец файла **settings.json**:
 
@@ -121,7 +121,7 @@ for i in range(5):         # this comment has too many spaces
 }
 ```
 
-![black-settings](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/black-settings.png)
+![black-settings](/blog/python-projects-with-poetry-and-vscode-part-2-black-settings-f5d99f02.png)
 
 ## Pytest
 
@@ -135,7 +135,6 @@ for i in range(5):         # this comment has too many spaces
 # test_how_long.py
 from how_long import __version__
 
-
 def test_version():
     assert __version__ == '0.1.0'
 ```
@@ -148,7 +147,7 @@ pytest
 
 Вывод будет выглядеть так:
 
-![pytest](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/pytest-terminal.png)
+![pytest](/blog/python-projects-with-poetry-and-vscode-part-2-pytest-terminal-a11ee125.png)
 
 Хорошо, все в порядке. Откройте Command Palette с помощью `shift + cmd/ctrl + p`:
 
@@ -164,11 +163,11 @@ pytest
 
 - Новый значок на левой панели. Если нажать на него, появится панель со всеми тестами. Здесь вы можете запускать каждый из них по отдельности:
 
-  ![test side panel](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/test-side-panel.png)
+  ![test side panel](/blog/python-projects-with-poetry-and-vscode-part-2-test-side-panel-f96007f1.png)
 
 - Внутри файла теста перед каждой тестовой функцией появятся новые опции: значок галочки, если все в порядке, и _x_, если нет. Это также позволяет запускать определенные тесты:
 
-  ![test inline](https://raw.githubusercontent.com/wilfredinni/pysheetComments/master/2019/April/poetry_vscode_p2/img/test-inline.png)
+  ![test inline](/blog/python-projects-with-poetry-and-vscode-part-2-test-inline-b6ddb648.png)
 
 ## Заключение
 
