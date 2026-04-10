@@ -181,7 +181,7 @@ Execution Time: 705 ms.
 
 ### Сборка
 
-Команда `poetry build` собирает исходный код и архивы [wheels](https://pythonwheels.com/), которые позже будут загружены как источник проекта:
+Команда `poetry build` собирает исходный код и архивы wheels, которые позже будут загружены как источник проекта:
 
 ![poetry build](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_build-efe020a2.png)
 
@@ -213,4 +213,4 @@ Execution Time: 705 ms.
 >
 > And, finally, there is no reliable tool to properly resolve dependencies in Python, so I started `poetry` to bring an exhaustive dependency resolver to the Python community.
 
-Poetry [отнюдь не идеален](https://frostming.com/2019/01-04/pipenv-poetry#what-about-poetry), но, в отличие от других инструментов, он действительно делает то, что обещает.
+Poetry отнюдь не идеален, но, в отличие от других инструментов, он действительно делает то, что обещает.

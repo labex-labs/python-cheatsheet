@@ -44,7 +44,7 @@ meta:
 
 그리고 <router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">세 번째 글</router-link>에서는 샘플 라이브러리를 작성하고, *Poetry*로 프로젝트를 빌드하고, *PyPI*에 게시할 것입니다.
 
-시작하기 전에 [VSCode](https://code.visualstudio.com/)가 설치되어 있고, [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) 확장 프로그램이 추가되었으며, 이 시리즈의 <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">첫 번째 글</router-link>을 따라 이해했는지 확인하십시오.
+시작하기 전에 [VSCode](https://code.visualstudio.com/)가 설치되어 있고, Python 확장 프로그램이 추가되었으며, 이 시리즈의 <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">첫 번째 글</router-link>을 따라 이해했는지 확인하십시오.
 
 ## VSCode 에서 Poetry 설정하기
 

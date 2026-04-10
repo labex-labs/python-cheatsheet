@@ -181,7 +181,7 @@ Execution Time: 705 ms.
 
 ### ビルド
 
-`poetry build` コマンドは、プロジェクトのソースとしてアップロードされるソースおよび[wheels](https://pythonwheels.com/)アーカイブをビルドします。
+`poetry build` コマンドは、プロジェクトのソースとしてアップロードされるソースおよびwheelsアーカイブをビルドします。
 
 ![poetry build](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_build-efe020a2.png)
 
@@ -213,4 +213,4 @@ _how_long.egg-info_ ディレクトリが作成されます。
 >
 > And, finally, there is no reliable tool to properly resolve dependencies in Python, so I started `poetry` to bring an exhaustive dependency resolver to the Python community.
 
-Poetry は[決して完璧ではありません](https://frostming.com/2019/01-04/pipenv-poetry#what-about-poetry)が、他のツールとは異なり、約束したことを本当に実行します。
+Poetry は決して完璧ではありませんが、他のツールとは異なり、約束したことを本当に実行します。

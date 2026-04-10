@@ -44,7 +44,7 @@ In diesem zweiten Teil werden wir:
 
 Und in einem <router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">dritten Artikel</router-link> werden wir eine Beispielbibliothek schreiben, unser Projekt mit _Poetry_ erstellen und es auf _PyPI_ veröffentlichen.
 
-Bevor wir beginnen, stellen Sie sicher, dass Sie [VSCode](https://code.visualstudio.com/) installiert haben, die [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python)-Erweiterung hinzugefügt haben und den Anweisungen des <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">ersten Artikels</router-link> dieser Serie gefolgt sind und diese verstanden haben.
+Bevor wir beginnen, stellen Sie sicher, dass Sie [VSCode](https://code.visualstudio.com/) installiert haben, die Python-Erweiterung hinzugefügt haben und den Anweisungen des <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">ersten Artikels</router-link> dieser Serie gefolgt sind und diese verstanden haben.
 
 ## Poetry unter VSCode einrichten
 

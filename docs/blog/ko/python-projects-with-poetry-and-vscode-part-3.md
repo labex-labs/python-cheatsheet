@@ -181,7 +181,7 @@ Execution Time: 705 ms.
 
 ### 빌드
 
-`poetry build` 명령어는 나중에 프로젝트의 소스로 업로드될 소스 및 [휠](https://pythonwheels.com/) 아카이브를 빌드합니다.
+`poetry build` 명령어는 나중에 프로젝트의 소스로 업로드될 소스 및 휠 아카이브를 빌드합니다.
 
 ![poetry build](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_build-efe020a2.png)
 
@@ -213,4 +213,4 @@ _how_long.egg-info_ 디렉토리가 생성됩니다.
 >
 > 그리고 마지막으로, Python 에는 종속성을 제대로 해결할 수 있는 신뢰할 수 있는 도구가 없으므로, 저는 Python 커뮤니티에 철저한 종속성 해결사를 제공하기 위해 `poetry`를 시작했습니다.
 
-Poetry 는 [결코 완벽하지 않지만](https://frostming.com/2019/01-04/pipenv-poetry#what-about-poetry), 다른 도구와 달리 약속한 바를 실제로 수행합니다.
+Poetry 는 결코 완벽하지 않지만, 다른 도구와 달리 약속한 바를 실제로 수행합니다.

@@ -44,7 +44,7 @@ meta:
 
 そして、<router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">3 番目の記事</router-link>では、サンプルライブラリを作成し、*Poetry*でプロジェクトをビルドし、*PyPI*に公開します。
 
-始める前に、[VSCode](https://code.visualstudio.com/)がインストールされており、[Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python)拡張機能が追加されており、このシリーズの<router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">最初の記事</router-link>をフォローし、理解していることを確認してください。
+始める前に、[VSCode](https://code.visualstudio.com/)がインストールされており、Python拡張機能が追加されており、このシリーズの<router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">最初の記事</router-link>をフォローし、理解していることを確認してください。
 
 ## VSCode での Poetry の設定
 

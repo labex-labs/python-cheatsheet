@@ -44,7 +44,7 @@ meta:
 
 А в <router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">третьей статье</router-link> мы напишем пример библиотеки, соберем наш проект с помощью _Poetry_ и опубликуем его на _PyPI_.
 
-Прежде чем начать, убедитесь, что у вас установлены [VSCode](https://code.visualstudio.com/), добавлено расширение [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) и что вы следовали инструкциям и поняли <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">первую статью</router-link> этой серии.
+Прежде чем начать, убедитесь, что у вас установлены [VSCode](https://code.visualstudio.com/), добавлено расширение Python и что вы следовали инструкциям и поняли <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">первую статью</router-link> этой серии.
 
 ## Настройка Poetry в VSCode
 

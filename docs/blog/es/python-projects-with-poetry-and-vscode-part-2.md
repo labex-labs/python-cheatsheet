@@ -44,7 +44,7 @@ En esta segunda parte, vamos a:
 
 Y en un <router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">tercer artículo</router-link> escribiremos una librería de ejemplo, construiremos nuestro proyecto con _Poetry_ y lo publicaremos en _PyPI_.
 
-Antes de empezar, asegúrate de haber instalado [VSCode](https://code.visualstudio.com/), añadido la extensión de [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) y de haber seguido y entendido el <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">primer artículo</router-link> de esta serie.
+Antes de empezar, asegúrate de haber instalado [VSCode](https://code.visualstudio.com/), añadido la extensión de Python y de haber seguido y entendido el <router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">primer artículo</router-link> de esta serie.
 
 ## Configuración de Poetry en VSCode
 

@@ -180,7 +180,7 @@ Finally, the time to make this project available to the world has come! Make sur
 
 ### Build
 
-The `poetry build` command builds the source and [wheels](https://pythonwheels.com/) archives that will later be uploaded as the source of the project:
+The `poetry build` command builds the source and wheels archives that will later be uploaded as the source of the project:
 
 ![poetry build](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_build-efe020a2.png)
 
@@ -212,4 +212,4 @@ I remember the first time I tried to publish a package, and it was a nightmare. 
 >
 > And, finally, there is no reliable tool to properly resolve dependencies in Python, so I started `poetry` to bring an exhaustive dependency resolver to the Python community.
 
-Poetry is by [no means perfect](https://frostming.com/2019/01-04/pipenv-poetry#what-about-poetry) but, unlike other tools, it really does what promise.
+Poetry is by no means perfect but, unlike other tools, it really does what promise.

@@ -181,7 +181,7 @@ Endlich ist es soweit, dieses Projekt der Welt zugänglich zu machen! Stellen Si
 
 ### Bauen
 
-Der Befehl `poetry build` erstellt die Quell- und [Wheels](https://pythonwheels.com/)-Archive, die später als Quelle des Projekts hochgeladen werden:
+Der Befehl `poetry build` erstellt die Quell- und Wheels-Archive, die später als Quelle des Projekts hochgeladen werden:
 
 ![poetry build](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_build-efe020a2.png)
 
@@ -213,4 +213,4 @@ Ich erinnere mich an das erste Mal, als ich versuchte, ein Paket zu veröffentli
 >
 > Und schließlich gibt es kein zuverlässiges Werkzeug, um Abhängigkeiten in Python richtig aufzulösen, also habe ich `poetry` gestartet, um der Python-Community einen umfassenden Abhängigkeitsauflöser zu bringen.
 
-Poetry ist [keineswegs perfekt](https://frostming.com/2019/01-04/pipenv-poetry#what-about-poetry), aber im Gegensatz zu anderen Tools hält es, was es verspricht.
+Poetry ist keineswegs perfekt, aber im Gegensatz zu anderen Tools hält es, was es verspricht.

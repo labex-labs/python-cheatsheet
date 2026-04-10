@@ -181,7 +181,7 @@ Execution Time: 705 ms.
 
 ### 构建
 
-`poetry build` 命令构建源代码和 [wheels](https://pythonwheels.com/) 归档文件，这些文件稍后将作为项目的来源上传：
+`poetry build` 命令构建源代码和 wheels 归档文件，这些文件稍后将作为项目的来源上传：
 
 ![poetry build](/blog/python-projects-with-poetry-and-vscode-part-3-poetry_build-efe020a2.png)
 
@@ -213,4 +213,4 @@ Execution Time: 705 ms.
 >
 > 最后，没有可靠的工具可以正确解析 Python 中的依赖项，所以我创建了 `poetry` 来为 Python 社区带来一个详尽的依赖解析器。
 
-Poetry [绝非完美](https://frostming.com/2019/01-04/pipenv-poetry#what-about-poetry)，但与其它工具不同，它确实兑现了它的承诺。
+Poetry 绝非完美，但与其它工具不同，它确实兑现了它的承诺。

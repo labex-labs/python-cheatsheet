@@ -44,7 +44,7 @@ meta:
 
 在<router-link to="/blog/python-projects-with-poetry-and-vscode-part-3">第三篇文章</router-link>中，我们将编写一个示例库，使用 _Poetry_ 构建我们的项目并将其发布到 _PyPI_ 上。
 
-在开始之前，请确保您已安装 [VSCode](https://code.visualstudio.com/)，添加了 [Python](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) 扩展，并且已遵循并理解本系列的第一篇文章<router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">（第一篇文章）</router-link>。
+在开始之前，请确保您已安装 [VSCode](https://code.visualstudio.com/)，添加了 Python 扩展，并且已遵循并理解本系列的第一篇文章<router-link to="/blog/python-projects-with-poetry-and-vscode-part-1">（第一篇文章）</router-link>。
 
 ## 在 VSCode 中设置 Poetry
 
