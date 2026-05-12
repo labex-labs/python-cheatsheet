@@ -140,6 +140,14 @@ export const useNavigationStore = defineStore('navigation', {
     ],
     standardLibraryNavigation: [
       {
+        name: 'Argparse',
+        path: '/modules/argparse-module',
+      },
+      {
+        name: 'Collections',
+        path: '/modules/collections-module',
+      },
+      {
         name: 'Copy',
         path: '/modules/copy-module',
         updated: false,
@@ -161,6 +169,22 @@ export const useNavigationStore = defineStore('navigation', {
         path: '/modules/json-module',
       },
       {
+        name: 'Functools',
+        path: '/modules/functools-module',
+      },
+      {
+        name: 'Hashlib',
+        path: '/modules/hashlib-module',
+      },
+      {
+        name: 'Logging',
+        path: '/modules/logging-module',
+      },
+      {
+        name: 'Math',
+        path: '/modules/math-module',
+      },
+      {
         name: 'OS',
         path: '/modules/os-module',
         updated: false,
@@ -174,12 +198,52 @@ export const useNavigationStore = defineStore('navigation', {
         path: '/modules/random-module',
       },
       {
+        name: 're',
+        path: '/modules/re-module',
+      },
+      {
         name: 'Shelve',
         path: '/modules/shelve-module',
       },
       {
+        name: 'SQLite3',
+        path: '/modules/sqlite3-module',
+      },
+      {
+        name: 'Statistics',
+        path: '/modules/statistics-module',
+      },
+      {
         name: 'Subprocess',
         path: '/modules/subprocess-module',
+      },
+      {
+        name: 'Sys',
+        path: '/modules/sys-module',
+      },
+      {
+        name: 'Tempfile',
+        path: '/modules/tempfile-module',
+      },
+      {
+        name: 'Threading',
+        path: '/modules/threading-module',
+      },
+      {
+        name: 'Tomllib',
+        path: '/modules/tomllib-module',
+      },
+      {
+        name: 'Typing',
+        path: '/modules/typing-module',
+      },
+      {
+        name: 'urllib.request',
+        path: '/modules/urllib-request-module',
+      },
+      {
+        name: 'Zoneinfo',
+        path: '/modules/zoneinfo-module',
       },
       {
         name: 'Zipfile',
