@@ -2,12 +2,16 @@
 title: 'Changelog - Python Cheatsheet'
 description: See what is new, what got fixed, and what is coming.
 date: July 19, 2022
-updated: December 3, 2025
+updated: May 13, 2026
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
 Changelog
 </base-title>
+
+## 2026-05-13
+
+- Added new module pages for `argparse`, `collections`, `functools`, `hashlib`, `logging`, `math`, `re`, `sqlite3`, `statistics`, `sys`, `tempfile`, `threading`, `tomllib`, `typing`, `urllib.request`, and `zoneinfo`.
 
 ## 2025-12-03
 
