@@ -1,6 +1,6 @@
 ---
-title: Module Typing Python - Aide-mémoire Python
-description: Le module `typing` fournit des annotations de type pour les arguments de fonctions, les valeurs de retour et les structures de données.
+title: "Module Typing Python - Aide-mémoire Python"
+description: "Le module `typing` fournit des annotations de type pour les arguments de fonctions, les valeurs de retour et les structures de données."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

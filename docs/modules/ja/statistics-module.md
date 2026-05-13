@@ -1,6 +1,6 @@
 ---
-title: Python Statistics モジュール - Python チートシート
-description: `statistics` モジュールは、平均値、中央値、その他の記述統計を計算するための簡単なツールを提供します。
+title: "Python Statistics モジュール - Python チートシート"
+description: "`statistics` モジュールは、平均値、中央値、その他の記述統計を計算するための簡単なツールを提供します。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

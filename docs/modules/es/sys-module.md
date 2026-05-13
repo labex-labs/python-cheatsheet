@@ -1,6 +1,6 @@
 ---
-title: Módulo Sys de Python - Hoja de trucos de Python
-description: El módulo `sys` da acceso a detalles del tiempo de ejecución de Python, como los argumentos de línea de comandos, la ruta de importación y la versión actual del intérprete.
+title: "Módulo Sys de Python - Hoja de trucos de Python"
+description: "El módulo `sys` da acceso a detalles del tiempo de ejecución de Python, como los argumentos de línea de comandos, la ruta de importación y la versión actual del intérprete."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Python Sys 模块 - Python 速查表
-description: `sys` 模块可以访问 Python 运行时细节，例如命令行参数、导入路径和当前解释器版本。
+title: "Python Sys 模块 - Python 速查表"
+description: "`sys` 模块可以访问 Python 运行时细节，例如命令行参数、导入路径和当前解释器版本。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

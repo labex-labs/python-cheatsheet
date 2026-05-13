@@ -1,6 +1,6 @@
 ---
-title: Módulo urllib.request de Python - Hoja de trucos de Python
-description: El módulo `urllib.request` te permite obtener datos desde URL usando la biblioteca estándar de Python.
+title: "Módulo urllib.request de Python - Hoja de trucos de Python"
+description: "El módulo `urllib.request` te permite obtener datos desde URL usando la biblioteca estándar de Python."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

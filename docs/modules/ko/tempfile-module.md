@@ -1,6 +1,6 @@
 ---
-title: Python Tempfile 모듈 - Python 치트시트
-description: `tempfile` 모듈은 임시 파일과 디렉터리를 안전하게 만듭니다.
+title: "Python Tempfile 모듈 - Python 치트시트"
+description: "`tempfile` 모듈은 임시 파일과 디렉터리를 안전하게 만듭니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

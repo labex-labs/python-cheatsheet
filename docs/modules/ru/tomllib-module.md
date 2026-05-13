@@ -1,6 +1,6 @@
 ---
-title: Модуль Tomllib Python - Шпаргалка Python
-description: Модуль `tomllib` разбирает TOML-файлы конфигурации в Python.
+title: "Модуль Tomllib Python - Шпаргалка Python"
+description: "Модуль `tomllib` разбирает TOML-файлы конфигурации в Python."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

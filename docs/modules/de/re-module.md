@@ -1,6 +1,6 @@
 ---
-title: Python re Modul - Python Spickzettel
-description: Das `re`-Modul erlaubt dir, Text mit regulären Ausdrücken zu suchen, abzugleichen, zu teilen und zu ersetzen.
+title: "Python re Modul - Python Spickzettel"
+description: "Das `re`-Modul erlaubt dir, Text mit regulären Ausdrücken zu suchen, abzugleichen, zu teilen und zu ersetzen."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

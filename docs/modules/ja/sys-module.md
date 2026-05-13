@@ -1,6 +1,6 @@
 ---
-title: Python Sys モジュール - Python チートシート
-description: `sys` モジュールは、コマンドライン引数、インポートパス、現在のインタープリターのバージョンなど、Python の実行時情報にアクセスできます。
+title: "Python Sys モジュール - Python チートシート"
+description: "`sys` モジュールは、コマンドライン引数、インポートパス、現在のインタープリターのバージョンなど、Python の実行時情報にアクセスできます。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

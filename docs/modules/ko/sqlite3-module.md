@@ -1,6 +1,6 @@
 ---
-title: Python SQLite3 모듈 - Python 치트시트
-description: `sqlite3` 모듈은 별도의 데이터베이스 서버 없이 Python에서 바로 SQLite 데이터베이스를 사용할 수 있게 해줍니다.
+title: "Python SQLite3 모듈 - Python 치트시트"
+description: "`sqlite3` 모듈은 별도의 데이터베이스 서버 없이 Python에서 바로 SQLite 데이터베이스를 사용할 수 있게 해줍니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

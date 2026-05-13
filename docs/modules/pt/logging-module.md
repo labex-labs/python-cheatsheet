@@ -1,6 +1,6 @@
 ---
-title: Módulo Logging do Python - Folha de Referência Python
-description: O módulo `logging` permite registrar mensagens de debug, info, warning, error e exception de forma consistente.
+title: "Módulo Logging do Python - Folha de Referência Python"
+description: "O módulo `logging` permite registrar mensagens de debug, info, warning, error e exception de forma consistente."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Módulo Functools do Python - Folha de Referência Python
-description: O módulo `functools` contém ferramentas para funções de ordem superior como `partial`, `reduce` e `lru_cache`.
+title: "Módulo Functools do Python - Folha de Referência Python"
+description: "O módulo `functools` contém ferramentas para funções de ordem superior como `partial`, `reduce` e `lru_cache`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Модуль Zoneinfo Python - Шпаргалка Python
-description: Модуль `zoneinfo` предоставляет поддержку часовых поясов IANA для объектов `datetime`.
+title: "Модуль Zoneinfo Python - Шпаргалка Python"
+description: "Модуль `zoneinfo` предоставляет поддержку часовых поясов IANA для объектов `datetime`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

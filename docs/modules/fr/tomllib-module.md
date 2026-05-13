@@ -1,6 +1,6 @@
 ---
-title: Module Tomllib Python - Aide-mémoire Python
-description: Le module `tomllib` analyse des fichiers de configuration TOML depuis Python.
+title: "Module Tomllib Python - Aide-mémoire Python"
+description: "Le module `tomllib` analyse des fichiers de configuration TOML depuis Python."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

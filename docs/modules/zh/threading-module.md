@@ -1,6 +1,6 @@
 ---
-title: Python Threading 模块 - Python 速查表
-description: `threading` 模块可以让你在同一个进程中运行多个线程，并使用锁来协调它们。
+title: "Python Threading 模块 - Python 速查表"
+description: "`threading` 模块可以让你在同一个进程中运行多个线程，并使用锁来协调它们。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

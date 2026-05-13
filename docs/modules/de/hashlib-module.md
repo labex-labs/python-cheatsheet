@@ -1,6 +1,6 @@
 ---
-title: Python Hashlib Modul - Python Spickzettel
-description: Das `hashlib`-Modul stellt sichere Hashfunktionen wie SHA-256 und MD5 bereit.
+title: "Python Hashlib Modul - Python Spickzettel"
+description: "Das `hashlib`-Modul stellt sichere Hashfunktionen wie SHA-256 und MD5 bereit."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Python Hashlib 모듈 - Python 치트시트
-description: `hashlib` 모듈은 SHA-256, MD5 같은 안전한 해시 함수를 제공합니다.
+title: "Python Hashlib 모듈 - Python 치트시트"
+description: "`hashlib` 모듈은 SHA-256, MD5 같은 안전한 해시 함수를 제공합니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

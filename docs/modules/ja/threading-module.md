@@ -1,6 +1,6 @@
 ---
-title: Python Threading モジュール - Python チートシート
-description: `threading` モジュールを使うと、同じプロセス内で複数のスレッドを実行し、ロックで調整できます。
+title: "Python Threading モジュール - Python チートシート"
+description: "`threading` モジュールを使うと、同じプロセス内で複数のスレッドを実行し、ロックで調整できます。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Python Tempfile モジュール - Python チートシート
-description: `tempfile` モジュールは、テンポラリファイルとテンポラリディレクトリを安全に作成します。
+title: "Python Tempfile モジュール - Python チートシート"
+description: "`tempfile` モジュールは、テンポラリファイルとテンポラリディレクトリを安全に作成します。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

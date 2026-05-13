@@ -1,6 +1,6 @@
 ---
-title: Python urllib.request Modul - Python Spickzettel
-description: Das `urllib.request`-Modul erlaubt dir, Daten von URLs mit der Python-Standardbibliothek abzurufen.
+title: "Python urllib.request Modul - Python Spickzettel"
+description: "Das `urllib.request`-Modul erlaubt dir, Daten von URLs mit der Python-Standardbibliothek abzurufen."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

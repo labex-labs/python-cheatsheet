@@ -1,6 +1,6 @@
 ---
-title: Module Statistics Python - Aide-mémoire Python
-description: Le module `statistics` fournit des outils simples pour calculer des moyennes, des médianes et d’autres statistiques descriptives.
+title: "Module Statistics Python - Aide-mémoire Python"
+description: "Le module `statistics` fournit des outils simples pour calculer des moyennes, des médianes et d’autres statistiques descriptives."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

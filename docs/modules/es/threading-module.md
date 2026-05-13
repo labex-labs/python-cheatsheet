@@ -1,6 +1,6 @@
 ---
-title: Módulo Threading de Python - Hoja de trucos de Python
-description: El módulo `threading` te permite ejecutar varios hilos en el mismo proceso y coordinarlos con bloqueos.
+title: "Módulo Threading de Python - Hoja de trucos de Python"
+description: "El módulo `threading` te permite ejecutar varios hilos en el mismo proceso y coordinarlos con bloqueos."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

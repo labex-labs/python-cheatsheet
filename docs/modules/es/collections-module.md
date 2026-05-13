@@ -1,6 +1,6 @@
 ---
-title: Módulo Collections de Python - Hoja de trucos de Python
-description: El módulo `collections` proporciona tipos de contenedor especializados como `Counter`, `defaultdict` y `deque`.
+title: "Módulo Collections de Python - Hoja de trucos de Python"
+description: "El módulo `collections` proporciona tipos de contenedor especializados como `Counter`, `defaultdict` y `deque`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

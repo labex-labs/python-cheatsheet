@@ -1,6 +1,6 @@
 ---
-title: Python Threading Modul - Python Spickzettel
-description: Das `threading`-Modul erlaubt dir, mehrere Threads im selben Prozess auszuführen und sie mit Sperren zu koordinieren.
+title: "Python Threading Modul - Python Spickzettel"
+description: "Das `threading`-Modul erlaubt dir, mehrere Threads im selben Prozess auszuführen und sie mit Sperren zu koordinieren."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

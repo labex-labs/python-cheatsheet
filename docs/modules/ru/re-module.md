@@ -1,6 +1,6 @@
 ---
-title: Модуль re Python - Шпаргалка Python
-description: Модуль `re` позволяет искать, сопоставлять, разделять и заменять текст с помощью регулярных выражений.
+title: "Модуль re Python - Шпаргалка Python"
+description: "Модуль `re` позволяет искать, сопоставлять, разделять и заменять текст с помощью регулярных выражений."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

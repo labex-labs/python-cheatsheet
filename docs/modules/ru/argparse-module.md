@@ -1,6 +1,6 @@
 ---
-title: Модуль Argparse Python - Шпаргалка Python
-description: Модуль `argparse` помогает создавать интерфейсы командной строки с позиционными аргументами, опциями, флагами и справочными сообщениями.
+title: "Модуль Argparse Python - Шпаргалка Python"
+description: "Модуль `argparse` помогает создавать интерфейсы командной строки с позиционными аргументами, опциями, флагами и справочными сообщениями."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Módulo Logging de Python - Hoja de trucos de Python
-description: El módulo `logging` te permite registrar mensajes de debug, info, warning, error y exception de forma coherente.
+title: "Módulo Logging de Python - Hoja de trucos de Python"
+description: "El módulo `logging` te permite registrar mensajes de debug, info, warning, error y exception de forma coherente."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Module Logging Python - Aide-mémoire Python
-description: Le module `logging` vous permet d’enregistrer des messages debug, info, warning, error et exception de manière cohérente.
+title: "Module Logging Python - Aide-mémoire Python"
+description: "Le module `logging` vous permet d’enregistrer des messages debug, info, warning, error et exception de manière cohérente."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

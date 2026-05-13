@@ -1,6 +1,6 @@
 ---
-title: Python Tomllib 모듈 - Python 치트시트
-description: `tomllib` 모듈은 Python에서 TOML 설정 파일을 파싱합니다.
+title: "Python Tomllib 모듈 - Python 치트시트"
+description: "`tomllib` 모듈은 Python에서 TOML 설정 파일을 파싱합니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

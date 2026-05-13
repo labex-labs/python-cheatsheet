@@ -1,6 +1,6 @@
 ---
-title: Python Argparse 모듈 - Python 치트시트
-description: `argparse` 모듈은 위치 인자, 옵션, 플래그, 도움말 메시지를 갖는 명령줄 인터페이스를 만들 때 도움이 됩니다.
+title: "Python Argparse 모듈 - Python 치트시트"
+description: "`argparse` 모듈은 위치 인자, 옵션, 플래그, 도움말 메시지를 갖는 명령줄 인터페이스를 만들 때 도움이 됩니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

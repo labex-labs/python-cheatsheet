@@ -1,6 +1,6 @@
 ---
-title: Python Tempfile Modul - Python Spickzettel
-description: Das `tempfile`-Modul erstellt temporäre Dateien und Verzeichnisse sicher.
+title: "Python Tempfile Modul - Python Spickzettel"
+description: "Das `tempfile`-Modul erstellt temporäre Dateien und Verzeichnisse sicher."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

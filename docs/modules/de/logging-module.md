@@ -1,6 +1,6 @@
 ---
-title: Python Logging Modul - Python Spickzettel
-description: Das `logging`-Modul ermöglicht es dir, debug-, info-, warning-, error- und exception-Meldungen konsistent aufzuzeichnen.
+title: "Python Logging Modul - Python Spickzettel"
+description: "Das `logging`-Modul ermöglicht es dir, debug-, info-, warning-, error- und exception-Meldungen konsistent aufzuzeichnen."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

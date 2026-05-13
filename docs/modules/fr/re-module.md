@@ -1,6 +1,6 @@
 ---
-title: Module re Python - Aide-mémoire Python
-description: Le module `re` vous permet de rechercher, faire correspondre, découper et remplacer du texte à l’aide d’expressions régulières.
+title: "Module re Python - Aide-mémoire Python"
+description: "Le module `re` vous permet de rechercher, faire correspondre, découper et remplacer du texte à l’aide d’expressions régulières."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

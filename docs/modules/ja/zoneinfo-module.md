@@ -1,6 +1,6 @@
 ---
-title: Python Zoneinfo モジュール - Python チートシート
-description: `zoneinfo` モジュールは、`datetime` オブジェクトに IANA タイムゾーンのサポートを提供します。
+title: "Python Zoneinfo モジュール - Python チートシート"
+description: "`zoneinfo` モジュールは、`datetime` オブジェクトに IANA タイムゾーンのサポートを提供します。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

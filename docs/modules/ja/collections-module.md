@@ -1,6 +1,6 @@
 ---
-title: Python Collections モジュール - Python チートシート
-description: `collections` モジュールは、`Counter`、`defaultdict`、`deque` のような特化したコンテナ型を提供します。
+title: "Python Collections モジュール - Python チートシート"
+description: "`collections` モジュールは、`Counter`、`defaultdict`、`deque` のような特化したコンテナ型を提供します。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

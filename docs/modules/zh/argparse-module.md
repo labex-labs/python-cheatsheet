@@ -1,6 +1,6 @@
 ---
-title: Python Argparse 模块 - Python 速查表
-description: `argparse` 模块可以帮助你构建命令行界面，支持位置参数、选项、标志位和帮助信息。
+title: "Python Argparse 模块 - Python 速查表"
+description: "`argparse` 模块可以帮助你构建命令行界面，支持位置参数、选项、标志位和帮助信息。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

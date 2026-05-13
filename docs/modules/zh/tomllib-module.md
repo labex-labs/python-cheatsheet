@@ -1,6 +1,6 @@
 ---
-title: Python Tomllib 模块 - Python 速查表
-description: `tomllib` 模块可以在 Python 中解析 TOML 配置文件。
+title: "Python Tomllib 模块 - Python 速查表"
+description: "`tomllib` 模块可以在 Python 中解析 TOML 配置文件。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

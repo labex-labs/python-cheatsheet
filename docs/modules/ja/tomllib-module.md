@@ -1,6 +1,6 @@
 ---
-title: Python Tomllib モジュール - Python チートシート
-description: `tomllib` モジュールは、Python で TOML 設定ファイルを解析します。
+title: "Python Tomllib モジュール - Python チートシート"
+description: "`tomllib` モジュールは、Python で TOML 設定ファイルを解析します。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

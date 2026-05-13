@@ -1,6 +1,6 @@
 ---
-title: Module urllib.request Python - Aide-mémoire Python
-description: Le module `urllib.request` vous permet de récupérer des données depuis des URL en utilisant la bibliothèque standard Python.
+title: "Module urllib.request Python - Aide-mémoire Python"
+description: "Le module `urllib.request` vous permet de récupérer des données depuis des URL en utilisant la bibliothèque standard Python."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

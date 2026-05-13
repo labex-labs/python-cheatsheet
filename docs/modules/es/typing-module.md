@@ -1,6 +1,6 @@
 ---
-title: Módulo Typing de Python - Hoja de trucos de Python
-description: El módulo `typing` proporciona anotaciones de tipo para argumentos de funciones, valores de retorno y estructuras de datos.
+title: "Módulo Typing de Python - Hoja de trucos de Python"
+description: "El módulo `typing` proporciona anotaciones de tipo para argumentos de funciones, valores de retorno y estructuras de datos."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Module Hashlib Python - Aide-mémoire Python
-description: Le module `hashlib` fournit des fonctions de hachage sécurisées comme SHA-256 et MD5.
+title: "Module Hashlib Python - Aide-mémoire Python"
+description: "Le module `hashlib` fournit des fonctions de hachage sécurisées comme SHA-256 et MD5."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Module Tempfile Python - Aide-mémoire Python
-description: Le module `tempfile` crée des fichiers et répertoires temporaires de manière sûre.
+title: "Module Tempfile Python - Aide-mémoire Python"
+description: "Le module `tempfile` crée des fichiers et répertoires temporaires de manière sûre."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

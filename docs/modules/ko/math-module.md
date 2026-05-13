@@ -1,6 +1,6 @@
 ---
-title: Python Math 모듈 - Python 치트시트
-description: `math` 모듈은 `sqrt`, `ceil`, `floor`, `pi`, `isclose` 같은 수학 함수를 제공합니다.
+title: "Python Math 모듈 - Python 치트시트"
+description: "`math` 모듈은 `sqrt`, `ceil`, `floor`, `pi`, `isclose` 같은 수학 함수를 제공합니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

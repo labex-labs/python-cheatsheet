@@ -1,6 +1,6 @@
 ---
-title: Módulo Statistics do Python - Folha de Referência Python
-description: O módulo `statistics` fornece ferramentas simples para calcular médias, medianas e outras estatísticas descritivas.
+title: "Módulo Statistics do Python - Folha de Referência Python"
+description: "O módulo `statistics` fornece ferramentas simples para calcular médias, medianas e outras estatísticas descritivas."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

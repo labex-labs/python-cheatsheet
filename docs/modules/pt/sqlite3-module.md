@@ -1,6 +1,6 @@
 ---
-title: Módulo SQLite3 do Python - Folha de Referência Python
-description: O módulo `sqlite3` permite usar bancos de dados SQLite diretamente do Python, sem um servidor de banco de dados separado.
+title: "Módulo SQLite3 do Python - Folha de Referência Python"
+description: "O módulo `sqlite3` permite usar bancos de dados SQLite diretamente do Python, sem um servidor de banco de dados separado."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

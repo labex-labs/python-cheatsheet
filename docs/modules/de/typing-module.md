@@ -1,6 +1,6 @@
 ---
-title: Python Typing Modul - Python Spickzettel
-description: Das `typing`-Modul bietet Typ-Hinweise für Funktionsargumente, Rückgabewerte und Datenstrukturen.
+title: "Python Typing Modul - Python Spickzettel"
+description: "Das `typing`-Modul bietet Typ-Hinweise für Funktionsargumente, Rückgabewerte und Datenstrukturen."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

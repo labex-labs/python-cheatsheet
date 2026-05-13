@@ -1,6 +1,6 @@
 ---
-title: Módulo Tempfile do Python - Folha de Referência Python
-description: O módulo `tempfile` cria arquivos e diretórios temporários com segurança.
+title: "Módulo Tempfile do Python - Folha de Referência Python"
+description: "O módulo `tempfile` cria arquivos e diretórios temporários com segurança."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

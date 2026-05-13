@@ -1,6 +1,6 @@
 ---
-title: Python Argparse モジュール - Python チートシート
-description: `argparse` モジュールを使うと、位置引数、オプション、フラグ、ヘルプメッセージを持つコマンドラインインターフェースを作成できます。
+title: "Python Argparse モジュール - Python チートシート"
+description: "`argparse` モジュールを使うと、位置引数、オプション、フラグ、ヘルプメッセージを持つコマンドラインインターフェースを作成できます。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

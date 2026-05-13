@@ -1,6 +1,6 @@
 ---
-title: Module Argparse Python - Aide-mémoire Python
-description: Le module `argparse` vous aide à construire des interfaces en ligne de commande avec des arguments positionnels, des options, des drapeaux et des messages d’aide.
+title: "Module Argparse Python - Aide-mémoire Python"
+description: "Le module `argparse` vous aide à construire des interfaces en ligne de commande avec des arguments positionnels, des options, des drapeaux et des messages d’aide."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

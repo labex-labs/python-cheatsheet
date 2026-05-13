@@ -1,6 +1,6 @@
 ---
-title: Python SQLite3 Modul - Python Spickzettel
-description: Das `sqlite3`-Modul erlaubt dir, SQLite-Datenbanken direkt aus Python zu verwenden, ohne einen separaten Datenbankserver.
+title: "Python SQLite3 Modul - Python Spickzettel"
+description: "Das `sqlite3`-Modul erlaubt dir, SQLite-Datenbanken direkt aus Python zu verwenden, ohne einen separaten Datenbankserver."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

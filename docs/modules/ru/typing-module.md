@@ -1,6 +1,6 @@
 ---
-title: Модуль Typing Python - Шпаргалка Python
-description: Модуль `typing` предоставляет подсказки типов для аргументов функций, значений возврата и структур данных.
+title: "Модуль Typing Python - Шпаргалка Python"
+description: "Модуль `typing` предоставляет подсказки типов для аргументов функций, значений возврата и структур данных."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

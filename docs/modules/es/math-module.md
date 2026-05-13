@@ -1,6 +1,6 @@
 ---
-title: Módulo Math de Python - Hoja de trucos de Python
-description: El módulo `math` proporciona funciones matemáticas como `sqrt`, `ceil`, `floor`, `pi` e `isclose`.
+title: "Módulo Math de Python - Hoja de trucos de Python"
+description: "El módulo `math` proporciona funciones matemáticas como `sqrt`, `ceil`, `floor`, `pi` e `isclose`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

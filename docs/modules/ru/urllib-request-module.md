@@ -1,6 +1,6 @@
 ---
-title: Модуль urllib.request Python - Шпаргалка Python
-description: Модуль `urllib.request` позволяет получать данные по URL с помощью стандартной библиотеки Python.
+title: "Модуль urllib.request Python - Шпаргалка Python"
+description: "Модуль `urllib.request` позволяет получать данные по URL с помощью стандартной библиотеки Python."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

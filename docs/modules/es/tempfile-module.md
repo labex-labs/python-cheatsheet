@@ -1,6 +1,6 @@
 ---
-title: Módulo Tempfile de Python - Hoja de trucos de Python
-description: El módulo `tempfile` crea archivos y directorios temporales de forma segura.
+title: "Módulo Tempfile de Python - Hoja de trucos de Python"
+description: "El módulo `tempfile` crea archivos y directorios temporales de forma segura."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

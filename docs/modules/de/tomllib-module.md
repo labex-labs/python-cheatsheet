@@ -1,6 +1,6 @@
 ---
-title: Python Tomllib Modul - Python Spickzettel
-description: Das `tomllib`-Modul parst TOML-Konfigurationsdateien in Python.
+title: "Python Tomllib Modul - Python Spickzettel"
+description: "Das `tomllib`-Modul parst TOML-Konfigurationsdateien in Python."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

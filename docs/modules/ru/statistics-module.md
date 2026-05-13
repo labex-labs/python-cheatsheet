@@ -1,6 +1,6 @@
 ---
-title: Модуль Statistics Python - Шпаргалка Python
-description: Модуль `statistics` предоставляет простые инструменты для вычисления средних, медиан и другой описательной статистики.
+title: "Модуль Statistics Python - Шпаргалка Python"
+description: "Модуль `statistics` предоставляет простые инструменты для вычисления средних, медиан и другой описательной статистики."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

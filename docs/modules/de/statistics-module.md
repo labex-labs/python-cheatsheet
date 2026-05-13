@@ -1,6 +1,6 @@
 ---
-title: Python Statistics Modul - Python Spickzettel
-description: Das `statistics`-Modul bietet einfache Werkzeuge zum Berechnen von Durchschnittswerten, Medianen und anderer beschreibender Statistik.
+title: "Python Statistics Modul - Python Spickzettel"
+description: "Das `statistics`-Modul bietet einfache Werkzeuge zum Berechnen von Durchschnittswerten, Medianen und anderer beschreibender Statistik."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

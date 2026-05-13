@@ -1,6 +1,6 @@
 ---
-title: Python Logging 모듈 - Python 치트시트
-description: `logging` 모듈은 debug, info, warning, error, exception 메시지를 일관된 방식으로 기록할 수 있게 해줍니다.
+title: "Python Logging 모듈 - Python 치트시트"
+description: "`logging` 모듈은 debug, info, warning, error, exception 메시지를 일관된 방식으로 기록할 수 있게 해줍니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

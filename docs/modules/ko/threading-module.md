@@ -1,6 +1,6 @@
 ---
-title: Python Threading 모듈 - Python 치트시트
-description: `threading` 모듈은 같은 프로세스에서 여러 스레드를 실행하고 락으로 조정할 수 있게 해줍니다.
+title: "Python Threading 모듈 - Python 치트시트"
+description: "`threading` 모듈은 같은 프로세스에서 여러 스레드를 실행하고 락으로 조정할 수 있게 해줍니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

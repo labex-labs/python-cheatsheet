@@ -1,6 +1,6 @@
 ---
-title: Python urllib.request 모듈 - Python 치트시트
-description: `urllib.request` 모듈은 Python 표준 라이브러리로 URL에서 데이터를 가져올 수 있게 해줍니다.
+title: 'Python urllib.request 모듈 - Python 치트시트'
+description: '`urllib.request` 모듈은 Python 표준 라이브러리로 URL에서 데이터를 가져올 수 있게 해줍니다.'
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

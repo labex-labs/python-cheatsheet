@@ -1,6 +1,6 @@
 ---
-title: Módulo Math do Python - Folha de Referência Python
-description: O módulo `math` fornece funções matemáticas como `sqrt`, `ceil`, `floor`, `pi` e `isclose`.
+title: "Módulo Math do Python - Folha de Referência Python"
+description: "O módulo `math` fornece funções matemáticas como `sqrt`, `ceil`, `floor`, `pi` e `isclose`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

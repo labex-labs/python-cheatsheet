@@ -1,6 +1,6 @@
 ---
-title: Module Functools Python - Aide-mémoire Python
-description: Le module `functools` contient des outils pour les fonctions d’ordre supérieur comme `partial`, `reduce` et `lru_cache`.
+title: "Module Functools Python - Aide-mémoire Python"
+description: "Le module `functools` contient des outils pour les fonctions d’ordre supérieur comme `partial`, `reduce` et `lru_cache`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

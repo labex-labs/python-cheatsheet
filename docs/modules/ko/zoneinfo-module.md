@@ -1,6 +1,6 @@
 ---
-title: Python Zoneinfo 모듈 - Python 치트시트
-description: `zoneinfo` 모듈은 `datetime` 객체에 IANA 시간대 지원을 제공합니다.
+title: "Python Zoneinfo 모듈 - Python 치트시트"
+description: "`zoneinfo` 모듈은 `datetime` 객체에 IANA 시간대 지원을 제공합니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

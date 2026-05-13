@@ -1,6 +1,6 @@
 ---
-title: Python Logging モジュール - Python チートシート
-description: `logging` モジュールを使うと、debug、info、warning、error、exception のメッセージを一貫した方法で記録できます。
+title: "Python Logging モジュール - Python チートシート"
+description: "`logging` モジュールを使うと、debug、info、warning、error、exception のメッセージを一貫した方法で記録できます。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Module Zoneinfo Python - Aide-mémoire Python
-description: Le module `zoneinfo` fournit la prise en charge des fuseaux horaires IANA pour les objets `datetime`.
+title: "Module Zoneinfo Python - Aide-mémoire Python"
+description: "Le module `zoneinfo` fournit la prise en charge des fuseaux horaires IANA pour les objets `datetime`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

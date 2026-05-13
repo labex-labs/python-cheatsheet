@@ -1,6 +1,6 @@
 ---
-title: Модуль Threading Python - Шпаргалка Python
-description: Модуль `threading` позволяет запускать несколько потоков в одном процессе и координировать их с помощью блокировок.
+title: "Модуль Threading Python - Шпаргалка Python"
+description: "Модуль `threading` позволяет запускать несколько потоков в одном процессе и координировать их с помощью блокировок."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Módulo Tomllib de Python - Hoja de trucos de Python
-description: El módulo `tomllib` analiza archivos de configuración TOML desde Python.
+title: "Módulo Tomllib de Python - Hoja de trucos de Python"
+description: "El módulo `tomllib` analiza archivos de configuración TOML desde Python."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

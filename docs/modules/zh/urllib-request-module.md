@@ -1,6 +1,6 @@
 ---
-title: Python urllib.request 模块 - Python 速查表
-description: `urllib.request` 模块可以让你使用 Python 标准库从 URL 获取数据。
+title: "Python urllib.request 模块 - Python 速查表"
+description: "`urllib.request` 模块可以让你使用 Python 标准库从 URL 获取数据。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

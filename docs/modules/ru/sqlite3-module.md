@@ -1,6 +1,6 @@
 ---
-title: Модуль SQLite3 Python - Шпаргалка Python
-description: Модуль `sqlite3` позволяет использовать базы данных SQLite прямо из Python без отдельного сервера баз данных.
+title: "Модуль SQLite3 Python - Шпаргалка Python"
+description: "Модуль `sqlite3` позволяет использовать базы данных SQLite прямо из Python без отдельного сервера баз данных."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

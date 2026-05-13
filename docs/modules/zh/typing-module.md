@@ -1,6 +1,6 @@
 ---
-title: Python Typing 模块 - Python 速查表
-description: `typing` 模块为函数参数、返回值和数据结构提供类型提示。
+title: "Python Typing 模块 - Python 速查表"
+description: "`typing` 模块为函数参数、返回值和数据结构提供类型提示。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

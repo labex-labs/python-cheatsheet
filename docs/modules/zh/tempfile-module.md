@@ -1,6 +1,6 @@
 ---
-title: Python Tempfile 模块 - Python 速查表
-description: `tempfile` 模块可以安全地创建临时文件和目录。
+title: "Python Tempfile 模块 - Python 速查表"
+description: "`tempfile` 模块可以安全地创建临时文件和目录。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

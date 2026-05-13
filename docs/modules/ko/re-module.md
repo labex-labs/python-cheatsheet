@@ -1,6 +1,6 @@
 ---
-title: Python re 모듈 - Python 치트시트
-description: `re` 모듈은 정규 표현식을 사용해 텍스트를 검색, 일치, 분할, 교체할 수 있게 해줍니다.
+title: "Python re 모듈 - Python 치트시트"
+description: "`re` 모듈은 정규 표현식을 사용해 텍스트를 검색, 일치, 분할, 교체할 수 있게 해줍니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

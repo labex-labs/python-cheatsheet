@@ -1,6 +1,6 @@
 ---
-title: Модуль Hashlib Python - Шпаргалка Python
-description: Модуль `hashlib` предоставляет безопасные хеш-функции, такие как SHA-256 и MD5.
+title: "Модуль Hashlib Python - Шпаргалка Python"
+description: "Модуль `hashlib` предоставляет безопасные хеш-функции, такие как SHA-256 и MD5."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Python re モジュール - Python チートシート
-description: `re` モジュールを使うと、正規表現でテキストの検索、照合、分割、置換ができます。
+title: "Python re モジュール - Python チートシート"
+description: "`re` モジュールを使うと、正規表現でテキストの検索、照合、分割、置換ができます。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

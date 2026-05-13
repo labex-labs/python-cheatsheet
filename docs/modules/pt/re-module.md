@@ -1,6 +1,6 @@
 ---
-title: Módulo re do Python - Folha de Referência Python
-description: O módulo `re` permite pesquisar, comparar, dividir e substituir texto usando expressões regulares.
+title: "Módulo re do Python - Folha de Referência Python"
+description: "O módulo `re` permite pesquisar, comparar, dividir e substituir texto usando expressões regulares."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

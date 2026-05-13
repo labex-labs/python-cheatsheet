@@ -1,6 +1,6 @@
 ---
-title: Модуль Tempfile Python - Шпаргалка Python
-description: Модуль `tempfile` безопасно создает временные файлы и каталоги.
+title: "Модуль Tempfile Python - Шпаргалка Python"
+description: "Модуль `tempfile` безопасно создает временные файлы и каталоги."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

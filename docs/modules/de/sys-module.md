@@ -1,6 +1,6 @@
 ---
-title: Python Sys Modul - Python Spickzettel
-description: Das `sys`-Modul bietet Zugriff auf Laufzeitdetails von Python wie Kommandozeilenargumente, den Importpfad und die aktuelle Interpreter-Version.
+title: "Python Sys Modul - Python Spickzettel"
+description: "Das `sys`-Modul bietet Zugriff auf Laufzeitdetails von Python wie Kommandozeilenargumente, den Importpfad und die aktuelle Interpreter-Version."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

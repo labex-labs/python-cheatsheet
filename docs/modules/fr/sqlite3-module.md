@@ -1,6 +1,6 @@
 ---
-title: Module SQLite3 Python - Aide-mémoire Python
-description: Le module `sqlite3` vous permet d’utiliser des bases de données SQLite directement depuis Python, sans serveur de base de données séparé.
+title: "Module SQLite3 Python - Aide-mémoire Python"
+description: "Le module `sqlite3` vous permet d’utiliser des bases de données SQLite directement depuis Python, sans serveur de base de données séparé."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

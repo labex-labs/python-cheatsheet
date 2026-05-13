@@ -1,6 +1,6 @@
 ---
-title: Módulo Argparse do Python - Folha de Referência Python
-description: O módulo `argparse` ajuda você a construir interfaces de linha de comando com argumentos posicionais, opções, flags e mensagens de ajuda.
+title: "Módulo Argparse do Python - Folha de Referência Python"
+description: "O módulo `argparse` ajuda você a construir interfaces de linha de comando com argumentos posicionais, opções, flags e mensagens de ajuda."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

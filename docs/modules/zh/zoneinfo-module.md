@@ -1,6 +1,6 @@
 ---
-title: Python Zoneinfo 模块 - Python 速查表
-description: `zoneinfo` 模块为 `datetime` 对象提供 IANA 时区支持。
+title: "Python Zoneinfo 模块 - Python 速查表"
+description: "`zoneinfo` 模块为 `datetime` 对象提供 IANA 时区支持。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

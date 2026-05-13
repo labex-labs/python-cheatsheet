@@ -1,6 +1,6 @@
 ---
-title: Módulo Threading do Python - Folha de Referência Python
-description: O módulo `threading` permite executar várias threads no mesmo processo e coordená-las com locks.
+title: "Módulo Threading do Python - Folha de Referência Python"
+description: "O módulo `threading` permite executar várias threads no mesmo processo e coordená-las com locks."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

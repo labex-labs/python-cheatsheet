@@ -1,6 +1,6 @@
 ---
-title: Python Logging 模块 - Python 速查表
-description: `logging` 模块可以让你以统一的方式记录 debug、info、warning、error 和 exception 消息。
+title: "Python Logging 模块 - Python 速查表"
+description: "`logging` 模块可以让你以统一的方式记录 debug、info、warning、error 和 exception 消息。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

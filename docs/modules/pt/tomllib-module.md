@@ -1,6 +1,6 @@
 ---
-title: Módulo Tomllib do Python - Folha de Referência Python
-description: O módulo `tomllib` analisa arquivos de configuração TOML em Python.
+title: "Módulo Tomllib do Python - Folha de Referência Python"
+description: "O módulo `tomllib` analisa arquivos de configuração TOML em Python."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

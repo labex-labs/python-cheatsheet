@@ -1,6 +1,6 @@
 ---
-title: Python Typing 모듈 - Python 치트시트
-description: `typing` 모듈은 함수 인자, 반환값, 데이터 구조에 대한 타입 힌트를 제공합니다.
+title: "Python Typing 모듈 - Python 치트시트"
+description: "`typing` 모듈은 함수 인자, 반환값, 데이터 구조에 대한 타입 힌트를 제공합니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

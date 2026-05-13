@@ -1,6 +1,6 @@
 ---
-title: Python Sys 모듈 - Python 치트시트
-description: `sys` 모듈은 명령줄 인자, import 경로, 현재 인터프리터 버전 같은 Python 런타임 세부 정보에 접근할 수 있게 해줍니다.
+title: "Python Sys 모듈 - Python 치트시트"
+description: "`sys` 모듈은 명령줄 인자, import 경로, 현재 인터프리터 버전 같은 Python 런타임 세부 정보에 접근할 수 있게 해줍니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Python urllib.request モジュール - Python チートシート
-description: `urllib.request` モジュールを使うと、Python 標準ライブラリで URL からデータを取得できます。
+title: "Python urllib.request モジュール - Python チートシート"
+description: "`urllib.request` モジュールを使うと、Python 標準ライブラリで URL からデータを取得できます。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

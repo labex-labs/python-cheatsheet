@@ -1,6 +1,6 @@
 ---
-title: Python Statistics 模块 - Python 速查表
-description: `statistics` 模块提供了用于计算平均数、中位数和其他描述性统计量的简单工具。
+title: "Python Statistics 模块 - Python 速查表"
+description: "`statistics` 模块提供了用于计算平均数、中位数和其他描述性统计量的简单工具。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

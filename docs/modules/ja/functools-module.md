@@ -1,6 +1,6 @@
 ---
-title: Python Functools モジュール - Python チートシート
-description: `functools` モジュールには、`partial`、`reduce`、`lru_cache` などの高階関数向けのツールがあります。
+title: "Python Functools モジュール - Python チートシート"
+description: "`functools` モジュールには、`partial`、`reduce`、`lru_cache` などの高階関数向けのツールがあります。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

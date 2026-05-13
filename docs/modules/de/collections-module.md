@@ -1,6 +1,6 @@
 ---
-title: Python Collections Modul - Python Spickzettel
-description: Das `collections`-Modul bietet spezialisierte Container-Datentypen wie `Counter`, `defaultdict` und `deque`.
+title: "Python Collections Modul - Python Spickzettel"
+description: "Das `collections`-Modul bietet spezialisierte Container-Datentypen wie `Counter`, `defaultdict` und `deque`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

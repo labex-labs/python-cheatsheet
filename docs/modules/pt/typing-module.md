@@ -1,6 +1,6 @@
 ---
-title: Módulo Typing do Python - Folha de Referência Python
-description: O módulo `typing` fornece dicas de tipo para argumentos de função, valores de retorno e estruturas de dados.
+title: "Módulo Typing do Python - Folha de Referência Python"
+description: "O módulo `typing` fornece dicas de tipo para argumentos de função, valores de retorno e estruturas de dados."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

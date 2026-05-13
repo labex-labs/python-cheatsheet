@@ -1,6 +1,6 @@
 ---
-title: Módulo Statistics de Python - Hoja de trucos de Python
-description: El módulo `statistics` proporciona herramientas simples para calcular medias, medianas y otras estadísticas descriptivas.
+title: "Módulo Statistics de Python - Hoja de trucos de Python"
+description: "El módulo `statistics` proporciona herramientas simples para calcular medias, medianas y otras estadísticas descriptivas."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

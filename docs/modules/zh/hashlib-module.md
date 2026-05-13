@@ -1,6 +1,6 @@
 ---
-title: Python Hashlib 模块 - Python 速查表
-description: `hashlib` 模块提供安全的哈希函数，例如 SHA-256 和 MD5。
+title: "Python Hashlib 模块 - Python 速查表"
+description: "`hashlib` 模块提供安全的哈希函数，例如 SHA-256 和 MD5。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Модуль Logging Python - Шпаргалка Python
-description: Модуль `logging` позволяет последовательно записывать сообщения debug, info, warning, error и exception.
+title: "Модуль Logging Python - Шпаргалка Python"
+description: "Модуль `logging` позволяет последовательно записывать сообщения debug, info, warning, error и exception."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

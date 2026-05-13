@@ -1,6 +1,6 @@
 ---
-title: Python Collections 모듈 - Python 치트시트
-description: `collections` 모듈은 `Counter`, `defaultdict`, `deque` 같은 특화된 컨테이너 자료형을 제공합니다.
+title: "Python Collections 모듈 - Python 치트시트"
+description: "`collections` 모듈은 `Counter`, `defaultdict`, `deque` 같은 특화된 컨테이너 자료형을 제공합니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

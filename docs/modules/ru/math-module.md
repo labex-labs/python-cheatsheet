@@ -1,6 +1,6 @@
 ---
-title: Модуль Math Python - Шпаргалка Python
-description: Модуль `math` предоставляет математические функции вроде `sqrt`, `ceil`, `floor`, `pi` и `isclose`.
+title: "Модуль Math Python - Шпаргалка Python"
+description: "Модуль `math` предоставляет математические функции вроде `sqrt`, `ceil`, `floor`, `pi` и `isclose`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

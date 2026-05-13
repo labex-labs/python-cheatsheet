@@ -1,6 +1,6 @@
 ---
-title: Módulo Zoneinfo de Python - Hoja de trucos de Python
-description: El módulo `zoneinfo` proporciona soporte para zonas horarias IANA en objetos `datetime`.
+title: "Módulo Zoneinfo de Python - Hoja de trucos de Python"
+description: "El módulo `zoneinfo` proporciona soporte para zonas horarias IANA en objetos `datetime`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

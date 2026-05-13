@@ -1,6 +1,6 @@
 ---
-title: Python Math モジュール - Python チートシート
-description: `math` モジュールは、`sqrt`、`ceil`、`floor`、`pi`、`isclose` などの数学関数を提供します。
+title: "Python Math モジュール - Python チートシート"
+description: "`math` モジュールは、`sqrt`、`ceil`、`floor`、`pi`、`isclose` などの数学関数を提供します。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

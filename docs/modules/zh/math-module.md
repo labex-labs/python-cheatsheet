@@ -1,6 +1,6 @@
 ---
-title: Python Math 模块 - Python 速查表
-description: `math` 模块提供数学函数，例如 `sqrt`、`ceil`、`floor`、`pi` 和 `isclose`。
+title: "Python Math 模块 - Python 速查表"
+description: "`math` 模块提供数学函数，例如 `sqrt`、`ceil`、`floor`、`pi` 和 `isclose`。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

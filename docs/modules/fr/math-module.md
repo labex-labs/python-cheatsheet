@@ -1,6 +1,6 @@
 ---
-title: Module Math Python - Aide-mémoire Python
-description: Le module `math` fournit des fonctions mathématiques comme `sqrt`, `ceil`, `floor`, `pi` et `isclose`.
+title: "Module Math Python - Aide-mémoire Python"
+description: "Le module `math` fournit des fonctions mathématiques comme `sqrt`, `ceil`, `floor`, `pi` et `isclose`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Python Zoneinfo Modul - Python Spickzettel
-description: Das `zoneinfo`-Modul bietet IANA-Zeitzonenunterstützung für `datetime`-Objekte.
+title: "Python Zoneinfo Modul - Python Spickzettel"
+description: "Das `zoneinfo`-Modul bietet IANA-Zeitzonenunterstützung für `datetime`-Objekte."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

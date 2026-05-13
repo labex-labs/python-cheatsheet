@@ -1,6 +1,6 @@
 ---
-title: Python Typing モジュール - Python チートシート
-description: `typing` モジュールは、関数の引数、戻り値、データ構造に型ヒントを提供します。
+title: "Python Typing モジュール - Python チートシート"
+description: "`typing` モジュールは、関数の引数、戻り値、データ構造に型ヒントを提供します。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

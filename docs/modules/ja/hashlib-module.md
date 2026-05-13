@@ -1,6 +1,6 @@
 ---
-title: Python Hashlib モジュール - Python チートシート
-description: `hashlib` モジュールは、SHA-256 や MD5 のような安全なハッシュ関数を提供します。
+title: "Python Hashlib モジュール - Python チートシート"
+description: "`hashlib` モジュールは、SHA-256 や MD5 のような安全なハッシュ関数を提供します。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

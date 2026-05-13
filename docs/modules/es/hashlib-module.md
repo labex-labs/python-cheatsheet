@@ -1,6 +1,6 @@
 ---
-title: Módulo Hashlib de Python - Hoja de trucos de Python
-description: El módulo `hashlib` proporciona funciones hash seguras como SHA-256 y MD5.
+title: "Módulo Hashlib de Python - Hoja de trucos de Python"
+description: "El módulo `hashlib` proporciona funciones hash seguras como SHA-256 y MD5."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

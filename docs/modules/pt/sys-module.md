@@ -1,6 +1,6 @@
 ---
-title: Módulo Sys do Python - Folha de Referência Python
-description: O módulo `sys` dá acesso a detalhes de runtime do Python, como argumentos de linha de comando, caminho de importação e versão atual do interpretador.
+title: "Módulo Sys do Python - Folha de Referência Python"
+description: "O módulo `sys` dá acesso a detalhes de runtime do Python, como argumentos de linha de comando, caminho de importação e versão atual do interpretador."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

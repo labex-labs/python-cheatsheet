@@ -1,6 +1,6 @@
 ---
-title: Module Sys Python - Aide-mémoire Python
-description: Le module `sys` donne accès à des détails d’exécution Python comme les arguments de ligne de commande, le chemin d’importation et la version courante de l’interpréteur.
+title: "Module Sys Python - Aide-mémoire Python"
+description: "Le module `sys` donne accès à des détails d’exécution Python comme les arguments de ligne de commande, le chemin d’importation et la version courante de l’interpréteur."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

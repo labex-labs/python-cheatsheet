@@ -1,6 +1,6 @@
 ---
-title: Python Statistics 모듈 - Python 치트시트
-description: `statistics` 모듈은 평균, 중앙값, 기타 기술 통계를 계산하는 간단한 도구를 제공합니다.
+title: "Python Statistics 모듈 - Python 치트시트"
+description: "`statistics` 모듈은 평균, 중앙값, 기타 기술 통계를 계산하는 간단한 도구를 제공합니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Модуль Sys Python - Шпаргалка Python
-description: Модуль `sys` дает доступ к деталям выполнения Python, таким как аргументы командной строки, путь импорта и текущая версия интерпретатора.
+title: "Модуль Sys Python - Шпаргалка Python"
+description: "Модуль `sys` дает доступ к деталям выполнения Python, таким как аргументы командной строки, путь импорта и текущая версия интерпретатора."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

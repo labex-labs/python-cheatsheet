@@ -1,6 +1,6 @@
 ---
-title: Módulo Zoneinfo do Python - Folha de Referência Python
-description: O módulo `zoneinfo` fornece suporte a fuso horário IANA para objetos `datetime`.
+title: "Módulo Zoneinfo do Python - Folha de Referência Python"
+description: "O módulo `zoneinfo` fornece suporte a fuso horário IANA para objetos `datetime`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

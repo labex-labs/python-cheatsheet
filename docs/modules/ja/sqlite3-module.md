@@ -1,6 +1,6 @@
 ---
-title: Python SQLite3 モジュール - Python チートシート
-description: `sqlite3` モジュールを使うと、別のデータベースサーバーなしで Python から直接 SQLite データベースを利用できます。
+title: "Python SQLite3 モジュール - Python チートシート"
+description: "`sqlite3` モジュールを使うと、別のデータベースサーバーなしで Python から直接 SQLite データベースを利用できます。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

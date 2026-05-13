@@ -1,6 +1,6 @@
 ---
-title: Модуль Functools Python - Шпаргалка Python
-description: Модуль `functools` содержит инструменты для функций высшего порядка, такие как `partial`, `reduce` и `lru_cache`.
+title: "Модуль Functools Python - Шпаргалка Python"
+description: "Модуль `functools` содержит инструменты для функций высшего порядка, такие как `partial`, `reduce` и `lru_cache`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

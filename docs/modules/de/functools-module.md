@@ -1,6 +1,6 @@
 ---
-title: Python Functools Modul - Python Spickzettel
-description: Das `functools`-Modul enthält Werkzeuge für höherstufige Funktionen wie `partial`, `reduce` und `lru_cache`.
+title: "Python Functools Modul - Python Spickzettel"
+description: "Das `functools`-Modul enthält Werkzeuge für höherstufige Funktionen wie `partial`, `reduce` und `lru_cache`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

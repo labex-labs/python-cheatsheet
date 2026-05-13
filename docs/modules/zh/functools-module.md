@@ -1,6 +1,6 @@
 ---
-title: Python Functools 模块 - Python 速查表
-description: `functools` 模块包含处理高阶函数的工具，例如 `partial`、`reduce` 和 `lru_cache`。
+title: "Python Functools 模块 - Python 速查表"
+description: "`functools` 模块包含处理高阶函数的工具，例如 `partial`、`reduce` 和 `lru_cache`。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

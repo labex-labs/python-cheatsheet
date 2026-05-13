@@ -1,6 +1,6 @@
 ---
-title: Python re 模块 - Python 速查表
-description: `re` 模块可以使用正则表达式搜索、匹配、拆分和替换文本。
+title: "Python re 模块 - Python 速查表"
+description: "`re` 模块可以使用正则表达式搜索、匹配、拆分和替换文本。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

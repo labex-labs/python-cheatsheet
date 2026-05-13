@@ -1,6 +1,6 @@
 ---
-title: Módulo SQLite3 de Python - Hoja de trucos de Python
-description: El módulo `sqlite3` te permite usar bases de datos SQLite directamente desde Python, sin un servidor de base de datos aparte.
+title: "Módulo SQLite3 de Python - Hoja de trucos de Python"
+description: "El módulo `sqlite3` te permite usar bases de datos SQLite directamente desde Python, sin un servidor de base de datos aparte."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

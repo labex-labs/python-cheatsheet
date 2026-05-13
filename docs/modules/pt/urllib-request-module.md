@@ -1,6 +1,6 @@
 ---
-title: Módulo urllib.request do Python - Folha de Referência Python
-description: O módulo `urllib.request` permite buscar dados de URLs usando a biblioteca padrão do Python.
+title: "Módulo urllib.request do Python - Folha de Referência Python"
+description: "O módulo `urllib.request` permite buscar dados de URLs usando a biblioteca padrão do Python."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Module Threading Python - Aide-mémoire Python
-description: Le module `threading` vous permet d’exécuter plusieurs threads dans le même processus et de les coordonner avec des verrous.
+title: "Module Threading Python - Aide-mémoire Python"
+description: "Le module `threading` vous permet d’exécuter plusieurs threads dans le même processus et de les coordonner avec des verrous."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

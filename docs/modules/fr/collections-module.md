@@ -1,6 +1,6 @@
 ---
-title: Module Collections Python - Aide-mémoire Python
-description: Le module `collections` fournit des types de conteneurs spécialisés comme `Counter`, `defaultdict` et `deque`.
+title: "Module Collections Python - Aide-mémoire Python"
+description: "Le module `collections` fournit des types de conteneurs spécialisés comme `Counter`, `defaultdict` et `deque`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

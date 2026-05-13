@@ -1,6 +1,6 @@
 ---
-title: Python Collections 模块 - Python 速查表
-description: `collections` 模块提供了一些专用的容器数据类型，例如 `Counter`、`defaultdict` 和 `deque`。
+title: "Python Collections 模块 - Python 速查表"
+description: "`collections` 模块提供了一些专用的容器数据类型，例如 `Counter`、`defaultdict` 和 `deque`。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

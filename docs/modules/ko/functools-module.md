@@ -1,6 +1,6 @@
 ---
-title: Python Functools 모듈 - Python 치트시트
-description: `functools` 모듈에는 `partial`, `reduce`, `lru_cache` 같은 고차 함수용 도구가 들어 있습니다.
+title: "Python Functools 모듈 - Python 치트시트"
+description: "`functools` 모듈에는 `partial`, `reduce`, `lru_cache` 같은 고차 함수용 도구가 들어 있습니다."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

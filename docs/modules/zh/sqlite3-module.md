@@ -1,6 +1,6 @@
 ---
-title: Python SQLite3 模块 - Python 速查表
-description: `sqlite3` 模块可以让你直接在 Python 中使用 SQLite 数据库，而不需要单独的数据库服务器。
+title: "Python SQLite3 模块 - Python 速查表"
+description: "`sqlite3` 模块可以让你直接在 Python 中使用 SQLite 数据库，而不需要单独的数据库服务器。"
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

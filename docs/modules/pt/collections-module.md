@@ -1,6 +1,6 @@
 ---
-title: Módulo Collections do Python - Folha de Referência Python
-description: O módulo `collections` fornece tipos de contêiner especializados como `Counter`, `defaultdict` e `deque`.
+title: "Módulo Collections do Python - Folha de Referência Python"
+description: "O módulo `collections` fornece tipos de contêiner especializados como `Counter`, `defaultdict` e `deque`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

@@ -1,6 +1,6 @@
 ---
-title: Módulo re de Python - Hoja de trucos de Python
-description: El módulo `re` te permite buscar, comparar, dividir y reemplazar texto usando expresiones regulares.
+title: "Módulo re de Python - Hoja de trucos de Python"
+description: "El módulo `re` te permite buscar, comparar, dividir y reemplazar texto usando expresiones regulares."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

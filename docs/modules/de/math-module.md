@@ -1,6 +1,6 @@
 ---
-title: Python Math Modul - Python Spickzettel
-description: Das `math`-Modul stellt mathematische Funktionen wie `sqrt`, `ceil`, `floor`, `pi` und `isclose` bereit.
+title: "Python Math Modul - Python Spickzettel"
+description: "Das `math`-Modul stellt mathematische Funktionen wie `sqrt`, `ceil`, `floor`, `pi` und `isclose` bereit."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

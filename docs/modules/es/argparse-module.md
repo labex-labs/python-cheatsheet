@@ -1,6 +1,6 @@
 ---
-title: Módulo Argparse de Python - Hoja de trucos de Python
-description: El módulo `argparse` te ayuda a construir interfaces de línea de comandos con argumentos posicionales, opciones, banderas y mensajes de ayuda.
+title: "Módulo Argparse de Python - Hoja de trucos de Python"
+description: "El módulo `argparse` te ayuda a construir interfaces de línea de comandos con argumentos posicionales, opciones, banderas y mensajes de ayuda."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

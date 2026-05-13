@@ -1,6 +1,6 @@
 ---
-title: Python Argparse Modul - Python Spickzettel
-description: Das `argparse`-Modul hilft dir, Kommandozeilenschnittstellen mit Positionsargumenten, Optionen, Flags und Hilfetexten aufzubauen.
+title: "Python Argparse Modul - Python Spickzettel"
+description: "Das `argparse`-Modul hilft dir, Kommandozeilenschnittstellen mit Positionsargumenten, Optionen, Flags und Hilfetexten aufzubauen."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">

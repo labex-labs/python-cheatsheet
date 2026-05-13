@@ -1,6 +1,6 @@
 ---
-title: Модуль Collections Python - Шпаргалка Python
-description: Модуль `collections` предоставляет специализированные типы контейнеров, такие как `Counter`, `defaultdict` и `deque`.
+title: "Модуль Collections Python - Шпаргалка Python"
+description: "Модуль `collections` предоставляет специализированные типы контейнеров, такие как `Counter`, `defaultdict` и `deque`."
 ---
 
 <base-title :title="frontmatter.title" :description="frontmatter.description">
