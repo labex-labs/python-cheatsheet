@@ -378,7 +378,7 @@ dict_c
 ```
 
 ```output
-{'a': 1, 'b': 3, 'c': 4}
+{'b': 2, 'c': 4, 'a': 1}
 ```
 
 <BaseQuiz id="cheatsheet-dictionaries-2" correct="B">
