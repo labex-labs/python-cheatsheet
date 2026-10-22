@@ -5,6 +5,32 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: light;
+  --scrollbar-track: white;
+  --scrollbar-thumb: #64748b;
+}
+
+html.dark {
+  color-scheme: dark;
+  --scrollbar-track: #111827;
+  --scrollbar-thumb: #94a3b8;
+}
+
+html,
+body {
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 999px;
+}
+
 /* 
  * Prose overrides - must be loaded after @tailwind utilities
  * This file contains styles that override Tailwind Typography defaults
