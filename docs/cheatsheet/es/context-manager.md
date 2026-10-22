@@ -51,8 +51,10 @@ import contextlib
 @contextlib.contextmanager
 def context_manager(num):
     print('Enter')  # El código antes de yield se ejecuta en __enter__
-    yield num + 1   # El valor cedido se convierte en la variable 'cm'
-    print('Exit')    # El código después de yield se ejecuta en __exit__
+    try:
+        yield num + 1   # El valor cedido se convierte en la variable 'cm'
+    finally:
+        print('Exit')    # El código después de yield se ejecuta en __exit__
 
 with context_manager(2) as cm:  # cm recibe el valor cedido (3)
     print('Right in the middle with cm = {}'.format(cm))

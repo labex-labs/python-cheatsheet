@@ -51,8 +51,10 @@ import contextlib
 @contextlib.contextmanager
 def context_manager(num):
     print('Enter')  # yield の前のコードは__enter__で実行される
-    yield num + 1   # yield された値が'cm'変数になる
-    print('Exit')    # yield の後のコードは__exit__で実行される
+    try:
+        yield num + 1   # yield された値が'cm'変数になる
+    finally:
+        print('Exit')    # yield の後のコードは__exit__で実行される
 
 with context_manager(2) as cm:  # cm は yield された値 (3) を受け取る
     print('Right in the middle with cm = {}'.format(cm))
