@@ -1,48 +1,112 @@
-# Python Cheatsheet
-
-**Languages:** [English](README.md) · [简体中文](README_zh.md) · [Español](README_es.md) · [Français](README_fr.md) · [Deutsch](README_de.md) · [日本語](README_ja.md) · [Русский](README_ru.md) · [한국어](README_ko.md) · [Português](README_pt.md)
-
 <p align="center">
-  <a href="https://labex.io/courses/python-cheatsheet">
-    <img src="https://course-cover.labex.io/python-cheatsheet.png" alt="Python Cheatsheet">
-  </a>
+<img height="70" src="public/android-chrome-192x192.png">
 </p>
 
-Master Python programming with this comprehensive cheatsheet course. Learn essential Python concepts through practical labs covering basics, data structures, functions, OOP, file handling, debugging, and advanced topics like decorators and context managers. Perfect for quick reference and skill building.
+<h1 align="center">Python Cheatsheet</h1>
 
-[Start Course on LabEx](https://labex.io/courses/python-cheatsheet)
+<div align="center">
+  <a href="https://labex.io/pythoncheatsheet/">labex.io/pythoncheatsheet</a> |
+  <a href="https://github.com/labex-labs/python-cheatsheet/blob/master/src/pages/contributing.md">Contribute</a> |
+  <a href="https://github.com/labex-labs/python-cheatsheet/blob/master/src/pages/changelog.md">Changelog</a>
+</div>
 
-## Exercises
+<img src="public/screenshots/light.png">
 
-|   Index | Name                                        | Difficulty   | Practice                                                                                                                                         |
-|---------|---------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-|      01 | Use VS Code for Python Development          | Beginner     | <a target='_blank' href='https://labex.io/labs/python-use-vs-code-for-python-development-585783?course=python-cheatsheet'>Start Lab</a>          |
-|      02 | Python Basics                               | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-basics-633647?course=python-cheatsheet'>Start Lab</a>                               |
-|      03 | Python Built-in Functions                   | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-built-in-functions-633648?course=python-cheatsheet'>Start Lab</a>                   |
-|      04 | Python Control Flow                         | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-control-flow-633651?course=python-cheatsheet'>Start Lab</a>                         |
-|      05 | Python Functions                            | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-functions-633658?course=python-cheatsheet'>Start Lab</a>                            |
-|      06 | Python Lists and Tuples                     | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-lists-and-tuples-633660?course=python-cheatsheet'>Start Lab</a>                     |
-|      07 | Python Dictionaries                         | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-dictionaries-633655?course=python-cheatsheet'>Start Lab</a>                         |
-|      08 | Python Sets                                 | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-sets-633665?course=python-cheatsheet'>Start Lab</a>                                 |
-|      09 | Python Comprehensions                       | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-comprehensions-633649?course=python-cheatsheet'>Start Lab</a>                       |
-|      10 | Python String Manipulation                  | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-string-manipulation-633668?course=python-cheatsheet'>Start Lab</a>                  |
-|      11 | Python String Formatting                    | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-string-formatting-633667?course=python-cheatsheet'>Start Lab</a>                    |
-|      12 | Python Regular Expressions                  | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-regular-expressions-633664?course=python-cheatsheet'>Start Lab</a>                  |
-|      13 | Python File and Directory Path Manipulation | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-file-and-directory-path-manipulation-633657?course=python-cheatsheet'>Start Lab</a> |
-|      14 | Python Reading and Writing Files            | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-reading-and-writing-files-633663?course=python-cheatsheet'>Start Lab</a>            |
-|      15 | Python JSON and YAML                        | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-json-and-yaml-633659?course=python-cheatsheet'>Start Lab</a>                        |
-|      16 | Python Exception Handling                   | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-exception-handling-633656?course=python-cheatsheet'>Start Lab</a>                   |
-|      17 | Python Debugging                            | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-debugging-633653?course=python-cheatsheet'>Start Lab</a>                            |
-|      18 | Python Args and Kwargs                      | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-args-and-kwargs-633646?course=python-cheatsheet'>Start Lab</a>                      |
-|      19 | Python Decorators                           | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-decorators-633654?course=python-cheatsheet'>Start Lab</a>                           |
-|      20 | Python Context Manager                      | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-context-manager-633650?course=python-cheatsheet'>Start Lab</a>                      |
-|      21 | Python OOP Basics                           | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-oop-basics-633662?course=python-cheatsheet'>Start Lab</a>                           |
-|      22 | Python Dataclasses                          | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-dataclasses-633652?course=python-cheatsheet'>Start Lab</a>                          |
-|      23 | Python Packaging                            | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-setup-py-633666?course=python-cheatsheet'>Start Lab</a>                             |
-|      24 | Python Main Function                        | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-main-function-633661?course=python-cheatsheet'>Start Lab</a>                        |
-|      25 | Python Virtual Environments                 | Beginner     | <a target='_blank' href='https://labex.io/labs/python-python-virtual-environments-633669?course=python-cheatsheet'>Start Lab</a>                 |
+Python Cheatsheet is a comprehensive reference guide for Python developers of all skill levels. Based on the book [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) and many other sources, this cheatsheet provides a quick reference for common Python tasks and concepts.
 
-## About LabEx
+Anyone can forget how to make character classes for a regex, slice a list, or do a for loop. This Python cheatsheet tries to provide basic reference for beginner and advanced developers, lower the entry barrier for newcomers and help veterans refresh the old tricks.
 
-<div align="left"><p><a href="https://labex.io"><strong>LabEx</strong></a> is a <strong>hands-on learning platform for beginners</strong>.</p><p>Explore <a href="https://labex.io/learn/linux"><strong>Linux</strong></a>, <a href="https://labex.io/learn/devops"><strong>DevOps</strong></a>, <a href="https://labex.io/learn/cybersecurity"><strong>Cybersecurity</strong></a>, and <strong>more</strong> — all directly in your browser.</p><p>Learn step by step through <strong>interactive labs</strong>, <strong>guided exercises</strong>, and <strong>real-world projects</strong>. 🌱<br />No setup, no stress — just practice and grow your skills by doing.</p><br /><p><a href="https://apps.apple.com/app/id6765840991"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="54" /></a>&nbsp;<a href="https://apps.apple.com/app/id6765840991"><img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-mac-app-store.svg" alt="Download on the Mac App Store" height="52" /></a></p><br /><p>📖 Need help? Visit our <a href="https://support.labex.io/">Help Center</a> or email info@labex.io</p></div>
+## Features
 
+- **Comprehensive Coverage**: From basics to advanced topics including built-in functions, control flow, data structures, and more
+- **Built-in Functions Reference**: Detailed documentation for all Python built-in functions
+- **Module Documentation**: Guides for popular Python modules like `datetime`, `json`, `pathlib`, `itertools`, and more
+- **Blog Articles**: In-depth articles about Python and its ecosystem
+- **Easy Navigation**: Well-organized sections with clear examples and explanations
+- **Dark Mode Support**: Beautiful UI with light and dark themes
+
+## Hands-on Labs on LabEx
+
+Practice the concepts in this cheat sheet with interactive labs in your browser. Follow the [Python Cheatsheet course on LabEx](https://labex.io/courses/python-cheatsheet), or choose a lab below. Each topic links to its reference documentation in this repository; the VS Code lab helps you get started with your development environment.
+
+| Topic | Cheat Sheet Reference | Practice |
+| --- | --- | --- |
+| Use VS Code for Python Development | — | [Start Lab](https://labex.io/labs/python-use-vs-code-for-python-development-585783?course=python-cheatsheet) |
+| Python Basics | [Read reference](docs/cheatsheet/en/basics.md) | [Start Lab](https://labex.io/labs/python-python-basics-633647?course=python-cheatsheet) |
+| Python Built-in Functions | [Read reference](docs/cheatsheet/en/built-in-functions.md) | [Start Lab](https://labex.io/labs/python-python-built-in-functions-633648?course=python-cheatsheet) |
+| Python Control Flow | [Read reference](docs/cheatsheet/en/control-flow.md) | [Start Lab](https://labex.io/labs/python-python-control-flow-633651?course=python-cheatsheet) |
+| Python Functions | [Read reference](docs/cheatsheet/en/functions.md) | [Start Lab](https://labex.io/labs/python-python-functions-633658?course=python-cheatsheet) |
+| Python Lists and Tuples | [Read reference](docs/cheatsheet/en/lists-and-tuples.md) | [Start Lab](https://labex.io/labs/python-python-lists-and-tuples-633660?course=python-cheatsheet) |
+| Python Dictionaries | [Read reference](docs/cheatsheet/en/dictionaries.md) | [Start Lab](https://labex.io/labs/python-python-dictionaries-633655?course=python-cheatsheet) |
+| Python Sets | [Read reference](docs/cheatsheet/en/sets.md) | [Start Lab](https://labex.io/labs/python-python-sets-633665?course=python-cheatsheet) |
+| Python Comprehensions | [Read reference](docs/cheatsheet/en/comprehensions.md) | [Start Lab](https://labex.io/labs/python-python-comprehensions-633649?course=python-cheatsheet) |
+| Python String Manipulation | [Read reference](docs/cheatsheet/en/manipulating-strings.md) | [Start Lab](https://labex.io/labs/python-python-string-manipulation-633668?course=python-cheatsheet) |
+| Python String Formatting | [Read reference](docs/cheatsheet/en/string-formatting.md) | [Start Lab](https://labex.io/labs/python-python-string-formatting-633667?course=python-cheatsheet) |
+| Python Regular Expressions | [Read reference](docs/cheatsheet/en/regular-expressions.md) | [Start Lab](https://labex.io/labs/python-python-regular-expressions-633664?course=python-cheatsheet) |
+| Python File and Directory Path Manipulation | [Read reference](docs/cheatsheet/en/file-directory-path.md) | [Start Lab](https://labex.io/labs/python-python-file-and-directory-path-manipulation-633657?course=python-cheatsheet) |
+| Python Reading and Writing Files | [Read reference](docs/cheatsheet/en/reading-and-writing-files.md) | [Start Lab](https://labex.io/labs/python-python-reading-and-writing-files-633663?course=python-cheatsheet) |
+| Python JSON and YAML | [Read reference](docs/cheatsheet/en/json-yaml.md) | [Start Lab](https://labex.io/labs/python-python-json-and-yaml-633659?course=python-cheatsheet) |
+| Python Exception Handling | [Read reference](docs/cheatsheet/en/exception-handling.md) | [Start Lab](https://labex.io/labs/python-python-exception-handling-633656?course=python-cheatsheet) |
+| Python Debugging | [Read reference](docs/cheatsheet/en/debugging.md) | [Start Lab](https://labex.io/labs/python-python-debugging-633653?course=python-cheatsheet) |
+| Python Args and Kwargs | [Read reference](docs/cheatsheet/en/args-and-kwargs.md) | [Start Lab](https://labex.io/labs/python-python-args-and-kwargs-633646?course=python-cheatsheet) |
+| Python Decorators | [Read reference](docs/cheatsheet/en/decorators.md) | [Start Lab](https://labex.io/labs/python-python-decorators-633654?course=python-cheatsheet) |
+| Python Context Manager | [Read reference](docs/cheatsheet/en/context-manager.md) | [Start Lab](https://labex.io/labs/python-python-context-manager-633650?course=python-cheatsheet) |
+| Python OOP Basics | [Read reference](docs/cheatsheet/en/oop-basics.md) | [Start Lab](https://labex.io/labs/python-python-oop-basics-633662?course=python-cheatsheet) |
+| Python Dataclasses | [Read reference](docs/cheatsheet/en/dataclasses.md) | [Start Lab](https://labex.io/labs/python-python-dataclasses-633652?course=python-cheatsheet) |
+| Python Packaging | [Read reference](docs/cheatsheet/en/packaging.md) | [Start Lab](https://labex.io/labs/python-python-setup-py-633666?course=python-cheatsheet) |
+| Python Main Function | [Read reference](docs/cheatsheet/en/main.md) | [Start Lab](https://labex.io/labs/python-python-main-function-633661?course=python-cheatsheet) |
+| Python Virtual Environments | [Read reference](docs/cheatsheet/en/virtual-environments.md) | [Start Lab](https://labex.io/labs/python-python-virtual-environments-633669?course=python-cheatsheet) |
+
+## Quick Links
+
+- **[View on GitHub](https://github.com/labex-labs/python-cheatsheet)**: Drop a star on GitHub if you find this project useful
+- **[Contribute](https://labex.io/pythoncheatsheet/contributing)**: Get to know how easy it is to contribute to the Python Cheatsheet
+- **[Blog](https://labex.io/pythoncheatsheet/blog)**: Read detailed articles about Python and its ecosystem
+- **[Changelog](https://labex.io/pythoncheatsheet/changelog)**: See what is new, what got fixed, and what is coming
+
+## Contributing
+
+Contributions are welcome! Please see the [Contributing Guide](https://labex.io/pythoncheatsheet/contributing) for details on how to get started.
+
+## License
+
+Content is licensed under [MIT](https://opensource.org/licenses/MIT) and maintained by the [LabEx](https://labex.io/) team.
+
+## More Cheatsheets
+
+- [Ansible Cheatsheet](https://labex.io/cheatsheets/ansible)
+- [C Programming Cheatsheet](https://labex.io/cheatsheets/c-programming)
+- [Comptia Cheatsheet](https://labex.io/cheatsheets/comptia)
+- [C++ Cheatsheet](https://labex.io/cheatsheets/cpp)
+- [CSS Cheatsheet](https://labex.io/cheatsheets/css)
+- [Cybersecurity Cheatsheet](https://labex.io/cheatsheets/cybersecurity)
+- [Database Cheatsheet](https://labex.io/cheatsheets/database)
+- [Data Science Cheatsheet](https://labex.io/cheatsheets/datascience)
+- [DevOps Cheatsheet](https://labex.io/cheatsheets/devops)
+- [Docker Cheatsheet](https://labex.io/cheatsheets/docker)
+- [Git Cheatsheet](https://labex.io/cheatsheets/git)
+- [Go Cheatsheet](https://labex.io/cheatsheets/golang)
+- [HTML Cheatsheet](https://labex.io/cheatsheets/html)
+- [Hydra Cheatsheet](https://labex.io/cheatsheets/hydra)
+- [Java Cheatsheet](https://labex.io/cheatsheets/java)
+- [JavaScript Cheatsheet](https://labex.io/cheatsheets/javascript)
+- [Jenkins Cheatsheet](https://labex.io/cheatsheets/jenkins)
+- [Kali Cheatsheet](https://labex.io/cheatsheets/kali)
+- [Kubernetes Cheatsheet](https://labex.io/cheatsheets/kubernetes)
+- [Linux Cheatsheet](https://labex.io/cheatsheets/linux)
+- [Matplotlib Cheatsheet](https://labex.io/cheatsheets/matplotlib)
+- [MongoDB Cheatsheet](https://labex.io/cheatsheets/mongodb)
+- [MySQL Cheatsheet](https://labex.io/cheatsheets/mysql)
+- [Nmap Cheatsheet](https://labex.io/cheatsheets/nmap)
+- [NumPy Cheatsheet](https://labex.io/cheatsheets/numpy)
+- [Pandas Cheatsheet](https://labex.io/cheatsheets/pandas)
+- [PostgreSQL Cheatsheet](https://labex.io/cheatsheets/postgresql)
+- [Python Cheatsheet](https://labex.io/cheatsheets/python)
+- [React Cheatsheet](https://labex.io/cheatsheets/react)
+- [Redis Cheatsheet](https://labex.io/cheatsheets/redis)
+- [RHEL Cheatsheet](https://labex.io/cheatsheets/rhel)
+- [Shell Cheatsheet](https://labex.io/cheatsheets/shell)
+- [Scikit-learn Cheatsheet](https://labex.io/cheatsheets/sklearn)
+- [SQLite Cheatsheet](https://labex.io/cheatsheets/sqlite)
+- [Web Development Cheatsheet](https://labex.io/cheatsheets/web-development)
+- [Wireshark Cheatsheet](https://labex.io/cheatsheets/wireshark)
