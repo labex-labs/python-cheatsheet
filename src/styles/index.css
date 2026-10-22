@@ -8,13 +8,13 @@
 :root {
   color-scheme: light;
   --scrollbar-track: white;
-  --scrollbar-thumb: #cbd5e1;
+  --scrollbar-thumb: #64748b;
 }
 
 html.dark {
   color-scheme: dark;
   --scrollbar-track: #111827;
-  --scrollbar-thumb: #475569;
+  --scrollbar-thumb: #94a3b8;
 }
 
 html,
